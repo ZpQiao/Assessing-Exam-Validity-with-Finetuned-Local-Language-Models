@@ -1,0 +1,690 @@
+Opgave 1
+
+En bil har et problem med olietryksmåleren. Hvis olielampen lyser, er
+der en sandsynlighed på $\frac{1}{5}$ for, at der er problemer med
+olietrykket. Sandsynligheden for, at olielampen lyser på en given
+køretur, er $\frac{1}{15}$.
+
+Spørgsmål 1
+
+Sandsynligheden for, at olielampen lyser, og, at der er problemer med
+olietrykket på en given køretur, findes til
+$1 \square \quad \frac{2}{15}$
+$2 \square \quad \frac{4}{15}$
+$3 \square \quad \frac{1}{75}$
+$4 \square \quad \frac{1}{5}$
+$5 \square \quad \frac{1}{15}$
+6▫   Ved ikke
+
+Opgave 2
+
+Et automatiseret system til rørpost fungerer ved trykluft. Der
+eksperimenteres med, at man et givet sted i systemet kan skyde et emne
+ud, der efterfølgende skal ramme i en tragt. Hvis der indlægges et
+koordinatsystem, således at koordinatsystemets nulpunkt svarer til
+tragtens centrum, kan man beskrive koordinaterne til emnets landingssted
+i tragten som uafhængige standard normalfordelte variable.
+
+Spørgsmål 2
+
+Sandsynligheden for, at et emne rammer i en afstand større end 3 fra
+tragtens centrum, bestemmes til
+
+1 e^( − 9/2)
+
+2 $\left(1-\Phi\left(\frac{3 \sqrt{2}}{2}\right)\right)^{2}$
+3 4e^( − 3)
+
+4 $1-\Phi\left(\frac{3 \sqrt{2}}{2}\right)$
+5 e^( − 3)
+
+6 Ved ikke
+
+Opgave 3
+
+I et givet område fanges 10 hjorte, der mærkes og sættes ud igen. Efter
+et mindre stykke tid fanges 8 hjorte. Man kan antage, at bestanden er
+uændret i perioden og, at mærkede og umærkede hjorte har den samme
+sandsynlighed for at blive fanget ved den anden fangst. Man betegner den
+ukendte populationsstørrelse af hjorte med n.
+
+Spørgsmål 3
+
+Sandsynligheden for at få netop 5 mærkede hjorte ved genfangsten kan
+udtrykkes som
+
+1
+$\binom{8}{5}\left(\frac{10}{n}\right)^{5}\left(\frac{n-10}{n}\right)^{3}$
+2 $\frac{8 \cdot 7 \cdot 6 \cdot 5 \cdot 4}{n(n-1)(n-2)(n-3)(n-4)}$
+
+3
+$\binom{8}{5} \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{n(n-1)(n-2)(n-3)(n-4)} \frac{(n-10)(n-11)(n-12)}{n(n-1)(n-2)}$
+
+4 $\frac{\binom{10}{5}\binom{n-10}{3}}{\binom{n}{8}}$
+
+5
+$\binom{7}{4}\left(\frac{10}{n}\right)^{5}\left(\frac{n-10}{n}\right)^{3}$
+6 Ved ikke
+
+Opgave 4
+
+En rovfisk møder byttedyr tilfældigt med et gennemsnitligt tidsinterval
+på 6 timer.
+
+Spørgsmål 4
+
+Sandsynligheden for, at rovfisken venter mere end 24 timer på at møde 4
+byttedyr, findes til
+
+1 e^( − 4)
+
+2 $\frac{71}{3} e^{-4}$
+
+3 $\frac{23}{3} e^{-2}$
+
+4 $\frac{103}{3} e^{-4}$
+
+5 $\frac{1}{2}$
+
+6 Ved ikke
+
+Opgave 5
+
+En fiskelarve har indtaget 100 byttedyr, hvor størrelsesfordelingen for
+byttedyr kan beskrives ved en fordeling med middelværdi 1,5 nanogram og
+standardafvigelse 5 nanogram.
+
+Spørgsmål 5
+
+Sandsynligheden for, at fiskelarven har indtaget højst 300 nanogram,
+findes, eventuelt approksimativt, til
+
+1
+$\Phi\left(\frac{200+\frac{1}{2}-100 \cdot 1,5}{\sqrt{100 \frac{1,5}{5} \frac{3,5}{5}}}\right)$
+
+2 $\Phi\left(\frac{3}{2}\right)$
+3 $1-\Phi\left(\frac{3}{2}\right)$
+
+4 Φ(3)
+
+5 Sandsynligheden kan ikke bestemmes grundet manglende oplysninger
+
+6 Ved ikke
+
+Opgave 6
+
+En flyrute betjenes, således at der er pladser dels på economy class og
+dels på business class. Sandsynligheden for, at der udsolgt på mindst en
+af de to klasser er $\frac{1}{3}$, medens sandsynligheden for, at der
+udsolgt på business class er $\frac{1}{8}$.
+
+Spørgsmål 6
+
+Sandsynligheden for, at der udsolgt på economy class men ikke på
+business class, findes til
+
+1 $\frac{1}{24}$
+
+2 $\frac{5}{24}$
+
+3 $\frac{9}{24}$
+
+4 $\frac{1}{6}$
+
+5 Sandsynligheden kan ikke bestemmes grundet manglende oplysninger
+
+6 Ved ikke
+
+Opgave 7
+
+Man har den kontinuerte ligefordelte stokastiske variabel
+U ∼ uniform (0, 1) og den ligeledes kontinuerte stokastiske variabel Y
+der for givet U = u følger en eksponentialfordeling med parameter
+(intensitet) u.
+
+Spørgsmål 7
+
+Overlevelsesfunktionen G_(Y)(y) = P(Y > y) findes til
+
+1 G_(Y)(y) = e^(u/2)
+
+2 $G_{Y}(y)=\frac{1}{y}\left(1-e^{-y}\right)$
+
+3 $G_{Y}(y)=\left(1+\frac{y}{2}\right) e^{-\frac{y}{2}}$
+
+4 G_(Y)(y) = e^( − y/2)
+
+5 G_(Y)(y) = ∫₀¹(1−e^( − y)) ⋅ 1 dy
+
+6 Ved ikke
+
+Opgave 8
+
+En person, der er kommet til skade, foretager opkald til en akuttelefon.
+Imidlertid er der en sandsynlighed på $\frac{9}{10}$ for, at et opkald
+ikke kan etableres grundet særlig stor belastning forårsaget af det
+aktuelle verjlig.
+
+Spørgsmål 8
+
+Sandsynligheden for, at det er nødvendigt med mere end 5 opkald, før
+personen får etableret forbindelse, findes til
+
+1 0,0591
+
+2 0,4066
+
+3 0,5905
+
+4 0,6065
+
+5 0,6321
+
+6 Ved ikke
+
+Opgave 9
+
+Den positive stokastiske variabel X med tæthedsfunktion
+f_(X)(x) = xe^( − x) transformeres til den stokastiske variabel
+Y = e^(X) − 1.
+
+Spørgsmål 9
+
+Man finder tætheden f_(Y)(y) for Y til
+
+1 $f_{Y}(y)=\frac{1}{(y+1)^{2}}$
+2 f_(Y)(y) = log (y + 1)e^( − (y + 1))
+
+3 $f_{Y}(y)=\frac{\log (y+1)}{4(y+1)^{3}}$
+
+4 $f_{Y}(y)=\frac{\log (y+1)}{(y+1)^{2}}$
+
+5 $f_{Y}(y)=\frac{w \log (y+1)}{y+1}$
+
+6 Ved ikke
+
+Opgave 10
+
+Parret ( X, Y ) af stokastiske variable følger en standardiseret
+bivariat normalfordeling med korrelationskoefficient
+$\rho=-\frac{7}{8}$.
+
+Spørgsmål 10
+
+Man finder P(X + Y ≤ 1) til
+
+1 Φ(2)
+
+2 $\Phi\left(\frac{\sqrt{2}}{2}\right)$
+
+3 $\Phi(2 \sqrt{2})$
+
+4 $\Phi(\sqrt{2})$
+
+5 $\Phi\left(\frac{1}{2}\right)^{2}$
+
+6 Ved ikke
+
+Opgave 11
+
+En lottospiller køber en række per uge. Sandsynligheden for at få en
+gevinst på rækken i en given uge er $\frac{1}{5}$.
+
+Spørgsmål 11
+
+Sandsynligheden for, at spilleren opnår gevinst i mindst 10 ud af 100
+uger findes til
+
+1 $\Phi\left(\frac{10-20+\frac{1}{2}}{\sqrt{100 \frac{4}{25}}}\right)$
+2 $\sum_{i=10}^{100} \frac{20^{i}}{i!} e^{-20}$
+
+3 $1-5^{-100} \sum_{i=0}^{9}\binom{100}{i} 4^{100-i}$
+
+4 $\frac{\binom{20}{10}\binom{80}{10}}{\binom{100}{20}}$
+
+5 $\sum_{i=10}^{100}\binom{100}{i} \frac{1}{2^{100}}$
+6 Ved ikke
+
+Opgave 12
+
+X og Y er to uafhængige kontinuerte stokastiske variable, der begge er
+uniformt fordelte på intervallet (0, 1).
+
+Spørgsmål 12
+
+Man finder $\mathrm{P}\left(X+Y \leq \frac{1}{2}\right)$ til
+
+1 $\overline{6}$
+2 $\frac{1}{3}$
+3 $\frac{1}{2}$
+
+4 $\frac{1}{4}$
+5 $\frac{1}{8}$
+6 Ved ikke
+
+Opgave 13
+
+Man antager, at den månedsvise maksimale vandstand ved et dige er givet
+ved fordelingsfunktionen $F(x)=1-\exp \left(-x^{\frac{1}{3}}\right)$.
+Man kan som en noget grov antagelse antage, at denne fordeling er den
+samme for alle årets 12 måneder.
+
+Spørgsmål 13
+
+Sandsynligheden for, at vandstanden overstiger 8 mindst en gang i løbet
+af et år, findes til
+
+1 $1-\Phi\left(\frac{8-6 \sqrt{8}}{12 \sqrt{38}}\right)$
+2 (1−e^( − 2))¹²
+3 e^( − 24)
+
+4 1 − e^( − 24)
+
+5 1 − (1−e^( − 2))¹²
+
+6 Ved ikke
+
+Opgave 14
+
+Man betragter parret ( X, Y ) af kontinuerte stokastiske variable med
+den simultane tæthedsfunktion f(x, y) = 4xy, 0 < x < 1, 0 < y < 1.
+
+Spørgsmål 14
+
+Tætheden f_(Z)(z) for Z = Y/X findes til
+
+1
+$f_{Z}(z)=\left\{\begin{array}{cc}z & \text { for } 0<z \leq 1 \\ \frac{1}{z^{3}} & \text { for } 1<z\end{array}\right.$
+2 f_(Z)(z) = ∫₀^(z)4x²y dx,  0 < z
+
+3 $f_{Z}(z)=\frac{1}{z^{2}}, \quad 1<z$
+
+4
+$f_{Z}(z)=\left\{\begin{array}{cc}\frac{2}{3} z & \text { for } 0<z \leq 1 \\ \frac{2}{3 z^{2}} & \text { for } 1<z\end{array}\right.$
+
+5 f_(Z)(z) = ∫₀¹4x³z dx,  0 < z
+
+6 Ved ikke
+
+Opgave 15
+
+Man har de tre diskrete stokastiske variable X₁, X₂, X₃, hvor (
+X₁, X₂, X₃ ) følger en multinomialfordeling, hvor antallet af forsøg er
+n = 3 og sandsynlighedsparametre
+$p_{1}=\frac{1}{2}, p_{2}= \frac{1}{3}, p_{3}=\frac{1}{6}$.
+
+Spørgsmål 15
+
+Man finder P(X₁+X₃≤2) til
+
+1
+$\sum_{i=0}^{2}\binom{3}{i}\left(\frac{2}{3}\right)^{i} \frac{1}{3^{3-i}}$
+
+2
+$\sum_{i=0}^{2} \frac{3!}{i!(2-i)!1!}\left(\frac{1}{2}\right)^{i}\left(\frac{1}{3}\right)^{2-i} \frac{1}{6}$
+
+3
+$\sum_{i=0}^{1} \sum_{j=0}^{1} \frac{3!}{i!j!(3-i-j)!}\left(\frac{1}{2}\right)^{i}\left(\frac{1}{3}\right)^{2-i-j}\left(\frac{1}{6}\right)^{j}$
+
+4
+$\sum_{i=0}^{2} \sum_{j=0}^{2} \frac{3!}{i!j!(3-i-j)!}\left(\frac{1}{2}\right)^{i}\left(\frac{1}{3}\right)^{2-i-j}\left(\frac{1}{6}\right)^{j}$
+
+5 Φ(0)
+
+6 Ved ikke
+
+Opgave 16
+
+Den betingede fordeling af den stokastiske variabel Y givet X er givet
+ved tætheden f_(Y)(y ∣ X = x) = 1/xe^( − y/x). Givet X = x er Y altså
+exp (1/x) fordelt. Fordelingen af X er gamma(2,1), dvs. tætheden
+f_(X)(x) er f_(X)(x) = xe^( − x).
+
+Spørgsmål 16
+
+Middelværdien af Y findes til
+
+1 1
+
+2 2
+
+3 3
+
+4 4
+
+5 $\frac{3}{2}$
+
+6 Ved ikke
+
+Opgave 17
+
+Ventetiden for opkald til en akuttelefon kan beskrives ved en fordeling
+med tæthedsfunktion f(x) = 2xe^( − x²). Der foretages fem opkald til
+akuttelefonen.
+
+Spørgsmål 17
+
+Den tredejelængste ventetid ud af de fem ventetider har tætheden
+
+1 2xe^( − x²)
+
+2 x⁵e^( − x²)
+
+3 $\binom{5}{3}\left(1-e^{-x^{2}}\right)^{3}\left(e^{-x^{2}}\right)^{2}$
+
+4 120xe^( − x²)(1+(e^( − x²))²−2e^( − x²))(e^( − x²))²
+
+5 60xe^( − 3x²)(1−e^( − x²))²
+
+6 Ved ikke
+
+Opgave 18
+
+I opgaven betragtes to uafhængige hændelser.
+
+Spørgsmål 18
+
+At to hændelser er uafhængige betyder, at
+
+1 hændelserne ikke kan forekomme samtidigt.
+
+2 man kan bestemme sandsynligheden for foreningshændelsen som et produkt
+af sandsynlighederne for de to hændelser hver for sig.
+
+3 man kan bestemme sandsynligheden for fælleshændelsen som et produkt af
+sandsynlighederne for de to hændelser hver for sig.
+
+4 man kan bestemme sandsynligheden for foreningshændelsen som summen af
+sandsynlighederne for de to hændelser hver for sig.
+
+5 indikatorfunktionen for foreningshændelsen kan bestemmes som summen af
+indikatorfunktionerne for de to hændelser hver for sig.
+
+6 Ved ikke
+
+Opgave 19
+
+Ændringen af kursen af et værdipapir over en dag kan beskrives ved en
+fordeling med middelværdi 0 og varians 49.
+
+Spørgsmål 19
+
+En øvre grænse for sandsynligheden for, at ændringen af kursen over en
+dag er større end 21, findes til
+
+1 2Φ( − 3)
+
+2 1 − Φ(3)
+
+3 $\frac{1}{9}$
+
+4 $\frac{1}{7}$
+
+5 $\frac{1}{3}$
+
+6 Ved ikke
+
+Opgave 20
+
+Det normerede afkast på to værdipapirer kan beskrives ved en
+standardiseret bivariat normalfordeling med korrelationskoefficient
+$\rho=-\frac{1}{2}$.
+
+Spørgsmål 20
+
+Sandsynligheden for, at afkastet på begge værdipapirer er negativt,
+findes til
+
+1 $\frac{\frac{\pi}{2}+\arctan (\sqrt{3})}{2 \pi}$
+
+2 $\frac{\frac{\pi}{2}-\arctan (\sqrt{3})}{2 \pi}$
+
+3 $\frac{1}{6}$
+
+4 $\frac{1}{4}$
+
+5 $\frac{1}{3}$
+
+6 Ved ikke
+
+Opgave 21
+
+Parret ( X, Y ) af kontinuerte stokastiske variable har den simultane
+tæthedsfunktion f(x, y) = 3e^( − (x + y)), for
+$\frac{1}{2} x \leq y \leq 2 x$.
+
+Spørgsmål 21
+
+Man finder $\mathrm{E}(\sqrt{X Y})$ til
+
+1
+$\mathrm{E}(\sqrt{X Y})=\int_{0}^{\infty} \int_{0}^{\infty} 3 \sqrt{x y} e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+
+2
+$\mathrm{E}(\sqrt{X Y})=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} 3 \sqrt{x y} e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+
+3
+$\mathrm{E}(\sqrt{X Y})=\int_{0}^{\infty} \int_{\frac{1}{2} x}^{2 x} 3 \sqrt{x y} e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+
+4
+$\mathrm{E}(\sqrt{X Y})=\int_{0}^{\infty} \int_{0}^{\infty} 3 x y \sqrt{x y} e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+
+5
+$\mathrm{E}(\sqrt{X Y})=\int_{0}^{\infty} \int_{\frac{1}{2} x}^{2 x} 3 x y \sqrt{x y} e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+
+6 Ved ikke
+
+Opgave 22
+
+En forsker mener at have påvist, at egetræers levetid i år kan beskrives
+ved en fordeling med tæthed f(t) = 3/(1 + 2t)^(5/2). Man kan i det
+følgende antage, at forskerens påstand er korrekt.
+
+Spørgsmål 22
+
+Sandsynligheden for, at et 100 år gammelt egetræ vil dø indenfor et kort
+tidsrum kaldet Δt, bestemmes, eventuelt approksimativt, til
+
+1 $\frac{3}{201} \Delta t$
+
+2 $\frac{\sqrt{201}}{2706867} \Delta t$
+
+3 $\frac{\sqrt{201}}{40401}$
+
+4 $1-(201+2 \Delta t)^{-\frac{3}{2}}$
+
+5 $(201+2 \Delta t)^{-\frac{3}{2}}$
+
+6 Ved ikke
+
+Opgave 23
+
+Om de stokastiske variable X og Y oplyses
+E(X) = 2,  V(X) = 4, E(Y) = 3,  V(Y) = 9, E(XY)= 6.
+
+Spørgsmål 23
+
+Om X og Y gælder
+
+1 X og Y er uafhængige
+
+2 X og Y er ukorrelerede
+
+3 X og Y er positivt korrelerede
+
+4 X og Y er negativt korrelerede
+
+5 Ingen af de ovenstående kan afgøres ud fra de givne oplysninger
+
+6 Ved ikke
+
+Opgave 24
+
+Et udfaldsrum Ω er opdelt i tre indbyrdes disjunkte hændelser
+C₁, C₂, C₃, således at foreningshændelsen af de tre hændelser er den
+sikre hændelse ( Ω ). Man får oplyst, at
+$\mathrm{P}\left(C_{1}\right)=\mathrm{P}\left(C_{2}\right)= \frac{1}{4}$.
+Man betragter yderligere hændelsen D om, hvilket det oplyses
+P(D∣C₁) = P(D∣C₂) = 1/5, P(D∣C₃) = 2/5.
+
+Spørgsmål 24
+
+Hvis hændelsen D er indtruffet, bestemmes sandsynligheden for, at
+hændelsen C₁ også er indtruffet, til
+
+1 $\frac{1}{7}$
+
+2 $\frac{1}{6}$
+
+3 $\frac{2}{11}$
+
+4 $\frac{1}{4}$
+
+5 Sandsynligheden kan ikke beregnes grundet manglende oplysninger
+
+6 Ved ikke
+
+Opgave 25
+
+Man antager, at bakteriekolonier i et vækstmedium, der observeres for en
+standardiseret vækstperiode, optræder uafhængigt af hinanden med en
+middelforekomst på 2 kolonier per ml. Man kan antage, at den enkelte
+bakteriekoloni har en forsvindende udbredelse.
+
+Spørgsmål 25
+
+Sandsynligheden for ikke at finde en bakteriekoloni i
+$\frac{1}{4} \mathrm{ml}$ af vækstmediet efter en standardiseret
+vækstperiode findes til
+
+1 0,607
+
+2 0,500
+
+3 0,368
+
+4 0,250
+
+5 0,125
+
+6 Ved ikke
+
+Opgave 26
+
+En diskret stokastisk variabel N er ligefordelt på 1, 2, …, n, medens X
+for givet N = i følger en binomialfordeling med antalsparameter i og
+sandsynlighedsparameter $\frac{1}{i}$.
+
+Spørgsmål 26
+
+Man finder P(X = n) til
+
+1
+$\sum_{i=1}^{n} \frac{1}{n}\binom{n}{i} \frac{1}{n}^{i}\left(1-\frac{1}{n}\right)^{n-i}$
+
+2 $\binom{n+1}{2} \frac{1}{n^{n}}$
+
+3 $\frac{1}{n^{n}}$
+
+4 $\frac{1}{n^{n+1}}$
+
+5 $(n-1) \frac{1}{n^{n}}$
+
+6 Ved ikke
+
+Opgave 27
+
+Funktionen f(x) = c(x²−4x+3)e^( − x) foreslåes som en tæthedsfunktion
+for en kontinuert stokastisk variabel.
+
+Spørgsmål 27
+
+Om funktionen f(x) gælder
+
+1 f(x) kan være en tæthed for alle positive x og et positivt valgt c
+
+2 f(x) kan være en tæthed for alle positive x og et negativt valgt c
+
+3 f(x) kan være en tæthed for alle negative x og et positivt valgt c
+
+4 f(x) kan være en tæthed for alle negative x og et negativt valgt c
+
+5 f(x) kan ikke være en tæthed på hverken hele ℝ_(−)eller hele ℝ₊.
+
+6 Ved ikke
+
+Opgave 28
+
+Den stokastiske variabel X følger en geometrisk fordeling
+$\mathrm{P}(X=x)=\frac{1}{5}\left(\frac{4}{5}\right)^{x-1}$, medens den
+af X uafhængige Y følger en Poissonfordeling
+$\mathrm{P}(Y=y)=\frac{2^{y}}{y!} e^{-2}$.
+
+Spørgsmål 28
+
+Man finder E(XY) + E(X)E(Y) til
+
+1 0
+
+2 10
+
+3 16
+
+4 20
+
+5 32
+
+6 Ved ikke
+
+Opgave 29
+
+Et ambulatorium på et hospital indkalder patienter til behandling. For
+hver patient, der er tilsagt, er der en sandsynlighed for, at patienten
+udebliver. Man ønsker at bestemme, hvor mange patienter, der skal
+indkaldes for, at sandsynligheden for, at der møder mindst 10 patienter
+frem er større end 90%.
+
+Spørgsmål 29
+
+Den bedst egnede sandsynlighedsfordeling til at foretage ovenstående
+beregning er
+
+1 Normalfordeling
+
+2 Gammafordeling
+
+3 Poissonfordeling
+
+4 Binomialfordeling
+
+5 Negativ binomialfordeling
+
+6 Ved ikke
+
+Opgave 30
+
+Fra Australien udføres blandt andet jernmalm og kul. Mængden af jernmalm
+og kul, der udføres et givet år, kan beskrives ved en bivariat
+normalfordeling med parametre (i millioner tons)
+E(X) = 500, E(Y) = 200,  V(X) = 2500,  V(Y) = 1600 og
+korrelationskoefficient $\rho=\frac{4}{5}$. I ovenstående betegner X
+mængden af jernmalm og Y betegner mængden af kul, der udføres.
+
+Spørgsmål 30
+
+Hvad er den forventede mængde af jernmalm angivet i millioner tons, der
+udføres et år, hvor der udføres 160 millioner tons kul.
+
+1 540
+
+2 500
+
+3 475
+
+4 460
+
+5 450
+
+6 Ved ikke
+
+Slut på opgavesættet.

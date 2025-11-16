@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "prob_mcq_translation",
+  "type": "object",
+  "required": [
+    "canonical_id",
+    "lang_src",
+    "lang_tgt",
+    "context_tgt",
+    "question_tgt",
+    "options_tgt",
+    "answer_index"
+  ],
+  "properties": {
+    "canonical_id": {
+      "type": "string"
+    },
+    "lang_src": {
+      "type": "string",
+      "enum": [
+        "da",
+        "en"
+      ]
+    },
+    "lang_tgt": {
+      "type": "string",
+      "enum": [
+        "da",
+        "en"
+      ]
+    },
+    "context_tgt": {
+      "type": "string"
+    },
+    "question_tgt": {
+      "type": "string"
+    },
+    "options_tgt": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "answer_index": {
+      "type": "integer"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

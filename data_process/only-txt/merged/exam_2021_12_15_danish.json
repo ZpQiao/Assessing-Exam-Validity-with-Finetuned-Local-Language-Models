@@ -1,0 +1,452 @@
+[
+  {
+    "language": "danish",
+    "number": 1,
+    "context": "Om hændelserne A og B oplyses, at sandsynligheden for, at hændelse A indtræffer, er $\\frac{2}{7}$, mens sandsynligheden for, at B også indtræffer, når det vides, at A indtræffer, er $\\frac{14}{23}$.",
+    "question": "Sandsynligheden for, at både A og B indtræffer, er",
+    "options": [
+      "$\\frac{144}{161}$",
+      "$\\frac{1}{7}$",
+      "$\\frac{46}{161}$",
+      "$\\frac{4}{23}$",
+      "$\\frac{14}{23}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 2,
+    "context": "Man betragter en stokastisk variabel X, der følger en gamma (2, λ)-fordeling, og danner en ny variabel $Y=\\frac{1}{X}$.",
+    "question": "Tæthedsfunktionen f_(Y)(y) findes til",
+    "options": [
+      "$f_{Y}(y)=\\frac{\\lambda^{2}}{y^{3}} e^{-\\frac{\\lambda}{y}}$",
+      "$f_{Y}(y)=\\frac{\\lambda^{2}}{y^{2}} e^{-\\frac{\\lambda}{y}}$",
+      "$f_{Y}(y)=\\frac{\\lambda^{2}}{y} e^{-\\frac{\\lambda}{y}}$",
+      "$f_{Y}(y)=\\frac{1}{\\lambda^{2} y e^{-\\lambda y}}$",
+      "$f_{Y}(y)=\\lambda^{2} y e^{-\\frac{\\lambda}{y}}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 3,
+    "context": "En kæmpe bjørneklo (plante) er på et tidspunkt blevet indført til et område. Placeringen af planterne i anden generation kan i et passende normeret koordinatsystem, hvor den oprindelige plante er placeret i koordinatsystemets nulpunkt, beskrives ved uafhængige standardiserede normalfordelte variable.",
+    "question": "Sandsynligheden for, at en tilfældig valgt plante i anden generation er lokaliseret i en afstand mellem $\\frac{1}{2}$ og 1 længdeenhed fra den oprindelige plante, er",
+    "options": [
+      "$\\Phi(1)-\\Phi\\left(\\frac{1}{2}\\right)$",
+      "$\\Phi(1)-\\Phi\\left(\\frac{\\sqrt{2}}{2}\\right)$",
+      "$e^{-\\frac{1}{2}}-e^{-2}$",
+      "$\\left(\\Phi(1)-\\Phi\\left(\\frac{1}{2}\\right)\\right)^{2}$",
+      "$e^{-\\frac{1}{8}}-e^{-\\frac{1}{2}}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 4,
+    "context": "Lad X₁, X₂, … være uafhængige eksponential ( λ ) fordelte variable og lad N være geometrisk ( p ) fordelt, i.e. P(N = n) = (1 - p)^(n - 1)p, n = 1, 2, ….",
+    "question": "Middelværdien E(X₁+X₂⋯+X_(N)) af $\\sum_{i=1}^{N} X_{i}$ findes til",
+    "options": [
+      "$\\frac{1}{\\lambda p}$",
+      "$\\frac{1}{\\lambda(1-p)}$",
+      "$\\frac{p}{\\lambda}$",
+      "$\\frac{1-p}{\\lambda}$",
+      "$\\frac{\\lambda}{p}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 5,
+    "context": "I en kasse med 50 nyhøstede æbler er der talt 5 rådne æbler. Man antager, at denne kasse er repræsentativ for æbleplantagen, den kommer fra.",
+    "question": "Angiv, eventuelt approksimativt, sandsynligheden for, at der er mere end",
+    "options": [
+      "$1-\\Phi\\left(\\frac{300,5-360}{18}\\right)$",
+      "$\\sum_{i=0}^{300}\\binom{3600}{i}(0,1)^{i}(0,9)^{3600-i}$",
+      "00 rådne æbler i en høst på 3600 æbler",
+      "$1-\\sum_{i=0}^{299}\\binom{299}{i}(0,1)^{i}(0,9)^{299-i}$",
+      "$\\Phi\\left(\\frac{299,5-360}{18}\\right)$",
+      "$\\sum_{i=0}^{301}\\binom{301}{i}(0,1)^{i}(0,9)^{301-i}$"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 6,
+    "context": "En mand slår med en fair terning indtil han to gange i træk får det samme antal øjne. Lad X betegne det samlede antal slag, han bruger.",
+    "question": "Sandsynlighederne P(X = k) for k ∈ N findes til",
+    "options": [
+      "$\\left(\\frac{5}{6}\\right)^{k-1} \\frac{1}{6}, \\quad k \\in\\{1,2,3, \\ldots\\}$",
+      "$\\left(\\frac{5}{6}\\right)^{k-2} \\frac{1}{6}, \\quad k \\in\\{2,3,4, \\ldots\\}$",
+      "$\\frac{1}{6}, \\quad k \\in\\{1,2,3,4,5,6\\}$",
+      "$\\frac{1}{36}, \\quad k \\in\\{1,2,3, \\ldots, 36\\}$",
+      "$\\binom{k+1}{1}\\left(\\frac{1}{6}\\right)^{2}\\left(\\frac{5}{6}\\right)^{k}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 7,
+    "context": "Den simultane fordelingsfunktion F(x, y) for de to positive stokastiske variable X og Y angiver sandsynligheden for, at X er mindre end eller lig med x, og, at Y samtidigt er mindre end eller lig med y. De stokastiske variable X og Y har den simultane fordelingsfunktion F(x, y) = 3y²x - 3yx² + x³.",
+    "question": "Sandsynligheden for hændelsen \" $X \\leq \\frac{1}{3}, Y \\leq \\frac{2}{3}$ \" findes til",
+    "options": [
+      "$\\frac{5}{486}$",
+      "$\\frac{5}{286}$",
+      "$\\frac{7}{27}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{8}{405}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 8,
+    "context": "Det forventede antal af personer smittet med Covid-19 i løbet af en uge i en given kommune er 50 . Variabiliteten beskrives ved en standardafvigelse, der ligeledes er 50.",
+    "question": "Den bedste ⌀ vre grænse for sandsynligheden for, at der er flere end 500 smittede i kommunen i en bestemt uge, findes til",
+    "options": [
+      "1 - Φ(9)",
+      "$\\Phi\\left(\\frac{500-50}{50}\\right)$",
+      "$\\frac{1}{10}$",
+      "$\\frac{1}{81}$",
+      "$\\sum_{i=500}^{\\infty} \\frac{50^{i}}{i!} e^{-50}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 9,
+    "context": "Man har udviklet en sandsynlighedsmodel til beskrivelse af bestanden af to kænguruarter. Der er tilstrækkeligt mange individer til, at en bivariat normalfordeling kan bruges som model. Det forventede antal af dyr af hver af de to arter er 800, variansen for antallet af dyr er for begge arter 25600 , mens korrelationskoefficienten er ρ.",
+    "question": "Sandsynligheden for, at det totale antal dyr ikke er større end 1400, findes til",
+    "options": [
+      "$\\Phi\\left(-\\frac{5 \\sqrt{2}}{8}\\right)$",
+      "$\\Phi\\left(-\\frac{5 \\sqrt{2} \\sqrt{1+\\rho}}{8(1+\\rho)}\\right)$",
+      "$\\Phi\\left(-\\frac{5 \\sqrt{2}}{16 \\sqrt{1+\\rho}}\\right)$",
+      "$\\Phi\\left(-\\frac{5 \\sqrt{3} \\sqrt{1+\\rho}}{8(1+\\rho)}\\right)$",
+      "$\\Phi\\left(-\\frac{5 \\sqrt{3}}{16 \\sqrt{1+\\rho}}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 10,
+    "context": "Fabriksfremstillede teboller har en vis variation i størrelsen. Afvigelsen kan på en passende normeret skala beskrives ved tæthedsfunktionen $f(x)=6\\left(\\frac{1}{2}+x\\right)\\left(\\frac{1}{2}-x\\right)$ for $-\\frac{1}{2}<x<\\frac{1}{2}$.",
+    "question": "Sandsynligheden for, at den numeriske afvigelse højest er $\\frac{1}{4}$ på den normerede skala, findes til",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{5}{8}$",
+      "$\\frac{9}{16}$",
+      "$\\frac{11}{16}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 11,
+    "context": "For at estimere vildtpopulationen i et reservat skydes 25 bjørne med bedøvende pile og mærkes. På et senere tidspunkt skydes 5 bjørne, hvoraf de 2 var mærkede.",
+    "question": "Under antagelse af, at den samlede population er 75 , hvad er da sandsynligheden for at få netop 2 mærkede blandt de 5 skudte.",
+    "options": [
+      "$\\binom{5}{3} \\frac{1}{3^{2}}\\left(\\frac{2}{3}\\right)^{2}$",
+      "$\\frac{1}{2}\\left(\\frac{5}{3}\\right)^{2} e^{-\\frac{5}{3}}$",
+      "$\\frac{\\binom{25}{2}\\binom{50}{3}}{\\binom{75}{5}}$",
+      "$\\binom{75}{5} \\frac{1}{3^{5}}\\left(\\frac{2}{3}\\right)^{70}$",
+      "$\\frac{\\binom{25}{3}\\binom{50}{2}}{\\binom{75}{5}}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 12,
+    "context": "Hos en fabrikant af spil undersøger man, om almindelige sekssidede terninger er korrekt afbalancerede ved at undersøge antallet af enkeltkast, der giver et lige antal øjne.",
+    "question": "Sandsynligheden for højst 2 gange at få et lige antal øjne ved 6 kast med en afbalanceret terning er",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{64} \\sum_{i=0}^{2}\\binom{6}{i}$",
+      "$\\sum_{i=0}^{2}\\binom{6}{i}\\left(\\frac{1}{3}\\right)^{i}\\left(\\frac{2}{3}\\right)^{6-i}$",
+      "$\\frac{1}{64}+5 \\cdot \\frac{1}{64}+12 \\cdot \\frac{1}{64}$",
+      "$1-\\frac{1}{64} \\sum_{i=0}^{2}\\binom{6}{i}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 13,
+    "context": "Lad A og B være to gensidigt udelukkende hændelser begge med positiv sandsynlighed og lad I_(A) og I_(B) være indikatorvariable for de to hændelser.",
+    "question": "Om korrelationen mellem I_(A) og I_(B) - Corr (I_(A),I_(B)) - gælder",
+    "options": [
+      "Corr (I_(A),I_(B)) < 0",
+      "Corr (I_(A),I_(B)) = 0",
+      "Corr (I_(A),I_(B)) > 0",
+      "Corr (I_(A),I_(B)) = 1",
+      "Man kan ikke konkludere noget generelt om fortegnet for  Corr (I_(A),I_(B)).",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 14,
+    "context": "Et punkt i området afgrænset af linierne y = x, y = x + 2, y = 6 og x = 0 vælges tilfældigt.",
+    "question": "Sandsynligheden for, at x-koordinaten er større end 4, findes til",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{5}{24}$",
+      "$\\int_{4}^{6} \\int_{x}^{6} \\frac{1}{12} \\mathrm{~d} y \\mathrm{~d} x$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 15,
+    "context": "Det oplyses, at tætheden for den stokastiske variabel Y er gamma (4, 1), mens tætheden for den stokastiske variabel X for givet Y er $f_{X \\mid Y=y}(x)=6 \\frac{x}{y^{2}}\\left(1-\\frac{x}{y}\\right)$, hvor 0 ≤ x ≤ y.",
+    "question": "Tætheden f_(X)(x) for X findes til",
+    "options": [
+      "$\\frac{1}{y}$",
+      "e^( - x)",
+      "$\\int_{0}^{\\infty} 6 \\frac{x}{y^{2}}\\left(1-\\frac{x}{y}\\right) \\frac{y^{4}}{4!} e^{-y} \\mathrm{~d} y$",
+      "$\\sum_{i=0}^{3}\\binom{3}{i} \\frac{1}{16} \\frac{x^{i}}{i!} e^{-x}$",
+      "∫_(x)^(∞)x(y - x)e^( - y) dy",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 16,
+    "context": "Man betragter parret ( X, Y ) af stokastiske variable, der følger en standardiseret bivariat normalfordeling med korrelationskoefficient $\\frac{1}{2}$.",
+    "question": "Sandsynligheden P(X > |Y|) findes til",
+    "options": [
+      "$\\frac{\\operatorname{Arctan}\\left(\\frac{1}{\\sqrt{3}}\\right)-\\operatorname{Arctan}(\\sqrt{3})}{2 \\pi}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{\\operatorname{Arctan}(\\sqrt{3})-\\operatorname{Arctan}\\left(\\frac{\\sqrt{3}}{3}\\right)}{2 \\pi}$",
+      "$\\frac{\\operatorname{Atan}(\\sqrt{3})+\\operatorname{Arctan}\\left(\\frac{3}{\\sqrt{2}}\\right)}{2 \\pi}$",
+      "$\\frac{\\operatorname{Atan}(\\sqrt{3})+\\operatorname{Arctan}\\left(\\frac{2}{\\sqrt{3}}\\right)}{2 \\pi}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 17,
+    "context": "Man betragter tre uafhængige standard normalfordelte variable, og interesserer sig for den næststørste af de tre.",
+    "question": "Tætheden for den næststørste variabel er",
+    "options": [
+      "$\\frac{6}{\\sqrt{2 \\pi}} e^{-\\frac{1}{2} x^{2}}\\left(\\Phi(x)-\\Phi(x)^{2}\\right)$",
+      "$\\frac{1}{\\sqrt{\\pi}} \\frac{1}{\\sqrt{3}} e^{-\\frac{1}{2} x^{2}}$",
+      "$\\frac{1}{\\sqrt{2 \\pi}} e^{-\\frac{1}{2} x^{2}}$",
+      "$\\frac{6}{\\sqrt{2 \\pi}} e^{-\\frac{1}{2} x^{2}}\\left(\\frac{1}{\\sqrt{2 \\pi}} e^{-\\frac{1}{2} x^{2}}(x)-\\left(\\frac{1}{\\sqrt{2 \\pi}} e^{-\\frac{1}{2} x^{2}}\\right)^{2}\\right)$",
+      "$\\frac{6}{\\sqrt{2 \\pi}} e^{-\\frac{1}{2} x^{2}} \\Phi(x)^{2}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 18,
+    "context": "Man antager, at der i storbyområdet Seattle/Tacoma i gennemsnit forekommer et vulkanudbrud, der medfører omfattende pyroplastisk flow, hvert 4000 år.",
+    "question": "Sandsynligheden for, at der forekommer mindst et sådant udbrud i løbet af 100 år, findes til",
+    "options": [
+      "$\\frac{1}{40}$",
+      "$e^{-\\frac{1}{40}}$",
+      "$1-\\left(1-\\frac{1}{4000}\\right)^{100}$",
+      "$\\Phi\\left(\\frac{1}{40}\\right)-\\frac{1}{2}$",
+      "$1-e^{-\\frac{1}{40}}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 19,
+    "context": "Et almindeligt spil kort har 52 kort, hvoraf 4 er esser og 13 er spar. Ud af et sådant spil trækkes en hånd bestående af 4 kort uden tilbagelægning. Der gives nu point, således at hvert es tæller 10 points, og hver spar tæller 1 point. (Spar es tæller således både som es og som spar).",
+    "question": "Det forventede samlede antal points på en hånd er",
+    "options": [
+      "$10 \\cdot\\left(1-\\left(1-\\frac{4}{52}\\right)^{4}\\right)+\\left(1-\\left(1-\\frac{13}{52}\\right)^{4}\\right)$",
+      "$10 \\cdot \\frac{4}{52} \\frac{3}{51} \\frac{2}{50} \\frac{1}{49}+13 \\cdot 12 \\cdot 11 \\cdot 10 \\cdot \\frac{4 \\cdot 3 \\cdot 2 \\cdot 1}{52 \\cdot 51 \\cdot 50 \\cdot 49}$",
+      "$10 \\cdot\\left(\\frac{4}{52}+\\frac{3}{51}+\\frac{2}{50}+\\frac{1}{49}\\right)+1 \\cdot\\left(\\frac{13}{52}+\\frac{12}{51}+\\frac{11}{50}+\\frac{10}{49}\\right)$",
+      "$\\frac{53}{13}$",
+      "4",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 20,
+    "context": "De stokastiske variable X og Y er to uafhængige binomial $\\left(2, \\frac{1}{2}\\right)$ fordelte stokastiske variable.",
+    "question": "Sandsynligheden P(X - Y = 0) findes til",
+    "options": [
+      "$\\frac{1}{16}$",
+      "$\\frac{1}{9}$",
+      "$\\frac{3}{16}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{3}{8}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 21,
+    "context": "På en sømfabrik er der 3 maskiner A , B og C , der producerer søm. Deres produktion udgør henholdsvis $\\frac{1}{4}, \\frac{7}{20}$ og $\\frac{2}{5}$ af hele produktionen. Deres fejlproduktionsrater er henholdsvis $\\frac{1}{20}, \\frac{1}{25}$ og $\\frac{1}{50}$. Der udtages nu et tilfældigt søm fra produktionen og dette findes til at være defekt.",
+    "question": "Sandsynligheden for, at det udtagne søm stammer fra maskine A, findes til",
+    "options": [
+      "$\\frac{1}{20}$",
+      "$\\frac{1}{20} \\cdot \\frac{1}{4}$",
+      "$\\frac{25}{69}$",
+      "$\\frac{25}{81}$",
+      "$\\frac{35}{81}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 22,
+    "context": "Man betragter parret ( X, Y ) af stokastiske variable, der følger en ligefordeling over området 0 < x < y < 1. Man danner Z = X + Y.",
+    "question": "Tætheden f_(Z)(z) findes til",
+    "options": [
+      "∫₀¹2 dx",
+      "$\\left\\{\\begin{array}{cc}z & \\text { for } 0<z \\leq 1 \\\\ 2-z & \\text { for } 1<z<2\\end{array}\\right.$",
+      "$\\frac{1}{2}$",
+      "$\\left\\{\\begin{array}{cc}\\frac{1}{2} & \\text { for } 0<z \\leq 1 \\\\ 2-z & \\text { for } 1<z<2\\end{array}\\right.$",
+      "∫₀^(z)2 dx",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 23,
+    "context": "I et binært kommunikationssystem overføres signal enten ved spændingen +5 V eller ved spændingen -5 V. Systemet fungerer, således at spændingen sættes til enten -5 V eller +5 V ved begyndelsen af hvert tidsinterval (slot) og spændingen fastholdes på dette niveau i hele intervallet. Sandsynligheden for, at spændingen er +5 V, er $\\frac{3}{7}$. Sandsynligheden for, at et interval med spændingen +5 V efterfølges af et med spændingen +5 V , er $\\frac{3}{8}$. Man betragter to på hinanden følgende intervaller.",
+    "question": "Sandsynligheden for, at mindst et af de to intervaller har en spænding på +5 V , findes til",
+    "options": [
+      "$\\frac{9}{64}$",
+      "$\\frac{9}{56}$",
+      "$\\frac{9}{49}$",
+      "$\\frac{39}{56}$",
+      "$\\frac{6}{7}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 24,
+    "context": "Man har givet X og Y som to uafhængige Poisson(2) variable.",
+    "question": "Man finder den betingede fordeling P(X = x ∣ X + Y = 2) til",
+    "options": [
+      "$\\frac{1}{x!} e^{-1}, \\quad x=0,1,2,3, \\ldots$",
+      "$\\binom{2}{x} \\frac{1}{4}, \\quad x=0,1,2$",
+      "$\\left(\\frac{1}{2}\\right)^{x+1}, \\quad x=0,1,2,3, \\ldots$",
+      "$\\frac{1}{3}, \\quad x=0,1,2$",
+      "$\\frac{3-2|x-1|}{5}, \\quad x=0,1,2$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 25,
+    "context": "Man har givet den binomial $\\left(10, \\frac{1}{4}\\right)$ fordelte stokastiske variabel X.",
+    "question": "Middelværdien E(X) er",
+    "options": [
+      "et tal",
+      "en stokastiske variabel",
+      "en hændelse",
+      "en funktion",
+      "et udfald",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 26,
+    "context": "En ikke negativ kontinuert stokastisk variabel X har hazard rate h(x) = (x - 1)².",
+    "question": "Man finder P(X > 1) til",
+    "options": [
+      "1",
+      "e^( - 1)",
+      "$e^{-\\frac{1}{3}}$",
+      "$e^{-\\frac{1}{4}}$",
+      "Spørgsmålet kan ikke besvares, funktionen h(x) kan ikke være en hazard  rate.",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 27,
+    "context": "Betragt to uafhængige Poisson-fordelte variable X og Y med middelværdi μ_(x) og μ_(y).",
+    "question": "P(Y > X) bestemmes til",
+    "options": [
+      "$\\Phi\\left(\\frac{\\mu_{x}-\\mu_{y}}{\\sqrt{\\mu_{x}+\\mu_{y}}}\\right)$",
+      "$\\frac{\\mu_{y}}{\\mu_{x}+\\mu_{y}}$",
+      "$\\sum_{j=0}^{\\infty} \\frac{\\mu_{x}^{i}}{i!} e^{-\\mu_{x}} \\cdot\\left(\\sum_{j=i}^{\\infty} \\frac{\\mu_{y}^{j}}{j!} e^{-\\mu_{y}}\\right)$",
+      "1 - e^( - (μ_(y)-μ_(x)))",
+      "$e^{-\\left(\\mu_{x}+\\mu_{y}\\right)} \\sum_{j=1}^{\\infty}\\left(\\frac{\\mu_{y}^{j}}{j!} \\cdot \\sum_{i=0}^{j-1} \\frac{\\mu_{x}^{i}}{i!}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 28,
+    "context": "En spiller kaster 6 gange med en almindelig sekssidet terning. Man registrerer det højeste antal øjne blandt de 6 kast.",
+    "question": "Sansynligheden for, at det højeste antal øjne i de 6 kast er mindre end eller lig x, findes til",
+    "options": [
+      "$\\frac{x}{36}$",
+      "$\\frac{x}{6}$",
+      "$\\sum_{t=1}^{x}\\binom{6}{t}\\left(\\frac{5}{6}\\right)^{t}\\left(\\frac{1}{6}\\right)^{6-t}$",
+      "$\\frac{x^{6}}{46656}$",
+      "$\\begin{cases}\\frac{1}{46656} & \\text { for } x=1 \\\\ \\frac{4}{36} & \\text { for } x=2 \\\\ \\frac{27}{216} & \\text { for } x=3 \\\\ \\frac{256}{1296} & \\text { for } x=4 \\\\ \\frac{3125}{7776} & \\text { for } x=5 \\\\ 1 & \\text { for } x=6\\end{cases}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 29,
+    "context": "En aktieportefølje indeholder aktier fra to selskaber indenfor byggesektoren. Gevinsten på de to aktier kan beskrives ved en bivariat normalfordeling, hvor middelværdien på hver af aktierne er 100 , mens variansen for hver af dem er 20² = 400. Korrelationskoefficienten er $\\rho=\\frac{2}{3}$.",
+    "question": "Hvis den ene aktie har en værdi på 130 , hvad er da den forventede værdi af den anden aktie?",
+    "options": [
+      "100",
+      "$\\frac{260}{3}$",
+      "$100+10 \\sqrt{3}$",
+      "120",
+      "$100+20 \\sqrt{2}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 30,
+    "context": "Det antages, at skytters færdighed beskrives ved et (reelt) tal på en skala. Færdigheden på denne skala af en tilfældig skytte kan beskrives som en standard normalfordelt stokastisk variabel. Det oplyses yderligere, at sandsynligheden for, at en skytte med færdighed k på skalaen opnår mindst 200 point ved en skydekonkurrence, er $\\frac{1}{2+k^{2}}$.",
+    "question": "Sandsynligheden for, at en tilfældig valgt skytte opnår mindst 200 ved en skydekonkurrence, findes til",
+    "options": [
+      "$\\square \\quad \\Phi\\left(-\\frac{5 \\sqrt{2}}{8}\\right)$",
+      "$\\int_{-\\frac{1}{1+k^{2}}}^{\\frac{1}{1+k^{2}}} \\frac{1}{2+x^{2}} \\frac{1}{\\sqrt{2 \\pi}} e^{-\\frac{x^{2}}{2}} \\mathrm{~d} x$",
+      "$\\int_{-\\infty}^{\\infty} \\frac{1}{2+x^{2}} \\frac{1}{\\sqrt{2 \\pi}} e^{-\\frac{x^{2}}{2}} \\mathrm{~d} x$",
+      "$\\underline{2049}$ 3125",
+      "$\\frac{2}{3}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  }
+]

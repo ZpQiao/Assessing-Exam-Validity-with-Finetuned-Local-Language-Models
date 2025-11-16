@@ -1,0 +1,452 @@
+[
+  {
+    "language": "danish",
+    "number": 1,
+    "context": "En provisionslønnet telefonsælger ringer til 20 tilfældige personer i løbet af sin vagt. Der er \\(10 \\%\\) sandsynlighed for, at en kunde accepterer tilbuddet.",
+    "question": "Sandsynligheden for, at højst to kunder accepterer tilbuddet i løbet af sælgerens vagt, findes til",
+    "options": [
+      "0,1",
+      "0,5",
+      "\\(\\Phi\\left(\\frac{\\frac{1}{2}}{\\sqrt{20 \\cdot 0,1 \\cdot 0,9}}\\right)\\)",
+      "\\(5 e^{-2}\\)",
+      "\\(\\left(\\frac{9}{10}\\right)^{20}+20 \\frac{1}{10}\\left(\\frac{9}{10}\\right)^{19}+190\\left(\\frac{1}{10}\\right)^{2}\\left(\\frac{9}{10}\\right)^{18}\\)",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 2,
+    "context": "En person opholder sig i en fugtig skov, hvor vedkommende modtager gennemsnitligt et insektbid per 5. minut. Man antager, at insekterne bider uafhængigt af hinanden.",
+    "question": "Antallet af bid, personen udsættes for i løbet af en halv time, beskrives bedst ved en",
+    "options": [
+      "Poisson(6) fordeling",
+      "geometrisk \\(\\left(\\frac{1}{6}\\right)\\) fordeling",
+      "binomial( \\(12, \\frac{1}{2}\\) ) fordeling",
+      "uniform( \\(12, \\frac{1}{2}\\) ) fordeling",
+      "negativ binomial( \\(12, \\frac{1}{2}\\) ) fordeling",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 3,
+    "context": "To instrumenter i et flycockpit kan erstatte hinanden. Sandsynligheden for, at det første fejler, er \\(p\\), medens sandsynligheden for, at de begge fejler, er \\(q\\). Man er i en situation, hvor det første instrument har fejlet.",
+    "question": "Hvad er sandsynligheden for, at det andet instrument også fejler",
+    "options": [
+      "\\(p\\)",
+      "\\(\\frac{q}{p}\\)",
+      "\\(p-q\\)",
+      "\\(\\sqrt{q}\\)",
+      "\\(q p\\)",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 4,
+    "context": "Man har, at den stokastiske variabel \\(X\\) følger en Poisson(2) fordeling, medens den stokastiske variabel \\(Y\\) følger en hypergeometrisk(10,100,20) fordeling.",
+    "question": "Man finder",
+    "options": [
+      "\\(\\mathrm{E}(X+Y)=2+\\frac{100!}{90!} \\frac{10!}{20!}\\)",
+      "\\(\\mathrm{E}(X+Y)=\\frac{19}{5}\\)",
+      "\\(\\mathrm{E}(X+Y)=4\\)",
+      "\\(\\mathrm{E}(X+Y)=\\frac{17}{5}\\)",
+      "\\(\\mathrm{E}(X+Y)\\) kan ikke bestemmes, da Poissonfordelingen og den hypergeometriske fordeling ikke er kompatible",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 5,
+    "context": "Man har \\(\\mathrm{E}(X)=2, \\mathrm{E}\\left(X^{2}\\right)=4, \\mathrm{E}(Y)=0, \\mathrm{E}\\left(Y^{2}\\right)=9\\) og \\(Z=X+Y\\).",
+    "question": "Man finder",
+    "options": [
+      "\\(\\operatorname{Var}(Z)=7\\)",
+      "\\(\\operatorname{Var}(Z)=9\\)",
+      "\\(\\operatorname{Var}(Z)=11\\)",
+      "\\(\\operatorname{Var}(Z)=13\\)",
+      "Spørgsmålet kan ikke besvares, da der ikke er givet tilstrækkelige oplysninger.",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 6,
+    "context": "Man har udviklet en sandsynlighedsmodel til beskrivelse af bestanden af to kænguruarter. Der er tilstrækkeligt mange individer til, at en bivariat normalfordeling kan bruges som model. Det forventede antal af hver af de to arter er 800 , variansen for begge arter er 1600 , medens korrelationskoefficienten er \\(\\rho=-\\frac{2}{5}\\). Man har optalt antallet af den ene art til at være 700 .",
+    "question": "Det forventede antal af den anden (ikke optalte) art er",
+    "options": [
+      "735",
+      "760",
+      "800",
+      "840",
+      "865",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 7,
+    "context": "Den kontinuerte stokastiske variabel \\(V\\) er uniformt fordelt på enhedsintervallet ( \\(0 ; 1\\) ). Man danner \\(X=e^{V}\\).",
+    "question": "Tætheden \\(f_{X}(x)\\) for \\(X\\) findes til",
+    "options": [
+      "\\(f_{X}(x)=e^{-x}, \\quad x>0\\)",
+      "\\(f_{X}(x)=\\frac{1}{e}, \\quad 0<x<e\\)",
+      "\\(f_{X}(x)=\\frac{1}{x}, \\quad 1<x<e\\)",
+      "\\(f_{X}(x)=\\frac{1}{e-1}, \\quad 1<x<e\\)",
+      "\\(f_{X}(x)=\\log (x), \\quad 1<x<e\\)",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 8,
+    "context": "Levetiden af en elektronisk komponent er givet ved en gamma(3,1) fordeling, hvor tidsenheden er et år. Komponenten har opnået alderen 2 år.",
+    "question": "Sandsynligheden for, at komponenten fejler indenfor den første uge efter, at den har opnået alderen to år, findes, eventuelt approksimativt, til",
+    "options": [
+      "\\(4 e^{-2} \\frac{1}{52}\\)",
+      "\\(\\int_{2}^{2+\\frac{1}{52}} \\frac{x^{2}}{2} e^{-x} \\mathrm{~d} x\\)",
+      "\\(e^{-2} \\frac{1}{52}\\)",
+      "\\(\\frac{\\frac{1}{\\sqrt{2 \\pi}} \\frac{1}{\\sqrt{3}} e^{-\\frac{1}{6}}}{1-\\Phi\\left(-\\frac{\\sqrt{3}}{3}\\right)} \\frac{1}{52}\\)",
+      "\\(\\frac{1}{130}\\)",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 9,
+    "context": "Et punkt vælges tilfældigt i området afgrænset af linierne \\(x=0, y=4, x+y=6, x=4\\) og \\(y=0\\). Det skraverede område på nedenstående figur er afgrænset af linierne \\(y=4, x+y= 6, x=4\\) og \\(x+y=4\\).     < g r a p h i c s >",
+    "question": "Sandsynligheden for, at punktet ligger i det skraverede område, findes til",
+    "options": [
+      "\\(\\frac{5}{8}\\)",
+      "\\(\\sqrt{2}-1\\)",
+      "\\(\\frac{\\sqrt{3}-1}{2}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{3}{7}\\)",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 10,
+    "context": "",
+    "question": "Sandsynligheden for, at den næststørste af 3 uafhængige uniformt \\((0 ; 1)\\) fordelte variable er mellem \\(\\frac{1}{4}\\) og \\(\\frac{3}{4}\\), er",
+    "options": [
+      "\\(\\frac{15}{32}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{11}{16}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{21}{32}\\)",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 11,
+    "context": "Skoleelever på et passende klassetrin klassificeres efter om de læser og regner tilfredsstillende, \\(42 \\%\\) læser tilfredsstillende, 35% regner tilfredsstillende, medens \\(55 \\%\\) mestrer mindst en af disciplinerne tilfredsstillende.",
+    "question": "Andelen af elever, der både læser og regner tilfredsstillende, findes til",
+    "options": [
+      "7%",
+      "13%",
+      "14,7%",
+      "\\(22 \\%\\)",
+      "\\(35 \\%\\)",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 12,
+    "context": "Man har empirisk fundet, at en person, der dyrker en af sportsgrenene cykling (C), fodbold (F) og svømning (S) har forhøjet hæmatokritværdi med følgende sandsynligheder \\(P_{C H}, P_{F H}\\) og \\(P_{S H}\\). Sandsynligheden for, at en person dyrker cykling, fodbold eller svømning er henholdsvis \\(P_{C}, P_{F}\\) og \\(P_{S}\\). Man kan antage, at en person dyrker netop en af de tre sportsgrene. En person har fået målt forhøjet hæmatokritværdi.",
+    "question": "Sandsynligheden for, at personen dyrker fodbold, findes til",
+    "options": [
+      "\\(P_{F} P_{F H}\\)",
+      "\\(P_{F H}\\)",
+      "\\(1-P_{C}-P_{S}+P_{C H}+P_{F H}+P_{S H}\\)",
+      "\\(\\frac{P_{F} P_{F H}}{P_{C} P_{C H}+P_{F} P_{F H}+P_{S} P_{S H}}\\)",
+      "\\(\\frac{P_{F H}}{P_{F}\\left(P_{C H}+P_{F H}+P_{S H}\\right)}\\)",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 13,
+    "context": "I et sædvanligt spil kort udtages tilfældigt 5 kort.",
+    "question": "Sandsynligheden for, at man blandt de 5 kort har netop 3 røde kort og 2 sorte kort, findes til",
+    "options": [
+      "\\(\\frac{26 \\cdot 25 \\cdot 24 \\cdot 26 \\cdot 25}{52 \\cdot 51 \\cdot 50 \\cdot 49 \\cdot 48}\\)",
+      "\\(\\frac{13}{40}\\)",
+      "\\(\\binom{5}{3}\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3}\\)",
+      "\\(\\underline{\\binom{26}{3}\\binom{26}{2}} \\binom{52}{5}\\)",
+      "\\(\\binom{4}{2}\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3}\\)",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 14,
+    "context": "Man har de to uafhængige stokastiske variable \\(X\\) og \\(Y\\), der begge følger en geometrisk fordeling med parameter henholdsvis \\(p\\) og \\(q\\).",
+    "question": "Man finder \\(\\mathrm{P}(X>Y)\\) til",
+    "options": [
+      "\\(\\mathrm{P}(X>Y)=\\frac{q(1-p)}{p+q-p q}\\)",
+      "\\(\\mathrm{P}(X>Y)=\\frac{q}{3 p}\\)",
+      "\\(\\mathrm{P}(X>Y)=\\frac{(1-p)(1-q)}{1-p q}\\)",
+      "\\(\\mathrm{P}(X>Y)=\\frac{p(1-q)}{p+q-p q}\\)",
+      "\\(\\mathrm{P}(X>Y)=\\frac{(1-p) q}{1-p q}\\)",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 15,
+    "context": "Den stokastiske variabel \\(X\\) har tætheden \\(2 x\\) for \\(0<x<1\\) og 0 ellers.",
+    "question": "Man finder",
+    "options": [
+      "\\(\\mathrm{P}\\left(\\frac{1}{4}<X<\\frac{1}{2}\\right)=\\frac{1}{4}\\)",
+      "\\(\\mathrm{P}\\left(\\frac{1}{4}<X<\\frac{1}{2}\\right)=\\frac{1}{2}\\)",
+      "\\(\\mathrm{P}\\left(\\frac{1}{4}<X<\\frac{1}{2}\\right)=\\frac{3}{16}\\)",
+      "\\(\\mathrm{P}\\left(\\frac{1}{4}<X<\\frac{1}{2}\\right)=\\frac{5}{8}\\)",
+      "\\(\\mathrm{P}\\left(\\frac{1}{4}<X<\\frac{1}{2}\\right)=\\frac{3}{8}\\)",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 16,
+    "context": "Privatpersoner kan overføre billeder til en hjemmeside. Størrelsen af de enkelte billeder kan beskrives ved en fordeling med tæthed \\(f(x)=\\frac{\\alpha}{\\beta}\\left(1+\\frac{x}{\\beta}\\right)^{-\\alpha-1}\\), hvor \\(\\alpha\\) og \\(\\beta\\) er positive konstanter.",
+    "question": "Sandsynligheden for, at det mindste af 4 billeder har en størrelse, der overstiger en værdi \\(x_{0}\\), findes til",
+    "options": [
+      "\\(\\left(1+\\frac{x_{0}}{\\beta}\\right)^{-4 \\alpha}\\)",
+      "\\(\\frac{\\alpha}{\\beta}\\left(1+\\frac{x_{0}}{\\beta}\\right)^{-4 \\alpha-4}\\)",
+      "\\(\\left(1-\\left(1+\\frac{x_{0}}{\\beta}\\right)^{-\\alpha}\\right)^{4}\\)",
+      "\\(\\left(1-\\frac{\\alpha}{\\beta}\\left(1+\\frac{x_{0}}{\\beta}\\right)^{-\\alpha-1}\\right)^{4}\\)",
+      "\\(\\left(1+\\frac{4 x_{0}}{\\beta}\\right)^{-\\alpha}\\)",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 17,
+    "context": "Den stokastiske variabel \\(Y\\) er for givet \\(X=x\\) ligefordelt på intervallet ( \\(x ; 1\\) ) medens \\(X\\) har tætheden \\(f_{X}(x)=2-2 x, 0 \\leq x \\leq 1\\).",
+    "question": "Man finder \\(\\mathrm{E}(Y)\\) til",
+    "options": [
+      "\\(\\mathrm{E}(Y)=\\frac{2}{3}\\)",
+      "\\(\\mathrm{E}(Y)=\\frac{1}{2}\\)",
+      "\\(\\mathrm{E}(Y)=\\frac{3}{4}\\)",
+      "\\(\\mathrm{E}(Y)=\\frac{3}{5}\\)",
+      "\\(\\mathrm{E}(Y)=\\frac{x+1}{2}\\)",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 18,
+    "context": "Besøgende i en forlystelsespark kaster bolde mod en skive med et midtpunkt. Det punkt, hvor den enkelte bold rammer, beskrives ved koordinaterne ( \\(X_{1}, X_{2}\\) ), der er afstanden i henholdsvis horisontal og vertikal afstand fra midtpunktet. Man kan med rimelighed modellere \\(X_{1}\\) og \\(X_{2}\\) som to uafhængige standard normalfordelte variable. For at vinde en præmie skal bolden ramme i en ring med bredde 1 . Ringens indre diameter er 2 (og den ydre diameter således 4 ).",
+    "question": "Sandsynligheden for, at en besøgende vinder netop to præmier ved to kast, findes til",
+    "options": [
+      "\\(e^{-1}+e^{-4}-2 e^{-\\frac{5}{2}}\\)",
+      "\\(e^{-2}\\left(1+e^{-2}-2 e^{-1}\\right)\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{2 \\operatorname{Atan}(3)}{\\pi}\\)",
+      "\\(e^{-1}-e^{-4}\\)",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 19,
+    "context": "I en grisetransport er der 400 slagtesvin. Slagtesvinene har en middelvægt på \\(97,5 \\mathrm{~kg}\\). med en standardafvigelse på 15 kg .",
+    "question": "Sandsynligheden for, at den samlede vægt af grisene i en grisetransport overstiger 40 ton, findes, eventuelt approksimativt, til",
+    "options": [
+      "\\(1-\\Phi\\left(\\frac{20-400 \\cdot 97,5-\\frac{1}{2}}{2000 \\sqrt{0,15 \\cdot 0,85}}\\right)\\)",
+      "\\(1-\\Phi\\left(\\frac{40000-400 \\cdot 97,5}{30000}\\right)\\)",
+      "\\(\\Phi(-3)\\)",
+      "\\(\\Phi\\left(-\\frac{10}{3}\\right)\\)",
+      "Kan ikke bestemmes grundet manglende oplysninger",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 20,
+    "context": "Punktet ( \\(X, Y\\) ) vælges efter en ligefordeling indenfor området afgrænset af koordinatsystemets akser samt linien \\(2 y+x=2\\). Man danner \\(Z=X+Y\\).",
+    "question": "Tætheden \\(f_{Z}(z)\\) for \\(Z\\) findes til",
+    "options": [
+      "\\[ f_{Z}(z)=\\frac{z}{9}, \\quad 0<z<3 \\]",
+      "\\[ f_{Z}(z)=\\left\\{\\begin{array}{cc} \\frac{z}{2} & 0<z \\leq 1 \\\\ \\frac{1}{2} & 1<z \\leq 2 \\\\ \\frac{3-z}{2} & 2<z \\leq 3 \\end{array}\\right. \\]",
+      "-z & 1 \\leq z \\leq 2 \\end{array}\\right. \\]",
+      "\\[ f_{Z}(z)=\\left\\{\\begin{array}{cc} z & 0 \\leq z<1 \\\\",
+      "\\(f_{Z}(z)=\\int_{0}^{z} \\mathrm{~d} x\\)",
+      ""
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 21,
+    "context": "Man har parret ( \\(X, Y\\) ), der er standard bivariat normalfordelte med korrelationskoefficient \\(\\rho=\\frac{3}{5}\\). Man danner \\(Z=X+Y\\).",
+    "question": "Man finder \\(\\mathrm{P}(Z<-1)\\) til",
+    "options": [
+      "\\(\\Phi\\left(-\\frac{\\sqrt{5}}{5}\\right)\\)",
+      "\\(\\Phi\\left(-\\frac{\\sqrt{2}}{2}\\right)\\)",
+      "\\(\\Phi\\left(-\\frac{4 \\sqrt{5}}{5}\\right)\\)",
+      "\\(\\Phi\\left(-\\frac{4 \\sqrt{3}}{5}\\right)\\)",
+      "\\(\\Phi\\left(-\\frac{\\sqrt{5}}{4}\\right)\\)",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 22,
+    "context": "Under særlige vejrforhold omdirigeres fly til en mindre lufthavn med sikre landingsforhold. Man antager, at de omdirigerede fly ankommer uafhængigt af hinanden med en hyppighed af 1 per tredje minut.",
+    "question": "Bestem sandsynligheden for, at der ankommer mere end 6 fly indenfor 5 minutter.",
+    "options": [
+      "\\(\\square \\quad 1-\\Phi\\left(\\frac{6-\\frac{5}{3}}{\\sqrt{\\frac{5}{3}}}\\right)\\)",
+      "0,0467",
+      "0,023",
+      "0,017",
+      "0,0017",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 23,
+    "context": "De stokastiske variable \\(X\\) og \\(Y\\) har den simultane tæthedsfunktion \\(f(x, y)=x+y\\) for \\(0<x<1\\) og \\(0<y<1\\).",
+    "question": "Man finder \\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)\\) til",
+    "options": [
+      "\\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)=\\frac{1}{2}\\)",
+      "\\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)=\\frac{1}{4}\\)",
+      "\\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)=\\frac{1}{6}\\)",
+      "\\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)=\\frac{1}{8}\\)",
+      "\\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)=\\frac{1}{16}\\)",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 24,
+    "context": "Man betragter hændelserne \\(A\\) og \\(B\\) samt de tilknyttede indikatorfunktioner \\(I_{A}\\) og \\(I_{B}\\).",
+    "question": "Man finder \\(\\mathrm{P}\\left(I_{A} I_{B}=1\\right)\\) til",
+    "options": [
+      "\\(\\mathrm{P}(A \\cap B)\\)",
+      "\\(\\mathrm{P}(A \\cup B)\\)",
+      "\\(\\mathrm{P}(A)+\\mathrm{P}(B)\\)",
+      "\\(\\mathrm{P}(A)+\\mathrm{P}(B)-\\mathrm{P}(A \\cap B)\\)",
+      "Sandsynligheden kan ikke bestemmes uden nøjere kendskab til funktionerne \\(I_{A}\\) og \\(I_{B}\\).",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 25,
+    "context": "Man har de tre uafhængige stokastiske variable \\(X_{1}, X_{2}\\) og \\(X_{3}\\), der alle følger en eksponential \\((\\lambda)\\) fordeling. Man indfører \\(Y=X_{1}+X_{2}+X_{3}\\).",
+    "question": "Man finder \\(\\mathrm{P}(Y>y)\\)",
+    "options": [
+      "\\(e^{-\\lambda y / 3}\\)",
+      "\\(\\left(1+\\lambda y+\\frac{1}{2}(\\lambda y)^{2}\\right) e^{-\\lambda y}\\)",
+      "\\(\\Phi\\left(\\frac{y-\\frac{3}{\\lambda}}{\\frac{\\sqrt{3}}{\\lambda}}\\right)\\)",
+      "\\(1-\\Phi\\left(\\frac{y-\\frac{3}{\\lambda}}{\\frac{\\sqrt{3}}{\\lambda}}\\right)\\)",
+      "\\(\\lambda \\frac{1}{2}(\\lambda y)^{2} e^{-\\lambda y}\\)",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 26,
+    "context": "Et stålværk producerer to ståltyper. På en given dag kan afvigelserne fra normalproduktionen beskrives ved en bivariat normalfordeling med korrelationskoefficient \\(-\\frac{\\sqrt{2}}{2}\\).",
+    "question": "Sandsynligheden for, at der på en given dag produceres mindre end normalproduktionen for begge typer af stål, findes til",
+    "options": [
+      "\\(\\frac{\\frac{\\pi}{2}-\\operatorname{Atan}\\left(\\frac{\\sqrt{2}}{2}\\right)}{2 \\pi}\\)",
+      "\\(\\frac{\\operatorname{Atan}\\left(\\frac{\\sqrt{2}}{2}\\right)}{2 \\pi}\\)",
+      "\\(\\frac{1}{8}\\)",
+      "1",
+      "\\(\\frac{1}{4}\\)",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 27,
+    "context": "Et firma sælger varer i et miljø, der kan beskrives ved en kontinuert stokastisk variabel \\(X\\), der for hver dag antager værdier i intervallet ( \\(0 ; 1\\) ) med tætheden \\(6 x(1-x)\\) uafhængigt fra dag til dag. Antallet af varer, der kan sælges i løbet af en dag, kan angives som en binomial( \\(20, x\\) ) fordeling for et givet \\(x\\).",
+    "question": "Sandsynligheden for, at der kan sælges netop 10 enheder på en tilfældig dag, findes til",
+    "options": [
+      "\\(\\frac{1}{21}\\)",
+      "\\(\\frac{11}{161}\\)",
+      "\\(\\int_{0}^{1}\\binom{20}{10} 6 x(1-x) \\mathrm{d} x\\)",
+      "\\(\\binom{20}{10} \\frac{1}{1024}\\)",
+      "\\(\\int_{0}^{1} 6 x^{11}(1-x)^{11} \\mathrm{~d} x\\)",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 28,
+    "context": "I en alternativ parameterisering af binomialfordelingen benytter man parameteren \\(\\theta\\). Sammenhængen mellem \\(\\theta\\) og den sædvanlige sandsynlighedsparameter \\(p\\) er givet ved \\[ p=\\frac{e^{\\theta}}{1+e^{\\theta}}, \\quad \\theta=\\log \\left(\\frac{p}{1-p}\\right) \\]",
+    "question": "For \\(X\\) binomialfordelt med antalsparameter \\(n=2\\) finder man for \\(\\theta=0\\)",
+    "options": [
+      "\\(\\mathrm{P}(X=0)=1\\)",
+      "\\(\\mathrm{P}(X=0)=\\frac{1}{2}\\)",
+      "\\(\\mathrm{P}(X=0)=\\frac{1}{4}\\)",
+      "\\(\\mathrm{P}(X=0)=0\\)",
+      "\\(\\mathrm{P}(X=0)\\) kan ikke bestemmes da \\(\\theta=0\\) ikke er en gyldig parameterværdi",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 29,
+    "context": "Rejsetiden til en videnskabelig station i arktis har en middeltid på 1 dag med standardafvigelse 3 dage.",
+    "question": "En bedste øvre grænse for sandsynligheden for, at rejsetiden til den videnskabelige station overstiger 2 dage findes til",
+    "options": [
+      "1",
+      "\\(\\frac{1}{2}\\)",
+      "\\(1-\\Phi\\left(\\frac{1}{3}\\right)\\)",
+      "\\(\\frac{1}{4}\\)",
+      "Kan ikke bestemmes uden nøjere kendskab til fordelingen af rejsetiden",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 30,
+    "context": "Den simultane fordeling af de diskrete stokastiske variable \\(X\\) og \\(Y\\) er givet ved følgende tabel          3|c|Værdier af \\(X\\)     Fordeling           1     2     3     af \\(Y\\) Værdier     3     \\(1 / 6\\)     0     \\(1 / 6\\)     \\(1 / 3\\) af \\(Y\\)     2     0     \\(1 / 3\\)     0     \\(1 / 3\\)      1     \\(1 / 6\\)     0     \\(1 / 6\\)     \\(1 / 3\\) Fordeling af \\(X\\)      \\(1 / 3\\)     \\(1 / 3\\)     \\(1 / 3\\)     1                     (total sum)",
+    "question": "Om de stokastiske variable \\(X\\) og \\(Y\\) gælder",
+    "options": [
+      "De er uafhængige",
+      "De er ukorrelerede men ikke uafhængige",
+      "De er korrelerede",
+      "De er identiske",
+      "De er gensidigt udelukkende",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  }
+]

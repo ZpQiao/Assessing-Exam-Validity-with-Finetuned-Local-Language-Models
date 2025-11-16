@@ -1,0 +1,711 @@
+Opgave 1
+
+En kandidat skal rejse til en ansættelsessamtale i en anden by. Ifølge
+vejrudsigten er der risiko for kraftigt snefald, således at snefaldet
+formodes at indtræffe med en sandsynlighed på $\frac{1}{3}$. Hvis der
+kommer kraftigt snefald, er der en sandsynlighed på $\frac{3}{5}$ for,
+at rejsetiden vil blive øget med mindst en time.
+
+Spørgsmål 1
+
+Sandsynligheden for, at kandidaten må påregne en rejsetid, der grundet
+kraftigt snefald er forlænget med mindst en time, findes til
+
+1 $\frac{1}{3}$
+
+2 $\frac{1}{5}$
+3 $\frac{4}{15}$
+
+4 $\frac{3}{4}$
+
+5 $\underline{14}$
+
+6 Ved ikke
+
+Opgave 2
+
+Biler ankommer til et lyskryds med en intensitet af 6 biler per minut.
+Sandsynligheden for, at en bil, der ankommer til krydset, skal dreje til
+venstre, er $\frac{1}{3}$. Venstresvingsbanen kan rumme 3 biler. Vi
+betragter en periode, hvor venstresving ikke er muligt.
+
+Spørgsmål 2
+
+Sandsynligheden for, at venstresvingsbanen fyldes i løbet af et minut,
+findes til
+
+1 $\frac{4}{3} e^{-2}$
+
+2 $\binom{6}{3} \frac{1}{3^{3}} \frac{2^{3}}{3^{3}}$
+
+3 $\frac{2}{3}$
+
+4 $1-\Phi\left(\frac{\sqrt{3}}{2}\right)$
+
+5 1 − 5e^( − 2)
+
+6 Ved ikke
+
+Opgave 3
+
+Den kontinuerte stokastiske variabel U er uniformt fordelt på
+intervallet [ 1; 2 ]. Man har yderligere den diskrete stokastiske
+variabel X over de naturlige tal, hvorom det gælder
+$P(X=x \mid U=u)=\frac{u^{x}}{x!} e^{-u}$ for x ≥ 0.
+
+Spørgsmål 3
+
+Man har
+
+1 $\mathrm{P}(X=1)=\frac{1}{e}\left(2-\frac{3}{e}\right)$
+
+2 $\mathrm{P}(X=1)=\frac{3}{2} e^{-\frac{3}{2}}$
+
+3 $\mathrm{P}(X=1)=\sum_{u=1}^{2} u e^{-u}$
+
+4 $\mathrm{P}(X=1)=\frac{1}{e}$
+
+5 $\mathrm{P}(X=1)=\frac{5}{e}\left(1-\frac{2}{e}\right)$
+
+6 Ved ikke
+
+Opgave 4
+
+Der er stillet seks spørgsmål til en eksamen. En studerende har
+forberedt sig på tre af de seks spørgsmål. Til eksamenen bliver eleven
+eksamineret i to af de seks stillede spørgsmål.
+
+Spørgsmål 4
+
+Sandsynligheden for, at den studerende har forberedt sig på begge de to
+stillede spørgsmål, er
+
+1 $\frac{1}{3}$
+
+2 $\frac{3}{10}$
+
+3 $\frac{1}{5}$
+
+4 $\frac{1}{4}$
+
+5 $\frac{3}{20}$
+
+6 Ved ikke
+
+Opgave 5
+
+En kontinuert stokastisk variabel X har tæthedsfunktionen f(x) = x² for
+0 ≤ x ≤ c, for et passende c.
+
+Spørgsmål 5
+
+Man finder $\mathrm{P}\left(-\frac{1}{2} \leq X \leq 1\right)$
+
+1 $\frac{1}{8}$
+
+2 $\frac{1}{3}$
+
+3 $\frac{9}{24}$
+
+4 $\frac{3}{4}$
+
+5 $\frac{\sqrt[3]{3}}{3}$
+
+6 Ved ikke
+
+Opgave 6
+
+Man har de to uafhængige stokastiske variable X og Y, hvor E(X²) og
+E(Y²) eksisterer. Man danner Z = aX + bY + c, hvor a, b og c er reelle
+konstanter.
+
+Spørgsmål 6
+
+Med disse forudsætninger gælder
+
+1 E(Z) = |a|E(X) + |b|E(Y),  Var (Z) = a²Var (X) + b²Var (Y)
+
+2 E(Z) = aE(X) + bE(Y) + c,  SD(Z) = |a|SD(X) + |b|SD(Y)
+
+3 E(Z) = aE(X) + bE(Y),  Var (Z) = a²Var (X) + b²Var (Y) − 2abCov (X, Y)
+
+4 E(Z) = aE(X) + bE(Y) + c,  Var (Z) = a²Var (X) + b²Var (Y)
+
+5
+E(Z) = |a|E(X) + |b|E(Y) + c,  Var (Z) = a²Var (X) + b²Var (Y) − 2abCov (X, Y)
+
+6 Ved ikke
+
+Opgave 7
+
+Man har hændelserne D og E. Sandsynligheden for, at D indtræffer er
+$\frac{1}{100}$ medens sandsynligheden for, at E indtræffer er
+$\frac{1}{1000}$. Sandsynligheden for, at D og E ikke indtræffer
+samtidigt, er $\frac{1999}{2000}$.
+
+Spørgsmål 7
+
+Sandsynligheden for, at enten D eller E indtræffer, er
+
+1 $\frac{1}{100}$
+
+2 $\frac{11}{100}$
+
+3 21 2000
+
+4 $\frac{19}{2000}$
+
+5 $\frac{1997}{2000}$
+
+6 Ved ikke
+
+Opgave 8
+
+Den kontinuerte stokastiske variabel X følger en normal( 0,1 )
+fordeling. Man danner nu Y = e^(X) 。
+
+Spørgsmål 8
+
+Tætheden f_(Y)(y) for Y findes til
+
+1
+$f_{Y}(y)=\left(e^{y}\right)^{2} e^{-\frac{\left(e^{y}\right)^{2}}{2}}$
+
+2 $f_{Y}(y)=\frac{1}{y \sqrt{2 \pi}} e^{-\frac{(\log (y))^{2}}{2}}$
+
+3 $f_{Y}(y)=y e^{y^{2}} e^{-\frac{y^{2}-1}{2}}$
+
+4 $f_{Y}(y)=\frac{1}{\sqrt{2 \pi}} e^{-\frac{(\log (y))^{2}}{2}}$
+
+5 f_(Y)(y) = e^( − y)
+
+6 Ved ikke
+
+Opgave 9
+
+Fra en transportundersøgelse har man andelen af pendlere fordelt på
+erhvervstype. For hver erhvervstype kender man tillige andelen, der
+rejser med bus.
+
+                                              Funktionærer   Uddannelsessøgende   Håndværkere og faglærte   Ufaglærte
+  ------------------------------------------- -------------- -------------------- ------------------------- -----------
+  Andel af pendlere                           35%            25%                  25%                       15%
+  Andel af erhverstypen, der rejser med bus   25%            50%                  15%                       50%
+
+Spørgsmål 9
+
+Andelen af pendlere i bus, der er uddannelsessøgende, findes til
+
+1 25,00 %
+
+2 33,41 %
+
+3 35,71 %
+
+4 37,50 %
+
+5 38,46 %
+
+6 Ved ikke
+
+Opgave 10
+
+Man har 3 uafhængige uniform( 0,1 ) fordelte stokastiske variable.
+
+Spørgsmål 10
+
+Sandsynligheden for, at den næststørste af disse er mindre end
+$\frac{4}{5}$, findes til
+
+1 $\frac{4}{5}$
+
+2 $\frac{24}{25}$
+
+3 $\frac{608}{605}$
+
+4 $\frac{2944}{3125}$
+
+5 $\frac{112}{125}$
+
+6 Ved ikke
+
+Opgave 11
+
+Et togspor er blokeret for et passagertog. Passagerer til en bestemt
+destination kan alternativt benytte en bustjeneste. For hver togpassager
+kan tilknyttes en sandsynlighed på $\frac{1}{3}$ for, at de ønsker at
+benytte bustjenesten. Man kan tilnærmelsesvist regne med, at
+rejseønskerne er uafhængige mellem passagererne.
+
+Spørgsmål 11
+
+I et tog med 800 passagerer, findes sandsynligheden, eventuelt
+approksimativt, for, at højst 300 passagerer ϕ nsker at benytte
+bustjenesten til
+$1 \square \quad \sum_{i=0}^{300}\binom{300}{i} \frac{2^{300-i}}{3^{300}}$
+$2 \square \Phi\left(\frac{203}{80}\right)$
+$3 \square \quad \sum_{i=0}^{300} \frac{300^{i}}{i!} e^{-300}$
+$4 \square \quad 3^{-800} \sum_{i=301}^{800}\binom{800}{i} 2^{800-i}$
+$5 \square \Phi\left(\frac{\frac{800}{3}-300}{\sqrt{800 \frac{2}{3} \frac{1}{3}}}\right)$
+6▫   Ved ikke
+
+Opgave 12
+
+Man har dyrket bakteriekolonier i nogle petriskåle og fundet et antal
+kolonier mellem 0 og 20 i hver skål ved et antal gentagne forsøg.
+
+Spørgsmål 12
+
+Mulige sandsynlighedsmodeller til at modellere antallet af kolonier i en
+skål kunne være
+
+1 Normalfordelingen eller eksponentialfordelingen
+
+2 Eksponentialfordelingen eller Poissonfordelingen
+
+3 Poissonfordelingen eller den negative binomialfordeling
+
+4 Ligefordelingen (uniform) eller den negative binomialfordeling
+
+5 Normalfordelingen eller ligefordelingen (uniform)
+
+6 Ved ikke
+
+Opgave 13
+
+Et firma har to vigtige markeder. Salget på de to markeder kan med
+rimelighed beskrives ved en bivariat normalfordeling, hvor
+middelværdierne på de to markeder er henholdsvis 200 og 350 , med
+varianser på 900 og 1600 . Korrelationskoefficienten mellem de to salg
+er $\frac{3}{5}$.
+
+Spørgsmål 13
+
+Sandsynligheden for, at det samlede salg overstiger 650, findes til
+
+1 0,0544
+
+2 Φ(2)
+
+3 $\Phi\left(-\frac{50 \sqrt{1105}}{1105}\right)$
+
+4 $\Phi\left(-\frac{50 \sqrt{985}}{985}\right)$
+
+5 1 − Φ(2)
+
+6 Ved ikke
+
+Opgave 14
+
+Man har givet den stokastiske variabel X, der følger en binomial
+$\left(5, \frac{1}{2}\right)$ fordeling. Man er interesseret i denne
+variabels afvigelse fra sin middelværdi og danner Y = |X − n ⋅ p|, hvor
+n, p er parametrene i binomialfordelingen.
+
+Spørgsmål 14
+
+Sandsynlighedsfordelingen for Y findes til
+
+1 $\mathrm{P}(Y=y)=\binom{3}{y} \frac{1}{2^{3}}$
+
+2 $\mathrm{P}(Y=y)=\binom{5}{|y|} \frac{1}{2^{5}}$
+
+3
+$\mathrm{P}(Y=y)=\binom{5}{\left|y-\frac{5}{2}\right|} \frac{1}{2^{5}}$
+
+4
+$\mathrm{P}\left(Y=\frac{1}{2}\right)=\frac{5}{8}, \quad \mathrm{P}\left(Y=\frac{3}{2}\right)=\frac{5}{16}, \quad \mathrm{P}\left(Y=\frac{5}{2}\right)=\frac{1}{16}$
+
+5 $\mathrm{P}\left(Y=\frac{1}{2}\right)=\frac{1}{3}$,
+$\mathrm{P}\left(Y=\frac{3}{2}\right)=\frac{1}{3}$,
+$\mathrm{P}\left(Y=\frac{5}{2}\right)=\frac{1}{3}$
+
+6 Ved ikke
+
+Opgave 15
+
+I et større område af en galakse kan man med en vis rimelighed antage,
+at stjerner forekommer tilfældigt med en forekomst af en per 1/100 kubik
+lysår.
+
+Spørgsmål 15
+
+Sandsynligheden for, at finde mindst en stjerne i dette område i en
+terning med sidestørrelsen 4 lysår, findes til
+
+1 0,4727
+
+2 0,3600
+
+3 0,3375
+
+4 0,3023
+
+5 0,2304
+
+6 Ved ikke
+
+Opgave 16
+
+De stokastiske variable X og Y er begge eksponential(1) fordelte, med
+simultan tæthedsfunktion
+f(x, y) = 2e^( − x − y)(2e^( − x − y)−e^( − y)−e^( − x)+1), x ≥ 0, y ≥ 0.
+
+Spørgsmål 16
+
+Man finder
+
+1 P(X ≤ 1, Y ≤ 1) = 1 − 2e^( − 1) + 2e^( − 2) − 2e^( − 3) + e^( − 4)
+
+2 P(X ≤ 1, Y ≤ 1) = 2e^( − 2) − 4e^( − 3) + 4e^( − 4)
+
+3 P(X ≤ 1, Y ≤ 1) = 1 − 2e^( − 1) + e^( − 2)
+
+4 P(X ≤ 1, Y ≤ 1) = e^( − 2)
+
+5 P(X ≤ 1, Y ≤ 1) = 1 − 4e^( − 1) + 6e^( − 2) − 4e^( − 3) + e^( − 4)
+
+6 Ved ikke
+
+Opgave 17
+
+Fordelingsfunktionen F(x) for den tid, det tager en mynde at gennemføre
+en væddeløbsbane, kan med rimelig tilnærmelse angives som
+
+$$F(x)=\left\{\begin{array}{ll}
+0 & \text { for } x \leq a \\
+1-e^{-(x-a)} & \text { for } a<x
+\end{array} .\right.$$
+
+Man kan med en vis rimelighed antage, at de forskellige hunde i et
+væddeløb gennemfører uafhængigt af hinanden.
+
+Spørgsmål 17
+
+Sandsynligheden for, at vinderen af et væddeløb med 5 hunde når i mål
+senest til t, findes til
+
+1 1 − e^( − 5(t − a))
+
+2 $1-\sum_{i=0}^{4} \frac{(t-a)^{i}}{i!} e^{t-a}$
+
+3 1 − e^( − (t − a)⁵)
+
+4 (1−e^( − (t − a)))⁵
+
+5 1 − (1−e^( − (t − a)))⁵
+
+6 Ved ikke
+
+Opgave 18
+
+De to standardiserede stokastiske variable X og Y har
+korrelationskoefficient $\rho=\frac{1}{2}$.
+
+Spørgsmål 18
+
+Man finder Var (3X − 3Y) til
+
+1 Var (3X − 3Y) = 0
+
+2 Var (3X − 3Y) = 9
+
+3 Var (3X − 3Y) = 18
+
+4 Var (3X − 3Y) = 27
+
+5 Spørgsmålet kan ikke besvares grundet utilstrækkelige oplysninger
+
+6 Ved ikke
+
+Opgave 19
+
+En spiller deltager tyve gange i et spil på internettet. Spilleren kan
+regne med en sandsynlighed for gevinst på $\frac{3}{8}$ per spil.
+
+Spørgsmål 19
+
+Sandsynligheden for, at spilleren højst vinder 10 spil, findes til
+
+1 $\Phi\left(\frac{3 \sqrt{10}}{10}\right)$
+
+2
+$\sum_{i=0}^{10} \frac{\left(\frac{15}{2}\right)^{i}}{i!} e^{-\frac{15}{2}}$
+
+3
+$\phi\left(\frac{10-20 \cdot \frac{5}{8}+\frac{1}{2}}{\sqrt{20 \cdot \frac{5}{8} \cdot \frac{3}{8}}}\right)$
+
+4
+$\sum_{i=0}^{10} \frac{\begin{array}{c}\binom{10}{i}\binom{10}{10-i} \\ \binom{20}{10}\end{array}}{\text { 伎 }}$
+
+5
+$\sum_{i=0}^{10}\binom{20}{i}\left(\frac{3}{8}\right)^{i}\left(\frac{5}{8}\right)^{20-i}$
+
+6 Ved ikke
+
+Opgave 20
+
+Placeringen af punktet ( X, Y ) følger en ligefordeling indenfor
+enhedscirklen.
+
+Spørgsmål 20
+
+I værdimængden for Y findes den marginale tæthed f_(Y)(y) til
+
+1 f_(Y)(y) = 1 − |y|
+
+2 $f_{Y}(y)=\frac{2 \sqrt{1-y^{2}}}{\pi}$
+
+3 $f_{Y}(y)=\frac{1}{\pi}$
+
+4 $f_{Y}(y)=\frac{3}{4}\left(1-y^{2}\right)$
+
+5 $f_{Y}(y)=\frac{1}{2}$
+
+6 Ved ikke
+
+Opgave 21
+
+Hvis strømniveauet på et robotkøretøj til brug for rumekspeditioner
+kommer under et vist niveau, er der stor risiko for, at man mister
+kontakten til køretøjet. Middellængden af de perioder, hvor der ikke er
+tilstrækkeligt sollys til panelerne er 3 måneder, variansen af disse
+perioder er 9 måneder ².
+
+Spørgsmål 21
+
+Den maksimale sandsynlighed for, at en periode, hvor der ikke er
+tilstrækkeligt med sollys, overstiger 1 år, findes til
+
+1 $\frac{1}{4}$
+2 e^( − 4)
+
+3 $\frac{1}{16}$
+
+4 $\frac{1}{9}$
+
+5 1 − Φ(3)
+
+6 Ved ikke
+
+Opgave 22
+
+For de to diskrete ikke negative stokastiske varible har man
+$\mathrm{P}(X=x, Y=y)=c \frac{A^{x}}{x!} \frac{B^{y}}{y!}, 0 \leq x+y \leq 2$,
+hvor c er en normaliseringskonstant.
+
+Spørgsmål 22
+
+Man finder
+
+1 $P(X=x \mid Y=1)=\frac{1}{2}, \quad x \in\{0,1\}$
+
+2
+$P(X=x \mid Y=1)=\frac{\frac{A^{x}}{x!} \frac{B^{y}}{y!}}{\sum_{x=0}^{2-y} \frac{A^{x}}{x!} \frac{B^{y}}{y!}}$
+
+3
+$P(X=x \mid Y=1)=\frac{A^{x}}{1+A+\frac{A^{2}}{2}}, \quad x \in\{0,1,2\}$
+
+4 $P(X=x \mid Y=1)=c \frac{A^{x}}{x!} B, \quad x \in\{0,1,2\}$
+
+5 $P(X=x \mid Y=1)=\frac{A^{x}}{1+A}, \quad x \in\{0,1\}$
+
+6 Ved ikke
+
+Opgave 23
+
+De stokastiske variable X og Y har den simultane tæthedsfunktion
+f(x, y) = 6y − 6x for 0 ≤ x ≤ y ≤ 1 og 0 ellers. Man danner Z = X + Y.
+
+Spørgsmål 23
+
+Man finder f_(Z)(z) til
+
+1
+
+$$f_{Z}(z)=\left\{\begin{array}{cc}
+\frac{3}{2} z^{2} & 0 \leq z<1 \\
+\frac{3}{2}(2-z)^{2} & 1 \leq z \leq 2 \\
+0 & \text { ellers }
+\end{array}\right.$$
+
+2
+
+f_(Z)(z) = ∫_(x = 0)¹(6z − 12x)dx
+
+3
+
+$$f_{Z}(z)=\int_{x=0}^{\frac{z}{2}}(6 z-12 x) \mathrm{d} x$$
+
+4
+
+$$f_{Z}(z)=\int_{x=0}^{\min \left(\frac{z}{2}, 1\right)}(6 z-12 x) \mathrm{d} x$$
+
+5
+
+$$f_{Z}(z)=\left\{\begin{array}{cc}
+z & 0 \leq z<1 \\
+1-z & 1 \leq z \leq 2 \\
+0 & \text { ellers }
+\end{array}\right.$$
+
+6 Ved ikke
+
+Opgave 24
+
+Den kontinuerte stokastiske variabel X har tætheden
+$f_{X}(x)=\frac{3}{32} x(4-x)$ for 0 < x < 4 og 0 ellers. Endvidere har
+man, at Y for givet X = x er eksponential (x) fordelt.
+
+Spørgsmål 24
+
+Man finder
+
+1 $\mathrm{E}(Y)=\frac{1}{x}$
+
+2 $\mathrm{E}(Y)=\frac{1}{2}$
+
+3
+$\mathrm{E}(Y)=\int_{0}^{4} \int_{0}^{\infty} x e^{-x y} \frac{3}{32} x(4-x) \mathrm{d} y \mathrm{~d} x$
+
+4 $\mathrm{E}(Y)=\frac{3}{4}$
+
+5 E(Y) = 1
+
+6 Ved ikke
+
+Opgave 25
+
+Lad T betegne levetiden af en rumsondes batteri. Man ved
+
+$$\lim _{\Delta \rightarrow 0^{+}} \frac{\mathrm{P}(T \leq t+\Delta \mid T>t)}{\Delta}=\lambda .$$
+
+Spørgsmål 25
+
+Sandsynligheden for, at levetiden af rumsondens batteri overstiger 100,
+findes til
+
+1 e^(∫₀¹⁰⁰ − λx dx)
+
+2 $\sum_{x=0}^{100} \frac{\lambda^{x}}{x!} e^{-\lambda}$
+
+3 e^( − 100λ)
+
+4 e^( − ∫₁₀₀^(∞)λdx)
+
+5 $e^{-\frac{100}{\lambda}}$
+
+6 Ved ikke
+
+Opgave 26
+
+Man har den kontinuerte stokastiske variabel X med middelværdi μ.
+
+Spørgsmål 26
+
+Marker det af nedenstående udsagn, der er falsk
+
+1 E(aX + b) = aμ + b
+
+2 E(X²) > μ²
+
+3 $\sum_{x=-\infty}^{\infty} P(X=x)=1$
+
+4 1 = I_(X < 0) + I_(0 ≤ X)
+
+5 P(X = x) = 0
+
+6 Ved ikke
+
+Opgave 27
+
+I curling gælder det om, at få en sten, der skubbes henover isen til at
+stoppe så tæt på centrum af et cirkulært område som muligt. En spiller
+træner ved at sætte sin sten i bevægelse mod målet. Stenens endelige
+placering i forhold til målet kan antages at være beskrevet ved to
+uafhængige standardiserede normalfordelte variable, der angiver
+afstanden til målet i forhold til et koordinatsystem, hvor målet er
+valgt som nulpunkt.
+
+Spørgsmål 27
+
+Sandsynligheden for, at stenens endelige placering er i en afstand, der
+ikke er mere end 1 længdeenhed fra målet, er
+
+1 0,3935
+
+2 0,8647
+
+3 0,6827
+
+4 0,6321
+
+5 0,3679
+
+6 Ved ikke
+
+Opgave 28
+
+Man har X ∼ normal (4, 25) og Y ∼ normal (25, 4) med Cov (X, Y) = 6.
+
+Spørgsmål 28
+
+Man finder P(X ≤ 4 ∣ Y = 27)
+
+1 $\frac{1}{2}$
+
+2 $\Phi\left(-\frac{3}{4}\right)$
+
+3 $\Phi\left(-\frac{15}{16}\right)$
+
+4 $\Phi\left(-\frac{5}{4}\right)$
+
+5 $\Phi\left(-\frac{3}{5}\right)$
+
+6 Ved ikke
+
+Opgave 29
+
+Om de kontinuerte stokastiske variable X og Y oplyses
+
+$$\mathrm{P}(X \in[x, x+\mathrm{d} x], Y \in[y, y+\mathrm{d} y]) \cong \frac{1}{2 \pi} e^{-\frac{x^{2}+y^{2}}{2}} \mathrm{~d} x \mathrm{~d} y .$$
+
+Spørgsmål 29
+
+Man finder
+
+1 $\mathrm{P}(0 \leq X, 0 \leq Y)=\frac{1}{6}$
+2 $\mathrm{P}(0 \leq X, 0 \leq Y)=\frac{1}{3}$
+
+3
+$\mathrm{P}(0 \leq X, 0 \leq Y)=\frac{\operatorname{Arctan}\left(\frac{3}{2}\right)}{2 \pi}$
+
+4
+$\mathrm{P}(0 \leq X, 0 \leq Y)=\frac{\operatorname{Arctan}(1)}{2 \pi}$
+
+5 $\mathrm{P}(0 \leq X, 0 \leq Y)=\frac{1}{4}$
+
+6 Ved ikke
+
+Opgave 30
+
+En person kaster gentagne gange med en almindelig retfærdig terning.
+
+Spørgsmål 30
+
+Sandsynligheden for, at terningen viser 6 øjne for anden gang, netop ved
+det sjette slag, findes til
+
+1 $\frac{5^{4}}{6^{6}}$
+
+2 $\binom{6}{2} \frac{5^{4}}{6^{6}}$
+
+3 $1-\frac{5 \cdot 4 \cdot 3 \cdot 2}{6^{4}}$
+
+4 $\frac{5^{5}}{6^{6}}$
+
+5 $\frac{1}{2}$
+
+6 Ved ikke
+
+Slut på opgavesættet.

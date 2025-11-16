@@ -1,0 +1,452 @@
+[
+  {
+    "language": "english",
+    "number": 1,
+    "context": "A commissions paid telemarketer calls 20 randomly selected people during her duty. Each customer accepts the offer with a probability of \\(10 \\%\\).",
+    "question": "The probability that at most two customers accepts the offer during the telemarketers duty is",
+    "options": [
+      "0.1",
+      "0.5",
+      "\\(\\Phi\\left(\\frac{\\frac{1}{2}}{\\sqrt{20 \\cdot 0.1 \\cdot 0.9}}\\right)\\)",
+      "\\(5 e^{-2}\\)",
+      "\\(\\left(\\frac{9}{10}\\right)^{20}+20 \\frac{1}{10}\\left(\\frac{9}{10}\\right)^{19}+190\\left(\\frac{1}{10}\\right)^{2}\\left(\\frac{9}{10}\\right)^{18}\\)",
+      "Do not know"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "english",
+    "number": 2,
+    "context": "A person in a damp forest receives on the average one insect bite every 5 minutes. It is assumed that the insects bite independently of each other.",
+    "question": "The number of bites a person receives during half an hour is best described by a",
+    "options": [
+      "Poisson(6) distribution",
+      "geometric \\(\\left(\\frac{1}{6}\\right)\\) distribution",
+      "binomial( \\(12, \\frac{1}{2}\\) ) distribution",
+      "uniform( \\(12, \\frac{1}{2}\\) ) distribution",
+      "negative binomial( \\(12, \\frac{1}{2}\\) ) distribution",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 3,
+    "context": "Two instruments in a cockpit can replace each other. The probability that the first one fails is \\(p\\), while the probability that both fail is \\(q\\). We consider a case where the first instrument has failed.",
+    "question": "What is the probability that the second instrument fails too",
+    "options": [
+      "\\(p\\)",
+      "\\(\\frac{q}{p}\\)",
+      "\\(p-q\\)",
+      "\\(\\sqrt{q}\\)",
+      "\\(q p\\)",
+      "Do not know"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "english",
+    "number": 4,
+    "context": "The random variable \\(X\\) follows a Poisson(2) distribution, while the random variable \\(Y\\) follows a hypergeometric(10,100,20) distribution.",
+    "question": "One gets",
+    "options": [
+      "\\(\\mathrm{E}(X+Y)=2+\\frac{100!}{90!} \\frac{10!}{20!}\\)",
+      "\\(\\mathrm{E}(X+Y)=\\frac{19}{5}\\)",
+      "\\(\\mathrm{E}(X+Y)=4\\)",
+      "\\(\\mathrm{E}(X+Y)=\\frac{17}{5}\\)",
+      "\\(\\mathrm{E}(X+Y)\\) can not be determined as the Poisson distribution and the hypergeometric distribution are incompatible",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 5,
+    "context": "It is given that \\(\\mathrm{E}(X)=2, \\mathrm{E}\\left(X^{2}\\right)=4, \\mathrm{E}(Y)=0, \\mathrm{E}\\left(Y^{2}\\right)=9\\), and \\(Z=X+Y\\).",
+    "question": "One gets",
+    "options": [
+      "\\(\\operatorname{Var}(Z)=7\\)",
+      "\\(\\operatorname{Var}(Z)=9\\)",
+      "\\(\\operatorname{Var}(Z)=11\\)",
+      "\\(\\operatorname{Var}(Z)=13\\)",
+      "The question can not be answered due to lack of information.",
+      "Do not know"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "english",
+    "number": 6,
+    "context": "A probability model has been developed to describe the occurrence of two species of kangaroos. There is a sufficient number of individuals to make a bivariate normal distribution an appropriate model. The expected number of each species is 800 , the variance for both species is 1600 , while the correlation coefficient is \\(\\rho=-\\frac{2}{5}\\). A number of 700 individuals has been counted for one of the species.",
+    "question": "The expected number of the second (yet not counted) species is",
+    "options": [
+      "735",
+      "760",
+      "800",
+      "840",
+      "865",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 7,
+    "context": "The continuous random variable \\(V\\) is uniformly distributed on the unit interval( 0,1 ). One defines \\(X=e^{V}\\).",
+    "question": "The density \\(f_{X}(x)\\) for \\(X\\) is",
+    "options": [
+      "\\(f_{X}(x)=e^{-x}, \\quad x>0\\)",
+      "\\(f_{X}(x)=\\frac{1}{e}, \\quad 0<x<e\\)",
+      "\\(f_{X}(x)=\\frac{1}{x}, \\quad 1<x<e\\)",
+      "\\(f_{X}(x)=\\frac{1}{e-1}, \\quad 1<x<e\\)",
+      "\\(f_{X}(x)=\\log (x), \\quad 1<x<e\\)",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 8,
+    "context": "The life time of an electronic component can be described by a gamma(3,1) distribution, where the time unit is one year. The component has reached an age of 2 years.",
+    "question": "The probability that the component fails within one week after it has achieved the age of two years can, possibly approximately, be calculated as",
+    "options": [
+      "\\(4 e^{-2} \\frac{1}{52}\\)",
+      "\\(\\int_{2}^{2+\\frac{1}{52}} \\frac{x^{2}}{2} e^{-x} \\mathrm{~d} x\\)",
+      "\\(e^{-2} \\frac{1}{52}\\)",
+      "\\(\\frac{\\frac{1}{\\sqrt{2 \\pi}} \\frac{1}{\\sqrt{3}} e^{-\\frac{1}{6}}}{1-\\Phi\\left(-\\frac{\\sqrt{3}}{3}\\right)} \\frac{1}{52}\\)",
+      "\\(\\frac{1}{130}\\)",
+      "Do not know"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "english",
+    "number": 9,
+    "context": "A point is randomly chosen in the area confined by the lines \\(x=0, y=4, x+y=6, x=4\\), and \\(y=0\\). The shaded area in the figure below is confined by the lines \\(y=4, x+y=6, x=4\\), and \\(x+y=4\\).     < g r a p h i c s >",
+    "question": "The probability that the point is in the shaded area is",
+    "options": [
+      "\\(\\frac{5}{8}\\)",
+      "\\(\\sqrt{2}-1\\)",
+      "\\(\\frac{\\sqrt{3}-1}{2}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{3}{7}\\)",
+      "Do not know"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "english",
+    "number": 10,
+    "context": "",
+    "question": "The probability that the second largest of 3 independent uniform( 0,1 ) distributed random variables is between \\(\\frac{1}{4}\\) and \\(\\frac{3}{4}\\) is",
+    "options": [
+      "\\(\\frac{15}{32}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{11}{16}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{21}{32}\\)",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 11,
+    "context": "Middle school students are classified according to their abilities within reading and arithmetics, \\(42 \\%\\) read satisfactorily, \\(35 \\%\\) have satisfactory arithmetic skills, while \\(55 \\%\\) have satisfactory skills in at least one of the disciplines.",
+    "question": "The percentage of students that have satisfactory skills within both reading and arithmetics is",
+    "options": [
+      "7%",
+      "\\(13 \\%\\)",
+      "14.7%",
+      "\\(22 \\%\\)",
+      "\\(35 \\%\\)",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 12,
+    "context": "It has been empirically established, that a person, that practises one of the sports cycling \\((\\mathrm{C})\\), football (F), and swimming (S) has an elevated value of hematocrit with probability \\(P_{C H}, P_{F H}\\), and \\(P_{S H}\\) respectively. The probability that a person practises cycling, football, or swimming is \\(P_{C}, P_{F}\\), and \\(P_{S}\\) respectively. It can be assumed that a person practices exactly one of the three sports mentioned above. A person has an elevated value of hematocrit.",
+    "question": "The probability that the person practises football is",
+    "options": [
+      "\\(P_{F} P_{F H}\\)",
+      "\\(P_{F H}\\)",
+      "\\(1-P_{C}-P_{S}+P_{C H}+P_{F H}+P_{S H}\\)",
+      "\\(\\frac{P_{F} P_{F H}}{P_{C} P_{C H}+P_{F} P_{F H}+P_{S} P_{S H}}\\)",
+      "\\(\\frac{P_{F H}}{P_{F}\\left(P_{C H}+P_{F H}+P_{S H}\\right)}\\)",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 13,
+    "context": "From a standard deck of cards 5 cards are drawn randomly.",
+    "question": "The probability, that among the 5 cards there are exactly 3 red and 2 black cards, is",
+    "options": [
+      "\\(\\frac{26 \\cdot 25 \\cdot 24 \\cdot 26 \\cdot 25}{52 \\cdot 51 \\cdot 50 \\cdot 49 \\cdot 48}\\)",
+      "\\(\\frac{13}{40}\\)",
+      "\\(\\binom{5}{3}\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3}\\)",
+      "\\(\\underline{\\binom{26}{3}\\binom{26}{2}} \\binom{52}{5}\\)",
+      "\\(\\binom{4}{2}\\left(\\frac{1}{2}\\right)^{2}\\left(\\frac{1}{2}\\right)^{3}\\)",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 14,
+    "context": "One considers two independent random variables \\(X\\) and \\(Y\\) both following a geometric distribution with parameter \\(p\\) and \\(q\\) respectively.",
+    "question": "One calculates \\(\\mathrm{P}(X>Y)\\) by",
+    "options": [
+      "\\(\\mathrm{P}(X>Y)=\\frac{q(1-p)}{p+q-p q}\\)",
+      "\\(\\mathrm{P}(X>Y)=\\frac{q}{3 p}\\)",
+      "\\(\\mathrm{P}(X>Y)=\\frac{(1-p)(1-q)}{1-p q}\\)",
+      "\\(\\mathrm{P}(X>Y)=\\frac{p(1-q)}{p+q-p q}\\)",
+      "\\(\\mathrm{P}(X>Y)=\\frac{(1-p) q}{1-p q}\\)",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 15,
+    "context": "The random variable \\(X\\) has density \\(2 x\\) for \\(0<x<1\\) and 0 otherwise.",
+    "question": "One gets",
+    "options": [
+      "\\(\\mathrm{P}\\left(\\frac{1}{4}<X<\\frac{1}{2}\\right)=\\frac{1}{4}\\)",
+      "\\(\\mathrm{P}\\left(\\frac{1}{4}<X<\\frac{1}{2}\\right)=\\frac{1}{2}\\)",
+      "\\(\\mathrm{P}\\left(\\frac{1}{4}<X<\\frac{1}{2}\\right)=\\frac{3}{16}\\)",
+      "\\(\\mathrm{P}\\left(\\frac{1}{4}<X<\\frac{1}{2}\\right)=\\frac{5}{8}\\)",
+      "\\(\\mathrm{P}\\left(\\frac{1}{4}<X<\\frac{1}{2}\\right)=\\frac{3}{8}\\)",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 16,
+    "context": "Individuals can transfer pictures to a homepage. The size of the pictures can be described by a distribution with density \\(f(x)=\\frac{\\alpha}{\\beta}\\left(1+\\frac{x}{\\beta}\\right)^{-\\alpha-1}\\), where \\(\\alpha\\) and \\(\\beta\\) are positive constants.",
+    "question": "The probability that the smallest of the 4 pictures has a size exceeding a value of \\(x_{0}\\) is",
+    "options": [
+      "\\(\\left(1+\\frac{x_{0}}{\\beta}\\right)^{-4 \\alpha}\\)",
+      "\\(\\frac{\\alpha}{\\beta}\\left(1+\\frac{x_{0}}{\\beta}\\right)^{-4 \\alpha-4}\\)",
+      "\\(\\left(1-\\left(1+\\frac{x_{0}}{\\beta}\\right)^{-\\alpha}\\right)^{4}\\)",
+      "\\(\\left(1-\\frac{\\alpha}{\\beta}\\left(1+\\frac{x_{0}}{\\beta}\\right)^{-\\alpha-1}\\right)^{4}\\)",
+      "\\(\\left(1+\\frac{4 x_{0}}{\\beta}\\right)^{-\\alpha}\\)",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 17,
+    "context": "The random variable \\(Y\\) is for given \\(X=x\\) uniformly distributed on the interval ( \\(x, 1\\) ), while \\(X\\) has density \\(f_{X}(x)=2-2 x, 0 \\leq x \\leq 1\\).",
+    "question": "One calculates \\(\\mathrm{E}(Y)\\) to be",
+    "options": [
+      "\\(\\mathrm{E}(Y)=\\frac{2}{3}\\)",
+      "\\(\\mathrm{E}(Y)=\\frac{1}{2}\\)",
+      "\\(\\mathrm{E}(Y)=\\frac{3}{4}\\)",
+      "\\(\\mathrm{E}(Y)=\\frac{3}{5}\\)",
+      "\\(\\mathrm{E}(Y)=\\frac{x+1}{2}\\)",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 18,
+    "context": "Visitors in a theme park throw balls against a centered disc. The point of impact for each ball can be described by the coordinates ( \\(X_{1}, X_{2}\\) ), being the horizontal respectively the vertical distance from the center. It is reasonable to model \\(X_{1}\\) and \\(X_{2}\\) as two independent standard normal random variables. To win a price one has to hit a ring with a width of 1 . The inner diameter of the ring is 2 (and thus the outer diameter is 4 ).",
+    "question": "The probability that a visitor wins exactly two prices by two throws is",
+    "options": [
+      "\\(e^{-1}+e^{-4}-2 e^{-\\frac{5}{2}}\\)",
+      "\\(e^{-2}\\left(1+e^{-2}-2 e^{-1}\\right)\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{2 \\operatorname{Atan}(3)}{\\pi}\\)",
+      "\\(e^{-1}-e^{-4}\\)",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 19,
+    "context": "A pig transporter contains 400 slaughter pigs. The slaughter pigs have a mean weight of 97.5 kg with a standard deviation of 15 kg .",
+    "question": "The probability that the total weight of the slaughter pigs in a pig transporter exceeds 40 tonnes can, possibly approximately, be calculated to",
+    "options": [
+      "\\(1-\\Phi\\left(\\frac{20-400 \\cdot 97.5-\\frac{1}{2}}{2000 \\sqrt{0.15 \\cdot 0.85}}\\right)\\)",
+      "\\(1-\\Phi\\left(\\frac{40000-400 \\cdot 97.5}{30000}\\right)\\)",
+      "\\(\\Phi(-3)\\)",
+      "\\(\\Phi\\left(-\\frac{10}{3}\\right)\\)",
+      "The probability can not be calculated due to insufficient information",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 20,
+    "context": "The point ( \\(X, Y\\) ) is chosen uniformly distributed within the area confined by the axes of the coordinate system and the line \\(2 y+x=2\\). One considers \\(Z=X+Y\\).",
+    "question": "The density \\(f_{Z}(z)\\) for \\(Z\\) is",
+    "options": [
+      "\\(f_{Z}(z)=\\frac{z}{9},\\ 0<z<3\\)",
+      "\\(f_{Z}(z)=\\left\\{\\begin{array}{cc}\\frac{z}{2}&0<z\\leq 1\\\\ \\frac{1}{2}&1<z\\leq 2\\\\ \\frac{3-z}{2}&2<z\\leq 3\\end{array}\\right.\\)",
+      "\\(f_{Z}(z)=\\left\\{\\begin{array}{cc}z&0\\leq z<1\\\\ 2-z&1\\leq z\\leq 2\\end{array}\\right.\\)",
+      "\\(f_{Z}(z)=\\int_{0}^{z} \\frac{1}{2}\\,\\mathrm{d}x\\)",
+      "\\(f_{Z}(z)=\\left\\{\\begin{array}{cc}z&0\\leq z<1\\\\ 4-2z&1\\leq z\\leq 2\\end{array}\\right.\\)",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 21,
+    "context": "Consider the pair ( \\(X, Y\\) ), which is standard bivariate normally distributed with correlation coefficient \\(\\rho=\\frac{3}{5}\\), and let \\(Z=X+Y\\).",
+    "question": "One calculates \\(\\mathrm{P}(Z<-1)\\) to",
+    "options": [
+      "\\(\\Phi\\left(-\\frac{\\sqrt{5}}{5}\\right)\\)",
+      "\\(\\Phi\\left(-\\frac{\\sqrt{2}}{2}\\right)\\)",
+      "\\(\\Phi\\left(-\\frac{4 \\sqrt{5}}{5}\\right)\\)",
+      "\\(\\Phi\\left(-\\frac{4 \\sqrt{3}}{5}\\right)\\)",
+      "\\(\\Phi\\left(-\\frac{\\sqrt{5}}{4}\\right)\\)",
+      "Do not know"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "english",
+    "number": 22,
+    "context": "Airplanes are under special weather conditions redirected to a minor airport with safe conditions for landing. It is assumed that the redirected airplanes arrive independently with a frequency of 1 every third minute.",
+    "question": "The probability that more than 6 airplanes arrive within 5 minutes can be calculated to",
+    "options": [
+      "\\(1-\\Phi\\left(\\frac{6-\\frac{5}{3}}{\\sqrt{\\frac{5}{3}}}\\right)\\)",
+      "0.0467",
+      "0.023",
+      "0.017",
+      "0.0017",
+      "Do not know"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "english",
+    "number": 23,
+    "context": "The random variables \\(X\\) and \\(Y\\) have the joint density \\(f(x, y)=x+y\\) for \\(0<x<1\\) and \\(0<y<1\\).",
+    "question": "One calculates \\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)\\) to",
+    "options": [
+      "\\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)=\\frac{1}{2}\\)",
+      "\\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)=\\frac{1}{4}\\)",
+      "\\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)=\\frac{1}{6}\\)",
+      "\\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)=\\frac{1}{8}\\)",
+      "\\(\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)=\\frac{1}{16}\\)",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 24,
+    "context": "One considers the events \\(A\\) and \\(B\\) and the related indicator functions \\(I_{A}\\) and \\(I_{B}\\).",
+    "question": "One determines \\(\\mathrm{P}\\left(I_{A} I_{B}=1\\right)\\) to be",
+    "options": [
+      "\\(\\mathrm{P}(A \\cap B)\\)",
+      "\\(\\mathrm{P}(A \\cup B)\\)",
+      "\\(\\mathrm{P}(A)+\\mathrm{P}(B)\\)",
+      "\\(\\mathrm{P}(A)+\\mathrm{P}(B)-\\mathrm{P}(A \\cap B)\\)",
+      "The probability can not be determined without closer knowledge of the functions \\(I_{A}\\) and \\(I_{B}\\).",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 25,
+    "context": "One considers the three independent random variables \\(X_{1}, X_{2}\\), and \\(X_{3}\\), which all follow an exponential \\((\\lambda)\\) distribution. One introduces \\(Y=X_{1}+X_{2}+X_{3}\\).",
+    "question": "One calculates \\(\\mathrm{P}(Y>y)\\) to be",
+    "options": [
+      "\\(e^{-\\lambda y / 3}\\)",
+      "\\(\\left(1+\\lambda y+\\frac{1}{2}(\\lambda y)^{2}\\right) e^{-\\lambda y}\\)",
+      "\\(\\Phi\\left(\\frac{y-\\frac{3}{\\lambda}}{\\frac{\\sqrt{3}}{\\lambda}}\\right)\\)",
+      "\\(1-\\Phi\\left(\\frac{y-\\frac{3}{\\lambda}}{\\frac{\\sqrt{3}}{\\lambda}}\\right)\\)",
+      "\\(\\lambda \\frac{1}{2}(\\lambda y)^{2} e^{-\\lambda y}\\)",
+      "Do not know"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "english",
+    "number": 26,
+    "context": "A steel mill produces two different kinds of steel. The deviations from the normal production on any given day can be described using a bivariate normal distribution with correlation coefficient \\(-\\frac{\\sqrt{2}}{2}\\).",
+    "question": "The probability that less than the normal production is produced for both kinds of steel on a given day is",
+    "options": [
+      "\\(\\frac{\\frac{\\pi}{2}-\\operatorname{Atan}\\left(\\frac{\\sqrt{2}}{2}\\right)}{2 \\pi}\\)",
+      "\\(\\frac{\\operatorname{Atan}\\left(\\frac{\\sqrt{2}}{2}\\right)}{2 \\pi}\\)",
+      "\\(\\frac{1}{8}\\)",
+      "\\(\\frac{1}{6}\\)",
+      "\\(\\frac{1}{4}\\)",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 27,
+    "context": "Each day a company sells goods in an environment that can be described by a continuous random variable \\(X\\), that takes a value in the interval ( 0,1 ) with density \\(6 x(1-x)\\) independently from day to day. The number of units that can be sold during a day can be described by a binomial \\((20, x)\\) distribution for given \\(x\\).",
+    "question": "The probability that exactly 10 units can be sold on an arbitrary day is",
+    "options": [
+      "\\(\\frac{1}{21}\\)",
+      "\\(\\frac{11}{161}\\)",
+      "\\(\\int_{0}^{1}\\binom{20}{10} 6 x(1-x) \\mathrm{d} x\\)",
+      "\\(\\binom{20}{10} \\frac{1}{1024}\\)",
+      "\\(\\int_{0}^{1} 6 x^{11}(1-x)^{11} \\mathrm{~d} x\\)",
+      "Do not know"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "english",
+    "number": 28,
+    "context": "The parameter \\(\\theta\\) is used in an alternative parameterisation of the binomial distribution. The relation between \\(\\theta\\) and the usual probability parameter \\(p\\) is given by \\[ p=\\frac{e^{\\theta}}{1+e^{\\theta}}, \\quad \\theta=\\log \\left(\\frac{p}{1-p}\\right) \\]",
+    "question": "Let \\(X\\) be binomially distributed with counting parameter \\(n=2\\); for \\(\\theta=0\\) one gets",
+    "options": [
+      "\\(\\mathrm{P}(X=0)=1\\)",
+      "\\(\\mathrm{P}(X=0)=\\frac{1}{2}\\)",
+      "\\(\\mathrm{P}(X=0)=\\frac{1}{4}\\)",
+      "\\(\\mathrm{P}(X=0)=0\\)",
+      "\\(\\mathrm{P}(X=0)\\) can not be determined as \\(\\theta=0\\) is an invalid parameter value",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 29,
+    "context": "The travel distance to a research station in the Arctic has a mean of 1day and a standard deviation of 3 days.",
+    "question": "A best upper limit for the probability that the travel time to the research station exceeds two days is",
+    "options": [
+      "1",
+      "\\(\\frac{1}{2}\\)",
+      "\\(1-\\Phi\\left(\\frac{1}{3}\\right)\\)",
+      "\\(\\frac{1}{4}\\)",
+      "Can not be determined without more knowledge of the distribution of the travel time",
+      "Do not know"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "english",
+    "number": 30,
+    "context": "The joint distribution of the discrete random variables \\(X\\) and \\(Y\\) is given by the following table.          3|c|Values of \\(X\\)     Distribution           1     2     3     of \\(Y\\) Values     3     \\(1 / 6\\)     0     \\(1 / 6\\)     \\(1 / 3\\) of \\(Y\\)     2     0     \\(1 / 3\\)     0     \\(1 / 3\\)      1     \\(1 / 6\\)     0     \\(1 / 6\\)     \\(1 / 3\\) Distribution of \\(X\\)      \\(1 / 3\\)     \\(1 / 3\\)     \\(1 / 3\\)     1                     (total sum)",
+    "question": "The following can be stated about the random variables \\(X\\) and \\(Y\\)",
+    "options": [
+      "They are independent",
+      "They are uncorrelated but not independent",
+      "They are uncorrelated",
+      "They are identical",
+      "They are mutually exclusive",
+      "Do not know"
+    ],
+    "answer": "2"
+  }
+]

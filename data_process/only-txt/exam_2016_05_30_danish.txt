@@ -1,0 +1,703 @@
+Opgave 1
+
+Om hændelserne D og C gælder:
+$P(D)=\frac{3}{4}, P(C \mid D)=\frac{2}{9}$ og
+$P\left(C \mid D^{c}\right)=\frac{4}{7}$, hvor D^(c) er den
+komplementære hændelse til D.
+
+Spørgsmål 1
+
+Sandsynligheden P(C) er
+
+1 $\frac{1}{3}$
+2 $\frac{17}{40}$
+
+3 $\frac{13}{42}$
+
+4 $\frac{50}{63}$
+5 $\frac{41}{63}$
+
+6 Ved ikke
+
+Opgave 2
+
+En sensor i et sensornetværk har to strømkilder. Når den ene strømkilde
+er udtømt, tager den anden automatisk over. Man antager, at den anden
+strømkilde fungerer som ny fra det øjeblik, hvor den erstatter den
+første nu udtømte strømkilde. Strømkildernes levetid kan beskrives ved
+en eksponentialfordeling med middelværdi $\frac{3}{2}$ år.
+
+Spørgsmål 2
+
+Hvad er sandsynligheden for, at sensoren har en fungerende strømkilde
+efter 2 år
+
+1 $\Phi\left(\frac{2-\frac{4}{3}}{\sqrt{\frac{8}{3}}}\right)$
+
+2 $\left(1+\frac{8}{3}\right) e^{-\frac{8}{3}}$
+
+3 (1 + 1.6)e^( − 1.6)
+
+4 $\frac{7}{3} e^{-\frac{4}{3}}$
+
+5 $1-\Phi\left(\frac{2-\frac{4}{3}}{\sqrt{\frac{8}{3}}}\right)$
+
+6 Ved ikke
+
+Opgave 3
+
+En stokastisk variabel Y er eksponentialfordelt med parameter γ. En
+anden stokastisk variabel X er for givet Y normalfordelt med middelværdi
+Y²ϕ og varians Y²δ².
+
+Spørgsmål 3
+
+Middelværdien af X er
+
+1 $\frac{2}{\gamma}\left(\phi^{2}+\delta^{2}\right)$
+2 $\frac{2}{\gamma} \phi$
+
+3 $\frac{2}{\gamma} \phi^{2}$
+
+4 $\frac{2}{\gamma^{2}} \phi^{2}$
+
+5 $\frac{2}{\gamma^{2}} \phi$
+
+6 Ved ikke
+
+Opgave 4
+
+Vi betragter en stokastisk variabel X med tæthed f(x) = 4x³, 0 ≤ x ≤ 1.
+
+Spørgsmål 4
+
+Forventningsværdien for $Y=\sqrt{X}$ er
+
+1 $\frac{1}{2}$
+
+2 $\frac{2 \sqrt{5}}{5}$
+
+3 $\frac{8}{9}$
+
+4 $\frac{6}{7}$
+
+5 $\frac{5}{6}$
+
+6 Ved ikke
+
+Opgave 5
+
+Spørgsmål 5
+
+Levetiden af en type LED pærer kan beskrives ved identisk fordelte
+ikke-negative stokastiske variable X_(i) med en hazard-rate h(x), der
+vokser med x.
+
+1 Det kan ikke lade sig gøre at have en hazardrate, der er voksende for
+alle x > 0.
+
+2 Fejlhyppigheden er den samme for unge og gamle LED pærer.
+
+3 Gamle LED pærer har en mindre fejlhyppighed end unge LED pærer, men
+der er flere unge.
+
+4 Gamle LED pærer har en større fejlhyppighed end unge.
+
+5 Oplysningerne er ikke tilstrækkelige til at man kan sige noget
+generelt.
+
+6 Ved ikke
+
+Opgave 6
+
+En fjerdedel af individerne af en bestemt flueart har en genmutation.
+Man kan undersøge for denne mutation. Testet giver altid positivt
+udslag, hvis det individ, der testes, har mutationen. I en fjerdedel af
+de tilfælde, hvor det testede individ ikke har mutationen, giver testet
+også positivt udslag. Testet for et individ har givet positivt udslag.
+
+Spørgsmål 6
+
+På basis af ovenstående oplysninger vurderer man, at sandsynligheden
+for, at det testede individ har genmutationen, er
+
+1 $\frac{3}{4}$
+
+2 $\frac{4}{7}$
+
+3 $\frac{1}{2}$
+
+4 $\frac{1}{3}$
+
+5 $\frac{1}{4}$
+
+6 Ved ikke
+
+Opgave 7
+
+Parret ( X, Y ) er bivariat standardiseret normalfordelt med
+korrelationskoefficient $\rho=\frac{1}{2}$.
+
+Spørgsmål 7
+
+Man finder P(X + Y ≥ 0, X ≥ 2Y) til
+
+1 $1-\frac{\operatorname{Arctan}(2)}{\pi}$
+
+2 $\frac{\operatorname{Arctan}(2)}{\pi}$
+
+3 $1-\frac{\operatorname{Arctan}(\sqrt{5})}{\pi}$
+
+4 $\frac{1}{3 \sqrt{3}}$
+
+5 $\frac{1}{6}$
+
+6 Ved ikke
+
+Opgave 8
+
+Antag, at en europæisk fodboldklub hvert år har en sandsynlighed på 1/20
+for at vinde det nationale mesterskab.
+
+Spørgsmål 8
+
+Sandsynligheden for, at den pågældende klub må vente mere end 10 år på
+at vinde det nationale mesterskab, er
+$1 \square \quad \sum_{i=16}^{\infty}\binom{i}{16} \frac{1}{20}\left(\frac{19}{20}\right)^{i-1}$
+$2 \square \quad\left(\frac{19}{20}\right)^{10}$
+$3 \square \quad \frac{1}{20^{10}}$
+$4 \square \quad \frac{1}{2}$
+$5 \square \quad \frac{1}{20}\left(\frac{19}{20}\right)^{10}$
+6▫   Ved ikke
+
+Opgave 9
+
+En gruppe atleter anses for at være på samme niveau i disciplinen 110 m
+hækkeløb. Deres gennemførselstider kan antages normalfordelte med
+middelværdi 14s og varians 0,25s².
+
+Spørgsmål 9
+
+Hvad er sandsynligheden for, at vindertiden bliver under 13, 5s i et
+løb med 6 løbere?
+
+1 (1 − Φ( − 1))⁶
+2 1 − Φ( − 2)⁶
+
+3 1 − (1 − Φ( − 1))⁶
+4 1 − (1 − Φ( − 2))⁶
+5 Φ( − 2)⁶
+
+6 Ved ikke
+
+Opgave 10
+
+Et online spil fungerer på følgende måde. Hver deltager tildeles et tal
+mellem 1 og antallet af spillere, således at hver deltager har sit eget
+tal. Herefter trækkes der tilfældigt et tal blandt disse i hver runde.
+Vinder er den, hvis nummer først trækkes for anden gang. I et spil
+deltager 25 spillere.
+
+Spørgsmål 10
+
+Sandsynligheden for, at spillet slutter netop i runde 4, er
+
+1 $\frac{1}{25}\left(\frac{24}{25}\right)^{3}$
+
+2
+
+$$\frac{\binom{4}{1}\binom{21}{3}}{\binom{25}{4}}$$
+
+3 $\frac{24}{25} \cdot \frac{23}{25} \cdot \frac{3}{25}$
+
+4
+$\frac{\left(25 \cdot \frac{1}{25}\right)^{4}}{4!} \exp \left(-\left(25 \cdot \frac{1}{25}\right)\right)=\frac{e^{-1}}{4!}$
+
+5 $\binom{4}{1} \frac{1}{25}\left(\frac{24}{25}\right)^{3}$
+
+6 Ved ikke
+
+Opgave 11
+
+Man betragter en forældrefugls placering i forhold til reden. Der
+benyttes en passende valgt længdeskala og et koordinatsystem med centrum
+i reden. Koordinaterne til fuglens placering kan da betragtes som to
+uafhængige standardiserede normalfordelte variable.
+
+Spørgsmål 11
+
+Sandsynligheden for, at forældrefuglen er mere end 2 længdeenheder væk
+fra reden, findes til
+
+1 Φ(2)
+2 1 − Φ(2)
+3 $\frac{1}{4}$
+4 1 − e^( − 1)
+
+5 e^( − 2)
+
+6 Ved ikke
+
+Opgave 12
+
+En turist spiller på et kasino. Sandsynligheden for at vinde i det
+enkelte spil er 0,48 . Turisten er meget ihærdig og får spillet i alt
+1.000 spil.
+
+Spørgsmål 12
+
+Sandsynligheden for, at turisten vinder mindst 600 gange, findes,
+eventuelt approksimativt, til
+
+1
+$\Phi\left(\frac{400+\frac{1}{2}-1000 \cdot 0.52}{\sqrt{1000 \cdot 0.48 \cdot 0.52}}\right)$
+
+2
+$1-\Phi\left(\frac{400+\frac{1}{2}-1000 \cdot 0.52}{\sqrt{1000 \cdot 0.48 \cdot 0.52}}\right)$
+
+3
+$\Phi\left(\frac{600+\frac{1}{2}-1000 \cdot 0.48}{\sqrt{1000 \cdot 0.48 \cdot 0.52}}\right)$
+
+4 $\frac{1}{2^{1000}} \sum_{i=600}^{1000}\binom{1000}{i}$
+
+5 $\binom{1000}{600} 0.48^{400} 0.52^{600}$
+
+6 Ved ikke
+
+Opgave 13
+
+Antallet af insekter, som en flagermus indtager på et kort flyvetogt,
+kan beskrives ved en stokastisk variabel med middelværdi $\frac{3}{10}$
+og varians $\frac{2}{5}$.
+
+Spørgsmål 13
+
+Sandsynligheden for, at en flagermus har indtaget mere end 50 insekter
+på 160 korte flyvetogter findes, eventuelt approksimativt, til
+
+1 $1-\Phi\left(\frac{1}{4}\right)$
+
+2 $1-\Phi\left(\frac{1}{32}\right)$
+
+3
+$1-\Phi\left(\frac{50-160 \cdot \frac{3}{10}+\frac{1}{2}}{\sqrt{\cdot \frac{3}{10} \frac{7}{10}}}\right)$
+
+4 $\sum_{i=51}^{\infty} \frac{48^{i}}{i!} e^{-48}$
+
+5
+$\sum_{i=51}^{160}\binom{160}{i}\left(\frac{3}{10}\right)\left(\frac{7}{10}\right)^{160-i}$
+
+6 Ved ikke
+
+Opgave 14
+
+Man har de stokastiske variable X ∼ exp (1) og Y =  − X⁴.
+
+Spørgsmål 14
+
+Tæthedsfunktionen f_(Y)(y) for Y er
+
+1 $f_{Y}(y)=e^{-\sqrt[4]{-y}}$
+
+2 $f_{Y}(y)=e \sqrt[4]{y}$
+
+3 f_(Y)(y) = 4|y|³e^(y⁴)
+
+4 $f_{Y}(y)=\frac{1}{4}(-y)^{-\frac{3}{4}} e^{-\sqrt[4]{-y}}$
+
+5 $f_{Y}(y)=\frac{1}{4} y^{-\frac{3}{4}} e \sqrt[4]{y}$
+
+6 Ved ikke
+
+Opgave 15
+
+Man interesserer sig for immunberedskabet mod mæslinger hos en gruppe af
+19 børn. I hele populationen er der en sandsynlighed på $\frac{2}{5}$
+for, at et barn har immunitet mod mæslinger.
+
+Spørgsmål 15
+
+Sandsynligheden for, at mindst 10 af de 19 børn er immune overfor
+mæslinger, er
+
+1 0,4
+
+2
+$1-\sum_{x=0}^{9} \frac{\left(\frac{38}{5}\right)}{x!} e^{-\frac{38}{5}}$
+
+3
+$\sum_{x=10}^{19}\binom{19}{x}\left(\frac{2}{5}\right)^{x}\left(\frac{3}{5}\right)^{19-x}$
+
+4 $\Phi\left(\frac{-181}{2 \sqrt{114}}\right)$
+
+5
+$1-\Phi\left(\frac{10-\frac{38}{5}-\frac{1}{2}}{\sqrt{19 \cdot \frac{6}{25}}}\right)$
+
+6 Ved ikke
+
+Opgave 16
+
+Man har de to stokastiske variable V, W om hvilke det gælder, at
+Var (V) = 4, Var (W) = 1 og, at Var (V − 2W) = 12.
+
+Spørgsmål 16
+
+Korrelationen Corr (V, W) findes til
+
+1 $\frac{1}{2}$
+
+2 $-\frac{1}{4}$
+
+3 $\frac{1}{4}$
+
+4 $-\frac{1}{2}$
+
+5 Kan ikke bestemmes ud fra de givne oplysninger.
+
+6 Ved ikke
+
+Opgave 17
+
+Højden og vægten af flypassagerer beskrives med en bivariat
+normalfordeling. Gennemsnitshøjden af en passager er 172 cm , medens
+gennemsnitsvægten er 65 kg . De tilhørende standardafvigelser er
+henholdsvis 10 cm og 15 kg . Korrelationskoefficienten mellem højde og
+vægt er ρ = 0.4.
+
+Spørgsmål 17
+
+Beregn sandsynligheden for, at en flypassager, der er 157 cm høj vejer
+mere end 65 kg .
+
+1 0,1843
+
+2 0,2563
+
+3 0,2967
+
+4 0,4294
+
+5 0,5000
+
+6 Ved ikke
+
+Opgave 18
+
+Man har tre uafhængige stokastiske variable U_(i), i = 1, 2, 3, der alle
+er uniformt fordelt i intervallet [0; 1].
+
+Spørgsmål 18
+
+Sandsynligheden for, at den næstmindste af de 3 variable er større end
+$\frac{1}{4}$, findes til
+
+1 $\frac{55}{64}$
+
+2 $\frac{1}{2}$
+
+3 $\frac{57}{64}$
+
+4 $\frac{27}{32}$
+
+5 $\frac{3}{4}$
+
+6 Ved ikke
+
+Opgave 19
+
+Man overvåger løbende infektionstallet hos hospitalspatienter.
+Middelniveauet for infektionstallet for hospitalspatienter er 3.
+
+Spørgsmål 19
+
+Sandsynligheden for, at en patient har et infektionstal på mindst 60 ,
+kan maksimalt være
+
+1 $1-\Phi\left(\frac{60-3}{\sqrt{60}}\right)$
+
+2 $1-\Phi\left(\frac{60-3}{60}\right)$
+3 $\frac{1}{400}$
+
+4 $\frac{1}{20}$
+5 $\frac{1}{9}$
+
+6 Ved ikke
+
+Opgave 20
+
+For de diskrete stokastiske variable X og Y har man den simultane
+fordeling
+$P(X=x, Y=y)=e^{-\lambda \frac{(\lambda(1-p))^{x}}{y!(x-y)!}}\left(\frac{p}{1-p}\right)^{y}$,
+hvor 0 ≤ Y ≤ X.
+
+Spørgsmål 20
+
+Den betingede fordeling af X givet Y findes til
+
+1
+$P(X=x \mid Y=y)=\frac{(\lambda(1-p))^{x}}{y!(x-y)!}\left(\frac{p}{1-p}\right)^{x}, \quad x=0,1, \ldots$
+
+2
+$P(X=x \mid Y=y)=\frac{(\lambda(1-p))^{x-y}}{(x-y)!} e^{-\lambda(1-p)}, \quad x=y, y+1, \ldots$
+
+3
+$P(X=x \mid Y=y)=\frac{(\lambda p))^{x-y}}{(x-y)!} e^{-\lambda p}, \quad x=y, y+1, \ldots$
+
+4
+$P(X=x \mid Y=y)=\frac{(\lambda(1-p))^{x}}{y!(x-y)!}\left(\frac{p}{1-p}\right)^{x}, \quad x=y, y+1, \ldots$
+
+5 $P(X=x \mid Y=y)=\binom{x}{y} p^{y}(1-p)^{x-y}, \quad$ i
+definitionsområdet.
+
+6 Ved ikke
+
+Opgave 21
+
+Størrelsen af bankers indlånsunderskud umiddelbart inden en recession og
+varigheden af den efterfølgende recession kan beskrives ved en bivariat
+normalfordeling. Middelværdien og variansen af indlånsunderskuddet kan
+med en passende skalering antages at være henholdsvis 12 og 2², medens
+middelværdi og varians af varigheden kan antages at være henholdsvis 18
+og 5². Korrelationskoefficienten kan antages at være 0,6 . En økonom har
+foreslået at kvantificere recessioner som summen af indlånsunderskuddet
+og varigheden.
+
+Spørgsmål 21
+
+Sandsynligheden for, at en recession har en værdi på mindre end 36 på
+økonomens skala, findes til
+
+1 Φ(6)
+
+2 $\Phi\left(\frac{6 \sqrt{29}}{29}\right)$
+
+3 $\Phi\left(\frac{6}{7}\right)$
+
+4 $\Phi\left(\frac{3 \sqrt{5}}{10}\right)$
+
+5 $\Phi\left(\frac{6 \sqrt{41}}{41}\right)$
+6 Ved ikke
+
+Opgave 22
+
+Fra observationer af en vejstrækning har man konstateret, at
+tidsafstanden mellem to biler med rimelighed kan beskrives ved en
+eksponentialfordeling med middelværdi $\frac{1}{2}$ minut.
+
+Spørgsmål 22
+
+Hvad er sandsynligheden for, at mere end tre biler passerer et punkt på
+vejen inden for et minut?
+
+1 $1-\frac{19}{3} e^{-2}$
+
+2 $1-\frac{79}{48} e^{-\frac{1}{2}}$
+
+3 $\frac{79}{48} e^{-\frac{1}{2}}$
+4 $\frac{13}{2} e^{-2}$
+5 1 − 5e^( − 2)
+
+6 Ved ikke
+
+Opgave 23
+
+Et punkt vælges tilfældigt i området angivet på figuren.
+[image]
+
+Spørgsmål 23
+
+Sandsynligheden for, at førstekoordinaten X til punktet er mindre end
+-1, findes til
+
+1 $\frac{1}{2}$
+
+2 $\frac{1}{4}$
+
+3 $\frac{1}{8}$
+
+4 $\frac{3}{32}$
+
+5 $\frac{1}{16}$
+
+6 Ved ikke
+
+Opgave 24
+
+De stokastiske variable X og Y har simultan tæthedsfunktion
+f(x, y) = 3e^( − x − y) for $0<\frac{x}{2} \leq y \leq 2 x$. Den
+marginale tæthed er for både X og Y givet ved
+$f(x)=3\left(e^{-\frac{3 x}{2}}-e^{-3 x}\right)$. Man danner nu den
+stokastiske variabel Z = X + Y.
+
+Spørgsmål 24
+
+Tætheden f_(Z)(z) findes ved
+
+1 f_(Z)(z) = ∫₀^(z)3e^( − x − (z − x))dx
+2 $f_{Z}(z)=\int_{\frac{z}{3}}^{\frac{2 z}{3}} 3 e^{-z} \mathrm{~d} x$
+
+3
+$f_{Z}(z)=\int_{\frac{z}{3}}^{\frac{2 z}{3}} 9\left(e^{-\frac{3 x}{2}}-e^{-3 x}\right)\left(e^{-\frac{3(z-x)}{2}}-e^{-3(z-x)}\right) \mathrm{d} x$
+
+4
+$f_{Z}(z)=\int_{\frac{z}{3}}^{\frac{3 z}{2}} 3 e^{-x-(x-z)} \mathrm{d} x$
+
+5
+$f_{Z}(z)=\int_{\frac{z}{3}}^{\frac{4 z}{3}} 9\left(e^{-\frac{3 x}{2}}-e^{-3 x}\right)\left(e^{-\frac{3(z-x)}{2}}-e^{-3(z-x)}\right) \mathrm{d} x$
+
+6 Ved ikke
+
+Opgave 25
+
+Et par af stokastiske variable ( X, Y ) er specificeret ved deres
+simultane fordelingsfunktion F(x, y) = P(X ≤ x, Y ≤ y).
+
+Spørgsmål 25
+
+Man finder
+
+1 P(x₁<X≤x₂,y₁<Y≤y₂) = F(x₂,y₂) − F(x₁,y₁)
+
+2 P(x₁<X≤x₂,y₁<Y≤y₂) = F(x₂,y₂) + F(x₁,y₂) + F(x₂,y₁) − F(x₁,y₁)
+
+3 P(x₁≤X≤x₂,y₁≤Y≤y₂) = F(x₂,y₂) + F(x₁,y₂) + F(x₂,y₁) − F(x₁,y₁)
+
+4 P(x₁<X≤x₂,y₁<Y≤y₂) = F(x₂,y₂) − F(x₁,y₂) − F(x₂,y₁) + F(x₁,y₁)
+
+5 P(x₁≤X≤x₂,y₁≤Y≤y₂) = F(x₂,y₂) − F(x₁,y₂) − F(x₂,y₁) + F(x₁,y₁)
+
+6 Ved ikke
+
+Opgave 26
+
+En type af elektroniske komponenter produceres med varierende kvalitet.
+Den varierende kvalitet kan kvantificeres ved en stokastisk variabel X,
+hvor X er uniformt fordelt på intervallet [1, 3]. Levetiden af en
+komponent af en given kvalitet følger en eksponentialfordeling med
+parameter X minut ^( − 1).
+
+Spørgsmål 26
+
+Hvad er den forventede tid til nedbrud for en tilfældigt valgt
+komponent?
+
+1 $\log (\sqrt{3})$ minutter
+
+2 2 minutter
+
+3 $\frac{1}{2} \log (2)$ minutter
+
+4 $\frac{9}{4}$ minutter
+
+5 $\frac{4}{9}$ minutter
+
+6 Ved ikke
+
+Opgave 27
+
+Tiderne mellem ankomsterne af pakker i et kommunikationssystem kan
+beskrives ved en eksponentialfordeling med parameter μ.
+
+Spørgsmål 27
+
+Sandsynligheden for at observere en mellemankomsttid mellem to pakker i
+intervallet [t, t + ϵ], hvor $\epsilon \ll \frac{1}{\mu}$ findes -
+eventuelt approksimativt - til
+
+1 μe^( − μt)ϵ
+
+2
+$\Phi\left(\frac{t+\epsilon-\frac{1}{\mu}}{\frac{1}{\mu}}\right)-\Phi\left(\frac{t-\frac{1}{\mu}}{\frac{1}{\mu}}\right)$
+
+3 e^( − (t + ϵ)μ)
+
+4 λe^( − λ(t + ϵ))
+
+5 1 − e^( − (t + ϵ)μ)
+
+6 Ved ikke
+
+Opgave 28
+
+Man kaster to gange med en sædvanlig terning og betegner herefter det
+maksimale antal øjne blandt de to kast med X og summen af antal ∅ jne
+ved de to kast med Y. Man ønsker at kende sandsynlighederne i alle de
+tilfælde, hvor det samlede antal øjne er 8.
+
+Spørgsmål 28
+
+De ønskede sandsynligheder findes til
+
+1
+
+$$P(X=4, Y=8)=\frac{1}{36}, P(X=5, Y=8)=\frac{1}{18}, P(X=6, Y=8)=\frac{1}{18}$$
+
+2
+
+$$P(X=4, Y=8)=\frac{1}{18}, P(X=5, Y=8)=\frac{1}{12}, P(X=6, Y=8)=\frac{1}{18}$$
+
+3
+
+$$\begin{aligned}
+& P(X=1, Y=8)=\frac{1}{36}, P(X=2, Y=8)=\frac{1}{18}, P(X=3, Y=8)=\frac{1}{12} \\
+& P(X=4, Y=8)=\frac{1}{12}, P(X=5, Y=8)=\frac{1}{18}, P(X=6, Y=8)=\frac{1}{36}
+\end{aligned}$$
+
+4
+
+$$P(X=4, Y=8)=\frac{1}{18}, P(X=5, Y=8)=\frac{1}{18}, P(X=6, Y=8)=\frac{1}{18}$$
+
+5
+
+$$\begin{aligned}
+& P(X=1, Y=8)=\frac{1}{36}, P(X=2, Y=8)=\frac{1}{36}, P(X=3, Y=8)=\frac{1}{36} \\
+& P(X=4, Y=8)=\frac{1}{36}, P(X=5, Y=8)=\frac{1}{36}, P(X=6, Y=8)=\frac{1}{36}
+\end{aligned}$$
+
+6 Ved ikke
+
+Opgave 29
+
+For de to stokastiske variable ( X, Y ) har man den simultane
+tæthedsfunktion f(x, y) = 8xy, 0 < y < x < 1
+
+Spørgsmål 29
+
+Man finder
+
+1 $\mathrm{E}(X Y)=\frac{1}{2}$
+
+2 $\mathrm{E}(X Y)=\frac{8}{9}$
+
+3 $\mathrm{E}(X Y)=\frac{1}{3}$
+
+4 $\mathrm{E}(X Y)=\frac{2}{3}$
+
+5 $\mathrm{E}(X Y)=\frac{4}{9}$
+
+6 Ved ikke
+
+Opgave 30
+
+Man har de uafhængige X, der følger en Poisson(2) fordeling, og Y, der
+følger en $\operatorname{Geo}\left(\frac{1}{5}\right)$ fordeling. Man
+danner Z = (2X + 3)(Y − 1).
+
+Spørgsmål 30
+
+Man finder
+
+1
+$\mathrm{E}(Z)=\sum_{i=0}^{\infty}(2 i+3)(i-1) \frac{2^{i}}{i!} e^{-2}\left(\frac{4}{5}\right)^{i-1} \frac{1}{5^{i}}$
+
+2 E(Z) = 13
+
+3 E(Z) = 20
+
+4 E(Z) = 24
+
+5 E(Z) = 28
+
+6 Ved ikke
+
+Slut på opgavesættet.

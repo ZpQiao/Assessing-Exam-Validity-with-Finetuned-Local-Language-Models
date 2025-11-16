@@ -1,0 +1,710 @@
+Opgave 1
+
+En grønthandler har gennem længere tid observeret, at antallet af solgte
+blomkålshoveder med rimelighed kan beskrives ved en Poissonfordeling med
+middelværdi 8.4. Blomkålene koster ham 35 kr . i indkøb pr. dag. Han
+sælger blomkål for 12.50kr.pr stk.
+
+Spørgsmål 1
+
+Idet man kan se bort fra den mulighed, at blomkål bliver udsolgt, findes
+standardafvigelsen af en dags fortjeneste til:
+
+1 $\sqrt{12.50 \cdot 8.4}$
+
+2 $12.50 \cdot \sqrt{8.4}$
+
+3 $\sqrt{12.50 \cdot 8.4-35}$
+
+4 12.50 ⋅ 8.4
+
+5 $\sqrt{(12.50)^{2} \cdot 8.4+35}$
+
+6 Ved ikke
+
+Opgave 2
+
+En telefoncentral har 8 ledninger. Sandsynligheden P_(i) for, at i af
+disse er optaget til et givet tidspunkt, er givet ved
+
+$$P_{i}=\frac{1}{c} \frac{A^{i}}{i!} e^{-A}, \quad i=0,1,2, \ldots, 8$$
+
+hvor A er et mål for trafikbelastningen.
+
+Spørgsmål 2
+
+Konstanten c er
+
+1 1
+
+2 e^(A)
+
+3 $\frac{1-A^{9}}{1-A} \Gamma(8)$
+
+4 $\sum_{i=0}^{8} \frac{A^{i}}{i!}$
+
+5 $\sum_{i=0}^{8} \frac{A^{i}}{i!} e^{-A}$
+
+6 Ved ikke
+hvor Γ(8) er gammafunktionen Γ(x) = ∫₀^(∞)t^(x − 1)e^( − t) dt evalueret
+i punktet x = 8.
+
+Opgave 3
+
+Sandsynligheden for, at en dims holder længere end t tidsenheder, er
+0.2. Dimsen er kritisk for funktionen af et givet apparat. Man
+installerer 25 dimser parallelt således, at apparatet fungerer sålænge
+mindst een af de 25 dimser fungerer. Man kan regne med, at apparatets
+levetid ikke afhænger af andre komponenter.
+
+Spørgsmål 3
+
+Sandsynligheden for, at apparatet har en levetid på mindst t er
+
+1 $1-\Phi\left(\frac{1}{5}\right)$
+2 0.8²⁵
+3 1 − 0.8²⁵
+
+4 1 − 0.2²⁵
+
+5 0.2²⁵
+
+6 Ved ikke
+
+Opgave 4
+
+Belastningen af en bygningsdel består af tre komponenter. En
+trykpåvirkning, der kan beskrives med en Normal (5, 2) normalfordeling
+med et passende valg af enheder, en konstant belastning på 3 enheder
+(vægt), samt en vridpåvirkning, der kan beskrives med en Normal (8, 3)
+normalfordeling. Belastningerne antages at være additive og uafhængige.
+
+Spørgsmål 4
+
+Sandsynligheden for, at den samlede belastning af bygningsdelen ikke
+overstiger 25, findes til
+
+1 $\Phi\left(\frac{25-16}{\sqrt{2+3}}\right)$
+
+2 $\Phi\left(\frac{25-16}{\sqrt{2^{2}+3^{2}}}\right)$
+
+3 $\Phi\left(\frac{22-16}{\sqrt{2+3}}\right)$
+
+4 $\Phi\left(\frac{3}{2+3}\right)$
+
+5 $\Phi\left(\frac{3}{\sqrt{2^{2}+3^{2}}}\right)$
+6 Ved ikke
+
+Hvor Φ som sædvanlig betegner fordelingsfunktionen for en standardiseret
+normalfordelt variabel.
+
+Opgave 5
+
+Man har hændelserne A, B og C med
+P(A) = 0.3, P(B) = 0.2, P(C) = 0.1, P(A ∪ B) = 0.5, P(A ∩ C) = 0.08 og
+P(B ∩ C) = 0.02. Man kan eventuelt benytte P(A ∩ B ∩ C) ≤ P(A ∩ B).
+
+Spørgsmål 5
+
+Sandsynligheden for P(A ∪ B ∪ C) findes til
+
+1 0.1
+
+2 0.28
+
+3 0.4
+
+4 0.5
+
+5 0.6
+
+6 Ved ikke
+
+Opgave 6
+
+Et flyselskab har efter lang tids erfaring konstateret, at vægten af en
+tilfældig flypassager kan beskrives ved en stokastisk variabel med
+middelværdi 72 kg . og standard afvigelse 12 kg . Man har ikke undersøgt
+fordelingen af denne stokastiske variabel nøjere.
+
+Spørgsmål 6
+
+Til en givet flyafgang er der 300 fremmødte passagerer. Man ⌀ nsker nu
+at bestemme sandsynligheden for, at den samlede vægt af passagererne
+ikke overstiger 22 ton. Sandsynligheden findes approksimativt til
+
+1 $1-\Phi\left(\frac{22000-300 \cdot 72}{12 \cdot 10 \sqrt{3}}\right)$
+
+2 $1-\Phi\left(\frac{22000-300 \cdot 72}{12 \cdot 300}\right)$
+
+3 $\Phi\left(\frac{22000-300 \cdot 72}{12 \cdot 300}\right)$
+
+4 $\Phi\left(\frac{22000-300 \cdot 72}{12 \cdot 10 \sqrt{3}}\right)$
+
+5 Kan ikke løses uden oplysning om fordelingstype.
+
+6 Ved ikke
+
+Hvor Φ som sædvanlig betegner fordelingsfunktionen for en standardiseret
+normalfordelt variabel.
+
+Opgave 7
+
+Den stokastiske variabel X er standardiseret normalfordelt (middelværdi
+0 og varians 1).
+
+Spørgsmål 7
+
+Forventningsværdien E(|X|) findes til
+
+1 1
+
+2 $\sqrt{\frac{2}{\pi}}$
+
+3 $\frac{1}{\sqrt{2 \pi}}$
+
+4 0
+
+5 Ingen af de ovenstående
+
+6 Ved ikke
+
+Opgave 8
+
+En type af radioaktivt materiale udsender betapartikler med en
+intensitet på 3.5 partikler pr. sekund pr. g.
+
+Spørgsmål 8
+
+Sandsynligheden for, at den fjerde betapartikel, der udsendes fra en
+klump på 2 g , kommer inden 1 sekund, er givet ved
+
+1 (1−e^( − 3.5))²
+
+2 1 − e^( − 7)
+
+3 $\Phi\left(\frac{1-\frac{4}{7}}{\frac{4}{7}}\right)$
+
+4 $e^{-7} \sum_{i=4}^{\infty} \frac{7^{i}}{i!}$
+
+5 e^( − 3.5) + e^( − 7)
+
+6 Ved ikke
+
+Opgave 9
+
+Weibullfordelingen med parametrene ( α, λ ) har overlevelsesfunktionen
+G(t) = e^( − λt^(α)).
+
+Spørgsmål 9
+
+Medianen i en Weibull (λ = 1.5, α = 1.5) fordeling findes til
+
+1 0.3333
+
+2 0.5445
+
+3 0.5978
+
+4 1.4539
+
+5 1.5000
+
+6 Ved ikke
+
+Opgave 10
+
+Vi har P(X ≤ x) = 1 − e^( − x), 0 < x < ∞ og P(U ≤ u) = u, 0 < u < 1,
+hvor X og U er uafhængige.
+
+Spørgsmål 10
+
+Sandsynligheden for, at X er større end U, findes til
+
+1 $\frac{1}{2}$
+
+2 ∫₀^(∞)e^( − x)x dx
+
+3 1 − e^( − 2)
+
+4 ∫₀¹1 ⋅ e^( − u) du
+
+5 $\frac{3}{4}$
+
+6 Ved ikke
+
+Opgave 11
+
+Den stokastiske variabel X er eksponentialfordelt med tæthed
+f(x) = λe^( − λx).
+
+Spørgsmål 11
+
+Tætheden for $Y=\sqrt{X}$ findes til
+
+1 λe^( − λy²),  0 ≤ y
+
+2 $\frac{\lambda}{y} e^{-\lambda y^{2}}, \quad 0 \leq y$
+
+3
+$\left(\frac{\lambda}{y}\right)^{2} e^{-\lambda y^{2}}, \quad 0 \leq y$
+
+4 2λye^( − λy²),  0 ≤ y
+
+5 4λy³e^( − λy²),  0 ≤ y
+
+6 Ved ikke
+
+Opgave 12
+
+Vægten V af en smørpakke kan beskrives med en normalfordeling med
+middelværdi μ og varians σ₁². For en smørpakke med en givet vægt v kan
+mængden af vand X beskrives med en normalfordeling med en middelværdi,
+der er 0.1 ⋅ v. Variansen for mængden af vand antages uafhængigt af
+smørpakkens vægt til σ₀².
+
+Spørgsmål 12
+
+Middelværdien af vandindholdet i en smørpakke findes til
+
+1 $\frac{\mu}{10}$
+
+2
+$\mu \frac{\frac{\sigma_{0}}{10}}{\sqrt{\left(\frac{\sigma_{0}}{10}\right)^{2}+\left(\frac{\sigma_{1}}{10}\right)^{2}}}$
+
+3
+$\mu \frac{\left(\frac{\sigma_{0}}{10}\right)^{2}}{\left(\frac{\sigma_{0}}{10}\right)^{2}+\left(\frac{\sigma_{1}}{10}\right)^{2}}$
+
+4 $\frac{\mu}{10} \frac{\sigma_{0}^{2}}{\sigma_{0}^{2}+\sigma_{1}^{2}}$
+
+5
+$\frac{\mu}{10} \frac{\frac{\sigma_{0}}{10}}{\sqrt{\left(\frac{\sigma_{0}}{10}\right)^{2}+\left(\frac{\sigma_{1}}{10}\right)^{2}}}$
+
+6 Ved ikke
+
+Opgave 13
+
+En sædvanlig terning kastes indtil man første gang får en 3’er. Herefter
+tælles antal efterfølgende terningekast, indtil der næste gang fås en 3
+’er. Dette tal betegnes med Z.
+
+Spørgsmål 13
+
+Den stokastiske variabel Z følger en
+
+1 Binomialfordeling
+
+2 Eksponentialfordeling
+
+3 Geometrisk fordeling
+
+4 Normalfordeling
+
+5 Poissonfordeling
+
+6 Ved ikke
+
+Opgave 14
+
+For hændelserne A og B gælder $P(B)=0.75, P(A \mid B)=\frac{2}{3}$.
+
+Spørgsmål 14
+
+Man finder P(A ∩ B) til
+
+1 $\frac{1}{2}$
+
+2 $\frac{2}{3}$
+
+3 $\frac{3}{4}$
+
+4 $\frac{5}{6}$
+
+5 $\frac{8}{9}$
+
+6 Ved ikke
+
+Opgave 15
+
+I en gymnasieklasse er der 14 piger og 11 drenge. Der udtages tilfældigt
+en gruppe på 5 elever.
+
+Spørgsmål 15
+
+Sandsynligheden for, at der er netop 3 piger ud af de 5 , er
+
+1
+
+$$\frac{\binom{14}{3}\binom{11}{2}}{\binom{25}{5}}$$
+
+2
+$\frac{5!}{3!2!}\left(\frac{14}{25}\right)^{3}\left(\frac{11}{25}\right)^{2}$
+3 0.6
+
+4
+$\frac{14}{25} \frac{13}{24} \frac{12}{23} \frac{11}{22} \frac{10}{21}$
+
+5
+$\frac{14}{25} \frac{13}{24} \frac{12}{23} \frac{11}{25} \frac{10}{24}$
+
+6 Ved ikke
+
+Opgave 16
+
+To stokastiske variable X og Y er ukorrelerede, hvis Cov (X, Y) = 0 i
+modsat fald, d.v.s. hvis Cov (X, Y) ≠ 0 siges de at være korrelerede.
+
+Spørgsmål 16
+
+Et af følgende udsagn kan aldrig være sandt
+
+1 X og Y er korrelerede og afhængige
+
+2 X og Y er ukorrelerede og afhængige
+
+3 X og Y er korrelerede og uafhængige
+
+4 X og Y er ukorrelerede og uafhængige
+
+5 P(X = Y) = 1
+
+6 Ved ikke
+
+Opgave 17
+
+Parret ( X, Y ) er to-dimensionalt standardiseret normalfordelt, hvor X
+og Y er uafhængige. Vi indfører de to variable $W=\frac{a X+Y}{2}$ og
+$Z=\frac{a X-Y}{2}$.
+
+Spørgsmål 17
+
+Z og W har korrelation $\rho=\frac{1}{2}$ når a vælges til
+
+1 $\sqrt{2}$
+
+2 $\sqrt{3}$
+
+3 $\frac{1}{\sqrt{3}}$
+
+4 $\frac{1}{\sqrt{2}}$
+5 1
+
+6 Ved ikke
+
+Opgave 18
+
+Man har en løbende produktion af emner, hvor den hændelse, at et emne er
+defekt, er uafhængig af, om andre emner i produktionen er defekte. Det
+enkelte emne har en defektsandsynlighed på p. Emnerne sælges i partier
+med n emner.
+
+Spørgsmål 18
+
+Middelværdi og standard afvigelse for antal defekte emner i et parti
+findes til
+
+1 E(X) = n ⋅ p, SD(X) = n ⋅ p(1 − p)
+
+2 $E(X)=n \cdot p, S D(X)=\sqrt{n \cdot p(1-p)}$
+
+3 $E(X)=\frac{n}{2}, S D(X)=\frac{1}{2} \sqrt{n}$
+
+4 $E(X)=\frac{n}{2}, S D(X)=\frac{n}{4}$
+
+5 $E(x)=\sqrt{n} p, S D(X)=\sqrt{n \cdot p(1-p)}$
+
+6 Ved ikke
+
+Opgave 19
+
+Om en bestemt type af komponenter vides, at levetiden kan beskrives ved
+en eksponentialfordeling med intensitet λ. En bestemt type af apparat,
+der er afhængigt af en sådan komponent, har fungeret i tiden t₀.
+Komponenten har således ligeledes fungeret i t₀ tidsenheder.
+
+Spørgsmål 19
+
+Hvad er sandsynligheden for, at komponenten og dermed apparatet fejler,
+inden det når en samlet levetid på t tidsenheder.
+
+1 λ(λt₀)e^( − λt)
+
+2 e^( − λt₀)(1−e^( − λt))
+
+3 1 − e^( − λt)
+
+4 1 − e^( − λ(t−t₀))
+
+5 $\frac{1-e^{-\lambda(t)}}{1-e^{-\lambda\left(t_{0}\right)}}$
+6 Ved ikke
+
+Opgave 20
+
+Et punkt vælges tilfældigt i området 0 < x < 1, 0 < y < x. Koordinaterne
+for punktet betegnes med den todimensionale stokastiske variabel ( X, Y
+).
+
+Spørgsmål 20
+
+Den marginale tæthed for y-koordinaten findes til
+
+1 1
+
+2 2
+
+3 y
+
+4 2 ⋅ y
+
+5 2 − 2 ⋅ y
+
+6 Ved ikke
+
+Opgave 21
+
+Middelværdien af belastningen af en bro er 14 ton med en spredning på 4
+ton, men selve fordelingen er ikke nøjagtigt kendt.
+
+Spørgsmål 21
+
+Man ∅ nsker at bestemme en bedste ϕ vre grænse for sandsynligheden for,
+at broen belastes med mere end 30 ton. Man finder denne sandsynlighed
+til
+
+1 $\frac{1}{16}$
+
+2 $\frac{4}{15}$
+
+3 $\frac{1}{150}$
+
+4 $\Phi\left(\frac{30-14}{4}\right)$
+
+5 $2 \Phi\left(\frac{30-14}{4}\right)$
+
+6 Ved ikke
+
+Hvor Φ som sædvanlig betegner fordelingsfunktionen for en standardiseret
+normalfordelt variabel.
+
+Opgave 22
+
+Sandsynligheden for, at en given gasledning er læk på et givet
+tidspunkt, er 0.01. Ved en overvågningsstation tilknyttet denne
+gasledning har man gennem længere tid observeret, at sandsynligheden for
+at måle et tryk mindre end 300kpa er 0.039, hvis der er en læk i
+ledningen medens den tilsvarende sandsynlighed er 0.000394, hvis der
+ikke er en læk.
+
+Spørgsmål 22
+
+På et givet tidspunkt observeres gastryk på 290 kpa , og man ønsker, at
+bestemme sandsynligheden for en læk. Denne sandsynlighed findes med en
+præcision på tre betydende cifre til
+
+1 0.000394
+
+2 0.0390
+
+3 0.500
+
+4 0.750
+
+5 1.00
+
+6 Ved ikke
+
+Opgave 23
+
+Der kastes tre kast med en mønt. Den stokastiske variabel X betegner
+antallet af krone, medens den stokastiske variabel Y er
+indikatorvariablen for den hændelse, at alle tre kast giver samme
+resultat (i.e. tre plat eller tre krone).
+
+Spørgsmål 23
+
+Om de stokastiske variable X og Y gælder
+
+1 Hændelserne {X ≤ x} og {Y ≤ y} er gensidigt udelukkende
+
+2 X og Y er uafhængige
+
+3 Parret ( X, Y ) er multinomialfordelt
+
+4 X + Y beskrives godt ved en normalfordeling
+
+5 $E(X+Y)=\frac{7}{4}$
+
+6 Ved ikke
+
+Opgave 24
+
+Varigheden af en speciel type fræsearbejde beskrives godt ved en gamma
+$\left(3, \frac{3}{\mu}\right)$ fordeling. Konstanten δ er meget mindre
+end μ.
+
+Spørgsmål 24
+
+En god approksimation til sandsynligheden for, at varigheden af
+fræsearbejdet er mellem t₀ og t₀ + δ, findes til
+
+1 μe^( − μ(t₀+δ))
+
+2
+$\delta \frac{3}{\mu} \frac{\left(\frac{3 t_{0}}{\mu}\right)^{2}}{2} e^{-\frac{3 t_{0}}{\mu}}$
+
+3
+$\delta \frac{1}{\frac{\mu}{\sqrt{3}} \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{t_{0}-\mu}{\frac{\mu}{\sqrt{3}}}\right)^{2}}$
+
+4
+$\frac{1}{\frac{\mu}{\sqrt{3}} \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{t_{0}+\delta-\mu}{\frac{\mu}{\sqrt{3}}}\right)^{2}}$
+
+5
+$\frac{3}{\mu} \frac{\left(\frac{3\left(t_{0}+\delta\right)}{\mu}\right)^{2}}{2} e^{-\frac{3\left(t_{0}+\delta\right)}{\mu}}$
+
+6 Ved ikke
+
+Opgave 25
+
+På en ∅ kologisk mark har man fundet, at det gennemsnitlige antal
+mælkebøtter per hektar ( 10, 000 m² ) er 10,000 (ti tusinde).
+
+Man antager approksimativt, at den enkelte mælkebøtteplante ikke har
+nogen udstrækning. Det vil sige, at den i en matematisk beskrivelse kan
+opfattes som et punkt i planen. Man antager tillige, at fordelingen af
+mælkebøtteplanterne er tilfældig.
+
+Spørgsmål 25
+
+Sandsynligheden for, at der højst forekommer en mælkebøtteplante på en
+tilfældigt udtaget m², beregnes med 2 betydende cifre til
+
+1 0.26
+
+2 0.38
+
+3 0.50
+
+4 0.62
+
+5 0.74
+
+6 Ved ikke
+
+Opgave 26
+
+Der er 100 familier med børn i et givet område. Ud af disse er der 30
+familier med 1 barn, 30 familier med 2 børn, 25 familier med 3 børn og
+15 familier med 4 børn.
+
+Spørgsmål 26
+
+Sandsynligheden for, at et tilfældigt valgt barn fra dette område har
+netop to søskende findes til
+
+1 $\frac{1}{4}$
+
+2 $\frac{3}{10}$
+
+3 $\frac{1}{3}$
+
+4 $\frac{7}{20}$
+
+5 $\frac{2}{5}$
+6 Ved ikke
+
+Man kan eventuelt benytte at
+
+30 + 2 ⋅ 30 + 3 ⋅ 25 + 4 ⋅ 15 = 225
+
+Opgave 27
+
+Vi betragter n uafhængige og identisk fordelte stokastiske variable samt
+deres gennemsnit $\bar{X}=\frac{\sum_{i=1}^{n} X_{i}}{n}$.
+
+Spørgsmål 27
+
+Man finder standard afvigelsen SD(X̄) af X̄ til
+
+1 $\frac{S D(X)}{n}$
+
+2 SD(X)
+
+3 $\frac{S D(X)}{n^{2}}$
+
+4 $\frac{S D(X)}{\sqrt{n}}$
+
+5 $\sqrt{n} \cdot S D(X)$
+
+6 Ved ikke
+
+Opgave 28
+
+Vi betragter en beta(2,2) fordeling med tæthed
+
+f(x) = 6x(1 − x),  0 < x < 1
+
+Spørgsmål 28
+
+For denne fordeling findes fejlraten (hazard rate) til
+
+1 $\frac{6 x(1-x)}{3 x^{2}-2 x^{3}}$
+2 $\frac{6 x(1-x)}{1+2 x^{3}-3 x^{2}}$
+3 6(1 − x)
+
+4 ln (x + 1) − ln (x − 1)
+
+5 $\frac{3 x}{1-x^{2}}$
+
+6 Ved ikke
+
+Opgave 29
+
+De uafhængige stokastiske variable X ∈ exp (λ) og Y ∈ exp (μ) er givet.
+
+Spørgsmål 29
+
+Fordelingen f(z) af $Z=\frac{Y}{X}$ er givet ved tætheden
+
+1
+
+f(z) = (μ − λ)e^( − (μ − λ)z)
+
+2
+
+f(z) = (μ − λ)((μ − λ)z)²e^( − (μ − λ)z)
+
+3
+
+$$f(z)=\sqrt{\frac{2}{3}} \frac{\mu}{\lambda}\left(1+\frac{1}{3}\left(\frac{\mu z}{\lambda}\right)^{2}\right)^{-2}$$
+
+4
+
+$$f(z)=\frac{1}{\sqrt{2 \pi \lambda}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\lambda}\right)^{2}}$$
+
+5
+
+$$f(z)=\frac{\lambda \mu}{(\lambda+\mu z)^{2}}$$
+
+6 Ved ikke
+
+Opgave 30
+
+Parret ( X, Y ) er stokastiske variable således, at X følger en
+eksponential(1) fordeling og $P(Y=i \mid X=x)=\frac{x^{i}}{i!} e^{-x}$.
+
+Spørgsmål 30
+
+Sandsynligheden P(Y = 0) findes til
+
+1 1 − ln (2)
+
+2 $\frac{1}{3}$
+3 e^( − 1)
+
+4 $e^{-\frac{3}{2}}$
+
+5 $\frac{1}{2}$
+
+6 Ved ikke
+
+Slut på opgavesættet.

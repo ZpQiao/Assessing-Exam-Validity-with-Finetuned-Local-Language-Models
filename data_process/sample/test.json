@@ -1,0 +1,422 @@
+[
+  {
+    "question_id": "1",
+    "context": "En grønthandler har gennem længere tid observeret, at antallet af solgte blomkålshoveder med rimelighed kan beskrives ved en Poisson-fordeling med middelværdi 8.4. Blomkålene koster ham 35 kr. i indkøb pr. dag. Han sælger blomkål for 12.50 kr. pr. stk.",
+    "question": "Idet man kan se bort fra den mulighed, at blomkål bliver udsolgt, findes standardafvigelsen af en dags fortjeneste til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\sqrt{12.50\\,\\cdot 8.4}\\) \\\\",
+      "2 & \\(\\square\\) & \\(12.50\\,\\cdot \\sqrt{8.4}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\sqrt{12.50\\,\\cdot 8.4-35}\\) \\\\",
+      "4 & \\(\\square\\) & \\(12.50\\,\\cdot 8.4\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\sqrt{(12.50)^2\\,\\cdot 8.4+35}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "2",
+    "context": "En telefoncentral har 8 ledninger. Sandsynligheden \\(P_i\\) for, at \\(i\\) af disse er optaget til et givet tidspunkt, er givet ved \\(P_i=\\frac{1}{c}\\,\\frac{A^{i}}{i!}\\,\\mathrm e^{-A},\\;i=0,1,\\dots ,8\\), hvor \\(A\\) er et mål for trafikbelastningen.",
+    "question": "Konstanten \\(c\\) er",
+    "options": [
+      "1 & \\(\\square\\) & \\(1\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\mathrm e^{A}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\frac{1-A^{9}}{1-A\\,\\Gamma(8)}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\displaystyle \\sum_{i=0}^{8}\\frac{A^{i}}{i!}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\displaystyle \\sum_{i=0}^{8}\\frac{A^{i}}{i!}\\,\\mathrm e^{-A}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "3",
+    "context": "Sandsynligheden for, at en dims holder længere end \\(t\\) tidsenheder, er 0.2. Dimsen er kritisk for funktionen af et givet apparat. Man installerer 25 dimser parallelt, således at apparatet fungerer, så længe mindst én af de 25 dimser fungerer.",
+    "question": "Sandsynligheden for, at apparatet har en levetid på mindst \\(t\\) er",
+    "options": [
+      "1 & \\(\\square\\) & \\(1-\\Phi\\!\\left(\\tfrac{1}{5}\\right)\\) \\\\",
+      "2 & \\(\\square\\) & 0.825 \\\\",
+      "3 & \\(\\square\\) & \\(1-0.825\\) \\\\",
+      "4 & \\(\\square\\) & \\(1-0.225\\) \\\\",
+      "5 & \\(\\square\\) & 0.225 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "4",
+    "context": "Belastningen af en bygningsdel består af tre komponenter: en trykpåvirkning ~ Normal\\((5,2)\\), en konstant belastning på 3 enheder samt en vridpåvirkning ~ Normal\\((8,3)\\). Belastningerne antages additive og uafhængige.",
+    "question": "Sandsynligheden for, at den samlede belastning ikke overstiger 25, findes til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{25-16}{\\sqrt{2+3}}\\bigr)\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{25-16}{\\sqrt{2^{2}+3^{2}}}\\bigr)\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{22-16}{\\sqrt{2+3}}\\bigr)\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{3}{2+3}\\bigr)\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{3}{\\sqrt{2^{2}+3^{2}}}\\bigr)\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "5",
+    "context": "Man har hændelserne A,B,C med P(A)=0.3, P(B)=0.2, P(C)=0.1, P(A∪B)=0.5, P(A∩C)=0.08, P(B∩C)=0.02. (Ledetråd: P(A∩B∩C) ≤ P(A∩B).)",
+    "question": "Sandsynligheden P(A ∪ B ∪ C) findes til",
+    "options": [
+      "1 & \\(\\square\\) & 0.10 \\\\",
+      "2 & \\(\\square\\) & 0.28 \\\\",
+      "3 & \\(\\square\\) & 0.40 \\\\",
+      "4 & \\(\\square\\) & 0.50 \\\\",
+      "5 & \\(\\square\\) & 0.60 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "6",
+    "context": "Et flyselskab har konstateret, at passagervægte kan beskrives med middel 72 kg og SD 12 kg (fordeling ukendt). Til en afgang møder 300 passagerer.",
+    "question": "Sandsynligheden for, at den samlede vægt ikke overstiger 22 ton, findes approksimativt til",
+    "options": [
+      "1 & \\(\\square\\) & \\(1-\\Phi\\!\\left(\\tfrac{22000-300\\cdot72}{12\\cdot10\\sqrt{3}}\\right)\\) \\\\",
+      "2 & \\(\\square\\) & \\(1-\\Phi\\!\\left(\\tfrac{22000-300\\cdot72}{12\\cdot300}\\right)\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\Phi\\!\\left(\\tfrac{22000-300\\cdot72}{12\\cdot300}\\right)\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\Phi\\!\\left(\\tfrac{22000-300\\cdot72}{12\\cdot10\\sqrt{3}}\\right)\\) \\\\",
+      "5 & \\(\\square\\) & Kan ikke løses uden oplysning om fordelingstype \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "7",
+    "context": "Den stokastiske variabel X er standard-normalfordelt.",
+    "question": "Forventningsværdien E(|X|) findes til",
+    "options": [
+      "1 & \\(\\square\\) & 1 \\\\",
+      "2 & \\(\\square\\) & \\(\\sqrt{\\tfrac{2}{\\pi}}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{1}{\\sqrt{2\\pi}}\\) \\\\",
+      "4 & \\(\\square\\) & 0 \\\\",
+      "5 & \\(\\square\\) & Ingen af de ovenstående \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "8",
+    "context": "Radioaktivt materiale udsender β-partikler med intensitet 3.5 s⁻¹·g⁻¹.",
+    "question": "Sandsynligheden for, at den fjerde β-partikel fra en klump på 2 g kommer inden 1 s, er",
+    "options": [
+      "1 & \\(\\square\\) & \\((1-\\mathrm e^{-3.5})^{2}\\) \\\\",
+      "2 & \\(\\square\\) & \\(1-\\mathrm e^{-7}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\Phi\\!\\bigl(1-\\tfrac{4}{7}\\bigr)\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\mathrm e^{-7}\\sum_{i=4}^{\\infty}\\tfrac{7^{i}}{i!}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\mathrm e^{-3.5}+\\mathrm e^{-7}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "9",
+    "context": "Weibull-fordeling med parametre (α,λ) har overlevelsesfunktion G(t)=\\(\\mathrm e^{-\\lambda t^{\\alpha}}\\).",
+    "question": "Medianen i en Weibull(λ = 1.5, α = 1.5) findes til",
+    "options": [
+      "1 & \\(\\square\\) & 0.3333 \\\\",
+      "2 & \\(\\square\\) & 0.5445 \\\\",
+      "3 & \\(\\square\\) & 0.5978 \\\\",
+      "4 & \\(\\square\\) & 1.4539 \\\\",
+      "5 & \\(\\square\\) & 1.5000 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "10",
+    "context": "Givet \\(P(X\\le x)=1-\\mathrm e^{-x},\\;x>0\\) og \\(P(U\\le u)=u,\\;0<u<1\\). X og U er uafhængige.",
+    "question": "Sandsynligheden for, at X > U, findes til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{1}{2}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\displaystyle \\int_{0}^{\\infty}x\\,\\mathrm e^{-x}\\,dx\\) \\\\",
+      "3 & \\(\\square\\) & \\(1-\\mathrm e^{-2}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\displaystyle \\int_{0}^{1}\\mathrm e^{-u}\\,du\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{3}{4}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "11",
+    "context": "X ∼ Exp(λ) med tæthed f(x)=λ\\,\\mathrm e^{-λx}.",
+    "question": "Tætheden for Y = \\(\\sqrt{X}\\) findes til",
+    "options": [
+      "1 & \\(\\square\\) & \\(λ\\,\\mathrm e^{-λy^{2}},\\ y\\ge0\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{λ}{y}\\,\\mathrm e^{-λy^{2}},\\ y\\ge0\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\left(\\tfrac{λ}{y}\\right)^{2}\\!\\mathrm e^{-λy^{2}},\\ y\\ge0\\) \\\\",
+      "4 & \\(\\square\\) & \\(2λy\\,\\mathrm e^{-λy^{2}},\\ y\\ge0\\) \\\\",
+      "5 & \\(\\square\\) & \\(4λy^{3}\\,\\mathrm e^{-λy^{2}},\\ y\\ge0\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "12",
+    "context": "Vægten V ∼ N(µ,σ_1^2). For en pakke med vægt v er vandindholdet X ∼ N(0.1v,σ_0^2) uafhængigt af v.",
+    "question": "Middelværdien af vandindholdet i en smørpakke findes til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{µ}{10}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{µ}{10}\\,\\tfrac{σ_0}{\\sqrt{(σ_0/10)^2+(σ_1/10)^2}}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{µ(σ_0/10)^2}{(σ_0/10)^2+(σ_1/10)^2}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{µ}{10}\\,\\tfrac{σ_0^{2}}{σ_0^{2}+σ_1^{2}}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{µ}{10}\\,\\tfrac{σ_0}{10\\sqrt{(σ_0/10)^2+(σ_1/10)^2}}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "13",
+    "context": "En almindelig terning kastes, til der første gang fås en 3’er; derefter tælles kast indtil næste 3’er. Dette antal betegnes Z.",
+    "question": "Den stokastiske variabel Z følger en",
+    "options": [
+      "1 & \\(\\square\\) & Binomialfordeling \\\\",
+      "2 & \\(\\square\\) & Eksponentialfordeling \\\\",
+      "3 & \\(\\square\\) & Geometrisk fordeling \\\\",
+      "4 & \\(\\square\\) & Normalfordeling \\\\",
+      "5 & \\(\\square\\) & Poissonfordeling \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "14",
+    "context": "For hændelserne A og B gælder P(B)=0.75, P(A|B)=\\(\\tfrac{2}{3}\\).",
+    "question": "Man finder P(A ∩ B) til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{1}{2}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{2}{3}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{3}{4}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{5}{6}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{8}{9}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "15",
+    "context": "I en klasse er der 14 piger og 11 drenge. Der udtages tilfældigt en gruppe på 5 elever.",
+    "question": "Sandsynligheden for, at der er netop 3 piger i gruppen, er",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{\\binom{14}{3}\\binom{11}{2}}{\\binom{25}{5}}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{5!}{3!2!}\\bigl(\\tfrac{14}{25}\\bigr)^{3}\\bigl(\\tfrac{11}{25}\\bigr)^{2}\\) \\\\",
+      "3 & \\(\\square\\) & 0.6 \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{14}{25}\\tfrac{13}{24}\\tfrac{12}{23}\\tfrac{11}{22}\\tfrac{10}{21}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{14}{25}\\tfrac{13}{24}\\tfrac{12}{23}\\tfrac{11}{25}\\tfrac{10}{24}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "16",
+    "context": "X og Y er ukorrelerede hvis Cov(X,Y)=0; ellers korrelerede.",
+    "question": "Ét af følgende udsagn kan aldrig være sandt",
+    "options": [
+      "1 & \\(\\square\\) & X og Y er korrelerede og afhængige \\\\",
+      "2 & \\(\\square\\) & X og Y er ukorrelerede og afhængige \\\\",
+      "3 & \\(\\square\\) & X og Y er korrelerede og uafhængige \\\\",
+      "4 & \\(\\square\\) & X og Y er ukorrelerede og uafhængige \\\\",
+      "5 & \\(\\square\\) & P(X=Y)=1 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "17",
+    "context": "(X,Y) er todimensionalt standard-normalfordelt med uafhængige koordinater. Definér W = (aX+Y)/2 og Z = (aX−Y)/2.",
+    "question": "Z og W har korrelation \\(\\rho=\\tfrac{1}{2}\\) når a vælges til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\sqrt2\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\sqrt3\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{1}{\\sqrt3}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{1}{\\sqrt2}\\) \\\\",
+      "5 & \\(\\square\\) & 1 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "18",
+    "context": "I en løbende produktion har hvert emne defektsandsynlighed p; der pakkes i partier á n.",
+    "question": "Middelværdi og standardafvigelse for antal defekte i et parti er",
+    "options": [
+      "1 & \\(\\square\\) & E(X)=n p, SD(X)=n p(1-p) \\\\",
+      "2 & \\(\\square\\) & E(X)=n p, SD(X)=\\(\\sqrt{n p(1-p)}\\) \\\\",
+      "3 & \\(\\square\\) & E(X)=\\(\\tfrac{n}{2}\\), SD(X)=\\(\\tfrac{1}{2}\\sqrt n\\) \\\\",
+      "4 & \\(\\square\\) & E(X)=\\(\\tfrac{n}{2}\\), SD(X)=\\(\\tfrac{n}{4}\\) \\\\",
+      "5 & \\(\\square\\) & E(X)=\\(\\sqrt{n p}\\), SD(X)=\\(\\sqrt{n p(1-p)}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "19",
+    "context": "Levetid ~ Exp(λ). Komponent har allerede fungeret i t₀.",
+    "question": "Sandsynligheden for svigt før samlet tid \\(t\\) er",
+    "options": [
+      "1 & \\(\\square\\) & \\(λ(λ t_{0})\\,\\mathrm e^{-λ t}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\mathrm e^{-λ t_{0}}\\bigl(1-\\mathrm e^{-λ t}\\bigr)\\) \\\\",
+      "3 & \\(\\square\\) & \\(1-\\mathrm e^{-λ t}\\) \\\\",
+      "4 & \\(\\square\\) & \\(1-\\mathrm e^{-λ(t-t_{0})}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\dfrac{1-\\mathrm e^{-λ t}}{1-\\mathrm e^{-λ t_{0}}}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "20",
+    "context": "Et punkt vælges i området 0 < x < 1, 0 < y < x.",
+    "question": "Den marginale tæthed for y-koordinaten er",
+    "options": [
+      "1 & \\(\\square\\) & 1 \\\\",
+      "2 & \\(\\square\\) & 2 \\\\",
+      "3 & \\(\\square\\) & y \\\\",
+      "4 & \\(\\square\\) & 2y \\\\",
+      "5 & \\(\\square\\) & 2-2y \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "21",
+    "context": "Brobelastning har µ = 14 t og SD = 4 t (fordeling ukendt).",
+    "question": "Bedste øvre grænse for P(belastning > 30 t) er",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{1}{16}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{4}{15}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{1}{150}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{30-14}{4}\\bigr)\\) \\\\",
+      "5 & \\(\\square\\) & \\(2\\,\\Phi\\!\\bigl(\\tfrac{30-14}{4}\\bigr)\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "22",
+    "context": "P(læk)=0.01. P(tryk < 300 kPa | læk)=0.039, P(tryk < 300 kPa | ingen læk)=0.000394.",
+    "question": "Givet måling 290 kPa: sandsynligheden for læk er (tre betydende cifre)",
+    "options": [
+      "1 & \\(\\square\\) & 0.000394 \\\\",
+      "2 & \\(\\square\\) & 0.0390 \\\\",
+      "3 & \\(\\square\\) & 0.500 \\\\",
+      "4 & \\(\\square\\) & 0.750 \\\\",
+      "5 & \\(\\square\\) & 1.00 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "23",
+    "context": "Tre kast med en mønt. X = antal krone. Y = indikator for ‘alle tre kast viser samme side’.",
+    "question": "Om X og Y gælder",
+    "options": [
+      "1 & \\(\\square\\) & Hændelserne {X ≤ x} og {Y ≤ y} er gensidigt udelukkende \\\\",
+      "2 & \\(\\square\\) & X og Y er uafhængige \\\\",
+      "3 & \\(\\square\\) & (X,Y) er multinomialfordelt \\\\",
+      "4 & \\(\\square\\) & X + Y beskrives godt ved en normalfordeling \\\\",
+      "5 & \\(\\square\\) & E(X+Y)=\\(\\tfrac{7}{4}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "24",
+    "context": "Varighed ~ Gamma(3,3/µ). δ ≪ µ.",
+    "question": "En god approksimation til P(t₀ < T < t₀+δ) er",
+    "options": [
+      "1 & \\(\\square\\) & \\(µ\\,\\mathrm e^{-µ(t_{0}+δ)}\\) \\\\",
+      "2 & \\(\\square\\) & \\(δ\\,\\tfrac{3}{µ}\\bigl(\\tfrac{3t_{0}}{µ}\\bigr)^{2}\\!2\\,\\mathrm e^{-3t_{0}/µ}\\) \\\\",
+      "3 & \\(\\square\\) & \\(δ\\,\\tfrac{1}{µ\\sqrt3}\\,\\tfrac{1}{\\sqrt{2π}}\\,\\mathrm e^{-(t_{0}-µ)^{2}/(2µ^{2}3)}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{1}{µ\\sqrt3}\\,\\tfrac{1}{\\sqrt{2π}}\\,\\mathrm e^{-(t_{0}+δ-µ)^{2}/(2µ^{2}3)}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{3}{µ}\\bigl(\\tfrac{3(t_{0}+δ)}{µ}\\bigr)^{2}\\!2\\,\\mathrm e^{-3(t_{0}+δ)/µ}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "25",
+    "context": "På en hektar er der i snit 10 000 mælkebøtter (punkttilfældig placering).",
+    "question": "Sandsynligheden for højst én mælkebøtte på 1 m² (to betydende cifre) er",
+    "options": [
+      "1 & \\(\\square\\) & 0.26 \\\\",
+      "2 & \\(\\square\\) & 0.38 \\\\",
+      "3 & \\(\\square\\) & 0.50 \\\\",
+      "4 & \\(\\square\\) & 0.62 \\\\",
+      "5 & \\(\\square\\) & 0.74 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "26",
+    "context": "100 familier: 30 med 1 barn, 30 med 2, 25 med 3, 15 med 4 børn (i alt 225 børn).",
+    "question": "Sandsynligheden for, at et tilfældigt barn har netop to søskende, er",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{1}{4}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{3}{10}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{1}{3}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{7}{20}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{2}{5}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "27",
+    "context": "For uafhængige, identisk fordelte Xi og deres gennemsnit \\(\\bar X\\).",
+    "question": "Standardafvigelsen SD(\\(\\bar X\\)) er",
+    "options": [
+      "1 & \\(\\square\\) & SD(X)/n \\\\",
+      "2 & \\(\\square\\) & SD(X) \\\\",
+      "3 & \\(\\square\\) & SD(X)/n^{2} \\\\",
+      "4 & \\(\\square\\) & SD(X)/\\sqrt n \\\\",
+      "5 & \\(\\square\\) & \\(\\sqrt n\\,\\)SD(X) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "28",
+    "context": "f(x)=6x(1−x),\\qquad 0<x<1",
+    "question": "For denne fordeling findes fejlraten (hazard rate) til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{6x(1-x)}{3x^{2}-2x^{3}}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{6x(1-x)}{1+2x^{3}-3x^{2}}\\) \\\\",
+      "3 & \\(\\square\\) & \\(6(1-x)\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\ln(x+1)-\\ln(x-1)\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{3x}{1-x^{2}}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "29",
+    "context": "X ∼ Exp(λ), Y ∼ Exp(µ) uafhængige.",
+    "question": "Tætheden f(z) for Z = Y/X er",
+    "options": [
+      "1 & \\(\\square\\) & \\(f(z)=(µ-λ)\\,\\mathrm e^{-(µ-λ)z}\\) \\\\",
+      "2 & \\(\\square\\) & \\(f(z)=(µ-λ)((µ-λ)z)^{2}\\,\\mathrm e^{-(µ-λ)z}\\) \\\\",
+      "3 & \\(\\square\\) & \\(f(z)=\\sqrt{\\tfrac{2}{3}}\\,\\tfrac{µ}{λ}\\bigl(1+\\tfrac{1}{3}(\\tfrac{µz}{λ})^{2}\\bigr)^{-2}\\) \\\\",
+      "4 & \\(\\square\\) & \\(f(z)=\\tfrac{1}{\\sqrt{2πλ}}\\,\\mathrm e^{-(x-µ/λ)^{2}/2}\\) \\\\",
+      "5 & \\(\\square\\) & \\(f(z)=\\tfrac{λµ}{(λ+µz)^{2}}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  },
+  {
+    "question_id": "30",
+    "context": "X ∼ Exp(1) og \\(P(Y=i\\mid X=x)=x^{i}/i!\\,\\mathrm e^{-x}\\).",
+    "question": "Sandsynligheden P(Y = 0) findes til",
+    "options": [
+      "1 & \\(\\square\\) & \\(1-\\ln(2)\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{1}{3}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\mathrm e^{-1}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\mathrm e^{-3/2}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{1}{2}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "language": "danish"
+  }
+]

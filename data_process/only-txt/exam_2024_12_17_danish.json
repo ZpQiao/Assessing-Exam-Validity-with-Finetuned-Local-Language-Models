@@ -1,0 +1,452 @@
+[
+  {
+    "language": "danish",
+    "number": 1,
+    "context": "I et biologisk produktivt område af Vesterhavet er forekomsten af rødspætter gennemsnitligt 2000 (to tusinde) per kvadratkilometer. Man antager, at fiskene bevæger sig uden relation til hinanden, og, at den enkelte fisks størrelse er meget lille i forhold til området.",
+    "question": "Sandsynligheden for at finde mindst 3 rødspætter i et område på 1000 (et tusinde) kvadratmeter findes til",
+    "options": [
+      "\\sum_{n=3}^{2000}\\binom{2000}{n}\\left(\\frac{1}{1000}\\right)^{n}\\left(\\frac{999}{1000}\\right)^{2000-n}",
+      "\\sum_{n=3}^{\\infty}\\frac{\\left(\\frac{1}{5}\\right)^{n}}{n!} e^{-\\frac{1}{5}}",
+      "1-\\frac{5}{2} e^{-1}",
+      "1-\\Phi\\left(\\frac{3-2}{\\sqrt{2}}\\right)",
+      "1-5e^{-2}",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 2,
+    "context": "Tre emner tages på tilfædig vis op af en æske, der indeholder 20 emner, hvoraf 4 er defekte.",
+    "question": "Angiv det forventede antal μ og standardafvigelsen σ for antallet af defekte emner i stikprøven.",
+    "options": [
+      "$\\mu=\\frac{3}{5}, \\quad \\sigma=\\sqrt{\\frac{12 \\cdot 13}{19 \\cdot 25}}$",
+      "$\\mu=\\frac{3}{5}, \\quad \\sigma=\\frac{\\sqrt{\\frac{12 \\cdot 17}{19}}}{5}$",
+      "$\\mu=\\frac{3}{5}, \\quad \\sigma=\\sqrt{\\frac{3}{5}}$",
+      "$\\mu=\\frac{1}{2}, \\quad \\sigma=\\frac{\\sqrt{12}}{5}$",
+      "$\\mu=\\frac{3}{5}, \\quad \\sigma=\\frac{\\sqrt{12}}{5}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 3,
+    "context": "I en given by abonnerer 50% af familierne på formiddagsavisen, medens 65% abonnerer på eftermiddagsavisen, og 85% abonnerer på mindst en af de to.",
+    "question": "Andelen af familier, der abonnerer på begge aviserne, er",
+    "options": [
+      "15%",
+      "20%",
+      "35%",
+      "50%",
+      "30%",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 4,
+    "context": "En virksomhed producerer medicinsk måleudstyr sekventielt, der skal være meget nøjagtigt. Sandsynligheden for, at et produceret apparat overholder kvalitetskravene, er $\\frac{2}{5}$ uafhængigt af alle øvrige producerede apparater. Virksomheden producerer indtil, man har fået tre apparater, der overholder kvalitetskravene.",
+    "question": "Sandsynligheden for, at der skal kasseres præcis 3 apparater for at få 3 apparater, der passerer kvalitetskontrollen, findes til",
+    "options": [
+      "$\\frac{2^{4} \\cdot 3^{3}}{5^{5}}$",
+      "$\\frac{2^{6}}{3 \\cdot 5^{4}}$",
+      "$\\frac{2^{5} \\cdot 3^{3}}{5^{5}}$",
+      "$\\left(\\frac{2}{5}\\right)^{3}$",
+      "$\\binom{4}{2} \\frac{2^{3} \\cdot 3^{3}}{5^{6}}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 5,
+    "context": "Fabriksfremstillede teboller har en vis variation i størrelsen. Afvigelsen fra normen kan på en passende normeret skala beskrives ved tæthedsfunktionen $f(x)=6\\left(\\frac{1}{2}+x\\right)\\left(\\frac{1}{2}-x\\right)=\\frac{3}{2}-6 x^{2}$ for $-\\frac{1}{2}<x<\\frac{1}{2}$. Hvis afvigelsen for en tebolle er positiv, er der en risiko for, at tebollen ikke kan komme ned i posen. En tebolle med afvigelse x > 0 har således en sandsynlighed på x² for, at den ikke kan komme ned i posen.",
+    "question": "Sandsynligheden for, at en tebolle ikke kan komme ned i posen, findes til",
+    "options": [
+      "$\\frac{9}{64}$",
+      "$\\frac{9}{128}$",
+      "$\\frac{1}{16}$",
+      "$\\frac{1}{20}$",
+      "$\\frac{1}{40}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 6,
+    "context": "To ikke negative stokastiske variable ( X, Y ) har den simultane tæthedsfunktion f(x, y) = 3e^( - (x + y)) for $\\frac{1}{2} x \\leq y \\leq 2 x$ og f(x, y) = 0 ellers.",
+    "question": "Den marginale tæthed f_(X)(x) for X findes til",
+    "options": [
+      "f_(X)(x) = e^( - x)",
+      "f_(X)(x) = 9xe^( - 3x)",
+      "$f_{X}(x)=\\frac{3}{2} e^{-\\frac{3}{2} x}$",
+      "$f_{X}(x)=\\left(\\frac{3}{2}\\right)^{2} x e^{-\\frac{3}{2} x}$",
+      "$f_{X}(x)=3 e^{-\\frac{3}{2} x}-3 e^{-3 x}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 7,
+    "context": "En færge lastes med 300 biler. Vægten af den enkelte bil beskrives ved en stokastisk variabel, hvor både middelværdi og standardafvigelse er 1500 kg .",
+    "question": "Sandsynligheden for, at den samlede vægt af bilerne overskrider 480 tons, bestemmes bedst ved",
+    "options": [
+      "$\\frac{1}{20}$",
+      "$\\frac{1}{400}$",
+      "$1-\\Phi\\left(\\frac{480-450}{1.5 \\cdot 300}\\right)$",
+      "$1-\\Phi\\left(\\frac{30}{1.5 \\cdot \\sqrt{300}}\\right)$",
+      "$\\Phi\\left(\\frac{1600-1500}{1500}\\right)^{300}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 8,
+    "context": "Lad der være givet n uafhængige og identisk fordelte variable X₁, …, X_(n) med fordelingsfunktion F(x).",
+    "question": "Bestem sandsynligheden for, at den største af X_(i)^(′) erne er større end x, og den næststørste er mindre end eller lig x.",
+    "options": [
+      "n(F(x))^(n - 1)(1 - F(x))",
+      "nF(x)(1 - F(x))^(n - 1)",
+      "(F(x))^(n - 1)(1 - F(x))",
+      "(1 - F(x))F(x)",
+      "(F(x))^(n)",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 9,
+    "context": "En netværksadministrator vil udregne den forventede tid mellem nedbrud af netværket. Det vides erfaringsmæssigt, at givet en rate Λ er tiden mellem nedbrud eksponentialfordelt med denne rate. Raten Λ er variabel og følger en uniform fordeling mellem 1 og 5.",
+    "question": "Hvad er den forventede tid mellem nedbrud af netværket?",
+    "options": [
+      "$\\frac{1}{4}$",
+      "120e^( - 120)",
+      "$\\frac{1}{4} \\log (5)$",
+      "$\\frac{1}{4}(\\log (5)-1)$",
+      "$\\frac{1}{x}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 10,
+    "context": "Parret ( X, Y ) af kontinuerte stokastiske variable kan beskrives ved en bivariat normalfordeling med middelværdier E(X) = 1 og E(Y) =  - 1. Standardafvigelsen for begge variable er 1, medens korrelationskoefficienten er $\\frac{3}{5}$.",
+    "question": "Sandsynligheden P(4X + 3Y > 4) findes til",
+    "options": [
+      "$1-\\Phi\\left(\\frac{3}{5}\\right)$",
+      "$\\Phi\\left(-\\frac{3 \\sqrt{5}}{15}\\right)$",
+      "$1-\\Phi\\left(\\frac{3 \\sqrt{985}}{985}\\right)$",
+      "$\\Phi\\left(-\\frac{15 \\sqrt{985}}{985}\\right)$",
+      "$1-\\Phi\\left(\\frac{3 \\sqrt{5}}{20}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 11,
+    "context": "En gruppe soldater skyder til måls med en morter. For hvert skud kan afstanden til målet beskrives ved en fordeling med tæthed $x e^{-\\frac{x^{2}}{2}}$ med en passende valgt længdeenhed.",
+    "question": "Ud af tre skud findes sandsynligheden for, at ingen af de tre skud kommer tættere end x længdeenheder fra målet, til",
+    "options": [
+      "$$\\left(1-e^{-\\frac{x^{2}}{2}}\\right)^{3}$$",
+      "$$1-\\left(1-e^{-\\frac{x^{2}}{2}}\\right)^{3}$$",
+      "e^( - 3x)",
+      "$$3 x e^{-\\frac{x^{2}}{2}}\\left(1-e^{-\\frac{x^{2}}{2}}\\right) e^{\\frac{x^{2}}{2}}$$",
+      "$e^{-\\frac{3 x^{2}}{2}}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 12,
+    "context": "Man har hændelserne A og B, hvorom det gælder, at $\\mathrm{P}(A)=\\frac{2}{5}, \\mathrm{P}(B)=\\frac{13}{20}$, og $\\mathrm{P}(A \\cap B)=\\frac{1}{5}$.",
+    "question": "Kovariansen Cov (I_(A),I_(B)) for indikatorvariablene I_(A) og I_(B) for hændelserne A og B findes til",
+    "options": [
+      "$\\operatorname{Cov}\\left(I_{A}, I_{B}\\right)=-\\frac{13}{200}$",
+      "$\\operatorname{Cov}\\left(I_{A}, I_{B}\\right)=\\frac{3}{50}$",
+      "$\\operatorname{Cov}\\left(I_{A}, I_{B}\\right)=-\\frac{3}{50}$",
+      "$\\operatorname{Cov}\\left(I_{A}, I_{B}\\right)=\\frac{13}{200}$",
+      "$\\operatorname{Cov}\\left(I_{A}, I_{B}\\right)=-\\frac{13}{100}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 13,
+    "context": "Placeringen af et punkt i området 0 < y < x < 1 beskrives ved parret ( X, Y ) af stokastiske variable givet ved den simultane tæthedsfunktion f(x, y) = 4!y(1 - x).",
+    "question": "Man beregner $\\mathrm{P}\\left(X<\\frac{3}{4}, \\frac{1}{2}<Y\\right)$ til",
+    "options": [
+      "$\\frac{3}{8}$",
+      "$\\frac{45}{128}$",
+      "$\\int_{0}^{\\frac{3}{4}} \\int_{\\frac{1}{2}}^{1} 4!y(1-x) \\mathrm{d} y \\mathrm{~d} x$",
+      "$\\frac{37}{256}$",
+      "$\\frac{1}{16}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 14,
+    "context": "Antag, at 5% af alle mænd og 0, 25% af alle kvinder er farveblinde. En tilfældig person vælges, og den person er farveblind. Antag, at 51% er mænd og 49% er kvinder.",
+    "question": "Hvad er sandsynligheden for, at personen er en mand?",
+    "options": [
+      "0,9524",
+      "0,9542",
+      "0,9950",
+      "$\\frac{2}{3}$",
+      "0,04",
+      "ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 15,
+    "context": "Lad X være ligefordelt på intervallet [0; 2] og Y ligefordelt på [0; 1], uafhængigt af hinanden.",
+    "question": "Beregn tætheden f_(z)(z) for $Z=\\frac{X}{Y}$.",
+    "options": [
+      "$f_{z}(z)=\\frac{1}{(1+z)^{2}}$ for alle z > 0.",
+      "$f_{z}(z)=\\frac{1}{8 z^{2}}$, hvis z ≥ 2, og  $f_{z}(z)=\\frac{1}{4 z^{2}}$ if 0 < z < 2.",
+      "$f_{z}(z)=\\frac{1}{4 z^{2}}$, hvis z ≥ 2, og $f_{z}(z)=\\frac{1}{4}$ if  0 < z < 2.",
+      "$f_{z}(z)=\\frac{1}{z^{2}}$, hvis z ≥ 2, og $f_{z}(z)=\\frac{1}{4}$ if  0 < z < 2.",
+      "$f_{z}(z)=\\frac{2}{z^{2}}$ for z ≥ 2.",
+      "ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 16,
+    "context": "Lad X og Y være uafhængige stokastiske variable med middelværdierne μ_(X) = 2, μ_(Y) = 1 og varianserne σ_(X)² = 1, σ_(Y)² = 1.",
+    "question": "Hvad er korrelationen mellem XY og Y ?",
+    "options": [
+      "0,2368",
+      "$\\frac{1}{8}$",
+      "0,8165",
+      "$\\frac{1}{2}$",
+      "Kan ikke beregnes på grund af manglende oplysninger.",
+      "ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 17,
+    "context": "Man har den ikke negative stokastiske variabel Y med tætheden $f_{Y}(y)=\\frac{1}{y \\sqrt{2 \\pi}} e^{-\\frac{(\\log (y))^{2}}{2}}$ og danner den stokastiske variabel $X=\\sqrt{Y}$.",
+    "question": "Man finder tætheden f_(X)(x) for X til",
+    "options": [
+      "$f_{X}(x)=\\frac{1}{\\sqrt{2 \\pi x}} e^{-\\frac{\\log (x)}{2}}$",
+      "$f_{X}(x)=\\sqrt{\\frac{1}{\\pi}} \\frac{1}{2 x} e^{-\\frac{(\\log (x))^{2}}{4}}$",
+      "$f_{X}(x)=\\sqrt{\\frac{2}{\\pi}} \\frac{1}{x^{2}} e^{-2\\left(\\left(\\log \\left(x^{2}\\right)\\right)^{2}+\\frac{1}{16}\\right)}$",
+      "$f_{X}(x)=\\sqrt{\\frac{2}{\\pi}} \\frac{1}{x} e^{-2(\\log (x))^{2}}$",
+      "$f_{X}(x)=\\sqrt{\\frac{2}{\\pi}} \\frac{1}{x^{2}} e^{-2\\left(\\log \\left(x^{2}\\right)\\right)^{2}}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 18,
+    "context": "Et sædvanligt spil kort med 52 spillekort blandes.",
+    "question": "Sandsynligheden for, at de øverste fire kort har hver sin kulør, findes til",
+    "options": [
+      "0,0360",
+      "0,1055",
+      "0,0312",
+      "0,6761",
+      "0,2637",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 19,
+    "context": "En kioskejer sælger en sommerdag primært is og blade. Antallet af solgte is kan beskrives ved en Poisson(12) fordeling, medens antallet af solgte blade kan beskrives ved en binomial $\\left(30, \\frac{1}{4}\\right)$ fordeling. Isene sælges for 15 kr . stykket, bladene for 35 kr . stykket.",
+    "question": "Den forventede omsætning fra salget af is og blade en sommerdag findes til",
+    "options": [
+      "442, 50kr.",
+      "487, 50kr.",
+      "502, 50kr.",
+      "532, 50kr.",
+      "557, 50kr.",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 20,
+    "context": "Man har den diskrete stokastiske variabel X, der er geometrisk fordelt med parameter p, dvs. P(X = x) = p(1 - p)^(x - 1). For givet X = x er den diskrete stokastiske variabel Y binomialfordelt med antalsparameter x og sandsynlighedsparameter q.",
+    "question": "Man finder P(Y = 0) til",
+    "options": [
+      "(1 - p)(1 - q)",
+      "$\\frac{(1-q) p}{1-(1-q)(1-p)}$",
+      "$\\frac{q(1-p)}{1-(1-q)(1-p)}$",
+      "e^( - (1 - p)(1 - q))",
+      "$\\frac{(1-q)(1-p)}{1-(1-q)(1-p)}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 21,
+    "context": "En investor har aktier i 5 selskaber. I et meget volatilt marked kan man med god tilnærmelse gå ud fra, at kurserne på de enkelte selskaber udvikler sig uafhængigt af hinanden. Investoren kan regne med, at der er $\\frac{3}{5}$ sandsynlighed for, at kursen på de enkelte selskaber er steget i værdi efter en uge.",
+    "question": "Sandsynligheden for, at mindst 3 selskaber er steget i værdi efter en uge, findes til",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{2133}{3125}$",
+      "513 $\\overline{3125}$",
+      "$\\frac{9}{125}$",
+      "$\\frac{419}{625}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 22,
+    "context": "Forekomsten af to forskellige typer af mikroorganismer i tarmfloraen på slagtesvin kan med rimelighed beskrives ved en bivariat normalfordeling med korrelationskoefficient $\\rho=-\\frac{12}{13}$. I et slagtesvin har man konstateret, at forekomsten af den ene type er 2 standardafvigelser mindre end den gennemsnitlige forekomst af typen.",
+    "question": "Sandsynligheden for, at forekomsten af den anden type er større end den gennemsnitlige forekomst, er",
+    "options": [
+      "$1-\\Phi\\left(-\\frac{2}{13}\\right)$",
+      "$\\Phi\\left(-\\frac{24}{13}\\right)$",
+      "$\\Phi\\left(\\frac{24}{13}\\right)$",
+      "$\\Phi\\left(\\frac{24}{5}\\right)$",
+      "$\\frac{1}{2}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 23,
+    "context": "Man har den diskrete stokastiske variabel N, der for givet X = x er geometrisk fordelt med sandsynlighedsparameter x, så P(N = n ∣ X = x) = (1 - x)^(n)x. Bemærk, at N har værdimængden {0, 1, 2, …}. Den stokastiske variabel X følger en beta(2,2) fordeling, så tæthedsfunktionen f_(X)(x) for X er givet ved f_(X)(x) = 6x(1 - x).",
+    "question": "Man finder",
+    "options": [
+      "$\\mathrm{P}(N=n)=\\frac{12}{(n+2)(n+3)(n+4)}$",
+      "$\\mathrm{P}(N=n)=\\left(\\frac{1}{2}\\right)^{n}$",
+      "$\\mathrm{P}(N=n)=\\frac{1}{(n+1)(n+2)}$",
+      "$\\mathrm{P}(N=n)=\\binom{n+2}{2} \\frac{1}{3}^{2} \\frac{2}{3}^{n}$",
+      "$\\mathrm{P}(N=n)=\\frac{\\left(\\frac{1}{2}\\right)^{n}}{n!} e^{-\\frac{1}{2}}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 24,
+    "context": "Et punkt vælges ligefordelt i enhedskvadratet, dvs. området afgrænset af linierne x = 0, x = 1, y = 0 og y = 1.",
+    "question": "Sandsynligheden for, at punktet ligger mellem linien $y=1-\\frac{1}{2} x$ og punktet (1, 1) findes til",
+    "options": [
+      "$\\frac{3}{4}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{4}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 25,
+    "context": "Man har to punkter i planen givet ved deres koordinatsæt ( X₁, Y₁ ) og ( X₂, Y₂ ). De stokastiske variable ΔX = X₂ - X₁ og ΔY = Y₂ - Y₁ er uafhængige stokastiske variable, der begge kan beskrives ved en normal( 0,1 ) fordeling (standard normal). Afstanden mellem de to punkter betegnes med R.",
+    "question": "Man finder om P(R ≤ r)",
+    "options": [
+      "$\\mathrm{P}(R \\leq r)=\\int_{-\\infty}^{r} \\frac{1}{2 \\pi} e^{-\\frac{1}{2} x^{2}} e^{-\\frac{1}{2}(r-x)^{2}} \\mathrm{~d} x$",
+      "P(R ≤ r) = Φ(r)",
+      "$\\mathrm{P}(R \\leq r)=1-e^{-\\frac{r^{2}}{2}}$",
+      "$\\mathrm{P}(R \\leq r)=\\Phi\\left(\\frac{r}{\\sqrt{2}}\\right)$",
+      "Sandsynligheden kan ikke bestemmes, da der ikke er givet  tilstrækkelige oplysninger",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 26,
+    "context": "Personer ankommer tilfældigt, enkeltvis og uafhængigt af hinanden til en cafe, således at der i gennemsnit ankommer en person hver fjerde minut.",
+    "question": "Sandsynligheden for, at der ankommer mindst fire personer inden for fire minutter, findes til",
+    "options": [
+      "$\\sum_{r=4}^{\\infty}\\left(\\frac{1}{2}\\right)^{r}$",
+      "$\\frac{1}{2}$",
+      "$e^{-1} \\sum_{r=4}^{\\infty} \\frac{1}{r!}$",
+      "$\\sum_{r=4}^{\\infty} \\frac{\\left(\\frac{1}{2}\\right)^{r}}{r!} e^{-\\frac{1}{2}}$",
+      "$\\sum_{t=4}^{\\infty}\\binom{t+3}{3}\\left(\\frac{1}{2}\\right)^{t+4}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 27,
+    "context": "En stokastisk variabel X har tæthedsfunktion $f(x)=\\frac{2}{3} e^{-x}(1+\\sin (x))$ for x ≥ 0.",
+    "question": "De værdier for x, hvor hazardraten er 0 , findes til",
+    "options": [
+      "Løsningerne til ligningen  $\\frac{\\frac{2}{3} e^{-x} \\sin (x)}{\\int_{0}^{x} \\frac{2}{3} e^{-t}(1+\\sin (t)) \\mathrm{d} t}=0$",
+      "$x=\\left(\\frac{3}{2}+n\\right) \\pi, \\quad n=0,1,2, \\ldots$",
+      "$x=\\left(\\frac{3}{2}+2 n\\right) \\pi, \\quad n=0,1,2, \\ldots$",
+      "Løsningerne til ligningen  $\\frac{\\frac{2}{3} e^{-x}(1+\\cos (x))}{\\int_{0}^{x} \\frac{2}{3} e^{-t}(1+\\sin (t)) \\mathrm{d} t}=0$",
+      "Sådanne værdier findes ikke",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 28,
+    "context": "Et rumfartøj er planlagt til at lande på et bestemt punkt på Mars. Man beskriver det reelle landingspunkt ved en standardiseret bivariat normalfordeling med korrelationskoefficient $\\frac{2}{7}$ i et sædvanligt koordinatsystem.",
+    "question": "Sandsynligheden for, at rumfartøjet lander i det område, der beskrives af første kvadrant i koordinatsystemet, findes til",
+    "options": [
+      "\\frac{1}{4}+\\frac{\\operatorname{Arctan}\\left(\\frac{2\\sqrt{5}}{15}\\right)}{2\\pi}",
+      "\\frac{1}{4}",
+      "1-e^{-\\frac{4}{98}}",
+      "\\frac{\\frac{\\pi}{2}+\\operatorname{Arctan}\\left(\\frac{4}{7}\\right)}{2\\pi}",
+      "\\frac{\\frac{\\pi}{2}-\\operatorname{Arctan}\\left(\\frac{4}{7}\\right)}{2\\pi}",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 29,
+    "context": "I det reelle interval [0; 10] vælges et tal tilfældigt 5 gange. Man betegner det næsthøjeste af disse tal med X.",
+    "question": "Efter en passende valgt skalering (med en konstant) kan X beskrives ved en",
+    "options": [
+      "Normalfordeling",
+      "Betafordeling",
+      "Gammafordeling",
+      "Ligefordeling (uniform fordeling)",
+      "Rayleigh fordeling",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 30,
+    "context": "Man har to diskrete stokastiske variable, der hver kan antage en af værdiernene i mængden {1, 2, 3} med simultan sandsynlighedsfunktion givet ved tabellen                Y = 1           Y = 2           Y = 3   ------- --------------- --------------- ---------------    X = 1   $\\frac{1}{9}$   $\\frac{2}{9}$   $\\frac{2}{9}$    X = 2         0         $\\frac{1}{9}$   $\\frac{2}{9}$    X = 3         0               0         $\\frac{1}{9}$",
+    "question": "Det korrekte af nedenstående udsagn er",
+    "options": [
+      "$\\mathrm{P}(X=1)=\\frac{1}{3}$",
+      "$\\mathrm{P}(X=2, Y=3)=\\frac{1}{9}$",
+      "$\\mathrm{P}(Y=3)=\\frac{5}{9}$",
+      "$\\mathrm{P}(X=1)=\\frac{4}{9}$",
+      "$\\mathrm{P}(X \\leq 2, Y=3)=\\frac{1}{3}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  }
+]

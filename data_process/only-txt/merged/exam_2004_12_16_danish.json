@@ -1,0 +1,452 @@
+[
+  {
+    "language": "danish",
+    "number": 1,
+    "context": "For hændelserne A og B har man $P(A)=\\frac{1}{15}, P(B)=\\frac{1}{7}, P(A \\cap B)=\\frac{1}{22}$.",
+    "question": "Sandsynligheden for, at mindst en af hændelserne A og B indtræffer, er",
+    "options": [
+      "$\\frac{1}{15}+\\frac{1}{7}+\\frac{1}{22}$",
+      "$\\frac{1}{15}+\\frac{1}{7}$",
+      "$\\left(\\frac{1}{15}+\\frac{1}{7}\\right)\\left(1-\\frac{1}{22}\\right)$",
+      "$\\frac{1}{15}+\\frac{1}{7}-\\frac{1}{22}$",
+      "$1-\\left(1-\\frac{1}{15}\\right)\\left(1-\\frac{1}{7}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 2,
+    "context": "I gennemsnit regner det hver tredje dag i december måned. Hvis det regner én dag, øger det sandsynligheden for, at det regner dagen efter.",
+    "question": "Hvad kan vi på baggrund af dette sige om sandsynligheden p for, at det regner både den 24 . og den 25. december?",
+    "options": [
+      "$p=\\frac{1}{3}$",
+      "$p=\\frac{1}{9}$",
+      "$\\frac{1}{9} \\leq p \\leq \\frac{1}{3}$",
+      "$p \\leq \\frac{1}{9}$",
+      "$p \\leq \\frac{2}{9}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 3,
+    "context": "Man har 9 rotter fra 3 forskellige kuld fordelt på køn som i angivet i tabellen     Kuld   Antal   Antal hunner   ------ ------- --------------        1       2              1        2       3              2        3       4              2 En tilfældig af rotterne udtages til et eksperiment. Rotten viser sig at være af hunkøn.",
+    "question": "Hvad er sandsynligheden for, at rotten stammer fra kuld 3.",
+    "options": [
+      "$\\frac{4}{9}$",
+      "$\\frac{2}{9}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{2}{4}$",
+      "$\\frac{2}{5}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 4,
+    "context": "En boghandler sælger hver dag et stort antal bøger. En lille andel af dem bliver senere returneret. Bøger bliver returneret enkeltvis og uafhængigt af hinanden. I gennemsnit bliver tre bøger om dagen returneret.",
+    "question": "Lad X betegne antallet af returnede bøger på en tilfældigt valgt dag. Hvilken fordelingstype danner det mest rimelige udgangspunkt for en model af X ?",
+    "options": [
+      "Normalfordelingen",
+      "Den geometriske fordeling",
+      "Den hypergeometriske fordeling",
+      "Poissonfordelingen",
+      "Ligefordelingen",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 5,
+    "context": "Et system har tre komponenter a, b og c. Systemet fungerer, hvis a virker, eller, hvis a fejler, men både b og c virker. Komponenterne fungerer uafhængigt af hinanden med sandsynlighederne p_(A), p_(B), og p_(C), hhv.",
+    "question": "Bestem sandsynligheden for, at systemet fungerer.",
+    "options": [
+      "p_(A) + p_(B)p_(C)",
+      "1 - (1-p_(A))(1-p_(B))(1-p_(C))",
+      "1 - (1-p_(A)) - (1-p_(B)p_(C)) + (1-p_(A))(1-p_(B)p_(C))",
+      "p_(A) + p_(B) + p_(C)",
+      "p_(A) + p_(B)p_(C) - p_(A)p_(B)p_(C)",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 6,
+    "context": "Et punkt vælges tilfældigt i området afgrænset af linierne y = 0, x = 1, og y = x. Koordinaterne til punktet betegnes ( X, Y ).",
+    "question": "Den betingede fordeling F(y ∣ X = x) = P(Y ≤ y ∣ X = x) af andenkoordinaten Y givet førstekoordinaten X findes til",
+    "options": [
+      "y  0 ≤ y ≤ 1",
+      "$\\frac{y}{x} \\quad 0 \\leq y \\leq x$",
+      "$\\frac{1}{x} \\quad 0 \\leq y \\leq x$",
+      "$\\frac{y-x}{1-x} \\quad x \\leq y \\leq 1$",
+      "x  0 ≤ x ≤ 1",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 7,
+    "context": "Lad X_(i), i = 1, …, n være uafhængige identisk fordelte stokastiske variable på [0, π] med tæthedsfunktion $\\frac{1}{2} \\sin x$. Lad Y = max {X_(i):i=1,…,n}.",
+    "question": "Bestem fordelingsfunktionen for Y.",
+    "options": [
+      "$1-\\frac{1}{2^{n}}(1+\\cos x)^{n}$",
+      "$\\frac{1}{2^{n}}(1-\\cos x)^{n}$",
+      "$\\frac{n}{2^{n}}(1-\\cos x)^{n-1} \\sin x$",
+      "$\\frac{1}{2^{n}} \\sin ^{n} x$",
+      "$\\frac{1}{2}\\left(1-\\cos ^{n} x\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 8,
+    "context": "Et spil kort indeholder 13 spar, 13 hjerter, 13 ruder og 13 klør. Der trækkes en hånd bestående af 4 kort ud af et sådant spil, uden tilbagelægning.",
+    "question": "Bestem sandsynligheden for, at hånden indeholder 1 spar, 1 hjerter, 1 ruder og 1klør.",
+    "options": [
+      "$\\frac{13}{52}+\\frac{13}{51}+\\frac{13}{50}+\\frac{13}{49}$",
+      "$\\left(\\frac{\\binom{13}{1}\\binom{39}{3}}{\\binom{52}{4}}\\right)^{4}$",
+      "$\\left(\\frac{1}{4}\\right)^{4}$",
+      "$\\frac{13}{52} \\frac{13}{51} \\frac{13}{50} \\frac{13}{49}$",
+      "$\\frac{39}{51} \\frac{26}{50} \\frac{13}{49}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 9,
+    "context": "Man slår gentagne slag med to almindelige terninger.",
+    "question": "Bestem sandsynligheden for, at man i det tiende slag for anden gang får et par i seksere.",
+    "options": [
+      "0.0055",
+      "0.0216",
+      "0.0277",
+      "0.0008",
+      "0.0006",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 10,
+    "context": "En stokastisk variabel X antager værdier i {0, …, 3} med følgende sandsynligheder:   x            0     1     2     3   ---------- ----- ----- ----- -----   P(X = x)    0.4   0.3   0.2   0.1",
+    "question": "Bestem variansen af X",
+    "options": [
+      "0",
+      "1",
+      "$\\frac{3}{2}$",
+      "$\\frac{4}{3}$",
+      "2",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 11,
+    "context": "Fire venner spiller tennis. 2 af dem er venstrehåndede, de andre to højrehåndede. De danner to makkerpar à to spillere ved lodtrækning så alle konstellationer er lige sandsynlige.",
+    "question": "Bestem sandsynligheden for, at de to venstrehåndede bliver makkere.",
+    "options": [
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 12,
+    "context": "I en årgang er 51% drenge og 49% piger. En skoleklasse med 28 elever er dannet af denne årgang.",
+    "question": "Bestem et tilnærmet udtryk for sandsynligheden for, at klassen har flere piger end drenge under antagelse af, at klassen er dannet tilfældigt,",
+    "options": [
+      "$\\binom{28}{15} 0.49^{15} 0.51^{13}$",
+      "$\\sum_{i=15}^{28} \\frac{(0.49 \\cdot 28)^{i}}{i!} e^{-0.49 \\cdot 28}$",
+      "0.49",
+      "$\\Phi\\left(\\frac{13.5-28 \\cdot 0.51}{\\sqrt{28 \\cdot 0.51 \\cdot 0.49}}\\right)$",
+      "0.49²⁸",
+      "Ved ikke hvor Φ som sædvanligt angiver fordelingsfunktionen for en standard normalfordelt variabel."
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 13,
+    "context": "Koordinaterne (X, Y) til et punkt i planen vælges med tætheden $f(x, y)=\\frac{1}{1.6 \\pi} e^{-\\frac{1}{1.28}\\left(x^{2}+1.2 x y+y^{2}\\right)}$.",
+    "question": "Sandsynligheden for, at punktet ligger i første kvadrant (i.e. at både X og Y er positive), er",
+    "options": [
+      "$\\frac{1-\\frac{2}{\\pi} \\operatorname{Arctan}\\left(\\frac{3}{4}\\right)}{4}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{1.6 \\pi}$",
+      "$\\frac{1-\\frac{2}{\\pi} \\operatorname{Arccos}\\left(\\frac{3}{5}\\right)}{4}$",
+      "e^( - 2)",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 14,
+    "context": "Om en stokastisk variabel X oplyses, at den følger en standardiseret normalfordeling (med middelværdi μ = 0 og varians σ² = 1 ). Man danner nu $Y=\\sqrt{e^{X}}$.",
+    "question": "Tætheden f(y) for Y indenfor definitionsmængden findes til",
+    "options": [
+      "$\\sqrt{\\frac{1}{\\sqrt{2 \\pi}} e^{-\\frac{1}{2}(\\log (y))^{2}}}$",
+      "$\\frac{1}{\\sqrt{2 \\pi}} e^{-\\frac{1}{2}(\\log y)^{2}}$",
+      "e^( - x)",
+      "$\\sqrt{\\frac{2}{\\pi} \\frac{1}{y}} e^{-2(\\log (y))^{2}}$",
+      "$\\frac{1}{y} \\sqrt{\\frac{2}{\\pi}} e^{-2(\\log (y))^{2}}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 15,
+    "context": "Man har de to stokastiske variable X_(i), i = 1, 2 med middelværdi μ_(i) og varians σ_(i)². Man danner nu en ny variabel Y = aX₁ + bX₂ + c, hvor a, b og c er kendte konstanter.",
+    "question": "Middelværdien E(Y) af Y findes til",
+    "options": [
+      "Kan ikke beregenes uden kendskab til, hvorvidt de variable er uafhængige.",
+      "$a \\mu_{1} \\frac{1}{1+\\sigma_{1}^{2}}+b \\mu_{2} \\frac{1}{1+\\sigma_{2}^{2}}+c$",
+      "aμ₁ + a²σ₁² + bμ₂ + b²σ₂² + c",
+      "a²μ₁ + b²μ₂",
+      "aμ₁ + bμ₂ + c",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 16,
+    "context": "Værnepligtige mænd har en middelhøjde på 182 cm ; standard afvigelsen af de værnepligtiges højde er 8 cm . En deling består af 25 mand.",
+    "question": "Angiv et overslag på sandsynligheden for, at gennemsnitshøjden i en deling overstiger 185 cm .",
+    "options": [
+      "0",
+      "0.01",
+      "0.03",
+      "0.12",
+      "0.35",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 17,
+    "context": "Lad X være en stokastisk variabel, der beskriver levetiden af en komponent målt i dage. Antag, at X har hazardraten 1 + cos x for x > 0.",
+    "question": "Givet t > 0, bestem den betingede sandsynlighed for, at X > t + π, givet, at X > t",
+    "options": [
+      "exp ( - π + 2sin t)",
+      "exp ( - π + 1)",
+      "exp ( - π - 1)",
+      "exp ( - π)",
+      "exp ( - 1)",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 18,
+    "context": "Lad X være en normalfordelt stokastisk variabel med middelværdi -1 og varians 4. Lad Y = X².",
+    "question": "Bestem sandsynligheden P(Y > 1).",
+    "options": [
+      "1 - Φ(1)",
+      "$\\frac{1}{2}+\\Phi(-1)$",
+      "$\\sqrt{2}-1$",
+      "$\\frac{1}{2}+\\Phi\\left(\\frac{1}{2}\\right)$",
+      "$\\frac{1}{2}+\\Phi\\left(-\\frac{1}{2}\\right)$",
+      "Ved ikke hvor Φ som sædvanlig er fordelingsfunktionen for en standard normalfordelt variabel."
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 19,
+    "context": "X og Y er stokastiske variable med fælles middelværdi 0.X har varians 1, Y har varians 2, og korrelationskoefficient mellem X og Y er ρ.",
+    "question": "Bestem ρ, således at variansen af X + Y er 1 .",
+    "options": [
+      "0",
+      "-1",
+      "$\\frac{\\sqrt{2}}{2}-1$",
+      "$-\\frac{\\sqrt{2}}{2}$",
+      "$-\\frac{1}{2}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 20,
+    "context": "Vi betragter 10 populære tekstbehandlingsprogrammer og antager, at hvert af de 10 programmer har den samme sandsynlighed for at blive foretrukket af en tilfældigt valgt person (diskret ligefordeling). Fire personer uden indbyrdes forhåndskendskab samles til en arbejdsgruppe.",
+    "question": "Hvad er sandsynligheden for, at mindst to af deltagerne foretrækker det samme tekstbehandlingssystem.",
+    "options": [
+      "$\\frac{1000-9 \\cdot 8 \\cdot 7}{1000}$",
+      "$\\frac{10000-9^{4}}{10000}$",
+      "$1-\\binom{10}{4}\\left(\\frac{1}{10}\\right)^{4}\\left(\\frac{9}{10}\\right)^{6}$",
+      "$1-\\frac{\\binom{1}{1}^{4}}{\\binom{10}{4}}$",
+      "$\\frac{1}{2}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 21,
+    "context": "Lad X_(i), i = 1, …, n være uafhængige identisk fordelte stokastiske variable med kontinuert og voksende fordelingsfunktion F(x). Lad Y = max {X_(i):i=1,…,n}.",
+    "question": "Bestem medianen for Y.",
+    "options": [
+      "$F^{-1}\\left(\\frac{1}{2^{1 / n}}\\right)$",
+      "$F^{-1}\\left(\\frac{1}{2^{n}}\\right)$",
+      "$\\left(F^{-1}\\left(\\frac{1}{2}\\right)\\right)^{n}$",
+      "$F^{-1}\\left(\\frac{1}{2}\\right)$",
+      "Kan ikke bestemmes ud fra det oplyste.",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 22,
+    "context": "Du står i kø i supermarkedet. Foran dig står 3 andre kunder hvoraf den ene er ved at blive betjent. Tiden det tager at betjene en kunde er eksponentialfordelt med middelværdi 2 minutter, og forskellige kunder har uafhængige betjeningstider.",
+    "question": "Hvad er sandsynligheden for at du er færdigbetjent indenfor 10 minutter?",
+    "options": [
+      "са. 74%",
+      "ca. 65%",
+      "са. 35%",
+      "ca. 27%",
+      "Kan ikke beregnes uden at vide, hvor længe den første kunde har været under betjening.",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 23,
+    "context": "Lad X og Y være stokastiske variable således at punktet ( X, Y ) er uniformt fordelt over cirkelskiven med centrum i (0, 0) og radius 1.",
+    "question": "Bestem den betingede sandsynlighed for Y > 0 givet Y > X, dvs. (P(Y > 0 ∣ Y > X)).",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{5}{8}$",
+      "$\\frac{3}{4}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 24,
+    "context": "Lad der være givet n uafhængige variable X₁, …, X_(n), der alle er normalfordelte med middelværdi 0 og spredning 1.",
+    "question": "Bestem sandsynligheden for, at den næststørste af X_(i) ’erne ligger i intervallet [0, dx], hvor dx > 0 er en infinitesemal størrelse.",
+    "options": [
+      "$\\frac{1}{\\sqrt{2 \\pi}} d x$",
+      "$\\frac{1}{2^{n(n-1)} \\sqrt{2 \\pi}} d x$",
+      "$\\frac{n(n-1)}{2^{n-1} \\sqrt{2 \\pi}} d x$",
+      "$\\frac{n(n-1)}{2^{n-1} \\sqrt{2 \\pi}} e^{-\\frac{n}{2}} d x$",
+      "$\\frac{3}{4}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 25,
+    "context": "Man har de to uafhængige positive stokastiske variable X og Y med tæthedsfunktion f_(X)(x) og f_(Y)(y) respektive. Man danner produktet Z = X ⋅ Y.",
+    "question": "Tætheden f_(Z)(z) for Z findes til",
+    "options": [
+      "$f_{Z}(z)=\\int_{0}^{\\infty} f_{X}(x) f_{Y}\\left(\\frac{z}{x}\\right) \\mathrm{d} x$",
+      "$f_{Z}(z)=\\int_{0}^{\\infty} \\frac{1}{x} f_{X}(x) f_{Y}\\left(\\frac{z}{x}\\right) \\mathrm{d} x$",
+      "$f_{Z}(z)=\\int_{0}^{\\infty} x f_{X}(x) f_{Y}\\left(\\frac{z}{x}\\right) \\mathrm{d} x$",
+      "$f_{Z}(z)=\\int_{0}^{\\infty} \\frac{1}{x} f_{X}(x) f_{Y}(z x) \\mathrm{d} x$",
+      "f_(Z)(z) = ∫₀^(∞)xf_(X)(x)f_(Y)(zx)dx",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 26,
+    "context": "Ca. hver tredje person kan spille skak. Fire tilfældige personer er samlet.",
+    "question": "Bestem sandsynligheden for, at et lige antal ( 0,2 eller 4 ) af de fire kan spille skak.",
+    "options": [
+      "$\\frac{3}{5}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{16}{81}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{41}{81}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 27,
+    "context": "Vi betragter en ukrudtsplante på en mark og dens afkom (første generation). Afstandsvektoren mellem moderplanten og en tilfædigt valgt afkomsplante kan beskrives ved vektoren X₁, X₂ hvor X_(i) ∈ N(0, 1). Således kan begge afstandvektorens koordinater beskrives som normalfordelte variable, hvor standardafvigelsen er valgt som længdeenhed.",
+    "question": "Sandsynligheden for, at en tilfældigt afkomsplante er placeret mere end én længdeenhed fra moderplanten, er",
+    "options": [
+      "1 - (Φ(1) - Φ( - 1))",
+      "(Φ(1) - Φ( - 1))",
+      "$\\frac{1}{\\sqrt{e}}$",
+      "$\\frac{1}{\\pi}$",
+      "$\\frac{1}{e}$",
+      "Ved ikke hvor Φ som sædvanlig angiver fordelingsfunktionen for en standard normalfordelt variabel."
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 28,
+    "context": "Den stokastiske vektor ( X, Y ) antager værdier i området 0 ≤ y ≤ x² ≤ 1, med fordelingsfunktionen $F(x, y)=P(X \\leq x, Y \\leq y)=c\\left(3 x^{2} \\sqrt{y}-3 x y+y \\sqrt{y}\\right)$.",
+    "question": "Konstanten c er",
+    "options": [
+      "$1-\\frac{1}{\\sqrt{2}}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{\\sqrt{2}}$",
+      "1",
+      "$\\frac{20}{3}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 29,
+    "context": "To spillere kaster hver to mønter. Vi lader X betegne antallet af krone blandt de to mønter kastet af den første spiller og Y betegne det totale antal af krone i de ialt 4 kast. Vi betragter tilfældet, hvor Y = 2.",
+    "question": "Man finder (P(X = 0 ∣ Y = 2), P(X = 1 ∣ Y = 2), P(X = 2 ∣ Y = 2)) til",
+    "options": [
+      "$\\left(\\frac{1}{4}, \\frac{1}{2}, \\frac{1}{4}\\right)$",
+      "$\\left(\\frac{1}{6}, \\frac{2}{3}, \\frac{1}{6}\\right)$",
+      "$\\left(\\frac{1}{8}, \\frac{3}{4}, \\frac{1}{8}\\right)$",
+      "$\\left(\\frac{3}{16}, \\frac{5}{8}, \\frac{3}{16}\\right)$",
+      "$\\left(\\frac{1}{3}, \\frac{1}{3}, \\frac{1}{3}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 30,
+    "context": "Belastningen af en kæde er givet ved en fordeling, der har middelværdi 1000 N og standardafvigelse på 500 N . Man ønsker at bestemme en værdi x_(max) for belastningen, der højst må overskrides med en sandsynlighed på en promille.",
+    "question": "En mindste sikker belastningsgrænse x_(max ) er",
+    "options": [
+      "$\\Phi\\left(\\frac{x_{\\max }-1000 \\mathrm{~N}}{500 \\mathrm{~N}}\\right)=0.999$",
+      "$x_{\\max }=1000 \\mathrm{~N}+\\sqrt{1000} \\cdot 500 \\mathrm{~N}$",
+      "0.001x_(max) = 1000 N",
+      "0.001x_(max) = 500 N",
+      "$x_{\\max }=\\sqrt{1000} \\cdot 500 \\mathrm{~N}$",
+      "Ved ikke hvor Φ som sædvanlig angiver fordelingsfunktionen for en standard normalfordelt variabel."
+    ],
+    "answer": "2"
+  }
+]

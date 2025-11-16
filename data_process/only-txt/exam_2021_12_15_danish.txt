@@ -1,0 +1,698 @@
+Opgave 1
+
+Om hændelserne A og B oplyses, at sandsynligheden for, at hændelse A
+indtræffer, er $\frac{2}{7}$, mens sandsynligheden for, at B også
+indtræffer, når det vides, at A indtræffer, er $\frac{14}{23}$.
+
+Spørgsmål 1
+
+Sandsynligheden for, at både A og B indtræffer, er
+
+1 $\frac{144}{161}$
+
+2 $\frac{1}{7}$
+3 $\frac{46}{161}$
+
+4 $\frac{4}{23}$
+
+5 $\frac{14}{23}$
+
+6 Ved ikke
+
+Opgave 2
+
+Man betragter en stokastisk variabel X, der følger en
+gamma (2, λ)-fordeling, og danner en ny variabel $Y=\frac{1}{X}$.
+
+Spørgsmål 2
+
+Tæthedsfunktionen f_(Y)(y) findes til
+
+1 $f_{Y}(y)=\frac{\lambda^{2}}{y^{3}} e^{-\frac{\lambda}{y}}$
+
+2 $f_{Y}(y)=\frac{\lambda^{2}}{y^{2}} e^{-\frac{\lambda}{y}}$
+
+3 $f_{Y}(y)=\frac{\lambda^{2}}{y} e^{-\frac{\lambda}{y}}$
+
+4 $f_{Y}(y)=\frac{1}{\lambda^{2} y e^{-\lambda y}}$
+
+5 $f_{Y}(y)=\lambda^{2} y e^{-\frac{\lambda}{y}}$
+
+6 Ved ikke
+
+Opgave 3
+
+En kæmpe bjørneklo (plante) er på et tidspunkt blevet indført til et
+område. Placeringen af planterne i anden generation kan i et passende
+normeret koordinatsystem, hvor den oprindelige plante er placeret i
+koordinatsystemets nulpunkt, beskrives ved uafhængige standardiserede
+normalfordelte variable.
+
+Spørgsmål 3
+
+Sandsynligheden for, at en tilfældig valgt plante i anden generation er
+lokaliseret i en afstand mellem $\frac{1}{2}$ og 1 længdeenhed fra den
+oprindelige plante, er
+
+1 $\Phi(1)-\Phi\left(\frac{1}{2}\right)$
+
+2 $\Phi(1)-\Phi\left(\frac{\sqrt{2}}{2}\right)$
+
+3 $e^{-\frac{1}{2}}-e^{-2}$
+
+4 $\left(\Phi(1)-\Phi\left(\frac{1}{2}\right)\right)^{2}$
+
+5 $e^{-\frac{1}{8}}-e^{-\frac{1}{2}}$
+
+6 Ved ikke
+
+Opgave 4
+
+Lad X₁, X₂, … være uafhængige eksponential ( λ ) fordelte variable og
+lad N være geometrisk ( p ) fordelt, i.e.
+P(N = n) = (1 − p)^(n − 1)p, n = 1, 2, ….
+
+Spørgsmål 4
+
+Middelværdien E(X₁+X₂⋯+X_(N)) af $\sum_{i=1}^{N} X_{i}$ findes til
+
+1 $\frac{1}{\lambda p}$
+
+2 $\frac{1}{\lambda(1-p)}$
+
+3 $\frac{p}{\lambda}$
+
+4 $\frac{1-p}{\lambda}$
+
+5 $\frac{\lambda}{p}$
+
+6 Ved ikke
+
+Opgave 5
+
+I en kasse med 50 nyhøstede æbler er der talt 5 rådne æbler. Man
+antager, at denne kasse er repræsentativ for æbleplantagen, den kommer
+fra.
+
+Spørgsmål 5
+
+Angiv, eventuelt approksimativt, sandsynligheden for, at der er mere end
+300 rådne æbler i en høst på 3600 æbler
+
+1 $1-\Phi\left(\frac{300,5-360}{18}\right)$
+2 $\sum_{i=0}^{300}\binom{3600}{i}(0,1)^{i}(0,9)^{3600-i}$
+
+3 $1-\sum_{i=0}^{299}\binom{299}{i}(0,1)^{i}(0,9)^{299-i}$
+
+4 $\Phi\left(\frac{299,5-360}{18}\right)$
+
+5 $\sum_{i=0}^{301}\binom{301}{i}(0,1)^{i}(0,9)^{301-i}$
+6 Ved ikke
+
+Opgave 6
+
+En mand slår med en fair terning indtil han to gange i træk får det
+samme antal øjne. Lad X betegne det samlede antal slag, han bruger.
+
+Spørgsmål 6
+
+Sandsynlighederne P(X = k) for k ∈ N findes til
+
+1
+$\left(\frac{5}{6}\right)^{k-1} \frac{1}{6}, \quad k \in\{1,2,3, \ldots\}$
+
+2
+$\left(\frac{5}{6}\right)^{k-2} \frac{1}{6}, \quad k \in\{2,3,4, \ldots\}$
+
+3 $\frac{1}{6}, \quad k \in\{1,2,3,4,5,6\}$
+
+4 $\frac{1}{36}, \quad k \in\{1,2,3, \ldots, 36\}$
+
+5
+$\binom{k+1}{1}\left(\frac{1}{6}\right)^{2}\left(\frac{5}{6}\right)^{k}$
+6 Ved ikke
+
+Opgave 7
+
+Den simultane fordelingsfunktion F(x, y) for de to positive stokastiske
+variable X og Y angiver sandsynligheden for, at X er mindre end eller
+lig med x, og, at Y samtidigt er mindre end eller lig med y. De
+stokastiske variable X og Y har den simultane fordelingsfunktion
+F(x, y) = 3y²x − 3yx² + x³.
+
+Spørgsmål 7
+
+Sandsynligheden for hændelsen " $X \leq \frac{1}{3}, Y \leq \frac{2}{3}$
+" findes til
+
+1 $\frac{5}{486}$
+2 $\frac{5}{286}$
+
+3 $\frac{7}{27}$
+
+4 $\frac{1}{3}$
+
+5 $\frac{8}{405}$
+
+6 Ved ikke
+
+Opgave 8
+
+Det forventede antal af personer smittet med Covid-19 i løbet af en uge
+i en given kommune er 50 . Variabiliteten beskrives ved en
+standardafvigelse, der ligeledes er 50.
+
+Spørgsmål 8
+
+Den bedste ⌀ vre grænse for sandsynligheden for, at der er flere end 500
+smittede i kommunen i en bestemt uge, findes til
+
+1 1 − Φ(9)
+
+2 $\Phi\left(\frac{500-50}{50}\right)$
+
+3 $\frac{1}{10}$
+
+4 $\frac{1}{81}$
+
+5 $\sum_{i=500}^{\infty} \frac{50^{i}}{i!} e^{-50}$
+
+6 Ved ikke
+
+Opgave 9
+
+Man har udviklet en sandsynlighedsmodel til beskrivelse af bestanden af
+to kænguruarter. Der er tilstrækkeligt mange individer til, at en
+bivariat normalfordeling kan bruges som model. Det forventede antal af
+dyr af hver af de to arter er 800, variansen for antallet af dyr er for
+begge arter 25600 , mens korrelationskoefficienten er ρ.
+
+Spørgsmål 9
+
+Sandsynligheden for, at det totale antal dyr ikke er større end 1400,
+findes til
+
+1 $\Phi\left(-\frac{5 \sqrt{2}}{8}\right)$
+2 $\Phi\left(-\frac{5 \sqrt{2} \sqrt{1+\rho}}{8(1+\rho)}\right)$
+3 $\Phi\left(-\frac{5 \sqrt{2}}{16 \sqrt{1+\rho}}\right)$
+
+4 $\Phi\left(-\frac{5 \sqrt{3} \sqrt{1+\rho}}{8(1+\rho)}\right)$
+
+5 $\Phi\left(-\frac{5 \sqrt{3}}{16 \sqrt{1+\rho}}\right)$
+
+6 Ved ikke
+
+Opgave 10
+
+Fabriksfremstillede teboller har en vis variation i størrelsen.
+Afvigelsen kan på en passende normeret skala beskrives ved
+tæthedsfunktionen
+$f(x)=6\left(\frac{1}{2}+x\right)\left(\frac{1}{2}-x\right)$ for
+$-\frac{1}{2}<x<\frac{1}{2}$.
+
+Spørgsmål 10
+
+Sandsynligheden for, at den numeriske afvigelse højest er $\frac{1}{4}$
+på den normerede skala, findes til
+
+1 $\frac{1}{2}$
+
+2 $\frac{3}{8}$
+
+3 $\frac{5}{8}$
+
+4 $\frac{9}{16}$
+
+5 $\frac{11}{16}$
+
+6 Ved ikke
+
+Opgave 11
+
+For at estimere vildtpopulationen i et reservat skydes 25 bjørne med
+bedøvende pile og mærkes. På et senere tidspunkt skydes 5 bjørne, hvoraf
+de 2 var mærkede.
+
+Spørgsmål 11
+
+Under antagelse af, at den samlede population er 75 , hvad er da
+sandsynligheden for at få netop 2 mærkede blandt de 5 skudte.
+
+1 $\binom{5}{3} \frac{1}{3^{2}}\left(\frac{2}{3}\right)^{2}$
+
+2 $\frac{1}{2}\left(\frac{5}{3}\right)^{2} e^{-\frac{5}{3}}$
+
+3 $\frac{\binom{25}{2}\binom{50}{3}}{\binom{75}{5}}$
+
+4 $\binom{75}{5} \frac{1}{3^{5}}\left(\frac{2}{3}\right)^{70}$
+
+5 $\frac{\binom{25}{3}\binom{50}{2}}{\binom{75}{5}}$
+
+6 Ved ikke
+
+Opgave 12
+
+Hos en fabrikant af spil undersøger man, om almindelige sekssidede
+terninger er korrekt afbalancerede ved at undersøge antallet af
+enkeltkast, der giver et lige antal øjne.
+
+Spørgsmål 12
+
+Sandsynligheden for højst 2 gange at få et lige antal øjne ved 6 kast
+med en afbalanceret terning er
+
+1 $\frac{1}{3}$
+
+2 $\frac{1}{64} \sum_{i=0}^{2}\binom{6}{i}$
+
+3
+$\sum_{i=0}^{2}\binom{6}{i}\left(\frac{1}{3}\right)^{i}\left(\frac{2}{3}\right)^{6-i}$
+
+4 $\frac{1}{64}+5 \cdot \frac{1}{64}+12 \cdot \frac{1}{64}$
+
+5 $1-\frac{1}{64} \sum_{i=0}^{2}\binom{6}{i}$
+
+6 Ved ikke
+
+Opgave 13
+
+Lad A og B være to gensidigt udelukkende hændelser begge med positiv
+sandsynlighed og lad I_(A) og I_(B) være indikatorvariable for de to
+hændelser.
+
+Spørgsmål 13
+
+Om korrelationen mellem I_(A) og I_(B) - Corr (I_(A),I_(B)) - gælder
+
+1 Corr (I_(A),I_(B)) < 0
+
+2 Corr (I_(A),I_(B)) = 0
+
+3 Corr (I_(A),I_(B)) > 0
+
+4 Corr (I_(A),I_(B)) = 1
+
+5 Man kan ikke konkludere noget generelt om fortegnet for
+Corr (I_(A),I_(B)).
+
+6 Ved ikke
+
+Opgave 14
+
+Et punkt i området afgrænset af linierne y = x, y = x + 2, y = 6 og
+x = 0 vælges tilfældigt.
+
+Spørgsmål 14
+
+Sandsynligheden for, at x-koordinaten er større end 4, findes til
+
+1 $\frac{1}{3}$
+2 $\frac{1}{4}$
+
+3 $\frac{1}{5}$
+
+4 $\frac{5}{24}$
+
+5 $\int_{4}^{6} \int_{x}^{6} \frac{1}{12} \mathrm{~d} y \mathrm{~d} x$
+
+6 Ved ikke
+
+Opgave 15
+
+Det oplyses, at tætheden for den stokastiske variabel Y er gamma (4, 1),
+mens tætheden for den stokastiske variabel X for givet Y er
+$f_{X \mid Y=y}(x)=6 \frac{x}{y^{2}}\left(1-\frac{x}{y}\right)$, hvor
+0 ≤ x ≤ y.
+
+Spørgsmål 15
+
+Tætheden f_(X)(x) for X findes til
+
+1 $\frac{1}{y}$
+
+2 e^( − x)
+
+3
+$\int_{0}^{\infty} 6 \frac{x}{y^{2}}\left(1-\frac{x}{y}\right) \frac{y^{4}}{4!} e^{-y} \mathrm{~d} y$
+
+4 $\sum_{i=0}^{3}\binom{3}{i} \frac{1}{16} \frac{x^{i}}{i!} e^{-x}$
+
+5 ∫_(x)^(∞)x(y − x)e^( − y) dy
+
+6 Ved ikke
+
+Opgave 16
+
+Man betragter parret ( X, Y ) af stokastiske variable, der følger en
+standardiseret bivariat normalfordeling med korrelationskoefficient
+$\frac{1}{2}$.
+
+Spørgsmål 16
+
+Sandsynligheden P(X > |Y|) findes til
+
+1
+$\frac{\operatorname{Arctan}\left(\frac{1}{\sqrt{3}}\right)-\operatorname{Arctan}(\sqrt{3})}{2 \pi}$
+2 $\frac{1}{4}$
+
+3
+$\frac{\operatorname{Arctan}(\sqrt{3})-\operatorname{Arctan}\left(\frac{\sqrt{3}}{3}\right)}{2 \pi}$
+
+4
+$\frac{\operatorname{Atan}(\sqrt{3})+\operatorname{Arctan}\left(\frac{3}{\sqrt{2}}\right)}{2 \pi}$
+
+5
+$\frac{\operatorname{Atan}(\sqrt{3})+\operatorname{Arctan}\left(\frac{2}{\sqrt{3}}\right)}{2 \pi}$
+6 Ved ikke
+
+Opgave 17
+
+Man betragter tre uafhængige standard normalfordelte variable, og
+interesserer sig for den næststørste af de tre.
+
+Spørgsmål 17
+
+Tætheden for den næststørste variabel er
+
+1
+$\frac{6}{\sqrt{2 \pi}} e^{-\frac{1}{2} x^{2}}\left(\Phi(x)-\Phi(x)^{2}\right)$
+
+2 $\frac{1}{\sqrt{\pi}} \frac{1}{\sqrt{3}} e^{-\frac{1}{2} x^{2}}$
+
+3 $\frac{1}{\sqrt{2 \pi}} e^{-\frac{1}{2} x^{2}}$
+
+4
+$\frac{6}{\sqrt{2 \pi}} e^{-\frac{1}{2} x^{2}}\left(\frac{1}{\sqrt{2 \pi}} e^{-\frac{1}{2} x^{2}}(x)-\left(\frac{1}{\sqrt{2 \pi}} e^{-\frac{1}{2} x^{2}}\right)^{2}\right)$
+
+5 $\frac{6}{\sqrt{2 \pi}} e^{-\frac{1}{2} x^{2}} \Phi(x)^{2}$
+
+6 Ved ikke
+
+Opgave 18
+
+Man antager, at der i storbyområdet Seattle/Tacoma i gennemsnit
+forekommer et vulkanudbrud, der medfører omfattende pyroplastisk flow,
+hvert 4000 år.
+
+Spørgsmål 18
+
+Sandsynligheden for, at der forekommer mindst et sådant udbrud i løbet
+af 100 år, findes til
+
+1 $\frac{1}{40}$
+
+2 $e^{-\frac{1}{40}}$
+
+3 $1-\left(1-\frac{1}{4000}\right)^{100}$
+
+4 $\Phi\left(\frac{1}{40}\right)-\frac{1}{2}$
+
+5 $1-e^{-\frac{1}{40}}$
+
+6 Ved ikke
+
+Opgave 19
+
+Et almindeligt spil kort har 52 kort, hvoraf 4 er esser og 13 er spar.
+Ud af et sådant spil trækkes en hånd bestående af 4 kort uden
+tilbagelægning. Der gives nu point, således at hvert es tæller 10
+points, og hver spar tæller 1 point. (Spar es tæller således både som es
+og som spar).
+
+Spørgsmål 19
+
+Det forventede samlede antal points på en hånd er
+
+1
+$10 \cdot\left(1-\left(1-\frac{4}{52}\right)^{4}\right)+\left(1-\left(1-\frac{13}{52}\right)^{4}\right)$
+
+2
+$10 \cdot \frac{4}{52} \frac{3}{51} \frac{2}{50} \frac{1}{49}+13 \cdot 12 \cdot 11 \cdot 10 \cdot \frac{4 \cdot 3 \cdot 2 \cdot 1}{52 \cdot 51 \cdot 50 \cdot 49}$
+
+3
+$10 \cdot\left(\frac{4}{52}+\frac{3}{51}+\frac{2}{50}+\frac{1}{49}\right)+1 \cdot\left(\frac{13}{52}+\frac{12}{51}+\frac{11}{50}+\frac{10}{49}\right)$
+
+4 $\frac{53}{13}$
+
+5 4
+
+6 Ved ikke
+
+Man kan eventuelt indledningsvist beregne det forventede antal points
+fra et enkelt kort.
+
+Opgave 20
+
+De stokastiske variable X og Y er to uafhængige binomial
+$\left(2, \frac{1}{2}\right)$ fordelte stokastiske variable.
+
+Spørgsmål 20
+
+Sandsynligheden P(X − Y = 0) findes til
+
+1 $\frac{1}{16}$
+
+2 $\frac{1}{9}$
+
+3 $\frac{3}{16}$
+
+4 $\frac{1}{4}$
+
+5 $\frac{3}{8}$
+
+6 Ved ikke
+
+Opgave 21
+
+På en sømfabrik er der 3 maskiner A , B og C , der producerer søm. Deres
+produktion udgør henholdsvis $\frac{1}{4}, \frac{7}{20}$ og
+$\frac{2}{5}$ af hele produktionen. Deres fejlproduktionsrater er
+henholdsvis $\frac{1}{20}, \frac{1}{25}$ og $\frac{1}{50}$. Der udtages
+nu et tilfældigt søm fra produktionen og dette findes til at være
+defekt.
+
+Spørgsmål 21
+
+Sandsynligheden for, at det udtagne søm stammer fra maskine A, findes
+til
+
+1 $\frac{1}{20}$
+
+2 $\frac{1}{20} \cdot \frac{1}{4}$
+
+3 $\frac{25}{69}$
+
+4 $\frac{25}{81}$
+
+5 $\frac{35}{81}$
+
+6 Ved ikke
+
+Opgave 22
+
+Man betragter parret ( X, Y ) af stokastiske variable, der følger en
+ligefordeling over området 0 < x < y < 1. Man danner Z = X + Y.
+
+Spørgsmål 22
+
+Tætheden f_(Z)(z) findes til
+
+1 ∫₀¹2 dx
+2
+$\left\{\begin{array}{cc}z & \text { for } 0<z \leq 1 \\ 2-z & \text { for } 1<z<2\end{array}\right.$
+3 $\frac{1}{2}$
+
+4
+$\left\{\begin{array}{cc}\frac{1}{2} & \text { for } 0<z \leq 1 \\ 2-z & \text { for } 1<z<2\end{array}\right.$
+
+5 ∫₀^(z)2 dx
+6 Ved ikke
+
+Opgave 23
+
+I et binært kommunikationssystem overføres signal enten ved spændingen
++5 V eller ved spændingen -5 V. Systemet fungerer, således at spændingen
+sættes til enten -5 V eller +5 V ved begyndelsen af hvert tidsinterval
+(slot) og spændingen fastholdes på dette niveau i hele intervallet.
+Sandsynligheden for, at spændingen er +5 V, er $\frac{3}{7}$.
+Sandsynligheden for, at et interval med spændingen +5 V efterfølges af
+et med spændingen +5 V , er $\frac{3}{8}$. Man betragter to på hinanden
+følgende intervaller.
+
+Spørgsmål 23
+
+Sandsynligheden for, at mindst et af de to intervaller har en spænding
+på +5 V , findes til
+
+1 $\frac{9}{64}$
+2 $\frac{9}{56}$
+
+3 $\frac{9}{49}$
+
+4 $\frac{39}{56}$
+
+5 $\frac{6}{7}$
+
+6 Ved ikke
+
+Opgave 24
+
+Man har givet X og Y som to uafhængige Poisson(2) variable.
+
+Spørgsmål 24
+
+Man finder den betingede fordeling P(X = x ∣ X + Y = 2) til
+
+1 $\frac{1}{x!} e^{-1}, \quad x=0,1,2,3, \ldots$
+
+2 $\binom{2}{x} \frac{1}{4}, \quad x=0,1,2$
+
+3 $\left(\frac{1}{2}\right)^{x+1}, \quad x=0,1,2,3, \ldots$
+
+4 $\frac{1}{3}, \quad x=0,1,2$
+
+5 $\frac{3-2|x-1|}{5}, \quad x=0,1,2$
+
+6 Ved ikke
+
+Opgave 25
+
+Man har givet den binomial $\left(10, \frac{1}{4}\right)$ fordelte
+stokastiske variabel X.
+
+Spørgsmål 25
+
+Middelværdien E(X) er
+
+1 et tal
+
+2 en stokastiske variabel
+
+3 en hændelse
+
+4 en funktion
+
+5 et udfald
+
+6 Ved ikke
+
+Opgave 26
+
+En ikke negativ kontinuert stokastisk variabel X har hazard rate
+h(x) = (x − 1)².
+
+Spørgsmål 26
+
+Man finder P(X > 1) til
+
+1 1
+
+2 e^( − 1)
+
+3 $e^{-\frac{1}{3}}$
+
+4 $e^{-\frac{1}{4}}$
+
+5 Spørgsmålet kan ikke besvares, funktionen h(x) kan ikke være en hazard
+rate.
+
+6 Ved ikke
+
+Opgave 27
+
+Betragt to uafhængige Poisson-fordelte variable X og Y med middelværdi
+μ_(x) og μ_(y).
+Spørgsmål 27
+P(Y > X) bestemmes til
+
+1 $\Phi\left(\frac{\mu_{x}-\mu_{y}}{\sqrt{\mu_{x}+\mu_{y}}}\right)$
+
+2 $\frac{\mu_{y}}{\mu_{x}+\mu_{y}}$
+
+3
+$\sum_{j=0}^{\infty} \frac{\mu_{x}^{i}}{i!} e^{-\mu_{x}} \cdot\left(\sum_{j=i}^{\infty} \frac{\mu_{y}^{j}}{j!} e^{-\mu_{y}}\right)$
+
+4 1 − e^( − (μ_(y)−μ_(x)))
+
+5
+$e^{-\left(\mu_{x}+\mu_{y}\right)} \sum_{j=1}^{\infty}\left(\frac{\mu_{y}^{j}}{j!} \cdot \sum_{i=0}^{j-1} \frac{\mu_{x}^{i}}{i!}\right)$
+
+6 Ved ikke
+
+Opgave 28
+
+En spiller kaster 6 gange med en almindelig sekssidet terning. Man
+registrerer det højeste antal øjne blandt de 6 kast.
+
+Spørgsmål 28
+
+Sansynligheden for, at det højeste antal øjne i de 6 kast er mindre end
+eller lig x, findes til
+
+1 $\frac{x}{36}$
+
+2 $\frac{x}{6}$
+
+3
+$\sum_{t=1}^{x}\binom{6}{t}\left(\frac{5}{6}\right)^{t}\left(\frac{1}{6}\right)^{6-t}$
+
+4 $\frac{x^{6}}{46656}$
+
+5
+$\begin{cases}\frac{1}{46656} & \text { for } x=1 \\ \frac{4}{36} & \text { for } x=2 \\ \frac{27}{216} & \text { for } x=3 \\ \frac{256}{1296} & \text { for } x=4 \\ \frac{3125}{7776} & \text { for } x=5 \\ 1 & \text { for } x=6\end{cases}$
+
+6 Ved ikke
+
+Opgave 29
+
+En aktieportefølje indeholder aktier fra to selskaber indenfor
+byggesektoren. Gevinsten på de to aktier kan beskrives ved en bivariat
+normalfordeling, hvor middelværdien på hver af aktierne er 100 , mens
+variansen for hver af dem er 20² = 400. Korrelationskoefficienten er
+$\rho=\frac{2}{3}$.
+
+Spørgsmål 29
+
+Hvis den ene aktie har en værdi på 130 , hvad er da den forventede værdi
+af den anden aktie?
+
+1 100
+
+2 $\frac{260}{3}$
+3 $100+10 \sqrt{3}$
+
+4 120
+
+5 $100+20 \sqrt{2}$
+
+6 Ved ikke
+
+Opgave 30
+
+Det antages, at skytters færdighed beskrives ved et (reelt) tal på en
+skala. Færdigheden på denne skala af en tilfældig skytte kan beskrives
+som en standard normalfordelt stokastisk variabel. Det oplyses
+yderligere, at sandsynligheden for, at en skytte med færdighed k på
+skalaen opnår mindst 200 point ved en skydekonkurrence, er
+$\frac{1}{2+k^{2}}$.
+
+Spørgsmål 30
+
+Sandsynligheden for, at en tilfældig valgt skytte opnår mindst 200 ved
+en skydekonkurrence, findes til
+
+1
+$\square \quad \Phi\left(-\frac{5 \sqrt{2}}{8}\right)$
+2
+$\int_{-\frac{1}{1+k^{2}}}^{\frac{1}{1+k^{2}}} \frac{1}{2+x^{2}} \frac{1}{\sqrt{2 \pi}} e^{-\frac{x^{2}}{2}} \mathrm{~d} x$
+
+3
+$\int_{-\infty}^{\infty} \frac{1}{2+x^{2}} \frac{1}{\sqrt{2 \pi}} e^{-\frac{x^{2}}{2}} \mathrm{~d} x$
+
+4 $\underline{2049}$ 3125
+
+5 $\frac{2}{3}$
+
+6 Ved ikke
+
+Slut på opgavesættet.

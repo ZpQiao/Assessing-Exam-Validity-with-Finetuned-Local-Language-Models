@@ -1,0 +1,705 @@
+Opgave 1
+
+Vi betragter området A afgrænset af linierne
+y = 2x − 1, y = 2x − 7, y = 3 og y = 1. Man vælger tilfældigt et punkt P
+i A og betegner det koordinat med parret af stokastiske variable (X, Y).
+
+Spørgsmål 1
+
+Sandsynligheden P(Y < 5 − X) findes til
+
+1 $\frac{2}{3}$
+2 $\frac{1}{2}$
+
+3 $\frac{1}{3}$
+4 $\frac{1}{4}$
+
+5 $\frac{1}{7}$
+
+6 Ved ikke
+
+Opgave 2
+
+Når en bil kommer til service, er der en sandsynlighed på 0,5 for, at
+bremseklodserne skal udskiftes. Givet, at bremseklodserne skal
+udskiftes, er der en sandsynlighed på 0,4 for, at bremseskiverne også
+skal udskiftes.
+
+Spørgsmål 2
+
+Sandsynligheden for, at både bremseklodser og bremseskiver skal
+udskiftes, når en bil kommer til service, findes til
+
+1 0,9
+
+2 0,5
+
+3 0,4
+
+4 0,2
+
+5 0,1
+
+6 Ved ikke
+
+Opgave 3
+
+En positiv kontinuert stokastisk variabel T er kendetegnet ved
+$\lambda(t)=\lim _{h \rightarrow 0} \frac{\mathrm{P}(T \in(t, t+h) \mid T>t)}{h}=\frac{1}{\sqrt{t}}$.
+
+Spørgsmål 3
+
+Man finder $\mathrm{P}\left(T \leq \frac{1}{4}\right)$ til
+
+1 $1-e^{-\frac{1}{2}}$
+2 $\frac{1}{2}$
+
+3 1 − e^( − 1)
+
+4 $\frac{3}{4}$
+
+5 $e^{-\frac{1}{4}}$
+
+6 Ved ikke
+
+Opgave 4
+
+I et TV program med konkurrencer er der ved hver forestilling en
+sandsynlighed på præcis 10% for, at hovedprisen vindes.
+
+Spørgsmål 4
+
+Sandsynligheden for, at prisen vindes første gang netop ved femte
+forestilling, er
+
+1 $\left(\frac{9}{10}\right)^{4} \frac{1}{10}$
+
+2 $\frac{\left(\frac{1}{10}\right)^{4}}{4!} e^{-\frac{1}{10}}$
+
+3 $\frac{10^{4}}{4!} e^{-10}$
+
+4 $4\left(\frac{9}{10}\right)^{4} \frac{1}{10}$
+
+5 $5\left(\frac{9}{10}\right)^{4} \frac{1}{10}$
+
+6 Ved ikke
+
+Opgave 5
+
+En fabrik i Kina fremstiller legetøj til brug i forbindelse med salg af
+måltider på en fast food restaurant. Til en serie af legetøj benyttes en
+speciel plastikdel, der fremstilles meget billigt, men som også har en
+stor sandsynlighed for at være defekt, idet denne sandsynlighed er 30%.
+Man ønsker at beregne sandsynligheden for, at der i en produktion på
+1000 styk fås netop mellem 675 og 725 (begge tal inklusive) fungerende
+enheder.
+
+Spørgsmål 5
+
+Den ønskede sandsynlighed bestemmes eller tilnærmes bedst ved
+$1 \square \quad \Phi\left(\frac{25.5}{\sqrt{210}}\right)-\Phi\left(\frac{-25.5}{\sqrt{210}}\right)$
+$2 \square \quad \sum_{i=675}^{725}\binom{1000}{i}(0,3)^{i}(0,7)^{1000-i}$
+$3 \square \quad \sum_{i=676}^{724} \frac{700^{i}}{i!} e^{-700}$
+$4 \square \quad\binom{1000}{700}(0,7)^{700}(0,3)^{300}$
+$5 \square \quad \sum_{i=275}^{325} \frac{\binom{300}{i}\binom{700}{1000-i}}{\binom{1000}{300}}$
+6
+▫   Ved ikke
+
+Opgave 6
+
+Antallet af kolonier af en given type af skimmelsvamp i et parti korn,
+der har været udsat for fugt, kan beskrives ved en Poissonfordelt
+stokastisk variabel med middelværdi 5. Tilsvarende kan forekomsten af
+kolonier af en anden type skimmelsvamp i et parti fugtskadet korn
+beskrives ved en Poisson fordelt stokastisk variabel med middelværdi 3.
+Det antages, at de to typer af kolonier er de eneste typer, der kan
+forekomme, og, at de forekommer uafhængigt af hinanden. Man udtager en
+stikprøve af en størrelse svarende til et kvart parti korn.
+
+Spørgsmål 6
+
+Givet partiet har været udsagt for fugt (er fugtskadet) findes
+sandsynligheden for, at der er højst en skimmelsvampskoloni i
+stikprøven, til
+
+1 $\frac{1}{4}$
+
+2 $\Phi\left(\frac{1-4}{\sqrt{5}+\sqrt{3}}\right)$
+
+3
+$\sum_{i=0}^{1}\binom{8}{i} \frac{1}{4^{i}}\left(\frac{3}{4}\right)^{8-i}$
+4 9e^( − 8)
+
+5 3e^( − 2)
+
+6 Ved ikke
+
+Opgave 7
+
+En gruppe af filer har en størrelse, der kan beskrives ved en
+exponential( λ ) fordeling. Man har til et givet formål brug for 3
+tilfældigt udvalgte af disse filer.
+
+Spørgsmål 7
+
+Tæthedsfunktion f(x) for størrelsen af den næststørste af filerne findes
+til
+
+1 f(x) = λe^( − λx)
+
+2 f(x) = λ²xe^( − λx)
+
+3 f(x) = 6λe^( − 2λx) − 6λe^( − 3λx)
+
+4 f(x) = (1−e^( − λx))λe^( − λx) ⋅ e^( − λx)
+
+5 f(x) = 2λe^( − λx) − 2λe^( − 2λx)
+
+6 Ved ikke
+
+Opgave 8
+
+Idet X_(i), i = 1, 2, 3 betegner antal ⌀ jne ved tre kast med en
+almindelig sekssidet terning, lader vi Y₁ = min (X_(i)) og
+Y₂ = max (X_(i)). Den simultane sandsynlighedsfunktion af parret (
+Y₁, Y₂ ) kan angives ved nedenstående tabel
+
+  P(Y₁=y₁,Y₂=y₂)   y₂ = 1            y₂ = 2            y₂ = 3            y₂ = 4            y₂ = 5            y₂ = 6
+  ---------------- ----------------- ----------------- ----------------- ----------------- ----------------- -----------------
+  y₁ = 1           $\frac{1}{216}$   $\frac{1}{36}$    $\frac{1}{18}$    $\frac{1}{12}$    $\frac{1}{9}$     $\frac{5}{36}$
+  y₁ = 2           0                 $\frac{1}{216}$   $\frac{1}{36}$    $\frac{1}{18}$    $\frac{1}{12}$    $\frac{1}{9}$
+  y₁ = 3           0                 0                 $\frac{1}{216}$   $\frac{1}{36}$    $\frac{1}{18}$    $\frac{1}{12}$
+  y₁ = 4           0                 0                 0                 $\frac{1}{216}$   $\frac{1}{36}$    $\frac{1}{18}$
+  y₁ = 5           0                 0                 0                 0                 $\frac{1}{216}$   $\frac{1}{36}$
+  y₁ = 6           0                 0                 0                 0                 0                 $\frac{1}{216}$
+
+Spørgsmål 8
+
+Man finder P(Y₂=y∣Y₁=4) til
+
+1
+$\mathrm{P}\left(Y_{2}=4 \mid Y_{1}=4\right)=\frac{1}{3}, \quad \mathrm{P}\left(Y_{2}=5 \mid Y_{1}=4\right)=\frac{1}{3}, \quad \mathrm{P}\left(Y_{2}=6 \mid Y_{1}=4\right)=\frac{1}{3}$
+
+2
+$\mathrm{P}\left(Y_{2}=4 \mid Y_{1}=4\right)=\frac{1}{5}, \quad \mathrm{P}\left(Y_{2}=5 \mid Y_{1}=4\right)=\frac{2}{5}, \quad \mathrm{P}\left(Y_{2}=6 \mid Y_{1}=4\right)=\frac{2}{5}$
+
+3
+$\mathrm{P}\left(Y_{2}=4 \mid Y_{1}=4\right)=\frac{1}{19}, \quad \mathrm{P}\left(Y_{2}=5 \mid Y_{1}=4\right)=\frac{6}{19}, \quad \mathrm{P}\left(Y_{2}=6 \mid Y_{1}=4\right)=\frac{12}{19}$
+
+4
+$\mathrm{P}\left(Y_{2}=4 \mid Y_{1}=4\right)=\frac{9}{155}, \quad \mathrm{P}\left(Y_{2}=5 \mid Y_{1}=4\right)=\frac{18}{155}, \quad \mathrm{P}\left(Y_{2}=6 \mid Y_{1}=4\right)=\frac{128}{155}$
+
+5
+
+$$\begin{aligned}
+\mathrm{P}\left(Y_{2}=1 \mid Y_{1}=4\right)=\frac{18}{37}, & \mathrm{P}\left(Y_{2}=2 \mid Y_{1}=4\right)=\frac{12}{37}, \quad \mathrm{P}\left(Y_{2}=3 \mid Y_{1}=4\right)=\frac{6}{37}, \\
+\mathrm{P}\left(Y_{2}=4 \mid Y_{1}=4\right)=\frac{1}{37} &
+\end{aligned}$$
+
+6 Ved ikke
+
+Opgave 9
+
+En vindmøllefarmbestyrer ønsker at beregne sandsynligheden for, at hans
+vindmøller stopper givet, at vindhastigheden er over en maximal værdi.
+Fra tidligere observationer ved han, at sandsynligheden for, at vinden
+var over den maximale værdi, givet, at vindmøllerne stoppede, er
+$\frac{9}{10}$, og, at sandsynligheden for, at vinden overskred grænsen,
+givet, at de ikke stoppede, er $\frac{1}{5}$. Ydermere har han beregnet,
+at sandsynligheden for, at vindmøllerne stopper, er $\frac{1}{10}$.
+
+Spørgsmål 9
+
+Hvad er sandsynligheden for, at vindmøllerne stopper, givet, at vinden
+overskrider maximum værdien?
+$1 \square \quad \frac{18}{100}$
+$2 \square \quad \frac{1}{10}$
+$3 \square \quad \frac{1}{3}$
+$4 \square \quad \frac{1}{2}$
+$5 \square \quad \frac{9}{10}$
+6▫   Ved ikke
+
+Opgave 10
+
+En kommune har taget et vejkryds under observation, da den forventede
+værdi af antal uheld per år er 6. Uheld forekommer uafhængigt af
+hinanden. Ved den efterfølgende beregning regner man med, at alle årets
+12 måneder har samme længde. Tilsvarende regner man med, at forholdene i
+krydset er homogene gennem året.
+
+Spørgsmål 10
+
+Sandsynligheden for, at det første uheld efter et årsskifte tidligst
+sker i marts, findes til
+
+1 0,33
+
+2 0,37
+
+3 0,5
+
+4 0,66
+
+5 0,74
+
+6 Ved ikke
+
+Opgave 11
+
+I Texas Hold’em Poker får en spiller to kort i starten fra en almindelig
+kortbunke med 52 kort (ingen jokere).
+
+Spørgsmål 11
+
+Hvad er sandsynligheden for at få netop et es og en konge?
+
+1 $\frac{4}{663}$
+
+2 $\frac{1}{169}$
+
+3 $\frac{7}{338}$
+4 $\frac{8}{663}$
+
+5 $\frac{3}{663}$
+6 Ved ikke
+
+Opgave 12
+
+To piger, Elise og Sara, vil svømme sammen. De har aftalt at mødes inde
+i svømmehallen. Det tager Elise ti minutter at klæde om og Sara fem
+minutter. Elise ankommer tilfældigt mellem 11.50 og 12.10, Sara er lidt
+mere upræcis og ankommer tilfældigt mellem 11.40 og 12.20. Det oplyses
+desuden, at de ankommer uafhængigt af hinanden.
+
+Spørgsmål 12
+
+Hvad er sandsynligheden for, at de mødes i omklædningsrummet, givet, at
+Elise kommer først?
+
+1 $\frac{5}{8}$
+
+2 $\frac{1}{2}$
+
+3 $\frac{3}{8}$
+
+4 $\frac{1}{4}$
+
+5 $\frac{1}{8}$
+
+6 Ved ikke
+
+Opgave 13
+
+Lad X og Y være to uafhængige stokastiske variable, der begge er
+gamma(2,1) fordelte. Man danner da en ny stokastisk variabel Z som
+Z = Y/X.
+
+Spørgsmål 13
+
+Tætheden f_(Z)(z) for Z findes til
+
+1 f_(Z)(z) = ∫_(x = 0)^(∞)xe^( − x)(xz)e^( − xz) dx
+
+2 $f_{Z}(z)=\frac{1}{(1+z)^{2}}$
+
+3 $f_{Z}(z)=\frac{6 z}{(1+z)^{4}}$
+
+4
+$f_{Z}(z)=\int_{x=0}^{\infty} x e^{-x} \frac{z}{x} e^{-\frac{z}{x}} \mathrm{~d} x$
+
+5 $f_{Z}(z)=\frac{1}{2^{3}} z^{2} e^{-\frac{z}{2}}$
+
+6 Ved ikke
+
+Opgave 14
+
+Andelen af kunder, der køber noget i en givet butik i løbet af en
+julemåned kan beskrives ved en stokastisk variabel X med tæthedsfunktion
+$\left.\left.f_{X}(x)=\frac{1}{2 \sqrt{x}}, x \in\right] 0 ; 1\right]$.
+
+Spørgsmål 14
+
+Forventningsværdien af andelen af kunder, der køber noget, beregnes til
+
+1 $\frac{1}{5}$
+
+2 $\frac{1}{4}$
+
+3 $\frac{1}{3}$
+
+4 $\frac{1}{2}$
+
+5 $\frac{2}{3}$
+
+6 Ved ikke
+
+Opgave 15
+
+Koordinaterne til et punkt vælges tilfældigt i området
+$\frac{1}{2} \leq(x-1)^{2}+(y-1)^{2} \leq 1$. Idet koordinaterne til
+punktet betegnes med parret ( X, Y ) oplyses det om
+forventningsværdierne, at E(X) = E(Y) = E(XY) = 1.
+
+Spørgsmål 15
+
+Der gælder
+
+1 Parret (X, Y) har kovariansen $\frac{1}{2}$.
+2 Parret ( X, Y ) har kovariansen 1.
+3 Parret ( X, Y ) har kovariansen -1.
+4 Parret ( X, Y ) er uafhængige.
+5 Parret ( X, Y ) er ukorrellerede men ikke uafhængige.
+6 Ved ikke
+
+Opgave 16
+
+Der slåes 8 gange med en sædvanlig sekssidet terning. Man definerer nu,
+at hændelsen A_(i) er indtruffet, hvis det i ’te kast resulterede i, at
+der vistes højst 2 øjne. Den stokastiske variabel X defineres som
+$X=\sum_{i=1}^{8} I_{A_{i}}$, hvor I_(A_(i)) er indikatorvariablen for
+hændelsen A_(i).
+
+Spørgsmål 16
+
+Man finder P(X ≤ 2) til
+
+1 $\frac{1}{4}$
+
+2
+$\sum_{i=0}^{2}\binom{8}{i}\left(\frac{1}{3}\right)^{i}\left(\frac{2}{3}\right)^{8-i}$
+
+3
+$\sum_{i=0}^{2}\binom{8}{i}\left(\frac{1}{2}\right)^{i}\left(\frac{1}{2}\right)^{8-i}$
+
+4 $\Phi\left(-\frac{1}{8}\right)$
+
+5 $\frac{\binom{6}{2}\binom{2}{0}}{\binom{8}{2}}$
+6 Ved ikke
+
+Opgave 17
+
+Man har fire (4) uafhængige beta(3,1) fordelte stokastiske variable.
+
+Spørgsmål 17
+
+Fordelingen for den største af de fire variable er
+
+1 en beta(12,1) fordeling
+
+2 en beta(11,4) fordeling
+
+3 en beta(11,1) fordeling
+
+4 en fordeling med tæthedsfunktion 9x⁸
+
+5 en fordeling med fordelingsfunktion x⁸
+
+6 Ved ikke
+
+Opgave 18
+
+Den gennemsnitlige varighed af økonomiske kriser anslåes til at være ca.
+$\frac{3}{2}$ år.
+
+Spørgsmål 18
+
+Sandsynligheden for, at varigheden af en økonomisk krise overstiger 4
+år, kan maksimalt være
+
+1 $\frac{3}{8}$
+
+2 $1-\Phi\left(\frac{4-\frac{3}{2}}{\sqrt{\frac{3}{2}}}\right)$
+
+3 $\frac{1}{6}$
+
+4 $1-\Phi\left(\frac{4-\frac{3}{2}}{\frac{3}{2}}\right)$
+
+5 $\frac{9}{25}$
+
+6 Ved ikke
+
+Opgave 19
+
+Lad X_(i), i = 1, 2 betegne antallet af øjne ved kast med en almindelig
+terning, og definer derefter U = min (X₁,X₂) og V = max (X₁,X₂).
+
+Spørgsmål 19
+
+Man finder P(U + V = 4) til
+
+1 $\frac{1}{12}$
+
+2 $\frac{19}{432}$
+
+3 $\frac{1}{11}$
+
+4 $\frac{1}{9}$
+
+5 $\frac{1}{8}$
+
+6 Ved ikke
+
+Opgave 20
+
+Antag, at parret (X, Y ) er standard bivariat normalfordelt med
+korrelationskoefficient $\frac{1}{2}$.
+
+Spørgsmål 20
+
+Den betingede tæthed f_(X ∣ Y = y)(x) findes til
+
+1
+
+$$f_{X \mid Y=y}(x)=\frac{1}{2 \pi \sqrt{(1 / 2)}} \exp \left(-x^{2}+3 x y-\frac{3}{2} y^{2}\right)$$
+
+2
+$f_{X \mid Y=y}(x)=\frac{1}{\sqrt{2 \pi}} \exp \left(-x^{2}-y^{2}\right)$
+
+3
+$f_{X \mid Y=y}(x)=\frac{1}{\sqrt{(1 / 2) \pi}} \exp \left(-x^{2}+\frac{1}{2} x y-y^{2}\right)$
+
+4
+$f_{X \mid Y=y}(x)=\frac{1}{2 \sqrt{\pi}} \exp \left(-\frac{1}{2}\left(x^{2}+y^{2}\right)\right)$
+
+5
+$f_{X \mid Y=y}(x)=\frac{1}{\sqrt{(3 / 2) \pi}} \exp \left(-\frac{2}{3}\left(x-\frac{1}{2} y\right)^{2}\right)$
+
+6 Ved ikke
+
+Opgave 21
+
+Om to uafhængige hændelser A og B gælder P(A) = 0, 2 og P(B) = 0, 15.
+
+Spørgsmål 21
+
+Man finder
+
+1 P(A ∪ B) = 0, 35
+2 P(A ∪ B) = 0, 03
+3 P(A ∪ B) = 0, 38
+
+4 P(A ∪ B) = 0, 05
+
+5 P(A ∪ B) = 0, 32
+
+6 Ved ikke
+
+Opgave 22
+
+En gruppe soldater skyder med en kanon mod et mål i et øvelsesområde.
+Det antages, at standardafvigelsen i begge retninger, dvs. øst/vest og
+nord/syd, for afstanden til målet er 50 m , hvor afstanden i hver
+retning kan antages at være beskrevet ved uafhængige normalfordelte
+variable.
+
+Spørgsmål 22
+
+Sandsynligheden for, at soldaterne fejler målet med mere end 100 m ,
+findes til
+
+1 $\frac{1}{4}$
+
+2 $\frac{1}{2 \pi}$
+
+3 1 − Φ(2)
+
+4 e^( − 1)
+
+5 e^( − 2)
+
+6 Ved ikke
+
+Opgave 23
+
+En bestemt flod løber over sine bredder hvert år. Antag, at mærket for
+laveste vandstand sættes til 1 , og, at den højeste vandstand Y har
+fordelingsfunktionen
+
+$$F_{Y}(y)=\mathrm{P}(Y \leq y)=1-\frac{1}{y^{2}}, \quad 1 \leq y<\infty .$$
+
+Spørgsmål 23
+
+Hvis mærket for den laveste vandstand redefineres til 0 , og vi benytter
+en måleenhed, der er $\frac{1}{10}$ af den forrige, så bliver den
+højeste vandstand Z = 10(Y − 1). Fordelingsfunktionen F_(Z)(z) for Z
+findes til
+
+1 $\frac{1}{(z / 10+1)^{2}}$ if z > 0
+
+2 $1-\left(\frac{1}{(10 z+1)^{2}}\right)$ if z > 0
+
+3 1 − (z/10 + 1)² if z > 0
+
+4 $1-\left(\frac{1}{(z / 10+1)^{2}}\right)$ if z > 0
+
+5 $\left(\frac{1}{z / 10+1}\right)$ if z > 0
+
+6 ved ikke
+
+Opgave 24
+
+Antag, at X er en kontinuert beta(2,1) stokastisk variabel. For givet X
+følger den stokastiske variabel Y en binomialfordeling med
+antalsparameter n og succes-sandsynlighed X.
+
+Spørgsmål 24
+
+Forventningsværdien E(Y) findes til
+
+1 2n/3
+
+2 n/2
+
+3 n/3
+
+4 n/4
+
+5 n/6
+
+6 ved ikke
+
+Opgave 25
+
+En stokastisk variabel X har tætheden
+$f(x)=\frac{1}{\sqrt{2 \pi}} \frac{1}{x} e^{-\frac{1}{2}(\log (x))^{2}}, x>0$.
+
+Spørgsmål 25
+
+Bestem, eventuelt approksimativt, sandsynligheden for, at X tilhører
+intervallet [1, 1, 0001].
+
+1 Φ(1, 0001) − Φ(1)
+
+2 $\frac{1}{\sqrt{2 \pi}}$
+
+3 $\frac{0,0001}{\sqrt{2 \pi}}$
+
+4
+$\frac{1}{\sqrt{2 \pi}} \frac{1}{1,0001} e^{-\frac{1}{2}(\log (1.0001))^{2}}$
+
+5 $\frac{1}{\sqrt{2 \pi}} \frac{1}{1,0001}$
+
+6 Ved ikke
+
+Opgave 26
+
+Der er givet en kontinuert stokastisk variabel X ∼ exp (λ) samt en
+diskret stokastisk variabel Y, hvorom det gælder
+$\mathrm{P}(Y=y \mid X=x)=\frac{x^{y}}{y!} e^{-x}$.
+
+Spørgsmål 26
+
+Fordelingen af Y er en
+
+1 negativ binomial $\left(2, \frac{\lambda}{1+\lambda}\right)$
+
+2 geometrisk $\left(\frac{\lambda}{1+\lambda}\right)$, startende fra 0
+
+3 Poisson $\left(\frac{\lambda}{1+\lambda}\right)$
+
+4 Poisson (λ)
+
+5 Poisson $\left(\frac{1}{\lambda}\right)$
+
+6 Ved ikke
+
+Opgave 27
+
+Antallet af vælgere, der vælger at sætte deres kryds ved to partier, der
+opfattes som liggende tæt på hinanden i det politiske spektrum, kan med
+rimelighed beskrives ved en bivariat normalfordeling med middelværdi
+henholdsvis 150000 og 250000 med tilhørende standardafvigelser på 25000
+og 35000 . Korrelationskoefficienten i den bivariate normalfordeling
+vurderes til at være  − 0, 5.
+
+Spørgsmål 27
+
+Sandsynligheden for, at det samlede antal vælgere, der sætter kryds ved
+et af de to partier overstiger 450 000, findes til
+
+1 0,202
+
+2 0,169
+
+3 0,123
+
+4 0,055
+
+5 0,049
+
+6 Ved ikke
+
+Opgave 28
+
+Parret ( X, Y ) af kontinuerte stokastiske variable har den simultane
+tæthed f(x, y) = 8(x²−xy), 0 ≤ y ≤ x ≤ 1.
+
+Spørgsmål 28
+
+Man finder
+$\mathrm{P}\left(X \leq \frac{1}{2}, Y \leq \frac{1}{2}\right)$ til
+
+1 $\frac{1}{8}$
+
+2 $\frac{1}{4}$
+
+3 $\frac{1}{48}$
+
+4 $\frac{1}{16}$
+
+5 $\frac{1}{24}$
+
+6 Ved ikke
+
+Opgave 29
+
+En blodtryksmåling bestående af en samtidig måling af det systoliske og
+det diastoliske blodtryk kan på en passende skala beskrives ved en
+standardiseret bivariat normalfordeling med en korrelationskoefficient
+på $\frac{5}{13}$. Man ønsker at beregne sandsynligheden for, at det
+diastoliske blodtryk er højere end gennemsnittet, og at det systoliske
+blodtryk er højere end det diastoliske blodtryk, begge målt på den
+relevante skala nævnt ovenfor.
+
+Spørgsmål 29
+
+Den ⌀ nskede sandsynlighed findes til
+
+1 $\frac{\operatorname{Atan}\left(\frac{2}{3}\right)}{2 \pi}$
+
+2 $\frac{\operatorname{Atan}\left(\frac{3}{4}\right)}{2 \pi}$
+
+3 $\frac{1}{8}$
+
+4
+$\frac{1}{4}-\frac{\operatorname{Atan}\left(\frac{2}{3}\right)}{2 \pi}$
+
+5
+$\frac{\frac{\pi}{2}-\operatorname{Atan}\left(\frac{3}{4}\right)}{2 \pi}$
+
+6 ved ikke
+
+Opgave 30
+
+Levetiden af en bestemt type af bildæk kan beskrives ved en
+normalfordeling med middelværdi 34000 kilometer og standardafvigelse
+4000 kilometer.
+
+Spørgsmål 30
+
+Sandsynligheden for, at levetiden er mellem 30000 og 35000 kilometer,
+findes til
+
+1 0,124
+
+2 0,440
+
+3 0,195
+
+4 0,241
+
+5 0,669
+
+6 Ved ikke
+
+Slut på opgavesættet.

@@ -1,0 +1,664 @@
+Exercise 1
+
+A specific geographical area has a population of 1 million, 5% belong to
+a certain ethnic group. A group of 100 people is selected at random for
+a survey.
+
+Question 1
+
+The probability that there are at least 7 persons from the ethnic group
+in the sample is
+
+1 $1-\Phi\left(\frac{2}{\sqrt{19}}\right)$
+
+2 $1-\Phi\left(\frac{3}{\sqrt{18}}\right)$
+
+3 $\frac{1}{12}$
+
+4 $1-\sum_{i=0}^{6}\binom{100}{i}(0.05)^{i}(1-0.05)^{100-i}$
+
+5 $1-\sum_{i=0}^{6} \frac{e^{-5} 5^{i}}{i!}$
+
+6 Do not know
+
+Exercise 2
+
+Consider a polar coordinate system with a bombing target at the origin.
+A bomber throws a bomb hitting a distance R from the origin with the
+density $f_{R}(r)=r e^{-\frac{1}{2} r^{2}}$. The probability that the
+target will be destroyed is e^( − r²) if the bomb hits at a distance r
+from the origin.
+
+Question 2
+
+What is the probability that the bombing target will be destroyed?
+
+1 $\frac{1}{4}$
+
+2 $\frac{1}{3}$
+
+3 $\frac{1}{2}$
+
+4 $\frac{2}{3}$
+
+5 $\frac{3}{4}$
+
+6 Do not know
+
+Exercise 3
+
+A swimming club has 18 swimmers. Two of those are backstroke
+specialists, 7 are crawl specialists, 5 are butterfly specialist, and 4
+are medley specialists. Four swimmers are selected randomly for a relay
+event.
+
+Question 3
+
+The probability that there are exactly two butterfly specialist among
+the four is
+
+1
+$\binom{4}{2}\left(\frac{5}{18}\right)^{2}\left(\frac{13}{18}\right)^{2}$
+2 $\frac{5}{18} \frac{4}{17}$
+3 $2 \cdot \frac{5}{18} \frac{4}{17}$
+
+4 $\frac{\binom{5}{2}\binom{13}{2}}{\binom{18}{4}}$
+5 $\frac{5}{18} \frac{4}{18}$
+6 Do not know
+
+Exercise 4
+
+A material emits particles, such that the time between particle
+emissions can be described by independent exponentially distributed
+random variables with a mean of 2 minutes.
+
+Question 4
+
+The probability that the third particle is emitted exactly between the
+third and fourth minute after the start of registration is
+
+1 $\left(e^{-\frac{3}{2}}-e^{-2}\right)^{3}$
+
+2 $\frac{29}{8} e^{-\frac{3}{2}}-5 e^{-2}$
+
+3 $\frac{4}{3} e^{-2}-\frac{9}{16} e^{-\frac{3}{2}}$
+4 Φ(2)³ − Φ(1)³
+
+5 (Φ(2) − Φ(1))³
+
+6 Do not know
+
+Exercise 5
+
+Let X₁ and X₂ be two independent exponential random variables. Then
+X = min (X₁,X₂) and Y = max (X₁,X₂) with joint density
+f(x, y) = 2λ²e^( − λ(x + y)).
+
+Question 5
+
+The density f_(Z)(z) of $Z=\frac{X}{Y}$ is
+
+1 $\frac{2}{(z+1)^{2}}, \quad 0 \leq z \leq 1$
+2 λe^( − λz),  0 ≤ z
+
+3
+$\frac{1}{\sqrt{2 \pi}} \frac{1}{\lambda} \exp \left(-\frac{1}{2}\left(\frac{z-\frac{1}{\lambda}}{\sqrt{\frac{1}{\lambda}}}\right)^{2}\right), \quad 0 \leq z \leq 1$
+
+4 1,  0 ≤ z ≤ 1
+
+5 $\frac{1}{(z+1)^{2}}, \quad 0 \leq z$
+
+6 Do not know
+
+Exercise 6
+
+For the events A and B is it known that P(A ∩ B) = P(A)P(B).
+
+Question 6
+
+Which of the following statements is correct
+
+1 P(A ∪ B) = P(A) + P(B).
+
+2 P(A ∣ B) = P(A ∩ B)
+
+3 P(A ∣ B) = P(A)
+
+4 P(A ∣ B) = P(B ∣ A)
+
+5 None of the above are correct.
+
+6 Do not know
+
+Exercise 7
+
+The discrete uniformly distributed random variable X takes one of the
+values { − 2,  − 1, 1, 2}. A new random variable is formed by Y = X².
+
+Question 7
+
+The covariance Cov (X, Y) between X and Y is
+
+1 -1
+
+2 0
+
+3 $\frac{1}{2}$
+4 1
+
+5 The covariance can not be determined based on the information given
+
+6 Do not know
+
+Exercise 8
+
+It is known, that 20% of the airline passengers on a specific route
+brings carry on luggage with a weight substantially higher than allowed.
+It is assumed that each passenger has excessive carry on luggage
+independently of and with the same probability as all other passengers.
+
+Question 8
+
+On a departure with 400 passengers, give a good judgement of the
+probability that at most 60 passengers have excessive carry on luggage.
+
+1
+$\binom{400}{60}\left(\frac{1}{5}\right)^{60}\left(\frac{4}{5}\right)^{340}$
+
+2 $\sum_{i=61}^{400} \frac{80^{i}}{i!} e^{-80}$
+
+3
+$\sum_{i=0}^{60} \frac{\binom{80}{i}\binom{320}{100-i}}{\binom{400}{100}}$
+
+4 Φ(2.2) − Φ( − 1.96)
+
+5 Φ( − 2.4)
+
+6 Do not know
+
+Exercise 9
+
+The pair ( X, Y ) is standard bivariate normally distributed with
+correlation $\rho=\frac{3}{5}$.
+
+Question 9
+
+The probability $\mathrm{P}\left(\frac{1}{2} X<Y<2 X\right)$ is
+
+1 $\frac{2 \pi-\operatorname{Arctan}\left(\frac{7}{4}\right)}{2 \pi}$
+2 $\frac{1}{6}$
+3 $\frac{\operatorname{Arctan}\left(\frac{15}{8}\right)}{2 \pi}$
+
+4
+$\frac{\operatorname{Arctan}\left(\frac{7}{4}\right)+\operatorname{Arctan}\left(\frac{1}{8}\right)}{2 \pi}$
+
+5
+$\frac{\operatorname{Arctan}\left(\frac{7}{8}\right)+\operatorname{Arctan}\left(\frac{1}{8}\right)}{\pi}$
+
+6 Do not know
+
+Exercise 10
+
+You have X_(i) ∼ exp (λ), i = 1, 2, 3 independent. One defines
+Y = X₁ + X₂ + X₃.
+
+Question 10
+
+The joint density f(x, y) of X₁ and Y is
+
+1 f(x, y) = λe^( − λx)λ(λy)e^( − λy) = λ³ye^( − λ(x + y))
+
+2
+$f(x, y)=\lambda e^{-\lambda x} \lambda \frac{(\lambda y)^{2}}{2} e^{-\lambda y}=\lambda^{4} \frac{y^{2}}{2} e^{-\lambda(x+y)}$
+
+3 f(x, y) = λe^( − λx)λ(λ(y − x))e^( − λ(y − x)) = λ³(y − x)e^( − λy)
+
+4
+$f(x, y)=\lambda e^{-\lambda x} \lambda \frac{(\lambda(y-x))^{2}}{2} e^{-\lambda y}=\lambda^{4} \frac{(y-x)^{2}}{2} e^{-\lambda y}$
+
+5
+$f(x, y)=\lambda \frac{(\lambda y)^{2}}{2} e^{-\lambda y} \cdot \frac{1}{3}=\lambda^{3} \frac{y^{2}}{6} e^{-\lambda y}$
+
+6 Do not know
+
+Exercise 11
+
+It is assumed that cardiac arrest patients arrive at an emergency
+department independently of each other with an average frequency of 24
+per day. As a first approximation one assumes that this frequency is
+constant during the day.
+
+Question 11
+
+The probability that at most 2 cardiac arrest patients arrive during a 4
+hour period is
+$1 \square \frac{\binom{12}{2}^{2}}{\binom{24}{4}}$
+2 $\left(\frac{5}{6}\right)^{2}+2 \cdot \frac{5}{6} \frac{1}{6}$
+
+3 $\sum_{i=0}^{2}\binom{4}{i} \frac{1}{16}$
+
+4 Φ( − 1)
+
+5 $\left(1+4+\frac{4^{2}}{2!}\right) e^{-4}$
+
+6 Do not know
+
+Exercise 12
+
+Let X and Y be two independent random variables, with
+E(X) = μ_(X), E(Y) = μ_(Y), Var (X) = σ_(X)² and Var (Y) = σ_(Y)².
+
+Question 12
+
+You find
+
+1 Var (XY) = σ_(X)²σ_(Y)² + μ_(X)²σ_(Y)² + μ_(Y)²σ_(X)² − μ_(X)²μ_(Y)²
+
+2 Var (XY) = σ_(X)²σ_(Y)²
+
+3 Var (XY) = σ_(X)²σ_(Y)² − μ_(X)²μ_(Y)²
+
+4 Var (XY) = σ_(X)²σ_(Y)² + μ_(X)²σ_(Y)² + μ_(Y)²σ_(X)²
+
+5 Var (XY) = σ_(X)²σ_(Y)² + μ_(X)²μ_(Y)²
+
+6 Do not know
+
+Exercise 13
+
+Given the density f(x, y) = 6(x − y) for the joint distribution of
+maximum (X) and minimum (Y) of 3 independent uniform (0, 1) distributed
+random variables.
+
+Question 13
+
+The probability for observing a maximum between 0.9 and 0.91 along with
+a minimum between 0.1 and 0.11 is found (possibly approximately) to
+
+1 6 ⋅ 0.8 ⋅ 0.01²
+
+2 ∫₀^(0.1)∫₀^(0.9)6(x − y)dx dy
+
+3 0.48
+
+4 6(0.91 − 0.10) − 6(0.9 − 0.11)
+
+5 6(0.9-0.1)
+
+6 Do not know
+
+Exercise 14
+
+A random variable X is uniformly distributed on the interval from
+$-\frac{1}{2}$ to $\frac{1}{2}$. A new random variable is formed as
+Y = X² with density f_(Y)(y).
+
+Question 14
+
+The density f_(Y)(y) is
+
+1 $f_{Y}(y)=\frac{1}{2 \sqrt{|y|}}$ for
+$y \in\left[0 ; \frac{1}{4}\right]$ og 0 ellers.
+
+2 $f_{Y}(y)=\frac{1}{\sqrt{|y|}}$ for
+$y \in\left[0 ; \frac{1}{4}\right]$ og 0 ellers.
+
+3 $f_{Y}(y)=\frac{1}{2 \sqrt{|y|}}$ for
+$y \in\left[-\frac{1}{4} ; \frac{1}{4}\right]$ og 0 ellers.
+
+4 $f_{Y}(y)=\frac{1}{\sqrt{|y|}}$ for
+$y \in\left[-\frac{1}{4} ; \frac{1}{4}\right]$ og 0 ellers.
+
+5 f_(Y)(y) = 4 for $y \in\left[0 ; \frac{1}{4}\right]$
+
+6 Do not know
+
+Exercise 15
+
+The pair of random variables ( X, Y ) follows a bivariate normal
+distribution with X∼ normal (1, 4), Y ∼ normal (2, 9) and correlation
+coefficient $\rho=-\frac{1}{4}$.
+
+Question 15
+
+The probability P(X − Y ≤ 0) is
+
+1 $\Phi\left(\frac{1}{\sqrt{13}}\right)$
+2 $\Phi\left(\frac{1}{3}\right)$
+
+3 $\Phi\left(\frac{1}{\sqrt{12}}\right)$
+
+4 $\Phi\left(\frac{1}{4}\right)$
+
+5 $\Phi\left(\frac{1}{\sqrt{2}}\right)$
+6 Do not know
+
+Exercise 16
+
+For the events A, B and
+C, P(A), P(B), P(C), P(A ∩ B), P(A ∩ C), P(A ∩ B ∩ C) and P(A ∪ B ∪ C)
+are known. One wants to calculate P(B ∩ C).
+
+Question 16
+
+The probability P(B ∩ C) is determined by
+
+1 P(B ∩ C) = P(A) + P(B) + P(C) − P(A ∩ B) − P(A ∪ B ∪ C)
+
+2 P(B ∩ C) = P(A) + P(B) + P(C) − P(A ∩ B) + P(A ∩ B ∩ C) − P(A ∪ B ∪ C)
+
+3
+P(B ∩ C) = P(A) + P(B) + P(C) − P(A ∩ B) − P(A ∩ C) + P(A ∩ B ∩ C) − P(A ∪ B ∪ C)
+
+4 P(B ∩ C) = P(A ∪ B ∪ C) − P(A) − P(B) − P(C) + P(A ∩ B) − P(A ∩ B ∩ C)
+
+5 P(B ∩ C) = P(B) + P(C) − P(A ∪ B ∪ C)
+
+6 Do not know
+
+Exercise 17
+
+The number of defects N in some material can be described by a Poisson
+distribution with mean γ. In another model F_(i) is the event that there
+are i defects in the material. One wants to express the probability for
+the event H = (F₀∪F₁∪F₂) using N.
+
+Question 17
+
+P(H) can be expressed alternatively as
+
+1 P(H) = P(N ≤ 2)
+
+2 P(H) = P(N₀) + P(N₁) + P(N₂)
+
+3 P(H) = P(F_(i)≤2)
+
+4 P(H) = P(N = 0, N = 1, N = 2)
+
+5 It is not possible to express P(H) using N with the information given.
+
+6 Do not know
+
+Exercise 18
+
+A certain fish species spawn a number of eggs that can be described by a
+Poisson distribution with mean μ. Each egg gives rise to a female fish
+larvae with probability p and gives rise to a male fish larvae with
+probability 1 − p.
+
+Question 18
+
+The expected number of eggs from fish of this species, that gives rise
+to a female fish larvae is
+
+1 $\frac{\mu}{p}$
+2 μp
+
+3 μ(1 − p)
+
+4 μ(p+p²)
+
+5 μp(1 − p)
+
+6 Do not know
+
+Exercise 19
+
+In a physical experiment, electrons are emitted at high velocity towards
+a screen. Here the screen can be considered to be of infinite size. The
+electrons are emitted towards a specific point on the screen. Due to
+randomness the electrons do not hit this point precisely. The hitting
+point of an electron on the screen can be described by the coordinates (
+X, Y ), where X and Y are independent standard normal random variables.
+It is of special interest to know whether the electrons hit between one
+and two length units from the target (the origin of the coordinate
+system).
+
+Question 19
+
+The probability that an electron hits between 1 and 2 length units from
+the target is
+
+1 Φ(2) − Φ(1)
+2 2(Φ(2) − Φ(1))
+3 $\exp \left(-\frac{1}{2}\right)-\exp (-2)$
+4 $1-\sum_{r=0}^{1} \frac{x^{r}}{r!} e^{-x}$
+5 e^( − 2)
+6 Do not know
+
+Exercise 20
+
+A communication system for railways has a critical time limit for a
+handshaking process - the so-called round trip time. Mean and standard
+deviation for this time is known to be 12 ms and 6 ms respectively. One
+wants to determine a threshold value for the round trip time, which is
+exceeded with a probability of at most $\frac{1}{9}$.
+
+Question 20
+
+The limit in question is determined to be
+
+1 30 ms
+2 66 ms
+3 120 ms
+4 $\left(12+6 \Phi^{-1}\left(\frac{17}{18}\right)\right) \mathrm{ms}$
+5 $\left(12+6 \Phi^{-1}\left(\frac{8}{9}\right)\right) \mathrm{ms}$
+6 Do not know
+where Φ^( − 1) is the inverse function of the standard normal
+distribution function.
+
+Exercise 21
+
+The life time of an electronic component can with reasonable accuracy be
+described by an exponential( λ ) random variable. The component has
+reached the age t.
+
+Question 21
+
+With the given information, determine the probability that the component
+will fail in the interval [t, t + dt]. The answer can possibly be given
+only approximatively.
+
+1 λdt
+
+2 λe^( − λt) dt
+
+3 e^( − λt) − e^( − λ(t + dt))
+
+4 $\frac{\lambda e^{-\lambda t}}{1-e^{-\lambda t}} \mathrm{~d} t$
+
+5 λe^( − λt)
+
+6 Do not know
+
+Exercise 22
+
+Let X be a positive random variable, such that P(X ≤ x) = 1 − e^( − λx)
+and define $Y=\frac{1}{X}$.
+
+Question 22
+
+The probability P(Y ≤ y) is
+
+1 $\mathrm{P}(Y \leq y)=1-e^{-\frac{\lambda}{y}}$
+
+2 $\mathrm{P}(Y \leq y)=1-e^{-\frac{y}{\lambda}}$
+
+3 $\mathrm{P}(Y \leq y)=e^{-\frac{y}{\lambda}}$
+
+4 $\mathrm{P}(Y \leq y)=e^{-\frac{1}{\lambda y}}$
+
+5 $\mathrm{P}(Y \leq y)=e^{-\frac{\lambda}{y}}$
+
+6 Do not know
+
+Exercise 23
+
+Consider a game of dice using six normal six-sided dice. The aim is to
+get as many sixes as possible. You can throw at most two times, as all
+sixes obtained in the first throw is taken aside and the second throw is
+performed with only the dice not showing six on the first throw.
+
+Question 23
+
+Assume that you got v sixes in the first throw, then the probability of
+getting a total of w sixes is found to be
+$1 \square\binom{6}{w}\left(\frac{1}{6}\right)\left(\frac{5}{6}\right)$
+$2 \square \quad \frac{1}{6-v}$
+$3 \square \quad\binom{6-v}{w-v}\left(\frac{1}{6}\right)^{w-v}\left(\frac{5}{6}\right)^{6+v-w}$
+$4 \square \quad \frac{1}{6}$
+$5 \square \quad\binom{6-v}{w-v}\left(\frac{1}{6}\right)^{w-v}\left(\frac{5}{6}\right)^{6-w}$
+6▫   Do not know
+
+Exercise 24
+
+A point is chosen at random in a circular disk. A straight line is drawn
+through the point and the center of the circle.
+
+Question 24
+
+The probability that the absolute value of the slope of the line is less
+than 1 is
+$1 \square \frac{\operatorname{Arctan}\left(\frac{2}{5}\right)}{\pi}$
+$2 \square \frac{1}{\pi}$
+$3 \square \quad \frac{1}{4}$
+$4 \square \quad \frac{1}{3}$
+$5 \square \quad \frac{1}{2}$
+6▫   Do not know
+
+Exercise 25
+
+The cause of an air-crash can roughly be ascribed to a. human error, b.
+mechanical failure, c. act of terrorism. The probability of a human
+error at a departure is $\frac{1}{50}$, while the probability, that a
+mechanical failure occurs is $\frac{1}{500}$, and finally, the
+probability that an airline departure is exposed to an act of terrorism
+is $\frac{1}{500000}$. If a human error occurs, then the probability
+that an air-crash occurs $\frac{1}{10000}$, while the probability, that
+an air-crash occurs at the occurrence of a mechanical failure is
+$\frac{1}{1000}$, and finally the probability that an air-crash occurs
+in the event of an act of terrorism is $\frac{2}{3}$. You can assume
+that at most one of the three potential causes can occur, and, that an
+air-crash can always be ascribed to one of these three causes.
+
+Question 25
+
+Knowing that an air-crash has occurred, what is the probability that the
+crash was caused by an act of terrorism
+
+1 $\frac{1}{4}$
+2 $\frac{2}{3}$
+3 $\frac{1}{3} \cdot 10^{-6}$
+4 $\frac{20000}{20033}$
+5 $\frac{1}{3}$
+6 Do not know
+
+Exercise 26
+
+You have 5 independent exponential ( μ ) distributed variables.
+
+Question 26
+
+The density g(x) of the second largest of the 5 variables is
+
+1 $g(x)=\mu \frac{(\mu x)^{4}}{4!} e^{-\mu x}$
+
+2 $g(x)=\frac{\mu}{4} e^{-\frac{\mu}{4} x}$
+
+3 $g(x)=\frac{5!}{3!} x^{3}(1-x)$
+
+4 g(x) = 20μe^( − 4μx) − 20μe^( − 4μx)
+
+5 g(x) = 20μe^( − 2μx) − 60μe^( − 3μx) + 60μe^( − 4μx) − 20μe^( − 5μx)
+
+6 Do not know
+
+Exercise 27
+
+The exponential distribution relates to the geometric distribution like
+the gamma distribution relates to?
+
+Question 27
+
+1 The binomial distribution
+
+2 The hyper-geometric distribution
+
+3 The uniform distribution
+
+4 The negative binomial distribution
+
+5 The Poisson distribution
+
+6 Do not know
+
+Exercise 28
+
+Regarding the two random variables X and Y it is known, that
+E(X) = 4, E(Y) = 7, SD(X) = 10, SD(Y) = 5 and Cov (X, Y) = 0, 5. In
+addition one defines U = 3X − 2Y + 1.
+
+Question 28
+E(U) is calculated to be
+
+1 -2
+
+2  − 1
+
+3 26
+
+4 26.5
+
+5 27
+
+6 Do not know
+
+Exercise 29
+
+While fishing after sandeels one obtains a certain by-catch of herring.
+The catch of each species by a random trawl haul can be described with
+reasonable accuracy by a normal distribution with mean 10 ton (sandeels)
+and 1 ton (herring) and standard deviation 2 ton (sandeels) and 0.3 ton
+(herring). The joint distribution can be assumed to be bivariate normal
+with correlation coefficient 0.7. In a trawl haul one obtained 14 ton of
+sandeels.
+
+Question 29
+
+The expected by-catch of herring is
+
+1 1 ton
+
+2 1.24 ton
+
+3 1.42 ton
+
+4 1.49 ton
+
+5 1.6 ton
+
+6 Do not know
+
+Exercise 30
+
+Define the two continuous random variables X and Y with joint density
+f(x, y) = K(y − x)(1 − y), 0 < x < y < 1, where K is a normalizing
+constant.
+
+Question 30
+
+In the range of Y, the marginal density f_(Y)(y) of Y is
+
+1 $f_{Y}(y)=\frac{K}{2}(1-y)^{3}$
+
+2 $f_{Y}(y)=\frac{K}{2} y(1-y)^{2}$
+
+3 $f_{Y}(y)=\frac{K}{2} y^{2}(1-y)$
+
+4 $f_{Y}(y)=\frac{K}{4}(1-y)$
+
+5 f_(Y)(y) = 1
+
+6 Do not know
+
+End of exam

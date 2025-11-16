@@ -1,0 +1,691 @@
+Opgave 1
+
+En spiller kaster en almindelig terning 12 gange.
+
+Spørgsmål 1
+
+Sandsynligheden for, at spilleren får mindst 5 seksere, er
+
+1
+$\binom{12}{5}\left(\frac{1}{6}\right)^{5}\left(\frac{5}{6}\right)^{7}$
+
+2 $\square\left(\frac{4+\frac{1}{2}-2}{\sqrt{\frac{60}{36}}}\right)$
+3
+$\sum_{i=5}^{12}\binom{12}{i}\left(\frac{1}{6}\right)^{i}\left(\frac{5}{6}\right)^{12-i}$
+
+4
+$\binom{11}{4}\left(\frac{1}{6}\right)^{5}\left(\frac{5}{6}\right)^{7}$
+
+5
+$\sum_{i=5}^{12} \frac{\left(\frac{1}{6}\right)^{i}}{i!} e^{-\frac{1}{6}}$
+
+6 Ved ikke
+
+Opgave 2
+
+Ved en given trafiksitutation i et vejkryds er sandsynligheden for, at
+der sker et trafikuheld, der er så alvorligt, at politiet må tilkaldes,
+0,05 . Den givne trafiksituation i vejkrydset fører med sandsynligheden
+0,2 til, at der sker et trafikuheld.
+
+Spørgsmål 2
+
+Sandsynligheden for, at der sker et trafikuheld ved den givne
+trafiksituation i vejkrydset, hvor det ikke er nødvendigt at tilkalde
+politiet, findes til
+
+1 0,25
+
+2 0,15
+
+3 0,06
+
+4 0,05
+
+5 0,01
+
+6 Ved ikke
+
+Opgave 3
+
+Den maksimale daglige vandstand ved et dige med en højde på 6m kan
+beskrives ved en fordeling med middelværdi 2m og varians 1m².
+
+Spørgsmål 3
+
+Den bedste øvre grænse for sandsynligheden for, at diget vil blive
+oversvømmet den givne dag, er
+
+1 $\frac{1}{16}$
+
+2 $\frac{1}{9}$
+3 $\frac{1}{4}$
+
+4 $\Phi\left(\frac{6-2}{1}\right)$
+
+5 $1-\Phi\left(\frac{6-2}{1}\right)$
+
+6 Ved ikke
+
+Opgave 4
+
+Lad den stokastiske variabel X, være eksponentialt-fordelt med
+middelværdi E(X) = 1/γ og lad Y = e^(X).
+
+Spørgsmål 4
+
+Tætheden f_(Y)(y) for Y findes indenfor værdimængden til
+
+1 f_(Y)(y) = γy^( − γ − 1)
+
+2 f_(Y)(y) = γe^( − γy)
+
+3 $f_{Y}(y)=\frac{1}{\gamma} y^{-\frac{1}{\gamma}-1}$
+
+4 $f_{Y}(y)=\frac{1}{\gamma} e^{-\frac{y}{\gamma}}$
+
+5 f_(Y)(y) = γe^( − γe^(y))
+
+6 Ved ikke
+
+Opgave 5
+
+På en mark forekommer ukrudtsplanter med en konstant intensitet på 2 pr.
+m². Det kan antages, at ukrudtsplanterne forekommer uafhængigt af
+hinanden.
+
+Spørgsmål 5
+
+Hvad er sandsynligheden for, at der højest findes 10 ukrudtsplanter på
+10m² af engen?
+
+1 $\frac{2}{13}$
+2 $\frac{1}{5}$
+3 $\sum_{i=0}^{10} \frac{e^{-20} 20^{i}}{i!}$
+
+4
+$\sum_{i=0}^{10}\binom{20}{i}\left(\frac{1}{25}\right)^{i}\left(1-\frac{1}{25}\right)^{90-i}$
+
+5 $\Phi\left(\frac{10,5-20}{\sqrt{20}}\right)$
+
+6 Ved ikke
+
+Opgave 6
+
+Man slår en gang med en almindelig terning, hvorefter man kaster en
+perfekt mønt ligeså mange gange, som antallet af øjne terningen viser.
+Man betegner antallet af krone ved møntkastene med X.
+
+Spørgsmål 6
+
+Man bestemmer P(X = 2) til
+
+1
+
+$$\binom{6}{2} 2^{-6}$$
+
+2 $\frac{1}{6} \sum_{i=2}^{6}\binom{i}{2} 2^{-i}$
+
+3
+$\frac{1}{5}\left(\frac{1}{4}+\frac{3}{8}+\frac{6}{16}+\frac{10}{32}+\frac{15}{64}\right)$
+
+4
+$\sum_{i=2}^{6}\binom{i}{2}\left(\frac{1}{6}\right)^{i}\left(\frac{5}{6}\right)^{6-i} 2^{-i}$
+
+5
+$\sum_{i=2}^{6}\binom{6}{i}\left(\frac{1}{6}\right)^{i}\left(\frac{5}{6}\right)^{6-i}\binom{i}{2} 2^{-i}$
+
+6 Ved ikke
+
+Opgave 7
+
+Om tæthedsfunktionen f(x, y), 0 ≤ x ≤ 2, 0 ≤ y ≤ 1, er der oplyst
+følgende: For fastholdt x = x₀ gælder, at f(x₀,y) = k_(x₀), for
+0 ≤ y ≤ 1, hvor k_(x₀) > 0 er en konstant for givet x₀. For fastholdt
+y = y₀ gælder, at f(x,y₀) = ax + b, hvor a, b > 0 er konstanter.
+Samtidig gælder, at 2f(0, y) = f(2, y).
+
+Spørgsmål 7
+
+Tæthedsfunktionen f(x, y) findes til
+
+1 $f(x, y)=\frac{1}{9} x y+\frac{1}{3} x+\frac{2}{9} y$
+
+2 $f(x, y)=\frac{x y+x+y}{4}$
+
+3 $f(x, y)=\frac{1}{5} x+\frac{3}{10}$
+
+4 $f(x, y)=\frac{1}{6} x+\frac{1}{3}$
+
+5 Der er ikke givet tilstrækkelig oplysninger til, at f(x, y) kan
+findes.
+
+6 Ved ikke
+
+Opgave 8
+
+Ved et uheld er der på tilfældig vis blevet blandet 10 ark almindeligt
+printerpapir i en stak med 50 ark til en farveprinter, således er der
+ialt 60 ark i stakken. Der skal udskrives et dokument på 5 sider.
+
+Spørgsmål 8
+
+Sandsynligheden for, at ingen af de 5 sider skrives på almindeligt
+printerpapir, findes til
+
+1 $\frac{1}{2}$
+
+2 $\left(\frac{5}{6}\right)^{5}$
+
+3 $\frac{50!55!}{45!60!}$
+
+4 $1-\left(\frac{5}{6}\right)^{5}$
+
+5
+$1-\frac{5}{10} \cdot \frac{4}{9} \cdot \frac{3}{8} \cdot \frac{2}{7} \cdot \frac{1}{6}$
+
+6 Ved ikke
+
+Opgave 9
+
+Et punkt vælges tilfældigt i området angivet på figuren.
+[image]
+
+Spørgsmål 9
+
+Tætheden f(x) for x-koordinaten i intervallet  − 1 < x < 0 findes til
+
+1 f(x) = x + 1   for  − 1 < x < 0
+2 $f(x)=\frac{1}{2} \quad$ for  − 1 < x < 0
+3 f(x) = 2   for  − 1 < x < 0
+
+4 $f(x)=\frac{x+1}{2} \quad$ for  − 1 < x < 0
+
+5 f(x) = 1   for  − 1 < x < 0
+
+6 Ved ikke
+
+Opgave 10
+
+I en given patientgruppe lider 5% af en specifik sygdom. Et
+medicinalfirma har udviklet en prøve, der giver positivt udslag i 85% af
+de tilfælde, hvor personen rent faktisk lider af sygdommen, medens
+prøven giver positivt udslag i 15% af de tilfælde, hvor personen ikke
+lider af sygdommen. Man udfører nu en prøve på en given person, der
+tilhører patientgruppen, og denne prøve giver positivt udslag.
+
+Spørgsmål 10
+
+På basis af svaret på prøven, skønner man med følgende sandsynlighed, at
+personen har sygdommen.
+
+1 1
+
+2 $\frac{17}{20}$
+3 $\frac{57}{74}$
+
+4 $\frac{3}{17}$
+
+5 $\frac{17}{74}$
+
+6 Ved ikke
+
+Opgave 11
+
+En type af frugt spredes fra et træ på en sådan måde, at frugtens
+placering i forhold til træet med en passende valgt længdeenhed kan
+beskrives ved to uafhængige standardiserede normalfordelte variable,
+hvor træet betragtes som nulpunktet i koordinatsystemet.
+
+Spørgsmål 11
+
+Den forventede afstand fra træet til en tilfældig valgt frugt er
+
+1 $\sqrt{2 \pi}$
+
+2 $\sqrt{\pi}$
+
+3 $\sqrt{\frac{\pi}{2}}$
+
+4 0
+
+5 1
+
+6 Ved ikke
+
+Opgave 12
+
+IQ for skolebørn kan med god tilnærmelse beskrives ved en normal(100,15)
+fordeling. Man betragter nu 100 tilfældigt udvalgte skolebørn.
+
+Spørgsmål 12
+
+Sandsynligheden for, at det skolebarn, der har den højeste IQ, har en IQ
+på mere end 130, er
+
+1 $1-\Phi\left(\frac{130-100}{\sqrt{15}}\right)$
+
+2 $\Phi\left(\frac{\sqrt{100}(130-100)}{\sqrt{15}}\right)$
+
+3 $1-\Phi\left(\frac{130-100}{\sqrt{15}}\right)^{100}$
+
+4 $\left(1-\Phi\left(\frac{130-100}{\sqrt{15}}\right)\right)^{100}$
+
+5 $1-\Phi\left(\frac{\sqrt{100}(130-100)}{\sqrt{15}}\right)$
+6 Ved ikke
+
+Opgave 13
+
+Man har den stokastiske variabel Z = 4X − 5Y − 5, hvor det oplyses, at
+E(X) = 5, E(Y) = 3 samt Var (X) = 16, Var (Y) = 9 og Cov (X, Y) = 8.
+
+Spørgsmål 13
+
+Man finder variansen Var (Z) af Z til
+
+1 161
+
+2 155
+
+3 5
+
+4 0
+
+5 Oplysningerne i opgaven er ikke tilstrækkelige til, at spørgsmålet kan
+besvares.
+
+6 Ved ikke
+
+Opgave 14
+
+Lad X være beskrevet ved en binomial ( $3, \frac{2}{3}$ )-fordeling.
+
+Spørgsmål 14
+
+Bestem $\mathrm{E}\left(\frac{1}{X^{2}+1}\right)$.
+
+1 $\frac{1}{3}$
+
+2 $\frac{4}{15}$
+
+3 $\frac{7}{27}$
+
+4 $\frac{2}{9}$
+
+5 $\frac{1}{5}$
+
+6 Ved ikke
+
+Opgave 15
+
+Betragt den uniforme fordeling på området afgrænset af ellipsen givet
+ved $\frac{x^{2}}{4}+y^{2}=1$.
+
+Spørgsmål 15
+
+Hvad er sandsynligheden for at et punkt har afstand højst en halv
+$\left(\frac{1}{2}\right)$ til origo.
+
+1 $\frac{1}{3}$
+
+2 $\frac{1}{4}$
+
+3 $\frac{1}{2 \pi}$
+
+4 $\frac{1}{8}$
+
+5 $\frac{1}{4 \pi^{2}}$
+
+6 Ved ikke
+(Vink: Man kan benytte, at arealet af en ellipse med halvakser a og b er
+πab ).
+
+Opgave 16
+
+Vi betragter to geometrisk fordelte stokastiske variable X og Y, således
+at P(X = n) = P(Y = n) = (1 − p)^(n)p for n = 0, 1, 2, ….
+
+Spørgsmål 16
+
+Under antagelse om, at X og Y er uafhængige, findes sandsynligheden
+P(X = Y) til
+
+1 $\frac{p}{2-p}$
+2 $\frac{p}{1-p}$
+3 $\sum_{n=0}^{\infty}(1-p)^{n} p$
+
+4 p
+
+5 (1 − p)^(n)p
+
+6 Ved ikke
+
+Opgave 17
+
+Fisk af en given fiskeart gyder typisk i størrelsesordenen 10.000 æg.
+Blandt de udklækkede æg bliver $\frac{3}{5}$ til fiskelarver af hankøn.
+I det følgende antages, at en hunfisk af denne art netop gyder 10.000
+æg, og, at alle disse æg udklækkes.
+
+Spørgsmål 17
+
+Bestem, eventuelt approksimativt, sandsynligheden for, at der blandt de
+udklækkede æg er mindst 5.800 larver af hankøn.
+
+1 $1-\Phi\left(\frac{-200,5}{20 \sqrt{6}}\right)$
+
+2 $1-\Phi\left(\frac{-199,5}{\sqrt{2400}}\right)$
+
+3 $\Phi\left(\frac{-200,5}{\sqrt{2400}}\right)$
+
+4
+$\sum_{i=5800}^{10000}\binom{5800}{i}\left(\frac{3}{5}\right)^{i}\left(\frac{2}{5}\right)^{10000-i}$
+
+5 0,58
+
+6 Ved ikke
+
+Opgave 18
+
+Vi betragter 9 uniformt fordelte variable på intervallet [0; 1].
+
+Spørgsmål 18
+
+Tætheden, f₍₆₎(x), for den 4 . største af de 9 findes til
+
+1 9(1 − x)⁶
+2 $\binom{9}{4}(1-x)^{6}$
+3 $\binom{9}{4} x^{6}(1-x)^{3}$
+4 $\frac{9!}{5!3!} x^{5}(1-x)^{3}$
+
+5 $\frac{9!}{5!4!} x^{5}(1-x)^{4}$
+
+6 Ved ikke
+
+Opgave 19
+
+Et smykkefirmas forventede salg af henholdsvis armbånd og halskæder er
+på et bestemt marked henholdsvis DKK 4000000 (4 mio) for armbåndene og
+DKK 6000000 (6 mio) for halskæderne. Overskuddet for de to produkter er
+henholdsvis $\frac{1}{2}$ og $\frac{1}{3}$ af salget. Salgstallene er
+imidlertid behæftet med en vis usikkerhed, der kan modelleres ved at
+salget har en standardafvigelse på henholdsvis DKK 400000 for
+armbåndenes vedkommende og en standardafvigelse på DKK 600000 for
+halskædernes vedkommende. Endeligt regner man med, at der er en
+sammenhæng mellem de to salg, der kan udtrykkes gennem, at salgene kan
+beskrives ved en bivariat normalfordeling med korrelationskoefficient
+$\frac{3}{5}$.
+
+Spørgsmål 19
+
+Sandsynligheden for, at smykkefirmaet får et overskud på mindst DKK 4500
+000, findes til
+
+1 $1-\Phi\left(\frac{5}{4}\right)$
+
+2 $1-\Phi\left(\frac{5 \sqrt{5}}{8}\right)$
+
+3 Φ( − 1)
+
+4 $1-\Phi\left(\frac{\sqrt{5}}{4}\right)$
+
+5 $\Phi\left(-\frac{5}{2}\right)$
+
+6 Ved ikke
+
+Opgave 20
+
+Hazardraten for kvinder, diagnosticeret med en bestemt type brysttumor,
+er $\lambda(t)=\frac{\beta}{\sqrt{t}}$, t, β > 0, hvor t angives i år.
+
+Spørgsmål 20
+
+Sandsynligheden for, at en kvinde diagnosticeret med brysttumoren
+overlever mindst 9 år, er
+
+1 $\frac{\beta}{3}$
+
+2 e^( − 6β)
+
+3 $\int_{9}^{\infty} e^{-\frac{\beta}{\sqrt{u}}} \mathrm{~d} u$
+
+4 $\int_{9}^{\infty} \frac{\beta}{\sqrt{u}} \mathrm{~d} u$
+
+5 $e^{-\frac{\beta}{3}}$
+
+6 Ved ikke
+
+Opgave 21
+
+En given type byggeklods’ højde kan grundet usikkerhed i produktionen
+beskrives ved en uniform fordeling på intervallet [0.98 cm, 1.02 cm].
+
+Spørgsmål 21
+
+Hvad er sandsynligheden (approksimativt) for at et tårn bestående af 100
+af disse på hinanden stablede klodser er højere end 100.4 cm ?
+
+1 $\frac{105-100.4}{105-95}$
+
+2 $\Phi\left(\frac{\sqrt{12}}{0.4}\right)$
+
+3 $\Phi\left(\frac{\sqrt{12}}{0.04}\right)$
+
+4 $1-\Phi\left(\frac{\sqrt{12}}{0.04}\right)$
+
+5 $1-\Phi(\sqrt{12})$
+
+6 Ved ikke
+
+Opgave 22
+
+En stokastisk variabel X føger en beta (3, 3) fordeling.
+
+Spørgsmål 22
+
+Sandsynligheden for, at X ligger i et interval af størrelsen 0.01
+omkring $\frac{1}{4}$ findes - eventuelt approksimativt - til
+
+1 30 ⋅ 0, 01² ⋅ 0, 99²
+
+2 ∫_(0, 25)^(0, 26)6t(1 − t)dt
+
+3
+$\frac{5!}{2!2!}\left(\frac{1}{4}\right)^{2}\left(\frac{3}{4}\right)^{2}$
+
+4
+$\frac{3!}{1!1!}\left(\frac{1}{4}\right)\left(\frac{3}{4}\right) \cdot 0,01$
+
+5 $\frac{3}{10} \cdot \frac{3^{2}}{4^{4}}$
+
+6 Ved ikke
+
+Opgave 23
+
+Det antages, at kropslængde og vægt for slagterisvin kan beskrives ved
+en bivariat normalfordeling med korrelationskoefficienten
+$\rho=\frac{\sqrt{2}}{2}$, således at E(L) = 1, 2m, Var (L) = (0, 1m)²,
+E(V) = 85 kg og Var (V) = (3 kg)². Her er L og V stokastiske variable,
+der betegner henholdsvis længde og vægt af slagtegrisen.
+
+Spørgsmål 23
+
+Sandsynligheden for, at slagterisvin har en længde på mere end 1, 2m og
+en vægt på mere end 85 kg , findes til
+
+1 $\frac{3}{8}$
+
+2 $\frac{5}{16}$
+
+3 $\frac{3}{16}$
+
+4 $\frac{1}{2}$
+
+5 $\frac{1}{4}$
+
+6 Ved ikke
+
+Opgave 24
+
+Lad X være exponential (λ) fordelt, og Y være uniform fordelt på
+intervallet [0; 1]. Den simultane tæthedsfunktion for de to variable er
+f(x, y). Der dannes nu Z = XY.
+
+Spørgsmål 24
+
+Fordelingsfunktionen F_(z)(z) = P(Z ≤ z) for Z findes til
+
+1
+$\int_{0}^{z} \int_{u}^{\infty} x f\left(x, \frac{u}{x}\right) \mathrm{d} x \mathrm{~d} u$
+2
+$\int_{0}^{z} \int_{0}^{\infty} f\left(x, \frac{u}{x}\right) \mathrm{d} x \mathrm{~d} u$
+3 ∫₀^(z)∫₀^(∞)xλe^( − λx) ⋅ 1 dx
+
+4
+$\int_{0}^{z} \int_{0}^{\infty} \frac{1}{x} f\left(x, \frac{u}{x}\right) \mathrm{d} x \mathrm{~d} u$
+
+5
+$\int_{0}^{z} \int_{u}^{\infty} f\left(x, \frac{u}{x}\right) \mathrm{d} x \mathrm{~d} u$
+
+6 Ved ikke
+
+Opgave 25
+
+Man har X ∼ gamma (2, μ) dvs. tætheden f_(X)(x) for X er
+f_(X)(x) = μ²xe^( − μx). For X = x er Y uniformt fordelt på intervallet
+[0; x].
+
+Spørgsmål 25
+
+Man finder den marginale tæthed f_(Y)(y) for Y til
+
+1
+
+f_(Y)(y) = (2μ)²ye^( − 2μy),  0 ≤ y
+
+2 f_(Y)(y) = (1 + y)^( − 2),  0 ≤ y
+
+3 $f_{Y}(y)=\frac{\mu}{2}, \quad 0 \leq y \leq \frac{2}{\mu}$
+
+4
+$f_{Y}(y)=\frac{1}{\mu}\left(1+\frac{y}{\mu}\right)^{-3}, \quad 0 \leq y$
+
+5 f_(Y)(y) = μe^( − μy),  0 ≤ y
+
+6 Ved ikke
+
+Opgave 26
+
+En softwareproducent har konstateret, at i perioden efter frigivelsen af
+et større stykke software vil fejl optræde med en konstant fejlrate af 1
+fejl per uge per installation. To af firmaets kunder fungerer som
+testsites, der påbegynder brugen af det pågældende stykke software
+umiddelbart efter, at det er blevet frigivet. Når der er rapporteret i
+alt 5 fejl påbegyndes arbejdet med fejlretning.
+
+Spørgsmål 26
+
+Sandsynligheden for, at arbejdet med fejlretning påbegyndes indenfor de
+første 2 uger efter frigivelsen, bestemmes til
+
+1 11e^( − 2)
+
+2 1 − 11e^( − 2)
+
+3 $1-\frac{647}{15} e^{-4}$
+
+4 $1-\frac{103}{3} e^{-4}$
+
+5 (1−11e^( − 2))²
+
+6 Ved ikke
+
+Opgave 27
+
+Lad X og Y være to stokastiske variable, om hvilke det gælder, at
+Y ∼ exp (1), og, at E(X ∣ Y) = Y².
+
+Spørgsmål 27
+
+Man finder
+
+1 $\mathrm{E}(X)=\frac{1}{3} Y^{3}$
+
+2 E(X) = 4
+
+3 E(X) = 2
+
+4 E(X) = 1
+
+5 $\mathrm{E}(X)=\frac{1}{2}$
+
+6 Ved ikke
+
+Opgave 28
+
+En speciel flytype kan i en særlig type vejrsituation blive udsat for
+havari, idet flyets flapper kan fejle. Havari sker dog kun, hvis piloten
+tillige reagerer forkert, når denne type af fejl opstår med flapperne.
+Sandsynligheden for, at denne vejrtype opstår på en flyvning, kan sættes
+til $\frac{1}{100}$, medens, der er en sandsynlighed for, at flapperne
+fejler givet denne vejrtype, på $\frac{1}{250}$. Endeligt er
+sandsynligheden for, at piloten reagerer forkert, når flapperne fejler
+$\frac{1}{50}$.
+
+Spørgsmål 28
+
+Sandsynligheden for, at havari opstår med ovenstående kombination,
+findes til
+
+1 $\frac{1}{50}+\frac{1}{250}-\frac{1}{100}$
+2 0,0034
+
+3 0.02
+
+4 8 ⋅ 10^( − 5)
+
+5 8 ⋅ 10^( − 7)
+
+6 Ved ikke
+
+Opgave 29
+
+Lad parret ( X, Y ) af stokastiske variable betegne koordinaterne til et
+punkt valgt tilfældigt i området afgrænset af x ≥ 0, y ≥ 0, y ≤ 2 − 2x
+og 2y ≤ 2 − x.
+
+Spørgsmål 29
+
+Den stokastiske variabel Z = X + Y har tæthedsfunktionen
+
+1
+$f_{Z}(z)=\int_{0}^{z} \frac{3}{2} \mathrm{~d} x, \quad 0 \leq z \leq \frac{4}{3}$
+
+2
+$f_{Z}(z)=\left\{\begin{array}{ccc}\frac{3 z}{2} & \text { for } & 0 \leq z \leq 1 \\ \frac{12-9 z}{2} & \text { for } & 1<z \leq \frac{3}{2}\end{array}\right.$
+
+3 $f_{Z}(z)=\frac{4 z}{9}, \quad 0 \leq z \leq \frac{3}{2}$
+
+4
+$f_{Z}(z)=\left\{\begin{array}{ccc}\frac{3 z}{2} & \text { for } & 0 \leq z \leq 1 \\ \frac{12-9 z}{2} & \text { for } & 1<z \leq \frac{4}{3}\end{array}\right.$
+
+5 f_(Z)(z) = z,  0 ≤ z ≤ 2
+
+6 Ved ikke
+
+Opgave 30
+
+Lad ( X, Y ) være bivariat normalfordelt med
+E(X) = E(Y) = 2, Var (X) = 1, Var (Y) = 4, og $\rho=\frac{1}{2}$.
+
+Spørgsmål 30
+
+Man finder P(Y ≤ 0 ∣ X = 0) til
+$1 \square \quad \frac{\operatorname{Arctan}\left(\frac{\sqrt{2}}{2}\right)}{\pi}$
+$2 \square \quad \frac{1}{2}$
+$3 \square \quad \frac{1}{3}$
+$4 \square \quad \Phi\left(-\frac{\sqrt{2}}{2}\right)$
+$5 \square \quad \Phi\left(-\frac{1}{2}\right)$
+6▫   Ved ikke
+
+Slut på opgavesættet.

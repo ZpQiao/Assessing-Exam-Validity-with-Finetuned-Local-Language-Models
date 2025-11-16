@@ -1,0 +1,695 @@
+Opgave 1
+
+For hændelserne A og B har man
+$P(A)=\frac{1}{15}, P(B)=\frac{1}{7}, P(A \cap B)=\frac{1}{22}$.
+
+Spørgsmål 1
+
+Sandsynligheden for, at mindst en af hændelserne A og B indtræffer, er
+
+1 $\frac{1}{15}+\frac{1}{7}+\frac{1}{22}$
+2 $\frac{1}{15}+\frac{1}{7}$
+
+3 $\left(\frac{1}{15}+\frac{1}{7}\right)\left(1-\frac{1}{22}\right)$
+
+4 $\frac{1}{15}+\frac{1}{7}-\frac{1}{22}$
+
+5 $1-\left(1-\frac{1}{15}\right)\left(1-\frac{1}{7}\right)$
+
+6 Ved ikke
+
+Opgave 2
+
+I gennemsnit regner det hver tredje dag i december måned. Hvis det
+regner én dag, øger det sandsynligheden for, at det regner dagen efter.
+
+Spørgsmål 2
+
+Hvad kan vi på baggrund af dette sige om sandsynligheden p for, at det
+regner både den 24 . og den 25. december?
+
+1 $p=\frac{1}{3}$
+
+2 $p=\frac{1}{9}$
+
+3 $\frac{1}{9} \leq p \leq \frac{1}{3}$
+
+4 $p \leq \frac{1}{9}$
+
+5 $p \leq \frac{2}{9}$
+
+6 Ved ikke
+
+Opgave 3
+
+Man har 9 rotter fra 3 forskellige kuld fordelt på køn som i angivet i
+tabellen
+
+    Kuld   Antal   Antal hunner
+  ------ ------- --------------
+       1       2              1
+       2       3              2
+       3       4              2
+
+En tilfældig af rotterne udtages til et eksperiment. Rotten viser sig at
+være af hunkøn.
+
+Spørgsmål 3
+
+Hvad er sandsynligheden for, at rotten stammer fra kuld 3.
+
+1 $\frac{4}{9}$
+
+2 $\frac{2}{9}$
+
+3 $\frac{2}{3}$
+
+4 $\frac{2}{4}$
+
+5 $\frac{2}{5}$
+
+6 Ved ikke
+
+Opgave 4
+
+En boghandler sælger hver dag et stort antal bøger. En lille andel af
+dem bliver senere returneret. Bøger bliver returneret enkeltvis og
+uafhængigt af hinanden. I gennemsnit bliver tre bøger om dagen
+returneret.
+
+Spørgsmål 4
+
+Lad X betegne antallet af returnede bøger på en tilfældigt valgt dag.
+Hvilken fordelingstype danner det mest rimelige udgangspunkt for en
+model af X ?
+
+1 Normalfordelingen
+
+2 Den geometriske fordeling
+
+3 Den hypergeometriske fordeling
+
+4 Poissonfordelingen
+
+5 Ligefordelingen
+
+6 Ved ikke
+
+Opgave 5
+
+Et system har tre komponenter a, b og c. Systemet fungerer, hvis a
+virker, eller, hvis a fejler, men både b og c virker. Komponenterne
+fungerer uafhængigt af hinanden med sandsynlighederne p_(A), p_(B), og
+p_(C), hhv.
+
+Spørgsmål 5
+
+Bestem sandsynligheden for, at systemet fungerer.
+
+1 p_(A) + p_(B)p_(C)
+
+2 1 − (1−p_(A))(1−p_(B))(1−p_(C))
+
+3 1 − (1−p_(A)) − (1−p_(B)p_(C)) + (1−p_(A))(1−p_(B)p_(C))
+
+4 p_(A) + p_(B) + p_(C)
+
+5 p_(A) + p_(B)p_(C) − p_(A)p_(B)p_(C)
+
+6 Ved ikke
+
+Opgave 6
+
+Et punkt vælges tilfældigt i området afgrænset af linierne y = 0, x = 1,
+og y = x. Koordinaterne til punktet betegnes ( X, Y ).
+
+Spørgsmål 6
+
+Den betingede fordeling F(y ∣ X = x) = P(Y ≤ y ∣ X = x) af
+andenkoordinaten Y givet førstekoordinaten X findes til
+
+1 y  0 ≤ y ≤ 1
+
+2 $\frac{y}{x} \quad 0 \leq y \leq x$
+
+3 $\frac{1}{x} \quad 0 \leq y \leq x$
+
+4 $\frac{y-x}{1-x} \quad x \leq y \leq 1$
+
+5 x  0 ≤ x ≤ 1
+
+6 Ved ikke
+
+Opgave 7
+
+Lad X_(i), i = 1, …, n være uafhængige identisk fordelte stokastiske
+variable på [0, π] med tæthedsfunktion $\frac{1}{2} \sin x$.
+Lad Y = max {X_(i):i=1,…,n}.
+
+Spørgsmål 7
+
+Bestem fordelingsfunktionen for Y.
+
+1 $1-\frac{1}{2^{n}}(1+\cos x)^{n}$
+
+2 $\frac{1}{2^{n}}(1-\cos x)^{n}$
+
+3 $\frac{n}{2^{n}}(1-\cos x)^{n-1} \sin x$
+
+4 $\frac{1}{2^{n}} \sin ^{n} x$
+
+5 $\frac{1}{2}\left(1-\cos ^{n} x\right)$
+
+6 Ved ikke
+
+Man kan eventuelt benytte at ∫₀^(x)sin t dt = 1 − cos x.
+
+Opgave 8
+
+Et spil kort indeholder 13 spar, 13 hjerter, 13 ruder og 13 klør. Der
+trækkes en hånd bestående af 4 kort ud af et sådant spil, uden
+tilbagelægning.
+
+Spørgsmål 8
+
+Bestem sandsynligheden for, at hånden indeholder 1 spar, 1 hjerter, 1
+ruder og 1klør.
+
+1 $\frac{13}{52}+\frac{13}{51}+\frac{13}{50}+\frac{13}{49}$
+
+2 $\left(\frac{\binom{13}{1}\binom{39}{3}}{\binom{52}{4}}\right)^{4}$
+
+3 $\left(\frac{1}{4}\right)^{4}$
+
+4 $\frac{13}{52} \frac{13}{51} \frac{13}{50} \frac{13}{49}$
+
+5 $\frac{39}{51} \frac{26}{50} \frac{13}{49}$
+
+6 Ved ikke
+
+Opgave 9
+
+Man slår gentagne slag med to almindelige terninger.
+
+Spørgsmål 9
+
+Bestem sandsynligheden for, at man i det tiende slag for anden gang får
+et par i seksere.
+
+1 0.0055
+
+2 0.0216
+
+3 0.0277
+
+4 0.0008
+
+5 0.0006
+
+6 Ved ikke
+
+Opgave 10
+
+En stokastisk variabel X antager værdier i {0, …, 3} med følgende
+sandsynligheder:
+
+  x            0     1     2     3
+  ---------- ----- ----- ----- -----
+  P(X = x)    0.4   0.3   0.2   0.1
+
+Spørgsmål 10
+
+Bestem variansen af X
+
+1 0
+
+2 1
+
+3 $\frac{3}{2}$
+
+4 $\frac{4}{3}$
+
+5 2
+
+6 Ved ikke
+
+Opgave 11
+
+Fire venner spiller tennis. 2 af dem er venstrehåndede, de andre to
+højrehåndede. De danner to makkerpar à to spillere ved lodtrækning så
+alle konstellationer er lige sandsynlige.
+
+Spørgsmål 11
+
+Bestem sandsynligheden for, at de to venstrehåndede bliver makkere.
+
+1 $\frac{1}{6}$
+
+2 $\frac{1}{4}$
+
+3 $\frac{1}{3}$
+
+4 $\frac{1}{2}$
+
+5 $\frac{2}{3}$
+
+6 Ved ikke
+
+Opgave 12
+
+I en årgang er 51% drenge og 49% piger. En skoleklasse med 28 elever er
+dannet af denne årgang.
+
+Spørgsmål 12
+
+Bestem et tilnærmet udtryk for sandsynligheden for, at klassen har flere
+piger end drenge under antagelse af, at klassen er dannet tilfældigt,
+
+1 $\binom{28}{15} 0.49^{15} 0.51^{13}$
+
+2 $\sum_{i=15}^{28} \frac{(0.49 \cdot 28)^{i}}{i!} e^{-0.49 \cdot 28}$
+
+3 0.49
+
+4
+$\Phi\left(\frac{13.5-28 \cdot 0.51}{\sqrt{28 \cdot 0.51 \cdot 0.49}}\right)$
+
+5 0.49²⁸
+
+6 Ved ikke
+hvor Φ som sædvanligt angiver fordelingsfunktionen for en standard
+normalfordelt variabel.
+
+Opgave 13
+
+Koordinaterne (X, Y) til et punkt i planen vælges med tætheden
+$f(x, y)=\frac{1}{1.6 \pi} e^{-\frac{1}{1.28}\left(x^{2}+1.2 x y+y^{2}\right)}$.
+
+Spørgsmål 13
+
+Sandsynligheden for, at punktet ligger i første kvadrant (i.e. at både X
+og Y er positive), er
+
+1
+$\frac{1-\frac{2}{\pi} \operatorname{Arctan}\left(\frac{3}{4}\right)}{4}$
+
+2 $\frac{1}{4}$
+
+3 $\frac{1}{1.6 \pi}$
+
+4
+$\frac{1-\frac{2}{\pi} \operatorname{Arccos}\left(\frac{3}{5}\right)}{4}$
+
+5 e^( − 2)
+
+6 Ved ikke
+
+Opgave 14
+
+Om en stokastisk variabel X oplyses, at den følger en standardiseret
+normalfordeling (med middelværdi μ = 0 og varians σ² = 1 ). Man danner
+nu $Y=\sqrt{e^{X}}$.
+
+Spørgsmål 14
+
+Tætheden f(y) for Y indenfor definitionsmængden findes til
+
+1 $\sqrt{\frac{1}{\sqrt{2 \pi}} e^{-\frac{1}{2}(\log (y))^{2}}}$
+
+2 $\frac{1}{\sqrt{2 \pi}} e^{-\frac{1}{2}(\log y)^{2}}$
+
+3 e^( − x)
+
+4 $\sqrt{\frac{2}{\pi} \frac{1}{y}} e^{-2(\log (y))^{2}}$
+
+5 $\frac{1}{y} \sqrt{\frac{2}{\pi}} e^{-2(\log (y))^{2}}$
+
+6 Ved ikke
+
+Opgave 15
+
+Man har de to stokastiske variable X_(i), i = 1, 2 med middelværdi μ_(i)
+og varians σ_(i)². Man danner nu en ny variabel Y = aX₁ + bX₂ + c, hvor
+a, b og c er kendte konstanter.
+
+Spørgsmål 15
+
+Middelværdien E(Y) af Y findes til
+
+1 Kan ikke beregenes uden kendskab til, hvorvidt de variable er
+uafhængige.
+
+2
+$a \mu_{1} \frac{1}{1+\sigma_{1}^{2}}+b \mu_{2} \frac{1}{1+\sigma_{2}^{2}}+c$
+
+3 aμ₁ + a²σ₁² + bμ₂ + b²σ₂² + c
+
+4 a²μ₁ + b²μ₂
+
+5 aμ₁ + bμ₂ + c
+
+6 Ved ikke
+
+Opgave 16
+
+Værnepligtige mænd har en middelhøjde på 182 cm ; standard afvigelsen af
+de værnepligtiges højde er 8 cm . En deling består af 25 mand.
+
+Spørgsmål 16
+
+Angiv et overslag på sandsynligheden for, at gennemsnitshøjden i en
+deling overstiger 185 cm .
+
+1 0
+
+2 0.01
+
+3 0.03
+
+4 0.12
+
+5 0.35
+
+6 Ved ikke
+
+Opgave 17
+
+Lad X være en stokastisk variabel, der beskriver levetiden af en
+komponent målt i dage. Antag, at X har hazardraten 1 + cos x for x > 0.
+
+Spørgsmål 17
+
+Givet t > 0, bestem den betingede sandsynlighed for, at X > t + π,
+givet, at X > t
+
+1 exp ( − π + 2sin t)
+
+2 exp ( − π + 1)
+
+3 exp ( − π − 1)
+
+4 exp ( − π)
+
+5 exp ( − 1)
+
+6 Ved ikke
+
+Opgave 18
+
+Lad X være en normalfordelt stokastisk variabel med middelværdi -1 og
+varians 4. Lad Y = X².
+
+Spørgsmål 18
+
+Bestem sandsynligheden P(Y > 1).
+
+1 1 − Φ(1)
+
+2 $\frac{1}{2}+\Phi(-1)$
+
+3 $\sqrt{2}-1$
+
+4 $\frac{1}{2}+\Phi\left(\frac{1}{2}\right)$
+
+5 $\frac{1}{2}+\Phi\left(-\frac{1}{2}\right)$
+
+6 Ved ikke
+hvor Φ som sædvanlig er fordelingsfunktionen for en standard
+normalfordelt variabel.
+
+Opgave 19
+
+X og Y er stokastiske variable med fælles middelværdi 0.X har varians 1,
+Y har varians 2, og korrelationskoefficient mellem X og Y er ρ.
+
+Spørgsmål 19
+
+Bestem ρ, således at variansen af X + Y er 1 .
+
+1 0
+
+2 -1
+
+3 $\frac{\sqrt{2}}{2}-1$
+
+4 $-\frac{\sqrt{2}}{2}$
+
+5 $-\frac{1}{2}$
+
+6 Ved ikke
+
+Opgave 20
+
+Vi betragter 10 populære tekstbehandlingsprogrammer og antager, at hvert
+af de 10 programmer har den samme sandsynlighed for at blive foretrukket
+af en tilfældigt valgt person (diskret ligefordeling). Fire personer
+uden indbyrdes forhåndskendskab samles til en arbejdsgruppe.
+
+Spørgsmål 20
+
+Hvad er sandsynligheden for, at mindst to af deltagerne foretrækker det
+samme tekstbehandlingssystem.
+
+1 $\frac{1000-9 \cdot 8 \cdot 7}{1000}$
+
+2 $\frac{10000-9^{4}}{10000}$
+
+3
+$1-\binom{10}{4}\left(\frac{1}{10}\right)^{4}\left(\frac{9}{10}\right)^{6}$
+
+4 $1-\frac{\binom{1}{1}^{4}}{\binom{10}{4}}$
+
+5 $\frac{1}{2}$
+
+6 Ved ikke
+
+Opgave 21
+
+Lad X_(i), i = 1, …, n være uafhængige identisk fordelte stokastiske
+variable med kontinuert og voksende fordelingsfunktion F(x).
+Lad Y = max {X_(i):i=1,…,n}.
+
+Spørgsmål 21
+
+Bestem medianen for Y.
+
+1 $F^{-1}\left(\frac{1}{2^{1 / n}}\right)$
+
+2 $F^{-1}\left(\frac{1}{2^{n}}\right)$
+
+3 $\left(F^{-1}\left(\frac{1}{2}\right)\right)^{n}$
+
+4 $F^{-1}\left(\frac{1}{2}\right)$
+
+5 Kan ikke bestemmes ud fra det oplyste.
+
+6 Ved ikke
+
+Opgave 22
+
+Du står i kø i supermarkedet. Foran dig står 3 andre kunder hvoraf den
+ene er ved at blive betjent. Tiden det tager at betjene en kunde er
+eksponentialfordelt med middelværdi 2 minutter, og forskellige kunder
+har uafhængige betjeningstider.
+
+Spørgsmål 22
+
+Hvad er sandsynligheden for at du er færdigbetjent indenfor 10 minutter?
+
+1 са. 74%
+
+2 ca. 65%
+
+3 са. 35%
+
+4 ca. 27%
+
+5 Kan ikke beregnes uden at vide, hvor længe den første kunde har været
+under betjening.
+
+6 Ved ikke
+
+Opgave 23
+
+Lad X og Y være stokastiske variable således at punktet ( X, Y ) er
+uniformt fordelt over cirkelskiven med centrum i (0, 0) og radius 1.
+
+Spørgsmål 23
+
+Bestem den betingede sandsynlighed for Y > 0 givet Y > X, dvs.
+(P(Y > 0 ∣ Y > X)).
+
+1 $\frac{1}{4}$
+
+2 $\frac{3}{8}$
+3 $\frac{1}{2}$
+
+4 $\frac{5}{8}$
+5 $\frac{3}{4}$
+
+6 Ved ikke
+
+Opgave 24
+
+Lad der være givet n uafhængige variable X₁, …, X_(n), der alle er
+normalfordelte med middelværdi 0 og spredning 1.
+
+Spørgsmål 24
+
+Bestem sandsynligheden for, at den næststørste af X_(i) ’erne ligger i
+intervallet [0, dx], hvor dx > 0 er en infinitesemal størrelse.
+
+1 $\frac{1}{\sqrt{2 \pi}} d x$
+
+2 $\frac{1}{2^{n(n-1)} \sqrt{2 \pi}} d x$
+
+3 $\frac{n(n-1)}{2^{n-1} \sqrt{2 \pi}} d x$
+
+4 $\frac{n(n-1)}{2^{n-1} \sqrt{2 \pi}} e^{-\frac{n}{2}} d x$
+
+5 $\frac{3}{4}$
+
+6 Ved ikke
+
+Opgave 25
+
+Man har de to uafhængige positive stokastiske variable X og Y med
+tæthedsfunktion f_(X)(x) og f_(Y)(y) respektive. Man danner produktet
+Z = X ⋅ Y.
+
+Spørgsmål 25
+
+Tætheden f_(Z)(z) for Z findes til
+
+1
+$f_{Z}(z)=\int_{0}^{\infty} f_{X}(x) f_{Y}\left(\frac{z}{x}\right) \mathrm{d} x$
+
+2
+$f_{Z}(z)=\int_{0}^{\infty} \frac{1}{x} f_{X}(x) f_{Y}\left(\frac{z}{x}\right) \mathrm{d} x$
+3
+$f_{Z}(z)=\int_{0}^{\infty} x f_{X}(x) f_{Y}\left(\frac{z}{x}\right) \mathrm{d} x$
+
+4
+$f_{Z}(z)=\int_{0}^{\infty} \frac{1}{x} f_{X}(x) f_{Y}(z x) \mathrm{d} x$
+
+5 f_(Z)(z) = ∫₀^(∞)xf_(X)(x)f_(Y)(zx)dx
+
+6 Ved ikke
+
+Opgave 26
+
+Ca. hver tredje person kan spille skak. Fire tilfældige personer er
+samlet.
+
+Spørgsmål 26
+
+Bestem sandsynligheden for, at et lige antal ( 0,2 eller 4 ) af de fire
+kan spille skak.
+
+1 $\frac{3}{5}$
+
+2 $\frac{1}{2}$
+
+3 $\frac{16}{81}$
+
+4 $\frac{1}{3}$
+
+5 $\frac{41}{81}$
+
+6 Ved ikke
+
+Opgave 27
+
+Vi betragter en ukrudtsplante på en mark og dens afkom (første
+generation). Afstandsvektoren mellem moderplanten og en tilfædigt valgt
+afkomsplante kan beskrives ved vektoren X₁, X₂ hvor X_(i) ∈ N(0, 1).
+Således kan begge afstandvektorens koordinater beskrives som
+normalfordelte variable, hvor standardafvigelsen er valgt som
+længdeenhed.
+
+Spørgsmål 27
+
+Sandsynligheden for, at en tilfældigt afkomsplante er placeret mere end
+én længdeenhed fra moderplanten, er
+
+1 1 − (Φ(1) − Φ( − 1))
+
+2 (Φ(1) − Φ( − 1))
+
+3 $\frac{1}{\sqrt{e}}$
+
+4 $\frac{1}{\pi}$
+
+5 $\frac{1}{e}$
+
+6 Ved ikke
+hvor Φ som sædvanlig angiver fordelingsfunktionen for en standard
+normalfordelt variabel.
+
+Opgave 28
+
+Den stokastiske vektor ( X, Y ) antager værdier i området
+0 ≤ y ≤ x² ≤ 1, med fordelingsfunktionen
+$F(x, y)=P(X \leq x, Y \leq y)=c\left(3 x^{2} \sqrt{y}-3 x y+y \sqrt{y}\right)$.
+
+Spørgsmål 28
+
+Konstanten c er
+
+1 $1-\frac{1}{\sqrt{2}}$
+
+2 $\frac{1}{2}$
+
+3 $\frac{1}{\sqrt{2}}$
+4 1
+
+5 $\frac{20}{3}$
+
+6 Ved ikke
+
+Opgave 29
+
+To spillere kaster hver to mønter. Vi lader X betegne antallet af krone
+blandt de to mønter kastet af den første spiller og Y betegne det totale
+antal af krone i de ialt 4 kast. Vi betragter tilfældet, hvor Y = 2.
+
+Spørgsmål 29
+Man finder (P(X = 0 ∣ Y = 2), P(X = 1 ∣ Y = 2), P(X = 2 ∣ Y = 2)) til
+
+1 $\left(\frac{1}{4}, \frac{1}{2}, \frac{1}{4}\right)$
+
+2 $\left(\frac{1}{6}, \frac{2}{3}, \frac{1}{6}\right)$
+
+3 $\left(\frac{1}{8}, \frac{3}{4}, \frac{1}{8}\right)$
+
+4 $\left(\frac{3}{16}, \frac{5}{8}, \frac{3}{16}\right)$
+
+5 $\left(\frac{1}{3}, \frac{1}{3}, \frac{1}{3}\right)$
+
+6 Ved ikke
+
+Opgave 30
+
+Belastningen af en kæde er givet ved en fordeling, der har middelværdi
+1000 N og standardafvigelse på 500 N . Man ønsker at bestemme en værdi
+x_(max) for belastningen, der højst må overskrides med en sandsynlighed
+på en promille.
+
+Spørgsmål 30
+
+En mindste sikker belastningsgrænse x_(max ) er
+
+1
+$\Phi\left(\frac{x_{\max }-1000 \mathrm{~N}}{500 \mathrm{~N}}\right)=0.999$
+
+2 $x_{\max }=1000 \mathrm{~N}+\sqrt{1000} \cdot 500 \mathrm{~N}$
+
+3 0.001x_(max) = 1000 N
+
+4 0.001x_(max) = 500 N
+
+5 $x_{\max }=\sqrt{1000} \cdot 500 \mathrm{~N}$
+
+6 Ved ikke
+hvor Φ som sædvanlig angiver fordelingsfunktionen for en standard
+normalfordelt variabel.

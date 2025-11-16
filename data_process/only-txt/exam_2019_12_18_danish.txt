@@ -1,0 +1,669 @@
+Opgave 1
+
+I et geografisk område bor der 1 million mennesker, hvor 5% af disse
+tilhører en bestemt etnisk gruppe. En gruppe på 100 mennesker udvælges
+tilfældigt til en stikprøveundersøgelse.
+
+Spørgsmål 1
+
+Sandsynligheden for, at der er udvalgt mindst 7 personer fra den etniske
+gruppe til stikprøven, findes til
+
+1 $1-\Phi\left(\frac{2}{\sqrt{19}}\right)$
+
+2 $1-\Phi\left(\frac{3}{\sqrt{18}}\right)$
+
+3 $\frac{1}{12}$
+
+4 $1-\sum_{i=0}^{6}\binom{100}{i}(0,05)^{i}(1-0,05)^{100-i}$
+
+5 $1-\sum_{i=0}^{6} \frac{e^{-5} 5^{i}}{i!}$
+
+6 Ved ikke
+
+Opgave 2
+
+Betragt et polært koordinatsystem med et bombemål placeret i centrum. Et
+bombefly kaster en bombe, der rammer afstanden R fra centrum med
+tætheden $f_{R}(r)=r e^{-\frac{1}{2} r^{2}}$. Sandsynligheden for, at
+bombemålet bliver ødelagt, er e^( − r²), givet bomben rammer afstanden r
+fra centrum.
+
+Spørgsmål 2
+
+Hvad er sandsynligheden for, at bombemålet bliver ødelagt?
+
+1 $\frac{1}{4}$
+
+2 $\frac{1}{3}$
+
+3 $\frac{1}{2}$
+
+4 $\frac{2}{3}$
+
+5 $\frac{3}{4}$
+
+6 Ved ikke
+
+Opgave 3
+
+En svømmeforening har en basistrup bestående af 18 svømmere. Heraf er 2
+bedst til rygcrawl, 7 bedst til brystcrawl, 5 bedst til butterfly og 4
+bedst til medley. Til en holdstafet udtages 4 af de 18 svømmere
+tilfældigt.
+
+Spørgsmål 3
+
+Sandsynligheden for, at der er netop 2, der er bedst til butterfly,
+blandt de 4, er
+
+1
+$\binom{4}{2}\left(\frac{5}{18}\right)^{2}\left(\frac{13}{18}\right)^{2}$
+2 $\frac{5}{18} \frac{4}{17}$
+3 $2 \cdot \frac{5}{18} \frac{4}{17}$
+
+4 $\frac{\binom{5}{2}\binom{13}{2}}{\binom{18}{4}}$
+5 $\frac{5}{18} \frac{4}{18}$
+6 Ved ikke
+
+Opgave 4
+
+Et materiale udsender partikler, således at tiderne mellem partiklerne
+kan beskrives ved uafhængige og eksponentialfordelte stokastiske
+variable med en middelværdi på 2 minutter.
+
+Spørgsmål 4
+
+Hvad er sandsynligheden for, at den tredje partikel udsendes netop
+mellem 3 og 4 minutter efter, at registrering er påbegyndt?
+
+1 $\left(e^{-\frac{3}{2}}-e^{-2}\right)^{3}$
+
+2 $\frac{29}{8} e^{-\frac{3}{2}}-5 e^{-2}$
+
+3 $\frac{4}{3} e^{-2}-\frac{9}{16} e^{-\frac{3}{2}}$
+4 Φ(2)³ − Φ(1)³
+
+5 (Φ(2) − Φ(1))³
+
+6 Ved ikke
+
+Opgave 5
+
+Idet X₁ og X₂ er to uafhængige eksponentialfordelte variable danner man
+X = min (X₁,X₂) og Y = max (X₁,X₂) med simultan tæthedsfunktion
+f(x, y) = 2λ²e^( − λ(x + y)).
+
+Spørgsmål 5
+
+Tæthedsfunktionen f_(Z)(z) for $Z=\frac{X}{Y}$ findes til
+
+1 $\frac{2}{(z+1)^{2}}, \quad 0 \leq z \leq 1$
+2 λe^( − λz),  0 ≤ z
+
+3
+$\frac{1}{\sqrt{2 \pi}} \frac{1}{\lambda} \exp \left(-\frac{1}{2}\left(\frac{z-\frac{1}{\lambda}}{\sqrt{\frac{1}{\lambda}}}\right)^{2}\right), \quad 0 \leq z \leq 1$
+
+4 1,  0 ≤ z ≤ 1
+
+5 $\frac{1}{(z+1)^{2}}, \quad 0 \leq z$
+
+6 Ved ikke
+
+Opgave 6
+
+Givet hændelserne A og B er det oplyst, at P(A ∩ B) = P(A)P(B).
+
+Spørgsmål 6
+
+Hvilket af nedendstående udsagn er da korrekt:
+
+1 P(A ∪ B) = P(A) + P(B).
+
+2 P(A ∣ B) = P(A ∩ B)
+
+3 P(A ∣ B) = P(A)
+
+4 P(A ∣ B) = P(B ∣ A)
+
+5 Ingen af ovenstående er korrekte.
+
+6 Ved ikke
+
+Opgave 7
+
+Den ligefordelte diskrete stokastiske variabel X antager en af værdierne
+{ − 2,  − 1, 1, 2}. Man danner en ny stokastisk variabel Y = X².
+
+Spørgsmål 7
+
+Kovariansen Cov (X, Y) mellem X og Y bestemmes til
+
+1 -1
+
+2 0
+
+3 $\frac{1}{2}$
+4 1
+
+5 Kovariansen kan ikke bestemmes ud fra de foreliggende oplysninger
+
+6 Ved ikke
+
+Opgave 8
+
+Man ved, at 20% af flypassagererne på en bestemt rute medbringer
+håndbagage med en vægt, der klart overskrider den tilladte grænse. Man
+antager, at det, at den enkelte passager medbringer overvægt, ikke
+influerer på sandsynligheden for, at andre også gør det.
+
+Spørgsmål 8
+
+På en afgang med 400 passagerer er et rimeligt bud på sandsynligheden
+for, at højest 60 passagerer medbringer overvægtig håndbagage.
+
+1
+$\binom{400}{60}\left(\frac{1}{5}\right)^{60}\left(\frac{4}{5}\right)^{340}$
+
+2 $\sum_{i=61}^{400} \frac{80^{i}}{i!} e^{-80}$
+
+3
+$\sum_{i=0}^{60} \frac{\binom{80}{i}\binom{320}{100-i}}{\binom{400}{100}}$
+
+4 Φ(2, 2) − Φ( − 1, 96)
+
+5 Φ( − 2, 4)
+
+6 Ved ikke
+
+Fortsæt på side 6
+
+Opgave 9
+
+Parret (X, Y) er standardiseret bivariat normalfordelt med korrelation
+$\rho=\frac{3}{5}$.
+
+Spørgsmål 9
+
+Man finder $\mathrm{P}\left(\frac{1}{2} X<Y<2 X\right)$ til
+
+1 $\frac{2 \pi-\operatorname{Arctan}\left(\frac{7}{4}\right)}{2 \pi}$
+2 $\frac{1}{6}$
+
+3 $\frac{\operatorname{Arctan}\left(\frac{15}{8}\right)}{2 \pi}$
+
+4
+$\frac{\operatorname{Arctan}\left(\frac{7}{4}\right)+\operatorname{Arctan}\left(\frac{1}{8}\right)}{2 \pi}$
+5
+$\frac{\operatorname{Arctan}\left(\frac{7}{8}\right)+\operatorname{Arctan}\left(\frac{1}{8}\right)}{\pi}$
+6 Ved ikke
+
+Opgave 10
+
+Man har X_(i) ∼ exp (λ), i = 1, 2, 3 uafhængige. Man danner
+Y = X₁ + X₂ + X₃.
+
+Spørgsmål 10
+
+Den simultane tæthed f(x, y) af X₁ og Y findes til
+
+1 f(x, y) = λe^( − λx)λ(λy)e^( − λy) = λ³ye^( − λ(x + y))
+
+2
+$f(x, y)=\lambda e^{-\lambda x} \lambda \frac{(\lambda y)^{2}}{2} e^{-\lambda y}=\lambda^{4} \frac{y^{2}}{2} e^{-\lambda(x+y)}$
+
+3 f(x, y) = λe^( − λx)λ(λ(y − x))e^( − λ(y − x)) = λ³(y − x)e^( − λy)
+
+4
+$f(x, y)=\lambda e^{-\lambda x} \lambda \frac{(\lambda(y-x))^{2}}{2} e^{-\lambda y}=\lambda^{4} \frac{(y-x)^{2}}{2} e^{-\lambda y}$
+
+5
+$f(x, y)=\lambda \frac{(\lambda y)^{2}}{2} e^{-\lambda y} \cdot \frac{1}{3}=\lambda^{3} \frac{y^{2}}{6} e^{-\lambda y}$
+
+6 Ved ikke
+
+Opgave 11
+
+Man kan antage, at hjertestopspatienter ankommer til en skadestue
+uafhængigt af hinanden og med en gennemsnitlig hyppighed af 24 i døgnet.
+Som en første tilnærmelse antages, at denne hyppighed er konstant
+henover døgnet.
+
+Spørgsmål 11
+
+Sandsynligheden for, at der højest ankommer 2 hjertestopspatienter i en
+4 timers periode, er
+$1 \square \frac{\binom{12}{2}^{2}}{\binom{24}{4}}$
+2 $\left(\frac{5}{6}\right)^{2}+2 \cdot \frac{5}{6} \frac{1}{6}$
+
+3 $\sum_{i=0}^{2}\binom{4}{i} \frac{1}{16}$
+
+4 Φ( − 1)
+
+5 $\left(1+4+\frac{4^{2}}{2!}\right) e^{-4}$
+
+6 Ved ikke
+
+Opgave 12
+
+Lad X og Y være to uafhængige stokastiske variable, med
+E(X) = μ_(X), E(Y) = μ_(Y), Var (X) = σ_(X)² og Var (Y) = σ_(Y)².
+
+Spørgsmål 12
+
+Man finder
+
+1 Var (XY) = σ_(X)²σ_(Y)² + μ_(X)²σ_(Y)² + μ_(Y)²σ_(X)² − μ_(X)²μ_(Y)²
+
+2 Var (XY) = σ_(X)²σ_(Y)²
+
+3 Var (XY) = σ_(X)²σ_(Y)² − μ_(X)²μ_(Y)²
+
+4 Var (XY) = σ_(X)²σ_(Y)² + μ_(X)²σ_(Y)² + μ_(Y)²σ_(X)²
+
+5 Var (XY) = σ_(X)²σ_(Y)² + μ_(X)²μ_(Y)²
+
+6 Ved ikke
+
+Opgave 13
+
+Man har frekvensfunktionen f(x, y) = 6(x − y) for den simultane
+fordeling af maximum (X) og minimum (Y) af 3 uafhængige uniformt (0, 1)
+fordelte stokastiske variable.
+
+Spørgsmål 13
+
+Sandsynligheden for at observere maximum mellem 0,9 og 0,91 samtidigt
+med, at minimum er mellem 0,1 og 0,11 findes (eventuelt approksimativt)
+til
+
+1 6 ⋅ 0, 8 ⋅ 0, 01²
+
+2 ∫₀^(0, 1)∫₀^(0, 9)6(x − y)dx dy
+
+3 0,48
+
+4 6(0, 91 − 0, 10) − 6(0, 9 − 0, 11)
+
+5 6(0, 9 − 0, 1)
+
+6 Ved ikke
+
+Opgave 14
+
+En stokastisk variabel X er uniformt fordelt på intervallet fra
+$-\frac{1}{2}$ til $\frac{1}{2}$. Man danner en ny variabel Y = X² med
+tæthedsfunktion f_(Y)(y).
+
+Spørgsmål 14
+
+Tæthedsfunktionen f_(Y)(y) er
+
+1 $f_{Y}(y)=\frac{1}{2 \sqrt{|y|}}$ for
+$y \in\left[0 ; \frac{1}{4}\right]$ og 0 ellers.
+
+2 $f_{Y}(y)=\frac{1}{\sqrt{|y|}}$ for
+$y \in\left[0 ; \frac{1}{4}\right]$ og 0 ellers.
+
+3 $f_{Y}(y)=\frac{1}{2 \sqrt{|y|}}$ for
+$y \in\left[-\frac{1}{4} ; \frac{1}{4}\right]$ og 0 ellers.
+
+4 $f_{Y}(y)=\frac{1}{\sqrt{|y|}}$ for
+$y \in\left[-\frac{1}{4} ; \frac{1}{4}\right]$ og 0 ellers.
+
+5 f_(Y)(y) = 4 for $y \in\left[0 ; \frac{1}{4}\right]$
+
+6 Ved ikke
+
+Opgave 15
+
+De stokastiske variable (X, Y) er bivariat normalfordelt med
+X ∼ normal (1, 4), Y ∼ normal (2, 9) og korrelationskoefficient
+$\rho=-\frac{1}{4}$.
+
+Spørgsmål 15
+
+Man finder P(X − Y ≤ 0) til
+
+1 $\Phi\left(\frac{1}{\sqrt{13}}\right)$
+2 $\Phi\left(\frac{1}{3}\right)$
+
+3 $\Phi\left(\frac{1}{\sqrt{12}}\right)$
+
+4 $\Phi\left(\frac{1}{4}\right)$
+
+5 $\Phi\left(\frac{1}{\sqrt{2}}\right)$
+6 Ved ikke
+
+Opgave 16
+
+For de tre hændelser A, B og C kendes
+P(A), P(B), P(C), P(A ∩ B), P(A ∩ C), P(A ∩ B ∩ C) og P(A ∪ B ∪ C). Man
+ϕ nsker at bestemme P(B ∩ C).
+
+Spørgsmål 16
+
+Man finder P(B ∩ C) ved
+
+1 P(B ∩ C) = P(A) + P(B) + P(C) − P(A ∩ B) − P(A ∪ B ∪ C)
+
+2 P(B ∩ C) = P(A) + P(B) + P(C) − P(A ∩ B) + P(A ∩ B ∩ C) − P(A ∪ B ∪ C)
+
+3
+P(B ∩ C) = P(A) + P(B) + P(C) − P(A ∩ B) − P(A ∩ C) + P(A ∩ B ∩ C) − P(A ∪ B ∪ C)
+
+4 P(B ∩ C) = P(A ∪ B ∪ C) − P(A) − P(B) − P(C) + P(A ∩ B) − P(A ∩ B ∩ C)
+
+5 P(B ∩ C) = P(B) + P(C) − P(A ∪ B ∪ C)
+
+6 Ved ikke
+
+Opgave 17
+
+Antallet af fejl i et materiale kan beskrives ved en Poissonfordeling
+med middelværdi γ. Man kan benytte en model, hvor F_(i) angiver
+hændelsen, at der er i fejl i materialet. Alternativt kunne man benytte
+en model med en stokastisk variabel N, hvor N beskriver antallet af fejl
+i materialet. Man ønsker at udtrykke sandsynligheden for hændelsen
+H = (F₀∪F₁∪F₂) ved brug af N.
+
+Spørgsmål 17
+
+P(H) kan alternativt udtrykkes som
+
+1 P(H) = P(N ≤ 2)
+
+2 P(H) = P(N₀) + P(N₁) + P(N₂)
+
+3 P(H) = P(F_(i)≤2)
+
+4 P(H) = P(N = 0, N = 1, N = 2)
+
+5 Man kan ikke på det foreliggende grundlag udtrykke P(H) ved brug af N.
+
+6 Ved ikke
+
+Opgave 18
+
+En bestemt fiskeart lægger et antal æg, der kan beskrives ved en Poisson
+fordelt stokastisk variabel med middelværdi μ. Hvert æg vil med
+sandsynligheden p give en fiskelarve af hunkøn og med sandsynligheden
+1 − p give en fiskelarve af hankøn.
+
+Spørgsmål 18
+
+Det forventede antal æg fra en fisk fra denne fiskeart, der giver en
+fiskelarve af hunkøn, er
+
+1 $\frac{\mu}{p}$
+
+2 μp
+
+3 μ(1 − p)
+
+4 μ(p+p²)
+
+5 μp(1 − p)
+
+6 Ved ikke
+
+Opgave 19
+
+I et fysisk eksperiment sendes elektroner i høj hastighed mod en plade,
+der i denne sammenhæng kan antages at være af uendelig udstrækning.
+Elektronerne skydes mod et bestemt punkt på pladen. Grundet
+tilfældigheder rammer elektronerne ikke præcist i dette punkt. Det
+punkt, hvor en elektron rammer, kan beskrives ved koordinatsættet ( X, Y
+), hvor X og Y er uafhængige standard normalfordelte variable. Det er af
+særlig interesse, om de rammer mellem 1 og 2 længdeenheder fra
+sigtepunktet (koordinatsystemets nulpunkt).
+
+Spørgsmål 19
+
+Sandsynligheden for, at en elektron rammer mellem 1 og 2 længdeenheder
+fra sigtepunktet, findes til
+
+1 Φ(2) − Φ(1)
+2 2(Φ(2) − Φ(1))
+3 $\exp \left(-\frac{1}{2}\right)-\exp (-2)$
+4 $1-\sum_{r=0}^{1} \frac{x^{r}}{r!} e^{-x}$
+5 e^( − 2)
+6 Ved ikke
+
+Opgave 20
+
+Et radiokommunikationssystem til brug for jernbanedrift har en kritisk
+tidsgrænse for en signalvej - den såkaldte round trip time. Man kender
+både middelværdi og standardafvigelse for denne, der er henholdsvis 12
+ms og 6 ms . Man ønsker at bestemme en værdi for roundtrip time, der
+maksimalt overskrides med sandsynligheden $\frac{1}{9}$.
+
+Spørgsmål 20
+
+Den ønskede grænse bestemmes til
+
+1 30 ms
+2 66 ms
+3 120 ms
+4 $\left(12+6 \Phi^{-1}\left(\frac{17}{18}\right)\right) \mathrm{ms}$
+5 $\left(12+6 \Phi^{-1}\left(\frac{8}{9}\right)\right) \mathrm{ms}$
+6 Ved ikke
+hvor Φ^( − 1) angiver den omvendte funktion til fordelingsfunktionen for
+en standard normalfordelt variabel.
+
+Opgave 21
+
+Levetiden af en elektronisk komponent kan med god tilnærmelse beskrives
+ved en eksponential( λ ) fordelt stokastisk variabel. Man ved, at
+komponenten har opnået alderen t.
+
+Spørgsmål 21
+
+Under de givne oplysninger, hvad er da sandsynligheden for, at
+komponenten fejler netop i intervallet [t, t + dt]. Svaret kan eventuelt
+angives approksimativt
+
+1 λdt
+
+2 λe^( − λt) dt
+
+3 e^( − λt) − e^( − λ(t + dt))
+
+4 $\frac{\lambda e^{-\lambda t}}{1-e^{-\lambda t}} \mathrm{~d} t$
+
+5 λe^( − λt)
+
+6 Ved ikke
+
+Opgave 22
+
+Lad X være en positiv stokastisk variabel, således at
+P(X ≤ x) = 1 − e^( − λx). Man danner nu $Y=\frac{1}{X}$.
+
+Spørgsmål 22
+
+Man finder P(Y ≤ y) til
+
+1 $\mathrm{P}(Y \leq y)=1-e^{-\frac{\lambda}{y}}$
+
+2 $\mathrm{P}(Y \leq y)=1-e^{-\frac{y}{\lambda}}$
+
+3 $\mathrm{P}(Y \leq y)=e^{-\frac{y}{\lambda}}$
+
+4 $\mathrm{P}(Y \leq y)=e^{-\frac{1}{\lambda y}}$
+
+5 $\mathrm{P}(Y \leq y)=e^{-\frac{\lambda}{y}}$
+
+6 Ved ikke
+
+Opgave 23
+
+I et terningespil med seks almindelige sekssidede terninger gælder det
+om at få flest mulige seksere. Der kastes højest 2 omgange, idet alle de
+seksere, der opnåes i første kast, tages fra, hvorefter andet kast
+foretages med de terninger, der ikke viste seks ved første kast.
+
+Spørgsmål 23
+
+Antag, at man i første kast opnår v seksere. Man finder da
+sandsynligheden for i alt at opnå w seksere til
+$1 \square\binom{6}{w}\left(\frac{1}{6}\right)\left(\frac{5}{6}\right)$
+$2 \square \quad \frac{1}{6-v}$
+$3 \square \quad\binom{6-v}{w-v}\left(\frac{1}{6}\right)^{w-v}\left(\frac{5}{6}\right)^{6+v-w}$
+$4 \square \quad \frac{1}{6}$
+$5 \square \quad\binom{6-v}{w-v}\left(\frac{1}{6}\right)^{w-v}\left(\frac{5}{6}\right)^{6-w}$
+6▫   Ved ikke
+
+Opgave 24
+
+Et punkt vælges tilfældigt i en cirkelskive. En ret linie tegnes gennem
+punktet og cirklens centrum.
+
+Spørgsmål 24
+
+Sandsynligheden for, at den numeriske værdi af liniens hældning er
+mindre end 1, er
+$1 \square \frac{\operatorname{Arctan}\left(\frac{2}{5}\right)}{\pi}$
+$2 \square \frac{1}{\pi}$
+$3 \square \quad \frac{1}{4}$
+$4 \square \quad \frac{1}{3}$
+$5 \square \quad \frac{1}{2}$
+6▫   Ved ikke
+
+Opgave 25
+
+Årsagen til flystyrt kan meget groft kategoriseres som enten a.
+menneskelig fejl, b. mekanisk fejl, c. terrorhandling. Sandsynligheden
+for, at der sker en menneskelig fejl ved en flyafgang, er
+$\frac{1}{50}$, medens sandsynligheden for, at der sker en mekanisk
+fejl, er $\frac{1}{500}$, og endelig er sandsynligheden for, at en
+flyafgang udsættes for en terrorhandling, $\frac{1}{500000}$. Sker en
+menneskelig fejl, er sandsynligheden for, at der indtræffer et flystyrt,
+$\frac{1}{10000}$, medens sandsynligheden for, at der indtræffer et
+flystyrt ved en mekanisk fejl er $\frac{1}{1000}$, og endelig er
+sandsynligheden for, at der sker et flystyrt ved en terrorhandling,
+$\frac{2}{3}$. Man kan antage, at højst en af de tre årsager kan
+indtræffe og at et flystyrt altid kan tilskrives en af de tre årsager.
+
+Spørgsmål 25
+
+Givet et flystyrt indtræffer, findes sandsynligheden for, at det skyldes
+en terrorhandling, til
+
+1 $\frac{1}{4}$
+2 $\frac{2}{3}$
+
+3 $\frac{1}{3} \cdot 10^{-6}$
+
+4 20000 20033
+5 $\frac{1}{3}$
+6 Ved ikke
+
+Opgave 26
+
+Man har 5 uafhængige eksponential( μ ) fordelte variable.
+
+Spørgsmål 26
+
+Tætheden g(x) for den næststørste af de 5 variable findes til
+
+1 $g(x)=\mu \frac{(\mu x)^{4}}{4!} e^{-\mu x}$
+
+2 $g(x)=\frac{\mu}{4} e^{-\frac{\mu}{4} x}$
+
+3 $g(x)=\frac{5!}{3!} x^{3}(1-x)$
+
+4 g(x) = 20μe^( − 4μx) − 20μe^( − 4μx)
+
+5 g(x) = 20μe^( − 2μx) − 60μe^( − 3μx) + 60μe^( − 4μx) − 20μe^( − 5μx)
+
+6 Ved ikke
+
+Opgave 27
+
+Eksponentialfordelingen svarer til den geometriske fordeling som
+gammafordelingen svarer til?
+
+Spørgsmål 27
+
+1 Binomialfordelingen
+
+2 Den hypergeometriske fordeling
+
+3 Den uniforme fordeling
+
+4 Den negative binomialfordeling
+
+5 Poissonfordelingen
+
+6 Ved ikke
+
+Opgave 28
+
+Om de to stokastiske variable X og Y oplyses det, at
+E(X) = 4, E(Y) = 7, SD(X) = 10, SD(Y) = 5 og Cov (X, Y) = 0, 5.
+Endvidere indføres U = 3X − 2Y + 1.
+
+Spørgsmål 28
+E(U) bestemmes til
+
+1 -2
+
+2  − 1
+
+3 26
+
+4 26, 5
+
+5 27
+
+6 Ved ikke
+
+Opgave 29
+
+Ved fiskeri efter tobis fås typisk en vis bifangst af sild. Fangsten af
+hver fiskeart ved et tilfældigt trawltræk kan beskrives rimeligt godt
+med en normalfordeling med middelværdi 10 ton (tobis) og 1 ton (sild)
+samt standardafvigelse 2 ton (tobis) og 0,3 ton (sild). Den simultane
+fordeling kan antages normal med korrelationskoefficient 0,7 . I et
+trawltræk har man fanget 14 ton tobis.
+
+Spørgsmål 29
+
+Den forventede bifangst af sild findes til
+
+1 1 ton
+
+2 1,24 ton
+
+3 1,42 ton
+
+4 1,49 ton
+
+5 1,6 ton
+
+6 Ved ikke
+
+Opgave 30
+
+Man har de to kontinuerte stokastiske variable X og Y med simultan
+frekvensfunktion f(x, y) = K(y − x)(1 − y), 0 < x < y < 1, hvor K er
+normeringskonstant.
+
+Spørgsmål 30
+
+I Y ’s værdimængde finder man den marginale tæthed f_(Y)(y) til
+
+1 $f_{Y}(y)=\frac{K}{2}(1-y)^{3}$
+
+2 $f_{Y}(y)=\frac{K}{2} y(1-y)^{2}$
+
+3 $f_{Y}(y)=\frac{K}{2} y^{2}(1-y)$
+
+4 $f_{Y}(y)=\frac{K}{4}(1-y)$
+
+5 f_(Y)(y) = 1
+
+6 Ved ikke
+
+Slut på opgavesættet.

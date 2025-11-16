@@ -1,0 +1,699 @@
+Opgave 1
+
+Fly ankommer til en lufthavn efter en Poissonproces med intensitet 4 fly
+pr. kvarter. Vi betragter ankomsten af fly fra et givet tidspunkt.
+
+Spørgsmål 1
+
+Sandsynligheden for, at det sjette fly ikke er ankommet indenfor en halv
+time, er
+$1 \square \Phi\left(\frac{2-1.5}{\sqrt{\frac{3}{8}}}\right)$
+$2 \square \quad 1-\left(\Phi\left(\frac{2-0.25}{\frac{1}{4}}\right)\right)^{6}$
+$3 \square \quad 1-\Phi\left(\frac{2-1.5}{\sqrt{\frac{3}{8}}}\right)$
+$4 \square \quad \sum_{i=0}^{5} \frac{8^{i}}{i!} e^{-8}$
+5▫  1 − (1−e^( − 8))⁶
+6▫   Ved ikke
+
+Opgave 2
+
+De personlige formuer i et land er rimeligt beskrevet ved funktionen
+$F(x)=1-e^{-\left(\frac{\log \left(\frac{x}{\alpha}\right)}{\beta}\right)^{2}}, x> \alpha$,
+således at F(x) angiver andelen af indbyggere med en formue mindre end
+x.
+
+Spørgsmål 2
+
+Netop 75% af indbyggerne har en formue under
+
+1 $\alpha \exp (\beta \sqrt{\log (4)})$
+
+2 α + 0.6745β
+
+3 $\alpha+\beta \exp (\sqrt{\log (4)})$
+
+4 $(\alpha+0.6745 \beta)^{\frac{3}{4}}$
+
+5 $\sqrt{\log (4)} \alpha \beta$
+
+6 Ved ikke
+
+Opgave 3
+
+Man har to æsker med marmorkugler. I æske 1 er der 4 sorte og 8 hvide
+kugler, i æske 2 er der 6 sorte og 18 hvide kugler. Man vælger en æske
+tilfældigt og tager herefter en kugle tilfældigt fra denne æske.
+
+Spørgsmål 3
+
+Hvis den trukne kugle er hvid, hvad er da sandsynligheden for, at det
+var æske 1, der blev valgt.
+
+1 $\frac{2}{3}$
+
+2 $\frac{1}{2}$
+
+3 $\frac{8}{17}$
+
+4 $\frac{8}{26}$
+
+5 $\frac{1}{3}$
+
+6 Ved ikke
+
+Opgave 4
+
+Lad X, være eksponentialt fordelt med parameter λ, i.e.
+F(x) = 1 − e^( − λx).
+
+Spørgsmål 4
+
+Man finder
+
+1 $E\left(e^{X}\right)=e^{\frac{1}{\lambda}}$
+
+2 E(e^(X)) = e^(λ)
+
+3 $E\left(e^{X}\right)=\frac{\lambda}{\lambda-1}$ for λ > 1 ellers
+udefineret
+
+4 ∞ (udefineret)
+
+5 $E\left(e^{X}\right)=\frac{1}{\lambda}$
+
+6 Ved ikke
+
+Opgave 5
+
+En kontinuert stokastisk variabel X har fordelingsfunktionen
+$F(x)=1-e^{-\frac{1}{2} x^{2}}, x \geq 0$.
+
+Spørgsmål 5
+
+Hazard rate for X findes til
+
+1 x,  x ≥ 0
+2 $\frac{1}{2}, \quad x \geq 0$
+
+3
+$\frac{e^{-\frac{1}{2} x^{2}}}{1-e^{-\frac{1}{2} x^{2}}}, \quad x \geq 0$
+
+4 $\frac{2}{x}, \quad x \geq 0$
+
+5
+$\frac{1-e^{-\frac{1}{2} x^{2}}}{e^{-\frac{1}{2} x^{2}}}, \quad x \geq 0$
+
+6 Ved ikke
+
+Opgave 6
+
+For hændelserne A og B kender man P(A) og P(B), hvor P(A) > P(B) samt
+P(A ∪ B). Man ønsker at bestemme sandsynligheden for, at A og B
+indtræffer samtidigt.
+
+Spørgsmål 6
+
+Den ønskede sandsynlighed (hændelserne A og B indtræffer begge) findes
+ved brug af
+
+1 P(A)P(B)
+
+2 P(A ∪ B) − P(A) − P(B)
+
+3 P(A) + P(B) − P(A ∪ B)
+
+4 P(A) − P(B)
+
+5 P(B^(c)) − P(A^(c))
+
+6 Ved ikke
+
+Opgave 7
+
+En producent har på et givet tidspunkt et problem med
+campylobacterforurening af æg. Sandsynligheden for, at et tilfældigt
+valgt æg er forurenet med campylobacter er ϕ, forekomsten af
+campylobacter mellem forskellige æg i en æggebakke kan antages at være
+uafhængig.
+
+Spørgsmål 7
+
+Sandsynligheden for, at der højst er 2 æg med campylobacter i en bakke
+med 10 æg, er
+
+1 $\sum_{i=0}^{2} \frac{(10 \phi)^{i}}{i!} e^{-20 \phi}$
+
+2 (1 − ϕ)¹⁰ + 10ϕ(1 − ϕ)⁹ + 45ϕ²(1 − ϕ)⁸
+
+3 ϕ¹⁰ + 10ϕ⁹(1 − ϕ) + 45ϕ⁸(1 − ϕ)²
+
+4
+$\frac{\binom{10 \phi}{0}\binom{10-10 \phi}{2}}{\binom{10}{2}}+\frac{\binom{10 \phi}{1}\binom{10-10 \phi}{1}}{\binom{10}{2}}+\frac{\binom{10 \phi}{2}\binom{10-10 \phi}{0}}{\binom{10}{2}}$
+
+5
+$\Phi\left(\frac{2+\frac{1}{2}-10 \phi}{\sqrt{10 \phi(1-\phi)}}\right)$
+
+6 Ved ikke
+
+Opgave 8
+
+De stokastiske variable X og Y er uafhængige og begge uniformt fordelt
+på [0, 1]. Lad A betegne hændelsen {Y<cos²(πX)}.
+
+Spørgsmål 8
+
+Bestem den betingede sandsynlighedstæthed for X givet A, som funktion af
+x.
+
+1 1
+
+2 cos²(πx)
+
+3 2cos²(πx)
+
+4 $\frac{\pi}{2}|\cos (\pi x)|$.
+
+5 sin²(πx)
+
+6 Ved ikke
+
+Opgave 9
+
+Til en politiopgave skal udtages en gruppe på 5 hunde. De 5 hunde skal
+tages fra en gruppe af 40 hunde, hvoraf man ved, at 12 har en særlig
+evne til at spore narkotika. Af praktiske grunde udtages de 5 hunde
+tilfældigt.
+
+Spørgsmål 9
+
+Sandsynligheden for, at ingen af de 5 hunde har en særlig evne til at
+spore narkotika, er
+
+1 $\left(\frac{7}{10}\right)^{5}$
+
+2 $\frac{\binom{12}{0}\binom{28}{5}}{\binom{40}{5}}$
+
+3 $\left(\frac{7}{10}\right)^{5} \frac{3}{10}$
+
+4 $\left(\frac{7}{10}\right)^{4} \frac{3}{10}$
+
+5
+$1 \cdot \frac{27}{39} \cdot \frac{26}{38} \cdot \frac{25}{37} \cdot \frac{24}{36}$
+
+6 Ved ikke
+
+Opgave 10
+
+Parret af de kontinuerte stokastiske variable X og Y har
+tæthedsfunktonen f(x, y) = 2 for 0 < y < x, 0 < x < 1 og f(x, y) = 0
+andre steder.
+
+Spørgsmål 10
+
+Man finder variansen af summen Var (X + Y) til
+
+1 $\frac{1}{3}$
+
+2 $\frac{1}{6}$
+3 $\frac{1}{9}$
+
+4 $\frac{1}{18}$
+
+5 Kan ikke bestemmes.
+
+6 Ved ikke
+
+Opgave 11
+
+Et punkt vælges tilfældigt indenfor området angivet på nedenstående
+figur. Området svarer til den øvre halvdel af en cirkel med centrum i
+(1, 1) og radius 1 . Koordinaterne til det tilfældigt valgte punkt
+betegnes med de stokastiske variable ( X, Y ).
+[image]
+
+Spørgsmål 11
+
+Sandsynligheden P(X > Y) findes til
+
+1 0
+
+2 $\frac{1}{8}$
+
+3 $\frac{1}{4}$
+
+4 $\frac{1}{3}$
+
+5 $\frac{1}{2}$
+
+6 Ved ikke
+
+Opgave 12
+
+Middelantallet af utilsigtede hændelser i en lægepraksis har igennem en
+årrække været 4,5 per måned.
+
+Spørgsmål 12
+
+Den mest oplagte sandsynlighedsteoretiske model blandt nedenstående til
+at beskrive det månedlige antal af utilsigede hændelser i lægepraksissen
+er
+
+1 Binomialfordelingen
+
+2 Poissonfordelingen
+
+3 Den hypergeometriske fordeling
+
+4 Eksponentialfordelingen
+
+5 Normalfordelingen
+
+6 Ved ikke
+
+Opgave 13
+
+Gensekvenser angives ved brug af de fire bogstaver (A,C,G,T). I denne
+opgave vil vi betragte delsekvenser, der har længder, der er multipla af
+3. Eksempelvis CAG og CAGGAT. Her skal vi kun betragte sekvenserne ACG
+og TTA. Sandsynligheden for, at en sekvens indledes med ACG, er 0,14.
+Sandsynligheden for, at en sekvens, der er indledt med ACG, efterfølges
+af TTA, er 0,06.
+
+Spørgsmål 13
+
+Sandsynligheden for at observere en sekvens, der indledes med ACGTTA,
+findes til
+
+1 0,2
+
+2 0,0084
+
+3 0,08
+
+4 0,14
+
+5 0,0036
+
+6 Ved ikke
+
+Opgave 14
+
+Den stokastiske variabel X er ligefordelt på intervallet [ − 1; 1]. Vi
+betragter nu en ny stokastisk variabel Z = X² med tæthed f_(Z)(z).
+
+Spørgsmål 14
+
+Man finder f_(Z)(z) til
+
+1 $f_{Z}(z)=\frac{1}{4 \sqrt{z}}$
+2 $f_{Z}(z)=\frac{1}{\sqrt{z}}$
+
+3 $f_{Z}(z)=\sqrt{z}$
+
+4 f_(Z)(z) = z
+
+5 $f_{Z}(z)=\frac{1}{2 \sqrt{z}}$
+6 Ved ikke
+
+Opgave 15
+
+Ved produktion af hønsekødssuppe skal en pose ifølge fabrikanten
+indeholde mindst 300 g . Man har målt, at indholdet kan beskrives ved en
+normalfordeling med middelværdi 305 g . og en standard afvigelse på 3 g
+.
+
+Spørgsmål 15
+
+Sandsynligheden for, at der ud af 10 poser med hønsekødssuppe ikke er
+nogen, der indeholder under 300 g . findes til
+
+1 $\left(1-\Phi\left(\frac{300-305}{3}\right)\right)^{10}$
+
+2 $1-\Phi\left(\frac{300-305}{\frac{3}{\sqrt{10}}}\right)$
+
+3 $1-\Phi\left(\frac{300-305}{3}\right)^{10}$
+
+4 $\left(\frac{3}{5}\right)^{10}$
+
+5 $1-\Phi\left(\frac{300-305}{\frac{3}{10}}\right)$
+
+6 Ved ikke
+
+Opgave 16
+
+Lad de uafhængige stokastiske variable X og Y være beskrevet ved hhv. en
+eksponentialfordeling med middelværdi E(X) = 1/λ og en uniform fordeling
+på intervallet [0, a].
+
+Spørgsmål 16
+
+Bestem tætheden for Z = X + Y.
+
+1 f_(X + Y)(z) = 1 − e^( − λz/a), for 0 ≤ z
+2 $f_{X+Y}(z)=\frac{1}{a}\left(1-e^{-\lambda z}\right)$, for 0 ≤ z
+
+3
+$f_{X+Y}(z)= \begin{cases}\lambda z / a, & \text { for } 0 \leq z<a \\ 1-e^{-\lambda z / a}, & \text { for } a \leq z\end{cases}$
+$f_{X+Y}(z)= \begin{cases}\frac{1}{a}\left(1-e^{-\lambda z}\right), & \text { for } 0 \leq z<a \\ \frac{1}{a}\left(e^{\lambda a}-1\right) e^{-\lambda z}, & \text { for } a \leq z\end{cases}$
+
+5
+$f_{X+Y}(z)= \begin{cases}\frac{z}{a} e^{-\lambda a}, & \text { for } 0 \leq z<a \\ \left(1-\frac{a}{2} e^{-\lambda a}\right) \lambda e^{-\lambda(z-a)}, & \text { for } a \leq z\end{cases}$
+6 Ved ikke
+
+Opgave 17
+
+Der kastes en gang med en sædvanlig terning.
+
+Spørgsmål 17
+
+Forventningsværdien af det kvadrerede antal øjne findes til
+
+1 $\frac{9}{4}$
+
+2 $\frac{29}{3}$
+
+3 $\frac{91}{12}$
+
+4 $\frac{29}{2}$
+
+5 $\frac{91}{6}$
+
+6 Ved ikke
+
+Opgave 18
+
+I en klump af beriget uran er andelen af U-235 atomer 25%. Man udtager
+et lille antal på 1200 atomer fra klumpen til brug i et nano-teknologisk
+produkt.
+
+Spørgsmål 18
+
+Sandsynligheden for, at der er højst 325 U-235 atomer i det
+nano-teknologiske produkt findes, eventuelt approksimativt, til
+$1 \square \quad 1-\sum_{i=325}^{1200}\binom{1200}{i}\left(\frac{1}{4}\right)^{4}\left(\frac{3}{4}\right)^{1200-i}$
+$2 \square \quad \Phi\left(\frac{5}{3}\right)$
+$3 \square \quad \sum_{i=1}^{325} \frac{250^{i}}{i!} e^{-250}$
+4▫  Φ(1.7)
+$5 \square \quad \frac{1}{4^{1200}} \sum_{i=0}^{324}\binom{1200}{i} 3^{1200-i}$
+6▫   Ved ikke
+
+Opgave 19
+
+Lad X og Y være uafhængige stokastiske variable, hvor
+E(X) = 30, E(Y) = 80, Var (X) = 30 og Var (Y) = 20. Endvidere dannes
+Z = X − 2Y.
+
+Spørgsmål 19
+
+Var (Z) bestemmes til
+
+1 110
+
+2 70
+
+3 50
+
+4 10
+
+5 -10
+
+6 Ved ikke
+
+Opgave 20
+
+Mængden af et biologisk materiale i et substrat kan med rimelighed
+beskrives ved en normal( 12,4 ) fordeling. Man interesserer sig netop
+for om mængden af det biologiske materiale ligger i intervallet [14; 14,
+01].
+
+Spørgsmål 20
+
+Sandsynligheden for, at mængden af biologisk materiale ligger i
+intervallet [ 14; 14, 01 ] findes, eventuelt approksimativt, til
+
+1 Φ(1)
+
+2
+$\frac{1}{\sqrt{2 \pi}} \frac{1}{2} e^{-\left(\frac{14-12}{2}\right)^{2}}$
+
+3 $\frac{1}{200 \sqrt{2 \pi}} e^{-\frac{1}{2}}$
+
+4 $\frac{1}{200 \sqrt{2 \pi}}$
+
+5 Φ(1, 01)
+
+6 Ved ikke
+
+Opgave 21
+
+Et punkt vælges i planen, således at koordinaterne kan beskrives som
+uafhængige normalfordelte variable hvor E(X) = 1 og E(Y) = 3. Variansen
+af både X og Y koordinaten er 4.
+
+Spørgsmål 21
+
+Sandsynligheden for, at det valgte punkt ligger uden for cirklen
+(X − 1)² + (Y − 3)² = 4, findes til
+
+1
+$1-\int_{3}^{5} \int_{3-\sqrt{4-(x-1)^{2}}}^{3+\sqrt{4-(x-1)^{2}}} \sqrt{x^{2}+y^{2}} e^{-\frac{1}{2}\left(x^{2}+y^{2}\right)} \mathrm{d} y \mathrm{~d} x$
+
+2 (1 − Φ(1))²
+
+3 e^( − 2)
+
+4 e^( − 1)
+
+5 $e^{-\frac{1}{2}}$
+
+6 Ved ikke
+
+Opgave 22
+
+Man har givet X og Y, der er to uafhængige geometrisk fordelte variable,
+således at P(X = x) = P(Y = x) = q(1 − q)^(x − 1) for x = 1, 2, ….
+
+Spørgsmål 22
+
+Man beregner P(X = x ∣ X + Y = m) til
+
+1
+
+$$P(X=x \mid X+Y=m)=\binom{m}{x} 2^{-m}$$
+
+2
+
+$$P(X=x \mid X+Y=m)=\frac{q(1-q)^{x-1} q(1-q)^{m-x}}{\binom{m+1}{m} q^{2}(1-q)^{m-1}}$$
+
+3
+
+$$P(X=x \mid X+Y=m)=\frac{q(1-q)^{x-1}}{\sum_{i=1} m q(1-q)^{i-1}}$$
+
+4
+
+$$P(X=x \mid X+Y=m)=\frac{1}{m}$$
+
+5
+
+$$P(X=x \mid X+Y=m)=\frac{1}{m-1}$$
+
+6 Ved ikke
+
+Opgave 23
+
+En kunde ønsker at bestille bord på en populær restaurant, men den
+tilknyttede hjemmeside er overbelastet. Alle der prøver at komme ind på
+hjemmesiden har lige stor sandsynlighed for at blive ladt igennem, og
+der er en sandsynlighed på $\frac{1}{20}$ for at komme ind ved det
+enkelte forsøg.
+
+Spørgsmål 23
+
+Sandsynligheden for, at kunden kommer igennem til hjemmesiden netop i
+tredje forsøg, findes til
+
+1 $\frac{e^{-0,05} 0,05^{3}}{3!}$
+
+2 $\frac{e^{-0,95} 0,95^{3}}{3!}$
+
+3 $\frac{19^{2}}{20^{3}}$
+
+4 $\frac{19^{2}}{20^{2}}$
+
+5 $\frac{1}{20^{3}}$
+6 Ved ikke
+
+Opgave 24
+
+SM-Rådet (software-matematik) er igang med at arrangere julefrokost, og
+vil gerne have en ide om hvor mange snapseglas, der skal være. De ved,
+at folk kommer i grupper og regner derfor med at der enten bliver 80,
+120, eller 160 spisende gæster, med de respektive sandsynligheder
+0, 20, 0, 50, og 0,30 . Ydermere ved de af erfaring, at antallet af
+snapseglas brugt ialt er binomialfordelt med parametre n²/40 og 0,25 ,
+hvor n er antallet af gæster.
+
+Spørgsmål 24
+
+Hvor mange snapseglas vil man forvente, der bliver brugt i løbet af
+aftenen?
+
+1 90
+
+2 385
+
+3 97
+
+4 101
+
+5 360
+
+6 Ved ikke
+
+Opgave 25
+
+Et fragtskib har et planlagt ankomsttidspunkt til en havn. Den faktiske
+ankomsttids afvigelse fra den planlagte kan beskrives ved en stokastisk
+variabel med middelværdi nul og en standardafvigelse på en dag.
+
+Spørgsmål 25
+
+En øvre grænse for sandsynligheden for, at fragtskibet kommer mere end
+fem dage for sent, findes til
+
+1 $\frac{1}{50}$
+2 $\frac{1}{25}$
+
+3 $\frac{1}{10}$
+
+4 $\frac{1}{5}$
+
+5 Spørgsmålet kan ikke besvares grundet manglende oplysninger.
+
+6 Ved ikke
+
+Opgave 26
+
+Man har den simultane tæthed f(x, y) = 6(y − x), for X og Y, hvor
+0 < x < y < 1.
+
+Spørgsmål 26
+
+Man finder
+$P\left(\frac{1}{4} \leq X \leq \frac{3}{4}, \frac{1}{4} \leq Y \leq \frac{3}{4}\right)$
+til
+
+1 1/4
+
+2
+$\int_{\frac{1}{4}}^{\frac{3}{4}} \int_{\frac{1}{4} y}^{\frac{3}{4} y} 6(y-x) \mathrm{d} x \mathrm{~d} y$
+
+3
+$\int_{\frac{1}{4}}^{\frac{3}{4}} \int_{\frac{1}{4}}^{\frac{3}{4}} 6(y-x) \mathrm{d} y \mathrm{~d} x$
+
+4
+$\int_{\frac{1}{4}}^{\frac{3}{4}} \int_{x}^{\frac{3}{4}} 6(y-x) \mathrm{d} y \mathrm{~d} x$
+
+5
+$\int_{\frac{1}{4}}^{\frac{3}{4}} \int_{y}^{\frac{3}{4}} 6(y-x) \mathrm{d} x \mathrm{~d} y$
+
+6 Ved ikke
+
+Opgave 27
+
+I en kommune regner man med, at rottebekæmpelsen skal aktiveres
+gennemsnitligt fire gange per år, og, at antallet af aktiveringer med
+rimelighed kan beskrives ved en Poissonfordeling. I et givet år
+registreres otte tilfælde, hvor rottebekæmpelsen skal aktiveres.
+
+Spørgsmål 27
+
+Hvis kommunens forudsætninger er korrekte findes sandsynligheden for, at
+rottebekæmpelsen skal aktiveres otte gange eller mere til
+
+1 0,0511
+
+2 0,0298
+
+3 0,0214
+
+4 0,0081
+
+5 0,9004
+
+6 Ved ikke
+
+Opgave 28
+
+I et passende valgt normeret målesystem kan man beskrive lungefunktion
+og blodtryk hos personer med kronisk obstruktiv lungelidelse som en
+standardiseret bivariat normalfordeling med korrelationskoefficient
+$-\frac{\sqrt{2}}{2}$.
+
+Spørgsmål 28
+
+Sandsynligheden for, at en tilfældigt valgt person med kronisk
+obstruktiv lungelidelse har både lungefunktion og blodtryk under
+normalen, findes til
+
+1 $\frac{1}{8}$
+
+2 $\frac{1}{4}$
+
+3 $\frac{3}{8}$
+
+4 $\frac{\operatorname{Arctan}(\sqrt{2})}{2 \pi}$
+
+2
+$\frac{\frac{\pi}{2}-\operatorname{Arctan}\left(\frac{\sqrt{2}}{2}\right)}{2 \pi}$
+
+6 Ved ikke
+
+Opgave 29
+
+Det antages, at kropslængde og vægt for slagterisvin kan beskrives ved
+en bivariat normalfordeling med korrelationskoefficienten ρ = 0.25,
+således at E(L) = 1.2 m, Var (L) = (0.1 m)², E(V) = 85 kg og
+Var (V) = (3 kg)². Her er L og V stokastiske variable, der betegner
+henholdsvis længde og vægt af slagtegrisen.
+
+Spørgsmål 29
+Sandsynligheden for, at et svin med længde 1 m har en vægt på mindst 90
+kg , er
+
+1 $1-\Phi\left(\frac{5}{3}\right)$
+
+2
+$1-\Phi\left(\frac{\frac{3}{2}+\frac{1}{3}}{\frac{\sqrt{15}}{4}}\right)$
+
+3 $\frac{\operatorname{Arctan}(1.2)-\frac{\pi}{4}}{\pi}$
+
+4
+$1-\Phi\left(\frac{\frac{5}{4}+\frac{1}{3}}{\frac{\sqrt{15}}{4}}\right)$
+
+5
+$1-\Phi\left(\frac{\frac{5}{3}+\frac{1}{2}}{\frac{\sqrt{15}}{4}}\right)$
+
+6 Ved ikke
+
+Opgave 30
+
+Parret (X, Y) er standard bivariat normalfordelt med
+korrelationskoefficient $\frac{1}{2}$.
+
+Spørgsmål 30
+
+Man finder P(X + Y ≤ 1) til
+
+1 $\Phi\left(\frac{\sqrt{2}}{2}\right)$
+
+2 $\Phi(\sqrt{2})$
+
+3 Φ(1)
+
+4 $\Phi\left(\frac{\sqrt{3}}{3}\right)$
+
+5 $\frac{1}{4}$
+
+6 Ved ikke
+
+Slut på opgavesættet.

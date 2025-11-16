@@ -1,0 +1,755 @@
+EXERCISE 1
+
+A commissions paid telemarketer calls 20 randomly selected people during her duty. Each customer accepts the offer with a probability of \(10 \%\).
+
+
+
+QUESTION 1
+
+The probability that at most two customers accepts the offer during the telemarketers duty is
+
+1 0.1
+
+2 0.5
+
+3 \(\Phi\left(\frac{\frac{1}{2}}{\sqrt{20 \cdot 0.1 \cdot 0.9}}\right)\)
+
+4 \(5 e^{-2}\)
+
+5 \(\left(\frac{9}{10}\right)^{20}+20 \frac{1}{10}\left(\frac{9}{10}\right)^{19}+190\left(\frac{1}{10}\right)^{2}\left(\frac{9}{10}\right)^{18}\)
+
+6 Do not know
+
+
+
+EXERCISE 2
+
+A person in a damp forest receives on the average one insect bite every 5 minutes. It is assumed that the insects bite independently of each other.
+
+
+
+QUESTION 2
+
+The number of bites a person receives during half an hour is best described by a
+
+1 Poisson(6) distribution
+
+2 geometric \(\left(\frac{1}{6}\right)\) distribution
+
+3 binomial( \(12, \frac{1}{2}\) ) distribution
+
+4 uniform( \(12, \frac{1}{2}\) ) distribution
+
+5 negative binomial( \(12, \frac{1}{2}\) ) distribution
+
+6 Do not know
+
+
+
+EXERCISE 3
+
+Two instruments in a cockpit can replace each other. The probability that the first one fails is \(p\), while the probability that both fail is \(q\). We consider a case where the first instrument has failed.
+
+
+
+QUESTION 3
+
+What is the probability that the second instrument fails too
+
+1 \(p\)
+
+2 \(\frac{q}{p}\)
+
+3 \(p-q\)
+
+4 \(\sqrt{q}\)
+
+5 \(q p\)
+
+6 Do not know
+
+
+
+EXERCISE 4
+
+The random variable \(X\) follows a Poisson(2) distribution, while the random variable \(Y\) follows a hypergeometric(10,100,20) distribution.
+
+
+
+QUESTION 4
+
+One gets
+
+1 \(\mathrm{E}(X+Y)=2+\frac{100!}{90!} \frac{10!}{20!}\)
+
+2 \(\mathrm{E}(X+Y)=\frac{19}{5}\)
+
+3 \(\mathrm{E}(X+Y)=4\)
+
+4 \(\mathrm{E}(X+Y)=\frac{17}{5}\)
+
+5 \(\mathrm{E}(X+Y)\) can not be determined as the Poisson distribution and the hypergeometric distribution are incompatible
+
+6 Do not know
+
+
+
+EXERCISE 5
+
+It is given that \(\mathrm{E}(X)=2, \mathrm{E}\left(X^{2}\right)=4, \mathrm{E}(Y)=0, \mathrm{E}\left(Y^{2}\right)=9\), and \(Z=X+Y\).
+
+
+
+QUESTION 5
+
+One gets
+
+1 \(\operatorname{Var}(Z)=7\)
+
+2 \(\operatorname{Var}(Z)=9\)
+
+3 \(\operatorname{Var}(Z)=11\)
+
+4 \(\operatorname{Var}(Z)=13\)
+
+5 The question can not be answered due to lack of information.
+
+6 Do not know
+
+
+
+EXERCISE 6
+
+A probability model has been developed to describe the occurrence of two species of kangaroos. There is a sufficient number of individuals to make a bivariate normal distribution an appropriate model. The expected number of each species is 800 , the variance for both species is 1600 , while the correlation coefficient is \(\rho=-\frac{2}{5}\). A number of 700 individuals has been counted for one of the species.
+
+
+
+QUESTION 6
+
+The expected number of the second (yet not counted) species is
+
+1 735
+
+2 760
+
+3 800
+
+4 840
+
+5 865
+
+6 Do not know
+
+
+
+EXERCISE 7
+
+The continuous random variable \(V\) is uniformly distributed on the unit interval( 0,1 ). One defines \(X=e^{V}\).
+
+
+
+QUESTION 7
+
+The density \(f_{X}(x)\) for \(X\) is
+
+1 \(f_{X}(x)=e^{-x}, \quad x>0\)
+
+2 \(f_{X}(x)=\frac{1}{e}, \quad 0<x<e\)
+
+3 \(f_{X}(x)=\frac{1}{x}, \quad 1<x<e\)
+
+4 \(f_{X}(x)=\frac{1}{e-1}, \quad 1<x<e\)
+
+5 \(f_{X}(x)=\log (x), \quad 1<x<e\)
+
+6 Do not know
+
+
+
+EXERCISE 8
+
+The life time of an electronic component can be described by a gamma(3,1) distribution, where the time unit is one year. The component has reached an age of 2 years.
+
+
+
+QUESTION 8
+
+The probability that the component fails within one week after it has achieved the age of two years can, possibly approximately, be calculated as
+
+1 \(4 e^{-2} \frac{1}{52}\)
+
+2 \(\int_{2}^{2+\frac{1}{52}} \frac{x^{2}}{2} e^{-x} \mathrm{~d} x\)
+
+3 \(e^{-2} \frac{1}{52}\)
+
+4 \(\frac{\frac{1}{\sqrt{2 \pi}} \frac{1}{\sqrt{3}} e^{-\frac{1}{6}}}{1-\Phi\left(-\frac{\sqrt{3}}{3}\right)} \frac{1}{52}\)
+
+5 \(\frac{1}{130}\)
+
+6 Do not know
+
+
+
+EXERCISE 9
+
+A point is randomly chosen in the area confined by the lines \(x=0, y=4, x+y=6, x=4\), and \(y=0\).
+
+The shaded area in the figure below is confined by the lines \(y=4, x+y=6, x=4\), and \(x+y=4\).
+
+
+    < g r a p h i c s >
+
+
+
+
+QUESTION 9
+
+The probability that the point is in the shaded area is
+
+1 \(\frac{5}{8}\)
+
+2 \(\sqrt{2}-1\)
+
+3 \(\frac{\sqrt{3}-1}{2}\)
+
+4 \(\frac{5}{9}\)
+
+5 \(\frac{3}{7}\)
+
+6 Do not know
+
+
+
+EXERCISE 10
+
+
+
+QUESTION 10
+
+The probability that the second largest of 3 independent uniform( 0,1 ) distributed random variables is between \(\frac{1}{4}\) and \(\frac{3}{4}\) is
+
+1 \(\frac{15}{32}\)
+
+2 \(\frac{1}{2}\)
+
+3 \(\frac{11}{16}\)
+
+4 \(\frac{3}{4}\)
+
+5 \(\frac{21}{32}\)
+
+6 Do not know
+
+
+
+EXERCISE 11
+
+Middle school students are classified according to their abilities within reading and arithmetics, \(42 \%\) read satisfactorily, \(35 \%\) have satisfactory arithmetic skills, while \(55 \%\) have satisfactory skills in at least one of the disciplines.
+
+
+
+QUESTION 11
+
+The percentage of students that have satisfactory skills within both reading and arithmetics is
+
+1 7%
+
+2 \(13 \%\)
+
+3 14.7%
+
+4 \(22 \%\)
+
+5 \(35 \%\)
+
+6 Do not know
+
+
+
+EXERCISE 12
+
+It has been empirically established, that a person, that practises one of the sports cycling \((\mathrm{C})\), football (F), and swimming (S) has an elevated value of hematocrit with probability \(P_{C H}, P_{F H}\), and \(P_{S H}\) respectively. The probability that a person practises cycling, football, or swimming is \(P_{C}, P_{F}\), and \(P_{S}\) respectively. It can be assumed that a person practices exactly one of the three sports mentioned above. A person has an elevated value of hematocrit.
+
+
+
+QUESTION 12
+
+The probability that the person practises football is
+
+1 \(P_{F} P_{F H}\)
+
+2 \(P_{F H}\)
+
+3 \(1-P_{C}-P_{S}+P_{C H}+P_{F H}+P_{S H}\)
+
+4 \(\frac{P_{F} P_{F H}}{P_{C} P_{C H}+P_{F} P_{F H}+P_{S} P_{S H}}\)
+
+5 \(\frac{P_{F H}}{P_{F}\left(P_{C H}+P_{F H}+P_{S H}\right)}\)
+
+6 Do not know
+
+
+
+EXERCISE 13
+
+From a standard deck of cards 5 cards are drawn randomly.
+
+
+
+QUESTION 13
+
+The probability, that among the 5 cards there are exactly 3 red and 2 black cards, is
+
+1 \(\frac{26 \cdot 25 \cdot 24 \cdot 26 \cdot 25}{52 \cdot 51 \cdot 50 \cdot 49 \cdot 48}\)
+
+2 \(\frac{13}{40}\)
+
+3 \(\binom{5}{3}\left(\frac{1}{2}\right)^{2}\left(\frac{1}{2}\right)^{3}\)
+
+4 \(\underline{\binom{26}{3}\binom{26}{2}} \binom{52}{5}\)
+
+5 \(\binom{4}{2}\left(\frac{1}{2}\right)^{2}\left(\frac{1}{2}\right)^{3}\)
+
+6 Do not know
+
+
+
+EXERCISE 14
+
+One considers two independent random variables \(X\) and \(Y\) both following a geometric distribution with parameter \(p\) and \(q\) respectively.
+
+
+
+QUESTION 14
+
+One calculates \(\mathrm{P}(X>Y)\) by
+
+1 \(\mathrm{P}(X>Y)=\frac{q(1-p)}{p+q-p q}\)
+
+2 \(\mathrm{P}(X>Y)=\frac{q}{3 p}\)
+
+3 \(\mathrm{P}(X>Y)=\frac{(1-p)(1-q)}{1-p q}\)
+
+4 \(\mathrm{P}(X>Y)=\frac{p(1-q)}{p+q-p q}\)
+
+5 \(\mathrm{P}(X>Y)=\frac{(1-p) q}{1-p q}\)
+
+6 Do not know
+
+
+
+EXERCISE 15
+
+The random variable \(X\) has density \(2 x\) for \(0<x<1\) and 0 otherwise.
+
+
+
+QUESTION 15
+
+One gets
+
+1 \(\mathrm{P}\left(\frac{1}{4}<X<\frac{1}{2}\right)=\frac{1}{4}\)
+
+2 \(\mathrm{P}\left(\frac{1}{4}<X<\frac{1}{2}\right)=\frac{1}{2}\)
+
+3 \(\mathrm{P}\left(\frac{1}{4}<X<\frac{1}{2}\right)=\frac{3}{16}\)
+
+4 \(\mathrm{P}\left(\frac{1}{4}<X<\frac{1}{2}\right)=\frac{5}{8}\)
+
+5 \(\mathrm{P}\left(\frac{1}{4}<X<\frac{1}{2}\right)=\frac{3}{8}\)
+
+6 Do not know
+
+
+
+EXERCISE 16
+
+Individuals can transfer pictures to a homepage. The size of the pictures can be described by a distribution with density \(f(x)=\frac{\alpha}{\beta}\left(1+\frac{x}{\beta}\right)^{-\alpha-1}\), where \(\alpha\) and \(\beta\) are positive constants.
+
+
+
+QUESTION 16
+
+The probability that the smallest of the 4 pictures has a size exceeding a value of \(x_{0}\) is
+
+1 \(\left(1+\frac{x_{0}}{\beta}\right)^{-4 \alpha}\)
+
+2 \(\frac{\alpha}{\beta}\left(1+\frac{x_{0}}{\beta}\right)^{-4 \alpha-4}\)
+
+3 \(\left(1-\left(1+\frac{x_{0}}{\beta}\right)^{-\alpha}\right)^{4}\)
+
+4 \(\left(1-\frac{\alpha}{\beta}\left(1+\frac{x_{0}}{\beta}\right)^{-\alpha-1}\right)^{4}\)
+
+5 \(\left(1+\frac{4 x_{0}}{\beta}\right)^{-\alpha}\)
+
+6 Do not know
+
+
+
+EXERCISE 17
+
+The random variable \(Y\) is for given \(X=x\) uniformly distributed on the interval ( \(x, 1\) ), while \(X\) has density \(f_{X}(x)=2-2 x, 0 \leq x \leq 1\).
+
+
+
+QUESTION 17
+
+One calculates \(\mathrm{E}(Y)\) to be
+
+1 \(\mathrm{E}(Y)=\frac{2}{3}\)
+
+2 \(\mathrm{E}(Y)=\frac{1}{2}\)
+
+3 \(\mathrm{E}(Y)=\frac{3}{4}\)
+
+4 \(\mathrm{E}(Y)=\frac{3}{5}\)
+
+5 \(\mathrm{E}(Y)=\frac{x+1}{2}\)
+
+6 Do not know
+
+
+
+EXERCISE 18
+
+Visitors in a theme park throw balls against a centered disc. The point of impact for each ball can be described by the coordinates ( \(X_{1}, X_{2}\) ), being the horizontal respectively the vertical distance from the center. It is reasonable to model \(X_{1}\) and \(X_{2}\) as two independent standard normal random variables. To win a price one has to hit a ring with a width of 1 . The inner diameter of the ring is 2 (and thus the outer diameter is 4 ).
+
+
+
+QUESTION 18
+
+The probability that a visitor wins exactly two prices by two throws is
+
+1 \(e^{-1}+e^{-4}-2 e^{-\frac{5}{2}}\)
+
+2 \(e^{-2}\left(1+e^{-2}-2 e^{-1}\right)\)
+
+3 \(\frac{3}{4}\)
+
+4 \(\frac{2 \operatorname{Atan}(3)}{\pi}\)
+
+5 \(e^{-1}-e^{-4}\)
+
+6 Do not know
+
+
+
+EXERCISE 19
+
+A pig transporter contains 400 slaughter pigs. The slaughter pigs have a mean weight of 97.5 kg with a standard deviation of 15 kg .
+
+
+
+QUESTION 19
+
+The probability that the total weight of the slaughter pigs in a pig transporter exceeds 40 tonnes can, possibly approximately, be calculated to
+
+1 \(1-\Phi\left(\frac{20-400 \cdot 97.5-\frac{1}{2}}{2000 \sqrt{0.15 \cdot 0.85}}\right)\)
+
+2 \(1-\Phi\left(\frac{40000-400 \cdot 97.5}{30000}\right)\)
+
+3 \(\Phi(-3)\)
+
+4 \(\Phi\left(-\frac{10}{3}\right)\)
+
+5 The probability can not be calculated due to insufficient information
+
+6 Do not know
+
+
+
+EXERCISE 20
+
+The point ( \(X, Y\) ) is chosen uniformly distributed within the area confined by the axes of the coordinate system and the line \(2 y+x=2\). One considers \(Z=X+Y\).
+
+Question 20
+
+The density \(f_{Z}(z)\) for \(Z\) is
+
+1 \(f_{Z}(z)=\frac{z}{9}, \quad 0<z<3\)
+
+\(2 \square \quad f_{Z}(z)=\left\{\begin{array}{cc}\frac{z}{2} & 0<z \leq 1 \\ \frac{1}{2} & 1<z \leq 2 \\ \frac{3-z}{2} & 2<z \leq 3\end{array}\right.\)
+
+\(3 \square \quad f_{Z}(z)=\left\{\begin{array}{cc}z & 0 \leq z<1 \\ 2-z & 1 \leq z \leq 2\end{array}\right.\)
+
+4 \(f_{Z}(z)=\int_{0}^{z} \frac{1}{2} \mathrm{~d} x\)
+
+5 \(f_{Z}(z)=\left\{\begin{array}{cc}z & 0 \leq z<1 \\ 4-2 z & 1 \leq z \leq 2\end{array}\right.\)
+
+6 Do not know
+
+
+
+EXERCISE 21
+
+Consider the pair ( \(X, Y\) ), which is standard bivariate normally distributed with correlation coefficient \(\rho=\frac{3}{5}\), and let \(Z=X+Y\).
+
+
+
+QUESTION 21
+
+One calculates \(\mathrm{P}(Z<-1)\) to
+
+1 \(\Phi\left(-\frac{\sqrt{5}}{5}\right)\)
+
+2 \(\Phi\left(-\frac{\sqrt{2}}{2}\right)\)
+
+3 \(\Phi\left(-\frac{4 \sqrt{5}}{5}\right)\)
+
+4 \(\Phi\left(-\frac{4 \sqrt{3}}{5}\right)\)
+
+5 \(\Phi\left(-\frac{\sqrt{5}}{4}\right)\)
+
+6 Do not know
+
+
+
+EXERCISE 22
+
+Airplanes are under special weather conditions redirected to a minor airport with safe conditions for landing. It is assumed that the redirected airplanes arrive independently with a frequency of 1 every third minute.
+
+
+
+QUESTION 22
+
+The probability that more than 6 airplanes arrive within 5 minutes can be calculated to
+
+1 \(1-\Phi\left(\frac{6-\frac{5}{3}}{\sqrt{\frac{5}{3}}}\right)\)
+
+2 0.0467
+
+3 0.023
+
+4 0.017
+
+5 0.0017
+
+6 Do not know
+
+
+
+EXERCISE 23
+
+The random variables \(X\) and \(Y\) have the joint density \(f(x, y)=x+y\) for \(0<x<1\) and \(0<y<1\).
+
+
+
+QUESTION 23
+
+One calculates \(\mathrm{P}\left(X \leq \frac{1}{2}, Y \leq \frac{1}{2}\right)\) to
+
+1 \(\mathrm{P}\left(X \leq \frac{1}{2}, Y \leq \frac{1}{2}\right)=\frac{1}{2}\)
+
+2 \(\mathrm{P}\left(X \leq \frac{1}{2}, Y \leq \frac{1}{2}\right)=\frac{1}{4}\)
+
+3 \(\mathrm{P}\left(X \leq \frac{1}{2}, Y \leq \frac{1}{2}\right)=\frac{1}{6}\)
+
+4 \(\mathrm{P}\left(X \leq \frac{1}{2}, Y \leq \frac{1}{2}\right)=\frac{1}{8}\)
+
+5 \(\mathrm{P}\left(X \leq \frac{1}{2}, Y \leq \frac{1}{2}\right)=\frac{1}{16}\)
+
+6 Do not know
+
+
+
+EXERCISE 24
+
+One considers the events \(A\) and \(B\) and the related indicator functions \(I_{A}\) and \(I_{B}\).
+
+
+
+QUESTION 24
+
+One determines \(\mathrm{P}\left(I_{A} I_{B}=1\right)\) to be
+
+1 \(\mathrm{P}(A \cap B)\)
+
+2 \(\mathrm{P}(A \cup B)\)
+
+3 \(\mathrm{P}(A)+\mathrm{P}(B)\)
+
+4 \(\mathrm{P}(A)+\mathrm{P}(B)-\mathrm{P}(A \cap B)\)
+
+5 The probability can not be determined without closer knowledge of the functions \(I_{A}\) and \(I_{B}\).
+
+6 Do not know
+
+
+
+EXERCISE 25
+
+One considers the three independent random variables \(X_{1}, X_{2}\), and \(X_{3}\), which all follow an exponential \((\lambda)\) distribution. One introduces \(Y=X_{1}+X_{2}+X_{3}\).
+
+
+
+QUESTION 25
+
+One calculates \(\mathrm{P}(Y>y)\) to be
+
+1 \(e^{-\lambda y / 3}\)
+
+2 \(\left(1+\lambda y+\frac{1}{2}(\lambda y)^{2}\right) e^{-\lambda y}\)
+
+3 \(\Phi\left(\frac{y-\frac{3}{\lambda}}{\frac{\sqrt{3}}{\lambda}}\right)\)
+
+4 \(1-\Phi\left(\frac{y-\frac{3}{\lambda}}{\frac{\sqrt{3}}{\lambda}}\right)\)
+
+5 \(\lambda \frac{1}{2}(\lambda y)^{2} e^{-\lambda y}\)
+
+6 Do not know
+
+
+
+EXERCISE 26
+
+A steel mill produces two different kinds of steel. The deviations from the normal production on any given day can be described using a bivariate normal distribution with correlation coefficient \(-\frac{\sqrt{2}}{2}\).
+
+
+
+QUESTION 26
+
+The probability that less than the normal production is produced for both kinds of steel on a given day is
+
+1 \(\frac{\frac{\pi}{2}-\operatorname{Atan}\left(\frac{\sqrt{2}}{2}\right)}{2 \pi}\)
+
+2 \(\frac{\operatorname{Atan}\left(\frac{\sqrt{2}}{2}\right)}{2 \pi}\)
+
+3 \(\frac{1}{8}\)
+
+4 \(\frac{1}{6}\)
+
+5 \(\frac{1}{4}\)
+
+6 Do not know
+
+
+
+EXERCISE 27
+
+Each day a company sells goods in an environment that can be described by a continuous random variable \(X\), that takes a value in the interval ( 0,1 ) with density \(6 x(1-x)\) independently from day to day. The number of units that can be sold during a day can be described by a binomial \((20, x)\) distribution for given \(x\).
+
+
+
+QUESTION 27
+
+The probability that exactly 10 units can be sold on an arbitrary day is
+
+1 \(\frac{1}{21}\)
+
+2 \(\frac{11}{161}\)
+
+3 \(\int_{0}^{1}\binom{20}{10} 6 x(1-x) \mathrm{d} x\)
+
+4 \(\binom{20}{10} \frac{1}{1024}\)
+
+5 \(\int_{0}^{1} 6 x^{11}(1-x)^{11} \mathrm{~d} x\)
+
+6 Do not know
+
+
+
+EXERCISE 28
+
+The parameter \(\theta\) is used in an alternative parameterisation of the binomial distribution. The relation between \(\theta\) and the usual probability parameter \(p\) is given by
+
+
+\[
+p=\frac{e^{\theta}}{1+e^{\theta}}, \quad \theta=\log \left(\frac{p}{1-p}\right)
+\]
+
+
+
+
+QUESTION 28
+
+Let \(X\) be binomially distributed with counting parameter \(n=2\); for \(\theta=0\) one gets
+
+1 \(\mathrm{P}(X=0)=1\)
+
+2 \(\mathrm{P}(X=0)=\frac{1}{2}\)
+
+3 \(\mathrm{P}(X=0)=\frac{1}{4}\)
+
+4 \(\mathrm{P}(X=0)=0\)
+
+5 \(\mathrm{P}(X=0)\) can not be determined as \(\theta=0\) is an invalid parameter value
+
+6 Do not know
+
+
+
+EXERCISE 29
+
+The travel distance to a research station in the Arctic has a mean of 1day and a standard deviation of 3 days.
+
+
+
+QUESTION 29
+
+A best upper limit for the probability that the travel time to the research station exceeds two days is
+
+1 1
+
+2 \(\frac{1}{2}\)
+
+3 \(1-\Phi\left(\frac{1}{3}\right)\)
+
+4 \(\frac{1}{4}\)
+
+5 Can not be determined without more knowledge of the distribution of the travel time
+
+6 Do not know
+
+
+
+EXERCISE 30
+
+The joint distribution of the discrete random variables \(X\) and \(Y\) is given by the following table.
+
+
+
+
+         3|c|Values of \(X\)     Distribution 
+
+          1     2     3     of \(Y\) 
+
+Values     3     \(1 / 6\)     0     \(1 / 6\)     \(1 / 3\) 
+
+of \(Y\)     2     0     \(1 / 3\)     0     \(1 / 3\) 
+
+     1     \(1 / 6\)     0     \(1 / 6\)     \(1 / 3\) 
+
+    
+Distribution 
+
+of \(X\) 
+
+     \(1 / 3\)     \(1 / 3\)     \(1 / 3\)     1 
+
+                    (total sum)      
+
+
+
+
+
+
+
+QUESTION 30
+
+The following can be stated about the random variables \(X\) and \(Y\)
+
+1 They are independent
+
+2 They are uncorrelated but not independent
+
+3 They are uncorrelated
+
+4 They are identical
+
+5 They are mutually exclusive
+
+6 Do not know
+
+End of exam
+
+

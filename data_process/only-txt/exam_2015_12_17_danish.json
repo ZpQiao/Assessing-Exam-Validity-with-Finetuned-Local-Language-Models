@@ -1,0 +1,452 @@
+[
+  {
+    "language": "danish",
+    "number": 1,
+    "context": "En kandidat skal rejse til en ansættelsessamtale i en anden by. Ifølge vejrudsigten er der risiko for kraftigt snefald, således at snefaldet formodes at indtræffe med en sandsynlighed på $\\frac{1}{3}$. Hvis der kommer kraftigt snefald, er der en sandsynlighed på $\\frac{3}{5}$ for, at rejsetiden vil blive øget med mindst en time.",
+    "question": "Sandsynligheden for, at kandidaten må påregne en rejsetid, der grundet kraftigt snefald er forlænget med mindst en time, findes til",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{4}{15}$",
+      "$\\frac{3}{4}$",
+      "$\\underline{14}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 2,
+    "context": "Biler ankommer til et lyskryds med en intensitet af 6 biler per minut. Sandsynligheden for, at en bil, der ankommer til krydset, skal dreje til venstre, er $\\frac{1}{3}$. Venstresvingsbanen kan rumme 3 biler. Vi betragter en periode, hvor venstresving ikke er muligt.",
+    "question": "Sandsynligheden for, at venstresvingsbanen fyldes i løbet af et minut, findes til",
+    "options": [
+      "$\\frac{4}{3} e^{-2}$",
+      "$\\binom{6}{3} \\frac{1}{3^{3}} \\frac{2^{3}}{3^{3}}$",
+      "$\\frac{2}{3}$",
+      "$1-\\Phi\\left(\\frac{\\sqrt{3}}{2}\\right)$",
+      "1 - 5e^( - 2)",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 3,
+    "context": "Den kontinuerte stokastiske variabel U er uniformt fordelt på intervallet [ 1; 2 ]. Man har yderligere den diskrete stokastiske variabel X over de naturlige tal, hvorom det gælder $P(X=x \\mid U=u)=\\frac{u^{x}}{x!} e^{-u}$ for x ≥ 0.",
+    "question": "Man har",
+    "options": [
+      "$\\mathrm{P}(X=1)=\\frac{1}{e}\\left(2-\\frac{3}{e}\\right)$",
+      "$\\mathrm{P}(X=1)=\\frac{3}{2} e^{-\\frac{3}{2}}$",
+      "$\\mathrm{P}(X=1)=\\sum_{u=1}^{2} u e^{-u}$",
+      "$\\mathrm{P}(X=1)=\\frac{1}{e}$",
+      "$\\mathrm{P}(X=1)=\\frac{5}{e}\\left(1-\\frac{2}{e}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 4,
+    "context": "Der er stillet seks spørgsmål til en eksamen. En studerende har forberedt sig på tre af de seks spørgsmål. Til eksamenen bliver eleven eksamineret i to af de seks stillede spørgsmål.",
+    "question": "Sandsynligheden for, at den studerende har forberedt sig på begge de to stillede spørgsmål, er",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{3}{10}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{3}{20}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 5,
+    "context": "En kontinuert stokastisk variabel X har tæthedsfunktionen f(x) = x² for 0 ≤ x ≤ c, for et passende c.",
+    "question": "Man finder $\\mathrm{P}\\left(-\\frac{1}{2} \\leq X \\leq 1\\right)$",
+    "options": [
+      "$\\frac{1}{8}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{9}{24}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{\\sqrt[3]{3}}{3}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 6,
+    "context": "Man har de to uafhængige stokastiske variable X og Y, hvor E(X²) og E(Y²) eksisterer. Man danner Z = aX + bY + c, hvor a, b og c er reelle konstanter.",
+    "question": "Med disse forudsætninger gælder",
+    "options": [
+      "E(Z) = |a|E(X) + |b|E(Y),  Var (Z) = a²Var (X) + b²Var (Y)",
+      "E(Z) = aE(X) + bE(Y) + c,  SD(Z) = |a|SD(X) + |b|SD(Y)",
+      "E(Z) = aE(X) + bE(Y),  Var (Z) = a²Var (X) + b²Var (Y) - 2abCov (X, Y)",
+      "E(Z) = aE(X) + bE(Y) + c,  Var (Z) = a²Var (X) + b²Var (Y)",
+      "E(Z) = |a|E(X) + |b|E(Y) + c,  Var (Z) = a²Var (X) + b²Var (Y) - 2abCov (X, Y)",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 7,
+    "context": "Man har hændelserne D og E. Sandsynligheden for, at D indtræffer er $\\frac{1}{100}$ medens sandsynligheden for, at E indtræffer er $\\frac{1}{1000}$. Sandsynligheden for, at D og E ikke indtræffer samtidigt, er $\\frac{1999}{2000}$.",
+    "question": "Sandsynligheden for, at enten D eller E indtræffer, er",
+    "options": [
+      "$\\frac{1}{100}$",
+      "$\\frac{11}{100}$",
+      "21 2000",
+      "$\\frac{19}{2000}$",
+      "$\\frac{1997}{2000}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 8,
+    "context": "Den kontinuerte stokastiske variabel X følger en normal( 0,1 ) fordeling. Man danner nu Y = e^(X) 。",
+    "question": "Tætheden f_(Y)(y) for Y findes til",
+    "options": [
+      "$f_{Y}(y)=\\left(e^{y}\\right)^{2} e^{-\\frac{\\left(e^{y}\\right)^{2}}{2}}$",
+      "$f_{Y}(y)=\\frac{1}{y \\sqrt{2 \\pi}} e^{-\\frac{(\\log (y))^{2}}{2}}$",
+      "$f_{Y}(y)=y e^{y^{2}} e^{-\\frac{y^{2}-1}{2}}$",
+      "$f_{Y}(y)=\\frac{1}{\\sqrt{2 \\pi}} e^{-\\frac{(\\log (y))^{2}}{2}}$",
+      "f_(Y)(y) = e^( - y)",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 9,
+    "context": "Fra en transportundersøgelse har man andelen af pendlere fordelt på erhvervstype. For hver erhvervstype kender man tillige andelen, der rejser med bus.\nFunktionærer   Uddannelsessøgende   Håndværkere og faglærte   Ufaglærte\n------------------------------------------- -------------- -------------------- ------------------------- -----------\nAndel af pendlere                           35%            25%                  25%                       15%\nAndel af erhvervstypen, der rejser med bus   25%            50%                  15%                       50%",
+    "question": "Andelen af pendlere i bus, der er uddannelsessøgende, findes til",
+    "options": [
+      "25,00 %",
+      "33,41 %",
+      "35,71 %",
+      "37,50 %",
+      "38,46 %",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 10,
+    "context": "Man har 3 uafhængige uniform( 0,1 ) fordelte stokastiske variable.",
+    "question": "Sandsynligheden for, at den næststørste af disse er mindre end $\\frac{4}{5}$, findes til",
+    "options": [
+      "$\\frac{4}{5}$",
+      "$\\frac{24}{25}$",
+      "$\\frac{608}{605}$",
+      "$\\frac{2944}{3125}$",
+      "$\\frac{112}{125}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 11,
+    "context": "Et togspor er blokeret for et passagertog. Passagerer til en bestemt destination kan alternativt benytte en bustjeneste. For hver togpassager kan tilknyttes en sandsynlighed på $\\frac{1}{3}$ for, at de ønsker at benytte bustjenesten. Man kan tilnærmelsesvist regne med, at rejseønskerne er uafhængige mellem passagererne.",
+    "question": "I et tog med 800 passagerer, findes sandsynligheden, eventuelt approksimativt, for, at højst 300 passagerer ønsker at benytte bustjenesten til",
+    "options": [
+      "\\sum_{i=0}^{300} \\binom{300}{i} \\frac{2^{300-i}}{3^{300}}",
+      "\\Phi\\left(\\frac{203}{80}\\right)",
+      "\\sum_{i=0}^{300} \\frac{300^{i}}{i!} e^{-300}",
+      "3^{-800} \\sum_{i=301}^{800}\\binom{800}{i} 2^{800-i}",
+      "\\Phi\\left(\\frac{\\frac{800}{3}-300}{\\sqrt{800\\,\\frac{2}{3}\\,\\frac{1}{3}}}\\right)",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 12,
+    "context": "Man har dyrket bakteriekolonier i nogle petriskåle og fundet et antal kolonier mellem 0 og 20 i hver skål ved et antal gentagne forsøg.",
+    "question": "Mulige sandsynlighedsmodeller til at modellere antallet af kolonier i en skål kunne være",
+    "options": [
+      "Normalfordelingen eller eksponentialfordelingen",
+      "Eksponentialfordelingen eller Poissonfordelingen",
+      "Poissonfordelingen eller den negative binomialfordeling",
+      "Ligefordelingen (uniform) eller den negative binomialfordeling",
+      "Normalfordelingen eller ligefordelingen (uniform)",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 13,
+    "context": "Et firma har to vigtige markeder. Salget på de to markeder kan med rimelighed beskrives ved en bivariat normalfordeling, hvor middelværdierne på de to markeder er henholdsvis 200 og 350 , med varianser på 900 og 1600 . Korrelationskoefficienten mellem de to salg er $\\frac{3}{5}$.",
+    "question": "Sandsynligheden for, at det samlede salg overstiger 650, findes til",
+    "options": [
+      "0,0544",
+      "Φ(2)",
+      "$\\Phi\\left(-\\frac{50 \\sqrt{1105}}{1105}\\right)$",
+      "$\\Phi\\left(-\\frac{50 \\sqrt{985}}{985}\\right)$",
+      "1 - Φ(2)",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 14,
+    "context": "Man har givet den stokastiske variabel X, der følger en binomial $\\left(5, \\frac{1}{2}\\right)$ fordeling. Man er interesseret i denne variabels afvigelse fra sin middelværdi og danner Y = |X - n ⋅ p|, hvor n, p er parametrene i binomialfordelingen.",
+    "question": "Sandsynlighedsfordelingen for Y findes til",
+    "options": [
+      "$\\mathrm{P}(Y=y)=\\binom{3}{y} \\frac{1}{2^{3}}$",
+      "$\\mathrm{P}(Y=y)=\\binom{5}{|y|} \\frac{1}{2^{5}}$",
+      "$\\mathrm{P}(Y=y)=\\binom{5}{\\left|y-\\frac{5}{2}\\right|} \\frac{1}{2^{5}}$",
+      "$\\mathrm{P}\\left(Y=\\frac{1}{2}\\right)=\\frac{5}{8}, \\quad \\mathrm{P}\\left(Y=\\frac{3}{2}\\right)=\\frac{5}{16}, \\quad \\mathrm{P}\\left(Y=\\frac{5}{2}\\right)=\\frac{1}{16}$",
+      "$\\mathrm{P}\\left(Y=\\frac{1}{2}\\right)=\\frac{1}{3}$,  $\\mathrm{P}\\left(Y=\\frac{3}{2}\\right)=\\frac{1}{3}$,  $\\mathrm{P}\\left(Y=\\frac{5}{2}\\right)=\\frac{1}{3}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 15,
+    "context": "I et større område af en galakse kan man med en vis rimelighed antage, at stjerner forekommer tilfældigt med en forekomst af en per 1/100 kubik lysår.",
+    "question": "Sandsynligheden for, at finde mindst en stjerne i dette område i en terning med sidestørrelsen 4 lysår, findes til",
+    "options": [
+      "0,4727",
+      "0,3600",
+      "0,3375",
+      "0,3023",
+      "0,2304",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 16,
+    "context": "De stokastiske variable X og Y er begge eksponential(1) fordelte, med simultan tæthedsfunktion f(x, y) = 2e^( - x - y)(2e^( - x - y)-e^( - y)-e^( - x)+1), x ≥ 0, y ≥ 0.",
+    "question": "Man finder",
+    "options": [
+      "P(X ≤ 1, Y ≤ 1) = 1 - 2e^( - 1) + 2e^( - 2) - 2e^( - 3) + e^( - 4)",
+      "P(X ≤ 1, Y ≤ 1) = 2e^( - 2) - 4e^( - 3) + 4e^( - 4)",
+      "P(X ≤ 1, Y ≤ 1) = 1 - 2e^( - 1) + e^( - 2)",
+      "P(X ≤ 1, Y ≤ 1) = e^( - 2)",
+      "P(X ≤ 1, Y ≤ 1) = 1 - 4e^( - 1) + 6e^( - 2) - 4e^( - 3) + e^( - 4)",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 17,
+    "context": "Fordelingsfunktionen F(x) for den tid, det tager en mynde at gennemføre en væddeløbsbane, kan med rimelig tilnærmelse angives som $$F(x)=\\left\\{\\begin{array}{ll} 0 & \\text { for } x \\leq a \\\\ 1-e^{-(x-a)} & \\text { for } a<x \\end{array} .\\right.$$ Man kan med en vis rimelighed antage, at de forskellige hunde i et væddeløb gennemfører uafhængigt af hinanden.",
+    "question": "Sandsynligheden for, at vinderen af et væddeløb med 5 hunde når i mål senest til t, findes til",
+    "options": [
+      "1 - e^( - 5(t - a))",
+      "$1-\\sum_{i=0}^{4} \\frac{(t-a)^{i}}{i!} e^{t-a}$",
+      "1 - e^( - (t - a)⁵)",
+      "(1-e^( - (t - a)))⁵",
+      "1 - (1-e^( - (t - a)))⁵",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 18,
+    "context": "De to standardiserede stokastiske variable X og Y har korrelationskoefficient $\\rho=\\frac{1}{2}$.",
+    "question": "Man finder Var (3X - 3Y) til",
+    "options": [
+      "Var (3X - 3Y) = 0",
+      "Var (3X - 3Y) = 9",
+      "Var (3X - 3Y) = 18",
+      "Var (3X - 3Y) = 27",
+      "Spørgsmålet kan ikke besvares grundet utilstrækkelige oplysninger",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 19,
+    "context": "En spiller deltager tyve gange i et spil på internettet. Spilleren kan regne med en sandsynlighed for gevinst på $\\frac{3}{8}$ per spil.",
+    "question": "Sandsynligheden for, at spilleren højst vinder 10 spil, findes til",
+    "options": [
+      "$\\Phi\\left(\\frac{3 \\sqrt{10}}{10}\\right)$",
+      "$\\sum_{i=0}^{10} \\frac{\\left(\\frac{15}{2}\\right)^{i}}{i!} e^{-\\frac{15}{2}}$",
+      "$\\phi\\left(\\frac{10-20 \\cdot \\frac{5}{8}+\\frac{1}{2}}{\\sqrt{20 \\cdot \\frac{5}{8} \\cdot \\frac{3}{8}}}\\right)$",
+      "$\\sum_{i=0}^{10} \\frac{\\begin{array}{c}\\binom{10}{i}\\binom{10}{10-i} \\\\ \\binom{20}{10}\\end{array}}{\\text { 伎 }}$",
+      "$\\sum_{i=0}^{10}\\binom{20}{i}\\left(\\frac{3}{8}\\right)^{i}\\left(\\frac{5}{8}\\right)^{20-i}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 20,
+    "context": "Placeringen af punktet ( X, Y ) følger en ligefordeling indenfor enhedscirklen.",
+    "question": "I værdimængden for Y findes den marginale tæthed f_(Y)(y) til",
+    "options": [
+      "f_(Y)(y) = 1 - |y|",
+      "$f_{Y}(y)=\\frac{2 \\sqrt{1-y^{2}}}{\\pi}$",
+      "$f_{Y}(y)=\\frac{1}{\\pi}$",
+      "$f_{Y}(y)=\\frac{3}{4}\\left(1-y^{2}\\right)$",
+      "$f_{Y}(y)=\\frac{1}{2}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 21,
+    "context": "Hvis strømniveauet på et robotkøretøj til brug for rumekspeditioner kommer under et vist niveau, er der stor risiko for, at man mister kontakten til køretøjet. Middellængden af de perioder, hvor der ikke er tilstrækkeligt sollys til panelerne er 3 måneder, variansen af disse perioder er 9 måneder ².",
+    "question": "Den maksimale sandsynlighed for, at en periode, hvor der ikke er tilstrækkeligt med sollys, overstiger 1 år, findes til",
+    "options": [
+      "$\\frac{1}{4}$",
+      "e^( - 4)",
+      "$\\frac{1}{16}$",
+      "$\\frac{1}{9}$",
+      "1 - Φ(3)",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 22,
+    "context": "For de to diskrete ikke negative stokastiske varible har man $\\mathrm{P}(X=x, Y=y)=c \\frac{A^{x}}{x!} \\frac{B^{y}}{y!}, 0 \\leq x+y \\leq 2$, hvor c er en normaliseringskonstant.",
+    "question": "Man finder",
+    "options": [
+      "$P(X=x \\mid Y=1)=\\frac{1}{2}, \\quad x \\in\\{0,1\\}$",
+      "$P(X=x \\mid Y=1)=\\frac{\\frac{A^{x}}{x!} \\frac{B^{y}}{y!}}{\\sum_{x=0}^{2-y} \\frac{A^{x}}{x!} \\frac{B^{y}}{y!}}$",
+      "$P(X=x \\mid Y=1)=\\frac{A^{x}}{1+A+\\frac{A^{2}}{2}}, \\quad x \\in\\{0,1,2\\}$",
+      "$P(X=x \\mid Y=1)=c \\frac{A^{x}}{x!} B, \\quad x \\in\\{0,1,2\\}$",
+      "$P(X=x \\mid Y=1)=\\frac{A^{x}}{1+A}, \\quad x \\in\\{0,1\\}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 23,
+    "context": "De stokastiske variable X og Y har den simultane tæthedsfunktion f(x, y) = 6y - 6x for 0 ≤ x ≤ y ≤ 1 og 0 ellers. Man danner Z = X + Y.",
+    "question": "Man finder f_(Z)(z) til",
+    "options": [
+      "$$f_{Z}(z)=\\left\\{\\begin{array}{cc}  \\frac{3}{2} z^{2} & 0 \\leq z<1 \\\\  \\frac{3}{2}(2-z)^{2} & 1 \\leq z \\leq 2 \\\\  0 & \\text { ellers }  \\end{array}\\right.$$",
+      "-z & 1 \\leq z \\leq 2 \\\\",
+      "f_(Z)(z) = ∫_(x = 0)¹(6z - 12x)dx",
+      "$$f_{Z}(z)=\\int_{x=0}^{\\frac{z}{2}}(6 z-12 x) \\mathrm{d} x$$",
+      "$$f_{Z}(z)=\\int_{x=0}^{\\min \\left(\\frac{z}{2}, 1\\right)}(6 z-12 x) \\mathrm{d} x$$",
+      "$$f_{Z}(z)=\\left\\{\\begin{array}{cc}  z & 0 \\leq z<1 \\\\"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 24,
+    "context": "Den kontinuerte stokastiske variabel X har tætheden $f_{X}(x)=\\frac{3}{32} x(4-x)$ for 0 < x < 4 og 0 ellers. Endvidere har man, at Y for givet X = x er eksponential (x) fordelt.",
+    "question": "Man finder",
+    "options": [
+      "$\\mathrm{E}(Y)=\\frac{1}{x}$",
+      "$\\mathrm{E}(Y)=\\frac{1}{2}$",
+      "$\\mathrm{E}(Y)=\\int_{0}^{4} \\int_{0}^{\\infty} x e^{-x y} \\frac{3}{32} x(4-x) \\mathrm{d} y \\mathrm{~d} x$",
+      "$\\mathrm{E}(Y)=\\frac{3}{4}$",
+      "E(Y) = 1",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 25,
+    "context": "Lad T betegne levetiden af en rumsondes batteri. Man ved $$\\lim _{\\Delta \\rightarrow 0^{+}} \\frac{\\mathrm{P}(T \\leq t+\\Delta \\mid T>t)}{\\Delta}=\\lambda .$$",
+    "question": "Sandsynligheden for, at levetiden af rumsondens batteri overstiger 100, findes til",
+    "options": [
+      "e^(∫₀¹⁰⁰ - λx dx)",
+      "$\\sum_{x=0}^{100} \\frac{\\lambda^{x}}{x!} e^{-\\lambda}$",
+      "e^( - 100λ)",
+      "e^( - ∫₁₀₀^(∞)λdx)",
+      "$e^{-\\frac{100}{\\lambda}}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 26,
+    "context": "Man har den kontinuerte stokastiske variabel X med middelværdi μ.",
+    "question": "Marker det af nedenstående udsagn, der er falsk",
+    "options": [
+      "E(aX + b) = aμ + b",
+      "E(X²) > μ²",
+      "$\\sum_{x=-\\infty}^{\\infty} P(X=x)=1$",
+      "1 = I_(X < 0) + I_(0 ≤ X)",
+      "P(X = x) = 0",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 27,
+    "context": "I curling gælder det om, at få en sten, der skubbes henover isen til at stoppe så tæt på centrum af et cirkulært område som muligt. En spiller træner ved at sætte sin sten i bevægelse mod målet. Stenens endelige placering i forhold til målet kan antages at være beskrevet ved to uafhængige standardiserede normalfordelte variable, der angiver afstanden til målet i forhold til et koordinatsystem, hvor målet er valgt som nulpunkt.",
+    "question": "Sandsynligheden for, at stenens endelige placering er i en afstand, der ikke er mere end 1 længdeenhed fra målet, er",
+    "options": [
+      "0,3935",
+      "0,8647",
+      "0,6827",
+      "0,6321",
+      "0,3679",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 28,
+    "context": "Man har X ∼ normal (4, 25) og Y ∼ normal (25, 4) med Cov (X, Y) = 6.",
+    "question": "Man finder P(X ≤ 4 ∣ Y = 27)",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\Phi\\left(-\\frac{3}{4}\\right)$",
+      "$\\Phi\\left(-\\frac{15}{16}\\right)$",
+      "$\\Phi\\left(-\\frac{5}{4}\\right)$",
+      "$\\Phi\\left(-\\frac{3}{5}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 29,
+    "context": "Om de kontinuerte stokastiske variable X og Y oplyses $$\\mathrm{P}(X \\in[x, x+\\mathrm{d} x], Y \\in[y, y+\\mathrm{d} y]) \\cong \\frac{1}{2 \\pi} e^{-\\frac{x^{2}+y^{2}}{2}} \\mathrm{~d} x \\mathrm{~d} y .$$",
+    "question": "Man finder",
+    "options": [
+      "$\\mathrm{P}(0 \\leq X, 0 \\leq Y)=\\frac{1}{6}$",
+      "$\\mathrm{P}(0 \\leq X, 0 \\leq Y)=\\frac{1}{3}$",
+      "$\\mathrm{P}(0 \\leq X, 0 \\leq Y)=\\frac{\\operatorname{Arctan}\\left(\\frac{3}{2}\\right)}{2 \\pi}$",
+      "$\\mathrm{P}(0 \\leq X, 0 \\leq Y)=\\frac{\\operatorname{Arctan}(1)}{2 \\pi}$",
+      "$\\mathrm{P}(0 \\leq X, 0 \\leq Y)=\\frac{1}{4}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 30,
+    "context": "En person kaster gentagne gange med en almindelig retfærdig terning.",
+    "question": "Sandsynligheden for, at terningen viser 6 øjne for anden gang, netop ved det sjette slag, findes til",
+    "options": [
+      "$\\frac{5^{4}}{6^{6}}$",
+      "$\\binom{6}{2} \\frac{5^{4}}{6^{6}}$",
+      "$1-\\frac{5 \\cdot 4 \\cdot 3 \\cdot 2}{6^{4}}$",
+      "$\\frac{5^{5}}{6^{6}}$",
+      "$\\frac{1}{2}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  }
+]

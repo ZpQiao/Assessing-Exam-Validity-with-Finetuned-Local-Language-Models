@@ -1,0 +1,671 @@
+Exercise 1
+
+A car has a problem with its oil-pressure sensor. If the oil warning is
+on there is a probability of 1/5 of there being a problem with the oil
+pressure. The probability of the oil warning being on is 1/15 on a given
+trip.
+
+Question 1
+
+The probability that the oil warning is on, and there being problems
+with the oil pressure on a a given trip is
+
+1 $\frac{2}{15}$
+
+2 $\frac{4}{15}$
+
+3 $\frac{1}{75}$
+
+4 $\frac{1}{5}$
+
+5 $\frac{1}{15}$
+
+6 Do not know
+
+Exercise 2
+
+At a single point in a pneumatic post system the owners of the system
+are experimenting with shooting out an item to hit inside a funnel. If
+we impose a coordinate system, such that the centre of the coordinate
+system corresponds to the centre of the funnel we may describe the
+coordinates of the items impact site by independent standard normally
+distributed variables.
+
+Question 2
+
+The probability that an item lands at a distance more than 3 from the
+centre of the funnel is
+
+1 e^( − 9/2)
+
+2 $\left(1-\Phi\left(\frac{3 \sqrt{2}}{2}\right)\right)^{2}$
+
+3 4e^( − 3)
+
+4 $1-\Phi\left(\frac{3 \sqrt{2}}{2}\right)$
+5 e^( − 3)
+
+6 Do not know
+
+Exercise 3
+
+10 deer are caught in a specific area tagged and released back into the
+wild. After a small interval of time, 8 deer are caught. It may be
+assumed that the population of deer remains constant in this time
+period, and that tagged and untagged deer have the same probability of
+being caught in the second catch. The unknown population size is denoted
+by n.
+
+Question 3
+
+The probability of catching exactly 5 tagged deer the second time may be
+expressed as
+
+1
+$\binom{8}{5}\left(\frac{10}{n}\right)^{5}\left(\frac{n-10}{n}\right)^{3}$
+2 $\frac{8 \cdot 7 \cdot 6 \cdot 5 \cdot 4}{n(n-1)(n-2)(n-3)(n-4)}$
+
+3
+$\binom{8}{5} \frac{10 \cdot 9 \cdot 8 \cdot 7 \cdot 6}{n(n-1)(n-2)(n-3)(n-4)} \frac{(n-10)(n-11)(n-12)}{n(n-1)(n-2)}$
+
+4 $\frac{\binom{10}{5}\binom{n-10}{3}}{\binom{n}{8}}$
+
+5
+$\binom{7}{4}\left(\frac{10}{n}\right)^{5}\left(\frac{n-10}{n}\right)^{3}$
+6 Do not know
+
+Exercise 4
+
+A predatory fish meets prey randomly, averaging 6 hours between each
+encounter.
+
+Question 4
+
+The probability the predatory fish must wait more than 24 hours to
+encounter 4 of its prey is
+
+1 e^( − 4)
+
+2 $\frac{71}{3} e^{-4}$
+
+3 $\frac{23}{3} e^{-2}$
+
+4 $\frac{103}{3} e^{-4}$
+
+5 $\frac{1}{2}$
+
+6 Do not know
+
+Exercise 5
+
+A fish larva has consumed 100 of its prey, which follow a distribution
+with mean 1.5 nanograms and standard deviation 5 nanograms.
+
+Question 5
+
+The probability that the larva has consumed at most 300 nanograms is,
+possibly approximately, found to be
+
+1
+$\Phi\left(\frac{200+\frac{1}{2}-100 \cdot 1,5}{\sqrt{100 \frac{1,5}{5} \frac{3,5}{5}}}\right)$
+2 $\Phi\left(\frac{3}{2}\right)$
+3 $1-\Phi\left(\frac{3}{2}\right)$
+
+4 Φ(3)
+
+5 The probability cannot be calculated due to insufficient information
+
+6 Do not know
+
+Exercise 6
+
+An air route has seats on both economy and business class. The
+probability of at least one of the classes being sold out is 1/3, and
+the probability of there being sold out on business class is 1/8.
+
+Question 6
+
+The probability of there being sold out on economy but not business
+class is
+
+1 $\frac{1}{24}$
+
+2 $\frac{5}{24}$
+
+3 $\frac{9}{24}$
+
+4 $\frac{1}{6}$
+
+5 The probability cannot be calculated due to insufficient information
+
+6 Do not know
+
+Exercise 7
+
+Let U be an (0, 1) uniformly distributed continuous random variable, and
+Y be a continuous random variable. For a given U = u, Y follows an
+exponential distribution with intensity u.
+
+Question 7
+
+The survival function G_(Y)(y) = P(Y > y) is
+
+1 G_(Y)(y) = e^(u/2)
+
+2 $G_{Y}(y)=\frac{1}{y}\left(1-e^{-y}\right)$
+
+3 $G_{Y}(y)=\left(1+\frac{y}{2}\right) e^{-\frac{y}{2}}$
+
+4 G_(Y)(y) = e^( − y/2)
+
+5 G_(Y)(y) = ∫₀¹(1−e^( − y)) ⋅ 1 dy
+
+6 Do not know
+
+Exercise 8
+
+An injured person performs a call to an emergency hotline. However, due
+to heavy load caused by the weather conditions there is a probability of
+9/10 that a call will fail.
+
+Question 8
+
+The probability that more than 5 calls are necessary before coming into
+contact with the hotline is
+
+1 0,0591
+
+2 0,4066
+
+3 0,5905
+
+4 0,6065
+
+5 0,6321
+
+6 Do not know
+
+Exercise 9
+
+The positive random variable X with density f_(X)(x) = xe^( − x) is
+transformed to the random variable Y = e^(X) − 1.
+
+Question 9
+
+The density f_(Y)(y) of Y is
+
+1 $f_{Y}(y)=\frac{1}{(y+1)^{2}}$
+
+2 f_(Y)(y) = log (y + 1)e^( − (y + 1))
+
+3 $f_{Y}(y)=\frac{\log (y+1)}{4(y+1)^{3}}$
+
+4 $f_{Y}(y)=\frac{\log (y+1)}{(y+1)^{2}}$
+
+5 $f_{Y}(y)=\frac{w \log (y+1)}{y+1}$
+6 Do not know
+
+Exercise 10
+
+The pair of random variables ( X, Y ) follows a standard bivariate
+normal distribution with correlation coefficient ρ =  − 7/8.
+
+Question 10
+
+We find P(X + Y ≤ 1) to be
+
+1 Φ(2)
+
+2 $\Phi\left(\frac{\sqrt{2}}{2}\right)$
+
+3 $\Phi(2 \sqrt{2})$
+
+4 $\Phi(\sqrt{2})$
+
+5 $\Phi\left(\frac{1}{2}\right)^{2}$
+
+6 Do not know
+
+Exercise 11
+
+A lotto player buys a row every week. The probability of getting a
+pay-out on the row in a given week is 1/5.
+
+Question 11
+
+The probability of getting a pay-out in at least 10 out of 100 weeks is
+$1 \square \quad \Phi\left(\frac{10-20+\frac{1}{2}}{\sqrt{100 \frac{4}{25}}}\right)$
+$2 \square \quad \sum_{i=10}^{100} \frac{20^{i}}{i!} e^{-20}$
+$3 \square \quad 1-5^{-100} \sum_{i=0}^{9}\binom{100}{i} 4^{100-i}$
+$4 \square \frac{\binom{20}{10}\binom{80}{10}}{\binom{100}{20}}$
+$5 \square \quad \sum_{i=10}^{100}\binom{100}{i} \frac{1}{2^{100}}$
+6▫   Do not know
+
+Exercise 12
+
+Let X, Y be independent continuous random variables, both following a
+uniform( 0,1 ) distribution.
+
+Question 12
+
+We calculate $\mathrm{P}\left(X+Y \leq \frac{1}{2}\right)$ to be
+
+1 $\overline{6}$
+2 $\frac{1}{3}$
+3 $\frac{1}{2}$
+4 $\frac{1}{4}$
+5 $\frac{1}{8}$
+6 Do not know
+
+Exercise 13
+
+One assumes that the maximum monthly level of water at a dike is given
+by the cumulative distribution function
+$F(x)=1-\exp \left(-x^{\frac{1}{3}}\right)$ As a rough approximation, we
+further assume that this distribution is the same every month of the
+year.
+
+Question 13
+
+The probability of the water level exceeding 8 at least once during a
+year is found to be
+
+1 $1-\Phi\left(\frac{8-6 \sqrt{8}}{12 \sqrt{38}}\right)$
+
+2 (1−e^( − 2))¹²
+
+3 e^( − 24)
+
+4 1 − e^( − 24)
+
+5 1 − (1−e^( − 2))¹²
+
+6 Do not know
+
+Exercise 14
+
+Consider the pair ( X, Y ) of continuous random variables with joint
+density given by f(x, y) = 4xy, 0 < x < 1, 0 < y < 1.
+
+Question 14
+
+The density f_(Z)(z) of Z = Y/X is
+
+1
+$f_{Z}(z)=\left\{\begin{array}{lc}z & \text { for } 0<z \leq 1 \\ \frac{1}{z^{3}} & \text { for } 1<z\end{array}\right.$
+
+2 f_(Z)(z) = ∫₀^(z)4x²y dx,  0 < z
+
+3 $f_{Z}(z)=\frac{1}{z^{2}}, \quad 1<z$
+
+4
+$f_{Z}(z)=\left\{\begin{array}{cc}\frac{2}{3} z & \text { for } 0<z \leq 1 \\ \frac{2}{3 z^{2}} & \text { for } 1<z\end{array}\right.$
+
+5 f_(Z)(z) = ∫₀¹4x³z dx,  0 < z
+
+6 Do not know
+
+Exercise 15
+
+We have the three discrete random variables X₁, X₂, X₃ where (
+X₁, X₂, X₃ ) follows a multinomial distribution with n = 3 trials. The
+probability parameters p₁, p₂, p₃ for X₁, X₂, X₃ are given as
+p₁ = 1/2, p₂ = 1/3, p₃ = 1/6.
+
+Question 15
+
+We find P(X₁+X₃≤2) to be
+
+1
+$\sum_{i=0}^{2}\binom{3}{i}\left(\frac{2}{3}\right)^{i} \frac{1}{3^{3-i}}$
+2
+$\sum_{i=0}^{2} \frac{3!}{i!(2-i)!1!}\left(\frac{1}{2}\right)^{i}\left(\frac{1}{3}\right)^{2-i} \frac{1}{6}$
+
+3
+$\sum_{i=0}^{1} \sum_{j=0}^{1} \frac{3!}{i!j!(3-i-j)!}\left(\frac{1}{2}\right)^{i}\left(\frac{1}{3}\right)^{2-i-j}\left(\frac{1}{6}\right)^{j}$
+
+4
+$\sum_{i=0}^{2} \sum_{j=0}^{2} \frac{3!}{i!j!(3-i-j)!}\left(\frac{1}{2}\right)^{i}\left(\frac{1}{3}\right)^{2-i-j}\left(\frac{1}{6}\right)^{j}$
+
+5 Φ(0)
+
+6 Do not know
+
+Exercise 16
+
+The conditional distribution of the random variable Y given X = x is
+given by the density f_(Y)(y ∣ X = x) = 1/xe^( − y/x). That is, for
+X = x, Y is exp (1/x) distributed. X is gamma (2, 1) distributed, i.e.
+the density f_(X)(x) of X is f_(X)(x) = xe^( − x).
+
+Question 16
+
+The mean of Y is
+
+1 1
+
+2 2
+
+3 3
+
+4 4
+
+5 $\frac{3}{2}$
+
+6 Do not know
+
+Exercise 17
+
+The waiting time for calls to an emergency hotline may be described by a
+density f(x) = 2xe^( − x²). Five calls are made to the hotline.
+
+Question 17
+
+The third longest waiting time has density
+
+1 2xe^( − x²)
+
+2 x⁵e^( − x²)
+
+3 $\binom{5}{3}\left(1-e^{-x^{2}}\right)^{3}\left(e^{-x^{2}}\right)^{2}$
+
+4 120xe^( − x²)(1+(e^( − x²))²−2e^( − x²))(e^( − x²))²
+
+5 60xe^( − 3x²)(1−e^( − x²))²
+
+6 Do not know
+
+Exercise 18
+
+In this problem we consider two independent events.
+
+Question 18
+
+That two events are independent means that
+
+1 The events may not occur simultaneously
+
+2 The probability of the union of the events may be determined as the
+product of the probabilities of each of the two events occurring
+individually.
+
+3 The probability of the intersection of the events may be determined as
+the product of the probabilities of each of the two events occurring
+individually.
+
+4 The probability of the union of the events may be determined as the
+sum of the probabilities of the events.
+
+5 The indicator function of the union of the events may be determined as
+the sum of the indicator functions for the two events.
+
+6 Do not know
+
+Exercise 19
+
+The change in the price of a financial security during a single day may
+be described by a distribution with mean 0 and variance 49 .
+
+Question 19
+
+An upper bound for the probability of the price changing by more than 21
+in a single day is
+
+1 2Φ( − 3)
+
+2 1 − Φ(3)
+
+3 $\frac{1}{9}$
+
+4 $\frac{1}{7}$
+
+5 $\frac{1}{3}$
+
+6 Do not know
+
+Exercise 20
+
+The normed dividend from two securities may be described by a
+standardised bivariate normal distribution with correlation coefficient
+$\rho=-\frac{1}{2}$
+
+Question 20
+
+The probability that the return from both securities is negative is
+found to be
+$1 \square \quad \frac{\frac{\pi}{2}+\arctan (\sqrt{3})}{2 \pi}$
+$2 \square \quad \frac{\frac{\pi}{2}-\arctan (\sqrt{3})}{2 \pi}$
+$3 \square \quad \frac{1}{6}$
+$4 \square \quad \frac{1}{4}$
+$5 \square \quad \frac{1}{3}$
+6▫   Do not know
+
+Exercise 21
+
+The pair ( X, Y ) of continuous random variables has the joint density
+f(x, y) = 3e^( − (x + y)), for $\frac{1}{2} x \leq y \leq 2 x$.
+
+Question 21
+
+We calculate $\mathrm{E}(\sqrt{X Y})$ as
+$1 \square \quad \mathrm{E}(\sqrt{X Y})=\int_{0}^{\infty} \int_{0}^{\infty} 3 \sqrt{x y} e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+$2 \square \quad \mathrm{E}(\sqrt{X Y})=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} 3 \sqrt{x y} e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+$3 \square \quad \mathrm{E}(\sqrt{X Y})=\int_{0}^{\infty} \int_{\frac{1}{2} x}^{2 x} 3 \sqrt{x y} e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+$4 \square \quad \mathrm{E}(\sqrt{X Y})=\int_{0}^{\infty} \int_{0}^{\infty} 3 x y \sqrt{x y} e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+$5 \square \quad \mathrm{E}(\sqrt{X Y})=\int_{0}^{\infty} \int_{\frac{1}{2} x}^{2 x} 3 x y \sqrt{x y} e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+6▫   Do not know
+
+Exercise 22
+
+A researcher believes he has shown that the lifespan of an oak in years
+may be described by a distribution with density f(t) = 3/(1 + 2t)^(5/2).
+In the following one may assume the researcher is right.
+
+Question 22
+
+The probability of a 100 year old oak tree dying within a small time
+span, Δt, is found, possibly approximately, as
+
+1 $\frac{3}{201} \Delta t$
+
+2 $\frac{\sqrt{201}}{2706867} \Delta t$
+
+3 $\frac{\sqrt{201}}{40401}$
+
+4 $1-(201+2 \Delta t)^{-\frac{3}{2}}$
+
+5 $(201+2 \Delta t)^{-\frac{3}{2}}$
+
+6 Do not know
+
+Exercise 23
+
+We are told that the two random variables X and Y have the properties
+E(X) = 2,  V(X) = 4, E(Y) = 3, E(XY) = 6
+
+Question 23
+
+From this we may deduce the following about X and Y
+
+1 X and Y are independent
+
+2 X and Y are uncorrelated
+
+3 X and Y are positively correlated
+
+4 X and Y are negatively correlated
+
+5 None of the above may be determined from the information provided
+
+6 Do not know
+
+Exercise 24
+
+A sample space Ω is partitioned into three pairwise disjoint events
+C₁, C₂, C₃, such that their union is the sure event, Ω. We are given
+that
+$\mathrm{P}\left(C_{1}\right)=\mathrm{P}\left(C_{2}\right)=\frac{1}{4}$.
+Further, we consider the event D, which satisfies
+P(D∣C₁) = P(D∣C₂) = 1/5, P(D∣C₃) = 2/5.
+
+Question 24
+
+If the event D has occurred the probability of the event C₁ also having
+occurred is found to be
+
+1 $\frac{1}{7}$
+
+2 $\frac{1}{6}$
+
+3 $\frac{2}{11}$
+
+4 $\frac{1}{4}$
+
+5 The probability cannot be calculated due to insufficient information
+
+6 Do not know
+
+Exercise 25
+
+We assume that bacterial colonies in a given growth medium, which we
+observe for a given time, are independent of each other with a mean
+prevalence of 2 colonies per ml. We may assume that the colonies have
+vanishing size
+
+Question 25
+
+The probability of not finding a bacterial colony in
+$\frac{1}{4} \mathrm{ml}$ of the growth medium after the given period of
+time is
+
+1 0,607
+
+2 0,500
+
+3 0,368
+
+4 0,250
+
+5 0,125
+
+6 Do not know
+
+Exercise 26
+
+A discrete random variable N is uniformly distributed on 1, 2, …, n
+while for given N = i the random random variable X follows a binomial
+distribution with counting parameter n = i and probability parameter
+$\frac{1}{i}$.
+
+Question 26
+
+We determine P(X = n) as
+
+1
+$\sum_{i=1}^{n} \frac{1}{n}\binom{n}{i} \frac{1}{n}^{i}\left(1-\frac{1}{n}\right)^{n-i}$
+
+2 $\binom{n+1}{2} \frac{1}{n^{n}}$
+
+3 $\frac{1}{n^{n}}$
+
+4 $\frac{1}{n^{n+1}}$
+
+5 $(n-1) \frac{1}{n^{n}}$
+
+6 Do not know
+
+Exercise 27
+
+The function f(x) = c(x²−4x+3)e^( − x) is proposed as a density for a
+continuous random variable.
+
+Question 27
+
+We may say the following about the function f(x)
+
+1 f(x) may be a density for all positive x and a positively chosen c
+
+2 f(x) may be a density for all positive x and a negatively chosen c
+
+3 f(x) may be a density for all negative x and a positively chosen c
+
+4 f(x) may be a density for all negative x and a negatively chosen c
+
+5 f(x) cannot be a density on the entirety of ℝ_(−)or ℝ₊.
+
+6 Do not know
+
+Exercise 28
+
+The random variable X is geometrically distributed
+$\mathrm{P}(X=x)=\frac{1}{5}\left(\frac{4}{5}\right)^{x-1}$, while Y
+independently of X follows a Poisson distribution
+$\mathrm{P}(Y=y)=\frac{2^{y}}{y!} e^{-2}$.
+
+Question 28
+
+We find E(XY) + E(X)E(Y) to be
+
+1 0
+
+2 10
+
+3 16
+
+4 20
+
+5 32
+
+6 Do not know
+
+Exercise 29
+
+A clinic at a hospital calls in patients for treatment. For every
+patient they summon there is a probability the patient will not come. We
+wish to determine the number of patients to be summoned if the
+probability of more than 10 patients coming is to be more than 90%.
+
+Question 29
+
+The distribution which is best suited to perform the calculation stated
+above is
+
+1 The normal distribution
+
+2 The gamma distribution
+
+3 The Poisson distribution
+
+4 The binomial distribution
+
+5 The negative binomial distribution
+
+6 Do not know
+
+Exercise 30
+
+Among many other things, Australia exports iron ore and coal. The amount
+of iron ore and coal that is exported a given year can be described by a
+bivariate normal distribution with the following parameters
+E(X) = 500, E(Y) = 200,  V(X) = 2500,  V(Y) = 1600 and correlation
+coefficient $\rho=\frac{4}{5}$. We note that the units above are in
+millions of tons, and that X describes the coal and Y the iron ore.
+
+Question 30
+
+What is the expected amount of iron ore that will be exported in a year
+where 160 million tons of coal are exported.
+
+1 540
+
+2 500
+
+3 475
+
+4 460
+
+5 450
+
+6 Do not know
+
+End of exam

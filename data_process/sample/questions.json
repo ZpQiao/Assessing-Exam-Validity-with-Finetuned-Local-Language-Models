@@ -1,0 +1,392 @@
+[
+  {
+    "question_id": "1",
+    "context": "A specific geographical area has a population of 1 million, 5% belong to a certain ethnic group. A group of 100 people is selected at random for a survey.",
+    "question": "The probability that there are at least 7 persons from the ethnic group in the sample is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(1-\\Phi\\left(\\frac{2}{\\sqrt{19}}\\right)\\)",
+      "\\(2\\)\\(\\square\\)\\(1-\\Phi\\left(\\frac{3}{\\sqrt{18}}\\right)\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{1}{12}\\)",
+      "\\(4\\)\\(\\square\\)\\(1-\\sum_{i=0}^{6}{100\\choose i}(0.05)^{i}(1-0.05)^{100-i}\\)",
+      "\\(5\\)\\(\\square\\)\\(1-\\sum_{i=0}^{6}\\frac{e^{-5}5^{i}}{i!}\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "2",
+    "context": "Consider a polar coordinate system with a bombing target at the origin. A bomber throws a bomb hitting a distance \\(R\\) from the origin with the density \\(f_{R}(r)=re^{-\\frac{1}{2}r^{2}}\\). The probability that the target will be destroyed is \\(e^{-r^{2}}\\) if the bomb hits at a distance \\(r\\) from the origin.",
+    "question": "What is the probability that the bombing target will be destroyed?",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\frac{1}{4}\\)",
+      "\\(2\\)\\(\\square\\)\\(\\frac{1}{3}\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{1}{2}\\)",
+      "\\(4\\)\\(\\square\\)\\(\\frac{2}{3}\\)",
+      "\\(5\\)\\(\\square\\)\\(\\frac{3}{4}\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "3",
+    "context": "A swimming club has 18 swimmers. Two of those are backstroke specialists, 7 are crawl specialists, 5 are butterfly specialist, and 4 are medley specialists. Four swimmers are selected randomly for a relay event.",
+    "question": "The probability that there are exactly two butterfly specialist among the four is",
+    "options": [
+      "1\\ \\square&\\quad\\left(4\\\\ 2\\right)\\left(5\\\\ 18\\right)^{2}\\left(13\\\\ 18\\right)^{2}",
+      "2\\ \\square&\\quad\\frac{5}{18}\\frac{4}{17}",
+      "3\\ \\square&\\quad 2\\cdot\\frac{5}{18}\\frac{4}{17}",
+      "4\\ \\square&\\quad\\frac{\\left(5\\\\ 2\\right)\\left(13\\\\ 2\\right)}{\\left(18\\\\ 4\\right)}",
+      "5\\ \\square&\\quad\\frac{5}{18}\\frac{4}{18}",
+      "6\\ \\square&\\quad\\mbox{Do not know}"
+    ]
+  },
+  {
+    "question_id": "4",
+    "context": "A material emits particles, such that the time between particle emissions can be described by independent exponentially distributed random variables with a mean of 2 minutes.",
+    "question": "The probability that the third particle is emitted exactly between the third and fourth minute after the start of registration is",
+    "options": [
+      "1\\ \\square&\\quad\\left(e^{-\\frac{3}{2}}-e^{-2}\\right)^{3}",
+      "2\\ \\square&\\quad\\frac{29}{8}e^{-\\frac{3}{2}}-5e^{-2}",
+      "3\\ \\square&\\quad\\frac{4}{3}e^{-2}-\\frac{9}{16}e^{-\\frac{3}{2}}",
+      "4\\ \\square&\\quad\\Phi(2)^{3}-\\Phi(1)^{3}",
+      "5\\ \\square&\\quad\\left(\\Phi(2)-\\Phi(1)\\right)^{3}",
+      "6\\ \\square&\\quad\\mbox{Do not know}"
+    ]
+  },
+  {
+    "question_id": "5",
+    "context": "Let \\(X_{1}\\) and \\(X_{2}\\) be two independent exponential random variables. Then \\(X=\\min\\left(X_{1},X_{2}\\right)\\) and \\(Y=\\max\\left(X_{1},X_{2}\\right)\\) with joint density \\(f(x,y)=2\\lambda^{2}e^{-\\lambda\\left(x+y\\right)}\\).",
+    "question": "The density \\(f_{Z}(z)\\) of \\(Z=\\frac{X}{Y}\\) is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\frac{2}{\\left(z+1\\right)^{2}}\\) , \\(0\\leq z\\leq 1\\)",
+      "\\(2\\)\\(\\square\\)\\(\\lambda e^{-\\lambda z}\\) , \\(0\\leq z\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{1}{\\sqrt{2\\pi}}\\frac{1}{\\lambda}\\exp\\left(-\\frac{1}{2}\\left(\\frac{z-\\frac{1}{ \\lambda}}{\\sqrt{\\frac{1}{\\lambda}}}\\right)^{2}\\right)\\) , \\(0\\leq z\\leq 1\\)",
+      "\\(4\\)\\(\\square\\)\\(1\\) , \\(0\\leq z\\leq 1\\)",
+      "\\(5\\)\\(\\square\\)\\(\\frac{1}{\\left(z+1\\right)^{2}}\\) , \\(0\\leq z\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "6",
+    "context": "For the events \\(A\\) and \\(B\\) is it known that \\(\\mathsf{P}(A\\cap B)=\\mathsf{P}(A)\\mathsf{P}(B)\\).",
+    "question": "Which of the following statements is correct",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\mathsf{P}(A\\cup B)=\\mathsf{P}(A)+\\mathsf{P}(B)\\).",
+      "\\(2\\)\\(\\square\\)\\(\\mathsf{P}(A|B)=\\mathsf{P}(A\\cap B)\\)",
+      "\\(3\\)\\(\\square\\)\\(\\mathsf{P}(A|B)=\\mathsf{P}(A)\\)",
+      "\\(4\\)\\(\\square\\)\\(\\mathsf{P}(A|B)=\\mathsf{P}(B|A)\\)",
+      "\\(5\\)\\(\\square\\) None of the above are correct.",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "7",
+    "context": "The discrete uniformly distributed random variable \\(X\\) takes one of the values \\(\\{-2,-1,1,2\\}\\). A new random variable is formed by \\(Y=X^{2}\\).",
+    "question": "The covariance \\({\\sf Cov}(X,Y)\\) between \\(X\\) and \\(Y\\) is",
+    "options": [
+      "\\(1\\)\\(\\Box\\) -1",
+      "\\(2\\)\\(\\Box\\) \\(0\\)",
+      "\\(3\\)\\(\\Box\\) \\(\\frac{1}{2}\\)",
+      "\\(4\\)\\(\\Box\\) \\(1\\)",
+      "\\(5\\)\\(\\Box\\) The covariance can not be determined based on the information given",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "8",
+    "context": "It is known, that 20% of the airline passengers on a specific route brings carry on luggage with a weight substantially higher than allowed. It is assumed that each passenger has excessive carry on luggage independently of and with the same probability as all other passengers.",
+    "question": "On a departure with 400 passengers, give a good judgement of the probability that at most 60 passengers have excessive carry on luggage.",
+    "options": [
+      "\\(1\\)\\(\\Box\\) \\(\\left(400\\\\ 60\\right)\\left(\\frac{1}{5}\\right)^{60}\\left(\\frac{4}{5}\\right)^{340}\\)",
+      "\\(2\\)\\(\\Box\\) \\(\\sum_{i=61}^{400}\\frac{80^{i}}{i!}e^{-80}\\)",
+      "\\(3\\)\\(\\Box\\) \\(\\sum_{i=0}^{60}\\frac{\\left(80\\\\ i\\right)\\left(320\\\\ 100-i\\right)}{\\left(400\\\\ 100\\right)}\\)",
+      "\\(4\\)\\(\\Box\\) \\(\\Phi(2.2)-\\Phi(-1.96)\\)",
+      "\\(5\\)\\(\\Box\\) \\(\\Phi(-2.4)\\)",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "9",
+    "context": "The pair \\((X,Y)\\) is standard bivariate normally distributed with correlation \\(\\rho=\\frac{3}{5}\\).",
+    "question": "The probability \\(\\mathsf{P}\\left(\\frac{1}{2}X<Y<2X\\right)\\) is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\frac{2\\pi-\\text{Arctan}(\\frac{7}{4})}{2\\pi}\\)",
+      "\\(2\\)\\(\\square\\)\\(\\frac{1}{6}\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{\\text{Arctan}(\\frac{15}{8})}{2\\pi}\\)",
+      "\\(4\\)\\(\\square\\)\\(\\frac{\\text{Arctan}(\\frac{7}{4})+\\text{Arctan}(\\frac{1}{8})}{2\\pi}\\)",
+      "\\(5\\)\\(\\square\\)\\(\\frac{\\text{Arctan}(\\frac{7}{8})+\\text{Arctan}(\\frac{1}{8})}{\\pi}\\)",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ]
+  },
+  {
+    "question_id": "10",
+    "context": "You have \\(X_{i}\\sim\\exp(\\lambda),i=1,2,3\\) independent. One defines \\(Y=X_{1}+X_{2}+X_{3}\\).",
+    "question": "The joint density \\(f(x,y)\\) of \\(X_{1}\\) and \\(Y\\) is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(f(x,y)=\\lambda e^{-\\lambda x}\\lambda(\\lambda y)e^{-\\lambda y}=\\lambda^{3}ye^{- \\lambda(x+y)}\\)",
+      "\\(2\\)\\(\\square\\)\\(f(x,y)=\\lambda e^{-\\lambda x}\\lambda\\frac{(\\lambda y)^{2}}{2}e^{-\\lambda y}= \\lambda^{4}\\frac{y^{2}}{2}e^{-\\lambda(x+y)}\\)",
+      "\\(3\\)\\(\\square\\)\\(f(x,y)=\\lambda e^{-\\lambda x}\\lambda(\\lambda(y-x))e^{-\\lambda(y-x)}=\\lambda^{3}(y-x)e^{- \\lambda y}\\)",
+      "\\(4\\)\\(\\square\\)\\(f(x,y)=\\lambda e^{-\\lambda x}\\lambda\\frac{(\\lambda(y-x))^{2}}{2}e^{-\\lambda y}= \\lambda^{4}\\frac{(y-x)^{2}}{2}e^{-\\lambda y}\\)",
+      "\\(5\\)\\(\\square\\)\\(f(x,y)=\\lambda\\frac{(\\lambda y)^{2}}{2}e^{-\\lambda y}\\cdot\\frac{1}{3}=\\lambda^{ 3}\\frac{y^{2}}{6}e^{-\\lambda y}\\)",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ]
+  },
+  {
+    "question_id": "11",
+    "context": "It is assumed that cardiac arrest patients arrive at an emergency department independently of each other with an average frequency of 24 per day. As a first approximation one assumes that this frequency is constant during the day.",
+    "question": "The probability that at most 2 cardiac arrest patients arrive during a 4 hour period is",
+    "options": [
+      "1\\ \\square\\qquad\\frac{\\left(12\\\\ 2\\right)^{2}}{\\left(24\\\\ 4\\right)}",
+      "2\\ \\square\\qquad\\left(5\\\\ 6\\right)^{2}+2\\cdot\\tfrac{5}{6}\\tfrac{1}{6}",
+      "3\\ \\square\\qquad\\sum_{i=0}^{2}\\left(4\\\\ i\\right)\\tfrac{1}{16}",
+      "4\\ \\square\\qquad\\Phi(-1)",
+      "5\\ \\square\\qquad\\left(1+4+\\tfrac{4^{2}}{2!}\\right)e^{-4}",
+      "6\\ \\square\\qquad\\text{Do not know}"
+    ]
+  },
+  {
+    "question_id": "12",
+    "context": "Let \\(X\\) and \\(Y\\) be two independent random variables, with \\(\\mathsf{E}(X)=\\mu_{X},\\mathsf{E}(Y)=\\mu_{Y},\\mathsf{Var}(X)=\\sigma_{X}^{2}\\) and \\(\\mathsf{Var}(Y)=\\sigma_{Y}^{2}\\).",
+    "question": "You find",
+    "options": [
+      "1\\ \\square\\qquad\\mathsf{Var}(XY) =\\sigma_{X}^{2}\\sigma_{Y}^{2}+\\mu_{X}^{2}\\sigma_{Y}^{2}+\\mu_{Y}^{ 2}\\sigma_{X}^{2}-\\mu_{X}^{2}\\mu_{Y}^{2}",
+      "2\\ \\square\\qquad\\mathsf{Var}(XY) =\\sigma_{X}^{2}\\sigma_{Y}^{2}",
+      "3\\ \\square\\qquad\\mathsf{Var}(XY) =\\sigma_{X}^{2}\\sigma_{Y}^{2}-\\mu_{X}^{2}\\mu_{Y}^{2}",
+      "4\\ \\square\\qquad\\mathsf{Var}(XY) =\\sigma_{X}^{2}\\sigma_{Y}^{2}+\\mu_{X}^{2}\\sigma_{Y}^{2}+\\mu_{Y}^{ 2}\\sigma_{X}^{2}",
+      "5\\ \\square\\qquad\\mathsf{Var}(XY) =\\sigma_{X}^{2}\\sigma_{Y}^{2}+\\mu_{X}^{2}\\mu_{Y}^{2}",
+      "6\\ \\square\\qquad\\text{Do not know}"
+    ]
+  },
+  {
+    "question_id": "13",
+    "context": "Given the density \\(f(x,y)=6(x-y)\\) for the joint distribution of maximum \\((X)\\) and minimum \\((Y)\\) of 3 independent \\(uniform(0,1)\\) distributed random variables.",
+    "question": "The probability for observing a maximum between 0.9 and 0.91 along with a minimum between 0.1 and 0.11 is found (possibly approximately) to",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(6\\cdot 0.8\\cdot 0.01^{2}\\)",
+      "\\(2\\)\\(\\square\\)\\(\\int_{0}^{0.1}\\int_{0}^{0.9}6(x-y)\\mathrm{d}x\\mathrm{d}y\\)",
+      "\\(3\\)\\(\\square\\)\\(0.48\\)",
+      "\\(4\\)\\(\\square\\)\\(6(0.91-0.10)-6(0.9-0.11)\\)",
+      "\\(5\\)\\(\\square\\)\\(6(0.9-0.1)\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "14",
+    "context": "A random variable \\(X\\) is uniformly distributed on the interval from \\(-\\frac{1}{2}\\) to \\(\\frac{1}{2}\\). A new random variable is formed as \\(Y=X^{2}\\) with density \\(f_{Y}(y)\\).",
+    "question": "The density \\(f_{Y}(y)\\) is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(f_{Y}(y)=\\frac{1}{2\\sqrt{|y|}}\\) for \\(y\\in\\left[0;\\frac{1}{4}\\right]\\)\\(\\mathrm{og}\\)\\(0\\) ellers.",
+      "\\(2\\)\\(\\square\\)\\(f_{Y}(y)=\\frac{1}{\\sqrt{|y|}}\\) for \\(y\\in\\left[0;\\frac{1}{4}\\right]\\)\\(\\mathrm{og}\\)\\(0\\) ellers.",
+      "\\(3\\)\\(\\square\\)\\(f_{Y}(y)=\\frac{1}{2\\sqrt{|y|}}\\) for \\(y\\in\\left[-\\frac{1}{4};\\frac{1}{4}\\right]\\)\\(\\mathrm{og}\\)\\(0\\) ellers.",
+      "\\(4\\)\\(\\square\\)\\(f_{Y}(y)=\\frac{1}{\\sqrt{|y|}}\\) for \\(y\\in\\left[-\\frac{1}{4};\\frac{1}{4}\\right]\\)\\(\\mathrm{og}\\)\\(0\\) ellers.",
+      "\\(5\\)\\(\\square\\)\\(f_{Y}(y)=4\\) for \\(y\\in\\left[0;\\frac{1}{4}\\right]\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "15",
+    "context": "The pair of random variables \\((X,Y)\\) follows a bivariate normal distribution with \\(X\\sim normal(1,4),Y\\sim normal(2,9)\\) and correlation coefficient \\(\\rho=-\\frac{1}{4}\\).",
+    "question": "The probability \\({\\sf P}(X-Y\\leq 0)\\) is",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\(\\Phi\\left(\\frac{1}{\\sqrt{13}}\\right)\\)",
+      "\\(2\\)\\(\\Box\\)\\(\\Phi\\left(\\frac{1}{3}\\right)\\)",
+      "\\(3\\)\\(\\Box\\)\\(\\Phi\\left(\\frac{1}{\\sqrt{12}}\\right)\\)",
+      "\\(4\\)\\(\\Box\\)\\(\\Phi\\left(\\frac{1}{4}\\right)\\)",
+      "\\(5\\)\\(\\Box\\)\\(\\Phi\\left(\\frac{1}{\\sqrt{2}}\\right)\\)",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "16",
+    "context": "For the events \\(A,B\\) and \\(C\\), \\({\\sf P}(A)\\), \\({\\sf P}(B)\\), \\({\\sf P}(C)\\), \\({\\sf P}(A\\cap B)\\), \\({\\sf P}(A\\cap C)\\), \\({\\sf P}(A\\cap B\\cap C)\\) and \\({\\sf P}(A\\cup B\\cup C)\\) are known. One wants to calculate \\({\\sf P}(B\\cap C)\\).",
+    "question": "The probability \\({\\sf P}(B\\cap C)\\) is determined by",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\({\\sf P}(B\\cap C)={\\sf P}(A)+{\\sf P}(B)+{\\sf P}(C)-{\\sf P}(A\\cap B)-{\\sf P}(A\\cup B\\cup C)\\)",
+      "\\(2\\)\\(\\Box\\)\\({\\sf P}(B\\cap C)={\\sf P}(A)+{\\sf P}(B)+{\\sf P}(C)-{\\sf P}(A\\cap B)+{\\sf P}(A\\cap B \\cap C)-{\\sf P}(A\\cup B\\cup C)\\)",
+      "\\(3\\)\\(\\Box\\)\\({\\sf P}(B\\cap C)={\\sf P}(A)+{\\sf P}(B)+{\\sf P}(C)-{\\sf P}(A\\cap B)-{\\sf P}(A\\cap C )+{\\sf P}(A\\cap B\\cap C)-{\\sf P}(A\\cup B\\cup C)\\)",
+      "\\(4\\)\\(\\Box\\)\\({\\sf P}(B\\cap C)={\\sf P}(A\\cup B\\cup C)-{\\sf P}(A)-{\\sf P}(B)-{\\sf P}(C)+{\\sf P}(A \\cap B)-{\\sf P}(A\\cap B\\cap C)\\)",
+      "\\(5\\)\\(\\Box\\)\\({\\sf P}(B\\cap C)={\\sf P}(B)+{\\sf P}(C)-{\\sf P}(A\\cup B\\cup C)\\)",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "17",
+    "context": "The number of defects \\(N\\) in some material can be described by a Poisson distribution with mean \\(\\gamma\\). In another model \\(F_{i}\\) is the event that there are \\(i\\) defects in the material. One wants to express the probability for the event \\(H=(F_{0}\\cup F_{1}\\cup F_{2})\\) using \\(N\\).",
+    "question": "\\(P(H)\\) can be expressed alternatively as",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\(\\qquad\\mathsf{P}(H)=\\mathsf{P}(N\\leq 2)\\)",
+      "\\(2\\)\\(\\Box\\)\\(\\qquad\\mathsf{P}(H)=\\mathsf{P}(N_{0})+\\mathsf{P}(N_{1})+\\mathsf{P}(N_{2})\\)",
+      "\\(3\\)\\(\\Box\\)\\(\\qquad\\mathsf{P}(H)=\\mathsf{P}(F_{i}\\leq 2)\\)",
+      "\\(4\\)\\(\\Box\\)\\(\\qquad\\mathsf{P}(H)=\\mathsf{P}(N=0,N=1,N=2)\\)",
+      "\\(5\\)\\(\\Box\\)It is not possible to express \\(\\mathsf{P}(H)\\) using \\(N\\) with the information given.",
+      "\\(6\\)\\(\\Box\\)Do not know"
+    ]
+  },
+  {
+    "question_id": "18",
+    "context": "A certain fish species spawn a number of eggs that can be described by a Poisson distribution with mean \\(\\mu\\). Each egg gives rise to a female fish larvae with probability \\(p\\) and gives rise to a male fish larvae with probability \\(1-p\\).",
+    "question": "The expected number of eggs from fish of this species, that gives rise to a female fish larvae is",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\(\\qquad\\frac{\\mu}{p}\\)",
+      "\\(2\\)\\(\\Box\\)\\(\\qquad\\mu p\\)",
+      "\\(3\\)\\(\\Box\\)\\(\\qquad\\mu(1-p)\\)",
+      "\\(4\\)\\(\\Box\\)\\(\\qquad\\mu(p+p^{2})\\)",
+      "\\(5\\)\\(\\Box\\)\\(\\qquad\\mu p(1-p)\\)",
+      "\\(6\\)\\(\\Box\\)Do not know"
+    ]
+  },
+  {
+    "question_id": "19",
+    "context": "In a physical experiment, electrons are emitted at high velocity towards a screen. Here the screen can be considered to be of infinite size. The electrons are emitted towards a specific point on the screen. Due to randomness the electrons do not hit this point precisely. The hitting point of an electron on the screen can be described by the coordinates \\((X,Y)\\), where \\(X\\) and \\(Y\\) are independent standard normal random variables. It is of special interest to know whether the electrons hit between one and two length units from the target (the origin of the coordinate system).",
+    "question": "The probability that an electron hits between 1 and 2 length units from the target is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\Phi(2)-\\Phi(1)\\)",
+      "\\(2\\)\\(\\square\\)\\(2\\)\\((\\Phi(2)-\\Phi(1))\\)",
+      "\\(3\\)\\(\\square\\)\\(\\exp\\left(-\\frac{1}{2}\\right)-\\exp\\left(-2\\right)\\)",
+      "\\(4\\)\\(\\square\\)\\(1-\\sum_{r=0}^{1}\\frac{x^{r}}{r!}e^{-x}\\)",
+      "\\(5\\)\\(\\square\\)\\(e^{-2}\\)",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ]
+  },
+  {
+    "question_id": "20",
+    "context": "A communication system for railways has a critical time limit for a handshaking process - the so-called round trip time. Mean and standard deviation for this time is known to be 12ms and 6ms respectively. One wants to determine a threshold value for the round trip time, which is exceeded with a probability of at most \\(\\frac{1}{9}\\).",
+    "question": "The limit in question is determined to be",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(30\\)ms",
+      "\\(2\\)\\(\\square\\)\\(66\\)ms",
+      "\\(3\\)\\(\\square\\)\\(120\\)ms",
+      "\\(4\\)\\(\\square\\)\\(\\left(12+6\\Phi^{-1}\\left(\\frac{17}{18}\\right)\\right)\\)ms",
+      "\\(5\\)\\(\\square\\)\\(\\left(12+6\\Phi^{-1}\\left(\\frac{8}{9}\\right)\\right)\\)ms",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ]
+  },
+  {
+    "question_id": "21",
+    "context": "The life time of an electronic component can with reasonable accuracy be described by an \\(exponential(\\lambda)\\) random variable. The component has reached the age \\(t\\).",
+    "question": "With the given information, determine the probability that the component will fail in the interval \\([t,t+\\mathrm{d}t]\\). The answer can possibly be given only approximatively.",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\(\\lambda\\mathrm{d}t\\)",
+      "\\(2\\)\\(\\Box\\)\\(\\lambda e^{-\\lambda t}\\mathrm{d}t\\)",
+      "\\(3\\)\\(\\Box\\)\\(e^{-\\lambda t}-e^{-\\lambda(t+\\mathrm{d}t)}\\)",
+      "\\(4\\)\\(\\Box\\)\\(\\frac{\\lambda e^{-\\lambda t}}{1-e^{-\\lambda t}}\\mathrm{d}t\\)",
+      "\\(5\\)\\(\\Box\\)\\(\\lambda e^{-\\lambda t}\\)",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "22",
+    "context": "Let \\(X\\) be a positive random variable, such that \\(\\mathsf{P}(X\\leq x)=1-e^{-\\lambda x}\\) and define \\(Y=\\frac{1}{X}\\).",
+    "question": "The probability \\(\\mathsf{P}(Y\\leq y)\\) is",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\(\\mathsf{P}(Y\\leq y)=1-e^{-\\frac{\\lambda}{y}}\\)",
+      "\\(2\\)\\(\\Box\\)\\(\\mathsf{P}(Y\\leq y)=1-e^{-\\frac{y}{\\lambda}}\\)",
+      "\\(3\\)\\(\\Box\\)\\(\\mathsf{P}(Y\\leq y)=e^{-\\frac{y}{\\lambda}}\\)",
+      "\\(4\\)\\(\\Box\\)\\(\\mathsf{P}(Y\\leq y)=e^{-\\frac{1}{\\lambda y}}\\)",
+      "\\(5\\)\\(\\Box\\)\\(\\mathsf{P}(Y\\leq y)=e^{-\\frac{\\lambda}{y}}\\)",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "23",
+    "context": "Consider a game of dice using six normal six-sided dice. The aim is to get as many sixes as possible. You can throw at most two times, as all sixes obtained in the first throw is taken aside and the second throw is performed with only the dice not showing six on the first throw.",
+    "question": "Assume that you got \\(v\\) sixes in the first throw, then the probability of getting a total of \\(w\\) sixes is found to be",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\square\\)\\(\\left(6\\\\ w\\right)\\left(\\frac{1}{6}\\right)\\left(\\frac{5}{6}\\right)\\)",
+      "\\(2\\)\\(\\square\\)\\(\\frac{1}{6-v}\\)",
+      "\\(3\\)\\(\\square\\)\\(\\left(6-v\\\\ w-v\\right)\\left(\\frac{1}{6}\\right)^{w-v}\\left(\\frac{5}{6}\\right)^{6+v-w}\\)",
+      "\\(4\\)\\(\\square\\)\\(\\frac{1}{6}\\)",
+      "\\(5\\)\\(\\square\\)\\(\\left(6-v\\\\ w-v\\right)\\left(\\frac{1}{6}\\right)^{w-v}\\left(\\frac{5}{6}\\right)^{6-w}\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "24",
+    "context": "A point is chosen at random in a circular disk. A straight line is drawn through the point and the center of the circle.",
+    "question": "The probability that the absolute value of the slope of the line is less than 1 is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\frac{\\mbox{Arctan}(\\frac{2}{5})}{\\pi}\\)",
+      "\\(2\\)\\(\\square\\)\\(\\frac{1}{\\pi}\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{1}{4}\\)",
+      "\\(4\\)\\(\\square\\)\\(\\frac{1}{3}\\)",
+      "\\(5\\)\\(\\square\\)\\(\\frac{1}{2}\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "25",
+    "context": "The cause of an air-crash can roughly be ascribed to a. human error, b. mechanical failure, c. act of terrorism. The probability of a human error at a departure is \\(\\frac{1}{50}\\), while the probability, that a mechanical failure occurs is \\(\\frac{1}{500}\\), and finally, the probability that an airline departure is exposed to an act of terrorism is \\(\\frac{1}{500000}\\). If a human error occurs, then the probability that an air-crash occurs to \\(\\frac{1}{10000}\\), while the probability, that an air-crash occurs at the occurrence of a mechanical failure is \\(\\frac{1}{1000}\\), and finally the probability that an air-crash occurs in the event of an act of terrorism is \\(\\frac{2}{3}\\). You can assume that at most one of the three potential causes can occur, and, that an air-crash can always be ascribed to one of these three causes.",
+    "question": "Knowing that an air-crash has occurred, what is the probability that the crash was caused by an act of terrorism",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\frac{1}{4}\\)",
+      "\\(2\\)\\(\\square\\)\\(\\frac{2}{3}\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{1}{3}\\cdot 10^{-6}\\)",
+      "\\(4\\)\\(\\square\\)\\(\\frac{20000}{20033}\\)",
+      "\\(5\\)\\(\\square\\)\\(\\frac{1}{3}\\)",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ]
+  },
+  {
+    "question_id": "26",
+    "context": "You have 5 independent \\(exponential(\\mu)\\) distributed variables.",
+    "question": "The density \\(g(x)\\) of the second largest of the 5 variables is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(g(x)=\\mu\\frac{(\\mu x)^{4}}{4!}e^{-\\mu x}\\)",
+      "\\(2\\)\\(\\square\\)\\(g(x)=\\frac{\\mu}{4}e^{-\\frac{\\mu}{4}x}\\)",
+      "\\(3\\)\\(\\square\\)\\(g(x)=\\frac{5!}{3!}x^{3}(1-x)\\)",
+      "\\(4\\)\\(\\square\\)\\(g(x)=20\\mu e^{-4\\mu x}-20\\mu e^{-4\\mu x}\\)",
+      "\\(5\\)\\(\\square\\)\\(g(x)=20\\mu e^{-2\\mu x}-60\\mu e^{-3\\mu x}+60\\mu e^{-4\\mu x}-20\\mu e^{-5\\mu x}\\)",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ]
+  },
+  {
+    "question_id": "27",
+    "context": "The exponential distribution relates to the geometric distribution like the gamma distribution relates to?",
+    "question": "",
+    "options": [
+      "\\(1\\)\\(\\square\\) The binomial distribution",
+      "\\(2\\)\\(\\square\\) The hyper-geometric distribution",
+      "\\(3\\)\\(\\square\\) The uniform distribution",
+      "\\(4\\)\\(\\square\\) The negative binomial distribution",
+      "\\(5\\)\\(\\square\\) The Poisson distribution",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "28",
+    "context": "Regarding the two random variables \\(X\\) and \\(Y\\) it is known, that \\(\\mathsf{E}(X)=4\\), \\(\\mathsf{E}(Y)=7\\), \\(\\mathsf{SD}(X)=10\\), \\(\\mathsf{SD}(Y)=5\\) and \\(\\mathsf{Cov}(X,Y)=0,5\\). In addition one defines \\(U=3X-2Y+1\\).",
+    "question": "\\(\\mathsf{E}(U)\\) is calculated to be",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(-2\\)",
+      "\\(2\\)\\(\\square\\)\\(-1\\)",
+      "\\(3\\)\\(\\square\\)\\(26\\)",
+      "\\(4\\)\\(\\square\\)\\(26.5\\)",
+      "\\(5\\)\\(\\square\\)\\(27\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ]
+  },
+  {
+    "question_id": "29",
+    "context": "While fishing after sandeels one obtains a certain by-catch of herring. The catch of each species by a random trawl haul can be described with reasonable accuracy by a normal distribution with mean 10 ton (sandeels) and 1 ton (herring) and standard deviation 2 ton (sandeels) and 0.3 ton (herring). The joint distribution can be assumed to be bivariate normal with correlation coefficient 0.7. In a trawl haul one obtained 14 ton of sandeels.",
+    "question": "The expected by-catch of herring is",
+    "options": [
+      "1 \\(\\square\\) & 1 ton \\\\",
+      "2 \\(\\square\\) & 1.24 ton \\\\",
+      "3 \\(\\square\\) & 1.42 ton \\\\",
+      "4 \\(\\square\\) & 1.49 ton \\\\",
+      "5 \\(\\square\\) & 1.6 ton \\\\",
+      "6 \\(\\square\\) & Do not know \\\\"
+    ]
+  },
+  {
+    "question_id": "30",
+    "context": "\\(f(x,y)=K(y-x)(1-y),0<x<y<1\\), where \\(K\\) is a normalizing constant.",
+    "question": "In the range of \\(Y\\), the marginal density \\(f_{Y}(y)\\) of \\(Y\\) is",
+    "options": [
+      "1 \\(\\square\\) & \\(f_{Y}(y)=\\frac{K}{2}(1-y)^{3}\\) \\\\",
+      "2 \\(\\square\\) & \\(f_{Y}(y)=\\frac{K}{2}y(1-y)^{2}\\) \\\\",
+      "3 \\(\\square\\) & \\(f_{Y}(y)=\\frac{K}{2}y^{2}(1-y)\\) \\\\",
+      "4 \\(\\square\\) & \\(f_{Y}(y)=\\frac{K}{4}(1-y)\\) \\\\",
+      "5 \\(\\square\\) & \\(f_{Y}(y)=1\\) \\\\",
+      "6 \\(\\square\\) & Do not know \\\\"
+    ]
+  }
+]

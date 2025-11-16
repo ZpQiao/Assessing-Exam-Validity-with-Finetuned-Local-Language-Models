@@ -1,0 +1,685 @@
+Opgave 1
+
+Hvis man følger en bestemt rute gennem en jungle, vides det, at
+sandsynligheden for at blive bidt af en bestemt giftig slangeart, er
+0,001 . Sandsynligheden for at d⌀, som følge af et bid fra denne art, er
+0,05.
+
+Spørgsmål 1
+
+Hvad er sandsynligheden for at d⌀ af et bid fra denne slangeart, hvis
+man følger denne rute gennem junglen?
+
+1 0,00004
+
+2 0,00005
+
+3 0,02
+
+4 0,00063
+
+5 0,00045
+
+6 Ved ikke
+
+Opgave 2
+
+I et bestemt område kan antallet af kraftige haglbyger på et år
+beskrives ved en Poisson(5) fordeling. Sandsynligheden for, at et
+specialbygget tag i området skal repareres efter sådan en haglbyge, er
+0,1 .
+
+Spørgsmål 2
+
+Hvad er sandsynligheden for, at taget ikke skal repareres på et givet
+år?
+
+1 $\sum_{i=0}^{\infty} i \cdot \frac{\mathrm{e}^{-5} 5^{i}}{i!}$
+
+2 $e^{-\frac{1}{6}}$
+
+3 $\mathrm{e}^{-\frac{1}{2}}$
+
+4 $e^{-\frac{1}{4}}$
+
+5 $e^{-\frac{1}{3}}$
+
+6 Ved ikke
+
+Opgave 3
+
+En skiskyder skyder til måls mod 5 skydeskiver en efter en. Skiverne har
+en radius på 2 cm . Punktet, hvor skuddet rammer, kan antages at være
+beskrevet ved to uafhængige normalfordelte variable med middelværdi 0 cm
+og varians 1 cm², i et koordinat system, med nulpunkt i centrum af den
+skydeskive, der sigtes efter. Det kan antages, at skiskyderen kun rammer
+den skydeskive, der sigtes efter.
+
+Spørgsmål 3
+
+Hvad er sandsynligheden for, at skiskyderen rammer alle skydeskiverne på
+5 skud?
+
+1 (1−e^( − 4))⁵
+
+2
+$\left(1-\int_{0}^{1} \int_{0}^{1} \sqrt{x^{2}+y^{2}} \mathrm{~d} y \mathrm{~d} x\right)^{5}$
+
+3 $\mathrm{e}^{\frac{5}{2}}$
+
+4 1 − e^( − 5)
+
+5 (1−e^( − 2))⁵
+
+6 Ved ikke
+
+Opgave 4
+
+En astronom undersøger et bestemt område af stjernehimlen for at finde
+en bestemt type stjerne. Det vides, at en ud af 1000 stjerner er af
+denne type.
+
+Spørgsmål 4
+
+Forventningsværdien, for antallet af stjerner astronomen skal observere,
+før der er fundet 3 af den ønskede stjernetype blandt observationerne,
+findes til
+
+1
+$\sum_{i=0}^{1000} i \cdot\binom{1000}{i}\left(\frac{1}{1000}\right)^{i}\left(1-\frac{1}{1000}\right)^{i}$
+2 3003
+
+3 $\frac{1000}{3}$
+
+4 2997
+
+5 3000
+
+6 Ved ikke
+
+Opgave 5
+
+En honningbi producerer i gennemsnit 2 gram honning på en sæson med en
+standard afvigelse på 1,5 gram.
+
+Spørgsmål 5
+
+Find, eventuelt approksimativt, sandsynligheden for, at en koloni med
+2000 honningbier producerer mere end 4, 1 kg honning på en sæson.
+
+1 0,0680
+
+2 0,0341
+
+3 0,0521
+
+4 0,0012
+
+5 0,0003
+
+6 Ved ikke
+
+Opgave 6
+
+En stokastisk variabel X følger en såkaldt Paretofordeling med
+tæthedsfunktion $f(x)=\frac{1}{x^{2}}$ i værdimængden X ≥ 1. Man danner
+en ny variabel $Y=\frac{1}{X}$.
+
+Spørgsmål 6
+
+Middelværdien af Y, E(Y) findes til
+
+1 ∞ (ikke defineret)
+
+2 1
+
+3 $\frac{1}{2}$
+
+4 $\frac{1}{4}$
+
+5 $\frac{1}{6}$
+
+6 Ved ikke
+
+Opgave 7
+
+Man har X ∼  N(5, 25) og Y ∼  N(8, 9). Parret er bivariat normalfordelt
+med korrelationskoefficient $-\frac{4}{5}$.
+
+Spørgsmål 7
+
+𝔼(X ∣ Y = 11) findes til
+
+1 1
+
+2 0
+
+3 3
+
+4 4
+
+5 5
+
+6 Ved ikke
+
+Opgave 8
+
+Et stort elektrisk apparat bruger 10 batterier, hvoraf to er defekte.
+Det vides ikke hvilke. Tre (3) tilfældige batterier skiftes.
+
+Spørgsmål 8
+
+Hvad er sandsynligheden for, at de 2 defekte batterier er blevet
+udskiftet?
+
+1 $\frac{1}{15}$
+2 $\frac{2}{10} \cdot \frac{1}{9}$
+3 $\frac{1}{3}$
+4 $\frac{1}{4}$
+
+5 $\frac{1}{7}$
+6 Ved ikke
+
+Opgave 9
+
+Lad X_(i), i = 1, 2, …, 7, være uafhængige kontinuerte stokastiske
+variable, der er ligefordelt på enhedsintervallet ]0; 1[.
+
+Spørgsmål 9
+
+Den fjerde største af de syv variable følger en
+
+1 Beta(3,3) fordeling
+
+2 $\operatorname{Normal}\left(\frac{1}{2}, \frac{1}{84}\right)$
+fordeling
+
+3 Binomial $\left(7, \frac{1}{2}\right)$ fordeling
+
+4 Uniform( 0,1 ) fordeling
+
+5 Beta(4,4) fordeling
+
+6 Ved ikke
+
+Opgave 10
+
+Et bestemt træs overlevelse, afhænger af vejret. Hvis træet på et givet
+år udsættes for frostgrader, dør det med 50% sandsynlighed, ellers er
+sandsynligheden for det dør 1%. I området hvor træet står, fremkommer
+frostgrader med 10% sandsynlighed om året.
+
+Spørgsmål 10
+
+Sandsynligheden for, at et træ dør på et givet år, findes til
+
+1 $\frac{1}{5000}$
+
+2 59 $\overline{1000}$
+
+3 $\frac{1}{10}$
+
+4 $\frac{17}{250}$
+
+5 $\frac{1}{100}$
+
+6 Ved ikke
+
+Opgave 11
+
+En bordpladeproducent har produceret 10 borde, hvor 5 af dem ikke lever
+op til kvalitetskravene. 3 af de 10 borde udvælges tilfældigt til
+kvalitestkontrol.
+
+Spørgsmål 11
+
+Hvad er sandsynligheden for, at mindst 1 af de udvalgte borde ikke lever
+op til kvalitetskravene?
+
+1
+$1-\binom{3}{0}\left(\frac{1}{2}\right)^{0}\left(\frac{1}{2}\right)^{3}$
+
+2 $\frac{\binom{7}{1}\binom{3}{2}}{\binom{10}{3}}$
+
+3 $\frac{\binom{7}{0}\binom{3}{3}}{\binom{10}{3}}$
+
+4 $1-\frac{5}{10} \frac{4}{9} \frac{3}{8}$
+
+5 $\frac{8}{17}$
+
+6 Ved ikke
+
+Opgave 12
+
+En butiks indtægt på en dag, kan beskrives ved en stokastisk variabel,
+med en middelværdi på 100.000 kr . og en standard afvigelse på 50.000 kr
+.
+
+Spørgsmål 12
+
+En øvre grænse for sandsynligheden for, at butikken har en indtægt på
+over 250.000 kr . på en dag, er
+
+1 $\frac{1}{12}$
+
+2 $\frac{1}{9}$
+
+3 $\frac{1}{3}$
+
+4 $\frac{1}{27}$
+
+5 $\frac{1}{18}$
+
+6 Ved ikke
+
+Opgave 13
+
+Lad X være uniform fordelt på intervallet ]0; 1[. Lad Y være givet ved
+$Y=-\frac{\log (X)}{\lambda}$.
+
+Spørgsmål 13
+
+Tæthedsfunktionen f_(Y)(y) for Y er
+
+1 $\frac{1}{\lambda-1}(\log (y)+\lambda), \quad 0 \leq y \leq 1$
+
+2 1 − e^( − λy),  y ≥ 0
+
+3 λe^( − λy),  y ≥ 0
+
+4 $\frac{\lambda^{2}}{4} \log (y+1) y, \quad 0 \leq y \leq 1$
+
+5 $\frac{x^{2}}{2 \lambda \mathrm{e}^{x}} \quad y \geq 0$
+
+6 Ved ikke
+
+Opgave 14
+
+Et firma skal bruge 10 enheder af en bestemt type elektrisk komponent.
+Firmaet ved erfaringsmæssigt, at hver femte af disse komponenter er
+defekte ved modtagelse.
+
+Spørgsmål 14
+
+Sandsynligheden for, at firmaet modtager mindst 10 funktionelle
+komponenter, hvis de bestiller 15, er
+
+1 $\frac{2}{3}$
+
+2 $\frac{5}{19}$
+
+3
+$1-\Phi\left(\frac{15-\frac{1}{5} 10}{\sqrt{10 \frac{1}{5} \frac{4}{5}}}\right)$
+
+4
+$\sum_{i=10}^{15} \frac{\mathrm{e}^{-\frac{2}{3}}\left(\frac{2}{3}\right)^{i}}{i!}$
+
+5
+$\sum_{i=10}^{15}\binom{15}{i}\left(\frac{4}{5}\right)^{i}\left(\frac{1}{5}\right)^{15-i}$
+
+6 Ved ikke
+
+Opgave 15
+
+Man ønsker at frasortere spam-emails. Det vides erfaringsmæssigt, at 5%
+af alle spam-emails indeholder en bestemt sætning, mens denne sætning
+kun findes i 0, 5% af email, der ikke er spam. 40% af alle emails er
+spam. En email er modtaget, og den indeholder sætningen.
+
+Spørgsmål 15
+
+Hvad er sandsynligheden for, at emailen er spam?
+
+1 $\frac{12}{17}$
+
+2 $\frac{2}{3}$
+3 $\frac{20}{23}$
+
+4 $\frac{4}{5}$
+
+5 $\frac{27}{41}$
+
+6 Ved ikke
+
+Opgave 16
+
+Mængden af henholdsvis chokolade og slik indtaget af en dansker pr. år
+beskrives ved en bivariat normalfordeling. Den gennemsnitlige mængde
+chokolade er 8, 8 kg med en standardafvigelse på 1 kg . Den
+gennemsnitlige slikmængde er 8 kg , med standardafvigelsen 0, 8 kg.
+Korrelationskoefficienten mellem de to mængder er ρ = 0.7.
+
+Spørgsmål 16
+
+Hvad er sandsynligheden for, at en dansker spiser mere chokolade end
+gennemsnittet, givet vedkommende spiser mindre slik end gennemsnittet?
+
+1 0,6214
+
+2 0,2636
+
+3 0,2468
+
+4 0,2532
+
+5 0,3256
+
+6 Ved ikke
+
+Opgave 17
+
+Lad X, Y være uafhængige, uniforme stokastiske variable, der antager
+værdier i mængden {1, 2, …, n}
+
+Spørgsmål 17
+
+Man finder P(X < Y) til
+
+1 $\frac{n-1}{2 n}$
+
+2 $\frac{1}{n}$
+
+3 $\frac{1}{n^{2}}$
+
+4 $\frac{1}{2}$
+
+5 $\frac{1}{3}$
+
+6 Ved ikke
+
+Opgave 18
+
+Lad den stokastiske variabel X være Poisson (λ) fordelt, og lad, for
+givet X = x, Y være binomial ( x, p ) fordelt.
+
+Spørgsmål 18
+
+Kovariansen mellem X og Y, Cov (X, Y) findes til
+
+1 λp²
+
+2 $\frac{p}{\lambda}$
+
+3 $\frac{\lambda}{p}$
+
+4 λp
+
+5 λ²p
+
+6 Ved ikke
+
+Opgave 19
+
+En brandstation modtager regelmæssigt alarmer. Processen af ankomne
+alarmer kan med rimelighed beskrives som en Poissonprocess med en
+intensitet på seks alarmer per døgn. På et tidspunkt er det 12 timer
+siden, at der sidst har været modtaget en alarm.
+
+Spørgsmål 19
+
+Sandsynligheden for, at der går mindst 4 timer mere til den næste alarm
+modtages, er
+
+1 $\frac{1}{2}$
+
+2 $\frac{3}{8}$
+
+3 $\frac{\int_{16}^{\infty} f(x) \mathrm{d} x}{\mathrm{P}(X>12)}$
+
+4 $e^{-\frac{1}{2}}$
+
+5 e^( − 1)
+
+6 Ved ikke
+
+Opgave 20
+
+Et punkt vælges uniformt tilfældigt indenfor en cirkel med centrum i (
+0,0 ) og radius 2. Et kvadrat er defineret ved
+ − 1 ≤ x ≤ 1,  − 1 ≤ y ≤ 1.
+
+Spørgsmål 20
+
+Sandsynligheden for, at et punkt vælges indenfor kvadratet, er
+
+1 0,318
+
+2 0,412
+
+3 0,354
+
+4 0,532
+
+5 0,614
+
+6 Ved ikke
+
+Opgave 21
+
+Lad X være beta( r, s ) fordelt og Y være beta( p, q ) fordelt. Man kan
+antage at X og Y er uafhængige. Man danner nu den stokastiske variabel
+$Z=\frac{Y}{X}$.
+
+Spørgsmål 21
+
+Tæthedesfunktionen f_(Z)(z) for Z findes til
+
+1 $\frac{1}{B(p-r, q-s)} z^{p-r-1}(1-z)^{q-s-1}$
+2
+$\int_{0}^{\min \left(1, \frac{1}{z}\right)} \frac{|x|}{B(r, s)} x^{r-1}(1-x)^{s-1} \frac{1}{B(p, q)}(z x)^{p-1}(1-z x)^{q-1} \mathrm{~d} x$
+
+3
+$\int_{0}^{1} \frac{|x|}{B(r, s)} x^{r-1}(1-x)^{s-1} \frac{1}{B(p, q)}(z x)^{p-1}(1-z x)^{q-1} \mathrm{~d} x$
+
+4
+$\frac{1}{\sqrt{2 \pi}} \frac{(p+q) \sqrt{p q(r+s+1)}}{(r+s) \sqrt{r s(p+q+1)}} e^{-\frac{1}{2} \frac{\left(z-\frac{(r+s) p}{r(p+q)}\right)^{2}}{\frac{p q(r+s)^{2}(r+s+1)}{r s(p+q)^{2}(p+q+1)}}}$
+
+5
+$\int_{0}^{\infty} \frac{|x|}{B(r, s)} x^{r-1}(1-x)^{s-1} \frac{1}{B(p, q)}(z x)^{p-1}(1-z x)^{q-1} \mathrm{~d} x$
+
+6 Ved ikke
+hvor B(r, s) er den sædvanlige betafunktion
+
+B(r, s) = ∫₀¹x^(r − 1)(1 − x)^(s − 1) dx
+
+Opgave 22
+
+Tiden mellem kraftige jordskælv i et bestemt område kan beskrives ved
+den stokastiske variabel T. Tæthedsfunktionen f_(T)(t) for T, hvor t
+angives i år, er ikke nærmere specificeret, dog  er det oplyst at
+f_(T)(50) = 0.1, samt at P(T > 50) = 0.9. Det er præcist 50 år siden,
+der sidst har været et kraftigt jordskælv i området.
+
+Spørgsmål 22
+
+Sandsynligheden for, at der forekommer et kraftigt jordskælv i området
+indenfor de næste 24 timer, bestemmes, eventuelt approksimativt, til
+
+1 0,000304
+
+2 0,000451
+
+3 0,000325
+
+4 0,000154
+
+5 0,000652
+
+6 Ved ikke
+
+Opgave 23
+
+Den stokastiske variabel X kan antage værdierne  − 1, 0, 1. Det er
+samtidig oplyst, at $E(X)=\frac{1}{3}$ og
+$E\left(X^{2}\right)=\frac{2}{3}$.
+
+Spørgsmål 23
+
+Sandsynlighederne P(X =  − 1), P(X = 0), P(X = 1) findes til
+
+1 $P(X=-1)=\frac{1}{2}, P(X=0)=\frac{1}{2}, P(X=1)=\frac{1}{4}$
+
+2 $P(X=-1)=\frac{1}{3}, P(X=0)=\frac{1}{3}, P(X=1)=\frac{1}{3}$
+
+3 $P(X=-1)=\frac{1}{5}, P(X=0)=\frac{1}{5}, P(X=1)=\frac{3}{5}$
+
+4 $P(X=-1)=\frac{1}{7}, P(X=0)=\frac{3}{7}, P(X=1)=\frac{4}{7}$
+
+5 $P(X=-1)=\frac{1}{6}, P(X=0)=\frac{1}{3}, P(X=1)=\frac{1}{2}$
+
+6 Ved ikke
+
+Opgave 24
+
+Lad S_(n) angive antallet af gange, en normal mønt er landet plat, i de
+første n kast.
+
+Spørgsmål 24
+
+Man finder E(S₅∣S₁₀=7) til
+
+1 $\frac{9}{2}$
+2 $\frac{7}{2}$
+3 4
+
+4 $\frac{12}{3}$
+
+5 $\frac{6}{5}$
+6 Ved ikke
+
+Opgave 25
+
+Et punkt vælges uniformt tilfældigt indenfor området
+0 ≤ y ≤ 1 − |x| < 1.
+
+Spørgsmål 25
+
+Den betingede tæthed f_(x)(x ∣ Y = y) findes til
+
+1
+
+$$\begin{cases}\frac{x+1}{2}, & \text { for } 0 \leq y \leq 1-|x|<1 \\ 0, & \text { ellers. }\end{cases}$$
+
+2
+$\begin{cases}\frac{1}{2}, & \text { for }-1 \leq x \leq 1 . \\ 0, & \text { ellers. }\end{cases}$
+
+3
+$\begin{cases}\frac{1}{2-2 y}, & \text { for } 0 \leq y \leq 1-|x|<1 . \\ 0, & \text { ellers. }\end{cases}$
+
+4
+$\begin{cases}\frac{1}{4-4 y}, & \text { for }-(1-y) \leq x \leq 1-y . \\ 0, & \text { ellers. }\end{cases}$
+
+5
+$\begin{cases}\frac{1}{2 y}, & \text { for } 0 \leq y \leq 1-|x|<1 . \\ 0, & \text { ellers. }\end{cases}$
+
+6 Ved ikke
+
+Opgave 26
+
+En tæthedsfunktion er givet ved f(x) = 4x(1−x²), hvor x ∈ [0; 1].
+
+Spørgsmål 26
+
+Fordelingsfunktion F(X) findes til
+
+1 4 − 12x²
+
+2  − 3x²(x²−1)
+
+3  − 4x²(x²−4)
+
+4  − x²(x²−2)
+
+5  − x²
+
+6 Ved ikke
+
+Opgave 27
+
+Den simultane tæthedsfunktion for X, Y er givet ved
+f(x, y) = 2(x + y − 1)^( − 3), hvor x, y > 1.
+
+Spørgsmål 27
+
+Sandsynligheden P(2 < x < 4, 1 < y < 3) findes til
+
+1 $\frac{1}{6}$
+
+2 $\frac{1}{5}$
+
+3 $\frac{1}{4}$
+
+4 $\frac{1}{9}$
+
+5 $\frac{8}{17}$
+
+6 Ved ikke
+
+Opgave 28
+
+Lad X_(i), i = 1, 2, …, 5, være standard normalfordelte variable. Der
+dannes nu $Z=\sum_{i=1}^{5} X_{i}^{2}$.
+
+Spørgsmål 28
+
+Hvilken fordeling følger Z?
+
+1 Normal (0, 5)
+
+2 Normal (0, 25)
+
+3 Beta(5,1)
+
+4 χ²(5)
+
+5 Exponential $\left(\frac{1}{5}\right)$
+
+6 Ved ikke
+
+Opgave 29
+
+Lad X ∼  N(0, 1), og
+$Z \sim \operatorname{Binomial}\left(1, \frac{1}{2}\right)$. Der dannes
+nu
+
+$$Y= \begin{cases}-X, & \text { hvis } Z=0 \\ X, & \text { hvis } Z=1\end{cases}$$
+
+Spørgsmål 29
+
+Hvad kan der siges om parret (X, Y) ?
+
+1 X og Y er positivt korrelerede.
+
+2 X og Y er negativt korrelerede.
+
+3 X og Y er ukorrelerede, men afhængige.
+
+4 X og Y er uafhængige.
+
+5 Ingen af ovenstående.
+
+6 Ved ikke
+
+Opgave 30
+
+En landmand producerer både havre og majs. Havre kan sælges for 30kr/kg,
+mens majs sælges for 35kr/kg. Havreudbyttet på en sæson følger en Normal
+(10000 kg,1600 kg²)-fordeling, mens majsudbyttet følger en Normal
+(8000 kg,1600 kg²)-fordeling. Korrelationskoefficienten mellem majs og
+havre udbyttet er 0,8 . Det kan antages, at alle afgrøder landmanden
+producerer kan sælges.
+
+Spørgsmål 30
+
+Hvad er sandsynligheden for, at landmanden sælger for mere 500000 kr på
+en sæson?
+$1 \square \Phi\left(\frac{50000}{\sqrt{3541320}}\right)$
+$2 \square \quad 1-\Phi\left(\frac{50000}{\sqrt{3541320}}\right)$
+$3 \square \quad 1-\Phi\left(\frac{80000}{\sqrt{6088000}}\right)$
+4 $1-\Phi\left(\frac{80000}{\sqrt{3400000}}\right)$
+
+5 $1-\Phi\left(\frac{80000}{\sqrt{3541320}}\right)$
+
+6 Ved ikke
+
+Slut på opgavesættet.

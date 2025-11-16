@@ -1,0 +1,452 @@
+[
+  {
+    "language": "danish",
+    "number": 1,
+    "context": "Vi betragter området A afgrænset af linierne y = 2x - 1, y = 2x - 7, y = 3 og y = 1. Man vælger tilfældigt et punkt P i A og betegner det koordinat med parret af stokastiske variable (X, Y).",
+    "question": "Sandsynligheden P(Y < 5 - X) findes til",
+    "options": [
+      "$\\frac{2}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{7}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 2,
+    "context": "Når en bil kommer til service, er der en sandsynlighed på 0,5 for, at bremseklodserne skal udskiftes. Givet, at bremseklodserne skal udskiftes, er der en sandsynlighed på 0,4 for, at bremseskiverne også skal udskiftes.",
+    "question": "Sandsynligheden for, at både bremseklodser og bremseskiver skal udskiftes, når en bil kommer til service, findes til",
+    "options": [
+      "0,9",
+      "0,5",
+      "0,4",
+      "0,2",
+      "0,1",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 3,
+    "context": "En positiv kontinuert stokastisk variabel T er kendetegnet ved $\\lambda(t)=\\lim _{h \\rightarrow 0} \\frac{\\mathrm{P}(T \\in(t, t+h) \\mid T>t)}{h}=\\frac{1}{\\sqrt{t}}$.",
+    "question": "Man finder $\\mathrm{P}\\left(T \\leq \\frac{1}{4}\\right)$ til",
+    "options": [
+      "$1-e^{-\\frac{1}{2}}$",
+      "$\\frac{1}{2}$",
+      "1 - e^( - 1)",
+      "$\\frac{3}{4}$",
+      "$e^{-\\frac{1}{4}}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 4,
+    "context": "I et TV program med konkurrencer er der ved hver forestilling en sandsynlighed på præcis 10% for, at hovedprisen vindes.",
+    "question": "Sandsynligheden for, at prisen vindes første gang netop ved femte forestilling, er",
+    "options": [
+      "$\\left(\\frac{9}{10}\\right)^{4} \\frac{1}{10}$",
+      "$\\frac{\\left(\\frac{1}{10}\\right)^{4}}{4!} e^{-\\frac{1}{10}}$",
+      "$\\frac{10^{4}}{4!} e^{-10}$",
+      "$4\\left(\\frac{9}{10}\\right)^{4} \\frac{1}{10}$",
+      "$5\\left(\\frac{9}{10}\\right)^{4} \\frac{1}{10}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 5,
+    "context": "En fabrik i Kina fremstiller legetøj til brug i forbindelse med salg af måltider på en fast food restaurant. Til en serie af legetøj benyttes en speciel plastikdel, der fremstilles meget billigt, men som også har en stor sandsynlighed for at være defekt, idet denne sandsynlighed er 30%. Man ønsker at beregne sandsynligheden for, at der i en produktion på 1000 styk fås netop mellem 675 og 725 (begge tal inklusive) fungerende enheder.",
+    "question": "Den ønskede sandsynlighed bestemmes eller tilnærmes bedst ved",
+    "options": [
+      "\\Phi\\left(\\frac{25.5}{\\sqrt{210}}\\right)-\\Phi\\left(\\frac{-25.5}{\\sqrt{210}}\\right)",
+      "\\sum_{i=675}^{725}\\binom{1000}{i}(0,3)^{i}(0,7)^{1000-i}",
+      "\\sum_{i=676}^{724}\\frac{700^{i}}{i!} e^{-700}",
+      "\\binom{1000}{700}(0,7)^{700}(0,3)^{300}",
+      "\\sum_{i=275}^{325}\\frac{\\binom{300}{i}\\binom{700}{1000-i}}{\\binom{1000}{300}}",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 6,
+    "context": "Antallet af kolonier af en given type af skimmelsvamp i et parti korn, der har været udsat for fugt, kan beskrives ved en Poissonfordelt stokastisk variabel med middelværdi 5. Tilsvarende kan forekomsten af kolonier af en anden type skimmelsvamp i et parti fugtskadet korn beskrives ved en Poisson fordelt stokastisk variabel med middelværdi 3. Det antages, at de to typer af kolonier er de eneste typer, der kan forekomme, og, at de forekommer uafhængigt af hinanden. Man udtager en stikprøve af en størrelse svarende til et kvart parti korn.",
+    "question": "Givet partiet har været udsagt for fugt (er fugtskadet) findes sandsynligheden for, at der er højst en skimmelsvampskoloni i stikprøven, til",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\Phi\\left(\\frac{1-4}{\\sqrt{5}+\\sqrt{3}}\\right)$",
+      "$\\sum_{i=0}^{1}\\binom{8}{i} \\frac{1}{4^{i}}\\left(\\frac{3}{4}\\right)^{8-i}$",
+      "9e^( - 8)",
+      "3e^( - 2)",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 7,
+    "context": "En gruppe af filer har en størrelse, der kan beskrives ved en exponential( λ ) fordeling. Man har til et givet formål brug for 3 tilfældigt udvalgte af disse filer.",
+    "question": "Tæthedsfunktion f(x) for størrelsen af den næststørste af filerne findes til",
+    "options": [
+      "f(x) = λe^( - λx)",
+      "f(x) = λ²xe^( - λx)",
+      "f(x) = 6λe^( - 2λx) - 6λe^( - 3λx)",
+      "f(x) = (1-e^( - λx))λe^( - λx) ⋅ e^( - λx)",
+      "f(x) = 2λe^( - λx) - 2λe^( - 2λx)",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 8,
+    "context": "Idet X_(i), i = 1, 2, 3 betegner antal ⌀ jne ved tre kast med en almindelig sekssidet terning, lader vi Y₁ = min (X_(i)) og Y₂ = max (X_(i)). Den simultane sandsynlighedsfunktion af parret ( Y₁, Y₂ ) kan angives ved nedenstående tabel   P(Y₁=y₁,Y₂=y₂)   y₂ = 1            y₂ = 2            y₂ = 3            y₂ = 4            y₂ = 5            y₂ = 6   ---------------- ----------------- ----------------- ----------------- ----------------- ----------------- -----------------   y₁ = 1           $\\frac{1}{216}$   $\\frac{1}{36}$    $\\frac{1}{18}$    $\\frac{1}{12}$    $\\frac{1}{9}$     $\\frac{5}{36}$   y₁ = 2           0                 $\\frac{1}{216}$   $\\frac{1}{36}$    $\\frac{1}{18}$    $\\frac{1}{12}$    $\\frac{1}{9}$   y₁ = 3           0                 0                 $\\frac{1}{216}$   $\\frac{1}{36}$    $\\frac{1}{18}$    $\\frac{1}{12}$   y₁ = 4           0                 0                 0                 $\\frac{1}{216}$   $\\frac{1}{36}$    $\\frac{1}{18}$   y₁ = 5           0                 0                 0                 0                 $\\frac{1}{216}$   $\\frac{1}{36}$   y₁ = 6           0                 0                 0                 0                 0                 $\\frac{1}{216}$",
+    "question": "Man finder P(Y₂=y∣Y₁=4) til",
+    "options": [
+      "$\\mathrm{P}\\left(Y_{2}=4 \\mid Y_{1}=4\\right)=\\frac{1}{3}, \\quad \\mathrm{P}\\left(Y_{2}=5 \\mid Y_{1}=4\\right)=\\frac{1}{3}, \\quad \\mathrm{P}\\left(Y_{2}=6 \\mid Y_{1}=4\\right)=\\frac{1}{3}$",
+      "$\\mathrm{P}\\left(Y_{2}=4 \\mid Y_{1}=4\\right)=\\frac{1}{5}, \\quad \\mathrm{P}\\left(Y_{2}=5 \\mid Y_{1}=4\\right)=\\frac{2}{5}, \\quad \\mathrm{P}\\left(Y_{2}=6 \\mid Y_{1}=4\\right)=\\frac{2}{5}$",
+      "$\\mathrm{P}\\left(Y_{2}=4 \\mid Y_{1}=4\\right)=\\frac{1}{19}, \\quad \\mathrm{P}\\left(Y_{2}=5 \\mid Y_{1}=4\\right)=\\frac{6}{19}, \\quad \\mathrm{P}\\left(Y_{2}=6 \\mid Y_{1}=4\\right)=\\frac{12}{19}$",
+      "$\\mathrm{P}\\left(Y_{2}=4 \\mid Y_{1}=4\\right)=\\frac{9}{155}, \\quad \\mathrm{P}\\left(Y_{2}=5 \\mid Y_{1}=4\\right)=\\frac{18}{155}, \\quad \\mathrm{P}\\left(Y_{2}=6 \\mid Y_{1}=4\\right)=\\frac{128}{155}$",
+      "$$\\begin{aligned} \\mathrm{P}\\left(Y_{2}=1 \\mid Y_{1}=4\\right)=\\frac{18}{37}, & \\mathrm{P}\\left(Y_{2}=2 \\mid Y_{1}=4\\right)=\\frac{12}{37}, \\quad \\mathrm{P}\\left(Y_{2}=3 \\mid Y_{1}=4\\right)=\\frac{6}{37}, \\\\ \\mathrm{P}\\left(Y_{2}=4 \\mid Y_{1}=4\\right)=\\frac{1}{37} & \\end{aligned}$$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 9,
+    "context": "En vindmøllefarmbestyrer ønsker at beregne sandsynligheden for, at hans vindmøller stopper givet, at vindhastigheden er over en maximal værdi. Fra tidligere observationer ved han, at sandsynligheden for, at vinden var over den maximale værdi, givet, at vindmøllerne stoppede, er $\\frac{9}{10}$, og, at sandsynligheden for, at vinden overskred grænsen, givet, at de ikke stoppede, er $\\frac{1}{5}$. Ydermere har han beregnet, at sandsynligheden for, at vindmøllerne stopper, er $\\frac{1}{10}$.",
+    "question": "Hvad er sandsynligheden for, at vindmøllerne stopper, givet, at vinden overskrider maximum værdien?",
+    "options": [
+      "\\frac{18}{100}",
+      "\\frac{1}{10}",
+      "\\frac{1}{3}",
+      "\\frac{1}{2}",
+      "\\frac{9}{10}",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 10,
+    "context": "En kommune har taget et vejkryds under observation, da den forventede værdi af antal uheld per år er 6. Uheld forekommer uafhængigt af hinanden. Ved den efterfølgende beregning regner man med, at alle årets 12 måneder har samme længde. Tilsvarende regner man med, at forholdene i krydset er homogene gennem året.",
+    "question": "Sandsynligheden for, at det første uheld efter et årsskifte tidligst sker i marts, findes til",
+    "options": [
+      "0,33",
+      "0,37",
+      "0,5",
+      "0,66",
+      "0,74",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 11,
+    "context": "I Texas Hold’em Poker får en spiller to kort i starten fra en almindelig kortbunke med 52 kort (ingen jokere).",
+    "question": "Hvad er sandsynligheden for at få netop et es og en konge?",
+    "options": [
+      "$\\frac{4}{663}$",
+      "$\\frac{1}{169}$",
+      "$\\frac{7}{338}$",
+      "$\\frac{8}{663}$",
+      "$\\frac{3}{663}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 12,
+    "context": "To piger, Elise og Sara, vil svømme sammen. De har aftalt at mødes inde i svømmehallen. Det tager Elise ti minutter at klæde om og Sara fem minutter. Elise ankommer tilfældigt mellem 11.50 og 12.10, Sara er lidt mere upræcis og ankommer tilfældigt mellem 11.40 og 12.20. Det oplyses desuden, at de ankommer uafhængigt af hinanden.",
+    "question": "Hvad er sandsynligheden for, at de mødes i omklædningsrummet, givet, at Elise kommer først?",
+    "options": [
+      "$\\frac{5}{8}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{8}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 13,
+    "context": "Lad X og Y være to uafhængige stokastiske variable, der begge er gamma(2,1) fordelte. Man danner da en ny stokastisk variabel Z som Z = Y/X.",
+    "question": "Tætheden f_(Z)(z) for Z findes til",
+    "options": [
+      "f_(Z)(z) = ∫_(x = 0)^(∞)xe^( - x)(xz)e^( - xz) dx",
+      "$f_{Z}(z)=\\frac{1}{(1+z)^{2}}$",
+      "$f_{Z}(z)=\\frac{6 z}{(1+z)^{4}}$",
+      "$f_{Z}(z)=\\int_{x=0}^{\\infty} x e^{-x} \\frac{z}{x} e^{-\\frac{z}{x}} \\mathrm{~d} x$",
+      "$f_{Z}(z)=\\frac{1}{2^{3}} z^{2} e^{-\\frac{z}{2}}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 14,
+    "context": "Andelen af kunder, der køber noget i en givet butik i løbet af en julemåned kan beskrives ved en stokastisk variabel X med tæthedsfunktion $\\left.\\left.f_{X}(x)=\\frac{1}{2 \\sqrt{x}}, x \\in\\right] 0 ; 1\\right]$.",
+    "question": "Forventningsværdien af andelen af kunder, der køber noget, beregnes til",
+    "options": [
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 15,
+    "context": "Koordinaterne til et punkt vælges tilfældigt i området $\\frac{1}{2} \\leq(x-1)^{2}+(y-1)^{2} \\leq 1$. Idet koordinaterne til punktet betegnes med parret ( X, Y ) oplyses det om forventningsværdierne, at E(X) = E(Y) = E(XY) = 1.",
+    "question": "Der gælder",
+    "options": [
+      "Parret (X, Y) har kovariansen $\\frac{1}{2}$.",
+      "Parret ( X, Y ) har kovariansen 1.",
+      "Parret ( X, Y ) har kovariansen -1.",
+      "Parret ( X, Y ) er uafhængige.",
+      "Parret ( X, Y ) er ukorrellerede men ikke uafhængige.",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 16,
+    "context": "Der slåes 8 gange med en sædvanlig sekssidet terning. Man definerer nu, at hændelsen A_(i) er indtruffet, hvis det i ’te kast resulterede i, at der vistes højst 2 øjne. Den stokastiske variabel X defineres som $X=\\sum_{i=1}^{8} I_{A_{i}}$, hvor I_(A_(i)) er indikatorvariablen for hændelsen A_(i).",
+    "question": "Man finder P(X ≤ 2) til",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\sum_{i=0}^{2}\\binom{8}{i}\\left(\\frac{1}{3}\\right)^{i}\\left(\\frac{2}{3}\\right)^{8-i}$",
+      "$\\sum_{i=0}^{2}\\binom{8}{i}\\left(\\frac{1}{2}\\right)^{i}\\left(\\frac{1}{2}\\right)^{8-i}$",
+      "$\\Phi\\left(-\\frac{1}{8}\\right)$",
+      "$\\frac{\\binom{6}{2}\\binom{2}{0}}{\\binom{8}{2}}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 17,
+    "context": "Man har fire (4) uafhængige beta(3,1) fordelte stokastiske variable.",
+    "question": "Fordelingen for den største af de fire variable er",
+    "options": [
+      "en beta(12,1) fordeling",
+      "en beta(11,4) fordeling",
+      "en beta(11,1) fordeling",
+      "en fordeling med tæthedsfunktion 9x⁸",
+      "en fordeling med fordelingsfunktion x⁸",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 18,
+    "context": "Den gennemsnitlige varighed af økonomiske kriser anslåes til at være ca. $\\frac{3}{2}$ år.",
+    "question": "Sandsynligheden for, at varigheden af en økonomisk krise overstiger 4 år, kan maksimalt være",
+    "options": [
+      "$\\frac{3}{8}$",
+      "$1-\\Phi\\left(\\frac{4-\\frac{3}{2}}{\\sqrt{\\frac{3}{2}}}\\right)$",
+      "$\\frac{1}{6}$",
+      "$1-\\Phi\\left(\\frac{4-\\frac{3}{2}}{\\frac{3}{2}}\\right)$",
+      "$\\frac{9}{25}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 19,
+    "context": "Lad X_(i), i = 1, 2 betegne antallet af øjne ved kast med en almindelig terning, og definer derefter U = min (X₁,X₂) og V = max (X₁,X₂).",
+    "question": "Man finder P(U + V = 4) til",
+    "options": [
+      "$\\frac{1}{12}$",
+      "$\\frac{19}{432}$",
+      "$\\frac{1}{11}$",
+      "$\\frac{1}{9}$",
+      "$\\frac{1}{8}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 20,
+    "context": "Antag, at parret (X, Y ) er standard bivariat normalfordelt med korrelationskoefficient $\\frac{1}{2}$.",
+    "question": "Den betingede tæthed f_(X ∣ Y = y)(x) findes til",
+    "options": [
+      "$$f_{X \\mid Y=y}(x)=\\frac{1}{2 \\pi \\sqrt{(1 / 2)}} \\exp \\left(-x^{2}+3 x y-\\frac{3}{2} y^{2}\\right)$$",
+      "$f_{X \\mid Y=y}(x)=\\frac{1}{\\sqrt{2 \\pi}} \\exp \\left(-x^{2}-y^{2}\\right)$",
+      "$f_{X \\mid Y=y}(x)=\\frac{1}{\\sqrt{(1 / 2) \\pi}} \\exp \\left(-x^{2}+\\frac{1}{2} x y-y^{2}\\right)$",
+      "$f_{X \\mid Y=y}(x)=\\frac{1}{2 \\sqrt{\\pi}} \\exp \\left(-\\frac{1}{2}\\left(x^{2}+y^{2}\\right)\\right)$",
+      "$f_{X \\mid Y=y}(x)=\\frac{1}{\\sqrt{(3 / 2) \\pi}} \\exp \\left(-\\frac{2}{3}\\left(x-\\frac{1}{2} y\\right)^{2}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 21,
+    "context": "Om to uafhængige hændelser A og B gælder P(A) = 0, 2 og P(B) = 0, 15.",
+    "question": "Man finder",
+    "options": [
+      "P(A ∪ B) = 0, 35",
+      "P(A ∪ B) = 0, 03",
+      "P(A ∪ B) = 0, 38",
+      "P(A ∪ B) = 0, 05",
+      "P(A ∪ B) = 0, 32",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 22,
+    "context": "En gruppe soldater skyder med en kanon mod et mål i et øvelsesområde. Det antages, at standardafvigelsen i begge retninger, dvs. øst/vest og nord/syd, for afstanden til målet er 50 m , hvor afstanden i hver retning kan antages at være beskrevet ved uafhængige normalfordelte variable.",
+    "question": "Sandsynligheden for, at soldaterne fejler målet med mere end 100 m , findes til",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{2 \\pi}$",
+      "1 - Φ(2)",
+      "e^( - 1)",
+      "e^( - 2)",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 23,
+    "context": "En bestemt flod løber over sine bredder hvert år. Antag, at mærket for laveste vandstand sættes til 1 , og, at den højeste vandstand Y har fordelingsfunktionen $$F_{Y}(y)=\\mathrm{P}(Y \\leq y)=1-\\frac{1}{y^{2}}, \\quad 1 \\leq y<\\infty .$$",
+    "question": "Hvis mærket for den laveste vandstand redefineres til 0 , og vi benytter en måleenhed, der er $\\frac{1}{10}$ af den forrige, så bliver den højeste vandstand Z = 10(Y - 1). Fordelingsfunktionen F_(Z)(z) for Z findes til",
+    "options": [
+      "$\\frac{1}{(z / 10+1)^{2}}$ if z > 0",
+      "$1-\\left(\\frac{1}{(10 z+1)^{2}}\\right)$ if z > 0",
+      "1 - (z/10 + 1)² if z > 0",
+      "$1-\\left(\\frac{1}{(z / 10+1)^{2}}\\right)$ if z > 0",
+      "$\\left(\\frac{1}{z / 10+1}\\right)$ if z > 0",
+      "ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 24,
+    "context": "Antag, at X er en kontinuert beta(2,1) stokastisk variabel. For givet X følger den stokastiske variabel Y en binomialfordeling med antalsparameter n og succes-sandsynlighed X.",
+    "question": "Forventningsværdien E(Y) findes til",
+    "options": [
+      "2n/3",
+      "n/2",
+      "n/3",
+      "n/4",
+      "n/6",
+      "ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 25,
+    "context": "En stokastisk variabel X har tætheden $f(x)=\\frac{1}{\\sqrt{2 \\pi}} \\frac{1}{x} e^{-\\frac{1}{2}(\\log (x))^{2}}, x>0$.",
+    "question": "Bestem, eventuelt approksimativt, sandsynligheden for, at X tilhører intervallet [1, 1, 0001].",
+    "options": [
+      "Φ(1, 0001) - Φ(1)",
+      "$\\frac{1}{\\sqrt{2 \\pi}}$",
+      "$\\frac{0,0001}{\\sqrt{2 \\pi}}$",
+      "$\\frac{1}{\\sqrt{2 \\pi}} \\frac{1}{1,0001} e^{-\\frac{1}{2}(\\log (1.0001))^{2}}$",
+      "$\\frac{1}{\\sqrt{2 \\pi}} \\frac{1}{1,0001}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 26,
+    "context": "Der er givet en kontinuert stokastisk variabel X ∼ exp (λ) samt en diskret stokastisk variabel Y, hvorom det gælder $\\mathrm{P}(Y=y \\mid X=x)=\\frac{x^{y}}{y!} e^{-x}$.",
+    "question": "Fordelingen af Y er en",
+    "options": [
+      "negativ binomial $\\left(2, \\frac{\\lambda}{1+\\lambda}\\right)$",
+      "geometrisk $\\left(\\frac{\\lambda}{1+\\lambda}\\right)$, startende fra 0",
+      "Poisson $\\left(\\frac{\\lambda}{1+\\lambda}\\right)$",
+      "Poisson (λ)",
+      "Poisson $\\left(\\frac{1}{\\lambda}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 27,
+    "context": "Antallet af vælgere, der vælger at sætte deres kryds ved to partier, der opfattes som liggende tæt på hinanden i det politiske spektrum, kan med rimelighed beskrives ved en bivariat normalfordeling med middelværdi henholdsvis 150000 og 250000 med tilhørende standardafvigelser på 25000 og 35000 . Korrelationskoefficienten i den bivariate normalfordeling vurderes til at være  - 0, 5.",
+    "question": "Sandsynligheden for, at det samlede antal vælgere, der sætter kryds ved et af de to partier overstiger 450 000, findes til",
+    "options": [
+      "0,202",
+      "0,169",
+      "0,123",
+      "0,055",
+      "0,049",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 28,
+    "context": "Parret ( X, Y ) af kontinuerte stokastiske variable har den simultane tæthed f(x, y) = 8(x²-xy), 0 ≤ y ≤ x ≤ 1.",
+    "question": "Man finder $\\mathrm{P}\\left(X \\leq \\frac{1}{2}, Y \\leq \\frac{1}{2}\\right)$ til",
+    "options": [
+      "$\\frac{1}{8}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{48}$",
+      "$\\frac{1}{16}$",
+      "$\\frac{1}{24}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 29,
+    "context": "En blodtryksmåling bestående af en samtidig måling af det systoliske og det diastoliske blodtryk kan på en passende skala beskrives ved en standardiseret bivariat normalfordeling med en korrelationskoefficient på $\\frac{5}{13}$. Man ønsker at beregne sandsynligheden for, at det diastoliske blodtryk er højere end gennemsnittet, og at det systoliske blodtryk er højere end det diastoliske blodtryk, begge målt på den relevante skala nævnt ovenfor.",
+    "question": "Den ⌀ nskede sandsynlighed findes til",
+    "options": [
+      "$\\frac{\\operatorname{Atan}\\left(\\frac{2}{3}\\right)}{2 \\pi}$",
+      "$\\frac{\\operatorname{Atan}\\left(\\frac{3}{4}\\right)}{2 \\pi}$",
+      "$\\frac{1}{8}$",
+      "$\\frac{1}{4}-\\frac{\\operatorname{Atan}\\left(\\frac{2}{3}\\right)}{2 \\pi}$",
+      "$\\frac{\\frac{\\pi}{2}-\\operatorname{Atan}\\left(\\frac{3}{4}\\right)}{2 \\pi}$",
+      "ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 30,
+    "context": "Levetiden af en bestemt type af bildæk kan beskrives ved en normalfordeling med middelværdi 34000 kilometer og standardafvigelse 4000 kilometer.",
+    "question": "Sandsynligheden for, at levetiden er mellem 30000 og 35000 kilometer, findes til",
+    "options": [
+      "0,124",
+      "0,440",
+      "0,195",
+      "0,241",
+      "0,669",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  }
+]

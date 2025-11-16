@@ -1,0 +1,452 @@
+[
+  {
+    "language": "english",
+    "number": 1,
+    "context": "The following applies to the events D and $C: P(D)=\\frac{3}{4}, P(C \\mid D)=\\frac{2}{9}$ and $P\\left(C \\mid D^{c}\\right)=\\frac{4}{7}$, where D^(c) is the complementary event of D.",
+    "question": "The probability P(C) is",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{17}{40}$",
+      "$\\underline{13}$",
+      "$\\frac{50}{63}$",
+      "$\\frac{41}{63}$",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 2,
+    "context": "A sensor in a sensor network has two power sources. When one power source is depleted, the other automatically takes over. It is assumed that the other power source functions as new, from the moment it replaces the now depleted power source. The lifetime of the power sources can be described by an exponential distribution with mean $\\frac{3}{2}$ years.",
+    "question": "What is the probability, that the sensor has a functioning power source after 2 years.",
+    "options": [
+      "$\\Phi\\left(\\frac{2-\\frac{4}{3}}{\\sqrt{\\frac{8}{3}}}\\right)$",
+      "$\\left(1+\\frac{8}{3}\\right) e^{-\\frac{8}{3}}$",
+      "(1 + 1.6)e^( - 1.6)",
+      "$\\frac{7}{3} e^{-\\frac{4}{3}}$",
+      "$1-\\Phi\\left(\\frac{2-\\frac{4}{3}}{\\sqrt{\\frac{8}{3}}}\\right)$",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 3,
+    "context": "A random variable Y is exponentially distributed with parameter γ. Another random variable X is, given Y, normally distributed with mean Y²ϕ and variance Y²δ².",
+    "question": "The mean of X is",
+    "options": [
+      "$\\frac{2}{\\gamma}\\left(\\phi^{2}+\\delta^{2}\\right)$",
+      "$\\frac{2}{\\gamma} \\phi$",
+      "$\\frac{2}{\\gamma} \\phi^{2}$",
+      "$\\frac{2}{\\gamma^{2}} \\phi^{2}$",
+      "$\\frac{2}{\\gamma^{2}} \\phi$",
+      "Do not know"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "english",
+    "number": 4,
+    "context": "We consider a random variable X with density f(x) = 4x³, 0 ≤ x ≤ 1.",
+    "question": "The expected value of $Y=\\sqrt{X}$ is",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{2 \\sqrt{5}}{5}$",
+      "$\\frac{8}{9}$",
+      "$\\frac{6}{7}$",
+      "$\\frac{5}{6}$",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 5,
+    "context": "",
+    "question": "The survival time of a type of LED lightbulbs can be described by identically distributed, non-negative random variables X_(i) with a hazard rate h(x), which is increasing in x.",
+    "options": [
+      "It is impossible for a hazard rate to be increasing for all x > 0.",
+      "The error rate is the same for young and old LED lightbulbs.",
+      "Old LED lightbulbs have a smaller error rate than young LED\n\nlightbulbs, but there are more young ones.",
+      "Old LED lightbulbs have a larger error rate than young ones.",
+      "The information given is insufficient to make general statements.",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 6,
+    "context": "A quarter of the individuals of a certain species of fly, possess a gene mutation. It is possible to test for this mutation. The test always gives a positive result, if the individual being tested possesses the mutation. In a quarter of the cases, where the individual being tested does not possess the gene, the test also gives a positive result. The test has been applied to an individual and given a positive result.",
+    "question": "On basis of the above information, the probability that the individual possess the gene mutation is",
+    "options": [
+      "$\\frac{3}{4}$",
+      "$\\frac{4}{7}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{4}$",
+      "Do not know."
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "english",
+    "number": 7,
+    "context": "The pair ( X, Y ) is bivariate standardized normally distributed with correlation coefficient $\\rho=\\frac{1}{2}$.",
+    "question": "One finds P(X + Y ≥ 0, X ≥ 2Y) to be",
+    "options": [
+      "$1-\\frac{\\operatorname{Arctan}(2)}{\\pi}$",
+      "$\\frac{\\operatorname{Arctan}(2)}{\\pi}$",
+      "$1-\\frac{\\operatorname{Arctan}(\\sqrt{5})}{\\pi}$",
+      "$\\frac{1}{3 \\sqrt{3}}$",
+      "$\\frac{1}{6}$",
+      "Do not know"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "english",
+    "number": 8,
+    "context": "Assume, that a European soccer club has a probability of 1/20 of winning the national championship, every year.",
+    "question": "The probability, that the club in question must wait more than 10 years to win the national championship, is",
+    "options": [
+      "$\\sum_{i=16}^{\\infty}\\binom{i}{16} \\frac{1}{20}\\left(\\frac{19}{20}\\right)^{i-1}$",
+      "$\\left(\\frac{19}{20}\\right)^{10}$",
+      "$\\frac{1}{20^{10}}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{20}\\left(\\frac{19}{20}\\right)^{10}$",
+      "Do not know"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "english",
+    "number": 9,
+    "context": "A group of athletes is assumed to be on the same level in the discipline, 110 -meter hurdles. Their completion times can be assumed normally distributed with mean 14 s and variance 0, 25s².",
+    "question": "What is the probability, that the winning time is under 13, 5s in a race with 6 runners?",
+    "options": [
+      "(1 - Φ( - 1))⁶",
+      "1 - Φ( - 2)⁶",
+      "1 - (1 - Φ( - 1))⁶",
+      "1 - (1 - Φ( - 2))⁶",
+      "Φ( - 2)⁶",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 10,
+    "context": "An online game works in the following way. Each participant is given a number between 1 and the number of players, such that each participant has their own number. Then, a number is drawn randomly among these in each round. The winner is the one whose number is drawn first for the second time.",
+    "question": "The probability, that the game ends exactly in round 4 , is",
+    "options": [
+      "$\\frac{1}{25}\\left(\\frac{24}{25}\\right)^{3}$",
+      "$\\frac{\\binom{4}{1}\\binom{21}{3}}{\\binom{25}{4}}$",
+      "$\\frac{24}{25} \\cdot \\frac{23}{25} \\cdot \\frac{3}{25}$",
+      "$\\frac{\\left(25 \\cdot \\frac{1}{25}\\right)^{4}}{4!} \\exp \\left(-\\left(25 \\cdot \\frac{1}{25}\\right)\\right)=\\frac{e^{-1}}{4!}$",
+      "$\\binom{4}{1} \\frac{1}{25}\\left(\\frac{24}{25}\\right)^{3}$",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 11,
+    "context": "One considers the position of a parent bird in relation to the nest. An appropriately chosen length scale is used and a coordinate system with center at the nest. The coordinates of the birds position can then be considered as two independent standardized normally distributed variables.",
+    "question": "The probability, that the parent bird is more than 2 units of length away from the nest, is found to be",
+    "options": [
+      "Φ(2)",
+      "1 - Φ(2)",
+      "$\\frac{1}{4}$",
+      "1 - e^( - 1)",
+      "e^( - 2)",
+      "Do not know"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "english",
+    "number": 12,
+    "context": "A tourist is gambling at a casino. The probability of winning in a single game is 0,48 . The tourist is very persistent and plays a total of 1.000 games.",
+    "question": "The probability that the tourist wins at least 600 times is found, possibly approximately, to be",
+    "options": [
+      "$\\Phi\\left(\\frac{400+\\frac{1}{2}-1000 \\cdot 0.52}{\\sqrt{1000 \\cdot 0.48 \\cdot 0.52}}\\right)$",
+      "$1-\\Phi\\left(\\frac{400+\\frac{1}{2}-1000 \\cdot 0.52}{\\sqrt{1000 \\cdot 0.48 \\cdot 0.52}}\\right)$",
+      "$\\Phi\\left(\\frac{600+\\frac{1}{2}-1000 \\cdot 0.48}{\\sqrt{1000 \\cdot 0.48 \\cdot 0.52}}\\right)$",
+      "$\\frac{1}{2^{1000}} \\sum_{i=600}^{1000}\\binom{1000}{i}$",
+      "$\\binom{1000}{600} 0.48^{400} 0.52^{600}$",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 13,
+    "context": "The number of insects consumed by a bat on a short flight, can be described by a random variable with mean $\\frac{3}{10}$ and variance $\\frac{2}{5}$.",
+    "question": "The probability, that a bat has consumed more than 50 insects on 160 short flights is found, possibly approximately, to be",
+    "options": [
+      "$1-\\Phi\\left(\\frac{1}{4}\\right)$",
+      "$1-\\Phi\\left(\\frac{1}{32}\\right)$",
+      "$1-\\Phi\\left(\\frac{50-160 \\cdot \\frac{3}{10}+\\frac{1}{2}}{\\sqrt{\\cdot \\frac{3}{10} \\frac{7}{10}}}\\right)$",
+      "$\\sum_{i=51}^{\\infty} \\frac{48^{i}}{i!} e^{-48}$",
+      "$\\sum_{i=51}^{160}\\binom{160}{i}\\left(\\frac{3}{10}\\right)\\left(\\frac{7}{10}\\right)^{160-i}$",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 14,
+    "context": "One is given the random variables X ∼ exp (1) and Y =  - X⁴.",
+    "question": "The density function f_(Y)(y) for Y is",
+    "options": [
+      "$f_{Y}(y)=e^{-\\sqrt[4]{-y}}$",
+      "$f_{Y}(y)=e \\sqrt[4]{y}$",
+      "f_(Y)(y) = 4|y|³e^(y⁴)",
+      "$f_{Y}(y)=\\frac{1}{4}(-y)^{-\\frac{3}{4}} e^{-\\sqrt[4]{-y}}$",
+      "$f_{Y}(y)=\\frac{1}{4} y^{-\\frac{3}{4}} e \\sqrt[4]{y}$",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 15,
+    "context": "The immune system against measles in a group of 19 children is of interest. In the entire population, there is a probability of $\\frac{2}{5}$ that a child has immunity against measles.",
+    "question": "The probability, that at least 10 of the 19 children are immune against measles, is",
+    "options": [
+      "0,4",
+      "$1-\\sum_{x=0}^{9} \\frac{\\left(\\frac{38}{5}\\right)}{x!} e^{-\\frac{38}{5}}$",
+      "$\\sum_{x=10}^{19}\\binom{19}{x}\\left(\\frac{2}{5}\\right)^{x}\\left(\\frac{3}{5}\\right)^{19-x}$",
+      "$\\Phi\\left(\\frac{-181}{2 \\sqrt{114}}\\right)$",
+      "$1-\\Phi\\left(\\frac{10-\\frac{38}{5}-\\frac{1}{2}}{\\sqrt{19 \\cdot \\frac{6}{25}}}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 16,
+    "context": "One has the two random variables V, W, where Var (V) = 4, Var (W) = 1 and Var (V - 2W)= 12.",
+    "question": "The correlation Corr (V, W) is found to be",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$-\\frac{1}{4}$",
+      "$\\frac{1}{4}$",
+      "$-\\frac{1}{2}$",
+      "Cannot be determined from the given information.",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 17,
+    "context": "The height and weight of airplane passengers are described by a bivariate normal distribution. The average height of a passenger is 172 cm , while the average weight is 65 kg . The associated standard deviations are 10 cm and 15 kg , respectively. The correlation coefficient between height and weight is ρ = 0.4.",
+    "question": "Calculate the probability that an airplane passenger, who is 157 cm tall, weighs more than 65 kg .",
+    "options": [
+      "0.1843",
+      "0.2563",
+      "0.2967",
+      "0.4294",
+      "0.5000",
+      "Do not know"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "english",
+    "number": 18,
+    "context": "One has three independent random variables U_(i), i = 1, 2, 3, all of which are uniformly distributed in the interval [0; 1].",
+    "question": "The probability, that the second smallest of the 3 variables is larger than $\\frac{1}{4}$, is found to be",
+    "options": [
+      "$\\frac{55}{64}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{57}{64}$",
+      "$\\frac{27}{32}$",
+      "$\\frac{3}{4}$",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 19,
+    "context": "The bacteria count of hospital patients is continuously monitored. The mean bacteria count among hospital patients is 3 .",
+    "question": "The probability, that a patient has a bacteria count of at least 60 , is at most",
+    "options": [
+      "$1-\\Phi\\left(\\frac{60-3}{\\sqrt{60}}\\right)$",
+      "$1-\\Phi\\left(\\frac{60-3}{60}\\right)$",
+      "$\\frac{1}{400}$",
+      "$\\frac{1}{20}$",
+      "$\\frac{1}{9}$",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 20,
+    "context": "For the discrete random variables X and Y, one has the joint distribution $P(X=x, Y= y)=e^{-\\lambda \\frac{(\\lambda(1-p))^{x}}{y!(x-y)!}}\\left(\\frac{p}{1-p}\\right)^{y}$, where 0 ≤ Y ≤ X.",
+    "question": "The conditional distribution of X given Y is found to be",
+    "options": [
+      "$P(X=x \\mid Y=y)=\\frac{(\\lambda(1-p))^{x}}{y!(x-y)!}\\left(\\frac{p}{1-p}\\right)^{x}, \\quad x=0,1, \\ldots$",
+      "$P(X=x \\mid Y=y)=\\frac{(\\lambda(1-p))^{x-y}}{(x-y)!} e^{-\\lambda(1-p)}, \\quad x=y, y+1, \\ldots$",
+      "$P(X=x \\mid Y=y)=\\frac{(\\lambda p))^{x-y}}{(x-y)!} e^{-\\lambda p}, \\quad x=y, y+1, \\ldots$",
+      "$P(X=x \\mid Y=y)=\\frac{(\\lambda(1-p))^{x}}{y!(x-y)!}\\left(\\frac{p}{1-p}\\right)^{x}, \\quad x=y, y+1, \\ldots$",
+      "$P(X=x \\mid Y=y)=\\binom{x}{y} p^{y}(1-p)^{x-y}, \\quad$ i\ndefinitionsområdet.",
+      "Do not know."
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "english",
+    "number": 21,
+    "context": "The size of banks’ capital gap immediately preceeding a recession, and the duration of the subsequent recession, can be described by a bivariate normal distribution. The mean and variance of the capital gap can, with an appropriate scaling, be assumed to be 12 and 2² respectively, while the mean and variance of the duration can be assumed to be 18 and 5². The correlation coefficient can be assumed to be 0.6 . An economist has suggested that recessions could be quantified as the sum of the capital gap and the duration.",
+    "question": "The probabillity, that a recession has a value smaller than 36 on the economist’s scale, is found to be",
+    "options": [
+      "Φ(6)",
+      "$\\Phi\\left(\\frac{6 \\sqrt{29}}{29}\\right)$",
+      "$\\Phi\\left(\\frac{6}{7}\\right)$",
+      "$\\Phi\\left(\\frac{3 \\sqrt{5}}{10}\\right)$",
+      "$\\Phi\\left(\\frac{6 \\sqrt{41}}{41}\\right)$",
+      "Do not know"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "english",
+    "number": 22,
+    "context": "From observations of a stretch of road it has been concluded, that the time interval between two cars can reasonably be described by an exponential distribution with mean $\\frac{1}{2}$ minute.",
+    "question": "What is the probability, that more than three cars pass a point on the road within one minute?",
+    "options": [
+      "$1-\\frac{19}{3} e^{-2}$",
+      "$1-\\frac{79}{48} e^{-\\frac{1}{2}}$",
+      "$\\frac{79}{48} e^{-\\frac{1}{2}}$",
+      "$\\frac{13}{2} e^{-2}$",
+      "1 - 5e^( - 2)",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 23,
+    "context": "A point is chosen at random in the area indicated on the figure. [image]",
+    "question": "The probability, that the first-coordinate X of the point is less than -1 , is found to be",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{8}$",
+      "3",
+      "$\\frac{1}{16}$",
+      "Do not know"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "english",
+    "number": 24,
+    "context": "The random variables X and Y has joint density funcion f(x, y) = 3e^( - x - y) for $0<\\frac{x}{2} \\leq y \\leq 2 x$. The marginal density function is for both X and Y given by $f(x)=3\\left(e^{-\\frac{3 x}{2}}-e^{-3 x}\\right)$. Define the random variable Z = X + Y.",
+    "question": "The density f_(Z)(z) of Z is",
+    "options": [
+      "f_(Z)(z) = ∫₀^(z)3e^( - x - (z - x))dx",
+      "$f_{Z}(z)=\\int_{\\frac{z}{3}}^{\\frac{2 z}{3}} 3 e^{-z} \\mathrm{~d} x$",
+      "$f_{Z}(z)=\\int_{\\frac{z}{3}}^{\\frac{2 z}{3}} 9\\left(e^{-\\frac{3 x}{2}}-e^{-3 x}\\right)\\left(e^{-\\frac{3(z-x)}{2}}-e^{-3(z-x)}\\right) \\mathrm{d} x$",
+      "$f_{Z}(z)=\\int_{\\frac{z}{3}}^{\\frac{3 z}{2}} 3 e^{-x-(x-z)} \\mathrm{d} x$",
+      "$f_{Z}(z)=\\int_{\\frac{z}{3}}^{\\frac{4 z}{3}} 9\\left(e^{-\\frac{3 x}{2}}-e^{-3 x}\\right)\\left(e^{-\\frac{3(z-x)}{2}}-e^{-3(z-x)}\\right) \\mathrm{d} x$",
+      "Do not know"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "english",
+    "number": 25,
+    "context": "A pair of random variables ( X, Y ) are specified by their joint distribution function F(x, y) = P(X ≤ x, Y ≤ y).",
+    "question": "One finds",
+    "options": [
+      "P(x₁<X≤x₂,y₁<Y≤y₂) = F(x₂,y₂) - F(x₁,y₁)",
+      "P(x₁<X≤x₂,y₁<Y≤y₂) = F(x₂,y₂) + F(x₁,y₂) + F(x₂,y₁) - F(x₁,y₁)",
+      "P(x₁≤X≤x₂,y₁≤Y≤y₂) = F(x₂,y₂) + F(x₁,y₂) + F(x₂,y₁) - F(x₁,y₁)",
+      "P(x₁<X≤x₂,y₁<Y≤y₂) = F(x₂,y₂) - F(x₁,y₂) - F(x₂,y₁) + F(x₁,y₁)",
+      "P(x₁≤X≤x₂,y₁≤Y≤y₂) = F(x₂,y₂) - F(x₁,y₂) - F(x₂,y₁) + F(x₁,y₁)",
+      "Do not know"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "english",
+    "number": 26,
+    "context": "A type of electronic components are produced with a varying degree of quality. The varying quality can be quantified by a random variable X, where X is uniformly distributed on the interval [1, 3]. The lifetime of a component of a given quality follows an exponential distribution with parameter X minute ^( - 1).",
+    "question": "What is the expected time to breakdown for a randomly chosen component?",
+    "options": [
+      "$\\log (\\sqrt{3})$ minutes",
+      "2 minutes",
+      "$\\frac{1}{2} \\log (2)$ minutes",
+      "$\\frac{9}{4}$ minutes",
+      "$\\frac{4}{9}$ minutes",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 27,
+    "context": "The time between arrivals of packages in a communication sytem can be described by an exponential distribution with parameter μ.",
+    "question": "The probability of observing an inter-arrival time between two packages in the interval [t, t + ϵ], where $\\epsilon \\ll \\frac{1}{\\mu}$, is found, possibly approximately, to be",
+    "options": [
+      "μe^( - μt)ϵ",
+      "$\\Phi\\left(\\frac{t+\\epsilon-\\frac{1}{\\mu}}{\\frac{1}{\\mu}}\\right)-\\Phi\\left(\\frac{t-\\frac{1}{\\mu}}{\\frac{1}{\\mu}}\\right)$",
+      "e^( - (t + ϵ)μ)",
+      "λe^( - λ(t + ϵ))",
+      "1 - e^( - (t + ϵ)μ)",
+      "Do not know"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 28,
+    "context": "A fair dice is thrown twice. The maximum number of dots among the two throws is denoted by X, and the sum of the number of dots in the two throws is denoted by Y. The probabilities for all cases where the total number of dots is 8 are of interest.",
+    "question": "The desired probabilities are found to be",
+    "options": [
+      "$$P(X=4, Y=8)=\\frac{1}{36}, P(X=5, Y=8)=\\frac{1}{18}, P(X=6, Y=8)=\\frac{1}{18}$$",
+      "$$P(X=4, Y=8)=\\frac{1}{18}, P(X=5, Y=8)=\\frac{1}{12}, P(X=6, Y=8)=\\frac{1}{18}$$",
+      "$$\\begin{aligned}\n\n& P(X=1, Y=8)=\\frac{1}{36}, P(X=2, Y=8)=\\frac{1}{18}, P(X=3, Y=8)=\\frac{1}{12} \\\\\n\n& P(X=4, Y=8)=\\frac{1}{12}, P(X=5, Y=8)=\\frac{1}{18}, P(X=6, Y=8)=\\frac{1}{36}\n\n\\end{aligned}$$",
+      "$$P(X=4, Y=8)=\\frac{1}{18}, P(X=5, Y=8)=\\frac{1}{18}, P(X=6, Y=8)=\\frac{1}{18}$$",
+      "$$\\begin{aligned}\n\n& P(X=1, Y=8)=\\frac{1}{36}, P(X=2, Y=8)=\\frac{1}{36}, P(X=3, Y=8)=\\frac{1}{36}, \\\\\n\n& P(X=4, Y=8)=\\frac{1}{36}, P(X=5, Y=8)=\\frac{1}{36}, P(X=6, Y=8)=\\frac{1}{36}\n\n\\end{aligned}$$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "english",
+    "number": 29,
+    "context": "For the two random variables ( X, Y ), the joint density function is given by f(x, y) = 8xy, 0 < y < x < 1.",
+    "question": "One finds",
+    "options": [
+      "$\\mathrm{E}(X Y)=\\frac{1}{2}$",
+      "$\\mathrm{E}(X Y)=\\frac{8}{9}$",
+      "$\\mathrm{E}(X Y)=\\frac{1}{3}$",
+      "$\\mathrm{E}(X Y)=\\frac{2}{3}$",
+      "$\\mathrm{E}(X Y)=\\frac{4}{9}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "english",
+    "number": 30,
+    "context": "One has the independent X, which follows a Poisson(2) distribution, and Y, which follows a $\\left(\\frac{1}{5}\\right)$ distribution. One forms Z = (2X + 3)(Y - 1).",
+    "question": "One finds",
+    "options": [
+      "$\\mathrm{E}(Z)=\\sum_{i=0}^{\\infty}(2 i+3)(i-1) \\frac{2^{i}}{i!} e^{-2}\\left(\\frac{4}{5}\\right)^{i-1} \\frac{1}{5^{i}}$",
+      "E(Z) = 13",
+      "E(Z) = 20",
+      "E(Z) = 24",
+      "E(Z) = 28",
+      "Do not know"
+    ],
+    "answer": "5"
+  }
+]

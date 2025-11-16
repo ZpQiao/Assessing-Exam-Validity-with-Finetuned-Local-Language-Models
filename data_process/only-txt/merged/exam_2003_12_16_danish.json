@@ -1,0 +1,452 @@
+[
+  {
+    "language": "danish",
+    "number": 1,
+    "context": "En grønthandler har gennem længere tid observeret, at antallet af solgte blomkålshoveder med rimelighed kan beskrives ved en Poissonfordeling med middelværdi 8.4. Blomkålene koster ham 35 kr . i indkøb pr. dag. Han sælger blomkål for 12.50kr.pr stk.",
+    "question": "Idet man kan se bort fra den mulighed, at blomkål bliver udsolgt, findes standardafvigelsen af en dags fortjeneste til:",
+    "options": [
+      "$\\sqrt{12.50 \\cdot 8.4}$",
+      "$12.50 \\cdot \\sqrt{8.4}$",
+      "$\\sqrt{12.50 \\cdot 8.4-35}$",
+      "12.50 ⋅ 8.4",
+      "$\\sqrt{(12.50)^{2} \\cdot 8.4+35}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 2,
+    "context": "En telefoncentral har 8 ledninger. Sandsynligheden P_(i) for, at i af disse er optaget til et givet tidspunkt, er givet ved $$P_{i}=\\frac{1}{c} \\frac{A^{i}}{i!} e^{-A}, \\quad i=0,1,2, \\ldots, 8$$ hvor A er et mål for trafikbelastningen.",
+    "question": "Konstanten c er",
+    "options": [
+      "1",
+      "e^(A)",
+      "$\\frac{1-A^{9}}{1-A} \\Gamma(8)$",
+      "$\\sum_{i=0}^{8} \\frac{A^{i}}{i!}$",
+      "$\\sum_{i=0}^{8} \\frac{A^{i}}{i!} e^{-A}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 3,
+    "context": "Sandsynligheden for, at en dims holder længere end t tidsenheder, er 0.2. Dimsen er kritisk for funktionen af et givet apparat. Man installerer 25 dimser parallelt således, at apparatet fungerer sålænge mindst een af de 25 dimser fungerer. Man kan regne med, at apparatets levetid ikke afhænger af andre komponenter.",
+    "question": "Sandsynligheden for, at apparatet har en levetid på mindst t er",
+    "options": [
+      "$1-\\Phi\\left(\\frac{1}{5}\\right)$",
+      "0.8²⁵",
+      "1 - 0.8²⁵",
+      "1 - 0.2²⁵",
+      "0.2²⁵",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 4,
+    "context": "Belastningen af en bygningsdel består af tre komponenter. En trykpåvirkning, der kan beskrives med en Normal (5, 2) normalfordeling med et passende valg af enheder, en konstant belastning på 3 enheder (vægt), samt en vridpåvirkning, der kan beskrives med en Normal (8, 3) normalfordeling. Belastningerne antages at være additive og uafhængige.",
+    "question": "Sandsynligheden for, at den samlede belastning af bygningsdelen ikke overstiger 25, findes til",
+    "options": [
+      "$\\Phi\\left(\\frac{25-16}{\\sqrt{2+3}}\\right)$",
+      "$\\Phi\\left(\\frac{25-16}{\\sqrt{2^{2}+3^{2}}}\\right)$",
+      "$\\Phi\\left(\\frac{22-16}{\\sqrt{2+3}}\\right)$",
+      "$\\Phi\\left(\\frac{3}{2+3}\\right)$",
+      "$\\Phi\\left(\\frac{3}{\\sqrt{2^{2}+3^{2}}}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 5,
+    "context": "Man har hændelserne A, B og C med P(A) = 0.3, P(B) = 0.2, P(C) = 0.1, P(A ∪ B) = 0.5, P(A ∩ C) = 0.08 og P(B ∩ C) = 0.02. Man kan eventuelt benytte P(A ∩ B ∩ C) ≤ P(A ∩ B).",
+    "question": "Sandsynligheden for P(A ∪ B ∪ C) findes til",
+    "options": [
+      "0.1",
+      "0.28",
+      "0.4",
+      "0.5",
+      "0.6",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 6,
+    "context": "Et flyselskab har efter lang tids erfaring konstateret, at vægten af en tilfældig flypassager kan beskrives ved en stokastisk variabel med middelværdi 72 kg . og standard afvigelse 12 kg . Man har ikke undersøgt fordelingen af denne stokastiske variabel nøjere.",
+    "question": "Til en givet flyafgang er der 300 fremmødte passagerer. Man ⌀ nsker nu at bestemme sandsynligheden for, at den samlede vægt af passagererne ikke overstiger 22 ton. Sandsynligheden findes approksimativt til",
+    "options": [
+      "$1-\\Phi\\left(\\frac{22000-300 \\cdot 72}{12 \\cdot 10 \\sqrt{3}}\\right)$",
+      "$1-\\Phi\\left(\\frac{22000-300 \\cdot 72}{12 \\cdot 300}\\right)$",
+      "$\\Phi\\left(\\frac{22000-300 \\cdot 72}{12 \\cdot 300}\\right)$",
+      "$\\Phi\\left(\\frac{22000-300 \\cdot 72}{12 \\cdot 10 \\sqrt{3}}\\right)$",
+      "Kan ikke løses uden oplysning om fordelingstype.",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 7,
+    "context": "Den stokastiske variabel X er standardiseret normalfordelt (middelværdi 0 og varians 1).",
+    "question": "Forventningsværdien E(|X|) findes til",
+    "options": [
+      "1",
+      "$\\sqrt{\\frac{2}{\\pi}}$",
+      "$\\frac{1}{\\sqrt{2 \\pi}}$",
+      "0",
+      "Ingen af de ovenstående",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 8,
+    "context": "En type af radioaktivt materiale udsender betapartikler med en intensitet på 3.5 partikler pr. sekund pr. g.",
+    "question": "Sandsynligheden for, at den fjerde betapartikel, der udsendes fra en klump på 2 g , kommer inden 1 sekund, er givet ved",
+    "options": [
+      "(1-e^( - 3.5))²",
+      "1 - e^( - 7)",
+      "$\\Phi\\left(\\frac{1-\\frac{4}{7}}{\\frac{4}{7}}\\right)$",
+      "$e^{-7} \\sum_{i=4}^{\\infty} \\frac{7^{i}}{i!}$",
+      "e^( - 3.5) + e^( - 7)",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 9,
+    "context": "Weibullfordelingen med parametrene ( α, λ ) har overlevelsesfunktionen G(t) = e^( - λt^(α)).",
+    "question": "Medianen i en Weibull (λ = 1.5, α = 1.5) fordeling findes til",
+    "options": [
+      "0.3333",
+      "0.5445",
+      "0.5978",
+      "1.4539",
+      "1.5000",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 10,
+    "context": "Vi har P(X ≤ x) = 1 - e^( - x), 0 < x < ∞ og P(U ≤ u) = u, 0 < u < 1, hvor X og U er uafhængige.",
+    "question": "Sandsynligheden for, at X er større end U, findes til",
+    "options": [
+      "$\\frac{1}{2}$",
+      "∫₀^(∞)e^( - x)x dx",
+      "1 - e^( - 2)",
+      "∫₀¹1 ⋅ e^( - u) du",
+      "$\\frac{3}{4}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 11,
+    "context": "Den stokastiske variabel X er eksponentialfordelt med tæthed f(x) = λe^( - λx).",
+    "question": "Tætheden for $Y=\\sqrt{X}$ findes til",
+    "options": [
+      "λe^( - λy²),  0 ≤ y",
+      "$\\frac{\\lambda}{y} e^{-\\lambda y^{2}}, \\quad 0 \\leq y$",
+      "$\\left(\\frac{\\lambda}{y}\\right)^{2} e^{-\\lambda y^{2}}, \\quad 0 \\leq y$",
+      "2λye^( - λy²),  0 ≤ y",
+      "4λy³e^( - λy²),  0 ≤ y",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 12,
+    "context": "Vægten V af en smørpakke kan beskrives med en normalfordeling med middelværdi μ og varians σ₁². For en smørpakke med en givet vægt v kan mængden af vand X beskrives med en normalfordeling med en middelværdi, der er 0.1 ⋅ v. Variansen for mængden af vand antages uafhængigt af smørpakkens vægt til σ₀².",
+    "question": "Middelværdien af vandindholdet i en smørpakke findes til",
+    "options": [
+      "$\\frac{\\mu}{10}$",
+      "$\\mu \\frac{\\frac{\\sigma_{0}}{10}}{\\sqrt{\\left(\\frac{\\sigma_{0}}{10}\\right)^{2}+\\left(\\frac{\\sigma_{1}}{10}\\right)^{2}}}$",
+      "$\\mu \\frac{\\left(\\frac{\\sigma_{0}}{10}\\right)^{2}}{\\left(\\frac{\\sigma_{0}}{10}\\right)^{2}+\\left(\\frac{\\sigma_{1}}{10}\\right)^{2}}$",
+      "$\\frac{\\mu}{10} \\frac{\\sigma_{0}^{2}}{\\sigma_{0}^{2}+\\sigma_{1}^{2}}$",
+      "$\\frac{\\mu}{10} \\frac{\\frac{\\sigma_{0}}{10}}{\\sqrt{\\left(\\frac{\\sigma_{0}}{10}\\right)^{2}+\\left(\\frac{\\sigma_{1}}{10}\\right)^{2}}}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 13,
+    "context": "En sædvanlig terning kastes indtil man første gang får en 3’er. Herefter tælles antal efterfølgende terningekast, indtil der næste gang fås en 3 ’er. Dette tal betegnes med Z.",
+    "question": "Den stokastiske variabel Z følger en",
+    "options": [
+      "Binomialfordeling",
+      "Eksponentialfordeling",
+      "Geometrisk fordeling",
+      "Normalfordeling",
+      "Poissonfordeling",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 14,
+    "context": "For hændelserne A og B gælder $P(B)=0.75, P(A \\mid B)=\\frac{2}{3}$.",
+    "question": "Man finder P(A ∩ B) til",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$",
+      "$\\frac{5}{6}$",
+      "$\\frac{8}{9}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 15,
+    "context": "I en gymnasieklasse er der 14 piger og 11 drenge. Der udtages tilfældigt en gruppe på 5 elever.",
+    "question": "Sandsynligheden for, at der er netop 3 piger ud af de 5 , er",
+    "options": [
+      "$$\\frac{\\binom{14}{3}\\binom{11}{2}}{\\binom{25}{5}}$$",
+      "$\\frac{5!}{3!2!}\\left(\\frac{14}{25}\\right)^{3}\\left(\\frac{11}{25}\\right)^{2}$",
+      "0.6",
+      "$\\frac{14}{25} \\frac{13}{24} \\frac{12}{23} \\frac{11}{22} \\frac{10}{21}$",
+      "$\\frac{14}{25} \\frac{13}{24} \\frac{12}{23} \\frac{11}{25} \\frac{10}{24}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 16,
+    "context": "To stokastiske variable X og Y er ukorrelerede, hvis Cov (X, Y) = 0 i modsat fald, d.v.s. hvis Cov (X, Y) ≠ 0 siges de at være korrelerede.",
+    "question": "Et af følgende udsagn kan aldrig være sandt",
+    "options": [
+      "X og Y er korrelerede og afhængige",
+      "X og Y er ukorrelerede og afhængige",
+      "X og Y er korrelerede og uafhængige",
+      "X og Y er ukorrelerede og uafhængige",
+      "P(X = Y) = 1",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 17,
+    "context": "Parret ( X, Y ) er to-dimensionalt standardiseret normalfordelt, hvor X og Y er uafhængige. Vi indfører de to variable $W=\\frac{a X+Y}{2}$ og $Z=\\frac{a X-Y}{2}$.",
+    "question": "Z og W har korrelation $\\rho=\\frac{1}{2}$ når a vælges til",
+    "options": [
+      "$\\sqrt{2}$",
+      "$\\sqrt{3}$",
+      "$\\frac{1}{\\sqrt{3}}$",
+      "$\\frac{1}{\\sqrt{2}}$",
+      "1",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 18,
+    "context": "Man har en løbende produktion af emner, hvor den hændelse, at et emne er defekt, er uafhængig af, om andre emner i produktionen er defekte. Det enkelte emne har en defektsandsynlighed på p. Emnerne sælges i partier med n emner.",
+    "question": "Middelværdi og standard afvigelse for antal defekte emner i et parti findes til",
+    "options": [
+      "E(X) = n ⋅ p, SD(X) = n ⋅ p(1 - p)",
+      "$E(X)=n \\cdot p, S D(X)=\\sqrt{n \\cdot p(1-p)}$",
+      "$E(X)=\\frac{n}{2}, S D(X)=\\frac{1}{2} \\sqrt{n}$",
+      "$E(X)=\\frac{n}{2}, S D(X)=\\frac{n}{4}$",
+      "$E(x)=\\sqrt{n} p, S D(X)=\\sqrt{n \\cdot p(1-p)}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 19,
+    "context": "Om en bestemt type af komponenter vides, at levetiden kan beskrives ved en eksponentialfordeling med intensitet λ. En bestemt type af apparat, der er afhængigt af en sådan komponent, har fungeret i tiden t₀. Komponenten har således ligeledes fungeret i t₀ tidsenheder.",
+    "question": "Hvad er sandsynligheden for, at komponenten og dermed apparatet fejler, inden det når en samlet levetid på t tidsenheder.",
+    "options": [
+      "λ(λt₀)e^( - λt)",
+      "e^( - λt₀)(1-e^( - λt))",
+      "1 - e^( - λt)",
+      "1 - e^( - λ(t-t₀))",
+      "$\\frac{1-e^{-\\lambda(t)}}{1-e^{-\\lambda\\left(t_{0}\\right)}}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 20,
+    "context": "Et punkt vælges tilfældigt i området 0 < x < 1, 0 < y < x. Koordinaterne for punktet betegnes med den todimensionale stokastiske variabel ( X, Y ).",
+    "question": "Den marginale tæthed for y-koordinaten findes til",
+    "options": [
+      "1",
+      "2",
+      "y",
+      "2 ⋅ y",
+      "2 - 2 ⋅ y",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 21,
+    "context": "Middelværdien af belastningen af en bro er 14 ton med en spredning på 4 ton, men selve fordelingen er ikke nøjagtigt kendt.",
+    "question": "Man ∅ nsker at bestemme en bedste ϕ vre grænse for sandsynligheden for, at broen belastes med mere end 30 ton. Man finder denne sandsynlighed til",
+    "options": [
+      "$\\frac{1}{16}$",
+      "$\\frac{4}{15}$",
+      "$\\frac{1}{150}$",
+      "$\\Phi\\left(\\frac{30-14}{4}\\right)$",
+      "$2 \\Phi\\left(\\frac{30-14}{4}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 22,
+    "context": "Sandsynligheden for, at en given gasledning er læk på et givet tidspunkt, er 0.01. Ved en overvågningsstation tilknyttet denne gasledning har man gennem længere tid observeret, at sandsynligheden for at måle et tryk mindre end 300kpa er 0.039, hvis der er en læk i ledningen medens den tilsvarende sandsynlighed er 0.000394, hvis der ikke er en læk.",
+    "question": "På et givet tidspunkt observeres gastryk på 290 kpa , og man ønsker, at bestemme sandsynligheden for en læk. Denne sandsynlighed findes med en præcision på tre betydende cifre til",
+    "options": [
+      "0.000394",
+      "0.0390",
+      "0.500",
+      "0.750",
+      "1.00",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 23,
+    "context": "Der kastes tre kast med en mønt. Den stokastiske variabel X betegner antallet af krone, medens den stokastiske variabel Y er indikatorvariablen for den hændelse, at alle tre kast giver samme resultat (i.e. tre plat eller tre krone).",
+    "question": "Om de stokastiske variable X og Y gælder",
+    "options": [
+      "Hændelserne {X ≤ x} og {Y ≤ y} er gensidigt udelukkende",
+      "X og Y er uafhængige",
+      "Parret ( X, Y ) er multinomialfordelt",
+      "X + Y beskrives godt ved en normalfordeling",
+      "$E(X+Y)=\\frac{7}{4}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 24,
+    "context": "Varigheden af en speciel type fræsearbejde beskrives godt ved en gamma $\\left(3, \\frac{3}{\\mu}\\right)$ fordeling. Konstanten δ er meget mindre end μ.",
+    "question": "En god approksimation til sandsynligheden for, at varigheden af fræsearbejdet er mellem t₀ og t₀ + δ, findes til",
+    "options": [
+      "μe^( - μ(t₀+δ))",
+      "$\\delta \\frac{3}{\\mu} \\frac{\\left(\\frac{3 t_{0}}{\\mu}\\right)^{2}}{2} e^{-\\frac{3 t_{0}}{\\mu}}$",
+      "$\\delta \\frac{1}{\\frac{\\mu}{\\sqrt{3}} \\sqrt{2 \\pi}} e^{-\\frac{1}{2}\\left(\\frac{t_{0}-\\mu}{\\frac{\\mu}{\\sqrt{3}}}\\right)^{2}}$",
+      "$\\frac{1}{\\frac{\\mu}{\\sqrt{3}} \\sqrt{2 \\pi}} e^{-\\frac{1}{2}\\left(\\frac{t_{0}+\\delta-\\mu}{\\frac{\\mu}{\\sqrt{3}}}\\right)^{2}}$",
+      "$\\frac{3}{\\mu} \\frac{\\left(\\frac{3\\left(t_{0}+\\delta\\right)}{\\mu}\\right)^{2}}{2} e^{-\\frac{3\\left(t_{0}+\\delta\\right)}{\\mu}}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 25,
+    "context": "På en ∅ kologisk mark har man fundet, at det gennemsnitlige antal mælkebøtter per hektar ( 10, 000 m² ) er 10,000 (ti tusinde). Man antager approksimativt, at den enkelte mælkebøtteplante ikke har nogen udstrækning. Det vil sige, at den i en matematisk beskrivelse kan opfattes som et punkt i planen. Man antager tillige, at fordelingen af mælkebøtteplanterne er tilfældig.",
+    "question": "Sandsynligheden for, at der højst forekommer en mælkebøtteplante på en tilfældigt udtaget m², beregnes med 2 betydende cifre til",
+    "options": [
+      "0.26",
+      "0.38",
+      "0.50",
+      "0.62",
+      "0.74",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 26,
+    "context": "Der er 100 familier med børn i et givet område. Ud af disse er der 30 familier med 1 barn, 30 familier med 2 børn, 25 familier med 3 børn og 15 familier med 4 børn.",
+    "question": "Sandsynligheden for, at et tilfældigt valgt barn fra dette område har netop to søskende findes til",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{3}{10}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{7}{20}$",
+      "$\\frac{2}{5}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 27,
+    "context": "Vi betragter n uafhængige og identisk fordelte stokastiske variable samt deres gennemsnit $\\bar{X}=\\frac{\\sum_{i=1}^{n} X_{i}}{n}$.",
+    "question": "Man finder standard afvigelsen SD(X̄) af X̄ til",
+    "options": [
+      "$\\frac{S D(X)}{n}$",
+      "SD(X)",
+      "$\\frac{S D(X)}{n^{2}}$",
+      "$\\frac{S D(X)}{\\sqrt{n}}$",
+      "$\\sqrt{n} \\cdot S D(X)$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 28,
+    "context": "Vi betragter en beta(2,2) fordeling med tæthed f(x) = 6x(1 - x),  0 < x < 1",
+    "question": "For denne fordeling findes fejlraten (hazard rate) til",
+    "options": [
+      "$\\frac{6 x(1-x)}{3 x^{2}-2 x^{3}}$",
+      "$\\frac{6 x(1-x)}{1+2 x^{3}-3 x^{2}}$",
+      "6(1 - x)",
+      "ln (x + 1) - ln (x - 1)",
+      "$\\frac{3 x}{1-x^{2}}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 29,
+    "context": "De uafhængige stokastiske variable X ∈ exp (λ) og Y ∈ exp (μ) er givet.",
+    "question": "Fordelingen f(z) af $Z=\\frac{Y}{X}$ er givet ved tætheden",
+    "options": [
+      "f(z) = (μ - λ)e^( - (μ - λ)z)",
+      "f(z) = (μ - λ)((μ - λ)z)²e^( - (μ - λ)z)",
+      "$$f(z)=\\sqrt{\\frac{2}{3}} \\frac{\\mu}{\\lambda}\\left(1+\\frac{1}{3}\\left(\\frac{\\mu z}{\\lambda}\\right)^{2}\\right)^{-2}$$",
+      "$$f(z)=\\frac{1}{\\sqrt{2 \\pi \\lambda}} e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\lambda}\\right)^{2}}$$",
+      "$$f(z)=\\frac{\\lambda \\mu}{(\\lambda+\\mu z)^{2}}$$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 30,
+    "context": "Parret ( X, Y ) er stokastiske variable således, at X følger en eksponential(1) fordeling og $P(Y=i \\mid X=x)=\\frac{x^{i}}{i!} e^{-x}$.",
+    "question": "Sandsynligheden P(Y = 0) findes til",
+    "options": [
+      "1 - ln (2)",
+      "$\\frac{1}{3}$",
+      "e^( - 1)",
+      "$e^{-\\frac{3}{2}}$",
+      "$\\frac{1}{2}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  }
+]

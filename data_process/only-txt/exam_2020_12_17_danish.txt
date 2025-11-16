@@ -1,0 +1,693 @@
+Opgave 1
+
+Vi betragter en stokastisk variabel X med tæthed f(x) = 3x², 0 ≤ x ≤ 1.
+
+Spørgsmål 1
+
+Forventningsværdien for $Y=\sqrt{X}$ er
+
+1 $\frac{1}{2}$
+
+2 $\frac{\sqrt{3}}{2}$
+
+3 5
+
+4 $\frac{6}{7}$
+
+5 $\frac{5}{6}$
+6 Ved ikke
+
+Opgave 2
+
+Hvis en chokoladefrø med creme udsættes for en varmepåvirkning, er der
+en risiko for, at cremefyldet krystalliserer sig. For den enkelte
+chokoladefrø er denne risiko 10% uafhængigt af tilstanden for de ⌀ vrige
+frøer. En given pakke med 10 frøer er blevet udsat for varmepåvirkning.
+
+Spørgsmål 2
+
+Sandsynligheden for, at højest to frøer har krystalliseret fyld, er
+
+1 $e^{-1}+e^{-1}+\frac{1}{2} e^{-1}$
+
+2
+$\frac{\left(10 \cdot \frac{1}{10}\right)^{2}}{2!} e^{-10 \cdot \frac{1}{10}}$
+
+3
+$\Phi\left(\frac{2-1}{\sqrt{10 \cdot \frac{1}{10} \frac{9}{10}}}\right)$
+
+4
+$\left(\frac{9}{10}\right)^{10}+10\left(\frac{9}{10}\right)^{9}\left(\frac{1}{10}\right)+\frac{10 \cdot 9}{2}\left(\frac{9}{10}\right)^{8}\left(\frac{1}{10}\right)^{2}$
+
+5
+$\binom{10}{2}\left(\frac{9}{10}\right)^{8}\left(\frac{1}{10}\right)^{2}$
+
+6 Ved ikke
+
+Opgave 3
+
+En pendler har observeret, at for de morgentog, der kommer til tiden, er
+der en sandsynlighed på $\frac{1}{5}$ for at finde en siddeplads, medens
+der er en sandsynlighed på $\frac{1}{3}$ for, at et morgentog kommer til
+tiden.
+
+Spørgsmål 3
+
+Sandsynligheden for, at et morgentog kommer til tiden og pendleren kan
+finde en siddeplads, er
+
+1 $\frac{8}{15}$
+
+2 $\frac{1}{3}$
+
+3 $\frac{1}{4}$
+
+4 $\frac{2}{15}$
+
+5 $\frac{1}{15}$
+
+6 Ved ikke
+
+Opgave 4
+
+For to stokastiske variable X og Y gælder, at
+E(X) = 3, E(Y) = 2, Var (X) = 4, Var (Y) = 9 og E(XY) = 10. Man danner
+nu Z = 3X + 2Y.
+
+Spørgsmål 4
+
+Man finder variansen Var (Z) for Z til
+
+1 30
+
+2 72
+
+3 78
+
+4 120
+
+5 192
+
+6 Ved ikke
+
+Opgave 5
+
+I en urne er der 8 røde og 16 grønne kugler. Man udtager 3 kugler
+tilfældigt uden tilbagelægning.
+
+Spørgsmål 5
+
+Sandsynligheden for, at man udtager netop 1 rød og 2 grønne kugler, er
+
+1 $\frac{8}{24} \cdot \frac{16}{23} \cdot \frac{15}{22}$
+2 $\frac{1}{2}$
+
+3 $\frac{1}{3} \cdot \frac{2}{3} \cdot \frac{2}{3}$
+
+4 $\binom{3}{1} \frac{1}{3}\left(\frac{2}{3}\right)^{2}$
+
+5 $\frac{\binom{8}{1}\binom{16}{2}}{\binom{24}{3}}$
+
+6 Ved ikke
+
+Opgave 6
+
+En tyk mand kører en tur på en gammel cykel. Sandsynligheden for, at
+hhv. forhjulet og baghjulet bryder sammen, er 0,3 og 0,2 .
+Sandsynligheden for, at mindst et hjul bryder sammen, er 0,5 .
+
+Spørgsmål 6
+
+Hvad er sandsynligheden for, at begge hjul bryder sammen?
+
+1 0
+
+2 0,03
+
+3 0,06
+
+4 0,44
+
+5 1
+
+6 Ved ikke
+
+Opgave 7
+
+For en stokastisk variabel X, der beskriver en medicinsk forskel ved
+behandling med to forskellige præparater, kendes kun middelværdi -1 og
+standard afvigelse 2. Det er kritisk, hvis denne forskel er mindre end
+-5 , så man ønsker at vurdere denne sandsynlighed.
+
+Spørgsmål 7
+
+En sikker vurdering af den ovennævnte sandsynlighed er
+1 $\frac{-1}{-5}$
+2 $\frac{1}{4}$
+3 $\Phi\left(\frac{-5+1}{2}\right)$
+4 $1-\Phi\left(\frac{-5+1}{2}\right)$
+5 $\frac{1}{25}$
+6 Ved ikke
+
+Opgave 8
+
+Et firma fremstiller elektroniske enheder til brug i forbindelse med
+rumfart. Tolerancekravene er meget høje, så en betragtelig del af
+komponenterne - 25% - overholder ikke de nødvendige specifikationer og
+kan ikke benyttes. Komponenterne fremstilles i batches af 400 . Til en
+given anvendelse skal bruges 280 enheder. Da det er forbundet med en del
+omkostninger at initiere en batch, er man interesseret i, om man kan
+nøjes med at producere en enkelt batch for at imødekomme ordren.
+
+Spørgsmål 8
+
+Sandsynligheden for, at en batch er tilstrækkelig, findes - eventuelt
+approksimativt - til
+$1 \square \quad \sum_{i=280}^{400}\binom{400}{i} \frac{1}{4^{i}}\left(\frac{3}{4}\right)^{400-i}$
+2
+$1-\sum_{i=0}^{120}\binom{400}{i} \frac{1}{4^{i}}\left(\frac{3}{4}\right)^{400-i}$
+
+3 $1-\sum_{i=0}^{279} \frac{300^{i}}{i!} e^{-300}$
+
+4
+$1-\Phi\left(\frac{280+\frac{1}{2}-300}{\sqrt{\frac{1}{4} \cdot \frac{3}{4} \cdot 400}}\right)$
+
+5 $1-\Phi\left(\frac{280-\frac{1}{2}-300}{5 \sqrt{3}}\right)$
+6 Ved ikke
+
+Opgave 9
+
+Et punkt vælges tilfældigt i det markerede område på figuren. Tætheden
+for det valgte punkts koordinater er således givet ved f(x, y) = c for
+$(x, y) \in\left\{|x| \leq \frac{1}{2} \wedge|y| \leq \frac{1}{2}\right\} \backslash\left\{|x| \leq \frac{1}{4} \wedge|y| \leq \frac{1}{4}\right\}$
+og 0 ellers, hvor \betyder mængdedifferens, altså de punkter der er i
+den førstnævnte mængde uden at være i den anden.
+[image]
+
+Spørgsmål 9
+
+Konstanten c er
+
+1 $\frac{1}{2}$
+
+2 $\frac{3}{4}$
+
+3 1
+
+4 $\frac{4}{3}$
+
+5 2
+
+6 Ved ikke
+
+Opgave 10
+
+En fugleart benytter sig af et advarselsskrig i 80% af de tilfælde, hvor
+der er rovdyr i nærheden. Tilsvarende kan fuglene benytte sig af skriget
+også i tilfælde, hvor der ikke er rovdyr i nærheden. Således vil fuglene
+benytte skriget i 5% af de tilfælde, hvor der ikke er rovdyr i nærheden.
+
+I et givet område vides det, at sandsynligheden for, at der er rovdyr i
+nærheden af fugle fra denne art, er 5%.
+
+Spørgsmål 10
+
+Hvis man i det givne område hører fugleskrig, anslår man sandsynligheden
+for, at der er rovdyr i nærheden, til
+
+1 $\frac{16}{35}$
+2 $\frac{37}{42}$
+3 $\frac{6}{7}$
+
+4 $\frac{23}{12}$
+
+5 $\frac{5}{42}$
+6 Ved ikke
+
+Opgave 11
+
+Ved et busstoppested i indre by kan tiderne mellem busserne med god
+tilnærmelse beskrives ved uafhængige eksponential( λ ) fordelte
+stokastiske variable på en passende valgt tidsskala. En person kommer
+til stoppestedet på et tilfældigt tidspunkt.
+
+Spørgsmål 11
+
+I den valgte tidsskala er personens forventede ventetid
+
+1 λ
+
+2 $\frac{\lambda}{2}$
+
+3 $\frac{1}{2 \lambda}$
+
+4 $\frac{1}{\lambda}$
+5 Man kan ikke bestemme denne forventningsværdi uden kendskab til, den
+forrige bus’ afgangstidspunkt.
+
+6 Ved ikke
+
+Fortsæt på side
+
+Opgave 12
+
+Lad X og Y være standard normalfordelte og uafhængige.
+[image]
+
+Spørgsmål 12
+
+Bestem
+$P\left(\left(Y>X-\frac{1}{2} \wedge Y<X+\frac{1}{2}\right) \vee\left(Y>-X-\frac{1}{2} \wedge Y<-X+\frac{1}{2}\right)\right)$
+illustreret ved det skraverede område i figuren.
+
+1 $4 \Phi\left(\sqrt{\frac{1}{2}}\right)^{2}-1$
+2 $4 \Phi\left(\sqrt{\frac{1}{2}}\right)-2$
+
+3 $4 \Phi\left(\sqrt{\frac{1}{8}}\right)-2$
+
+4
+$8 \Phi\left(\sqrt{\frac{1}{2}}\right)-4 \Phi\left(\sqrt{\frac{1}{2}}\right)^{2}-3$
+
+5
+$8 \Phi\left(\sqrt{\frac{1}{8}}\right)-4 \Phi\left(\sqrt{\frac{1}{8}}\right)^{2}-3$
+6 Ved ikke
+
+Opgave 13
+
+En positiv kontinuert stokastisk variabel X har tætheden
+$f_{X}(x)=\frac{1}{\sqrt{2 \pi}} \frac{1}{x} e^{-\frac{1}{2}(\log (x))^{2}}$.
+Man danner en ny stokastisk variabel Y = log (X) med tæthedsfunktion
+f_(Y)(y).
+
+Spørgsmål 13
+
+Tætheden f_(Y)(y) for Y er
+
+1 $\frac{1}{\sqrt{2 \pi}} e^{-\frac{1}{2} y^{2}}$
+
+2 $\frac{1}{\sqrt{2 \pi}} \frac{1}{y} e^{-\frac{1}{2} y^{2}}$
+
+3 $\frac{1}{\sqrt{2 \pi}} \frac{1}{e^{y}} e^{-\frac{1}{2} y^{2}}$
+
+4 e^( − e^( − y))
+
+5 $y e^{-\frac{y^{2}}{2}}$
+
+6 Ved ikke
+
+Opgave 14
+
+Den stokastiske variable Y er eksponential(2) fordelt, medens den
+betingede fordeling af den stokastiske variabel X givet Y = y er
+eksponential $\left(\frac{1}{y}\right)$ fordelt.
+
+Spørgsmål 14
+
+Man finder E(X) til
+
+1 2
+
+2 $\frac{1}{2}$
+
+3 e²
+
+4 $\sqrt{e}$
+
+5 log (2)
+
+6 Ved ikke
+
+Opgave 15
+
+Lad X₁, …, X_(n) være uafhængige Poissonfordelte stokastiske variable
+med parameter λ.
+
+Spørgsmål 15
+
+Den betingede fordeling af X₁ givet X₁ + X₂ + ⋯ + X_(n) = m findes til
+
+1 Poisson ( nλ )
+
+2 binomial $\left(m, \frac{1}{1+\lambda}\right)$
+
+3 Poisson $\left(\frac{1}{n}\right)$
+
+4 binomial $\left(m, \frac{1}{n}\right)$
+
+5 geometrisk $\left(\frac{1}{1+\lambda}\right)$
+
+6 Ved ikke
+
+Opgave 16
+
+Levetiden af en elektronisk komponent kan med god tilnærmelse beskrives
+ved en gamma (2, λ) fordelt stokastisk variabel. Komponenten har opnået
+alderen t > 0.
+
+Spørgsmål 16
+
+Under de givne oplysninger, hvad er da sandsynligheden for, at
+komponenten fejler netop i intervallet [t, t + dt]. Svaret kan eventuelt
+angives approksimativt
+
+1 $\frac{\lambda}{1+\frac{1}{\lambda t}} \mathrm{~d} t$
+
+2 λ(λt)e^( − λt) dt
+
+3 (1 + λt)e^( − λt) − (1 + λ(t + dt))e^( − λ(t + dt))
+
+4
+$\frac{\lambda(1+\lambda t) e^{-\lambda t}}{1-(1+\lambda t) e^{-\lambda t}} \mathrm{~d} t$
+
+5 $\frac{\lambda}{2} \mathrm{~d} t$
+
+6 Ved ikke
+
+Opgave 17
+
+Vi betragter de to stokastiske variable N og X, hvorom der gælder,
+P(N = n) = (1 − p)^(n − 1)p, n = 1, 2, 3, …, og, at den betingede
+fordeling af X givet N er en gamma (N, λ) fordeling.
+
+Spørgsmål 17
+
+Den stokastiske variabel X har tætheden
+
+1
+$f_{X}(x)=\sum_{n=1}^{\infty}(1-p)^{n} \frac{(\lambda x)^{n}}{n!} e^{-\lambda x}$
+
+2 f_(X)(x) = λpe^( − λpx)
+
+3
+$f_{X}(x)=\frac{1}{\sqrt{2 \pi}} \frac{1}{\lambda} e^{-\frac{1}{2}\left(\frac{x-\lambda}{\lambda}\right)^{2}}$
+
+4
+$f_{X}(x)=\lambda \frac{(\lambda x)^{\frac{1}{p}-1}}{\Gamma\left(\frac{1}{p}-1\right)} e^{-\lambda x}$
+
+5 f_(X)(x) = λ(1 − p)e^( − λ(1 − p)x)
+
+6 Ved ikke
+
+Opgave 18
+
+En skytte skyder mod en målskive. Skuddets placering på skydeskiven kan
+beskrives ved et koordinatsæt, hvor koordinaterne er uafhængige standard
+normalfordelte variable.
+
+Spørgsmål 18
+
+Sandsynligheden for, at den numerisk største værdi af koordinaterne er
+mindre end 1, er
+
+1 Φ(1)²
+
+2 Φ(1) − Φ( − 1)
+
+3 (Φ(1) − Φ( − 1))²
+
+4 Φ(1)
+
+5 $\left(\Phi(1)-\frac{1}{2}\right)^{2}$
+
+6 Ved ikke
+
+Opgave 19
+
+Idet X₁ og X₂ er uafhængige identisk fordelte stokastiske variable med
+fordelingsfunktion P(X_(i)≤x) = F(x), i = 1, 2, danner man parret
+X₍₁₎ = min_(i)X_(i), X₍₂₎ = max_(i)X_(i).
+
+Spørgsmål 19
+
+Den simultane fordelingsfunktion F^(*)(x, y) = P(X₍₁₎≤x,X₍₂₎≤y) findes
+til
+
+1 F^(*)(x, y) = F(y)² − (F(y) − F(x))²
+
+2 F^(*)(x, y) = (F(y) − F(x))²
+
+3
+$F^{*}(x, y)=\int_{-\infty}^{x} \int_{-\infty}^{y} \frac{1}{2 \pi} \frac{1}{\sigma^{2}} e^{-\frac{1}{2} \frac{(u-\mu)^{2}+(v-\mu)^{2}}{\sigma^{2}}} \mathrm{~d} u \mathrm{~d} v$
+
+4 F^(*)(x, y) = F(y)² − F(x)²
+
+5 F^(*)(x, y) = F(y)² − (F(y) − F(x))
+
+6 Ved ikke
+
+Idet μ og σ² betegner middelværdi og varians i fordelingen af X_(i).
+
+Opgave 20
+
+En speciel hjemmeside er meget belastet og kan kun vanskeligt hentes
+frem. Sandsynligheden for, at siden vises korrekt, er $\frac{1}{3}$ per
+gang uafhængigt af antallet af tidligere fejlslagne fors ⌀ g.
+
+Spørgsmål 20
+
+Sandsynligheden for, at siden vises korrekt første gang ved netop tredje
+forsøg, er
+
+1 $\frac{1}{2}$
+
+2 $\frac{1}{3}$
+
+3 $\frac{4}{27}$
+
+4 $\frac{1}{9}$
+
+5 $\frac{8}{81}$
+
+6 Ved ikke
+
+Opgave 21
+
+Parret ( X, Y ) af stokastiske variable, der er standard bivariat
+normalfordelt med korrelationskoefficient $\frac{3}{5}$, angiver et
+punkt i et sædvanligt to-dimensionalt koordinatsystem.
+
+Spørgsmål 21
+
+Sandsynligheden P(|X| ≤ 1 ∣ Y = 1) findes til
+
+1 $\Phi\left(\frac{8}{5}\right)-\Phi\left(-\frac{2}{5}\right)$
+
+2 $\Phi\left(\frac{4}{5}\right)-\Phi\left(-\frac{4}{5}\right)$
+
+3
+$\Phi\left(\frac{3+\sqrt{10}}{5}\right)-\Phi\left(-\frac{3-\sqrt{10}}{5}\right)$
+
+4 2Φ(1) − 1
+
+5 $\Phi(2)+\Phi\left(\frac{1}{2}\right)-1$
+
+6 Ved ikke
+
+Opgave 22
+
+Parret ( X, Y ) af stokastiske variable er ligefordelt på området
+begrænset af koordinatsystemets akser og linien x + y = 1. Man definerer
+$Z=\frac{Y}{X}$.
+
+Spørgsmål 22
+
+I værdimængden for Z findes tætheden f_(Z)(z) til
+
+1 ∫₀^(∞)x ⋅ 2 dx
+
+2 $\int_{0}^{\infty} x \cdot \frac{2}{z} \mathrm{~d} x$
+
+3 $\frac{1}{(1+z)^{2}}$
+
+4 $\frac{2}{(1+z)^{3}}$
+
+5
+$\left\{\begin{array}{cc}\frac{1}{2} & \text { for } z \leq 1 \\ \frac{1}{2 z} & \text { for } 1<z\end{array}\right.$
+
+6 Ved ikke
+
+Opgave 23
+
+En diskret stokastisk variabel X har sandsynlighedsfordeling
+
+  x                 -3               0                2                4               7              10               12
+  ---------- ---------------- ---------------- ---------------- --------------- --------------- --------------- ----------------
+  P(X = x)    $\frac{1}{20}$   $\frac{1}{10}$   $\frac{2}{15}$   $\frac{1}{5}$   $\frac{1}{4}$   $\frac{1}{5}$   $\frac{1}{15}$
+
+Spørgsmål 23
+
+Sandsynligheden P(X²<10) findes til
+
+1 $\frac{17}{60}$
+
+2 $\frac{11}{15}$
+3 $\frac{109}{3600}$
+
+4 $\frac{7}{30}$
+
+5 $\frac{139}{6000}$
+6 Ved ikke
+
+Opgave 24
+
+Parret ( X, Y ) af stokastiske variable, der er standard bivariat
+normalfordelt med korrelationskoefficient $\frac{1}{2}$, angiver et
+punkt i et sædvanligt to-dimensionalt koordinatsystem.
+
+Spørgsmål 24
+
+Sandsynligheden for, at punktet ( X, Y ) ligger i første kvadrant mellem
+linierne $y=\frac{x}{2}$ og y = 2x, findes til
+
+1
+$\frac{\arctan \left(\frac{3}{2}\right)-\arctan \left(\frac{2}{3}\right)}{2 \pi}$
+
+2 $\frac{1}{6}$
+
+3 $\frac{\arctan (2)-\arctan \left(\frac{1}{2}\right)}{2 \pi}$
+
+4 $\frac{1}{4}$
+
+5 $\frac{\arctan (3)-\arctan \left(\frac{1}{3}\right)}{2 \pi}$
+
+6 Ved ikke
+
+Opgave 25
+
+For nyligt har man anslået, at der gennemsnitligt er 4 planeter per 1000
+kubiklysår i mælkevejen indenfor den såkaldte "goldilock" afstand fra
+deres stjerne, hvor vand kan forekomme i flydende form. Det antages
+approksimativt, at tætheden af planeter er homogen gennem hele
+mælkevejen.
+
+Spørgsmål 25
+
+Sandsynligheden for, at der vil være mindst en planet med mulighed for
+vand i flydende tilstand, i en terning med sidelængden 8 lysår i
+mælkevejen, findes til
+
+1 0,865
+
+2 0,871
+
+3 0,632
+
+4 0,512
+
+5 0,008
+
+6 Ved ikke
+
+Opgave 26
+
+Tre personer ankommer tilfældigt til et advokatkontor i løbet af en
+time.
+
+Spørgsmål 26
+
+Sandsynligheden for, at den anden person, der ankommer, ankommer efter
+20 minutter og inden 40 minutter, findes til
+
+1 $\frac{1}{3}$
+
+2 $\frac{38}{81}$
+
+3 $\frac{13}{27}$
+
+4 $\frac{1}{2}$
+
+5 $\frac{30}{81}$
+
+6 Ved ikke
+
+Opgave 27
+
+En pensionskasses afkast på to finansielle instrumenter kan beskrives
+ved en bivariat normalfordeling med middelværdi 15 henholdsvis 20 og
+standardafvigelse 10 henholdsvis 20, hvor enheden er mio. kroner.
+Korrelationskoefficienten mellem afkastet på instrumenterne er
+$-\frac{1}{4}$.
+
+Spørgsmål 27
+
+Sandsynligheden for, at pensionskassen lider et samlet tab dvs. negativt
+afkast, på de to instrumenter, findes til
+
+1 $\Phi\left(-\frac{7}{6}\right)$
+2 $\Phi\left(-\frac{7}{5}\right)$
+
+3 $\Phi\left(-\frac{7}{4}\right)$
+
+4 $\Phi\left(-\frac{7}{10} \sqrt{5}\right)$
+
+5 $\Phi\left(-\frac{7}{12} \sqrt{6}\right)$
+
+6 Ved ikke
+
+Opgave 28
+
+For X∼ Poisson(2) haves
+$\mathrm{P}(Y=y \mid X=x)=\binom{x}{y}\left(\frac{1}{2}\right)^{x}, \quad y=0, \ldots x$.
+
+Spørgsmål 28
+
+Man finder P(E(Y ∣ X) ≥ 1) til
+
+1 $1-\frac{1}{e}$
+
+2 $1-\frac{3}{e^{2}}$
+
+3 $1-\frac{2}{e}$
+
+4 $\frac{3}{4}$
+
+5 Spørgsmålet giver ikke mening
+
+6 Ved ikke
+
+Opgave 29
+
+Et punkt vælges tilfældigt i området angivet på nedenstående figur.
+[image]
+
+Spørgsmål 29
+
+Tætheden for førstekoordinaten X findes til
+
+1 $\frac{1}{3}$
+
+2 $\frac{1}{4}$
+
+3 $\frac{2}{9}+\frac{2}{27}(x-1)$
+
+4 $\frac{1}{12}\left(\frac{1}{2} x^{2}-x\right)$
+
+5 $\frac{1}{12}+\frac{1}{6}(x-1)$
+
+6 Ved ikke
+
+Opgave 30
+
+Parret ( X, Y ) af stokastiske variable antager værdier i første
+kvadrant med den simultane tæthed f(x, y) = 24xy i området
+0 < x < 1 − y.
+
+Spørgsmål 30
+
+Sandsynligheden
+$\mathrm{P}\left(X \leq \frac{3}{4}, Y \leq \frac{1}{2}\right)$ findes
+til
+
+1 $\frac{27}{32}$
+
+2 $\frac{3}{8}$
+
+3 $\frac{3}{128}$
+
+4 91
+
+5 $\frac{163}{256}$
+
+6 Ved ikke
+
+Slut på opgavesættet.

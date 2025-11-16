@@ -1,0 +1,683 @@
+Opgave 1
+
+En vindmøllefabrikant har tre produktionsfaciliteter (A, B, og C), hvor
+henholdsvis 50% (A), 30% (B) og 20% (C) af gearkasserne til møllerne
+fremstilles. Defektsandsynlighederne er henholdsvis 1%( A), 2%( B) og
+5%(C). Man har fået tilbageleveret en defekt gearkasse.
+
+Spørgsmål 1
+
+Sandsynligheden for, at den defekte gearkasse er fremstillet på
+facilitet A , findes til
+
+1 $\frac{1}{2}$
+
+2 $\frac{9}{23}$
+3 $\frac{5}{21}$
+
+4 $\frac{4}{19}$
+
+5 $\frac{11}{20}$
+
+6 Ved ikke
+
+Opgave 2
+
+En neutronkilde udsender neutroner tilfældigt med en rate af 4 per
+sekund.
+
+Spørgsmål 2
+
+Sandsynligheden for, at der udsendes mindst 4 neutroner i et sekund,
+findes til
+
+1 $\sum_{k=4}^{\infty} \frac{4^{k}}{k!} e^{-4}$
+
+2 $1-\sum_{k=0}^{4} \frac{4^{k}}{k!} e^{-4}$
+
+3 $1-\frac{17}{6} e^{-1}$
+
+4 $\frac{1}{2}$
+
+5 Φ(1)
+
+6 Ved ikke
+
+Opgave 3
+
+En diskret stokastisk variabel med værdier i {1, 2, 3, 4, 5, 6} har
+fordelingsfunktion givet ved:
+
+  x                 1                2               3               4                5
+  ---------- ---------------- --------------- --------------- --------------- -----------------
+  P(X ≤ x)    $\frac{1}{36}$   $\frac{1}{9}$   $\frac{1}{4}$   $\frac{4}{9}$   $\frac{25}{36}$
+
+Man danner den stokastiske variabel Y = |X − 3|.
+
+Spørgsmål 3
+
+Man finder P(Y = 2) til
+
+1 $\frac{1}{36}$
+2 $\frac{1}{4}$
+
+3 $\frac{13}{18}$
+
+4 $\frac{5}{18}$
+5 $\frac{25}{36}$
+
+6 Ved ikke
+
+Opgave 4
+
+En sælger af en vare er bekymret for, om varen bliver udsolgt.
+Erfaringen siger, at middelværdi og varians af solgt kvantum på en dag
+er henholdsvis 25 og 225. Sælgeren har 70 enheder.
+
+Spørgsmål 4
+
+En bedste øvre grænse for sandsynligheden for, at sælgeren får udsolgt,
+bestemmes til
+
+1 $\frac{1}{3}$
+
+2 $\frac{1}{9}$
+
+3 1 − Φ(3)
+
+4 $\frac{1}{16}$
+
+5 En sådan grænse kan ikke bestemmes med de givne oplysninger
+
+6 Ved ikke
+
+Opgave 5
+
+Den kontinuerte stokastiske variabel U er ligefordelt på
+enhedsintervallet.
+Man danner $X=-\log (\sqrt{U})$.
+
+Spørgsmål 5
+
+Tætheden f_(X)(x) findes i definitionsområdet til
+
+1 f_(X)(x) = e^( − x)
+
+2 f_(X)(x) = 2e^( − 2x)
+
+3 f_(X)(x) = e^( − x)e^( − e^( − x))
+
+4 $f_{X}(x)=\frac{1}{2} \sqrt{e^{-x}}$
+
+5 $f_{X}(x)=x e^{-\frac{1}{2} x^{2}}$
+
+6 Ved ikke
+
+Opgave 6
+
+Om de stokastiske variable V og W oplyses, at
+E(V) = 1, E(W) = 2, Var (V) = 9,
+$\mathrm{E}(V \cdot W)=5, \operatorname{Corr}(V, W)=\frac{1}{2}$.
+
+Spørgsmål 6
+
+Man finder Var (W) til
+
+1 $\frac{3}{2}$
+
+2 2
+
+3 $\frac{16}{3}$
+
+4 4
+
+5 Der er ikke tilstrækkeligt med oplysninger til, at Var (W) kan
+bestemmes.
+
+6 Ved ikke
+
+Opgave 7
+
+Man har X, der følger en exp (λ) fordeling, og den af X uafhængige Y,
+der følger en normal (μ,σ²) fordeling.
+
+Spørgsmål 7
+
+For Z = X + Y findes
+
+1 $\operatorname{Var}(Z)=\frac{1}{\lambda}+\sigma^{2}$
+2 $\operatorname{Var}(Z)=\frac{1}{\lambda^{2}}+\sigma^{2}$
+
+3 $\operatorname{Var}(Z)=\frac{2}{\lambda^{2}}+\mu^{2}+\sigma^{2}$
+
+4
+$\operatorname{Var}(Z)=\frac{1}{\lambda^{2}}+\sigma^{2}+\frac{\mu}{\lambda}$
+
+5
+$\operatorname{Var}(Z)=\frac{\mu}{\lambda^{2}}+\frac{\sigma^{2}}{\lambda}$
+
+6 Ved ikke
+
+Opgave 8
+
+Økonomien kan være i et højrentescenario, hvilket forekommer med
+sandsynligheden $\frac{2}{5}$, medens sandsynligheden for, at økonomien
+er i et scenario med høje P/E forhold, er $\frac{1}{3}$. Sandsynligheden
+for, at økonomien er i et højrentescenario, og, at der samtidigt er høje
+P/E forhold, er $\frac{1}{4}$.
+
+Spørgsmål 8
+
+Sandsynligheden for, at økonomien hverken er i et højrentescenario
+eller, at P/E forhold er høje, findes til
+
+1 $\frac{29}{60}$
+
+2 $\frac{3}{4}$
+
+3 $\frac{4}{15}$
+
+4 $\frac{9}{20}$
+
+5 $\frac{31}{60}$
+
+6 Ved ikke
+
+Opgave 9
+
+Ved en artilleriøvelse skyder en gruppe rekrutter mod et mål med en
+morter. Granatens nedslagssted kan måles i forhold til målet ved
+koordinaterne til afvigelsen, hvor målet er valgt som koordinatsystemets
+nulpunkt. Koordinaterne til nedslagsstedet kan antages at være
+uafhængige standard normalfordelte variable.
+
+Spørgsmål 9
+
+Sandsynligheden for, at nedslagsstedet er længere væk end 2 enheder fra
+målet men dog indenfor en afstand af 3 enheder fra målet, er
+
+1 Φ(3) − Φ(2)
+
+2 (Φ(3) − Φ(2))²
+
+3 0,4712
+
+4 0,1242
+
+5 0,1353
+
+6 Ved ikke
+
+Opgave 10
+
+Privatbiler, der kommer til periodisk syn har en sandsynlighed på
+$\frac{3}{5}$ for at passere synet uden anmærkninger.
+
+Spørgsmål 10
+
+Sandsynligheden for, at der blandt 5 privatbiler til syn er højst 3, der
+passerer synet uden anmærkninger, er
+
+1 $1-\left(\frac{2}{5}\right)^{5}$
+
+2 $\frac{3}{5}$
+
+3
+$\sum_{i=0}^{3}\binom{5}{i}\left(\frac{3}{5}\right)^{i}\left(\frac{2}{5}\right)^{5-i}$
+
+4 $\sum_{i=0}^{3} \frac{3^{i}}{i!} e^{-3}$
+
+5
+$\sum_{i=4}^{5}\binom{5}{i}\left(\frac{3}{5}\right)^{i}\left(\frac{2}{5}\right)^{5-i}$
+
+6 Ved ikke
+
+Opgave 11
+
+Et område i planen er afgrænset af linierne
+x + y = 1, x + y =  − 1, y − x = 1, og y − x =  − 1. Et punkt vælges
+tilfældigt indenfor det angivne område.
+
+Spørgsmål 11
+
+Sandsynligheden for, at punktet ligger i tredje kvadrant, findes til
+
+1 $\frac{1}{2}$
+2 $\frac{1}{3}$
+
+3 $\frac{1}{4}$
+
+4 $\frac{1}{2}-\frac{\arctan \left(\frac{\sqrt{3}}{2}\right)}{2 \pi}$
+
+5 $\frac{\arctan \left(\frac{\sqrt{2}}{2}\right)}{2 \pi}$
+
+6 Ved ikke
+
+Opgave 12
+
+Ved en artilleriøvelse skyder en gruppe rekrutter mod et mål.
+Koordinaterne til nedslagsstedet beskrives ved en bivariat
+standardiseret normalfordeling med korrelationskoefficient
+$\rho=\frac{5}{13}$, hvor målet er valgt som koordinatsystemets
+nulpunkt.
+
+Spørgsmål 12
+
+Sandsynligheden for, at nedslagsstedet ligger i koordinatsystemets anden
+kvadrant, er givet ved
+
+1 $\frac{1}{6}$
+
+2 $\frac{1}{4}-\frac{\arctan \left(\frac{2}{3}\right)}{2 \pi}$
+
+3 $\frac{1}{4}-\frac{\arctan \left(\frac{5}{12}\right)}{2 \pi}$
+
+4 $\frac{\arctan \left(\frac{5}{8}\right)}{2 \pi}$
+
+5 $\frac{\arctan \left(\frac{8}{5}\right)}{2 \pi}$
+
+6 Ved ikke
+
+Opgave 13
+
+Ved en artilleriøvelse skyder nogle rekrutter mod et mål.
+Sandsynligheden for, at de rammer målet ved et enkelt skud, er 0,15 .
+
+Spørgsmål 13
+
+Sandsynligheden for, at målet rammes for tredje gang i netop femte skud,
+findes til
+
+1 0, 15³ ⋅ 0, 85²
+
+2 $\binom{5}{3} \cdot 0,15^{3} \cdot 0,85^{2}$
+
+3 $\binom{5}{3} \cdot 0,15^{2} \cdot 0,85^{3}$
+
+4 3 ⋅ 0, 15³ ⋅ 0, 85²
+
+5 $\binom{4}{2} \cdot 0,15^{3} \cdot 0,85^{2}$
+
+6 Ved ikke
+
+Opgave 14
+
+En gruppe på 20 personer består af 10 kvinder og 10 mænd. Der udvælges
+tilfældigt 4 personer fra gruppen.
+
+Spørgsmål 14
+
+Sandsynligheden for, at der er netop to personer af hvert køn blandt de
+4 udvalgte, findes til
+
+1 $\frac{1}{5}$
+
+2 $\frac{3}{8}$
+
+3 115 273
+
+4 $\frac{135}{323}$
+
+5 $\binom{4}{2}\left(\frac{1}{2}\right)^{4}$
+
+6 Ved ikke
+
+Opgave 15
+
+Man har parret ( X, Y ), der er bivariat normalfordelt med
+E(X) = 8, E(Y) = 0, Var (X) = 225, Var (Y) = 1 og
+korrelationskoefficient $\rho=\frac{15}{17}$.
+
+Spørgsmål 15
+
+Man finder P(X − 17Y > 0)
+
+1 $1-\Phi\left(\frac{-8}{\sqrt{15}}\right)$
+2 Φ(1)
+
+3 $\Phi\left(\frac{-8 \sqrt{2}}{17}\right)$
+
+4 $1-\Phi\left(\frac{-8}{\sqrt{514}}\right)$
+
+5 $1-\Phi\left(\frac{-8 \sqrt{739}}{739}\right)$
+
+6 Ved ikke
+
+Opgave 16
+
+Den stokastiske variabel X følger en Poissonfordeling med parameter μ.
+For givet X = x er Y ligefordelt på 0, …, x.
+
+Spørgsmål 16
+
+Man finder
+
+1
+$\mathrm{P}(Y=y)=\sum_{i=0}^{\infty} \frac{1}{1+i} \frac{\mu^{i}}{i!} e^{-\mu}$
+
+2
+$\mathrm{P}(Y=y)=\frac{\left(\frac{\mu}{2}\right)^{y}}{y!} e^{-\frac{\mu}{2}}$
+
+3 P(Y = y) = (1−e^( − μ))^(y)e^( − μ)
+
+4 $\mathrm{P}(Y=y)=\binom{y-1}{1}\left(1-e^{-\mu}\right)^{y} e^{-2 \mu}$
+
+5 $\mathrm{P}(Y=y)=\sum_{i=y}^{\infty} \frac{\mu^{i}}{(i+1)!} e^{-\mu}$
+
+6 Ved ikke
+
+Opgave 17
+
+Sandsynligheden for, at vejrfænomenet El Nino indtræder et givent år,
+sættes til $\frac{1}{8}$, medens sandsynligheden for, at der kommer
+særligt kraftive nedbørsbegivenheder i det kontinentale USA under en El
+Nino periode, sættes til $\frac{2}{3}$.
+
+Spørgsmål 17
+
+Sandsynligheden for, at der et givet år optræder en El Nino og særligt
+kraftige nedbørsmængder i det kontinentale USA, findes til
+
+1 $\frac{13}{24}$
+2 $\frac{14}{24}$
+
+3 $\frac{19}{24}$
+4 $\frac{1}{12}$
+
+5 $\frac{2}{3}$
+6 Ved ikke
+
+Opgave 18
+
+Feltstyrken af et elektromagnetisk signal kan angives ved en fordeling
+med tæthed $f(x)=x e^{-\frac{1}{2} x^{2}}$.
+
+Spørgsmål 18
+
+Sandsynligheden for, at feltstyrken ligger mellem 1 og 1,1 findes,
+eventuelt approksimativt, til
+
+1 $\int_{1}^{2} x e^{-\frac{1}{2} x^{2}} \mathrm{~d} x$
+
+2 $e^{-\frac{1}{2}}$
+
+3 $0,1 \cdot e^{-\frac{1}{2}}$
+
+4 $1-e^{-\frac{(1,1)^{2}}{2}}$
+
+5 Φ(1, 1) − Φ(1)
+
+6 Ved ikke
+
+Opgave 19
+
+En stokastisk variabel X følger en exp (λ) fordeling, medens den
+stokastiske variabel Y for givet X = x følger en normalfordeling med
+E(Y ∣ X = x) = μ ⋅ x og Var (Y ∣ X = x) = x ⋅ σ².
+
+Spørgsmål 19
+
+Man finder E(Y²) til
+$1 \square \quad \mathrm{E}\left(Y^{2}\right)=\frac{\mu}{\lambda^{2}}+\frac{\sigma^{2}}{\lambda}$
+2▫  E(Y²) = μ² + σ²
+$3 \square \quad \mathrm{E}\left(Y^{2}\right)=\frac{1}{\lambda}\left(\mu^{2}+\sigma^{2}\right)$
+$4 \square \quad \mathrm{E}\left(Y^{2}\right)=\frac{2 \mu^{2}}{\lambda^{2}}+\frac{\sigma^{2}}{\lambda}+\frac{\mu^{2} \sigma^{2}}{\lambda^{2}}$
+$5 \square \quad \mathrm{E}\left(Y^{2}\right)=\frac{2 \mu^{2}}{\lambda^{2}}+\frac{\sigma^{2}}{\lambda}$
+6▫   Ved ikke
+(Vink: man kan eventuelt udnytte, at beregningsformlen for varians også
+gælder for betinget middelværdi og varians).
+
+Opgave 20
+
+Produktionsprocessen af nogle armaturer består af forskellige led, der
+alle har indflydelse på diameteren af armaturets tilslutningssted. Der
+er således typisk en afvigelse mellem den ønskede diameter og den reelle
+diameter.
+
+Spørgsmål 20
+
+En hensigtsmæssig fordeling til at modellere afvigelsen af diameteren på
+armaturets tilslutningssted er en
+
+1 gammafordeling
+
+2 normalfordeling
+
+3 binomialfordeling
+4 Poissonfordeling
+
+5 ligefordeling (uniform fordeling)
+6 Ved ikke
+
+Opgave 21
+
+På en given tropisk lokalitet er sandsynligheden for regn en given dag
+$\frac{1}{2}$. Sandsynligheden er nogenlunde konstant henover året.
+Regnvejr kan antages at forekomme uafhængigt mellem de enkelte dage.
+
+Spørgsmål 21
+
+Sandsynligheden for, at der højst forekommer regn 140 af årets (ikke
+skudår) dage, findes, eventuelt approksimativt, til
+
+1 $\Phi\left(\frac{-84 \sqrt{365}}{365}\right)$
+
+2 $\Phi\left(\frac{-42}{\sqrt{365}}\right)$
+
+3 $\Phi\left(\frac{-34 \sqrt{365}}{365}\right)$
+
+4
+$\sum_{i=0}^{140}\binom{365}{i}\left(\frac{140}{365}\right)^{i}\left(\frac{225}{365}\right)^{365-i}$
+
+5 $\frac{1}{2^{365}} \sum_{i=141}^{365}\binom{365}{i}$
+
+6 Ved ikke
+
+Opgave 22
+
+Man har tre uafhængige eksponentialfordelte variable med rate λ.
+
+Spørgsmål 22
+
+Den næststørste af de tre variable har tætheden g(x)
+
+1 g(x) = 3λe^( − 3λx)
+
+2 g(x) = 2λe^( − λx) − 2λe^( − 2λx)
+
+3 g(x) = 6λe^( − 2λx) − 6λe^( − 3λx)
+
+4 g(x) = 2λe^( − 2λx)
+
+5 g(x) = λ(λx)e^( − λx)
+
+6 Ved ikke
+
+Opgave 23
+
+En lokalbus har en sen aften 8 passagerer tilbage før de sidste 6
+stoppesteder. Bussen stopper kun ved et stoppested, hvis en passager
+skal af, idet det kan antages, at der ikke vil være nogle påstigende
+passagerer på den tilbageværende del af ruten. Hvis der ikke er
+passagerer tilbage ved det sidste stoppested kører bussen direkte til
+garagen uden at stoppe. Det kan antages, at en passager vælger ligeligt
+mellem de tilbageværende stoppesteder, og, at passagererne står af
+uafhængigt af hinanden.
+
+Spørgsmål 23
+
+Det forventede antal stop bussen skal foretage findes til
+
+1
+$8\left(1-\left(1-\frac{5}{6}\right)\left(1-\frac{4}{6}\right)\left(1-\frac{3}{6}\right)\left(1-\frac{2}{6}\right)\right)$
+
+2 $6\left(1-\left(\frac{5}{6}\right)^{8}\right)$
+
+3
+$6\left(1-\left(1-\frac{7}{8}\right)\left(1-\frac{6}{8}\right)\left(1-\frac{5}{8}\right)\left(1-\frac{4}{8}\right)\left(1-\frac{3}{8}\right)\right)$
+4 $8 \cdot \frac{1}{6}$
+
+5 4
+
+6 Ved ikke
+
+Opgave 24
+
+En stokastisk variabel X ≥ 1 har hazardrate $\lambda(x)=\frac{1}{x}$.
+
+Spørgsmål 24
+
+Man finder P(X > x) til
+
+1 $\int_{x}^{\infty} e^{-\frac{1}{u}} \mathrm{~d} u$
+
+2 $\frac{1}{\sqrt{x}}$
+
+3 $\int_{x}^{\infty} \frac{1}{u} \mathrm{~d} u$
+
+4 $e^{-\int_{0}^{x} \frac{1}{u} \mathrm{~d} u}$
+
+5 $\frac{1}{x}$
+
+6 Ved ikke
+
+Opgave 25
+
+Parret ( X, Y ) af stokastiske variable er ligefordelt i området
+
+A = {(x,y)∈(R)²∣0<x,0<y,x+y<1}
+
+dvs. området i første kvadrant afgrænset af linien x + y = 1.
+
+Spørgsmål 25
+
+I definitionsområdet findes tætheden f_(Z)(z) for $Z=\frac{Y}{X}$ til
+
+1 $f_{Z}(z)=\frac{1}{(1+z)^{2}}$
+2 f_(Z)(z) = 1
+
+3 $f_{Z}(z)=\frac{1}{2}$
+
+4 $f_{Z}(z)=\int_{0}^{\frac{1}{z}} 2 x \mathrm{~d} x$
+
+5 $f_{Z}(z)=\int_{0}^{\frac{1}{1+z}} x \mathrm{~d} x$
+
+6 Ved ikke
+
+Opgave 26
+
+Parret ( X, Y ) af stokastiske variable har tætheden
+$f(x, y)=\frac{3}{2} x$ for 0 < |y| < x < 1 og 0 ellers.
+
+Spørgsmål 26
+
+I definitionsområdet findes den marginale tæthed f_(X)(x) til
+
+1 f_(X)(x) = 3x²
+
+2 f_(X)(x) = x
+
+3 f_(X)(x) = 4x³
+
+4 f_(X)(x) = 1
+
+5 f_(X)(x) = 2(1 − x)
+
+6 Ved ikke
+
+Opgave 27
+
+Den stokastiske variabel X følger en Rayleigh fordeling, medens den
+stokastiske variabel Y er eksponential (λ) fordelt. De to stokastiske
+variable er indbyrdes uafhængige. Man indfører Z = min (X, Y).
+
+Spørgsmål 27
+
+Man finder P(Z > z) til
+
+1 $\mathrm{P}(Z>z)=e^{-z\left(\lambda+\frac{z}{2}\right)}$
+
+2
+$\mathrm{P}(Z>z)=1-\left(1-e^{-\lambda z}\right)\left(1-e^{-\frac{z^{2}}{2}}\right)$
+
+3
+$\mathrm{P}(Z>z)=\left(1-\lambda e^{-\lambda z}\right)\left(1-z e^{-\frac{z^{2}}{2}}\right)$
+
+4
+$\mathrm{P}(Z>z)=\left(1-e^{-\lambda z}\right)\left(1-e^{-\frac{z^{2}}{2}}\right)$
+
+5 $\mathrm{P}(Z>z)=e^{-\frac{\lambda z^{2}}{2}}$
+
+6 Ved ikke
+
+Opgave 28
+
+Man har parret ( X, Y ), der følger en bivariat normalfordeling med
+E(X) = 3, E(Y) =  − 10, Var (X) = 9, Var (Y) = 100 og
+korrelationskoefficient $\rho=-\frac{3}{5}$.
+
+Spørgsmål 28
+
+Man finder P(Y ≤ 6 ∣ X = 0) til
+
+1 $\Phi\left(\frac{8}{5}\right)$
+
+2 1 − Φ(1)
+
+3 Φ(1)
+
+4 $\Phi\left(\frac{5}{4}\right)$
+
+5 $\Phi\left(\frac{\sqrt{5}}{20}\right)$
+
+6 Ved ikke
+
+Opgave 29
+
+I et givet område er man interesseret i at etablere borebrønde til
+olieeftersøgning. Man antager, at gunstige steder til etablering af
+borebrønde forekommer i området med en gennemsnitlig forekomst af
+$\frac{1}{2}$ per km². Man antager yderligere, måske som en lidt grov
+antagelse, at de gunstige steder forekommer uafhængigt af hinanden og
+uden udbredelse.
+
+Spørgsmål 29
+
+Sandsynligheden for, at der forefindes mindre end 2 gunstige
+undersøgelsessteder i et område på 4 km², findes til
+
+1 3e^( − 2)
+
+2 2e^( − 1)
+
+3 e^( − 2)
+
+4 $\frac{1}{8}$
+
+5 $\sum_{i=0}^{1}\binom{4}{i} \frac{1}{2^{4}}$
+6 Ved ikke
+
+Opgave 30
+
+Den stokastiske variabel P følger en beta( 1, u ) fordeling. For givet
+P = p følger X en geometrisk fordeling med parameter
+p(P(X=x)=(1−p)^(x − 1)p). I det følgende angiver
+B(r, s) = Γ(r)Γ(s)/Γ(r + s) betafunktionen.
+
+Spørgsmål 30
+
+Man finder P(X > x) til
+
+1 $\frac{u}{B(1, u)(x+u)}$
+
+2 $\int_{0}^{1}(1-p)^{x-1} p \frac{1}{B(1, u)}(1-p)^{u-1} \mathrm{~d} p$
+
+3 $\int_{0}^{1}(1-p)^{x-1} p \frac{1}{B(1, u)} p(1-p)^{u} \mathrm{~d} p$
+
+4 $\int_{0}^{1}(1-p)^{x} \frac{1}{B(1, u)} p(1-p)^{u} \mathrm{~d} p$
+
+5 $\frac{1}{B(1, u)(x+u)}$
+
+6 Ved ikke
+
+Slut på opgavesættet.

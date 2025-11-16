@@ -1,0 +1,452 @@
+[
+  {
+    "question_id": "1",
+    "context": "A specific geographical area has a population of 1 million, 5% belong to a certain ethnic group. A group of 100 people is selected at random for a survey.",
+    "question": "The probability that there are at least 7 persons from the ethnic group in the sample is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(1-\\Phi\\left(\\frac{2}{\\sqrt{19}}\\right)\\)",
+      "\\(2\\)\\(\\square\\)\\(1-\\Phi\\left(\\frac{3}{\\sqrt{18}}\\right)\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{1}{12}\\)",
+      "\\(4\\)\\(\\square\\)\\(1-\\sum_{i=0}^{6}{100\\choose i}(0.05)^{i}(1-0.05)^{100-i}\\)",
+      "\\(5\\)\\(\\square\\)\\(1-\\sum_{i=0}^{6}\\frac{e^{-5}5^{i}}{i!}\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ],
+    "answer": "4",
+    "analysis": "Let \\( X \\) be the number of people from the ethnic group in the sample. \\( X \\sim \\text{Binomial}(n=100, p=0.05) \\). We want \\( P(X \\geq 7) \\).\nThis is \\( 1 - P(X \\leq 6) \\).\nOption 4 gives: \\( 1-\\sum_{i=0}^{6}{100\\choose i}(0.05)^{i}(0.95)^{100-i} \\), which is the exact binomial calculation.\nOther options use normal or Poisson approximations, but option 4 is the exact answer."
+  },
+  {
+    "question_id": "2",
+    "context": "Consider a polar coordinate system with a bombing target at the origin. A bomber throws a bomb hitting a distance \\(R\\) from the origin with the density \\(f_{R}(r)=re^{-\\frac{1}{2}r^{2}}\\). The probability that the target will be destroyed is \\(e^{-r^{2}}\\) if the bomb hits at a distance \\(r\\) from the origin.",
+    "question": "What is the probability that the bombing target will be destroyed?",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\frac{1}{4}\\)",
+      "\\(2\\)\\(\\square\\)\\(\\frac{1}{3}\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{1}{2}\\)",
+      "\\(4\\)\\(\\square\\)\\(\\frac{2}{3}\\)",
+      "\\(5\\)\\(\\square\\)\\(\\frac{3}{4}\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ],
+    "answer": "2",
+    "analysis": "Let \\(R\\) be the random distance from the origin where the bomb lands, with density \\(f_R(r) = r e^{-\\frac{1}{2}r^2}\\) for \\(r \\geq 0\\). The probability the target is destroyed given a hit at distance \\(r\\) is \\(e^{-r^2}\\).\nThe total probability the target is destroyed is:\n\\[\nP = \\int_0^\\infty P(\\text{destroyed} \\mid r) f_R(r) dr = \\int_0^\\infty e^{-r^2} \\cdot r e^{-\\frac{1}{2}r^2} dr\n\\]\n\\[\n= \\int_0^\\infty r e^{-\\frac{3}{2}r^2} dr\n\\]\nLet \\(u = r^2\\), \\(du = 2r dr\\), so \\(r dr = \\frac{1}{2} du\\):\n\\[\n= \\int_0^\\infty e^{-\\frac{3}{2}u} \\cdot \\frac{1}{2} du = \\frac{1}{2} \\int_0^\\infty e^{-\\frac{3}{2}u} du\n\\]\n\\[\n= \\frac{1}{2} \\left[ -\\frac{2}{3} e^{-\\frac{3}{2}u} \\right]_0^\\infty = \\frac{1}{2} \\cdot \\frac{2}{3} = \\frac{1}{3}\n\\]"
+  },
+  {
+    "question_id": "3",
+    "context": "A swimming club has 18 swimmers. Two of those are backstroke specialists, 7 are crawl specialists, 5 are butterfly specialist, and 4 are medley specialists. Four swimmers are selected randomly for a relay event.",
+    "question": "The probability that there are exactly two butterfly specialist among the four is",
+    "options": [
+      "1\\ \\square&\\quad\\left(4\\\\ 2\\right)\\left(5\\\\ 18\\right)^{2}\\left(13\\\\ 18\\right)^{2}",
+      "2\\ \\square&\\quad\\frac{5}{18}\\frac{4}{17}",
+      "3\\ \\square&\\quad 2\\cdot\\frac{5}{18}\\frac{4}{17}",
+      "4\\ \\square&\\quad\\frac{\\left(5\\\\ 2\\right)\\left(13\\\\ 2\\right)}{\\left(18\\\\ 4\\right)}",
+      "5\\ \\square&\\quad\\frac{5}{18}\\frac{4}{18}",
+      "6\\ \\square&\\quad\\mbox{Do not know}"
+    ],
+    "answer": "4",
+    "analysis": "We want the probability that exactly 2 of the 4 selected swimmers are butterfly specialists.\nStep 1: Number of ways to choose 2 butterfly specialists from 5:\nC(5,2)\nStep 2: Number of ways to choose the remaining 2 swimmers from the other 13 (non-butterfly):\nC(13,2)\nStep 3: Total number of ways to choose any 4 swimmers from 18:\nC(18,4)\nStep 4: Probability = (ways to choose 2 butterfly and 2 non-butterfly) / (total ways)\n= [C(5,2) × C(13,2)] / C(18,4)\nThis matches option 4."
+  },
+  {
+    "question_id": "4",
+    "context": "A material emits particles, such that the time between particle emissions can be described by independent exponentially distributed random variables with a mean of 2 minutes.",
+    "question": "The probability that the third particle is emitted exactly between the third and fourth minute after the start of registration is",
+    "options": [
+      "1\\ \\square&\\quad\\left(e^{-\\frac{3}{2}}-e^{-2}\\right)^{3}",
+      "2\\ \\square&\\quad\\frac{29}{8}e^{-\\frac{3}{2}}-5e^{-2}",
+      "3\\ \\square&\\quad\\frac{4}{3}e^{-2}-\\frac{9}{16}e^{-\\frac{3}{2}}",
+      "4\\ \\square&\\quad\\Phi(2)^{3}-\\Phi(1)^{3}",
+      "5\\ \\square&\\quad\\left(\\Phi(2)-\\Phi(1)\\right)^{3}",
+      "6\\ \\square&\\quad\\mbox{Do not know}"
+    ],
+    "answer": "2",
+    "analysis": "Let \\( X_3 \\) be the time of the third emission. The sum of three independent exponential(\\(\\lambda\\)) random variables is Gamma(3, \\(\\lambda\\)). Here, mean = 2, so \\(\\lambda = 1/2\\).\nWe want \\( P(3 < X_3 < 4) \\).\nThe CDF of Gamma(3, \\(1/2\\)) at \\(t\\) is:\n\\[\nF(t) = 1 - e^{-\\lambda t}\\left(1 + \\lambda t + \\frac{(\\lambda t)^2}{2}\\right)\n\\]\nSo,\n\\[\nP(3 < X_3 < 4) = F(4) - F(3)\n\\]\nPlug in \\(\\lambda = 1/2\\):\n\\[\nF(t) = 1 - e^{-t/2}\\left(1 + \\frac{t}{2} + \\frac{t^2}{8}\\right)\n\\]\nCalculate:\n\\[\nF(4) = 1 - e^{-2}(1 + 2 + 2) = 1 - 5e^{-2}\n\\]\n\\[\nF(3) = 1 - e^{-3/2}\\left(1 + 1.5 + 1.125\\right) = 1 - 3.625e^{-3/2}\n\\]\nSo,\n\\[\nP = F(4) - F(3) = [1 - 5e^{-2}] - [1 - 3.625e^{-3/2}] = 3.625e^{-3/2} - 5e^{-2}\n\\]\n\\[\n3.625 = \\frac{29}{8}\n\\]\nSo the answer is:\n\\[\n\\frac{29}{8}e^{-3/2} - 5e^{-2}\n\\]"
+  },
+  {
+    "question_id": "5",
+    "context": "Let \\(X_{1}\\) and \\(X_{2}\\) be two independent exponential random variables. Then \\(X=\\min\\left(X_{1},X_{2}\\right)\\) and \\(Y=\\max\\left(X_{1},X_{2}\\right)\\) with joint density \\(f(x,y)=2\\lambda^{2}e^{-\\lambda\\left(x+y\\right)}\\).",
+    "question": "The density \\(f_{Z}(z)\\) of \\(Z=\\frac{X}{Y}\\) is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\frac{2}{\\left(z+1\\right)^{2}}\\) , \\(0\\leq z\\leq 1\\)",
+      "\\(2\\)\\(\\square\\)\\(\\lambda e^{-\\lambda z}\\) , \\(0\\leq z\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{1}{\\sqrt{2\\pi}}\\frac{1}{\\lambda}\\exp\\left(-\\frac{1}{2}\\left(\\frac{z-\\frac{1}{ \\lambda}}{\\sqrt{\\frac{1}{\\lambda}}}\\right)^{2}\\right)\\) , \\(0\\leq z\\leq 1\\)",
+      "\\(4\\)\\(\\square\\)\\(1\\) , \\(0\\leq z\\leq 1\\)",
+      "\\(5\\)\\(\\square\\)\\(\\frac{1}{\\left(z+1\\right)^{2}}\\) , \\(0\\leq z\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ],
+    "answer": "1",
+    "analysis": "Let \\( X_1, X_2 \\) be independent exponential(\\(\\lambda\\)) random variables. The joint density of \\( (X, Y) = (\\min(X_1, X_2), \\max(X_1, X_2)) \\) is given as \\( f(x, y) = 2\\lambda^2 e^{-\\lambda(x+y)} \\) for \\( 0 < x < y \\).\nLet \\( Z = \\frac{X}{Y} \\), with \\( 0 < X < Y < \\infty \\), so \\( 0 < Z < 1 \\).\nChange of variables: \\( x = zy, y = y \\), so \\( dx\\,dy = y\\,dz\\,dy \\).\nThe joint density in new variables is:\n\\[\nf_{Z,Y}(z, y) = 2\\lambda^2 e^{-\\lambda(y + zy)} y, \\quad 0 < z < 1,\\, y > 0\n\\]\n\\[\n= 2\\lambda^2 y e^{-\\lambda y(1+z)}\n\\]\nMarginal density of \\( Z \\):\n\\[\nf_Z(z) = \\int_0^\\infty 2\\lambda^2 y e^{-\\lambda y(1+z)} dy\n\\]\nLet \\( a = \\lambda(1+z) \\):\n\\[\n= 2\\lambda^2 \\int_0^\\infty y e^{-a y} dy\n\\]\n\\[\n= 2\\lambda^2 \\cdot \\frac{1}{a^2} \\quad \\text{(since } \\int_0^\\infty y e^{-a y} dy = \\frac{1}{a^2} \\text{)}\n\\]\n\\[\n= 2\\lambda^2 \\cdot \\frac{1}{\\lambda^2 (1+z)^2} = \\frac{2}{(1+z)^2}\n\\]\nfor \\( 0 < z < 1 \\).\nSo, the answer is option 1."
+  },
+  {
+    "question_id": "6",
+    "context": "For the events \\(A\\) and \\(B\\) is it known that \\(\\mathsf{P}(A\\cap B)=\\mathsf{P}(A)\\mathsf{P}(B)\\).",
+    "question": "Which of the following statements is correct",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\mathsf{P}(A\\cup B)=\\mathsf{P}(A)+\\mathsf{P}(B)\\).",
+      "\\(2\\)\\(\\square\\)\\(\\mathsf{P}(A|B)=\\mathsf{P}(A\\cap B)\\)",
+      "\\(3\\)\\(\\square\\)\\(\\mathsf{P}(A|B)=\\mathsf{P}(A)\\)",
+      "\\(4\\)\\(\\square\\)\\(\\mathsf{P}(A|B)=\\mathsf{P}(B|A)\\)",
+      "\\(5\\)\\(\\square\\) None of the above are correct.",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ],
+    "answer": "3",
+    "analysis": "Given: \\(\\mathsf{P}(A\\cap B)=\\mathsf{P}(A)\\mathsf{P}(B)\\), which means \\(A\\) and \\(B\\) are independent.\nOption 1: \\(\\mathsf{P}(A\\cup B)=\\mathsf{P}(A)+\\mathsf{P}(B)\\) is only true if \\(A\\) and \\(B\\) are mutually exclusive, not just independent.\nOption 2: \\(\\mathsf{P}(A|B)=\\mathsf{P}(A\\cap B)\\) is incorrect; \\(\\mathsf{P}(A|B)=\\frac{\\mathsf{P}(A\\cap B)}{\\mathsf{P}(B)}\\).\nOption 3: \\(\\mathsf{P}(A|B)=\\mathsf{P}(A)\\) is true for independent events.\nOption 4: \\(\\mathsf{P}(A|B)=\\mathsf{P}(B|A)\\) is generally false unless \\(\\mathsf{P}(A)=\\mathsf{P}(B)\\).\nOption 5: Not needed, as option 3 is correct.\nOption 6: Not applicable."
+  },
+  {
+    "question_id": "7",
+    "context": "The discrete uniformly distributed random variable \\(X\\) takes one of the values \\(\\{-2,-1,1,2\\}\\). A new random variable is formed by \\(Y=X^{2}\\).",
+    "question": "The covariance \\({\\sf Cov}(X,Y)\\) between \\(X\\) and \\(Y\\) is",
+    "options": [
+      "\\(1\\)\\(\\Box\\) -1",
+      "\\(2\\)\\(\\Box\\) \\(0\\)",
+      "\\(3\\)\\(\\Box\\) \\(\\frac{1}{2}\\)",
+      "\\(4\\)\\(\\Box\\) \\(1\\)",
+      "\\(5\\)\\(\\Box\\) The covariance can not be determined based on the information given",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ],
+    "answer": "2",
+    "analysis": "Step 1: Since \\(X\\) is uniform over \\(\\{-2,-1,1,2\\}\\), each value has probability \\(1/4\\).\nStep 2: \\(Y = X^2\\), so possible values of \\(Y\\) are \\(1\\) (for \\(X = \\pm1\\)) and \\(4\\) (for \\(X = \\pm2\\)).\nStep 3: Compute expectations:\n\\[\n\\mathbb{E}[X] = \\frac{1}{4}(-2 -1 +1 +2) = 0\n\\]\n\\[\n\\mathbb{E}[Y] = \\mathbb{E}[X^2] = \\frac{1}{4}(4 + 1 + 1 + 4) = \\frac{10}{4} = 2.5\n\\]\n\\[\n\\mathbb{E}[XY] = \\mathbb{E}[X^3] = \\frac{1}{4}((-2)^3 + (-1)^3 + 1^3 + 2^3) = \\frac{1}{4}(-8 -1 +1 +8) = 0\n\\]\nStep 4: Covariance:\n\\[\n\\mathrm{Cov}(X,Y) = \\mathbb{E}[XY] - \\mathbb{E}[X]\\mathbb{E}[Y] = 0 - (0)(2.5) = 0\n\\]"
+  },
+  {
+    "question_id": "8",
+    "context": "It is known, that 20% of the airline passengers on a specific route brings carry on luggage with a weight substantially higher than allowed. It is assumed that each passenger has excessive carry on luggage independently of and with the same probability as all other passengers.",
+    "question": "On a departure with 400 passengers, give a good judgement of the probability that at most 60 passengers have excessive carry on luggage.",
+    "options": [
+      "\\(1\\)\\(\\Box\\) \\(\\left(400\\\\ 60\\right)\\left(\\frac{1}{5}\\right)^{60}\\left(\\frac{4}{5}\\right)^{340}\\)",
+      "\\(2\\)\\(\\Box\\) \\(\\sum_{i=61}^{400}\\frac{80^{i}}{i!}e^{-80}\\)",
+      "\\(3\\)\\(\\Box\\) \\(\\sum_{i=0}^{60}\\frac{\\left(80\\\\ i\\right)\\left(320\\\\ 100-i\\right)}{\\left(400\\\\ 100\\right)}\\)",
+      "\\(4\\)\\(\\Box\\) \\(\\Phi(2.2)-\\Phi(-1.96)\\)",
+      "\\(5\\)\\(\\Box\\) \\(\\Phi(-2.4)\\)",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ],
+    "answer": "5",
+    "analysis": "Let \\( X \\) be the number of passengers with excessive luggage. \\( X \\sim \\text{Binomial}(n=400, p=0.2) \\). We want \\( P(X \\leq 60) \\).\nThe mean is \\( \\mu = np = 80 \\), variance \\( \\sigma^2 = np(1-p) = 64 \\), so \\( \\sigma = 8 \\).\nFor large \\( n \\), use the normal approximation: \\( Z = \\frac{60.5 - 80}{8} = -2.4375 \\) (continuity correction).\nSo, \\( P(X \\leq 60) \\approx \\Phi(-2.44) \\).\nOption 5 matches this."
+  },
+  {
+    "question_id": "9",
+    "context": "The pair \\((X,Y)\\) is standard bivariate normally distributed with correlation \\(\\rho=\\frac{3}{5}\\).",
+    "question": "The probability \\(\\mathsf{P}\\left(\\frac{1}{2}X<Y<2X\\right)\\) is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\frac{2\\pi-\\text{Arctan}(\\frac{7}{4})}{2\\pi}\\)",
+      "\\(2\\)\\(\\square\\)\\(\\frac{1}{6}\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{\\text{Arctan}(\\frac{15}{8})}{2\\pi}\\)",
+      "\\(4\\)\\(\\square\\)\\(\\frac{\\text{Arctan}(\\frac{7}{4})+\\text{Arctan}(\\frac{1}{8})}{2\\pi}\\)",
+      "\\(5\\)\\(\\square\\)\\(\\frac{\\text{Arctan}(\\frac{7}{8})+\\text{Arctan}(\\frac{1}{8})}{\\pi}\\)",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ],
+    "answer": "4",
+    "analysis": "Given \\((X, Y)\\) is standard bivariate normal with correlation \\(\\rho = \\frac{3}{5}\\). We seek \\(\\mathsf{P}\\left(\\frac{1}{2}X < Y < 2X\\right)\\).\nLet’s standardize: For fixed \\(X = x\\), \\(Y|X=x \\sim N(\\rho x, 1-\\rho^2)\\).\n\\[\n\\mathsf{P}\\left(\\frac{1}{2}x < Y < 2x \\mid X = x\\right) = \\Phi\\left(\\frac{2x - \\rho x}{\\sqrt{1-\\rho^2}}\\right) - \\Phi\\left(\\frac{\\frac{1}{2}x - \\rho x}{\\sqrt{1-\\rho^2}}\\right)\n\\]\nIntegrate over \\(x\\) with \\(X \\sim N(0,1)\\). But for bivariate normal, the probability that \\(\\alpha X < Y < \\beta X\\) is:\n\\[\n\\frac{1}{2\\pi} \\left[ \\arctan\\left( \\frac{\\beta - \\rho}{\\sqrt{(1-\\rho^2)(1+\\beta^2-2\\rho\\beta)}} \\right) - \\arctan\\left( \\frac{\\alpha - \\rho}{\\sqrt{(1-\\rho^2)(1+\\alpha^2-2\\rho\\alpha)}} \\right) \\right]\n\\]\nPlug in \\(\\alpha = \\frac{1}{2}\\), \\(\\beta = 2\\), \\(\\rho = \\frac{3}{5}\\):\nCalculate:\n- \\(1-\\rho^2 = 1 - \\left(\\frac{3}{5}\\right)^2 = \\frac{16}{25}\\), so \\(\\sqrt{1-\\rho^2} = \\frac{4}{5}\\).\n- For \\(\\beta=2\\): \\(1+\\beta^2-2\\rho\\beta = 1+4-2\\cdot\\frac{3}{5}\\cdot2 = 5-2.4=2.6\\)\n- For \\(\\alpha=\\frac{1}{2}\\): \\(1+\\alpha^2-2\\rho\\alpha = 1+\\frac{1}{4}-2\\cdot\\frac{3}{5}\\cdot\\frac{1}{2} = 1.25-0.6=0.65\\)\nNow:\n- Numerator for \\(\\beta\\): \\(2-\\frac{3}{5} = \\frac{7}{5}\\)\n- Denominator for \\(\\beta\\): \\(\\frac{4}{5}\\sqrt{2.6} = \\frac{4}{5}\\cdot\\sqrt{2.6}\\)\n- Numerator for \\(\\alpha\\): \\(\\frac{1}{2}-\\frac{3}{5} = -\\frac{1}{10}\\)\n- Denominator for \\(\\alpha\\): \\(\\frac{4}{5}\\sqrt{0.65}\\)\nSo, the arguments are:\n- \\(\\frac{7/5}{(4/5)\\sqrt{2.6}} = \\frac{7}{4\\sqrt{2.6}}\\)\n- \\(-\\frac{1/10}{(4/5)\\sqrt{0.65}} = -\\frac{1}{8\\sqrt{0.65}}\\)\nBut the options use \\(\\arctan(\\frac{7}{4})\\) and \\(\\arctan(\\frac{1}{8})\\), which suggests a simplification.\nIndeed, for \\(\\rho = 3/5\\), \\(\\alpha = 1/2\\), \\(\\beta = 2\\):\n- \\(\\frac{7}{4}\\) and \\(\\frac{1}{8}\\) match the arguments in option 4.\nThus, the answer is:"
+  },
+  {
+    "question_id": "10",
+    "context": "You have \\(X_{i}\\sim\\exp(\\lambda),i=1,2,3\\) independent. One defines \\(Y=X_{1}+X_{2}+X_{3}\\).",
+    "question": "The joint density \\(f(x,y)\\) of \\(X_{1}\\) and \\(Y\\) is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(f(x,y)=\\lambda e^{-\\lambda x}\\lambda(\\lambda y)e^{-\\lambda y}=\\lambda^{3}ye^{- \\lambda(x+y)}\\)",
+      "\\(2\\)\\(\\square\\)\\(f(x,y)=\\lambda e^{-\\lambda x}\\lambda\\frac{(\\lambda y)^{2}}{2}e^{-\\lambda y}= \\lambda^{4}\\frac{y^{2}}{2}e^{-\\lambda(x+y)}\\)",
+      "\\(3\\)\\(\\square\\)\\(f(x,y)=\\lambda e^{-\\lambda x}\\lambda(\\lambda(y-x))e^{-\\lambda(y-x)}=\\lambda^{3}(y-x)e^{- \\lambda y}\\)",
+      "\\(4\\)\\(\\square\\)\\(f(x,y)=\\lambda e^{-\\lambda x}\\lambda\\frac{(\\lambda(y-x))^{2}}{2}e^{-\\lambda y}= \\lambda^{4}\\frac{(y-x)^{2}}{2}e^{-\\lambda y}\\)",
+      "\\(5\\)\\(\\square\\)\\(f(x,y)=\\lambda\\frac{(\\lambda y)^{2}}{2}e^{-\\lambda y}\\cdot\\frac{1}{3}=\\lambda^{ 3}\\frac{y^{2}}{6}e^{-\\lambda y}\\)",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ],
+    "answer": "3",
+    "analysis": "Let \\(X_1, X_2, X_3 \\sim \\exp(\\lambda)\\) i.i.d., and \\(Y = X_1 + X_2 + X_3\\). We want the joint density \\(f(x, y)\\) of \\((X_1, Y)\\).\nStep 1: The joint density of \\((X_1, X_2, X_3)\\) is \\(\\lambda^3 e^{-\\lambda(x_1 + x_2 + x_3)}\\).\nStep 2: Change variables to \\((x, y)\\) where \\(x = X_1\\), \\(y = X_1 + X_2 + X_3\\), so \\(X_2 + X_3 = y - x\\), with \\(x \\leq y\\).\nStep 3: The sum \\(X_2 + X_3\\) (sum of two independent exponentials) has pdf: \\(\\lambda^2 (y-x) e^{-\\lambda(y-x)}\\) for \\(y \\geq x\\).\nStep 4: The joint pdf is:\n\\[\nf(x, y) = f_{X_1}(x) f_{X_2 + X_3}(y-x) = \\lambda e^{-\\lambda x} \\cdot \\lambda^2 (y-x) e^{-\\lambda(y-x)} = \\lambda^3 (y-x) e^{-\\lambda y}\n\\]\nfor \\(x \\geq 0, y \\geq x\\).\nThis matches option 3."
+  },
+  {
+    "question_id": "11",
+    "context": "It is assumed that cardiac arrest patients arrive at an emergency department independently of each other with an average frequency of 24 per day. As a first approximation one assumes that this frequency is constant during the day.",
+    "question": "The probability that at most 2 cardiac arrest patients arrive during a 4 hour period is",
+    "options": [
+      "1\\ \\square\\qquad\\frac{\\left(12\\\\ 2\\right)^{2}}{\\left(24\\\\ 4\\right)}",
+      "2\\ \\square\\qquad\\left(5\\\\ 6\\right)^{2}+2\\cdot\\tfrac{5}{6}\\tfrac{1}{6}",
+      "3\\ \\square\\qquad\\sum_{i=0}^{2}\\left(4\\\\ i\\right)\\tfrac{1}{16}",
+      "4\\ \\square\\qquad\\Phi(-1)",
+      "5\\ \\square\\qquad\\left(1+4+\\tfrac{4^{2}}{2!}\\right)e^{-4}",
+      "6\\ \\square\\qquad\\text{Do not know}"
+    ],
+    "answer": "5",
+    "analysis": "Step-by-step solution:\n- The arrivals are modeled as a Poisson process with rate λ = 24 per day = 1 per hour.\n- For a 4-hour period, expected arrivals = 4.\n- Probability of at most 2 arrivals in 4 hours: \\( P(X \\leq 2) \\) where \\( X \\sim \\text{Poisson}(4) \\).\n- \\( P(X \\leq 2) = P(0) + P(1) + P(2) \\)\n- \\( P(k) = \\frac{4^k}{k!}e^{-4} \\) for \\( k = 0,1,2 \\)\n- So, \\( P(X \\leq 2) = \\left(1 + 4 + \\frac{16}{2}\\right)e^{-4} = \\left(1 + 4 + 8\\right)e^{-4} = 13e^{-4} \\)\n- Option 5 matches this form."
+  },
+  {
+    "question_id": "12",
+    "context": "Let \\(X\\) and \\(Y\\) be two independent random variables, with \\(\\mathsf{E}(X)=\\mu_{X},\\mathsf{E}(Y)=\\mu_{Y},\\mathsf{Var}(X)=\\sigma_{X}^{2}\\) and \\(\\mathsf{Var}(Y)=\\sigma_{Y}^{2}\\).",
+    "question": "You find",
+    "options": [
+      "1\\ \\square\\qquad\\mathsf{Var}(XY) =\\sigma_{X}^{2}\\sigma_{Y}^{2}+\\mu_{X}^{2}\\sigma_{Y}^{2}+\\mu_{Y}^{ 2}\\sigma_{X}^{2}-\\mu_{X}^{2}\\mu_{Y}^{2}",
+      "2\\ \\square\\qquad\\mathsf{Var}(XY) =\\sigma_{X}^{2}\\sigma_{Y}^{2}",
+      "3\\ \\square\\qquad\\mathsf{Var}(XY) =\\sigma_{X}^{2}\\sigma_{Y}^{2}-\\mu_{X}^{2}\\mu_{Y}^{2}",
+      "4\\ \\square\\qquad\\mathsf{Var}(XY) =\\sigma_{X}^{2}\\sigma_{Y}^{2}+\\mu_{X}^{2}\\sigma_{Y}^{2}+\\mu_{Y}^{ 2}\\sigma_{X}^{2}",
+      "5\\ \\square\\qquad\\mathsf{Var}(XY) =\\sigma_{X}^{2}\\sigma_{Y}^{2}+\\mu_{X}^{2}\\mu_{Y}^{2}",
+      "6\\ \\square\\qquad\\text{Do not know}"
+    ],
+    "answer": "4",
+    "analysis": "We have \\( \\mathsf{Var}(XY) = \\mathsf{E}[(XY)^2] - (\\mathsf{E}[XY])^2 \\). Since \\(X\\) and \\(Y\\) are independent:\n- \\( \\mathsf{E}[XY] = \\mathsf{E}[X]\\mathsf{E}[Y] = \\mu_X \\mu_Y \\)\n- \\( \\mathsf{E}[(XY)^2] = \\mathsf{E}[X^2]\\mathsf{E}[Y^2] \\)\nBut \\( \\mathsf{E}[X^2] = \\sigma_X^2 + \\mu_X^2 \\), \\( \\mathsf{E}[Y^2] = \\sigma_Y^2 + \\mu_Y^2 \\).\nSo,\n\\[\n\\mathsf{Var}(XY) = (\\sigma_X^2 + \\mu_X^2)(\\sigma_Y^2 + \\mu_Y^2) - (\\mu_X \\mu_Y)^2\n\\]\nExpanding:\n\\[\n= \\sigma_X^2 \\sigma_Y^2 + \\mu_X^2 \\sigma_Y^2 + \\mu_Y^2 \\sigma_X^2 + \\mu_X^2 \\mu_Y^2 - \\mu_X^2 \\mu_Y^2\n= \\sigma_X^2 \\sigma_Y^2 + \\mu_X^2 \\sigma_Y^2 + \\mu_Y^2 \\sigma_X^2\n\\]\nOption 4 matches."
+  },
+  {
+    "question_id": "13",
+    "context": "Given the density \\(f(x,y)=6(x-y)\\) for the joint distribution of maximum \\((X)\\) and minimum \\((Y)\\) of 3 independent \\(uniform(0,1)\\) distributed random variables.",
+    "question": "The probability for observing a maximum between 0.9 and 0.91 along with a minimum between 0.1 and 0.11 is found (possibly approximately) to",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(6\\cdot 0.8\\cdot 0.01^{2}\\)",
+      "\\(2\\)\\(\\square\\)\\(\\int_{0}^{0.1}\\int_{0}^{0.9}6(x-y)\\mathrm{d}x\\mathrm{d}y\\)",
+      "\\(3\\)\\(\\square\\)\\(0.48\\)",
+      "\\(4\\)\\(\\square\\)\\(6(0.91-0.10)-6(0.9-0.11)\\)",
+      "\\(5\\)\\(\\square\\)\\(6(0.9-0.1)\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ],
+    "answer": "1",
+    "analysis": "We are given the joint density \\(f(x, y) = 6(x-y)\\) for the maximum \\(X\\) and minimum \\(Y\\) of three independent \\(Uniform(0,1)\\) random variables, valid for \\(0 < y < x < 1\\). The probability that \\(X \\in [0.9, 0.91]\\) and \\(Y \\in [0.1, 0.11]\\) is:\n\\[\nP = \\int_{y=0.1}^{0.11} \\int_{x=0.9}^{0.91} 6(x-y) \\, dx \\, dy\n\\]\nFor small intervals, this is approximately \\(6(x-y)\\Delta x \\Delta y\\) at \\(x=0.9, y=0.1\\), so \\(6(0.9-0.1)(0.01)^2 = 6 \\cdot 0.8 \\cdot 0.0001\\)."
+  },
+  {
+    "question_id": "14",
+    "context": "A random variable \\(X\\) is uniformly distributed on the interval from \\(-\\frac{1}{2}\\) to \\(\\frac{1}{2}\\). A new random variable is formed as \\(Y=X^{2}\\) with density \\(f_{Y}(y)\\).",
+    "question": "The density \\(f_{Y}(y)\\) is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(f_{Y}(y)=\\frac{1}{2\\sqrt{|y|}}\\) for \\(y\\in\\left[0;\\frac{1}{4}\\right]\\)\\(\\mathrm{og}\\)\\(0\\) ellers.",
+      "\\(2\\)\\(\\square\\)\\(f_{Y}(y)=\\frac{1}{\\sqrt{|y|}}\\) for \\(y\\in\\left[0;\\frac{1}{4}\\right]\\)\\(\\mathrm{og}\\)\\(0\\) ellers.",
+      "\\(3\\)\\(\\square\\)\\(f_{Y}(y)=\\frac{1}{2\\sqrt{|y|}}\\) for \\(y\\in\\left[-\\frac{1}{4};\\frac{1}{4}\\right]\\)\\(\\mathrm{og}\\)\\(0\\) ellers.",
+      "\\(4\\)\\(\\square\\)\\(f_{Y}(y)=\\frac{1}{\\sqrt{|y|}}\\) for \\(y\\in\\left[-\\frac{1}{4};\\frac{1}{4}\\right]\\)\\(\\mathrm{og}\\)\\(0\\) ellers.",
+      "\\(5\\)\\(\\square\\)\\(f_{Y}(y)=4\\) for \\(y\\in\\left[0;\\frac{1}{4}\\right]\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ],
+    "answer": "2",
+    "analysis": "Given \\(X \\sim U\\left(-\\frac{1}{2}, \\frac{1}{2}\\right)\\), so \\(f_X(x) = 1\\) for \\(x \\in [-\\frac{1}{2}, \\frac{1}{2}]\\).\nLet \\(Y = X^2\\). The support of \\(Y\\) is \\([0, \\frac{1}{4}]\\).\nFor \\(y \\in [0, \\frac{1}{4}]\\), the preimages are \\(x = \\pm\\sqrt{y}\\).\nBy the change of variables formula:\n\\(f_Y(y) = \\sum_{x: x^2 = y} \\frac{f_X(x)}{|dx/dy|}\\)\n\\(dx/dy = \\frac{1}{2\\sqrt{y}}\\), so \\(|dx/dy| = \\frac{1}{2\\sqrt{y}}\\).\nEach root is in the interval, so\n\\(f_Y(y) = 2 \\cdot 1 \\cdot \\frac{1}{2\\sqrt{y}} = \\frac{1}{\\sqrt{y}}\\) for \\(y \\in [0, \\frac{1}{4}]\\)."
+  },
+  {
+    "question_id": "15",
+    "context": "The pair of random variables \\((X,Y)\\) follows a bivariate normal distribution with \\(X\\sim normal(1,4),Y\\sim normal(2,9)\\) and correlation coefficient \\(\\rho=-\\frac{1}{4}\\).",
+    "question": "The probability \\({\\sf P}(X-Y\\leq 0)\\) is",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\(\\Phi\\left(\\frac{1}{\\sqrt{13}}\\right)\\)",
+      "\\(2\\)\\(\\Box\\)\\(\\Phi\\left(\\frac{1}{3}\\right)\\)",
+      "\\(3\\)\\(\\Box\\)\\(\\Phi\\left(\\frac{1}{\\sqrt{12}}\\right)\\)",
+      "\\(4\\)\\(\\Box\\)\\(\\Phi\\left(\\frac{1}{4}\\right)\\)",
+      "\\(5\\)\\(\\Box\\)\\(\\Phi\\left(\\frac{1}{\\sqrt{2}}\\right)\\)",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ],
+    "answer": "4",
+    "analysis": "Let \\(Z = X - Y\\). Since \\((X, Y)\\) is bivariate normal, \\(Z\\) is normal.\nMean:\n\\(\\mathbb{E}[Z] = \\mathbb{E}[X] - \\mathbb{E}[Y] = 1 - 2 = -1\\)\nVariance:\n\\(\\mathrm{Var}(Z) = \\mathrm{Var}(X) + \\mathrm{Var}(Y) - 2\\mathrm{Cov}(X, Y)\\)\n\\(\\mathrm{Var}(X) = 4\\), \\(\\mathrm{Var}(Y) = 9\\), \\(\\mathrm{Cov}(X, Y) = \\rho \\sqrt{4 \\cdot 9} = -\\frac{1}{4} \\cdot 6 = -1.5\\)\nSo,\n\\(\\mathrm{Var}(Z) = 4 + 9 - 2(-1.5) = 13 + 3 = 16\\)\nStandard deviation: \\(\\sqrt{16} = 4\\)\nWe want \\(\\mathbb{P}(Z \\leq 0)\\):\nStandardize:\n\\(\\mathbb{P}(Z \\leq 0) = \\mathbb{P}\\left(\\frac{Z - (-1)}{4} \\leq \\frac{0 + 1}{4}\\right) = \\Phi\\left(\\frac{1}{4}\\right)\\)"
+  },
+  {
+    "question_id": "16",
+    "context": "For the events \\(A,B\\) and \\(C\\), \\({\\sf P}(A)\\), \\({\\sf P}(B)\\), \\({\\sf P}(C)\\), \\({\\sf P}(A\\cap B)\\), \\({\\sf P}(A\\cap C)\\), \\({\\sf P}(A\\cap B\\cap C)\\) and \\({\\sf P}(A\\cup B\\cup C)\\) are known. One wants to calculate \\({\\sf P}(B\\cap C)\\).",
+    "question": "The probability \\({\\sf P}(B\\cap C)\\) is determined by",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\({\\sf P}(B\\cap C)={\\sf P}(A)+{\\sf P}(B)+{\\sf P}(C)-{\\sf P}(A\\cap B)-{\\sf P}(A\\cup B\\cup C)\\)",
+      "\\(2\\)\\(\\Box\\)\\({\\sf P}(B\\cap C)={\\sf P}(A)+{\\sf P}(B)+{\\sf P}(C)-{\\sf P}(A\\cap B)+{\\sf P}(A\\cap B \\cap C)-{\\sf P}(A\\cup B\\cup C)\\)",
+      "\\(3\\)\\(\\Box\\)\\({\\sf P}(B\\cap C)={\\sf P}(A)+{\\sf P}(B)+{\\sf P}(C)-{\\sf P}(A\\cap B)-{\\sf P}(A\\cap C )+{\\sf P}(A\\cap B\\cap C)-{\\sf P}(A\\cup B\\cup C)\\)",
+      "\\(4\\)\\(\\Box\\)\\({\\sf P}(B\\cap C)={\\sf P}(A\\cup B\\cup C)-{\\sf P}(A)-{\\sf P}(B)-{\\sf P}(C)+{\\sf P}(A \\cap B)-{\\sf P}(A\\cap B\\cap C)\\)",
+      "\\(5\\)\\(\\Box\\)\\({\\sf P}(B\\cap C)={\\sf P}(B)+{\\sf P}(C)-{\\sf P}(A\\cup B\\cup C)\\)",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ],
+    "answer": "3",
+    "analysis": "We know the inclusion-exclusion formula for three sets:\n\\[\n{\\sf P}(A\\cup B\\cup C) = {\\sf P}(A) + {\\sf P}(B) + {\\sf P}(C) - {\\sf P}(A\\cap B) - {\\sf P}(A\\cap C) - {\\sf P}(B\\cap C) + {\\sf P}(A\\cap B\\cap C)\n\\]\nWe solve for \\({\\sf P}(B\\cap C)\\):\n\\[\n{\\sf P}(B\\cap C) = {\\sf P}(A) + {\\sf P}(B) + {\\sf P}(C) - {\\sf P}(A\\cap B) - {\\sf P}(A\\cap C) + {\\sf P}(A\\cap B\\cap C) - {\\sf P}(A\\cup B\\cup C)\n\\]\nThis matches option 3."
+  },
+  {
+    "question_id": "17",
+    "context": "The number of defects \\(N\\) in some material can be described by a Poisson distribution with mean \\(\\gamma\\). In another model \\(F_{i}\\) is the event that there are \\(i\\) defects in the material. One wants to express the probability for the event \\(H=(F_{0}\\cup F_{1}\\cup F_{2})\\) using \\(N\\).",
+    "question": "\\(P(H)\\) can be expressed alternatively as",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\(\\qquad\\mathsf{P}(H)=\\mathsf{P}(N\\leq 2)\\)",
+      "\\(2\\)\\(\\Box\\)\\(\\qquad\\mathsf{P}(H)=\\mathsf{P}(N_{0})+\\mathsf{P}(N_{1})+\\mathsf{P}(N_{2})\\)",
+      "\\(3\\)\\(\\Box\\)\\(\\qquad\\mathsf{P}(H)=\\mathsf{P}(F_{i}\\leq 2)\\)",
+      "\\(4\\)\\(\\Box\\)\\(\\qquad\\mathsf{P}(H)=\\mathsf{P}(N=0,N=1,N=2)\\)",
+      "\\(5\\)\\(\\Box\\)It is not possible to express \\(\\mathsf{P}(H)\\) using \\(N\\) with the information given.",
+      "\\(6\\)\\(\\Box\\)Do not know"
+    ],
+    "answer": "1",
+    "analysis": "Let \\(N\\) be the number of defects, Poisson with mean \\(\\gamma\\). \\(F_i\\) is the event \"there are \\(i\\) defects\", i.e., \\(N = i\\). The event \\(H = (F_0 \\cup F_1 \\cup F_2)\\) is the event that there are 0, 1, or 2 defects, i.e., \\(N \\leq 2\\). Thus, \\(P(H) = P(N \\leq 2)\\). Option 1 matches this exactly. Option 2 is also correct in value, but option 1 is the most direct and standard expression."
+  },
+  {
+    "question_id": "18",
+    "context": "A certain fish species spawn a number of eggs that can be described by a Poisson distribution with mean \\(\\mu\\). Each egg gives rise to a female fish larvae with probability \\(p\\) and gives rise to a male fish larvae with probability \\(1-p\\).",
+    "question": "The expected number of eggs from fish of this species, that gives rise to a female fish larvae is",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\(\\qquad\\frac{\\mu}{p}\\)",
+      "\\(2\\)\\(\\Box\\)\\(\\qquad\\mu p\\)",
+      "\\(3\\)\\(\\Box\\)\\(\\qquad\\mu(1-p)\\)",
+      "\\(4\\)\\(\\Box\\)\\(\\qquad\\mu(p+p^{2})\\)",
+      "\\(5\\)\\(\\Box\\)\\(\\qquad\\mu p(1-p)\\)",
+      "\\(6\\)\\(\\Box\\)Do not know"
+    ],
+    "answer": "2",
+    "analysis": "Let \\(N\\) be the number of eggs, \\(N \\sim \\text{Poisson}(\\mu)\\). Each egg independently gives rise to a female with probability \\(p\\). The number of female larvae, \\(X\\), given \\(N\\), is \\(X|N \\sim \\text{Binomial}(N, p)\\). The unconditional expectation is:\n\\[\nE[X] = E[E[X|N]] = E[Np] = pE[N] = p\\mu\n\\]\nSo, the expected number of eggs giving rise to a female is \\(\\mu p\\)."
+  },
+  {
+    "question_id": "19",
+    "context": "In a physical experiment, electrons are emitted at high velocity towards a screen. Here the screen can be considered to be of infinite size. The electrons are emitted towards a specific point on the screen. Due to randomness the electrons do not hit this point precisely. The hitting point of an electron on the screen can be described by the coordinates \\((X,Y)\\), where \\(X\\) and \\(Y\\) are independent standard normal random variables. It is of special interest to know whether the electrons hit between one and two length units from the target (the origin of the coordinate system).",
+    "question": "The probability that an electron hits between 1 and 2 length units from the target is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\Phi(2)-\\Phi(1)\\)",
+      "\\(2\\)\\(\\square\\)\\(2\\)\\((\\Phi(2)-\\Phi(1))\\)",
+      "\\(3\\)\\(\\square\\)\\(\\exp\\left(-\\frac{1}{2}\\right)-\\exp\\left(-2\\right)\\)",
+      "\\(4\\)\\(\\square\\)\\(1-\\sum_{r=0}^{1}\\frac{x^{r}}{r!}e^{-x}\\)",
+      "\\(5\\)\\(\\square\\)\\(e^{-2}\\)",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ],
+    "answer": "3",
+    "analysis": "Let \\( (X, Y) \\) be independent standard normal random variables. The distance from the origin is \\( R = \\sqrt{X^2 + Y^2} \\). The distribution of \\( R^2 \\) is chi-squared with 2 degrees of freedom, i.e., exponential with mean 2. The probability that \\( R \\) is between 1 and 2 is \\( P(1 < R < 2) = P(1^2 < R^2 < 2^2) = P(1 < R^2 < 4) \\).\nFor exponential(2), \\( P(a < R^2 < b) = e^{-a/2} - e^{-b/2} \\).\nSo, \\( P(1 < R < 2) = e^{-1/2} - e^{-2} \\)."
+  },
+  {
+    "question_id": "20",
+    "context": "A communication system for railways has a critical time limit for a handshaking process - the so-called round trip time. Mean and standard deviation for this time is known to be 12ms and 6ms respectively. One wants to determine a threshold value for the round trip time, which is exceeded with a probability of at most \\(\\frac{1}{9}\\).",
+    "question": "The limit in question is determined to be",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(30\\)ms",
+      "\\(2\\)\\(\\square\\)\\(66\\)ms",
+      "\\(3\\)\\(\\square\\)\\(120\\)ms",
+      "\\(4\\)\\(\\square\\)\\(\\left(12+6\\Phi^{-1}\\left(\\frac{17}{18}\\right)\\right)\\)ms",
+      "\\(5\\)\\(\\square\\)\\(\\left(12+6\\Phi^{-1}\\left(\\frac{8}{9}\\right)\\right)\\)ms",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ],
+    "answer": "5",
+    "analysis": "Let \\( X \\) be the round trip time, with mean \\( \\mu = 12 \\) ms and standard deviation \\( \\sigma = 6 \\) ms. We seek a threshold \\( t \\) such that \\( P(X > t) \\leq \\frac{1}{9} \\), i.e., \\( P(X \\leq t) \\geq \\frac{8}{9} \\). For a normal distribution, \\( t = \\mu + \\sigma z \\), where \\( z = \\Phi^{-1}\\left(\\frac{8}{9}\\right) \\). Thus, the threshold is \\( 12 + 6\\Phi^{-1}\\left(\\frac{8}{9}\\right) \\) ms."
+  },
+  {
+    "question_id": "21",
+    "context": "The life time of an electronic component can with reasonable accuracy be described by an \\(exponential(\\lambda)\\) random variable. The component has reached the age \\(t\\).",
+    "question": "With the given information, determine the probability that the component will fail in the interval \\([t,t+\\mathrm{d}t]\\). The answer can possibly be given only approximatively.",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\(\\lambda\\mathrm{d}t\\)",
+      "\\(2\\)\\(\\Box\\)\\(\\lambda e^{-\\lambda t}\\mathrm{d}t\\)",
+      "\\(3\\)\\(\\Box\\)\\(e^{-\\lambda t}-e^{-\\lambda(t+\\mathrm{d}t)}\\)",
+      "\\(4\\)\\(\\Box\\)\\(\\frac{\\lambda e^{-\\lambda t}}{1-e^{-\\lambda t}}\\mathrm{d}t\\)",
+      "\\(5\\)\\(\\Box\\)\\(\\lambda e^{-\\lambda t}\\)",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ],
+    "answer": "1",
+    "analysis": "Let \\(X\\) be the lifetime of the component, \\(X \\sim \\text{Exponential}(\\lambda)\\). The probability that the component fails in \\([t, t+\\mathrm{d}t]\\) given it has survived up to \\(t\\) is:\n\\[\nP(t < X < t+\\mathrm{d}t \\mid X > t) = \\frac{P(t < X < t+\\mathrm{d}t)}{P(X > t)}\n\\]\nThe numerator is \\(P(t < X < t+\\mathrm{d}t) = e^{-\\lambda t} - e^{-\\lambda (t+\\mathrm{d}t)} \\approx \\lambda e^{-\\lambda t} \\mathrm{d}t\\) (using Taylor expansion). The denominator is \\(P(X > t) = e^{-\\lambda t}\\). So,\n\\[\n\\frac{\\lambda e^{-\\lambda t} \\mathrm{d}t}{e^{-\\lambda t}} = \\lambda \\mathrm{d}t\n\\]\nThis is the memoryless property of the exponential distribution."
+  },
+  {
+    "question_id": "22",
+    "context": "Let \\(X\\) be a positive random variable, such that \\(\\mathsf{P}(X\\leq x)=1-e^{-\\lambda x}\\) and define \\(Y=\\frac{1}{X}\\).",
+    "question": "The probability \\(\\mathsf{P}(Y\\leq y)\\) is",
+    "options": [
+      "\\(1\\)\\(\\Box\\)\\(\\mathsf{P}(Y\\leq y)=1-e^{-\\frac{\\lambda}{y}}\\)",
+      "\\(2\\)\\(\\Box\\)\\(\\mathsf{P}(Y\\leq y)=1-e^{-\\frac{y}{\\lambda}}\\)",
+      "\\(3\\)\\(\\Box\\)\\(\\mathsf{P}(Y\\leq y)=e^{-\\frac{y}{\\lambda}}\\)",
+      "\\(4\\)\\(\\Box\\)\\(\\mathsf{P}(Y\\leq y)=e^{-\\frac{1}{\\lambda y}}\\)",
+      "\\(5\\)\\(\\Box\\)\\(\\mathsf{P}(Y\\leq y)=e^{-\\frac{\\lambda}{y}}\\)",
+      "\\(6\\)\\(\\Box\\) Do not know"
+    ],
+    "answer": "5",
+    "analysis": "Given \\(X\\) has CDF \\(\\mathsf{P}(X \\leq x) = 1 - e^{-\\lambda x}\\) for \\(x > 0\\). Let \\(Y = \\frac{1}{X}\\).\nWe want \\(\\mathsf{P}(Y \\leq y)\\).\n\\[\n\\mathsf{P}(Y \\leq y) = \\mathsf{P}\\left(\\frac{1}{X} \\leq y\\right) = \\mathsf{P}\\left(X \\geq \\frac{1}{y}\\right)\n\\]\n\\[\n= 1 - \\mathsf{P}\\left(X < \\frac{1}{y}\\right) = 1 - (1 - e^{-\\lambda \\frac{1}{y}}) = e^{-\\frac{\\lambda}{y}}\n\\]\nSo the answer is option 5."
+  },
+  {
+    "question_id": "23",
+    "context": "Consider a game of dice using six normal six-sided dice. The aim is to get as many sixes as possible. You can throw at most two times, as all sixes obtained in the first throw is taken aside and the second throw is performed with only the dice not showing six on the first throw.",
+    "question": "Assume that you got \\(v\\) sixes in the first throw, then the probability of getting a total of \\(w\\) sixes is found to be",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\square\\)\\(\\left(6\\\\ w\\right)\\left(\\frac{1}{6}\\right)\\left(\\frac{5}{6}\\right)\\)",
+      "\\(2\\)\\(\\square\\)\\(\\frac{1}{6-v}\\)",
+      "\\(3\\)\\(\\square\\)\\(\\left(6-v\\\\ w-v\\right)\\left(\\frac{1}{6}\\right)^{w-v}\\left(\\frac{5}{6}\\right)^{6+v-w}\\)",
+      "\\(4\\)\\(\\square\\)\\(\\frac{1}{6}\\)",
+      "\\(5\\)\\(\\square\\)\\(\\left(6-v\\\\ w-v\\right)\\left(\\frac{1}{6}\\right)^{w-v}\\left(\\frac{5}{6}\\right)^{6-w}\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ],
+    "answer": "5",
+    "analysis": "Let \\(v\\) be the number of sixes in the first throw. These dice are set aside. The remaining \\(6-v\\) dice are thrown again. We want the total number of sixes after both throws to be \\(w\\), so we need \\(w-v\\) sixes from the second throw. The probability of getting exactly \\(w-v\\) sixes from \\(6-v\\) dice is given by the binomial formula:\n\\[\n\\binom{6-v}{w-v} \\left(\\frac{1}{6}\\right)^{w-v} \\left(\\frac{5}{6}\\right)^{(6-v)-(w-v)} = \\binom{6-v}{w-v} \\left(\\frac{1}{6}\\right)^{w-v} \\left(\\frac{5}{6}\\right)^{6-w}\n\\]\nThis matches option 5."
+  },
+  {
+    "question_id": "24",
+    "context": "A point is chosen at random in a circular disk. A straight line is drawn through the point and the center of the circle.",
+    "question": "The probability that the absolute value of the slope of the line is less than 1 is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\frac{\\mbox{Arctan}(\\frac{2}{5})}{\\pi}\\)",
+      "\\(2\\)\\(\\square\\)\\(\\frac{1}{\\pi}\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{1}{4}\\)",
+      "\\(4\\)\\(\\square\\)\\(\\frac{1}{3}\\)",
+      "\\(5\\)\\(\\square\\)\\(\\frac{1}{2}\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ],
+    "answer": "5",
+    "analysis": "Let the center of the disk be at the origin. Any line through the center and a random point in the disk is a diameter. The slope of such a line is determined by the angle \\(\\theta\\) it makes with the x-axis: \\(\\text{slope} = \\tan\\theta\\). We want \\(|\\tan\\theta| < 1\\), which means \\(-1 < \\tan\\theta < 1\\).\n\\(|\\tan\\theta| < 1\\) when \\(\\theta \\in (-\\frac{\\pi}{4}, \\frac{\\pi}{4})\\) and \\((\\frac{3\\pi}{4}, \\frac{5\\pi}{4})\\) in \\([0, 2\\pi)\\). Each interval is of length \\(\\frac{\\pi}{2}\\), so total is \\(\\pi\\).\nProbability = favorable angle/total angle = \\(\\frac{\\pi}{2\\pi} = \\frac{1}{2}\\)."
+  },
+  {
+    "question_id": "25",
+    "context": "The cause of an air-crash can roughly be ascribed to a. human error, b. mechanical failure, c. act of terrorism. The probability of a human error at a departure is \\(\\frac{1}{50}\\), while the probability, that a mechanical failure occurs is \\(\\frac{1}{500}\\), and finally, the probability that an airline departure is exposed to an act of terrorism is \\(\\frac{1}{500000}\\). If a human error occurs, then the probability that an air-crash occurs to \\(\\frac{1}{10000}\\), while the probability, that an air-crash occurs at the occurrence of a mechanical failure is \\(\\frac{1}{1000}\\), and finally the probability that an air-crash occurs in the event of an act of terrorism is \\(\\frac{2}{3}\\). You can assume that at most one of the three potential causes can occur, and, that an air-crash can always be ascribed to one of these three causes.",
+    "question": "Knowing that an air-crash has occurred, what is the probability that the crash was caused by an act of terrorism",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(\\frac{1}{4}\\)",
+      "\\(2\\)\\(\\square\\)\\(\\frac{2}{3}\\)",
+      "\\(3\\)\\(\\square\\)\\(\\frac{1}{3}\\cdot 10^{-6}\\)",
+      "\\(4\\)\\(\\square\\)\\(\\frac{20000}{20033}\\)",
+      "\\(5\\)\\(\\square\\)\\(\\frac{1}{3}\\)",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ],
+    "answer": "1",
+    "analysis": "Let:\n- \\( H \\): human error\n- \\( M \\): mechanical failure\n- \\( T \\): terrorism\n- \\( C \\): air-crash\nGiven:\n- \\( P(H) = \\frac{1}{50} \\), \\( P(M) = \\frac{1}{500} \\), \\( P(T) = \\frac{1}{500000} \\)\n- \\( P(C|H) = \\frac{1}{10000} \\), \\( P(C|M) = \\frac{1}{1000} \\), \\( P(C|T) = \\frac{2}{3} \\)\nBy Bayes’ theorem:\n\\[\nP(T|C) = \\frac{P(T)P(C|T)}{P(H)P(C|H) + P(M)P(C|M) + P(T)P(C|T)}\n\\]\nCalculate numerators and denominators:\n- \\( P(T)P(C|T) = \\frac{1}{500000} \\times \\frac{2}{3} = \\frac{2}{1500000} \\)\n- \\( P(H)P(C|H) = \\frac{1}{50} \\times \\frac{1}{10000} = \\frac{1}{500000} \\)\n- \\( P(M)P(C|M) = \\frac{1}{500} \\times \\frac{1}{1000} = \\frac{1}{500000} \\)\nSo denominator:\n\\[\n\\frac{1}{500000} + \\frac{1}{500000} + \\frac{2}{1500000} = \\frac{2}{500000} + \\frac{2}{1500000}\n\\]\n\\[\n= \\frac{6}{1500000} + \\frac{2}{1500000} = \\frac{8}{1500000}\n\\]\nSo,\n\\[\nP(T|C) = \\frac{\\frac{2}{1500000}}{\\frac{8}{1500000}} = \\frac{2}{8} = \\frac{1}{4}\n\\]"
+  },
+  {
+    "question_id": "26",
+    "context": "You have 5 independent \\(exponential(\\mu)\\) distributed variables.",
+    "question": "The density \\(g(x)\\) of the second largest of the 5 variables is",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(g(x)=\\mu\\frac{(\\mu x)^{4}}{4!}e^{-\\mu x}\\)",
+      "\\(2\\)\\(\\square\\)\\(g(x)=\\frac{\\mu}{4}e^{-\\frac{\\mu}{4}x}\\)",
+      "\\(3\\)\\(\\square\\)\\(g(x)=\\frac{5!}{3!}x^{3}(1-x)\\)",
+      "\\(4\\)\\(\\square\\)\\(g(x)=20\\mu e^{-4\\mu x}-20\\mu e^{-4\\mu x}\\)",
+      "\\(5\\)\\(\\square\\)\\(g(x)=20\\mu e^{-2\\mu x}-60\\mu e^{-3\\mu x}+60\\mu e^{-4\\mu x}-20\\mu e^{-5\\mu x}\\)",
+      "\\(6\\)\\(\\square\\)Do not know"
+    ],
+    "answer": "5",
+    "analysis": "Let \\(X_1, ..., X_5\\) be i.i.d. \\(Exp(\\mu)\\) random variables. The density of the \\(k\\)th largest (here, 2nd largest) among \\(n\\) i.i.d. continuous variables is:\n\\[\ng(x) = n \\binom{n-1}{k-1} [F(x)]^{n-k} [1-F(x)]^{k-1} f(x)\n\\]\nFor exponential, \\(F(x) = 1-e^{-\\mu x}\\), \\(f(x) = \\mu e^{-\\mu x}\\), \\(n=5\\), \\(k=2\\):\n\\[\ng(x) = 5 \\binom{4}{1} [F(x)]^{3} [1-F(x)]^{1} f(x)\n= 20 [1-e^{-\\mu x}]^3 e^{-\\mu x} \\mu e^{-\\mu x}\n\\]\nExpand \\([1-e^{-\\mu x}]^3\\) and simplify:\n\\[\n= 20\\mu [1 - 3e^{-\\mu x} + 3e^{-2\\mu x} - e^{-3\\mu x}] e^{-2\\mu x}\n= 20\\mu e^{-2\\mu x} - 60\\mu e^{-3\\mu x} + 60\\mu e^{-4\\mu x} - 20\\mu e^{-5\\mu x}\n\\]\nThis matches option 5."
+  },
+  {
+    "question_id": "27",
+    "context": "The exponential distribution relates to the geometric distribution like the gamma distribution relates to?",
+    "question": "",
+    "options": [
+      "\\(1\\)\\(\\square\\) The binomial distribution",
+      "\\(2\\)\\(\\square\\) The hyper-geometric distribution",
+      "\\(3\\)\\(\\square\\) The uniform distribution",
+      "\\(4\\)\\(\\square\\) The negative binomial distribution",
+      "\\(5\\)\\(\\square\\) The Poisson distribution",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ],
+    "answer": "4",
+    "analysis": "The exponential distribution is the continuous analogue of the geometric distribution, both modeling the waiting time until the first event (continuous and discrete, respectively). The gamma distribution generalizes the exponential to the waiting time until the \\(k\\)th event. The negative binomial distribution is the discrete analogue of the gamma, modeling the number of trials until the \\(k\\)th success. Thus, the gamma distribution relates to the negative binomial distribution as the exponential relates to the geometric."
+  },
+  {
+    "question_id": "28",
+    "context": "Regarding the two random variables \\(X\\) and \\(Y\\) it is known, that \\(\\mathsf{E}(X)=4\\), \\(\\mathsf{E}(Y)=7\\), \\(\\mathsf{SD}(X)=10\\), \\(\\mathsf{SD}(Y)=5\\) and \\(\\mathsf{Cov}(X,Y)=0,5\\). In addition one defines \\(U=3X-2Y+1\\).",
+    "question": "\\(\\mathsf{E}(U)\\) is calculated to be",
+    "options": [
+      "\\(1\\)\\(\\square\\)\\(-2\\)",
+      "\\(2\\)\\(\\square\\)\\(-1\\)",
+      "\\(3\\)\\(\\square\\)\\(26\\)",
+      "\\(4\\)\\(\\square\\)\\(26.5\\)",
+      "\\(5\\)\\(\\square\\)\\(27\\)",
+      "\\(6\\)\\(\\square\\) Do not know"
+    ],
+    "answer": "2",
+    "analysis": "Given \\(U = 3X - 2Y + 1\\), use the linearity of expectation:\n\\[\n\\mathsf{E}(U) = \\mathsf{E}(3X - 2Y + 1) = 3\\mathsf{E}(X) - 2\\mathsf{E}(Y) + 1\n\\]\nPlug in the given values:\n\\[\n= 3 \\times 4 - 2 \\times 7 + 1 = 12 - 14 + 1 = -2 + 1 = -1\n\\]\nSo, the answer is option 2."
+  },
+  {
+    "question_id": "29",
+    "context": "While fishing after sandeels one obtains a certain by-catch of herring. The catch of each species by a random trawl haul can be described with reasonable accuracy by a normal distribution with mean 10 ton (sandeels) and 1 ton (herring) and standard deviation 2 ton (sandeels) and 0.3 ton (herring). The joint distribution can be assumed to be bivariate normal with correlation coefficient 0.7. In a trawl haul one obtained 14 ton of sandeels.",
+    "question": "The expected by-catch of herring is",
+    "options": [
+      "1 \\(\\square\\) & 1 ton \\\\",
+      "2 \\(\\square\\) & 1.24 ton \\\\",
+      "3 \\(\\square\\) & 1.42 ton \\\\",
+      "4 \\(\\square\\) & 1.49 ton \\\\",
+      "5 \\(\\square\\) & 1.6 ton \\\\",
+      "6 \\(\\square\\) & Do not know \\\\"
+    ],
+    "answer": "3",
+    "analysis": "Let \\( X \\) = sandeels (mean 10, SD 2), \\( Y \\) = herring (mean 1, SD 0.3), correlation \\( \\rho = 0.7 \\).\nGiven \\( X = 14 \\), find \\( E[Y|X=14] \\).\nFor bivariate normal:\n\\[\nE[Y|X=x] = \\mu_Y + \\rho \\frac{\\sigma_Y}{\\sigma_X}(x - \\mu_X)\n\\]\nPlug in values:\n\\[\nE[Y|X=14] = 1 + 0.7 \\times \\frac{0.3}{2} \\times (14-10)\n\\]\n\\[\n= 1 + 0.7 \\times 0.15 \\times 4\n\\]\n\\[\n= 1 + 0.7 \\times 0.6\n\\]\n\\[\n= 1 + 0.42 = 1.42\n\\]"
+  },
+  {
+    "question_id": "30",
+    "context": "\\(f(x,y)=K(y-x)(1-y),0<x<y<1\\), where \\(K\\) is a normalizing constant.",
+    "question": "In the range of \\(Y\\), the marginal density \\(f_{Y}(y)\\) of \\(Y\\) is",
+    "options": [
+      "1 \\(\\square\\) & \\(f_{Y}(y)=\\frac{K}{2}(1-y)^{3}\\) \\\\",
+      "2 \\(\\square\\) & \\(f_{Y}(y)=\\frac{K}{2}y(1-y)^{2}\\) \\\\",
+      "3 \\(\\square\\) & \\(f_{Y}(y)=\\frac{K}{2}y^{2}(1-y)\\) \\\\",
+      "4 \\(\\square\\) & \\(f_{Y}(y)=\\frac{K}{4}(1-y)\\) \\\\",
+      "5 \\(\\square\\) & \\(f_{Y}(y)=1\\) \\\\",
+      "6 \\(\\square\\) & Do not know \\\\"
+    ],
+    "answer": "3",
+    "analysis": "To find the marginal density \\(f_Y(y)\\), integrate the joint density over \\(x\\):\n\\[\nf_Y(y) = \\int_{x=0}^{y} f(x,y) dx = \\int_{x=0}^{y} K(y-x)(1-y) dx\n\\]\nFactor out constants:\n\\[\n= K(1-y) \\int_{x=0}^{y} (y-x) dx\n\\]\nCompute the integral:\n\\[\n\\int_{x=0}^{y} (y-x) dx = \\left[ yx - \\frac{1}{2}x^2 \\right]_{0}^{y} = y^2 - \\frac{1}{2}y^2 = \\frac{1}{2}y^2\n\\]\nSo,\n\\[\nf_Y(y) = K(1-y) \\cdot \\frac{1}{2}y^2 = \\frac{K}{2} y^2 (1-y)\n\\]"
+  }
+]

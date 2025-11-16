@@ -1,0 +1,452 @@
+[
+  {
+    "language": "danish",
+    "number": 1,
+    "context": "Man har et billedbehandlingssystem til at analysere kvaliteten af kaffebønner, idet bønnerne har et varierende farvespil. I denne opgave vil vi koncentrere os om detektionen af, hvorvidt bønnerne har været udsat for angreb fra en billeart. Hvis bønnerne har været udsat for billeangreb, vil de være misfarvede med sandsynligheden 0,8 , medens sandsynligheden for, at en ikke billeangreben bønne er misfarvet, er 0,01. Sandsynligheden for, at en bønne har været udsat for billeangreb, er 0,001.",
+    "question": "Sandsynligheden for, at en misfarvet bønne har været udsat for billeangreb, findes til",
+    "options": [
+      "0,80",
+      "0,0080",
+      "0,0074",
+      "0,074",
+      "0,080",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 2,
+    "context": "En bil-forhandler antager, at 45% af kunderne, der besøger butikken, vil købe en elbil, 15% vil købe et benzinbil og 40% vil ikke købe noget.",
+    "question": "Hvis 5 kunder besøger hans butik på en given dag, hvad er så sandsynligheden for, at han vil sælge præcis 2 elbiler og 1 benzinbil på den pågældende dag?",
+    "options": [
+      "(0, 45)² + (0, 15) + (0, 4)²",
+      "(0, 45)²(0, 15)(0, 4)²",
+      "$\\frac{5!}{2!2!}(0,45)^{2}(0,15)(0,4)^{2}$",
+      "$\\underline{\\binom{3}{2}\\binom{3}{1}} \\binom{5}{2}$",
+      "0,75",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 3,
+    "context": "Den maksimale daglige bølgehøjde ved et dige kan beskrives ved en fordeling med middelværdi 2 meter og varians 1 meter ².",
+    "question": "Den bedste øvre grænse for sandsynligheden for, at et dige med en højde på 6 meter vil blive oversvømmet den givne dag, er",
+    "options": [
+      "$1-\\Phi\\left(\\frac{6-2}{1}\\right)$",
+      "$\\Phi\\left(\\frac{6-2}{1}\\right)$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{9}$",
+      "$\\frac{1}{16}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 4,
+    "context": "For to forskellige aktier betragter man ændringen i aktiekursen hen over et kalenderår. Den simultane ændring af de to aktiekurser kan med rimelighed beskrives som en standardiseret bivariat normalfordeling med korrelationskoefficient $\\frac{1}{2}$.",
+    "question": "Sandsynligheden for, at begge ændringer er positive, og, at ingen af de to ændringer er mere end dobbelt så stor som den anden, findes til",
+    "options": [
+      "1 - Φ(1)",
+      "$\\frac{\\operatorname{Acrtan}(3)}{2 \\pi}$",
+      "$\\frac{\\operatorname{Arctan}\\left(\\frac{\\sqrt{3}}{2}\\right)}{2 \\pi}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{6}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 5,
+    "context": "Idet X₁ og X₂ er uafhængige identisk fordelte stokastiske variable med fordelingsfunktion P(X_(i)≤x) = F(x), i = 1, 2, danner man parret X₍₁₎ = min_(i)X_(i), X₍₂₎ = max_(i)X_(i).",
+    "question": "For x ≤ y findes den simultane fordelingsfunktion F^(*)(x, y) = P(X₍₁₎≤x,X₍₂₎≤y) til",
+    "options": [
+      "F^(*)(x, y) = F(y)² - (F(y) - F(x))²",
+      "F^(*)(x, y) = (F(y) - F(x))²",
+      "$F^{*}(x, y)=\\int_{-\\infty}^{x} \\int_{-\\infty}^{y} \\frac{1}{2 \\pi} \\frac{1}{\\sigma^{2}} e^{-\\frac{1}{2} \\frac{(u-\\mu)^{2}+(v-\\mu)^{2}}{\\sigma^{2}}} \\mathrm{~d} u \\mathrm{~d} v$",
+      "F^(*)(x, y) = F(y)² - F(x)²",
+      "F^(*)(x, y) = F(y)² - (F(y) - F(x))",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 6,
+    "context": "Den østlige Quoll er en nu truet australsk rovdyrart. Man har tidligere vurderet, at forekomsten af disse i et område nær Adelaide var 3 per km². Man antager, at disse fordeler sig tilfældigt og uafhængigt af hinanden over området.",
+    "question": "Man har på et område på 2 km² fundet 1 Østlig Quoll. Under de ovenstående antagelser, hvad er da sandsynligheden for højst at finde 1 Østlig Quoll i et område på 2 km² ?",
+    "options": [
+      "$\\Phi\\left(\\frac{1-6}{\\sqrt{6}}\\right)$",
+      "$\\left(\\frac{1}{3}\\right)^{2}+2 \\cdot \\frac{1}{3} \\frac{2}{3}$",
+      "7e^( - 6)",
+      "$\\frac{1}{6}$",
+      "0",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 7,
+    "context": "En ikke negativ kontinuert stokastisk variabel X har overlevelsesfunktion G(x).",
+    "question": "Om egenskaberne for G(x) ved man,",
+    "options": [
+      "at G(x) ≥ 0 og $\\sum_{x=0}^{\\infty} G(x)=1$",
+      "at 0 ≤ G(x) ≤ 1 og G(x) ikke voksende",
+      "at 0 ≤ G(x) ≤ 1 og G(x) ikke aftagende",
+      "at G(x) ≥ 0 og ∫₀^(∞)G(x)dx = 1",
+      "kun, at G(x) ≥ 0",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 8,
+    "context": "Tiden mellem afgivelser af partikler fra en radioaktiv kilde antages ekponentielt fordelt med middelværdi 0, 2 s. Antallet af afgivne partikler tælles fra tiden t₀.",
+    "question": "Bestem eventuelt approksimativt sandsynligheden for, at partikel nummer",
+    "options": [
+      "0000 bliver afgivet inden, der er gået 33 minutter fra t₀.",
+      "1 - Φ(1, 00)",
+      "$\\sum_{i=33}^{\\infty} \\frac{\\left(10000 \\cdot \\frac{0,2}{60}\\right)^{i}}{i!} e^{-10000 \\cdot t \\frac{0,2}{60}}$",
+      "$1-e^{-\\frac{33 \\cdot 60}{2000}}$",
+      "$\\frac{1}{2000}-e^{-\\frac{33 \\cdot 60}{2000}}$",
+      "$1-\\frac{200}{33 \\cdot 60}$"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 9,
+    "context": "Sandsynligheden for solskin en vinterdag er 0,45 , medens sandsynligheden for solskin og frostvejr er 0,35.",
+    "question": "Sandsynligheden for solskin og plusgrader på en vinterdag findes til",
+    "options": [
+      "0, 45 + 0, 35 - 0, 65",
+      "0, 55 - 0, 35",
+      "0,65-0,45",
+      "0, 45 ⋅ 0, 35",
+      "0, 45 - 0, 35",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 10,
+    "context": "En ingeniør er blevet hyret af FDA til at teste holdbarheden af et medicinalfirmas påstand om, at der kun er 5% af deres piller, hvis koncentration af aktivt stof er for lavt. Ingeniøren udvælger tilfældigt 20 piller, og finder, at tre af dem har for lavt indhold af det aktive stof.",
+    "question": "Hvad er sandsynligheden for, at tre eller flere piller ud af 20 har for lavt indhold af aktivt stof, hvis medicinalfirmaets påstand er sand?",
+    "options": [
+      "$\\sum_{i=3}^{\\infty} \\frac{1}{i!} e^{-1}$",
+      "$\\sum_{i=0}^{3}\\binom{20}{i} 0,05^{i} 0,95^{20-i}$",
+      "$\\sum_{i=0}^{3} \\frac{1}{i!} e^{-1}$",
+      "$\\sum_{i=3}^{20}\\binom{20}{i} 0,05^{i} 0,95^{20-i}$",
+      "$1-\\Phi\\left(\\frac{3.5-1}{\\sqrt{0.95}}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 11,
+    "context": "Et punkt vælges tilfældigt i området vist på figuren. Området kan analytisk beskrives, som det område, der afgrænses af linierne $y=3, y=0, y=\\frac{3}{2}(x+3)$ og $y=-\\frac{3}{2}(x-3)$. Førstekoordinaterne til punktet betegnes med den stokastiske variabel X. [image]",
+    "question": "Sandsynligheden P(X ≥ 1) findes til",
+    "options": [
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{1}{8}$",
+      "$\\frac{\\sqrt{2}}{12}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 12,
+    "context": "Opkald til et call center antages at forekomme helt tilfældigt. I gennemsnit kommer der λ opkald pr. minut.",
+    "question": "Med hvilken fordeling kan tiden mellem to opkald beskrives (regnet i minutter)?",
+    "options": [
+      "uniform (0, 1)",
+      "normal(1/ λ, 1 )",
+      "normal( λ, 1 )",
+      "eksponentiel (1/λ)",
+      "eksponentiel( λ )",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 13,
+    "context": "Man har tæthedsfunktionen f(x, y) = 6(x - y) for den simultane fordeling af maximum (X) og minimum ( Y ) af 3 uafhængige uniformt (0, 1) fordelte stokastiske variable.",
+    "question": "Den betingede forventningsværdi E(Y ∣ X = x) af Y for X = x findes til",
+    "options": [
+      "$\\mathrm{E}(Y \\mid X=x)=\\frac{x}{2}$",
+      "$\\mathrm{E}(Y \\mid X=x)=\\frac{x}{3}$",
+      "$\\mathrm{E}(Y \\mid X=x)=\\frac{x}{4}$",
+      "E(Y ∣ X = x) = x³",
+      "$\\mathrm{E}(Y \\mid X=x)=\\frac{1}{4}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 14,
+    "context": "Den stokastiske variabel X har tætheden f_(x)(x) = 2x på intervallet [0; 1]. Vi betragter nu en ny stokastisk variabel Y = X² med tæthed f_(Y)(y)",
+    "question": "I værdimængden for Y findes f_(Y)(y) til",
+    "options": [
+      "$f_{Y}(y)=\\frac{3}{2} \\sqrt{y}$",
+      "$f_{Y}(y)=\\frac{5}{2} y \\sqrt{y}$",
+      "f_(Y)(y) = 1",
+      "$f_{Y}(y)=\\frac{1}{2 \\sqrt{y}}$",
+      "f_(Y)(y) = 2y",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 15,
+    "context": "En systemadministrator har behov for at tilgå en database, men denne er overbelastet. Alle der prøver at komme ind på siden har lige stor sandsynlighed for at blive ladt igennem, og der er en sandsynlighed på $\\frac{1}{20}$ for at komme ind ved det enkelte forsøg.",
+    "question": "Hvad er sandsynligheden for, at systemadministratoren kommer igennem netop i tredje forsøg?",
+    "options": [
+      "$\\frac{e^{-0,95} 0,95^{3}}{3!}$",
+      "$\\frac{e^{-0,05} 0,05^{3}}{3!}$",
+      "$\\frac{1}{20^{3}}$",
+      "$\\frac{19^{2}}{20^{2}}$",
+      "$\\frac{19^{2}}{20^{3}}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 16,
+    "context": "Sandsynligheden for, at der kommer en kraftig nedbørshændelse på en given lokalitet en given dag i juli er $\\frac{1}{9}$. På et nærliggende rensningsanlæg anslår man, at sandsynligheden for overløb af anlægget givet en kraftig nedbørshændelse er $\\frac{1}{4}$, medens sandsynligheden for overløb uden en kraftig nedbørshændelse er forsvindende.",
+    "question": "Sandsynligheden for, at der opleves overløb på rensningsanlægget en given dag i juli, findes til",
+    "options": [
+      "$\\frac{1}{9}$",
+      "$\\frac{5}{36}$",
+      "$\\frac{1}{36}$",
+      "$\\frac{13}{36}$",
+      "$\\frac{1}{49}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 17,
+    "context": "Den simultane tæthedsfunktion for X og Y er givet ved $$f(x, y)=\\frac{6}{7}\\left(x^{2}+\\frac{x y}{2}\\right), \\quad 0<x<1, \\quad 0<y<2 .$$",
+    "question": "Sandsynligheden $\\mathrm{P}\\left(\\left.Y>\\frac{1}{2} \\right\\rvert\\, X<\\frac{1}{2}\\right)$ findes til",
+    "options": [
+      "$\\int_{0}^{2} \\int_{0}^{1} \\frac{6}{7}\\left(x^{2}+\\frac{x y}{2}\\right) d x d y$",
+      "0,8625",
+      "$\\int_{1 / 2}^{\\infty} \\int_{-\\infty}^{1 / 2} \\frac{6}{7}\\left(x^{2}+\\frac{x y}{2}\\right) d x d y$",
+      "$\\frac{6}{7}$",
+      "$\\int_{1 / 2}^{2} \\int_{0}^{1 / 2} \\frac{6}{7}\\left(x^{2}+\\frac{x y}{2}\\right) d x d y$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 18,
+    "context": "På en almindelig dartskive er der et rødt cirkelformet felt i midten kaldet inner bull med en diameter på 0,5 tommer. Uden om er et grønt ringformet felt kaldet outer bull med en ydre diameter på 1,25 tommer. Phil kaster en pil mod centrum af skiven. Koordinaterne (X, Y), regnet fra centrum, til det sted han rammer kan beskrives ved to uafhængige normalfordelte stokastiske varible begge med middelværdi 0 tommer og varians 1 tomme ².",
+    "question": "Hvad er sandsynligheden for at Phil rammer outer bull?",
+    "options": [
+      "$e^{-\\frac{1}{32}}-e^{-\\frac{25}{128}}$",
+      "$1-e^{-\\frac{25}{128}}$",
+      "$\\left(2 \\Phi\\left(\\frac{5}{4}-1\\right)\\right)^{2}-\\left(2 \\Phi\\left(\\frac{1}{2}-1\\right)\\right)^{2}$",
+      "$\\left(2 \\Phi\\left(\\frac{5}{8}-1\\right)\\right)^{2}-\\left(2 \\Phi\\left(\\frac{1}{4}-1\\right)\\right)^{2}$",
+      "$\\Phi\\left(\\frac{5}{4}\\right)^{2}-\\Phi\\left(\\frac{1}{2}\\right)^{2}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 19,
+    "context": "Lad den simultane tæthed af de stokastiske variable X og Y være givet ved $$f(x, y)= \\begin{cases}2, & \\text { for } 0<x<y<1 \\\\ 0, & \\text { ellers }\\end{cases}$$",
+    "question": "Kovariansen Cov (X, Y) mellem X og Y bestemmes til",
+    "options": [
+      "0",
+      "$\\frac{5}{36}$",
+      "$\\frac{1}{36}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{72}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 20,
+    "context": "To lige store biografer konkurrerer om 1000 kunder. Antag, at hver kunde vælger uafhængigt og med lige stor sandsynlighed mellem de to biografer. Lad N betegne antallet af sæder i hver biograf. Vi betragter nu den ene af de to biografer.",
+    "question": "Find et udtryk, eventuelt approksimativt, for N, der vil garantere, at sandsynligheden for at afvise en kunde (grundet fuldt hus), er mindre end 1%.",
+    "options": [
+      "$\\sum_{x=N+1}^{500}\\binom{500}{x}\\left(\\frac{1}{2}\\right)^{x}<0,01$",
+      "$1-\\Phi\\left(\\frac{N-499,5}{\\sqrt{250}}\\right)<0,01$",
+      "$\\sum_{x=N+1}^{1000}\\binom{1000}{x} 2^{x}\\left(1-\\frac{1}{2}\\right)^{1000-x}<0,01$",
+      "$\\Phi\\left(\\frac{N-499,5}{\\sqrt{500}}\\right)>0,01$",
+      "$\\left(\\frac{1}{2}\\right)^{500} \\sum_{x=N+1}^{500}\\binom{500}{x}<0,01$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 21,
+    "context": "Af den stokastiske variabel $X \\sim \\operatorname{binomial}\\left(6, \\frac{1}{2}\\right)$ danner man Y = |X - 3|.",
+    "question": "For de mulige værdier af Y bestemmes",
+    "options": [
+      "P(Y = y) = 2P(X = 3 - y)",
+      "P(Y = y) = P(X = 3 - y) + P(X = y - 3)",
+      "$\\mathrm{P}(Y=0)=\\frac{5}{16}, \\quad \\mathrm{P}(Y=1)=\\frac{15}{32}, \\quad \\mathrm{P}(Y=2)=\\frac{3}{16}, \\quad \\mathrm{P}(Y=3)=\\frac{1}{32}$",
+      "$\\mathrm{P}(Y=0)=\\frac{1}{32}, \\quad \\mathrm{P}(Y=1)=\\frac{3}{16}, \\quad \\mathrm{P}(Y=2)=\\frac{15}{32}, \\quad \\mathrm{P}(Y=3)=\\frac{5}{16}$",
+      "$\\mathrm{P}(Y=y)=\\binom{3}{y} \\frac{1}{8}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 22,
+    "context": "En tredimensional diskret stokastisk variabel ( X₁, X₂, X₃ ), hvor X₁ + X₂ + X₃ = 20, har den simultane fordeling $P\\left(X_{1}=x_{1}, X_{2}=x_{2}, X_{3}=x_{3}\\right)=\\frac{20!}{x_{1}!x_{2}!x_{3}!}\\left(\\frac{1}{2}\\right)^{x_{1}}\\left(\\frac{1}{5}\\right)^{x_{2}}\\left(\\frac{3}{10}\\right)^{x_{3}}$. Man observerer X₁ = 10.",
+    "question": "Den betingede fordeling af ( X₂, X₃ ) for given X₁ = 10 findes til",
+    "options": [
+      "$P\\left(X_{2}=x_{2}, X_{3}=x_{3} \\mid X_{1}=10\\right)=\\frac{\\frac{20!}{10!x_{2}!x_{3}!}\\left(\\frac{1}{2}\\right)^{10}\\left(\\frac{1}{5}\\right)^{x_{2}}\\left(\\frac{3}{10}\\right)^{x_{3}}}{\\sum_{x_{1}=0}^{20} \\frac{20!}{x_{1}!x_{2}!x_{3}!}\\left(\\frac{1}{2}\\right)^{x_{1}}\\left(\\frac{1}{5}\\right)^{x_{2}}\\left(\\frac{3}{10}\\right)^{x_{3}}}$ hvor x₂ + x₃ = 10",
+      "$P\\left(X_{2}=x_{2}, X_{3}=x_{3} \\mid X_{1}=10\\right)=\\frac{10!}{x_{1}!x_{2}!}\\left(\\frac{1}{5}\\right)^{x_{1}}\\left(\\frac{3}{10}\\right)^{x_{2}} e^{-\\left(\\frac{1}{5}+\\frac{3}{10}\\right)}$ hvor x₂ + x₃ = 10",
+      "$P\\left(X_{2}=x_{2}, X_{3}=x_{3} \\mid X_{1}=10\\right)=\\frac{\\frac{10!}{x_{2}!x_{3}!}\\left(\\frac{2}{5}\\right)^{x_{2}}\\left(\\frac{3}{5}\\right)^{x_{3}}}{\\sum_{x_{1}=0}^{20}=0 \\frac{20!}{x_{1}!x_{2}!x_{3}!}\\left(\\frac{1}{2}\\right)^{x_{1}}\\left(\\frac{1}{5}\\right)^{x_{2}}\\left(\\frac{3}{10}\\right)^{x_{3}}}$ hvor x₂ + x₃ = 10",
+      "$P\\left(X_{2}=x_{2}, X_{3}=x_{3} \\mid X_{1}=10\\right)=\\binom{10}{x_{2}}\\left(\\frac{2}{5}\\right)^{x_{2}}\\left(\\frac{3}{5}\\right)^{x_{3}}$ hvor x₂ + x₃ = 10",
+      "$P\\left(X_{2}=x_{2}, X_{3}=x_{3} \\mid X_{1}=10\\right)=\\frac{20!}{10!x_{2}!x_{3}!}\\left(\\frac{1}{2}\\right)^{10}\\left(\\frac{1}{5}\\right)^{x_{2}}\\left(\\frac{3}{10}\\right)^{x_{3}}$, hvor x₂ + x₃ = 10",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 23,
+    "context": "Den kontinuerte stokastiske variabel X er ligefordelt på intervallet ]1,3[ medens den kontinuerte stokastiske variabel Y er ligefordelt på intervallet [2, 4[. De to stokastiske variable X og Y er uafhængige.",
+    "question": "I værdimængden for ( X, Y ) findes den simultane tæthedsfunktion f(x, y) findes til",
+    "options": [
+      "$f(x, y)=\\frac{1}{4}$",
+      "$f(x, y)=\\frac{x y}{4}$",
+      "f(x, y) = 1",
+      "$f(x, y)=\\frac{x y}{4}-\\frac{x}{2}-\\frac{y}{4}+\\frac{1}{2}$",
+      "Der er ikke givet tilstrækkelige oplysninger til, at opgaven kan løses.",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 24,
+    "context": "Lad R være en stokastisk variabel, der følger en Rayleigh fordeling.",
+    "question": "Medianen i fordelingen for R er",
+    "options": [
+      "$\\sqrt{2 \\log (2)}$",
+      "$\\frac{1}{2}$",
+      "1",
+      "$\\sqrt{\\frac{\\log (2)}{2}}$",
+      "Løsningen til ligningen $r e^{-\\frac{r^{2}}{2}}=\\frac{1}{2}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 25,
+    "context": "Vi betragter parret ( X, Y ) af ligefordelte stokastiske variable i området, der er afgrænset af linierne x = 0, y = 0, 2x + y = 3 og x + 2y = 3. Man danner herefter Z = Y/X.",
+    "question": "Tætheden f_(Z)(z) for Z findes til",
+    "options": [
+      "$f_{Z}(z)=\\int_{0}^{\\frac{3}{1+z}} \\frac{2}{9} x \\mathrm{~d} x$",
+      "$f_{Z}(z)=\\left\\{\\begin{array}{lc}\\frac{15}{8\\left(\\frac{3}{2}+z\\right)^{2}} & \\text { for } 0 \\leq z<1 \\\\ \\frac{15}{8\\left(1+\\frac{3}{2} z\\right)^{2}} & \\text { for } 1 \\leq z\\end{array}\\right.$",
+      "$f_{Z}(z)=\\left\\{\\begin{array}{lc}\\frac{5}{9\\left(\\frac{2}{3}+z\\right)^{2}} & \\text { for } 0 \\leq z<1 \\\\ \\frac{5}{9\\left(1+\\frac{2}{3} z\\right)^{2}} & \\text { for } 1 \\leq z\\end{array}\\right.$",
+      "$f_{Z}(z)=\\left\\{\\begin{array}{cc}\\frac{3}{(2+z)^{2}} & \\text { for } 0 \\leq z<1 \\\\ \\frac{3}{(1+2 z)^{2}} & \\text { for } 1 \\leq z\\end{array}\\right.$",
+      "$f_{Z}(z)=\\int_{0}^{\\frac{3}{1+2 z}} \\frac{4}{9} x \\mathrm{~d} x$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 26,
+    "context": "Målinger af vindhastigheder beskrives tilfredsstillende ved en Rayleigh fordeling. Der foretages tre uafhængige vindmålinger på en målestation.",
+    "question": "Tætheden f(x) for den næststørste af målingerne findes til",
+    "options": [
+      "$f(x)=x e^{-\\frac{x^{2}}{2}}$",
+      "f(x) = 2xe^( - x²)",
+      "$f(x)=2 x e^{-\\frac{x^{2}}{2}}\\left(1+e^{-\\frac{x^{2}}{2}}\\right)$",
+      "$f(x)=6 x e^{-x^{2}}-6 x e^{-\\frac{3}{2} x^{2}}$",
+      "$f(x)=x e^{-\\frac{x^{2}}{2}}-2 x e^{-x^{2}}+\\frac{3}{2} x e^{-\\frac{3}{2} x^{2}}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 27,
+    "context": "Parret ( X, Y ) er bivariat normalfordelt med E(X) = 0, E(Y) = μ_(Y), Var (X) = σ_(X)², Var (Y) = σ_(Y)² og Cov (X, Y) = ρσ_(X)σ_(Y).",
+    "question": "Sandsynligheden for, at Y er mellem værdierne y₁ og y₂, når X vides at være x, er",
+    "options": [
+      "$\\Phi\\left(\\frac{y_{2}-\\mu_{y}-\\rho x}{\\sigma_{Y} \\sqrt{1-\\rho^{2}}}\\right)-\\Phi\\left(\\frac{y_{1}-\\mu_{y}-\\rho x}{\\sigma_{Y} \\sqrt{1-\\rho^{2}}}\\right)$",
+      "$\\Phi\\left(\\frac{y_{2}-\\mu_{Y}}{\\sigma_{Y}}\\right)-\\Phi\\left(\\frac{y_{1}-\\mu_{Y}}{\\sigma_{Y}}\\right)$",
+      "$\\Phi\\left(\\frac{y_{2}-\\mu_{y}-\\rho x}{\\sqrt{\\sigma_{Y}^{2}+\\sigma_{X}^{2}} \\sqrt{1-\\rho^{2}}}\\right)-\\Phi\\left(\\frac{y_{1}-\\mu_{y}-\\rho x}{\\sqrt{\\sigma_{Y}^{2}+\\sigma_{X}^{2}} \\sqrt{1-\\rho^{2}}}\\right)$",
+      "$\\Phi\\left(\\frac{y_{2}-\\mu_{y}-\\rho \\frac{\\sigma_{Y}}{\\sigma_{X}} x}{\\sigma_{Y} \\sqrt{1-\\rho^{2}}}\\right)-\\Phi\\left(\\frac{y_{1}-\\mu_{y}-\\rho \\frac{\\sigma_{Y}}{\\sigma_{X}} x}{\\sigma_{Y} \\sqrt{1-\\rho^{2}}}\\right)$",
+      "$\\Phi\\left(\\frac{y_{2}-\\mu_{y}-\\rho \\frac{\\sigma_{X}}{\\sigma_{Y}} x}{\\sigma_{Y} \\sqrt{1-\\rho^{2}}}\\right)-\\Phi\\left(\\frac{y_{1}-\\mu_{y}-\\rho \\frac{\\sigma_{X}}{\\sigma_{Y}} x}{\\sigma_{Y} \\sqrt{1-\\rho^{2}}}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 28,
+    "context": "Den stokastiske variabel X følger en beta(2,1), medens den stokastiske variabel Y for givet X = x følger en binomial (4, x) fordeling.",
+    "question": "Man finder",
+    "options": [
+      "$\\mathrm{P}(Y=3)=\\frac{4}{15}$",
+      "$\\mathrm{P}(Y=3)=\\frac{32}{81}$",
+      "$\\mathrm{P}(Y=3)=\\frac{1}{4}$",
+      "$\\mathrm{P}(Y=3)=\\frac{1}{5}$",
+      "$\\mathrm{P}(Y=3)=\\frac{2}{7}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 29,
+    "context": "En offentlig institution har sendt en større opgave inden for IT i udbud. Man forventer, at der kommer i alt 4 tilbud, og, at de enkelte tilbud uafhængigt af hinanden kan beskrives ved brug af en fordelingsfunktion F(x) = 1 - exp ( - (x - a)b) for x ≥ a, hvor a og b er passende konstanter. Institutionen ⌀ nsker og er forpligtet til at benytte det laveste tilbud.",
+    "question": "Sandsynligheden for, at den offentlige institution skal betale mindst 2a for at få udført IT opgaven, findes til",
+    "options": [
+      "exp ( - ab)",
+      "exp ( - 4ab)",
+      "exp ( - 8ab)",
+      "(1 - exp ( - ab))⁴",
+      "1 - (1 - exp ( - ab))⁴",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 30,
+    "context": "Et containerskib af feeder typen skal lastes med henholdsvis 20 fods og 40 fods containere. Antallet af containere, der skal lastes, kan med rimelighed beskrives ved en bivariat normal fordeling med middelværdier 1000 og 500 for henholdsvis 20 fods og 40 fods containere. De tilhørende standardafvigelser er 100 ( 20 fods containere) og 50 ( 40 fods containere). Korrelationskoefficienten i fordelingen er opgjort til $-\\frac{4}{5}$. Volumen af de to containertyper er 33 m³ og 66 m³.",
+    "question": "Sandsynligheden for, at det samlede volumen af containerlasten overskrider 69000 m³, findes til",
+    "options": [
+      "$\\Phi\\left(-\\frac{5 \\sqrt{10}}{11}\\right)$",
+      "$1-\\Phi\\left(\\frac{5 \\sqrt{2}}{11}\\right)$",
+      "$\\Phi\\left(-\\frac{5 \\sqrt{10}}{33}\\right)$",
+      "$1-\\Phi\\left(\\frac{25 \\sqrt{2}}{11}\\right)$",
+      "$\\Phi\\left(-\\frac{\\sqrt{2}}{11}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  }
+]

@@ -1,0 +1,452 @@
+[
+  {
+    "language": "danish",
+    "number": 1,
+    "context": "I et geografisk område bor der 1 million mennesker, hvor 5% af disse tilhører en bestemt etnisk gruppe. En gruppe på 100 mennesker udvælges tilfældigt til en stikprøveundersøgelse.",
+    "question": "Sandsynligheden for, at der er udvalgt mindst 7 personer fra den etniske gruppe til stikprøven, findes til",
+    "options": [
+      "$1-\\Phi\\left(\\frac{2}{\\sqrt{19}}\\right)$",
+      "$1-\\Phi\\left(\\frac{3}{\\sqrt{18}}\\right)$",
+      "$\\frac{1}{12}$",
+      "$1-\\sum_{i=0}^{6}\\binom{100}{i}(0,05)^{i}(1-0,05)^{100-i}$",
+      "$1-\\sum_{i=0}^{6} \\frac{e^{-5} 5^{i}}{i!}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 2,
+    "context": "Betragt et polært koordinatsystem med et bombemål placeret i centrum. Et bombefly kaster en bombe, der rammer afstanden R fra centrum med tætheden $f_{R}(r)=r e^{-\\frac{1}{2} r^{2}}$. Sandsynligheden for, at bombemålet bliver ødelagt, er e^( - r²), givet bomben rammer afstanden r fra centrum.",
+    "question": "Hvad er sandsynligheden for, at bombemålet bliver ødelagt?",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{4}$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 3,
+    "context": "En svømmeforening har en basistrup bestående af 18 svømmere. Heraf er 2 bedst til rygcrawl, 7 bedst til brystcrawl, 5 bedst til butterfly og 4 bedst til medley. Til en holdstafet udtages 4 af de 18 svømmere tilfældigt.",
+    "question": "Sandsynligheden for, at der er netop 2, der er bedst til butterfly, blandt de 4, er",
+    "options": [
+      "$\\binom{4}{2}\\left(\\frac{5}{18}\\right)^{2}\\left(\\frac{13}{18}\\right)^{2}$",
+      "$\\frac{5}{18} \\frac{4}{17}$",
+      "$2 \\cdot \\frac{5}{18} \\frac{4}{17}$",
+      "$\\frac{\\binom{5}{2}\\binom{13}{2}}{\\binom{18}{4}}$",
+      "$\\frac{5}{18} \\frac{4}{18}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 4,
+    "context": "Et materiale udsender partikler, således at tiderne mellem partiklerne kan beskrives ved uafhængige og eksponentialfordelte stokastiske variable med en middelværdi på 2 minutter.",
+    "question": "Hvad er sandsynligheden for, at den tredje partikel udsendes netop mellem 3 og 4 minutter efter, at registrering er påbegyndt?",
+    "options": [
+      "$\\left(e^{-\\frac{3}{2}}-e^{-2}\\right)^{3}$",
+      "$\\frac{29}{8} e^{-\\frac{3}{2}}-5 e^{-2}$",
+      "$\\frac{4}{3} e^{-2}-\\frac{9}{16} e^{-\\frac{3}{2}}$",
+      "Φ(2)³ - Φ(1)³",
+      "(Φ(2) - Φ(1))³",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 5,
+    "context": "Idet X₁ og X₂ er to uafhængige eksponentialfordelte variable danner man X = min (X₁,X₂) og Y = max (X₁,X₂) med simultan tæthedsfunktion f(x, y) = 2λ²e^( - λ(x + y)).",
+    "question": "Tæthedsfunktionen f_(Z)(z) for $Z=\\frac{X}{Y}$ findes til",
+    "options": [
+      "$\\frac{2}{(z+1)^{2}}, \\quad 0 \\leq z \\leq 1$",
+      "λe^( - λz),  0 ≤ z",
+      "$\\frac{1}{\\sqrt{2 \\pi}} \\frac{1}{\\lambda} \\exp \\left(-\\frac{1}{2}\\left(\\frac{z-\\frac{1}{\\lambda}}{\\sqrt{\\frac{1}{\\lambda}}}\\right)^{2}\\right), \\quad 0 \\leq z \\leq 1$",
+      "1,  0 ≤ z ≤ 1",
+      "$\\frac{1}{(z+1)^{2}}, \\quad 0 \\leq z$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 6,
+    "context": "Givet hændelserne A og B er det oplyst, at P(A ∩ B) = P(A)P(B).",
+    "question": "Hvilket af nedendstående udsagn er da korrekt:",
+    "options": [
+      "P(A ∪ B) = P(A) + P(B).",
+      "P(A ∣ B) = P(A ∩ B)",
+      "P(A ∣ B) = P(A)",
+      "P(A ∣ B) = P(B ∣ A)",
+      "Ingen af ovenstående er korrekte.",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 7,
+    "context": "Den ligefordelte diskrete stokastiske variabel X antager en af værdierne { - 2,  - 1, 1, 2}. Man danner en ny stokastisk variabel Y = X².",
+    "question": "Kovariansen Cov (X, Y) mellem X og Y bestemmes til",
+    "options": [
+      "-1",
+      "0",
+      "$\\frac{1}{2}$",
+      "1",
+      "Kovariansen kan ikke bestemmes ud fra de foreliggende oplysninger",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 8,
+    "context": "Man ved, at 20% af flypassagererne på en bestemt rute medbringer håndbagage med en vægt, der klart overskrider den tilladte grænse. Man antager, at det, at den enkelte passager medbringer overvægt, ikke influerer på sandsynligheden for, at andre også gør det.",
+    "question": "På en afgang med 400 passagerer er et rimeligt bud på sandsynligheden for, at højest 60 passagerer medbringer overvægtig håndbagage.",
+    "options": [
+      "$\\binom{400}{60}\\left(\\frac{1}{5}\\right)^{60}\\left(\\frac{4}{5}\\right)^{340}$",
+      "$\\sum_{i=61}^{400} \\frac{80^{i}}{i!} e^{-80}$",
+      "$\\sum_{i=0}^{60} \\frac{\\binom{80}{i}\\binom{320}{100-i}}{\\binom{400}{100}}$",
+      "Φ(2, 2) - Φ( - 1, 96)",
+      "Φ( - 2, 4)",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 9,
+    "context": "Parret (X, Y) er standardiseret bivariat normalfordelt med korrelation $\\rho=\\frac{3}{5}$.",
+    "question": "Man finder $\\mathrm{P}\\left(\\frac{1}{2} X<Y<2 X\\right)$ til",
+    "options": [
+      "$\\frac{2 \\pi-\\operatorname{Arctan}\\left(\\frac{7}{4}\\right)}{2 \\pi}$",
+      "$\\frac{1}{6}$",
+      "$\\frac{\\operatorname{Arctan}\\left(\\frac{15}{8}\\right)}{2 \\pi}$",
+      "$\\frac{\\operatorname{Arctan}\\left(\\frac{7}{4}\\right)+\\operatorname{Arctan}\\left(\\frac{1}{8}\\right)}{2 \\pi}$",
+      "$\\frac{\\operatorname{Arctan}\\left(\\frac{7}{8}\\right)+\\operatorname{Arctan}\\left(\\frac{1}{8}\\right)}{\\pi}$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 10,
+    "context": "Man har X_(i) ∼ exp (λ), i = 1, 2, 3 uafhængige. Man danner Y = X₁ + X₂ + X₃.",
+    "question": "Den simultane tæthed f(x, y) af X₁ og Y findes til",
+    "options": [
+      "f(x, y) = λe^( - λx)λ(λy)e^( - λy) = λ³ye^( - λ(x + y))",
+      "$f(x, y)=\\lambda e^{-\\lambda x} \\lambda \\frac{(\\lambda y)^{2}}{2} e^{-\\lambda y}=\\lambda^{4} \\frac{y^{2}}{2} e^{-\\lambda(x+y)}$",
+      "f(x, y) = λe^( - λx)λ(λ(y - x))e^( - λ(y - x)) = λ³(y - x)e^( - λy)",
+      "$f(x, y)=\\lambda e^{-\\lambda x} \\lambda \\frac{(\\lambda(y-x))^{2}}{2} e^{-\\lambda y}=\\lambda^{4} \\frac{(y-x)^{2}}{2} e^{-\\lambda y}$",
+      "$f(x, y)=\\lambda \\frac{(\\lambda y)^{2}}{2} e^{-\\lambda y} \\cdot \\frac{1}{3}=\\lambda^{3} \\frac{y^{2}}{6} e^{-\\lambda y}$",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 11,
+    "context": "Man kan antage, at hjertestopspatienter ankommer til en skadestue uafhængigt af hinanden og med en gennemsnitlig hyppighed af 24 i døgnet. Som en første tilnærmelse antages, at denne hyppighed er konstant henover døgnet.",
+    "question": "Sandsynligheden for, at der højest ankommer 2 hjertestopspatienter i en",
+    "options": [
+      "$\\left(\\frac{5}{6}\\right)^{2}+2 \\cdot \\frac{5}{6} \\frac{1}{6}$",
+      "$\\sum_{i=0}^{2}\\binom{4}{i} \\frac{1}{16}$",
+      "timers periode, er $1 \\square \\frac{\\binom{12}{2}^{2}}{\\binom{24}{4}}$",
+      "Φ( - 1)",
+      "$\\left(1+4+\\frac{4^{2}}{2!}\\right) e^{-4}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 12,
+    "context": "Lad X og Y være to uafhængige stokastiske variable, med E(X) = μ_(X), E(Y) = μ_(Y), Var (X) = σ_(X)² og Var (Y) = σ_(Y)².",
+    "question": "Man finder",
+    "options": [
+      "Var (XY) = σ_(X)²σ_(Y)² + μ_(X)²σ_(Y)² + μ_(Y)²σ_(X)² - μ_(X)²μ_(Y)²",
+      "Var (XY) = σ_(X)²σ_(Y)²",
+      "Var (XY) = σ_(X)²σ_(Y)² - μ_(X)²μ_(Y)²",
+      "Var (XY) = σ_(X)²σ_(Y)² + μ_(X)²σ_(Y)² + μ_(Y)²σ_(X)²",
+      "Var (XY) = σ_(X)²σ_(Y)² + μ_(X)²μ_(Y)²",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 13,
+    "context": "Man har frekvensfunktionen f(x, y) = 6(x - y) for den simultane fordeling af maximum (X) og minimum (Y) af 3 uafhængige uniformt (0, 1) fordelte stokastiske variable.",
+    "question": "Sandsynligheden for at observere maximum mellem 0,9 og 0,91 samtidigt med, at minimum er mellem 0,1 og 0,11 findes (eventuelt approksimativt) til",
+    "options": [
+      "6 ⋅ 0, 8 ⋅ 0, 01²",
+      "∫₀^(0, 1)∫₀^(0, 9)6(x - y)dx dy",
+      "0,48",
+      "6(0, 91 - 0, 10) - 6(0, 9 - 0, 11)",
+      "6(0, 9 - 0, 1)",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 14,
+    "context": "En stokastisk variabel X er uniformt fordelt på intervallet fra $-\\frac{1}{2}$ til $\\frac{1}{2}$. Man danner en ny variabel Y = X² med tæthedsfunktion f_(Y)(y).",
+    "question": "Tæthedsfunktionen f_(Y)(y) er",
+    "options": [
+      "$f_{Y}(y)=\\frac{1}{2 \\sqrt{|y|}}$ for $y \\in\\left[0 ; \\frac{1}{4}\\right]$ og 0 ellers.",
+      "$f_{Y}(y)=\\frac{1}{\\sqrt{|y|}}$ for $y \\in\\left[0 ; \\frac{1}{4}\\right]$ og 0 ellers.",
+      "$f_{Y}(y)=\\frac{1}{2 \\sqrt{|y|}}$ for $y \\in\\left[-\\frac{1}{4} ; \\frac{1}{4}\\right]$ og 0 ellers.",
+      "$f_{Y}(y)=\\frac{1}{\\sqrt{|y|}}$ for $y \\in\\left[-\\frac{1}{4} ; \\frac{1}{4}\\right]$ og 0 ellers.",
+      "f_(Y)(y) = 4 for $y \\in\\left[0 ; \\frac{1}{4}\\right]$",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 15,
+    "context": "De stokastiske variable (X, Y) er bivariat normalfordelt med X ∼ normal (1, 4), Y ∼ normal (2, 9) og korrelationskoefficient $\\rho=-\\frac{1}{4}$.",
+    "question": "Man finder P(X - Y ≤ 0) til",
+    "options": [
+      "$\\Phi\\left(\\frac{1}{\\sqrt{13}}\\right)$",
+      "$\\Phi\\left(\\frac{1}{3}\\right)$",
+      "$\\Phi\\left(\\frac{1}{\\sqrt{12}}\\right)$",
+      "$\\Phi\\left(\\frac{1}{4}\\right)$",
+      "$\\Phi\\left(\\frac{1}{\\sqrt{2}}\\right)$",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 16,
+    "context": "For de tre hændelser A, B og C kendes P(A), P(B), P(C), P(A ∩ B), P(A ∩ C), P(A ∩ B ∩ C) og P(A ∪ B ∪ C). Man ϕ nsker at bestemme P(B ∩ C).",
+    "question": "Man finder P(B ∩ C) ved",
+    "options": [
+      "P(B ∩ C) = P(A) + P(B) + P(C) - P(A ∩ B) - P(A ∪ B ∪ C)",
+      "P(B ∩ C) = P(A) + P(B) + P(C) - P(A ∩ B) + P(A ∩ B ∩ C) - P(A ∪ B ∪ C)",
+      "P(B ∩ C) = P(A) + P(B) + P(C) - P(A ∩ B) - P(A ∩ C) + P(A ∩ B ∩ C) - P(A ∪ B ∪ C)",
+      "P(B ∩ C) = P(A ∪ B ∪ C) - P(A) - P(B) - P(C) + P(A ∩ B) - P(A ∩ B ∩ C)",
+      "P(B ∩ C) = P(B) + P(C) - P(A ∪ B ∪ C)",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 17,
+    "context": "Antallet af fejl i et materiale kan beskrives ved en Poissonfordeling med middelværdi γ. Man kan benytte en model, hvor F_(i) angiver hændelsen, at der er i fejl i materialet. Alternativt kunne man benytte en model med en stokastisk variabel N, hvor N beskriver antallet af fejl i materialet. Man ønsker at udtrykke sandsynligheden for hændelsen H = (F₀∪F₁∪F₂) ved brug af N.",
+    "question": "P(H) kan alternativt udtrykkes som",
+    "options": [
+      "P(H) = P(N ≤ 2)",
+      "P(H) = P(N₀) + P(N₁) + P(N₂)",
+      "P(H) = P(F_(i)≤2)",
+      "P(H) = P(N = 0, N = 1, N = 2)",
+      "Man kan ikke på det foreliggende grundlag udtrykke P(H) ved brug af N.",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 18,
+    "context": "En bestemt fiskeart lægger et antal æg, der kan beskrives ved en Poisson fordelt stokastisk variabel med middelværdi μ. Hvert æg vil med sandsynligheden p give en fiskelarve af hunkøn og med sandsynligheden 1 - p give en fiskelarve af hankøn.",
+    "question": "Det forventede antal æg fra en fisk fra denne fiskeart, der giver en fiskelarve af hunkøn, er",
+    "options": [
+      "$\\frac{\\mu}{p}$",
+      "μp",
+      "μ(1 - p)",
+      "μ(p+p²)",
+      "μp(1 - p)",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 19,
+    "context": "I et fysisk eksperiment sendes elektroner i høj hastighed mod en plade, der i denne sammenhæng kan antages at være af uendelig udstrækning. Elektronerne skydes mod et bestemt punkt på pladen. Grundet tilfældigheder rammer elektronerne ikke præcist i dette punkt. Det punkt, hvor en elektron rammer, kan beskrives ved koordinatsættet ( X, Y ), hvor X og Y er uafhængige standard normalfordelte variable. Det er af særlig interesse, om de rammer mellem 1 og 2 længdeenheder fra sigtepunktet (koordinatsystemets nulpunkt).",
+    "question": "Sandsynligheden for, at en elektron rammer mellem 1 og 2 længdeenheder fra sigtepunktet, findes til",
+    "options": [
+      "Φ(2) - Φ(1)",
+      "2(Φ(2) - Φ(1))",
+      "$\\exp \\left(-\\frac{1}{2}\\right)-\\exp (-2)$",
+      "$1-\\sum_{r=0}^{1} \\frac{x^{r}}{r!} e^{-x}$",
+      "e^( - 2)",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 20,
+    "context": "Et radiokommunikationssystem til brug for jernbanedrift har en kritisk tidsgrænse for en signalvej - den såkaldte round trip time. Man kender både middelværdi og standardafvigelse for denne, der er henholdsvis 12 ms og 6 ms . Man ønsker at bestemme en værdi for roundtrip time, der maksimalt overskrides med sandsynligheden $\\frac{1}{9}$.",
+    "question": "Den ønskede grænse bestemmes til",
+    "options": [
+      "30 ms",
+      "66 ms",
+      "120 ms",
+      "$\\left(12+6 \\Phi^{-1}\\left(\\frac{17}{18}\\right)\\right) \\mathrm{ms}$",
+      "$\\left(12+6 \\Phi^{-1}\\left(\\frac{8}{9}\\right)\\right) \\mathrm{ms}$",
+      "Ved ikke hvor Φ^( - 1) angiver den omvendte funktion til fordelingsfunktionen for en standard normalfordelt variabel."
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 21,
+    "context": "Levetiden af en elektronisk komponent kan med god tilnærmelse beskrives ved en eksponential( λ ) fordelt stokastisk variabel. Man ved, at komponenten har opnået alderen t.",
+    "question": "Under de givne oplysninger, hvad er da sandsynligheden for, at komponenten fejler netop i intervallet [t, t + dt]. Svaret kan eventuelt angives approksimativt",
+    "options": [
+      "λdt",
+      "λe^( - λt) dt",
+      "e^( - λt) - e^( - λ(t + dt))",
+      "$\\frac{\\lambda e^{-\\lambda t}}{1-e^{-\\lambda t}} \\mathrm{~d} t$",
+      "λe^( - λt)",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 22,
+    "context": "Lad X være en positiv stokastisk variabel, således at P(X ≤ x) = 1 - e^( - λx). Man danner nu $Y=\\frac{1}{X}$.",
+    "question": "Man finder P(Y ≤ y) til",
+    "options": [
+      "$\\mathrm{P}(Y \\leq y)=1-e^{-\\frac{\\lambda}{y}}$",
+      "$\\mathrm{P}(Y \\leq y)=1-e^{-\\frac{y}{\\lambda}}$",
+      "$\\mathrm{P}(Y \\leq y)=e^{-\\frac{y}{\\lambda}}$",
+      "$\\mathrm{P}(Y \\leq y)=e^{-\\frac{1}{\\lambda y}}$",
+      "$\\mathrm{P}(Y \\leq y)=e^{-\\frac{\\lambda}{y}}$",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 23,
+    "context": "I et terningespil med seks almindelige sekssidede terninger gælder det om at få flest mulige seksere. Der kastes højest 2 omgange, idet alle de seksere, der opnåes i første kast, tages fra, hvorefter andet kast foretages med de terninger, der ikke viste seks ved første kast.",
+    "question": "Antag, at man i første kast opnår v seksere. Man finder da sandsynligheden for i alt at opnå w seksere til",
+    "options": [
+      "\\binom{6}{w}\\left(\\frac{1}{6}\\right)\\left(\\frac{5}{6}\\right)",
+      "\\frac{1}{6-v}",
+      "\\binom{6-v}{w-v}\\left(\\frac{1}{6}\\right)^{w-v}\\left(\\frac{5}{6}\\right)^{6+v-w}",
+      "\\frac{1}{6}",
+      "\\binom{6-v}{w-v}\\left(\\frac{1}{6}\\right)^{w-v}\\left(\\frac{5}{6}\\right)^{6-w}",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 24,
+    "context": "Et punkt vælges tilfældigt i en cirkelskive. En ret linie tegnes gennem punktet og cirklens centrum.",
+    "question": "Sandsynligheden for, at den numeriske værdi af liniens hældning er mindre end 1, er",
+    "options": [
+      "\\frac{\\operatorname{Arctan}\\left(\\frac{2}{5}\\right)}{\\pi}",
+      "\\frac{1}{\\pi}",
+      "\\frac{1}{4}",
+      "\\frac{1}{3}",
+      "\\frac{1}{2}",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 25,
+    "context": "Årsagen til flystyrt kan meget groft kategoriseres som enten a. menneskelig fejl, b. mekanisk fejl, c. terrorhandling. Sandsynligheden for, at der sker en menneskelig fejl ved en flyafgang, er $\\frac{1}{50}$, medens sandsynligheden for, at der sker en mekanisk fejl, er $\\frac{1}{500}$, og endelig er sandsynligheden for, at en flyafgang udsættes for en terrorhandling, $\\frac{1}{500000}$. Sker en menneskelig fejl, er sandsynligheden for, at der indtræffer et flystyrt, $\\frac{1}{10000}$, medens sandsynligheden for, at der indtræffer et flystyrt ved en mekanisk fejl er $\\frac{1}{1000}$, og endelig er sandsynligheden for, at der sker et flystyrt ved en terrorhandling, $\\frac{2}{3}$. Man kan antage, at højst en af de tre årsager kan indtræffe og at et flystyrt altid kan tilskrives en af de tre årsager.",
+    "question": "Givet et flystyrt indtræffer, findes sandsynligheden for, at det skyldes en terrorhandling, til",
+    "options": [
+      "$\\frac{1}{4}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{1}{3} \\cdot 10^{-6}$",
+      "20000 20033",
+      "$\\frac{1}{3}$",
+      "Ved ikke"
+    ],
+    "answer": "1"
+  },
+  {
+    "language": "danish",
+    "number": 26,
+    "context": "Man har 5 uafhængige eksponential( μ ) fordelte variable.",
+    "question": "Tætheden g(x) for den næststørste af de 5 variable findes til",
+    "options": [
+      "$g(x)=\\mu \\frac{(\\mu x)^{4}}{4!} e^{-\\mu x}$",
+      "$g(x)=\\frac{\\mu}{4} e^{-\\frac{\\mu}{4} x}$",
+      "$g(x)=\\frac{5!}{3!} x^{3}(1-x)$",
+      "g(x) = 20μe^( - 4μx) - 20μe^( - 4μx)",
+      "g(x) = 20μe^( - 2μx) - 60μe^( - 3μx) + 60μe^( - 4μx) - 20μe^( - 5μx)",
+      "Ved ikke"
+    ],
+    "answer": "5"
+  },
+  {
+    "language": "danish",
+    "number": 27,
+    "context": "Eksponentialfordelingen svarer til den geometriske fordeling som gammafordelingen svarer til?",
+    "question": "",
+    "options": [
+      "Binomialfordelingen",
+      "Den hypergeometriske fordeling",
+      "Den uniforme fordeling",
+      "Den negative binomialfordeling",
+      "Poissonfordelingen",
+      "Ved ikke"
+    ],
+    "answer": "4"
+  },
+  {
+    "language": "danish",
+    "number": 28,
+    "context": "Om de to stokastiske variable X og Y oplyses det, at E(X) = 4, E(Y) = 7, SD(X) = 10, SD(Y) = 5 og Cov (X, Y) = 0, 5. Endvidere indføres U = 3X - 2Y + 1.",
+    "question": "E(U) bestemmes til",
+    "options": [
+      "-2",
+      "- 1",
+      "26",
+      "26, 5",
+      "27",
+      "Ved ikke"
+    ],
+    "answer": "2"
+  },
+  {
+    "language": "danish",
+    "number": 29,
+    "context": "Ved fiskeri efter tobis fås typisk en vis bifangst af sild. Fangsten af hver fiskeart ved et tilfældigt trawltræk kan beskrives rimeligt godt med en normalfordeling med middelværdi 10 ton (tobis) og 1 ton (sild) samt standardafvigelse 2 ton (tobis) og 0,3 ton (sild). Den simultane fordeling kan antages normal med korrelationskoefficient 0,7 . I et trawltræk har man fanget 14 ton tobis.",
+    "question": "Den forventede bifangst af sild findes til",
+    "options": [
+      "1 ton",
+      "1,24 ton",
+      "1,42 ton",
+      "1,49 ton",
+      "1,6 ton",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  },
+  {
+    "language": "danish",
+    "number": 30,
+    "context": "Man har de to kontinuerte stokastiske variable X og Y med simultan frekvensfunktion f(x, y) = K(y - x)(1 - y), 0 < x < y < 1, hvor K er normeringskonstant.",
+    "question": "I Y ’s værdimængde finder man den marginale tæthed f_(Y)(y) til",
+    "options": [
+      "$f_{Y}(y)=\\frac{K}{2}(1-y)^{3}$",
+      "$f_{Y}(y)=\\frac{K}{2} y(1-y)^{2}$",
+      "$f_{Y}(y)=\\frac{K}{2} y^{2}(1-y)$",
+      "$f_{Y}(y)=\\frac{K}{4}(1-y)$",
+      "f_(Y)(y) = 1",
+      "Ved ikke"
+    ],
+    "answer": "3"
+  }
+]
