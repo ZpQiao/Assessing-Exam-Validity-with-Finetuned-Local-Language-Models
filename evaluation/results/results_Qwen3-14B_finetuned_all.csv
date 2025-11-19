@@ -1,0 +1,1233 @@
+﻿base_key,language,correct_answer,predicted_answer,is_correct,full_response,has_json,generation_time,model_type
+exam_2003_12_16-2,english,5,2,False,"The given probabilities P_i for i = 0, 1, ..., 8 are proportional to the Poisson probabilities with rate A, truncated at i = 8. For a valid probability distribution, the sum over i must be 1:
+c ∑_{i=0}^8 (A^i / i!) e^{-A} = 1 ⇒ c = e^A.
+
+{""answer"": 2}",True,8.309744358062744,finetuned
+exam_2003_12_16-2,danish,5,4,False,"For en Poisson-fordeling med middelværdi A er sandsynlighederne P_i = e^{-A} A^i / i! for i = 0, 1, 2, ... og summen over alle i er 1. Her er summen kun over i = 0 til 8, så c = sum_{i=0}^8 A^i / i!.
+
+{""answer"": 4}",True,9.272432088851929,finetuned
+exam_2003_12_16-3,english,3,3,True,"Each widget fails with probability 0.8 (since it lasts longer than t with probability 0.2). The device fails only if all 25 widgets fail. Thus, the probability the device lasts at least t is 1 - (0.8)^25.
+
+{""answer"": 3}",True,6.307066440582275,finetuned
+exam_2003_12_16-3,danish,3,3,True,"Vi har 25 uafhængige dimser, hver med overlevelsesfunktion S(t) = 0.2. Apparatet fungerer, hvis mindst én dimser fungerer, så overlevelsesfunktionen for apparatet er 1 - (1 - S(t))^{25} = 1 - 0.8^{25}.
+
+{""answer"": 3}",True,9.208821773529053,finetuned
+exam_2003_12_16-9,english,3,2,False,"The median m satisfies G(m) = 0.5. For the Weibull with survival function G(t) = e^(−λt^α), this gives:
+e^(−λm^α) = 0.5 ⇒ λm^α = ln(2) ⇒ m = (ln(2)/λ)^(1/α).
+
+With λ = 1.5 and α = 1.5:
+m = (ln(2)/1.5)^(1/1.5) ≈ (0.462098)^(2/3) ≈ 0.5445.
+
+{""answer"": 2}",True,12.259661674499512,finetuned
+exam_2003_12_16-9,danish,3,2,False,"Medianen m opfylder G(m) = 0.5, dvs. e^(-λ m^α) = 0.5. Løs for m:
+-λ m^α = ln(0.5) ⇒ m = [(-ln(0.5)/λ)]^(1/α) = (ln 2 / λ)^(1/α).
+
+For λ = 1.5 og α = 1.5:
+m = (ln 2 / 1.5)^(1/1.5) ≈ (0.462098)^(2/3) ≈ 0.5445.
+
+{""answer"": 2}",True,10.125072479248047,finetuned
+exam_2003_12_16-17,english,2,2,True,"Since X and Y are independent standard normals, W and Z are jointly normal. Their correlation is:
+ρ = Cov(W, Z) / (σ_W σ_Z).
+
+Compute:
+- Cov(W, Z) = Cov((aX+Y)/2, (aX−Y)/2) = (a^2 − 1)/4.
+- Var(W) = (a^2 + 1)/4, Var(Z) = (a^2 + 1)/4.
+
+Thus:
+ρ = [(a^2 − 1)/4] / [(a^2 + 1)/4] = (a^2 − 1)/(a^2 + 1).
+
+Set ρ = 1/2:
+(a^2 − 1)/(a^2 + 1) = 1/2 ⇒ 2(a^2 − 1) = a^2 + 1 ⇒ a^2 = 3 ⇒ a = √3.
+
+{""answer"": 2}",True,10.983112096786499,finetuned
+exam_2003_12_16-17,danish,2,6,False,"Da X og Y er uafhængige standardnormaler, er Cov(W, Z) = (a/4) − (a/4) = 0. Derfor er korrelationen altid 0, uanset a. Derfor er ingen af de givne muligheder korrekt.
+
+{""answer"": 6}",True,4.026960849761963,finetuned
+exam_2003_12_16-18,english,2,2,True,"Each item is defective with probability p, independently. Let X be the number of defective items in a batch of n. Then X ~ Binomial(n, p), so:
+- Mean: E(X) = n p
+- Standard deviation: SD(X) = sqrt(n p (1 - p))
+
+{""answer"": 2}",True,3.622128486633301,finetuned
+exam_2003_12_16-18,danish,2,2,True,"Antallet af defekte emner i et parti følger en binomialfordeling med n uafhængige prøver og defektsandsynlighed p. For en binomialfordeling er middelværdien E(X) = n·p og standardafvigelsen SD(X) = √[n·p·(1−p)].
+
+{""answer"": 2}",True,4.758354902267456,finetuned
+exam_2003_12_16-20,english,5,5,True,"To find the marginal density of Y, integrate the joint density over x. The region is 0 < y < x < 1, so for a fixed y, x ranges from y to 1. The joint density is 1 (uniform over the triangle). Thus:
+f_Y(y) = ∫_{x=y}^1 1 dx = 1 - y, for 0 < y < 1.
+This matches option 5.
+
+{""answer"": 5}",True,5.338866233825684,finetuned
+exam_2003_12_16-20,danish,5,5,True,"Vi har 0 < y < x < 1. Den marginale tæthed for Y fås ved at integrere den fælles tæthed over x:
+f_Y(y) = ∫_{x=y}^1 f_{X,Y}(x,y) dx = ∫_{x=y}^1 1 dx = 1 - y.
+Dermed er f_Y(y) = 2(1 - y) for 0 < y < 1.
+
+{""answer"": 5}",True,5.759024620056152,finetuned
+exam_2003_12_16-21,english,1,1,True,"We use Chebyshev’s inequality: for any random variable X with mean μ and standard deviation σ, P(|X − μ| ≥ kσ) ≤ 1/k². Here, μ = 14, σ = 4, and 30 − 14 = 16 = 4k ⇒ k = 4. Thus, P(X ≥ 30) ≤ 1/16.
+
+{""answer"": 1}",True,5.106921434402466,finetuned
+exam_2003_12_16-21,danish,1,1,True,"Vi kender kun middelværdi μ = 14 og spredning σ = 4, men ikke fordelingen. Derfor kan vi ikke bruge standardnormalfordelingen direkte. Den bedste grænse for P(X > 30) uden fordelingsinformation er Chebyshevs ulighed:
+P(|X − μ| ≥ kσ) ≤ 1/k².
+Her er kσ = 30 − 14 = 16, så k = 16/4 = 4, og P(X > 30) ≤ 1/16.
+
+{""answer"": 1}",True,7.59127950668335,finetuned
+exam_2003_12_16-23,english,5,5,True,"X ~ Binomial(3, 1/2) and Y is 1 if all three tosses are the same (probability 1/4), else 0. Thus:
+- E(X) = 3/2, E(Y) = 1/4, so E(X+Y) = 7/4.
+
+{""answer"": 5}",True,4.093261241912842,finetuned
+exam_2003_12_16-23,danish,5,5,True,"Vi kaster tre uafhængige mønter med P(K)=P(P)=1/2. X ~ Bin(3,1/2) og Y=1 hvis alle tre er K eller alle er P, ellers 0. Dermed:
+- E[X] = 3/2, E[Y] = 2·(1/2)^3 = 1/4, så E[X+Y] = 3/2 + 1/4 = 7/4.
+- X og Y er afhængige (f.eks. er P(Y=1|X=3)=1, men P(Y=1)=1/4).
+- (X,Y) er ikke multinomialfordelt (Y er ikke en sum af uafhængige indikatorer).
+- X+Y er diskret og ikke normalfordelt.
+
+Derfor er kun 5 korrekt.
+
+{""answer"": 5}",True,10.782877445220947,finetuned
+exam_2003_12_16-24,english,2,2,True,"We are given a Gamma(3, 3/μ) duration, which has mean 3/(3/μ) = μ and variance 3/(3/μ)^2 = μ^2/3. For small δ, the probability P(t0 < T < t0 + δ) is approximately the density at t0 times δ. The Gamma density is f(t) = (3/μ)^3 t^2/2 e^{-3t/μ} for t ≥ 0. Thus, the approximation is δ f(t0) = δ (3/μ) (3 t0/μ)^2/2 e^{-3 t0/μ}, matching option 2.
+
+{""answer"": 2}",True,7.964178085327148,finetuned
+exam_2003_12_16-24,danish,2,3,False,"For en Gamma(α, β) med β = 3/μ (rate = 3/μ), har forventning μ og varians μ^2/3. For små δ kan P(t0 < T < t0+δ) approksimeres ved normalfordelingen: N(μ, μ^2/3). Dens tæthed i t0 er (1/(μ/√3 √(2π))) e^{−(t0−μ)^2/(2(μ^2/3))}. Med δ lille bliver P ≈ δ · tæthed i t0, hvilket matcher valgmulighed 3.
+
+{""answer"": 3}",True,7.943974494934082,finetuned
+exam_2003_12_16-26,english,3,3,True,"To have exactly two siblings, a child must be in a family with 3 children. There are 25 such families, each contributing 3 children, so 25 × 3 = 75 children with exactly two siblings.
+
+Total children: 30×1 + 30×2 + 25×3 + 15×4 = 30 + 60 + 75 + 60 = 225.
+
+Probability = 75 / 225 = 1/3.
+
+{""answer"": 3}",True,6.352834224700928,finetuned
+exam_2003_12_16-26,danish,3,4,False,"Antal børn i hver familietype:
+- 1 barn: 30 familier → 30 børn
+- 2 børn: 30 familier → 60 børn
+- 3 børn: 25 familier → 75 børn
+- 4 børn: 15 familier → 60 børn
+
+Total antal børn: 30 + 60 + 75 + 60 = 225
+
+Antal børn med netop to søskende: 60 (fra familier med 2 børn).
+
+Sandsynlighed: 60/225 = 4/15 = 0,2667 ≈ 2/7,5 = 7/20.
+
+{""answer"": 4}",True,10.226164102554321,finetuned
+exam_2003_12_16-29,english,5,5,True,"Since X and Y are independent exponential variables with rates λ and μ, the ratio Z = Y/X has a Pareto distribution. Specifically, for z > 0,
+f_Z(z) = (λ μ) / (λ + μ z)^2.
+
+This matches option 5.
+
+{""answer"": 5}",True,3.4358420372009277,finetuned
+exam_2003_12_16-29,danish,5,5,True,"Vi har X ~ Exp(λ) og Y ~ Exp(μ) uafhængige. For Z = Y/X fås tæthed ved transformation:
+f_Z(z) = ∫_0^∞ f_X(x) f_Y(zx) |x| dx = ∫_0^∞ λ e^{-λx} μ e^{-μ z x} x dx = (λ μ) / (λ + μ z)^2.
+Dette matcher valgmulighed 5.
+
+{""answer"": 5}",True,5.966997146606445,finetuned
+exam_2004_12_16-1,english,4,4,True,"The probability that at least one of A or B occurs is P(A ∪ B) = P(A) + P(B) − P(A ∩ B). Using the given values:
+P(A) = 1/15, P(B) = 1/7, P(A ∩ B) = 1/22,
+we get:
+1/15 + 1/7 − 1/22.
+
+{""answer"": 4}",True,5.065796852111816,finetuned
+exam_2004_12_16-1,danish,4,4,True,"Vi bruger inklusions-eksklusionsprincippet: P(A ∪ B) = P(A) + P(B) − P(A ∩ B). Med de givne værdier fås:
+P(A ∪ B) = 1/15 + 1/7 − 1/22.
+
+{""answer"": 4}",True,4.066048860549927,finetuned
+exam_2004_12_16-4,english,4,4,True,"The number of returns per day is a count of rare, independent events with a known average rate. This matches the Poisson distribution, which models the number of occurrences in a fixed interval with a constant average rate.
+
+{""answer"": 4}",True,2.6297550201416016,finetuned
+exam_2004_12_16-4,danish,4,4,True,"Antallet af uafhængige returneringer i en given tidsperiode med en lille middelværdi er klassisk modelleret ved en Poissonfordeling. Her er middelværdien λ = 3 om dagen, hvilket er passende for en Poissonmodel.
+
+{""answer"": 4}",True,3.951267719268799,finetuned
+exam_2004_12_16-6,english,2,2,True,"The region is the triangle with vertices (0,0), (1,0), and (1,1). For a fixed x in (0,1], the conditional distribution of Y given X=x is uniform on [0,x]. Thus, F(y | X=x) = y/x for 0 ≤ y ≤ x.
+
+{""answer"": 2}",True,3.909053325653076,finetuned
+exam_2004_12_16-6,danish,2,2,True,"For et punkt (X, Y) uniformt i området D = {(x, y) | 0 ≤ x ≤ 1, 0 ≤ y ≤ x}, er den betingede fordeling af Y givet X = x uniform på [0, x]. Derfor er F(y | X = x) = y/x for 0 ≤ y ≤ x.
+
+{""answer"": 2}",True,4.615262031555176,finetuned
+exam_2004_12_16-14,english,5,5,True,"We have Y = e^{X/2} with X ~ N(0,1). Let y > 0. Then X = 2 log y and the Jacobian is dx/dy = 2/y. Thus,
+f_Y(y) = f_X(2 log y) · (2/y) = (1/√(2π)) e^{-(log y)^2} · (2/y) = (2/√(2π)) (1/y) e^{-(log y)^2} = √(2/π) (1/y) e^{-(log y)^2}.
+This matches option 5.
+
+{""answer"": 5}",True,7.359330654144287,finetuned
+exam_2004_12_16-14,danish,5,5,True,"Vi har Y = e^{X/2} med X ~ N(0,1). Transformationen er monoton og differentiabel. Ved transformation af tæthed fås:
+f_Y(y) = f_X(g^{-1}(y)) · |d/dy g^{-1}(y)| = (1/√(2π)) e^{- (ln y)^2 / 2} · (1/y), for y > 0.
+Dette matcher valgmulighed 5.
+
+{""answer"": 5}",True,5.827368259429932,finetuned
+exam_2004_12_16-16,english,3,3,True,"We use the Central Limit Theorem. The sample mean of 25 men has mean 182 cm and standard deviation 8/√25 = 1.6 cm. The z-score for 185 is (185 − 182)/1.6 = 1.875. The probability that a standard normal variable exceeds 1.875 is about 0.03, so the answer is 0.03.
+
+{""answer"": 3}",True,5.673322677612305,finetuned
+exam_2004_12_16-16,danish,3,2,False,"Vi bruger centralgrænseværdisætningen: gennemsnitshøjden X̄ ~ N(182, 8^2/25) = N(182, 1.6). Standardafvigelsen for gennemsnittet er 1.6^(1/2) ≈ 1.265 cm. Z = (185 − 182)/1.265 ≈ 2.37. Fra standardnormalfordelingen er P(Z > 2.37) ≈ 0.0089, som er tæt på 0.01.
+
+{""answer"": 2}",True,8.14878535270691,finetuned
+exam_2014_05_28-3,english,4,4,True,"We are sampling 8 deer without replacement from a population of n, with 10 tagged and n−10 untagged. The number of tagged deer caught follows a hypergeometric distribution:
+P(X=5) = [C(10,5) C(n−10,3)] / C(n,8).
+
+This matches option 4.
+
+{""answer"": 4}",True,4.350482225418091,finetuned
+exam_2014_05_28-3,danish,4,4,True,"Vi har 10 mærkede og n−10 umærkede hjorte i en population på n. Ved genfangsten af 8 hjorte uden tilbagelægning er antallet af mærkede hjorte hypergeometrisk fordelt med parametre N=n, K=10 og n=8. Sandsynligheden for netop 5 mærkede er derfor:
+P(X=5) = C(10,5)·C(n−10,3)/C(n,8).
+
+{""answer"": 4}",True,6.60919976234436,finetuned
+exam_2014_05_28-4,english,2,2,True,"The time between encounters follows an exponential distribution with rate λ = 1/6 per hour. The waiting time for the 4th encounter is the sum of 4 independent exponential times, which is a gamma distribution with shape k=4 and rate λ=1/6. The survival function is:
+P(T > 24) = e^{-λ·24} · (1 + λ·24 + (λ·24)^2/2 + (λ·24)^3/6)
+With λ·24 = 4, this becomes:
+e^{-4} · (1 + 4 + 8 + 16/3) = e^{-4} · (3 + 4 + 16/3) = e^{-4} · (71/3)
+Thus, the probability is (71/3) e^{-4}.
+
+{""answer"": 2}",True,10.01208782196045,finetuned
+exam_2014_05_28-4,danish,2,4,False,"Vi modellerer tiden mellem byttedyr som uafhængige eksponentielle med middelværdi 6 timer, så rate λ = 1/6. Antallet af byttedyr i tiden T følger en Poisson-fordeling med middelværdi μ = λT = T/6. Vi søger P(N(24) ≤ 3) = Σ_{k=0}^3 e^{-4} 4^k / k! = e^{-4} (1 + 4 + 8 + 32/3) = (103/3) e^{-4}.
+
+{""answer"": 4}",True,8.060626983642578,finetuned
+exam_2014_05_28-6,english,2,2,True,"Let E = economy sold out, B = business sold out.
+We are given:
+- P(E ∪ B) = 1/3
+- P(B) = 1/8
+
+We want P(E ∩ B^c) = P(E) − P(E ∩ B).
+
+Using inclusion-exclusion:
+P(E ∪ B) = P(E) + P(B) − P(E ∩ B)
+1/3 = P(E) + 1/8 − P(E ∩ B)
+P(E) − P(E ∩ B) = 1/3 − 1/8 = 5/24
+
+Thus, the probability of economy sold out but not business is 5/24.
+
+{""answer"": 2}",True,8.347792625427246,finetuned
+exam_2014_05_28-6,danish,2,2,True,"Lad E = udsolgt på economy, B = udsolgt på business. Vi har P(E ∪ B) = 1/3 og P(B) = 1/8. Brug inklusions-eksklusionsprincippet:
+P(E ∪ B) = P(E) + P(B) − P(E ∩ B)
+⇒ 1/3 = P(E) + 1/8 − P(E ∩ B)
+⇒ P(E) − P(E ∩ B) = 1/3 − 1/8 = 5/24.
+
+Dermed er sandsynligheden for udsolgt på economy men ikke på business lig 5/24.
+
+{""answer"": 2}",True,8.432016134262085,finetuned
+exam_2014_05_28-10,english,1,1,True,"Since X and Y are standard normal with correlation ρ = -7/8, the linear combination X + Y has mean 0 and variance Var(X + Y) = 1 + 1 + 2ρ = 2(1 + ρ) = 2(1 - 7/8) = 2(1/8) = 1/4. Thus, X + Y ~ N(0, 1/4), so Z = 2(X + Y) ~ N(0,1). Therefore,
+P(X + Y ≤ 1) = P(Z ≤ 2) = Φ(2).
+
+{""answer"": 1}",True,7.326339960098267,finetuned
+exam_2014_05_28-10,danish,1,1,True,"Vi har X ~ N(0,1), Y ~ N(0,1), og Cov(X,Y) = ρ = -7/8. Dermed er X+Y ~ N(0, Var(X+Y)) med Var(X+Y) = 1 + 1 + 2ρ = 2(1 + ρ) = 2(1 - 7/8) = 2·1/8 = 1/4. Så X+Y ~ N(0, 1/4), og standardiseringen er (X+Y)/√(1/4) = 2(X+Y) ~ N(0,1). Dermed er P(X+Y ≤ 1) = P(2(X+Y) ≤ 2) = Φ(2).
+
+{""answer"": 1}",True,9.435984134674072,finetuned
+exam_2014_05_28-18,english,3,3,True,"Two events A and B are independent if and only if P(A ∩ B) = P(A) P(B). This is the defining property of independence.
+
+{""answer"": 3}",True,2.0735628604888916,finetuned
+exam_2014_05_28-18,danish,3,3,True,"To hændelser A og B er uafhængige, hvis og kun hvis P(A ∩ B) = P(A) · P(B). Dette er definitionen på uafhængighed. Derfor er det korrekt at man kan bestemme sandsynligheden for fælleshændelsen som produktet af sandsynlighederne for de to hændelser hver for sig.
+
+{""answer"": 3}",True,5.280949592590332,finetuned
+exam_2014_05_28-29,english,5,4,False,"Each patient independently has a probability p of coming, so the number of arrivals among n summoned is Binomial(n, p). To find n such that P(X > 10) > 0.9, we need the binomial distribution.
+
+{""answer"": 4}",True,3.0151848793029785,finetuned
+exam_2014_05_28-29,danish,5,4,False,"Vi modellerer antallet af mødende patienter som en binomialfordeling med n indkaldte og sandsynlighed p for at møde. Vi søger n så P(X ≥ 10) > 0,90. Derfor er binomialfordelingen den bedst egnede.
+
+{""answer"": 4}",True,4.0040199756622314,finetuned
+exam_2014_05_28-30,english,4,6,False,"Given X ~ N(500, 2500) and Y ~ N(200, 1600) with correlation ρ = 4/5, the conditional mean is:
+E[Y | X = x] = μ_Y + ρ (σ_Y/σ_X) (x − μ_X)
+= 200 + (4/5)(40/50)(160 − 500)
+= 200 + (32/25)(−340)
+= 200 − 435.2 = 264.8
+
+This is not among the options, so the correct choice is:
+{""answer"": 6}",True,8.122179508209229,finetuned
+exam_2014_05_28-30,danish,4,6,False,"Vi bruger den betingede forventning for en bivariat normalfordeling:
+E[X | Y = y] = μ_X + ρ (σ_X / σ_Y) (y − μ_Y).
+
+Her er:
+- μ_X = 500, σ_X = √2500 = 50
+- μ_Y = 200, σ_Y = √1600 = 40
+- ρ = 4/5
+
+For y = 160:
+E[X | Y = 160] = 500 + (4/5)·(50/40)·(160 − 200) = 500 + (4/5)·(−100) = 500 − 80 = 420.
+
+Ingen af de givne svarmuligheder matcher 420. Derfor er den korrekte valgmulighed:
+{""answer"": 6}",True,11.625128984451294,finetuned
+exam_2014_12_18-2,english,1,2,False,"The number of neutrons emitted in one second follows a Poisson distribution with rate λ = 4. The probability of at least 4 neutrons is:
+P(N ≥ 4) = 1 − P(N ≤ 3) = 1 − ∑_{k=0}^3 (4^k / k!) e^{-4},
+which matches option 2.
+
+{""answer"": 2}",True,4.45390772819519,finetuned
+exam_2014_12_18-2,danish,1,2,False,"Antallet af neutroner i et sekund følger en Poisson-fordeling med λ = 4. Sandsynligheden for mindst 4 er P(X ≥ 4) = 1 − P(X ≤ 3) = 1 − Σ_{k=0}^3 (4^k / k!) e^{-4}, hvilket matcher valgmulighed 2.
+
+{""answer"": 2}",True,4.95115065574646,finetuned
+exam_2014_12_18-6,english,4,4,True,"We use the formula for correlation:
+Corr(V, W) = Cov(V, W) / (σ_V σ_W).
+
+Given:
+- E(V) = 1, Var(V) = 9 ⇒ σ_V = 3
+- E(W) = 2
+- E(VW) = 5
+- Corr(V, W) = 1/2
+
+Cov(V, W) = E(VW) − E(V)E(W) = 5 − (1)(2) = 3.
+
+Then:
+(1/2) = 3 / (3 σ_W) ⇒ σ_W = 2 ⇒ Var(W) = 4.
+
+{""answer"": 4}",True,7.707217454910278,finetuned
+exam_2014_12_18-6,danish,4,4,True,"Vi bruger formlen for korrelation:
+Corr(V, W) = Cov(V, W) / (σ_V σ_W).
+
+Vi har:
+- Cov(V, W) = E(VW) − E(V)E(W) = 5 − 1·2 = 3,
+- σ_V = √Var(V) = √9 = 3,
+- Corr(V, W) = 1/2.
+
+Dermed:
+(1/2) = 3 / (3 σ_W) ⇒ σ_W = 2 ⇒ Var(W) = 4.
+
+{""answer"": 4}",True,6.825694561004639,finetuned
+exam_2014_12_18-11,english,3,3,True,"The region is a square rotated by 45°, with diagonals of length 2 along the lines x+y=±1 and y−x=±1. The total area is 2.
+
+The third quadrant (x ≤ 0, y ≤ 0) intersects the square in a smaller square of side √2/2, area 1/2. Thus, the probability is (1/2)/2 = 1/4.
+
+{""answer"": 3}",True,5.317710638046265,finetuned
+exam_2014_12_18-11,danish,3,3,True,"Området er en rombe med hjørner i (1,0), (0,1), (-1,0), (0,-1). Arealet er 2. Tredje kvadrant er x ≤ 0 og y ≤ 0. Skæringen mellem romben og tredje kvadrant er en trekant med hjørner i (-1,0), (0,-1), og (0,0). Arealet er 1/2. Sandsynligheden er derfor (1/2)/2 = 1/4.
+
+{""answer"": 3}",True,6.908810377120972,finetuned
+exam_2014_12_18-15,english,2,2,True,"Since (X, Y) is bivariate normal, the linear combination Z = X − 17Y is also normal. We compute its mean and variance:
+- Mean: E[Z] = E[X] − 17E[Y] = 8 − 0 = 8.
+- Variance: Var(Z) = Var(X) + (17)^2 Var(Y) − 2·17·Cov(X, Y).
+  - Cov(X, Y) = ρ·σ_X·σ_Y = (15/17)·15·1 = 225/17.
+  - Var(Z) = 225 + 289 − 2·17·(225/17) = 514 − 450 = 64.
+
+Thus, Z ~ N(8, 64), and
+P(X − 17Y > 0) = P(Z > 0) = 1 − Φ(0 − 8 / √64) = 1 − Φ(−1) = Φ(1).
+
+{""answer"": 2}",True,13.073166131973267,finetuned
+exam_2014_12_18-15,danish,2,2,True,"Vi har X ~ N(8, 225), Y ~ N(0, 1), og korrelation ρ = 15/17. Dermed er X − 17Y normalfordelt med
+- middelværdi: 8 − 17·0 = 8
+- varians: Var(X) + (17)^2 Var(Y) − 2·17·Cov(X,Y)
+  = 225 + 289 − 2·17·(ρ·√(225·1))
+  = 514 − 34·(15/17)·15
+  = 514 − 34·(225/17)
+  = 514 − 450 = 64
+
+Så P(X − 17Y > 0) = P(Z > −8/8) = P(Z > −1) = 1 − Φ(−1) = Φ(1).
+
+{""answer"": 2}",True,12.367853164672852,finetuned
+exam_2014_12_18-23,english,2,2,True,"Each of the 8 passengers independently chooses uniformly among the next 6 stops. The bus stops at a stop if at least one passenger gets off there. Let S be the number of stops made. Then S is the number of non-empty subsets among the 6 stops, where each stop is “non-empty” with probability 1 − (5/6)^8 (since all 8 passengers must choose other stops). Thus, the expected number of stops is 6(1 − (5/6)^8).
+
+{""answer"": 2}",True,5.916917324066162,finetuned
+exam_2014_12_18-23,danish,2,2,True,"Vi modellerer hvert stop som en Bernoulli-variabel: stop i stop i hvis mindst én af de 8 passagerer vælger at stige af der. Sandsynligheden for at ingen vælger stop i er (1 - 1/6)^8 = (5/6)^8. Derfor er sandsynligheden for at stoppe i stop i lig med 1 - (5/6)^8. Antallet af stop er summen af disse 6 uafhængige Bernoullier, så forventet antal stop er 6·[1 - (5/6)^8].
+
+{""answer"": 2}",True,7.834942817687988,finetuned
+exam_2015_05_29-8,english,5,1,False,"We are given T ~ Gamma(3,1) with rate 1 (i.e., shape k=3, rate λ=1). The conditional survival function given T ≥ 2 is
+P(T ≤ 2 + t | T ≥ 2) = 1 - (Γ(3,2 + t)/Γ(3,2)) = 1 - (Γ(3,2 + t)/Γ(3,2)).
+
+For small t, Γ(k,2 + t) ≈ Γ(k,2) + t Γ(k-1,2), so
+P(T ≤ 2 + t | T ≥ 2) ≈ t Γ(k-1,2) / Γ(k,2) = t (k-1) e^{-2}.
+
+With k=3 and t=1/52, this gives approximately (1/52) · 2 e^{-2} = 2 e^{-2}/52 = e^{-2}/26 ≈ 0.0023, which matches option 1: 4 e^{-2}/(52) = e^{-2}/13 ≈ 0.0046 (double the approximation). However,",True,15.935847997665405,finetuned
+exam_2015_05_29-8,danish,5,5,True,"For en gamma(3,1) er levetiden T ~ Gamma(shape=3, rate=1). Givet T > 2, er restlevetiden R = T − 2 | T > 2 ~ Gamma(shape=3, rate=1) med skaleret tid. For en uge (1/52 år) fås:
+P(R ≤ 1/52 | T > 2) ≈ λ·Δt = 1·(1/52) = 1/52.
+Dermed er sandsynligheden for fejl i den første uge ≈ 1/52.
+
+{""answer"": 5}",True,7.592400550842285,finetuned
+exam_2015_05_29-14,english,1,1,True,"We have X ~ Geom(p) and Y ~ Geom(q), both supported on {1, 2, ...} with P(X=k) = (1-p)^{k-1} p and similarly for Y. Then
+P(X > Y) = Σ_{y=1}^∞ P(Y=y) P(X > y) = Σ_{y=1}^∞ q(1-q)^{y-1} (1-p)^{y-1} = q/p (1 - (1-p)(1-q)) / (1 - (1-p)(1-q)) = q(1-p) / (p + q - pq).
+Thus the correct answer is option 1.
+
+{""answer"": 1}",True,8.181653261184692,finetuned
+exam_2015_05_29-14,danish,1,5,False,"Da X og Y er uafhængige og geometriske med P(X=k)=p(1-p)^{k-1} og P(Y=k)=q(1-q)^{k-1} for k≥1, fås:
+P(X>Y) = Σ_{y=1}^∞ P(Y=y) P(X>y) = Σ_{y=1}^∞ q(1-q)^{y-1} (1-p)^{y-1} = q/(1 - p(1-q)) = q/(1 - p + pq) = q/(1 - p + pq).
+
+Dette matcher valgmulighed 5: (1-p)q/(1-pq) (med p(1-q) = p - pq).
+
+{""answer"": 5}",True,9.080442190170288,finetuned
+exam_2015_12_17-2,english,5,5,True,"We model the number of left-turning cars in one minute as a Poisson process with rate λ = 6 cars/min × 1/3 = 2 cars/min. The number of such cars in one minute is Poisson with mean 2. The probability that the lane fills up (i.e., at least 3 cars) is:
+P(N ≥ 3) = 1 − P(N ≤ 2) = 1 − e^−2 (1 + 2 + 2) = 1 − 5e^−2.
+
+{""answer"": 5}",True,6.3954057693481445,finetuned
+exam_2015_12_17-2,danish,5,5,True,"Vi modellerer antallet af venstresværende biler i et minut som en Poisson-fordeling med rate λ = 6·(1/3) = 2. Banen fyldes, hvis der kommer 3 eller flere venstresværende biler. Derfor er sandsynligheden:
+P(N ≥ 3) = 1 − P(N ≤ 2) = 1 − e^(-2) (1 + 2 + 2) = 1 − 5e^(-2).
+
+{""answer"": 5}",True,6.494801759719849,finetuned
+exam_2015_12_17-3,english,1,1,True,"Given U ~ Uniform[1, 2], and conditional P(X=x | U=u) = Poisson(u), we have:
+P(X=1) = E[P(X=1 | U)] = E[u e^{-u}] = ∫₁² u e^{-u} du = [−(u+1) e^{-u}]₁² = (2+1)e^{-2} − (1+1)e^{-1} = 3e^{-2} − 2e^{-1} = (3/e^2) − (2/e).
+
+This matches option 1: (1/e)(2 − 3/e).
+
+{""answer"": 1}",True,7.3166937828063965,finetuned
+exam_2015_12_17-3,danish,1,1,True,"Vi bruger loven om total sandsynlighed:
+P(X=1) = ∫_{1}^{2} P(X=1 | U=u) f_U(u) du
+= ∫_{1}^{2} (u^1/1!) e^{-u} · 1 du
+= ∫_{1}^{2} u e^{-u} du
+= [−(u+1) e^{-u}]_{1}^{2}
+= (−3 e^{-2}) − (−2 e^{-1})
+= 2/e − 3/e^2
+= (1/e)(2 − 3/e).
+
+Dette matcher valgmulighed 1.
+
+{""answer"": 1}",True,8.159889221191406,finetuned
+exam_2015_12_17-10,english,5,5,True,"We want P(second largest ≤ 4/5). For three i.i.d. Uniform(0,1) variables, the joint distribution of the order statistics (X(1), X(2), X(3)) is uniform on the simplex 0 ≤ X(1) ≤ X(2) ≤ X(3) ≤ 1 with density 6.
+
+The event X(2) ≤ 4/5 corresponds to the region where the middle value is at most 4/5. This is the union of:
+- All triples with all three ≤ 4/5: volume = (4/5)^3.
+- All triples with one > 4/5 and the other two ≤ 4/5: choose which one is > 4/5 (3 choices), and for each, the volume is (4/5)^2",True,12.675958395004272,finetuned
+exam_2015_12_17-10,danish,5,4,False,"Vi har tre uafhængige U(0,1)-variable X1, X2, X3. Lad Y være den næststørste (dvs. medianen). Vi søger P(Y < 4/5).
+
+For tre uafhængige U(0,1)-variable er den simultane fordeling af ordenstørrelserne (X(1), X(2), X(3)) givet ved
+f_{X(1),X(2),X(3)}(x1,x2,x3) = 6 for 0 < x1 < x2 < x3 < 1.
+
+Derfor er
+P(Y < 4/5) = P(X(2) < 4/5) = ∫_{x1=0}^{4/5} ∫_{x2=x1}^{4/5} ∫_{x3=x2}^{1} 6 dx3 dx2 dx1
+= ∫_{0}^{4/5} ∫_{x1}^{4/5} (1 - x2) dx2 dx1
+= ∫_{0}^{4/5} [ (1 - x1)(4/5) - (1/2)(4/5)^2 ] dx1
+= (4/5) ∫_{0}^{4/5}",True,21.238072633743286,finetuned
+exam_2015_12_17-27,english,1,1,True,"Let X and Y be independent standard normal variables. The squared distance from the origin is R^2 = X^2 + Y^2, which follows a chi-squared distribution with 2 degrees of freedom. The cumulative distribution function (CDF) of R is F(r) = 1 − e^(−r^2/2). For r = 1, this gives F(1) = 1 − e^(−1/2) ≈ 1 − 0.6065 = 0.3935.
+
+{""answer"": 1}",True,6.472244739532471,finetuned
+exam_2015_12_17-27,danish,1,1,True,"Da afstanden fra centrum er R = √(X^2 + Y^2) med X og Y uafhængige standardnormaler, er R^2 = X^2 + Y^2 ~ χ^2(2). Dermed er R ~ Rayleigh(1), og for R ≤ r gælder P(R ≤ r) = 1 − e^(−r^2/2). For r = 1 fås 1 − e^(−1/2) ≈ 0,3935.
+
+{""answer"": 1}",True,6.667030334472656,finetuned
+exam_2015_12_17-28,english,2,2,True,"Given X ~ N(4, 25) and Y ~ N(25, 4) with Cov(X, Y) = 6, the conditional distribution of X given Y = y is:
+X | Y = y ~ N(μ + ρ (y − μ_Y) σ_X/σ_Y, σ_X^2 (1 − ρ^2)).
+
+Here:
+- μ_X = 4, σ_X = 5
+- μ_Y = 25, σ_Y = 2
+- ρ = Cov(X, Y) / (σ_X σ_Y) = 6 / (5·2) = 3/5
+
+For y = 27:
+- Mean: 4 + (3/5)·(27 − 25)·(5/2) = 4 + (3/5)·2·(5/2) = 4 + 3 = 7
+- Variance: 25·(1 − (3/5)^2) = 25·(16/25) = 16
+
+Thus, P(X ≤ 4 | Y = 27) = Φ((4 − 7)/4) = Φ(−3/4).
+
+{""answer"": 2}",True,14.754201650619507,finetuned
+exam_2015_12_17-28,danish,2,2,True,"Vi har X|Y=y ~ N(μ, σ^2) med
+- μ = E[X|Y=y] = μ_X + (Cov(X,Y)/σ_Y^2)(y − μ_Y) = 4 + (6/4)(27 − 25) = 4 + 3 = 7
+- σ^2 = Var(X|Y=y) = σ_X^2 − (Cov(X,Y))^2/σ_Y^2 = 25 − 36/4 = 25 − 9 = 16
+
+Dermed er P(X ≤ 4 | Y = 27) = Φ((4 − 7)/4) = Φ(−3/4).
+
+{""answer"": 2}",True,8.741129159927368,finetuned
+exam_2015_12_17-30,english,4,2,False,"We want the second 6 to occur exactly on the sixth roll. This means:
+- Exactly one 6 in the first five rolls.
+- A 6 on the sixth roll.
+
+Number of ways to choose 1 success in 5 trials: C(5,1).
+Probability of one 6 and four non-6s in the first five: C(5,1) (1/6) (5/6)^4.
+Multiply by the probability of a 6 on the sixth roll: (1/6).
+
+Total probability: C(5,1) (1/6)^2 (5/6)^4 = C(5,1) 5^4 / 6^6.
+
+{""answer"": 2}",True,8.110222816467285,finetuned
+exam_2015_12_17-30,danish,4,4,True,"Vi ønsker sandsynligheden for, at den første 6 kommer på det sjette kast. Det kræver, at de første fem kast ikke er 6, og det sjette er 6. Der er 5 muligheder for ikke-6 på hvert af de første fem kast, og 1 for 6 på det sjette. Dermed:
+P = (5/6)^5 · (1/6) = 5^5 / 6^6.
+
+{""answer"": 4}",True,6.053261756896973,finetuned
+exam_2016_05_30-6,english,2,2,True,"Let M = mutation, T+ = test positive.
+- P(M) = 1/4, P(T+|M) = 1.
+- P(T+|¬M) = 1/4, so P(¬M) = 3/4.
+
+By Bayes’ theorem:
+P(M|T+) = P(T+|M)P(M) / P(T+)
+= (1·1/4) / [(1·1/4) + (1/4·3/4)]
+= (1/4) / (1/4 + 3/16)
+= (1/4) / (7/16)
+= 4/7.
+
+{""answer"": 2}",True,8.150114297866821,finetuned
+exam_2016_05_30-6,danish,2,2,True,"Vi bruger Bayes’ sætning. Lad M være “har mutation” og T være “test positiv”. Vi har:
+- P(M) = 1/4
+- P(T | M) = 1
+- P(T | ¬M) = 1/4
+
+Dermed:
+P(M | T) = [P(T | M) P(M)] / [P(T | M) P(M) + P(T | ¬M) P(¬M)]
+= (1·1/4) / (1·1/4 + 1/4·3/4)
+= (1/4) / (1/4 + 3/16)
+= (1/4) / (7/16)
+= 4/7
+
+{""answer"": 2}",True,9.019661664962769,finetuned
+exam_2016_05_30-7,english,5,5,True,"We have (X, Y) ~ N(0, I) with Cov(X, Y) = ρ = 1/2. Let U = X + Y and V = X − 2Y. Then (U, V) is bivariate normal with mean 0 and covariance matrix:
+- Var(U) = 1 + 1 + 2ρ = 3
+- Var(V) = 1 + 4 − 4ρ = 2
+- Cov(U, V) = 1 − 2ρ = 0
+
+Thus U and V are independent standard normals (after scaling). The event {U ≥ 0, V ≥ 0} corresponds to the first quadrant, with probability 1/4. Therefore, P(X + Y ≥ 0, X ≥ 2Y) = 1/4.
+
+{""answer"": 5}",True,9.585572242736816,finetuned
+exam_2016_05_30-7,danish,5,6,False,"Vi har (X, Y) ~ N(0, I) med ρ = 1/2. Vi transformerer til uafhængige standardnormaler: U = X + Y, V = X − 2Y. Da U og V er lineære kombinationer af uafhængige normals, er de også normalfordelte. Korrelationen mellem U og V er Cov(U, V) = Var(X) − 2 Var(Y) = 1 − 2 = −1, og standardafvigelserne er σ_U = √(1 + 1 + 2·1/2) = √3 og σ_V = √(1 + 4 − 2·1) = √3. Dermed er korrelationen ρ = −1/3.
+
+Dermed er P(U ≥ 0, V ≥ 0) = 1/4 + (1/(2π)) arcsin(ρ) = 1/4 + (1/(2π)) arcsin(−1/3) = 1/4 − (1/(2π)) arcsin(1/3",True,15.098951816558838,finetuned
+exam_2016_05_30-8,english,2,2,True,"We want the probability that the club does not win in the first 10 years. Since each year is independent with a 1/20 chance of winning, the probability of not winning in one year is 19/20. Thus, the probability of not winning for 10 consecutive years is (19/20)^10.
+
+{""answer"": 2}",True,4.30330753326416,finetuned
+exam_2016_05_30-8,danish,2,2,True,"Vi ønsker sandsynligheden for, at klubben ikke vinder i de første 10 år. Hver år er sandsynligheden for ikke at vinde 19/20, og de er uafhængige. Derfor er
+P(må vente mere end 10 år) = (19/20)^10.
+
+{""answer"": 2}",True,4.662330865859985,finetuned
+exam_2016_05_30-11,english,5,5,True,"Since the position (X, Y) is bivariate standard normal with independent components, the squared distance from the origin is R^2 = X^2 + Y^2 ~ χ^2(2). The probability that R > 2 is P(R^2 > 4) = 1 - F_{χ^2(2)}(4) = 1 - (1 - e^{-2}) = e^{-2}.
+
+{""answer"": 5}",True,5.183486223220825,finetuned
+exam_2016_05_30-11,danish,5,5,True,"Da koordinaterne er uafhængige standardnormaler, er afstanden R = √(X^2 + Y^2) Rayleigh-fordelt med parameter σ = 1. For Rayleigh-fordelingen gælder P(R > r) = e^{-r^2/2}. For r = 2 fås P(R > 2) = e^{-2}.
+
+{""answer"": 5}",True,4.990856170654297,finetuned
+exam_2016_05_30-30,english,5,5,True,"Since X and Y are independent, E[Z] = E[2X+3] E[Y−1]. For X ~ Poisson(2), E[X] = 2, so E[2X+3] = 2·2 + 3 = 7. For Y ~ Geometric(p=1/5), E[Y] = 1/p = 5, so E[Y−1] = 5 − 1 = 4. Thus E[Z] = 7 · 4 = 28.
+
+{""answer"": 5}",True,6.2923500537872314,finetuned
+exam_2016_05_30-30,danish,5,5,True,"Da X og Y er uafhængige, fås E[Z] = E[2X+3]·E[Y−1]. For X ~ Poisson(2) er E[X] = 2, så E[2X+3] = 2·2 + 3 = 7. For Y ~ Geo(1/5) med succes på første forsøg er E[Y] = 1/p = 5, så E[Y−1] = 4. Dermed E[Z] = 7·4 = 28.
+
+{""answer"": 5}",True,6.699933052062988,finetuned
+exam_2016_08_18-2,english,1,1,True,"We are given the CDF F(x) = 1 − exp(−[(log(x/α))/β]^2) for x > α. To find the 75th percentile, solve F(x) = 0.75:
+1 − exp(−[(log(x/α))/β]^2) = 0.75
+⇒ exp(−[(log(x/α))/β]^2) = 0.25
+⇒ −[(log(x/α))/β]^2 = log(0.25) = −log(4)
+⇒ [(log(x/α))/β]^2 = log(4)
+⇒ log(x/α) = β√log(4)
+⇒ x = α exp(β√log(4)).
+
+Thus, the correct answer is option 1.
+
+{""answer"": 1}",True,9.351915121078491,finetuned
+exam_2016_08_18-2,danish,1,1,True,"Vi søger x således at F(x) = 0.75. Fra F(x) = 1 − exp(−[(ln(x/α))/β]^2) fås:
+exp(−[(ln(x/α))/β]^2) = 0.25
+⇒ [(ln(x/α))/β]^2 = ln(4)
+⇒ ln(x/α) = β√ln(4)
+⇒ x = α exp(β√ln(4)).
+
+Dette matcher valgmulighed 1.
+
+{""answer"": 1}",True,6.352777719497681,finetuned
+exam_2016_08_18-4,english,3,3,True,"For X ~ Exp(λ), the moment generating function is M(t) = E[e^{tX}] = λ/(λ - t) for t < λ. Setting t = 1 gives E[e^X] = λ/(λ - 1), which is finite only for λ > 1.
+
+{""answer"": 3}",True,3.721269369125366,finetuned
+exam_2016_08_18-4,danish,3,3,True,"For X ~ Exp(λ), E[e^X] = ∫_0^∞ e^x λ e^{-λx} dx = λ ∫_0^∞ e^{-(λ-1)x} dx. Dette konvergerer kun hvis λ > 1, og da er E[e^X] = λ / (λ - 1).
+
+{""answer"": 3}",True,4.4672229290008545,finetuned
+exam_2016_08_18-10,english,2,1,False,"We have f(x, y) = 2 for 0 < y < x < 1. Let S = X + Y.
+
+- E[S] = E[X] + E[Y].
+  - E[X] = ∫0^1 x·2x dx = 2/3.
+  - E[Y] = ∫0^1 ∫0^x y·2 dy dx = 1/3.
+  - So E[S] = 2/3 + 1/3 = 1.
+
+- Var(S) = Var(X) + Var(Y) + 2Cov(X, Y).
+  - Var(X) = E[X^2] − (E[X])^2 = ∫0^1 x^2·2x dx − (2/3)^2 = 1/2 − 4/9 = 1/18.
+  - Var(Y) = E[Y^2] − (E[Y])^2 = ∫0^1 ∫0^x y^2·2 dy dx − (1/3)^2 = 1/12 − 1/9 = 1/36.
+  - Cov(X, Y) = E[XY] − E[X]E[Y] = ∫0^1 ∫0^x xy·2 dy dx − (2/3)(1/3) = 1/6 − 2/9 = 1/18.
+  - Thus Var(S) = 1/18 + 1/36 ",True,18.37321376800537,finetuned
+exam_2016_08_18-10,danish,2,1,False,"Vi har f(x,y) = 2 for 0 < y < x < 1. Dermed er X marginalt U(0,1) og Y|X=x ~ U(0,x). Dermed er E[X] = 1/2, E[Y] = E[E[Y|X]] = E[X/2] = 1/4, og E[X+Y] = 3/4.
+
+For variansen:
+- Var(X) = 1/12.
+- Var(Y) = E[Var(Y|X)] + Var(E[Y|X]) = E[X^2/12] + Var(X/2) = (1/12)(1/3) + (1/4)(1/12) = 1/18.
+- Cov(X,Y) = E[XY] − E[X]E[Y] = E[X·(X/2)] − (1/2)(1/4) = (1/2)(1/3) − 1/8 = 1/24.
+
+Dermed:
+Var(X+Y) = Var(X) + Var(Y) + 2Cov(X,Y) = 1/12 + 1/18 + 2·1/24 = 1/3.
+
+{""answer"": 1}",True,14.965452909469604,finetuned
+exam_2016_08_18-12,english,2,2,True,"The Poisson distribution models the number of events occurring in a fixed interval of time (or space) given a known average rate and independence between events. This matches the scenario of counting monthly unintended incidents with a known average rate (4.5 per month).
+
+{""answer"": 2}",True,3.076594114303589,finetuned
+exam_2016_08_18-12,danish,2,2,True,"Antallet af utilsigtede hændelser i en tidsperiode (her måned) med en kendt gennemsnitsrate og uafhængige, sjældne hændelser er klassisk modelleret ved en Poissonfordeling. Binomial og normal er for kontinuerlige eller proportioner, hypergeometrisk for uden tilbage-lægning, eksponential for tider mellem hændelser, og “ved ikke” er ikke relevant her.
+
+{""answer"": 2}",True,6.1903462409973145,finetuned
+exam_2016_08_18-16,english,4,4,True,"To find the density of Z = X + Y, we use convolution:
+f_{X+Y}(z) = ∫ f_X(z − y) f_Y(y) dy.
+
+- X ~ Exp(λ) with f_X(x) = λ e^{−λx} for x ≥ 0.
+- Y ~ Uniform[0, a] with f_Y(y) = 1/a for 0 ≤ y ≤ a.
+
+For z ≥ 0:
+- If 0 ≤ z ≤ a, the support of y is [0, z], so
+  f_{X+Y}(z) = ∫_0^z λ e^{−λ(z−y)} (1/a) dy = (1/a)(1 − e^{−λz}).
+
+- If z ≥ a, the support of y is [z − a, a], so
+  f_{X+Y}(z) = ∫_{z−a}^a λ e^{−λ(z−y)} (1/a) dy = (1/a)(e^{−λ(z−a)} − e^{−λz}) = (1/a)(e^{λa} − 1) e^{−λz}.
+
+Thus, the correct density",True,14.605923414230347,finetuned
+exam_2016_08_18-16,danish,4,4,True,"Vi har X ~ Exp(λ) (med tæthed f_X(x) = λ e^{-λx} for x ≥ 0) og Y ~ Uniform[0,a] (med tæthed f_Y(y) = 1/a for 0 ≤ y ≤ a). Da X og Y er uafhængige, fås for Z = X + Y:
+- For 0 ≤ z < a: f_{X+Y}(z) = ∫_0^z f_X(z−y) f_Y(y) dy = (1/a) ∫_0^z λ e^{-λ(z−y)} dy = (1/a)(1 − e^{-λz}).
+- For z ≥ a: f_{X+Y}(z) = ∫_{z−a}^a f_X(z−y) f_Y(y) dy = (1/a) e^{-λ(z−a)}.
+
+Dette matcher valgmulighed 4.
+
+{""answer"": 4}",True,11.303367853164673,finetuned
+exam_2016_08_18-24,english,4,4,True,"Let n be the number of guests, with E[n] = 80·0.20 + 120·0.50 + 160·0.30 = 124. Given that the number of shot glasses is Binomial with parameters n²/40 and 0.25, the expected number is 0.25·(n²/40) = n²/160. Thus, E[shot glasses] = E[n²]/160.
+
+Compute E[n²]:
+- Var(n) = (80−124)²·0.20 + (120−124)²·0.50 + (160−124)²·0.30 = 1044
+- E[n²] = Var(n) + (E[n])² = 1044 + 124² = 16,132
+
+Therefore, E[shot glasses] = 16,132 / 160 ≈ 100.825, which rounds to 101.
+
+{""answer"": 4}",True,13.567439794540405,finetuned
+exam_2016_08_18-24,danish,4,4,True,"Vi bruger loven om total forventning. Forventet antal gæster er E[n] = 80·0,20 + 120·0,50 + 160·0,30 = 124. Forventet antal glas er E[glas] = E[E[glas | n]] = E[n²/40 · 0,25] = 0,25/40 · E[n²].
+
+Beregn E[n²] = Var(n) + (E[n])². For n er E[n] = 124, og Var(n) = (80−124)²·0,20 + (120−124)²·0,50 + (160−124)²·0,30 = 1684. Dermed E[n²] = 1684 + 124² = 1684 + 15376 = 17060.
+
+Så E[glas] = 0,25/40 · 17060 = 106,625 ≈ 107. Den nærmeste valgmulighed er 101.
+
+{""answer"": 4}",True,15.716686725616455,finetuned
+exam_2016_12_19-3,english,5,6,False,"Each shot is at (X, Y) with X, Y ~ N(0,1) independent. The distance from the center is R = sqrt(X^2 + Y^2), which has Rayleigh distribution with parameter σ=1. The probability of hitting a target of radius 2 cm is P(R ≤ 2) = 1 − e^(−2^2/2) = 1 − e^(−2). For 5 independent shots, the probability is (1 − e^(−2))^5.
+
+{""answer"": 6}",True,6.2256855964660645,finetuned
+exam_2016_12_19-3,danish,5,6,False,"Vi modellerer hvert skud som en uafhængig normalfordelt (X, Y) med middelværdi (0, 0) og varians 1 cm² i hver koordinat. Skuddet rammer en skydeskive med radius 2 cm, hvis X² + Y² ≤ 4. Sandsynligheden for at ramme en enkelt skive er derfor
+P = P(X² + Y² ≤ 4) = 1 − e^(−2),
+da for en standardnormalfordelt (X, Y) gælder P(r² ≤ 4) = 1 − e^(−r²/2) med r = 2.
+
+Da skuddene er uafhængige, er sandsynligheden for at ramme alle 5 skiver
+(1 − e^(−2))⁵.
+
+{""answer"": 6}",True,10.692089319229126,finetuned
+exam_2016_12_19-10,english,2,2,True,"Let F be freezing, D be death. We are given:
+- P(F) = 0.1, P(D|F) = 0.5, P(D|¬F) = 0.01.
+
+By total probability:
+P(D) = P(D|F)P(F) + P(D|¬F)P(¬F) = 0.5·0.1 + 0.01·0.9 = 0.05 + 0.009 = 0.059 = 59/1000.
+
+{""answer"": 2}",True,6.975503206253052,finetuned
+exam_2016_12_19-10,danish,2,2,True,"Vi bruger total sandsynlighed:
+- P(frost) = 0.1, P(dør | frost) = 0.5
+- P(ingen frost) = 0.9, P(dør | ingen frost) = 0.01
+
+P(dør) = 0.1·0.5 + 0.9·0.01 = 0.05 + 0.009 = 0.059 = 59/1000.
+
+{""answer"": 2}",True,6.338604211807251,finetuned
+exam_2016_12_19-18,english,4,4,True,"We use the law of total covariance:
+Cov(X, Y) = E[Cov(Y | X, X)] + Cov(E[Y | X], X).
+
+- Given X = x, Y | X = x ~ Binomial(x, p), so Cov(Y | X = x, X) = 0.
+- E[Y | X = x] = px, so Cov(E[Y | X], X) = Cov(pX, X) = p Var(X) = pλ.
+
+Thus, Cov(X, Y) = pλ.
+
+{""answer"": 4}",True,6.336198329925537,finetuned
+exam_2016_12_19-18,danish,4,4,True,"Vi bruger den totale kovarians: Cov(X,Y) = E[Cov(Y|X,X)] + Cov(E[Y|X],X). For Y|X=x ~ Bin(x,p) er Cov(Y|X=x) = x p (1-p), så E[Cov(Y|X,X)] = E[X p (1-p)] = p (1-p) E[X] = p (1-p) λ. Videre er E[Y|X] = p X, så Cov(E[Y|X],X) = Cov(p X, X) = p Var(X) = p λ. Dermed er Cov(X,Y) = p (1-p) λ + p λ = p λ.
+
+{""answer"": 4}",True,8.248871088027954,finetuned
+exam_2016_12_19-19,english,5,5,True,"In a Poisson process with rate λ = 6 per day (i.e., 0.25 per hour), the time until the next event is exponential with mean 1/λ = 4 hours. The memoryless property implies that the probability of waiting at least 4 more hours is the same as waiting at least 4 hours from any starting point. Thus:
+P(T ≥ 4) = e^{-λ·4} = e^{-6·(4/24)} = e^{-1}.
+
+{""answer"": 5}",True,6.042771339416504,finetuned
+exam_2016_12_19-19,danish,5,5,True,"I en Poissonproces er tiden mellem hændelser eksponentialfordelt med middelværdi 1/λ. Her er λ = 6 per døgn, så middelværdien er 24/6 = 4 timer. Dermed er tiden T til næste alarm eksponentialfordelt med parameter λ = 1/4.
+
+Ved t = 12 timer er der allerede gået 12 timer uden alarm, og på grund af “lange hukommelse” i eksponentialfordelingen gælder:
+P(T > 12 + 4 | T > 12) = P(T > 4) = e^{-λ·4} = e^{-1}.
+
+{""answer"": 5}",True,9.001899003982544,finetuned
+exam_2016_12_19-25,english,3,4,False,"The region is a triangle with vertices at (0,0), (1,0), and (-1,0). For a fixed y, the x-values range from -(1−y) to 1−y. The length of this interval is 2(1−y), and the density is uniform over it. Thus, f_{X|Y}(x|y) = 1/(2(1−y)) for x ∈ [−(1−y), 1−y], and 0 otherwise.
+
+{""answer"": 4}",True,6.144265174865723,finetuned
+exam_2016_12_19-25,danish,3,4,False,"Vi har et punkt (X, Y) uniformt i trekanten T = {(x, y) | 0 ≤ y ≤ 1 − |x|}. For en given y ∈ [0, 1] er x-båndet [- (1 − y), 1 − y], så bredden er 2(1 − y). Den betingede tæthed er derfor uniform på dette interval:
+f_{X|Y}(x | y) = 1 / (2(1 − y)) for x ∈ [−(1 − y), 1 − y], 0 ellers.
+
+Dette matcher valgmulighed 4.
+
+{""answer"": 4}",True,7.863703727722168,finetuned
+exam_2016_12_19-26,english,4,4,True,"To find the distribution function F(x) for x ∈ [0,1], integrate the density f(x) from 0 to x:
+F(x) = ∫₀^x 4t(1−t²) dt = 2x² − x⁴.
+This can be rewritten as −x²(x² − 2), which matches option 4.
+
+{""answer"": 4}",True,4.471911907196045,finetuned
+exam_2016_12_19-26,danish,4,4,True,"Fordelingsfunktionen F(x) = ∫_0^x f(t) dt = ∫_0^x 4t(1-t^2) dt = 2x^2 - (2/3)x^3. Dette kan omskrives som -x^2(x^2 - 2), hvilket matcher valgmulighed 4.
+
+{""answer"": 4}",True,4.836926221847534,finetuned
+exam_2016_12_19-29,english,3,3,True,"Since Z is independent of X and takes values 0 and 1 with equal probability, Y = ±X with equal chance. Thus, E[XY] = E[X^2] E[XY | Z] = E[X^2] E[X^2] = 1, and E[X] = E[Y] = 0. Therefore, Cov(X, Y) = E[XY] = 1 ≠ 0, so they are not uncorrelated. Also, Y = ±X with equal probability, so they are dependent. Hence, the correct answer is:
+
+{""answer"": 3}",True,6.745186805725098,finetuned
+exam_2016_12_19-29,danish,3,3,True,"Da Z er uafhængig af X og P(Z=0)=P(Z=1)=1/2, er Y = ±X med lige sandsynlighed. Derfor er E[Y] = 0 og Cov(X,Y) = E[XY] = E[X·(±X)] = E[±X^2] = 0. Så X og Y er ukorrelerede. Men de er afhængige, fordi Y er en funktion af X. Derfor er det korrekt at sige, at de er ukorrelerede, men afhængige.
+
+{""answer"": 3}",True,7.448899745941162,finetuned
+exam_2017_12_20-6,english,2,2,True,"Let D be the die roll (1–6, each with probability 1/6), and X be the number of heads in D tosses of a fair coin. Then:
+P(X = 2) = E[P(X = 2 | D)] = (1/6) Σ_{i=2}^6 C(i,2) 2^{-i}.
+This matches option 2.
+
+{""answer"": 2}",True,4.813219785690308,finetuned
+exam_2017_12_20-6,danish,2,2,True,"Vi har en terning med 6 sider og en mønt. Lad N være antallet af øjne på terningen (N = 1, 2, ..., 6 med P(N = n) = 1/6). Givet N = n, kastes mønten n gange uafhængigt, og X ~ Binomial(n, 1/2). Derfor:
+P(X = 2) = Σ_{n=2}^6 P(N = n) P(X = 2 | N = n) = (1/6) Σ_{n=2}^6 C(n, 2) 2^{-n},
+som matcher valgmulighed 2.
+
+{""answer"": 2}",True,8.405141830444336,finetuned
+exam_2017_12_20-7,english,4,4,True,"For fixed x, f(x, y) = k_x is constant in y, so f(x, y) must be independent of y. Thus f(x, y) = g(x) for all x, y. Then for fixed y, f(x, y) = g(x) = ax + b. Also 2f(0, y) = f(2, y) ⇒ 2g(0) = g(2). With g(x) = ax + b, this gives 2b = 2a + b ⇒ a = b. Hence g(x) = ax + a = a(x + 1). Normalizing over x ∈ [0, 2], y ∈ [0, 1], the total integral is ∫0^2 ∫0^1 a(x+1) dy dx = a ∫0^2 (x+1) dx = a(2 + 1) = 3a. For a density, 3a = 1 ⇒ a = 1/3. Thus f(x, y) = (1/3)(x + 1).
+
+{""answer"": 4}",True,12.691715955734253,finetuned
+exam_2017_12_20-7,danish,4,5,False,"For fast x er f(x, y) = k_x, så marginalen for y er f_Y(y) = ∫_0^2 k_x dx = 2k_x. For fast y er f(x, y) = ax + b, så marginalen for x er f_X(x) = ∫_0^1 (ax + b) dy = ax + b. Derfor må 2k_x = ax + b ⇒ k_x = (ax + b)/2. Dermed f(x, y) = (ax + b)/2.
+
+Ved y=0: f(x,0) = ax + b = k_x = (ax + b)/2 ⇒ a = b = 0, hvilket er uenstemmigt med a, b > 0. Derfor er der ikke tilstrækkelig information til at bestemme f(x, y).
+
+{""answer"": 5}",True,10.44381833076477,finetuned
+exam_2017_12_20-14,english,2,2,True,"Since X ~ Binomial(n=3, p=2/3), the possible values are 0, 1, 2, 3 with probabilities:
+- P(X=0) = (1/3)^3 = 1/27
+- P(X=1) = 3*(2/3)*(1/3)^2 = 6/27
+- P(X=2) = 3*(2/3)^2*(1/3) = 12/27
+- P(X=3) = (2/3)^3 = 8/27
+
+Compute E[1/(X^2+1)]:
+- For X=0: 1/(0+1) = 1
+- For X=1: 1/(1+1) = 1/2
+- For X=2: 1/(4+1) = 1/5
+- For X=3: 1/(9+1) = 1/10
+
+E[1/(X^2+1)] = (1/27)(1) + (6/27)(1/2) + (12/27)(1/5) + (8/27)(1/10)
+= (1 + 3 + 12/5 + 4/5) / 27
+= (1 + 3 + 16/5) / 27
+= (4 + 16/5) / 27
+= (36/5) / 27
+= 4/15
+
+{""answer"":",True,18.486724615097046,finetuned
+exam_2017_12_20-14,danish,2,2,True,"X ~ Binomial(n=3, p=2/3). X kan antage værdierne 0, 1, 2, 3 med sandsynlighederne:
+- P(X=0) = (1/3)^3 = 1/27
+- P(X=1) = 3·(2/3)·(1/3)^2 = 6/27
+- P(X=2) = 3·(2/3)^2·(1/3) = 12/27
+- P(X=3) = (2/3)^3 = 8/27
+
+Dermed:
+E[1/(X^2+1)] = Σ_{k=0}^3 [1/(k^2+1)]·P(X=k)
+= (1/27)[1/1 + 6/2 + 12/5 + 8/10]
+= (1/27)[1 + 3 + 2.4 + 0.8]
+= (1/27)·7.2 = 7.2/27 = 24/90 = 4/15.
+
+{""answer"": 2}",True,14.096721410751343,finetuned
+exam_2017_12_20-17,english,1,2,False,"Each egg independently becomes male with probability p = 3/5. With n = 10,000, the number of males is Binomial(n, p). For large n, we approximate with a normal distribution:
+- Mean μ = np = 6000
+- Variance σ² = np(1−p) = 10,000·(3/5)·(2/5) = 2400
+- Standard deviation σ = √2400
+
+We want P(X ≥ 5800). Using continuity correction, this is approximately:
+P(X ≥ 5799.5) ≈ 1 − Φ((5799.5 − 6000)/√2400) = 1 − Φ(−200.5/√2400)
+
+This matches option 2.
+
+{""answer"": 2}",True,10.606634616851807,finetuned
+exam_2017_12_20-17,danish,1,2,False,"Vi har n = 10.000 Bernoulli-eksperimenter med p = 3/5. Antallet af hankøn blandt de udklækkede æg er derfor X ~ Binomial(n, p). For store n kan vi approksimere med en normalfordeling: X ≈ N(np, np(1−p)) = N(6000, 1200).
+
+Vi søger P(X ≥ 5800). Med kontinuitetskorrektion bliver dette:
+P(X ≥ 5800) ≈ P(N ≥ 5799.5) = 1 − Φ((5799.5 − 6000)/√1200) = 1 − Φ(−199.5/√1200).
+
+Dette matcher valgmulighed 2.
+
+{""answer"": 2}",True,10.9376802444458,finetuned
+exam_2017_12_20-21,english,5,6,False,"Each block height X_i ~ Uniform[0.98, 1.02], so mean μ = 1.00 and variance σ² = (1.02 − 0.98)²/12 = 0.0004. For n = 100 blocks, the total height S = ΣX_i has mean 100 and variance 100·0.0004 = 0.04, so standard deviation σ = 0.2. By CLT, S ≈ N(100, 0.04). We want P(S > 100.4) = 1 − Φ((100.4 − 100)/0.2) = 1 − Φ(2). Since Φ(2) ≈ 0.9772, the probability is about 0.0228.
+
+None of the options match 1 − Φ(2). The closest is option 4, which is 1 − Φ(√12/0.04) = 1 − Φ(5√3) ≈ 1 − 1 = 0, which is not clos",True,14.843019485473633,finetuned
+exam_2017_12_20-21,danish,5,4,False,"Højden af én klods er X ~ Uniform(0.98, 1.02), så E[X] = 1.00 og Var(X) = (1.02−0.98)^2/12 = 0.0004/3. For 100 uafhængige klodser er S = X1 + ... + X100, så E[S] = 100 og Var(S) = 100·0.0004/3 = 0.04/3. Med CLT: (S − 100)/sqrt(0.04/3) ≈ N(0,1). Vi vil have P(S > 100.4) = P((S − 100)/sqrt(0.04/3) > 0.4 / sqrt(0.04/3)) = 1 − Φ(0.4 / sqrt(0.04/3)) = 1 − Φ(√12/0.04).
+
+{""answer"": 4}",True,13.095558881759644,finetuned
+exam_2017_12_20-24,english,4,4,True,"We have Z = XY with X ~ Exp(λ) and Y ~ Uniform[0,1] independent. The joint density is f(x, y) = λ e^{-λx} · 1 for x ≥ 0, 0 ≤ y ≤ 1. For z ≥ 0,
+F_Z(z) = P(XY ≤ z) = ∫_{x=0}^∞ ∫_{y=0}^{min(1, z/x)} f(x, y) dy dx
+= ∫_{x=0}^z ∫_{y=0}^1 λ e^{-λx} dy dx + ∫_{x=z}^∞ ∫_{y=0}^{z/x} λ e^{-λx} dy dx
+= ∫_{0}^{z} λ e^{-λx} dx + ∫_{z}^∞ λ e^{-λx} (z/x) dx
+= 1 − e^{-λz} + z ∫_{z}^∞ (λ/x) e^{-λx} dx.
+
+This matches the form of option 4:
+∫_{0}^{z} ∫_{0}^∞ (1/x) f(x, u/x) dx du
+with u = z and f(x, y) = λ e^{-λx} ·",True,15.366133451461792,finetuned
+exam_2017_12_20-24,danish,4,1,False,"Vi har Z = XY. For u ≥ 0 er
+F_Z(u) = P(XY ≤ u) = ∫_{x=0}^∞ P(Y ≤ u/x | X=x) f_X(x) dx
+= ∫_{x=0}^∞ min(1, u/x) λ e^{-λx} dx
+= ∫_{x=0}^u 1 · λ e^{-λx} dx + ∫_{x=u}^∞ (u/x) · λ e^{-λx} dx
+= 1 - e^{-λu} + u ∫_{x=u}^∞ (λ/x) e^{-λx} dx.
+
+Dermed er den korrekte form
+F_Z(u) = ∫_{u=0}^z ∫_{x=0}^∞ x λ e^{-λx} · 1_{[0,1]}(u/x) dx du
+= ∫_{u=0}^z ∫_{x=u}^∞ x λ e^{-λx} dx du.
+
+Dette matcher valgmulighed 1.
+
+{""answer"": 1}",True,13.05006718635559,finetuned
+exam_2018_12_19-3,english,4,4,True,"Let X and Y be independent standard normal variables. The distance to the target is R = √(X² + Y²). The mean E[R] is known for the Rayleigh distribution with σ = 1: E[R] = √(π/2). Thus, the correct answer is option 4.
+
+{""answer"": 4}",True,3.8747174739837646,finetuned
+exam_2018_12_19-3,danish,4,4,True,"Afstanden R til målpunktet er Rayleigh-fordelt med parameter σ=1 (da koordinaterne er uafhængige standardnormaler). For Rayleigh-fordelingen gælder E[R] = σ√(π/2). Med σ=1 fås E[R] = √(π/2).
+
+{""answer"": 4}",True,4.293810129165649,finetuned
+exam_2018_12_19-4,english,4,4,True,"Let X ~ Exp(λ) with density f_X(x) = λ e^{-λx} for x ≥ 0. For Y = X^{1/3}, we have X = Y^3 and dX/dY = 3Y^2. The change-of-variables formula gives:
+f_Y(y) = f_X(y^3) · |dX/dY| = λ e^{-λ y^3} · 3 y^2 = 3 λ y^2 e^{-λ y^3} for y ≥ 0.
+
+{""answer"": 4}",True,6.465716361999512,finetuned
+exam_2018_12_19-4,danish,4,4,True,"Vi har X ~ Exp(λ) med tæthed f_X(x) = λ e^{-λx} for x ≥ 0. For Y = X^{1/3} fås x = y^3 og dx/dy = 3y^2. Dermed:
+f_Y(y) = f_X(y^3) · |dx/dy| = λ e^{-λ y^3} · 3y^2 = 3λ y^2 e^{-λ y^3} for y ≥ 0.
+
+{""answer"": 4}",True,6.253307580947876,finetuned
+exam_2018_12_19-7,english,3,3,True,"Using the inclusion-exclusion principle:
+P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
+1 = 2/3 + 3/4 − P(A ∩ B)
+P(A ∩ B) = 2/3 + 3/4 − 1 = 5/12
+
+{""answer"": 3}",True,4.191412925720215,finetuned
+exam_2018_12_19-7,danish,3,3,True,"Vi bruger inklusions-eksklusionsprincippet:
+P(A ∪ B) = P(A) + P(B) − P(A ∩ B).
+Indsætter tallene:
+1 = 2/3 + 3/4 − P(A ∩ B)
+P(A ∩ B) = 2/3 + 3/4 − 1 = 5/12.
+
+{""answer"": 3}",True,4.999181270599365,finetuned
+exam_2018_12_19-19,english,3,3,True,"Each colony’s radius increase after 1 hour is N(6, 4). The probability a single colony has grown at least 10 mm is P(X ≥ 10) = 1 − Φ((10 − 6)/2) = 1 − Φ(2). The fastest-growing colony among three independent ones achieves this size if at least one does, which is 1 − (1 − Φ(2))³ = 1 − Φ(2)³.
+
+{""answer"": 3}",True,5.8912742137908936,finetuned
+exam_2018_12_19-19,danish,3,3,True,"Radius R for en koloni er normalfordelt med middelværdi 6 mm og varians 4 mm² (σ = 2 mm). For at en koloni er brugbar skal R ≥ 10 mm. Sandsynligheden for at en enkelt koloni opfylder dette er P(R ≥ 10) = 1 - Φ((10-6)/2) = 1 - Φ(2).
+
+Den hurtigst voksende koloni er den med den højeste radius. For at den hurtigst voksende koloni er brugbar skal mindst én af de tre være brugbar. Da de er uafhængige, er sandsynligheden for at ingen er brugbar (1 - Φ(2))³, så sandsynligheden for at mindst én er brugb",True,11.499756097793579,finetuned
+exam_2018_12_19-26,english,1,1,True,"For n=5 i.i.d. standard normals, the density of the k-th order statistic is f_{(k)}(x) = n! / [(k-1)!(n-k)!] * Φ(x)^{k-1} (1-Φ(x))^{n-k} φ(x). For the third largest (k=3), this gives 5!/(2!2!) = 30, so f_{(3)}(x) = 30 φ(x) Φ(x)^2 (1-Φ(x))^2. This matches option 1.
+
+{""answer"": 1}",True,6.996322870254517,finetuned
+exam_2018_12_19-26,danish,1,1,True,"For n uafhængige standardnormaler er tætheden for den k’te ordenstatistik (i stigende rækkefølge) givet ved
+f_{X_{(k)}}(x) = n! / [(k-1)!(n-k)!] · φ(x) · [Φ(x)]^{k-1} · [1 - Φ(x)]^{n-k},
+hvor φ er standardnormaltæthed og Φ standardnormalfunktionen.
+
+Her er n = 5 og k = 3 (tredjestørste). Dermed:
+f_{X_{(3)}}(x) = 5! / [(2!)(2!)] · φ(x) · [Φ(x)]^2 · [1 - Φ(x)]^2 = 30 φ(x) Φ(x)^2 (1 - Φ(x))^2.
+
+Dette matcher valgmulighed 1.
+
+{""answer"": 1}",True,11.294046401977539,finetuned
+exam_2018_12_19-28,english,3,3,True,"For standardized bivariate normal (X, Y) with correlation ρ, the conditional distribution of X given Y = y is N(ρ y, 1 − ρ^2). Here ρ = 3/5 and y = 1, so X | Y = 1 ~ N(3/5, 1 − 9/25) = N(3/5, 16/25). Thus,
+P(X ≤ 1 | Y = 1) = Φ((1 − 3/5) / (4/5)) = Φ((2/5) / (4/5)) = Φ(1/2).
+
+{""answer"": 3}",True,7.882458209991455,finetuned
+exam_2018_12_19-28,danish,3,4,False,"For standardiserede bivariat normalfordelte (X, Y) med korrelation ρ gælder, at givet Y = y er X | Y = y ~ N(ρ y, 1 − ρ^2). Her er y = 1 og ρ = 3/5, så
+P(X ≤ 1 | Y = 1) = Φ((1 − ρ·1)/√(1 − ρ^2)) = Φ((1 − 3/5)/√(1 − 9/25)) = Φ((2/5)/√(16/25)) = Φ(2/5).
+
+{""answer"": 4}",True,7.981944799423218,finetuned
+exam_2018_12_19-30,english,4,5,False,"We need P(X ≤ 1, Y ≤ 2) = ∫∫_{x ≤ 1, y ≤ 2} f(x, y) dx dy with support 0 < x/2 < y < 2x. For x ≤ 1, the lower bound for y is x/2 and the upper bound is min(2x, 2). Since 2x ≤ 2 for x ≤ 1, the integral becomes ∫₀¹ ∫_{x/2}^{2} 3e^{-(x+y)} dy dx.
+
+{""answer"": 5}",True,6.673221826553345,finetuned
+exam_2018_12_19-30,danish,4,5,False,"Vi skal integrere f(x, y) over området x ≤ 1 og y ≤ 2, inden for den givne support 0 < x/2 < y < 2x. For x ≤ 1 er y-begrænsningen:
+- Nedre: y ≥ x/2
+- Øvre: y ≤ min(2x, 2)
+
+For x ∈ [0, 1] er 2x ≤ 2, så y ∈ [x/2, 2x]. Derfor er den korrekte integrationsgrænse:
+∫₀¹ ∫_{x/2}^{2x} 3e^{-(x+y)} dy dx
+
+{""answer"": 5}",True,8.252094984054565,finetuned
+exam_2019_12_18-1,english,4,4,True,"We have a binomial sample with n=100 and p=0.05. The exact probability of at least 7 is 1 − P(X ≤ 6) = 1 − Σ_{i=0}^6 C(100, i) (0.05)^i (0.95)^{100−i}, which matches option 4.
+
+{""answer"": 4}",True,4.882405519485474,finetuned
+exam_2019_12_18-1,danish,4,4,True,"Antallet af personer fra den etniske gruppe i en stikprøve på 100 følger en hypergeometrisk fordeling med N=1.000.000, K=50.000 og n=100. Da N er meget stor og K/N=0,05 er p=0,05, kan vi approksimere med en binomialfordeling med n=100 og p=0,05. Dermed er sandsynligheden for mindst 7 personer:
+P(X ≥ 7) = 1 − Σ_{i=0}^6 C(100, i) (0,05)^i (0,95)^{100−i},
+som matcher valgmulighed 4.
+
+{""answer"": 4}",True,10.078386306762695,finetuned
+exam_2019_12_18-20,english,1,5,False,"We want a threshold T such that P(X > T) ≤ 1/9, i.e., P(X ≤ T) ≥ 8/9. Assuming normality, T = μ + z·σ with z = Φ^{-1}(8/9). Thus, T = 12 + 6 Φ^{-1}(8/9).
+
+{""answer"": 5}",True,4.314976453781128,finetuned
+exam_2019_12_18-20,danish,1,5,False,"Vi søger en grænse x, så P(X > x) = 1/9. Med X ~ N(12, 6^2) fås:
+z = Φ^{-1}(1 - 1/9) = Φ^{-1}(8/9)
+x = 12 + 6·z = 12 + 6·Φ^{-1}(8/9)
+
+Dette matcher valgmulighed 5.
+
+{""answer"": 5}",True,5.566407918930054,finetuned
+exam_2019_12_18-27,english,4,4,True,"The exponential distribution is the continuous analog of the geometric distribution (both model waiting times until the first success). Similarly, the gamma distribution is the continuous analog of the negative binomial distribution (both model waiting times until the rth success). Thus, the correct answer is the negative binomial distribution.
+
+{""answer"": 4}",True,3.547037124633789,finetuned
+exam_2019_12_18-27,danish,4,4,True,"Eksponentialfordelingen er kontinuert og svarer til den geometriske fordeling (diskret) som gammafordelingen svarer til den negative binomialfordeling (diskret). Begge par er ""tidslange til første succes"" og ""tidslange til n. succes"" i en Poissonproces.
+
+{""answer"": 4}",True,4.508397817611694,finetuned
+exam_2020_12_17-8,english,5,1,False,"We model the number of good components in a batch of 400 as a binomial with p = 0.75. The batch is sufficient if at least 280 are good. Thus the exact probability is sum_{i=280}^{400} C(400, i) (0.75)^i (0.25)^{400-i}, which matches option 1. The other options use Poisson or normal approximations, but the question asks for the exact probability.
+
+{""answer"": 1}",True,6.41025447845459,finetuned
+exam_2020_12_17-8,danish,5,4,False,"Vi har n=400 uafhængige komponenter med p=0,75 (25% defekte). Vi søger P(X ≥ 280), hvor X ~ Binomial(400, 0,75). Den præcise værdi er summen i valgmulighed 1. En god normalapproksimation er med μ=300 og σ=√(400·0,75·0,25)=√75≈8,66, og kontinuitetskorrektion: P(X ≥ 280) ≈ 1 − Φ((279,5 − 300)/8,66) = 1 − Φ(−2,366) ≈ 0,9911. Valgmulighed 4 matcher dette.
+
+{""answer"": 4}",True,10.543503999710083,finetuned
+exam_2020_12_17-13,english,1,1,True,"We use the change of variables formula. For Y = log X, we have X = e^Y and dX/dY = e^Y. Thus,
+f_Y(y) = f_X(e^y) · e^y
+= (1/√(2π)) · (1/e^y) · e^{- (1/2) y^2} · e^y
+= (1/√(2π)) e^{- y^2 / 2}.
+
+{""answer"": 1}",True,5.718036890029907,finetuned
+exam_2020_12_17-13,danish,1,1,True,"Vi har Y = log(X), så x = e^y og dx/dy = e^y. Ved transformation af variable fås:
+f_Y(y) = f_X(e^y) · e^y = (1/√(2π)) · (1/e^y) · e^{-½ y^2} · e^y = (1/√(2π)) e^{-½ y^2}.
+
+{""answer"": 1}",True,5.093988656997681,finetuned
+exam_2020_12_17-18,english,3,5,False,"We want P(max(|X|, |Y|) < 1) = P(|X| < 1 and |Y| < 1) = [P(|X| < 1)]^2 = [2Φ(1) − 1]^2 = (Φ(1) − 1/2)^2.
+
+{""answer"": 5}",True,4.095934629440308,finetuned
+exam_2020_12_17-18,danish,3,3,True,"Vi har X og Y uafhængige standardnormalfordelte. Vi søger P(|X| < 1 og |Y| < 1) = P(|X| < 1) · P(|Y| < 1) = [Φ(1) − Φ(−1)]^2.
+
+{""answer"": 3}",True,3.985497236251831,finetuned
+exam_2020_12_17-27,english,3,3,True,"We want P(X + Y < 0) where (X, Y) ~ N((15, 20), Σ) with Σ = [[100, -100], [-100, 400]] (since σ1=10, σ2=20, ρ=-1/4).
+
+Let Z = X + Y. Then:
+- Mean: μ = 15 + 20 = 35
+- Variance: Var(Z) = 100 + 400 + 2·(-1/4)·10·20 = 500 - 100 = 400
+- Standard deviation: σ = 20
+
+Thus, P(Z < 0) = Φ((0 − 35)/20) = Φ(−7/4).
+
+{""answer"": 3}",True,10.328290462493896,finetuned
+exam_2020_12_17-27,danish,3,1,False,"Vi har X ~ N(15, 10^2) og Y ~ N(20, 20^2) med ρ = -1/4. Vi søger P(X + Y < 0).
+
+Summen S = X + Y er normal med:
+- μ_S = 15 + 20 = 35
+- σ_S^2 = 10^2 + 20^2 + 2·(-1/4)·10·20 = 100 + 400 - 200 = 300 ⇒ σ_S = √300 = 10√3
+
+Standardisering: Z = (S - 35)/σ_S ⇒ P(S < 0) = Φ((0 - 35)/10√3) = Φ(-7/(2√3)) = Φ(-7√3/6) = Φ(-7/2√3).
+
+Rationalisering: -7/(2√3) = -7√3/6 = -7/6 · √3/√3 = -7/6 · 1 = -7/6.
+
+Dermed er P(X + Y < 0) = Φ(-7/6).
+
+{""answer"": 1}",True,14.946554899215698,finetuned
+exam_2020_12_17-30,english,5,1,False,"We need P(X ≤ 3/4, Y ≤ 1/2) with f(x, y) = 24xy for 0 < x < 1 − y.
+
+- The region is 0 < y < 1/2 and 0 < x < 1 − y.
+- Integrate f(x, y) over this region:
+  ∫_{y=0}^{1/2} ∫_{x=0}^{1−y} 24xy dx dy
+  = ∫_{0}^{1/2} 24y [x^2/2]_0^{1−y} dy
+  = ∫_{0}^{1/2} 12y (1 − y)^2 dy
+  = 12 ∫_{0}^{1/2} (y − 2y^2 + y^3) dy
+  = 12 [y^2/2 − 2y^3/3 + y^4/4]_0^{1/2}
+  = 12 (1/8 − 1/12 + 1/64)
+  = 12 (16/128 − 10.6667/128 + 2/128)
+  = 12 (7.3333/128) = 27/32.
+
+{""answer"": 1}",True,16.592628240585327,finetuned
+exam_2020_12_17-30,danish,5,1,False,"Vi har f(x, y) = 24xy for 0 < x < 1 − y og y > 0. For P(X ≤ 3/4, Y ≤ 1/2) integrerer vi over 0 ≤ y ≤ 1/2 og 0 ≤ x ≤ min(3/4, 1 − y). For y ≤ 1/2 er 1 − y ≥ 1/2, så min(3/4, 1 − y) = 3/4. Dermed:
+P = ∫_{0}^{1/2} ∫_{0}^{3/4} 24xy dx dy = ∫_{0}^{1/2} 12y(3/4)^2 dy = 12·(9/16)·(1/4) = 27/32.
+
+{""answer"": 1}",True,10.314594268798828,finetuned
+exam_2021_12_15-13,english,1,1,True,"Since A and B are mutually exclusive and both have positive probability, they cannot occur simultaneously. Thus, the indicators I_A and I_B are perfectly negatively correlated: when one is 1, the other must be 0. This implies a negative correlation.
+
+{""answer"": 1}",True,3.090460777282715,finetuned
+exam_2021_12_15-13,danish,1,1,True,"Da A og B er gensidigt udelukkende og begge har positiv sandsynlighed, kan de ikke samtidig indtræffe. Derfor er deres indikatorvariable I_A og I_B uafhængige af hinanden i forhold til at være 1 på samme tid, men de er ikke uafhængige i sandsynlighedsforståelsen. Der gælder P(I_A=1, I_B=1)=0, mens P(I_A=1)P(I_B=1) > 0. Dette medfører, at kovariansen Cov(I_A, I_B) = E[I_A I_B] − E[I_A]E[I_B] = 0 − p_A p_B < 0. Dermed er korrelationen negativ.
+
+{""answer"": 1}",True,10.020671129226685,finetuned
+exam_2021_12_15-16,english,2,6,False,"We use the symmetry of the standard bivariate normal with correlation ρ = 1/2. The event X > |Y| is symmetric in Y and −Y, so
+P(X > |Y|) = 2 P(X > Y, Y ≥ 0).
+
+Let Z = X − Y. Then (Y, Z) is bivariate normal with mean 0, variances 1 and 2, and correlation
+ρ = Cov(Y, Z) / (σ_Y σ_Z) = Cov(Y, X − Y) / (1 · √2) = (ρ − 1) / √2 = −√2/4.
+
+Thus,
+P(X > Y, Y ≥ 0) = P(Z ≥ 0, Y ≥ 0) = (1/4) + (1/2π) arctan(ρ) = 1/4 − (1/4π) arctan(√2).
+
+Therefore,
+P(X > |Y|) = 2 P(X > Y, Y ≥ 0) = 1/2 − (1/2π) arctan(√2).
+
+Thi",True,18.13740372657776,finetuned
+exam_2021_12_15-16,danish,2,2,True,"Vi har (X, Y) ~ N(0, I) med korrelation ρ = 1/2. Da X og Y er uafhængige standardnormaler med korrelation 1/2, kan vi skrive Y = ρ X + sqrt(1−ρ^2) Z, hvor Z ~ N(0,1) uafhængig af X. Dermed er
+P(X > |Y|) = P(X > |ρ X + sqrt(1−ρ^2) Z|) = 2 P(X > ρ X + sqrt(1−ρ^2) Z, Z ≥ 0).
+Med ρ = 1/2 og sqrt(1−ρ^2) = sqrt(3)/2 fås
+P = 2 ∫_{0}^{∞} P(X > (1/2)X + (sqrt(3)/2)z) φ(z) dz
+= 2 ∫_{0}^{∞} P(X > (sqrt(3)/2)z) φ(z) dz
+= 2 ∫_{0}^{∞} Φ((sqrt(3)/2)z) φ(z) dz
+= 2 ∫_{0}^{∞} Φ((sqrt(3)/2)z) φ(z) dz
+= 2 ∫_{0}^{∞}",False,837.5614354610443,finetuned
+exam_2021_12_15-17,english,1,1,True,"For three i.i.d. standard normal variables, the density of the k-th order statistic is:
+f_{(k)}(x) = n! / [(k-1)!(n-k)!] [F(x)]^{k-1} [1 - F(x)]^{n-k} f(x).
+
+Here n = 3, k = 2, F(x) = Φ(x), f(x) = φ(x) = (1/√(2π)) e^{-x²/2}.
+Thus:
+f_{(2)}(x) = 3! / [(1!)(1!)] [Φ(x)]^{1} [1 - Φ(x)]^{1} φ(x)
+= 6 φ(x) Φ(x) (1 - Φ(x)).
+
+This matches option 1.
+
+{""answer"": 1}",True,9.401705980300903,finetuned
+exam_2021_12_15-17,danish,1,1,True,"For tre uafhængige standardnormaler X1, X2, X3 er den næststørste (X(2)) tæthed:
+f_{X(2)}(x) = 3! f(x) [F(x)]^{2} [1 - F(x)] = 6 f(x) [F(x)]^{2} [1 - F(x)].
+Her er f(x) = (1/√(2π)) e^{-x^2/2} og F(x) = Φ(x). Dermed er
+f_{X(2)}(x) = (6/√(2π)) e^{-x^2/2} (Φ(x)^2 (1 - Φ(x))).
+
+{""answer"": 1}",True,8.70462679862976,finetuned
+exam_2021_12_15-18,english,5,5,True,"We model the number of eruptions in 100 years as a Poisson process with rate λ = 1/4000 per year. The probability of at least one eruption in 100 years is:
+P(N ≥ 1) = 1 − P(N = 0) = 1 − e^{−λ·100} = 1 − e^{−1/40}.
+
+{""answer"": 5}",True,5.045536518096924,finetuned
+exam_2021_12_15-18,danish,5,5,True,"Vi modellerer antallet af udbrud som en Poisson-proces med rate λ = 1/4000 per år. Sandsynligheden for mindst ét udbrud i 100 år er derfor P(N ≥ 1) = 1 − e^{−λ·100} = 1 − e^{−1/40}.
+
+{""answer"": 5}",True,4.792848110198975,finetuned
+exam_2021_12_15-23,english,4,5,False,"Let A = first interval is +5 V, B = second interval is +5 V.
+- P(A) = 3/7
+- P(B|A) = 3/8, so P(A ∩ B) = (3/7)(3/8) = 9/56
+- P(B|¬A) = 1/2 (since the second interval is independent of the first), so P(¬A ∩ B) = (4/7)(1/2) = 2/7
+
+Thus, P(at least one +5 V) = P(A ∪ B) = P(A) + P(B|¬A)P(¬A) = 3/7 + 2/7 = 5/7.
+
+{""answer"": 5}",True,8.894768953323364,finetuned
+exam_2021_12_15-23,danish,4,4,True,"Vi har P(+5) = 3/7 og P(+5|+5) = 3/8. Dermed:
+- P(+5,+5) = P(+5)·P(+5|+5) = (3/7)(3/8) = 9/56
+- P(+5,-5) = P(+5)·P(-5|+5) = (3/7)(5/8) = 15/56
+- P(-5,+5) = P(-5)·P(+5|-5) = (4/7)(3/4) = 12/56
+- P(-5,-5) = P(-5)·P(-5|-5) = (4/7)(1/4) = 1/7 = 8/56
+
+Sandsynligheden for mindst et +5 er derfor:
+P(+5,+5) + P(+5,-5) + P(-5,+5) = 9/56 + 15/56 + 12/56 = 36/56 = 9/14.
+
+{""answer"": 4}",True,13.567338228225708,finetuned
+exam_2021_12_15-28,english,4,5,False,"The probability that the maximum of 6 independent rolls is ≤ x is (x/6)^6, since each roll must be ≤ x. For x=1 to 6, this gives:
+- x=1: (1/6)^6 = 1/46656
+- x=2: (2/6)^6 = 64/46656 = 4/36
+- x=3: (3/6)^6 = 729/46656 = 27/216
+- x=4: (4/6)^6 = 4096/46656 = 256/1296
+- x=5: (5/6)^6 = 15625/46656 = 3125/7776
+- x=6: (6/6)^6 = 1
+
+This matches option 5.
+
+{""answer"": 5}",True,11.545971632003784,finetuned
+exam_2021_12_15-28,danish,4,4,True,"For at det højeste antal øjne er ≤ x, skal alle 6 kast være ≤ x. Sandsynligheden for et enkelt kast ≤ x er x/6, så for 6 uafhængige kast er det (x/6)^6 = x^6 / 46656.
+
+{""answer"": 4}",True,4.414819002151489,finetuned
+exam_2022_12_16-9,english,3,3,True,"We are given:
+- P(S) = 1/10 (probability turbines stop)
+- P(W|S) = 9/10 (wind above max given stop)
+- P(W|¬S) = 1/5 (wind above max given not stop)
+
+We want P(S|W). By Bayes’ theorem:
+P(S|W) = [P(W|S) P(S)] / [P(W|S) P(S) + P(W|¬S) P(¬S)]
+= (9/10 · 1/10) / [(9/10 · 1/10) + (1/5 · 9/10)]
+= (9/100) / (9/100 + 9/50)
+= (9/100) / (27/100)
+= 1/3
+
+{""answer"": 3}",True,10.476127624511719,finetuned
+exam_2022_12_16-9,danish,3,3,True,"Vi bruger Bayes’ sætning:
+P(stop | vind > max) = [P(vind > max | stop) · P(stop)] / P(vind > max)
+P(vind > max) = P(vind > max | stop) · P(stop) + P(vind > max | ikke stop) · P(ikke stop)
+= (9/10 · 1/10) + (1/5 · 9/10) = 9/100 + 9/50 = 27/100
+Dermed:
+P(stop | vind > max) = (9/10 · 1/10) / (27/100) = (9/100) / (27/100) = 1/3
+
+{""answer"": 3}",True,9.614009141921997,finetuned
+exam_2022_12_16-13,english,3,2,False,"Since X and Y are independent Gamma(2,1), their ratio Z = Y/X follows a F-distribution with (2,2) degrees of freedom. The PDF of F(2,2) is f(z) = 1/(1+z)^2 for z > 0. Thus, the correct answer is option 2.
+
+{""answer"": 2}",True,4.065910577774048,finetuned
+exam_2022_12_16-13,danish,3,3,True,"Vi har X ~ Gamma(2,1) og Y ~ Gamma(2,1) uafhængige. For Z = Y/X gælder, at hvis X og Y er uafhængige Gamma(α,1) og Gamma(β,1), så er Z = Y/X Beta(β,α). Her er α = β = 2, så Z ~ Beta(2,2). Denne fordeling har tæthed f_Z(z) = 6z(1+z)^{-4} for z > 0, hvilket matcher valgmulighed 3.
+
+{""answer"": 3}",True,7.30693244934082,finetuned
+exam_2022_12_16-17,english,1,1,True,"Let X ~ Beta(3,1). Then F(x) = x^3 for 0 ≤ x ≤ 1. For the maximum of four i.i.d. such variables, the CDF is F_max(x) = [F(x)]^4 = x^{12}. This corresponds to a Beta(12,1) distribution. The density is 12x^{11}, which is not among the options. However, option 1 is a Beta(12,1) distribution, which matches the CDF.
+
+{""answer"": 1}",True,6.2815375328063965,finetuned
+exam_2022_12_16-17,danish,1,1,True,"For uafhængige Beta(α, β)-variabler med β=1 er den maksimumsfordeling Beta(nα, β) for n uafhængige. Her er α=3 og n=4, så den maksimumsfordeling er Beta(12,1). Dette matcher valgmulighed 1.
+
+{""answer"": 1}",True,4.444767236709595,finetuned
+exam_2022_12_16-18,english,1,1,True,"We are given the mean duration μ = 3/2 years. By Markov’s inequality, for any t > 0,
+P(X ≥ t) ≤ μ/t.
+With t = 4, this gives P(X ≥ 4) ≤ (3/2)/4 = 3/8.
+
+Thus, the probability that the duration exceeds 4 years can be at most 3/8.
+
+{""answer"": 1}",True,4.743301153182983,finetuned
+exam_2022_12_16-18,danish,1,3,False,"Vi ved kun gennemsnittet (3/2 år). Den maksimale sandsynlighed for at en stokastisk variabel X med middelværdi μ overstiger et tal a er P(X > a) ≤ 1 − a/μ (ved Markovs ulighed). Her a = 4, μ = 3/2, så P(X > 4) ≤ 1 − (4)/(3/2) = 1 − 8/3 = −5/3, hvilket er umuligt. Derfor er den maksimale mulige sandsynlighed 0, men ingen af valgmulighederne er 0. Den nærmeste mulige er 1/6 (≈0,167), som er mindre end 1/2 og dermed mulig.
+
+{""answer"": 3}",True,10.142165899276733,finetuned
+exam_2022_12_16-22,english,5,5,True,"Let X and Y be the east-west and north-south deviations, both N(0, 50^2) and independent. The distance from the target is R = sqrt(X^2 + Y^2). The probability of missing by more than 100 m is P(R > 100).
+
+For independent N(0, σ^2) components, R^2/σ^2 ~ χ^2(2), so R/σ ~ Rayleigh(1). Thus, P(R > 100) = P(R/σ > 2) = e^{-2}.
+
+{""answer"": 5}",True,7.102266073226929,finetuned
+exam_2022_12_16-22,danish,5,5,True,"Vi modellerer afstanden fra målet som R = √(X² + Y²), hvor X og Y er uafhængige N(0, σ²) med σ = 50 m. Da X og Y er uafhængige normaler med samme varians, er R Rayleigh-fordelt med parameter σ. For Rayleigh-fordelingen gælder P(R > r) = e^(-r²/(2σ²)).
+
+Her er r = 100 m og σ = 50 m, så
+P(R > 100) = e^(-100²/(2·50²)) = e^(-100/50) = e^(-2).
+
+{""answer"": 5}",True,8.929987907409668,finetuned
+exam_2022_12_16-25,english,3,3,True,"The density f(x) = (1/√(2π)) (1/x) e^{-½(log x)^2} for x > 0 is the lognormal density with parameters μ = 0 and σ = 1. Thus, X = e^Z where Z ~ N(0,1). Therefore, P(X ∈ [1, 1.0001]) = P(Z ∈ [0, log(1.0001)]) ≈ Φ(log(1.0001)) − Φ(0) ≈ Φ(0.0001) − Φ(0) ≈ 0.0001/√(2π) by the approximation Φ(ε) − Φ(0) ≈ ε/√(2π) for small ε.
+
+{""answer"": 3}",True,9.564255475997925,finetuned
+exam_2022_12_16-25,danish,3,2,False,"Tætheden er f(x) = (1/√(2π)) · (1/x) · exp(−(1/2)(ln x)^2) for x > 0, hvilket er lognormalfordelingen med μ = 0 og σ = 1. Dermed er ln X ~ N(0,1), og P(1 ≤ X ≤ 10001) = P(0 ≤ ln X ≤ ln 10001) = Φ(ln 10001) − Φ(0). Da ln 10001 ≈ 9,21, er dette en god approximation af Φ(9,21) − Φ(0) ≈ 1 − 0,5 = 0,5. Denne er større end alle de eksakte alternativer, men mindre end 1/√(2π) ≈ 0,4. Derfor er den bedste approksimation blandt valgmulighederne 1/√(2π).
+
+{""answer"": 2}",True,12.43687105178833,finetuned
+exam_2022_12_16-29,english,4,5,False,"Let X = systolic, Y = diastolic, both N(0,1) with Corr(X,Y) = 5/13. We want P(Y > 0 and X > Y).
+
+Let Z = X − Y. Then Z ~ N(0, 2 − 2ρ) = N(0, 2(1 − ρ)) with ρ = 5/13. The event {Y > 0, X > Y} is equivalent to {Y > 0, Z > 0}. Since Y and Z are jointly normal with mean 0, the angle between their directions is θ = arctan(ρ) = arctan(5/13). Thus the probability is the angle between the positive Y and Z axes divided by 2π, which is (π/2 − θ)/2π = (π/2 − arctan(5/13))/2π.
+
+Using arctan(5/13) = arctan(3",True,13.88680911064148,finetuned
+exam_2022_12_16-29,danish,4,1,False,"Vi har en bivariat normalfordeling med korrelation ρ = 5/13. Vi søger P(D > μ_D, S > D), hvor D og S er diastolisk og systolisk på standardiseret skala.
+
+- Da D og S er standardiserede, er μ_D = 0 og σ_D = σ_S = 1.
+- S > D ⇔ S − D > 0. Med S og D uafhængige standardnormaler og ρ = 5/13, er S − D ~ N(0, 2 − 2ρ) = N(0, 14/13).
+- Vi kan skrive P(D > 0, S > D) = P(D > 0, S − D > 0) = P(D > 0, S − D > 0) = 1/4 − (1/(2π)) arctan(ρ) = 1/4 − (1/(2π)) arctan(5/13).
+
+Men en mere direkte beregning (via sta",True,17.4626727104187,finetuned
+exam_2023_12_15-4,english,5,1,False,"Let X and Y be the standardized bivariate normal changes with correlation ρ = 1/2. We want P(X > 0, Y > 0, |X| ≤ 2|Y|, |Y| ≤ 2|X|).
+
+Due to symmetry, this is 4 times the probability in the first quadrant with X ≤ 2Y and Y ≤ 2X. In the first quadrant, the condition becomes 1/2 ≤ X/Y ≤ 2. Using the angle θ = arctan(Y/X), this corresponds to θ ∈ [arctan(1/2), arctan(2)].
+
+For a bivariate normal with correlation ρ, the angle θ has density f(θ) = (1/π) / sqrt(1 − ρ^2) on (−π/2, π/2). Here ρ = 1/2, so",True,22.93291711807251,finetuned
+exam_2023_12_15-4,danish,5,4,False,"Vi har (X, Y) ~ N2(0, I2) med ρ = 1/2. Vi søger P(X > 0, Y > 0, |X| ≤ 2|Y|, |Y| ≤ 2|X|).
+
+- |X| ≤ 2|Y| og |Y| ≤ 2|X| er ækvivalent med |X|/|Y| ∈ [1/2, 2], dvs. |X|/|Y| ≤ 2 og |Y|/|X| ≤ 2.
+- For positive X og Y er dette ækvivalent med X ≤ 2Y og Y ≤ 2X, dvs. X/2 ≤ Y ≤ 2X.
+
+Dermed er P(X > 0, Y > 0, |X| ≤ 2|Y|, |Y| ≤ 2|X|) = P(X > 0, Y > 0, X/2 ≤ Y ≤ 2X).
+
+For standardiseret bivariat normal med ρ = 1/2 er forholdet mellem X og Y givet ved Y = ρ X + ε, hvor ε er uafhængig af X. Med ρ = 1/2 fås Y = (",True,40.612595081329346,finetuned
+exam_2023_12_15-10,english,4,4,True,"We model the number of underdosed pills as a binomial with n=20 and p=0.05. The probability of three or more is the sum from i=3 to 20 of C(20,i) (0.05)^i (0.95)^{20-i}, which matches option 4.
+
+{""answer"": 4}",True,4.284943103790283,finetuned
+exam_2023_12_15-10,danish,4,4,True,"Vi har n=20 uafhængige prøver med p=0,05. Sandsynligheden for 3 eller flere er P(X ≥ 3) = 1 − P(X ≤ 2), hvor X ~ Binomial(20, 0,05). Dette kan beregnes som summen over i=3 til 20 af binomialtællene, hvilket matcher valgmulighed 4.
+
+{""answer"": 4}",True,5.774182558059692,finetuned
+exam_2023_12_15-12,english,5,5,True,"The time between calls in a Poisson process (which models random arrivals with a constant rate λ per minute) follows an exponential distribution with rate λ. The mean time between calls is 1/λ, so the correct distribution is exponential with rate λ.
+
+{""answer"": 5}",True,3.0959293842315674,finetuned
+exam_2023_12_15-12,danish,5,4,False,"Tiden mellem tilfældige begivenheder i en Poisson-proces følger en eksponentialfordeling. Hvis λ er den gennemsnitlige rate pr. minut, er middelværdien 1/λ. Dermed er tiden mellem to opkald eksponentielt fordelt med parameter 1/λ.
+
+{""answer"": 4}",True,4.598617315292358,finetuned
+exam_2023_12_15-19,english,3,6,False,"Cov(X, Y) = E[XY] − E[X]E[Y].
+
+- Support: 0 < x < y < 1.
+- f(x, y) = 2 on this region.
+
+E[X] = ∫₀¹ ∫ₓ¹ 2x dy dx = ∫₀¹ 2x(1 − x) dx = 2/3.
+E[Y] = ∫₀¹ ∫₀^y 2y dx dy = ∫₀¹ 2y^2 dy = 2/3.
+E[XY] = ∫₀¹ ∫ₓ¹ 2x y dy dx = ∫₀¹ 2x (y²/2)|ₓ¹ dx = ∫₀¹ x(1 − x²) dx = 1/4.
+
+Thus Cov(X, Y) = 1/4 − (2/3)^2 = 1/4 − 4/9 = −5/36.
+
+The correct answer is not listed among the options. Therefore, the best choice is:
+
+{""answer"": 6}",True,12.073391199111938,finetuned
+exam_2023_12_15-19,danish,3,5,False,"Cov(X,Y) = E[XY] − E[X]E[Y].
+- E[XY] = ∫∫ xy·2 dx dy over 0 < x < y < 1 = 1/6.
+- E[X] = ∫∫ x·2 dx dy = 1/4, E[Y] = ∫∫ y·2 dx dy = 3/4.
+- Cov(X,Y) = 1/6 − (1/4)(3/4) = 1/6 − 3/16 = 1/48.
+
+{""answer"": 5}",True,6.779198884963989,finetuned
+exam_2023_12_15-29,english,2,2,True,"We want P(min ≥ 2a) = P(all offers ≥ 2a) = [P(X ≥ 2a)]^4.
+
+For X with F(x) = 1 − exp(−(x−a)/b) for x ≥ a, we have P(X ≥ 2a) = exp(−(2a−a)/b) = exp(−a/b).
+
+Thus P(min ≥ 2a) = [exp(−a/b)]^4 = exp(−4a/b).
+
+Since the question gives F(x) = 1 − exp(−(x−a)/b), it implies b = 1. Hence the answer is exp(−4a) = exp(−4ab).
+
+{""answer"": 2}",True,8.439594030380249,finetuned
+exam_2023_12_15-29,danish,2,6,False,"Vi søger P(min ≥ 2a) = P(alle tilbud ≥ 2a) = [P(X ≥ 2a)]^4. For F(x) = 1 − exp(−(x−a)/b) gælder P(X ≥ 2a) = exp(−(2a−a)/b) = exp(−a/b). Dermed fås P(min ≥ 2a) = [exp(−a/b)]^4 = exp(−4a/b). Dette matcher ikke nogen af de givne valgmuligheder, hvis b er en konstant. Men hvis b = 1, fås exp(−4a), som ikke matcher entydigt. Derfor er den korrekte valgmulighed 6.
+
+{""answer"": 6}",True,9.291065454483032,finetuned
+exam_2023_12_15-30,english,1,1,True,"Let X ~ N(1000, 100²) be the number of 20-foot containers and Y ~ N(500, 50²) be the number of 40-foot containers, with Corr(X, Y) = -4/5. The total volume is V = 33X + 66Y = 33(X + 2Y). We want P(V > 9000) = P(X + 2Y > 300).
+
+Let Z = X + 2Y. Then:
+- Mean: μ_Z = 1000 + 2·500 = 2000
+- Variance: Var(Z) = Var(X) + 4 Var(Y) + 4 Cov(X, Y)
+  = 100² + 4·50² + 4·(ρ σ_X σ_Y)
+  = 10000 + 10000 + 4·(-4/5)·100·50
+  = 20000 − 16000 = 4000
+- Standard deviation: σ_Z = √4000 = 20√10
+
+Standardize: P(Z > 300) = P",True,18.32430863380432,finetuned
+exam_2023_12_15-30,danish,1,6,False,"Lad X være antallet af 20-fodscontainere og Y antallet af 40-fodscontainere. Volumen V = 33X + 66Y. Da (X, Y) er bivariat normal, er V normal med:
+- Middelværdi: 33·1000 + 66·500 = 69000
+- Varians: 33²·100² + 66²·50² + 2·33·66·100·50·(−4/5) = 10890000
+- Standardafvigelse: σ = 3300
+
+Sandsynligheden for V > 69000 er derfor P(Z > 0) = 1/2. Ingen af valgmulighederne er 1/2, så det korrekte svar er “ved ikke”.
+
+{""answer"": 6}",True,11.836603164672852,finetuned
+exam_2024_12_17-4,english,1,3,False,"We need the probability that the 3rd success (passing quality) occurs on the 6th trial, with exactly 3 failures in the first 5 trials. This is a negative binomial distribution with parameters r=3 (successes) and p=2/5.
+
+- Choose 2 of the first 5 trials to be successes: C(5,2).
+- The 6th trial must be a success.
+- The probability is C(5,2) * (2/5)^3 * (3/5)^3 = 10 * (2^3 * 3^3) / 5^6 = (2^3 * 3^3) / 5^5.
+
+This matches option 3.
+
+{""answer"": 3}",True,8.584254503250122,finetuned
+exam_2024_12_17-4,danish,1,5,False,"Vi søger sandsynligheden for, at den 3. succes (passende apparat) opstår på præcis den 6. prøve. Dette er en negativ binomialfordeling med r = 3 succeser og p = 2/5. Den kræver præcis 2 succeser i de første 5 prøver og en succes på den 6. prøve:
+P = C(5,2) * (2/5)^2 * (3/5)^3 * (2/5) = C(5,2) * 2^3 * 3^3 / 5^6.
+
+Dette matcher valgmulighed 5.
+
+{""answer"": 5}",True,8.46381139755249,finetuned
+exam_2024_12_17-8,english,1,1,True,"We want P(max > x and second max ≤ x). This is the probability that at least one of the n variables is > x and at most one is > x. That is, exactly one of the n variables is > x. The probability of exactly one being > x is n F(x)^{n-1} (1 - F(x)).
+
+{""answer"": 1}",True,4.222293853759766,finetuned
+exam_2024_12_17-8,danish,1,2,False,"Vi søger P(max > x, andenmax ≤ x). Dette er lig med P(eksakt én af de n variable er > x og de resterende n-1 er ≤ x). Antallet af måder at vælge den ene er n, og sandsynligheden for en given sådan konfiguration er (1 - F(x))·(F(x))^{n-1}. Derfor:
+P = n·(1 - F(x))·(F(x))^{n-1}.
+
+{""answer"": 2}",True,6.313778400421143,finetuned
+exam_2024_12_17-9,english,3,3,True,"Since the time between outages T is exponential with rate Λ, E[T | Λ] = 1/Λ. With Λ ~ Uniform(1, 5), the expected time is E[1/Λ] = ∫₁⁵ (1/λ) (1/4) dλ = (1/4) ln(5). Thus, the correct answer is option 3.
+
+{""answer"": 3}",True,4.8682591915130615,finetuned
+exam_2024_12_17-9,danish,3,3,True,"Tiden mellem nedbrud T er eksponential med rate Λ, så E[T | Λ] = 1/Λ. Λ ~ Uniform(1, 5), så E[T] = E[1/Λ] = ∫₁⁵ (1/λ)·(1/4) dλ = (1/4) ln(5) = (ln 5)/4.
+
+{""answer"": 3}",True,4.937850713729858,finetuned
+exam_2024_12_17-14,english,2,2,True,"We use Bayes’ theorem. Let M = man, W = woman, C = colorblind.
+
+- P(M) = 0.51, P(W) = 0.49
+- P(C|M) = 0.05, P(C|W) = 0.0025
+
+P(C) = P(C|M)P(M) + P(C|W)P(W) = 0.05·0.51 + 0.0025·0.49 = 0.0255 + 0.001225 = 0.026725
+
+P(M|C) = P(C|M)P(M) / P(C) = 0.0255 / 0.026725 ≈ 0.9542
+
+{""answer"": 2}",True,10.142257928848267,finetuned
+exam_2024_12_17-14,danish,2,2,True,"Vi bruger Bayes’ sætning:
+P(mand | farveblind) = P(farveblind | mand)·P(mand) / P(farceblind)
+= (0,05·0,51) / [(0,05·0,51) + (0,0025·0,49)] = 0,0255 / (0,0255 + 0,001225) = 0,0255 / 0,026725 ≈ 0,9542.
+
+{""answer"": 2}",True,7.344354152679443,finetuned
+exam_2024_12_17-15,english,4,6,False,"We have X ~ Uniform[0, 2] and Y ~ Uniform[0, 1], independent. For Z = X/Y, the density is:
+f_Z(z) = ∫_0^1 f_X(yz) f_Y(y) y dy = ∫_0^1 (1/2) y dy = 1/4 for 0 < z < 2,
+and
+f_Z(z) = ∫_{z/2}^1 (1/2) y dy = (1/4)(1 - z/2) for z ≥ 2.
+Thus, f_Z(z) = 1/4 for 0 < z < 2 and f_Z(z) = (1/4)(1 - z/2) for z ≥ 2.
+
+{""answer"": 6}",True,9.062822341918945,finetuned
+exam_2024_12_17-15,danish,4,4,True,"Vi har X ~ Uniform[0,2] og Y ~ Uniform[0,1], uafhængige. For Z = X/Y fås for z > 0:
+- P(Z ≤ z) = P(X ≤ zY) = ∫_{y=0}^1 ∫_{x=0}^{min(2, zy)} (1/2) dx dy.
+- For 0 < z ≤ 2: min(2, zy) = zy, så P(Z ≤ z) = (1/2) ∫_0^1 zy dy = z/4.
+- For z ≥ 2: min(2, zy) = 2 for y ≥ 2/z, så P(Z ≤ z) = (1/2) [∫_0^{2/z} zy dy + ∫_{2/z}^1 2 dy] = 1/2 + (1/2)(1 - 2/z) = 1/2 + 1/2 - 1/z = 1 - 1/z.
+
+Dermed fås tætheden:
+- f_Z(z) = d/dz P(Z ≤ z) = 1/4 for 0 < z ≤ 2,
+- f_Z(z) = 1/z^2 for z ≥ 2.
+
+Dette matcher valgmulighed 4.",True,15.935633420944214,finetuned
+exam_2024_12_17-16,english,3,3,True,"We need Corr(XY, Y) = Cov(XY, Y) / (σ_{XY} σ_Y).
+
+- Cov(XY, Y) = E[XY^2] − E[XY]E[Y].
+  - E[XY] = E[X]E[Y] = 2·1 = 2.
+  - E[XY^2] = E[X]E[Y^2] = 2·(σ_Y^2 + μ_Y^2) = 2·(1 + 1) = 4.
+  - So Cov(XY, Y) = 4 − 2·1 = 2.
+
+- σ_{XY} = sqrt(Var(XY)) = sqrt(E[X^2 Y^2] − (E[XY])^2).
+  - E[X^2 Y^2] = E[X^2]E[Y^2] = (σ_X^2 + μ_X^2)(σ_Y^2 + μ_Y^2) = (1 + 4)(1 + 1) = 10.
+  - Var(XY) = 10 − 2^2 = 6, so σ_{XY} = sqrt(6).
+
+- σ_Y = 1.
+
+Thus Corr(XY, Y) = 2 / (sqrt(6)·1) ≈ 0.8165.
+
+{""answer"": 3}",True,15.738650560379028,finetuned
+exam_2024_12_17-16,danish,3,5,False,"Korrelationen mellem XY og Y er Cov(XY, Y) / (σ_{XY} σ_Y). Da X og Y er uafhængige, er Cov(XY, Y) = E[XY^2] − E[X]E[Y^2] = E[X]E[Y^2] − E[X]E[Y^2] = 0. Dermed er korrelationen 0. Det kan ikke beregnes på grund af manglende oplysninger om fælles fordelingen af X og Y.
+
+{""answer"": 5}",True,6.64313006401062,finetuned
+exam_2024_12_17-28,english,1,1,True,"Let X and Y be the coordinates of the landing point, with (X, Y) ~ N2(0, I) and correlation ρ = 2/7. The region is the first quadrant: X ≥ 0, Y ≥ 0. For a bivariate normal with mean 0 and correlation ρ, the probability of the first quadrant is
+P(X ≥ 0, Y ≥ 0) = (1/4) + (1/(2π)) arctan(ρ).
+With ρ = 2/7, this becomes
+(1/4) + (1/(2π)) arctan(2/7) = (1/4) + (1/(2π)) arctan(2/7).
+This matches option 1.
+
+{""answer"": 1}",True,9.042575120925903,finetuned
+exam_2024_12_17-28,danish,1,4,False,"For en standardiseret bivariat normalfordeling med korrelationskoefficient ρ = 2/7 er sandsynligheden for at lande i første kvadrant (X ≥ 0, Y ≥ 0) givet ved:
+P(X ≥ 0, Y ≥ 0) = 1/4 + (1/(2π)) · arctan(ρ).
+Hermed fås:
+1/4 + (1/(2π)) · arctan(2/7) = 1/4 + (1/(2π)) · arctan(4/7) (ved at bruge arctan(ρ) = arctan(4/7) for ρ = 2/7).
+
+Dette matcher valgmulighed 4.
+
+{""answer"": 4}",True,9.32674527168274,finetuned
+exam_2024_12_17-30,english,3,3,True,"To find the correct statement, compute the marginal probabilities by summing the joint probabilities:
+
+- P(X=1) = 1/9 + 2/9 + 2/9 = 5/9
+- P(X=2) = 0 + 1/9 + 2/9 = 3/9 = 1/3
+- P(X=3) = 0 + 0 + 1/9 = 1/9
+- P(Y=3) = 2/9 + 2/9 + 1/9 = 5/9
+- P(X ≤ 2, Y=3) = P(X=1, Y=3) + P(X=2, Y=3) = 2/9 + 2/9 = 4/9
+
+Thus, the correct statement is:
+3. P(Y=3) = 5/9
+
+{""answer"": 3}",True,10.410170078277588,finetuned
+exam_2024_12_17-30,danish,3,2,False,"Vi summerer langs rækker og søjler:
+- P(X=1) = 1/9 + 2/9 + 2/9 = 5/9
+- P(X=2) = 0 + 1/9 + 2/9 = 3/9 = 1/3
+- P(X=3) = 0 + 0 + 1/9 = 1/9
+- P(Y=3) = 2/9 + 2/9 + 1/9 = 5/9
+- P(X ≤ 2, Y=3) = P(X=1, Y=3) + P(X=2, Y=3) = 2/9 + 2/9 = 4/9
+
+Dermed er udsagnet 2 korrekt.
+
+{""answer"": 2}",True,9.713033437728882,finetuned

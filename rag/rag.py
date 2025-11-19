@@ -8,12 +8,12 @@ import faiss
 
 
 # ============================================================
-# 数据结构定义
+# Data structures
 # ============================================================
 
 @dataclass
 class ExamQuestion:
-    """考试问题数据结构"""
+    """Data structure for a single exam question."""
     base_key: str
     context: str
     question: str
@@ -27,11 +27,11 @@ class ExamQuestion:
 
 
 # ============================================================
-# 数据加载
+# Data loading
 # ============================================================
 
 class DataLoader:
-    """加载JSONL格式的考试数据"""
+    """Load exam data from a JSONL file."""
 
     def __init__(self, data_file: str, language: str = 'english'):
         self.data_file = data_file
@@ -39,7 +39,7 @@ class DataLoader:
         self.questions: List[ExamQuestion] = []
 
     def load_data(self) -> List[ExamQuestion]:
-        """加载JSONL格式的数据"""
+        """Load questions from a JSONL file."""
         questions: List[ExamQuestion] = []
 
         try:
@@ -48,10 +48,10 @@ class DataLoader:
                     try:
                         item = json.loads(line.strip())
 
-                        # 动态选择语言
+                        # Choose language dynamically
                         lang_data = item.get(self.language)
                         if not lang_data:
-                            print(f"Warning: Line {line_num} - {self.language} not found for {item.get('base_key', 'unknown')}")
+                            print(f"Warning: Line {line_num} - {self.language} block not found for {item.get('base_key', 'unknown')}")
                             continue
 
                         question = ExamQuestion(
@@ -78,23 +78,23 @@ class DataLoader:
             return []
 
         self.questions = questions
-        print(f"✓ Loaded {len(questions)} questions ({self.language})")
+        print(f"[INFO] Loaded {len(questions)} questions ({self.language})")
         return questions
 
 
 # ============================================================
-# 文本嵌入 - 支持GTE前缀
+# Text embedding (with GTE/E5 prefix support)
 # ============================================================
 
 class TextEmbedder:
-    """文本嵌入生成器 - 支持长文本 + GTE前缀"""
+    """Text embedder with support for long texts and GTE-style prefixes."""
 
     def __init__(self, model_name: str = 'Alibaba-NLP/gte-multilingual-base'):
-        print(f"Loading embedding model: {model_name}...")
+        print(f"[INFO] Loading embedding model: {model_name}...")
 
         self.model_name = model_name
 
-        # 加载模型
+        # Load model
         try:
             self.model = SentenceTransformer(model_name, trust_remote_code=True)
         except Exception:
@@ -104,34 +104,33 @@ class TextEmbedder:
         self.max_seq_length = self.model.max_seq_length
         self.tokenizer = self.model.tokenizer
 
-        # 检查是否需要前缀（GTE和E5系列需要）
+        # Check whether we need prefixes (GTE/E5 style)
         self.needs_prefix = any(x in model_name.lower() for x in ['gte', 'e5'])
 
-        print(f"✓ Embedding model loaded")
+        print(f"[INFO] Embedding model loaded")
         print(f"  Dimension: {self.embedding_dim}")
         print(f"  Max tokens: {self.max_seq_length}")
         if self.needs_prefix:
-            print(f"  ℹ️  Using instruction prefix (query: / passage:)")
+            print("  [INFO] Using instruction prefixes (query: / passage:)")
 
     def _add_prefix(self, text: str, is_query: bool = False) -> str:
-        """为GTE/E5模型添加前缀"""
+        """Add GTE/E5 prefix to text if required."""
         if not self.needs_prefix:
             return text
 
-        # GTE模型使用 "query: " 和 "passage: " 前缀
         prefix = "query: " if is_query else "passage: "
         return prefix + text
 
     def count_tokens(self, text: str) -> int:
-        """统计文本的token数量"""
+        """Estimate token count for a given text."""
         try:
             return len(self.tokenizer.encode(text))
         except Exception:
-            # 如果tokenizer不可用，用粗略估计
+            # Fallback rough estimate
             return int(len(text.split()) * 1.3)
 
     def create_search_text(self, question: ExamQuestion) -> str:
-        """创建用于检索的文本"""
+        """Build the text used for indexing/search for a question."""
         components = [
             question.context,
             question.question,
@@ -151,7 +150,7 @@ class TextEmbedder:
 
         token_count = self.count_tokens(search_text)
         if token_count > self.max_seq_length:
-            print(f"   Warning: Text will be truncated!")
+            print("   Warning: Search text will be truncated to model max length.")
             print(f"   Question: {question.base_key}")
             print(f"   Tokens: {token_count} -> {self.max_seq_length} (truncated)")
 
@@ -164,35 +163,35 @@ class TextEmbedder:
         is_query: bool = False
     ) -> np.ndarray:
         """
-        批量生成文本嵌入
+        Generate embeddings for a list of texts.
 
         Args:
-            texts: 文本列表
-            batch_size: 批处理大小
-            is_query: 是否为查询（True=query前缀, False=passage前缀）
+            texts: List of strings.
+            batch_size: Batch size for encoding.
+            is_query: Whether these are query embeddings (True) or passage embeddings (False).
         """
-        print(f"Generating embeddings for {len(texts)} texts...")
+        print(f"[INFO] Generating embeddings for {len(texts)} texts...")
 
-        # 为GTE模型添加前缀
+        # Add GTE/E5 prefixes if needed
         processed_texts = texts
         if self.needs_prefix:
             prefix_type = "query" if is_query else "passage"
-            print(f"  Adding '{prefix_type}:' prefix to texts...")
+            print(f"  [INFO] Adding '{prefix_type}:' prefix to texts...")
             processed_texts = [self._add_prefix(text, is_query) for text in texts]
 
-        # 统计token长度（使用原始文本，不含前缀）
+        # Token length statistics (on the original, prefix-free text)
         token_counts = [self.count_tokens(text) for text in texts]
         max_tokens = max(token_counts)
         avg_tokens = sum(token_counts) / len(token_counts)
         truncated_count = sum(1 for t in token_counts if t > self.max_seq_length)
 
-        print(f"  Token statistics:")
+        print("  Token statistics:")
         print(f"    Max: {max_tokens} tokens")
         print(f"    Avg: {avg_tokens:.0f} tokens")
-        print(f"    Truncated: {truncated_count}/{len(texts)} questions ({truncated_count/len(texts)*100:.1f}%)")
+        print(f"    Truncated: {truncated_count}/{len(texts)} texts ({truncated_count/len(texts)*100:.1f}%)")
 
         if truncated_count > 0:
-            print(f" {truncated_count} questions will be truncated!")
+            print(f"  [WARN] {truncated_count} texts will be truncated to model max length.")
 
         embeddings = self.model.encode(
             processed_texts,
@@ -201,16 +200,16 @@ class TextEmbedder:
             show_progress_bar=True
         )
 
-        print(f"✓ Embeddings generated (shape: {embeddings.shape})")
+        print(f"[INFO] Embeddings generated (shape: {embeddings.shape})")
         return embeddings
 
     def embed_single(self, text: str, is_query: bool = True) -> np.ndarray:
         """
-        生成单个文本的嵌入
+        Generate an embedding for a single text.
 
         Args:
-            text: 输入文本
-            is_query: 是否为查询（True=query前缀, False=passage前缀）
+            text: Input string.
+            is_query: Whether this is a query embedding (True) or passage (False).
         """
         processed_text = self._add_prefix(text, is_query) if self.needs_prefix else text
 
@@ -221,11 +220,11 @@ class TextEmbedder:
 
 
 # ============================================================
-# 向量数据库
+# Vector database
 # ============================================================
 
 class VectorDatabase:
-    """基于FAISS的向量数据库"""
+    """FAISS-based vector database."""
 
     def __init__(self, embedding_dim: int = 768):
         self.embedding_dim = embedding_dim
@@ -234,9 +233,9 @@ class VectorDatabase:
         self.index: Optional[faiss.IndexFlatIP] = None
 
     def add_questions(self, questions: List[ExamQuestion], embedder: TextEmbedder):
-        """添加问题到向量数据库"""
+        """Add questions to the vector database and build index."""
         if not questions:
-            print("Warning: No questions to add")
+            print("[WARN] No questions to add to vector database.")
             return
 
         search_texts = []
@@ -249,25 +248,25 @@ class VectorDatabase:
                 'search_text': search_text
             })
 
-        # 知识库使用 passage 前缀 (is_query=False)
+        # Knowledge base uses passage embeddings (is_query=False)
         self.embeddings = embedder.embed_texts(search_texts, is_query=False)
         self.embedding_dim = self.embeddings.shape[1]
         self._build_faiss_index()
 
-        print(f"✓ Added {len(questions)} questions to vector database")
+        print(f"[INFO] Added {len(questions)} questions to vector database.")
 
     def _build_faiss_index(self):
-        """构建FAISS索引"""
+        """Build a FAISS index over the current embeddings."""
         if self.embeddings is None or len(self.embeddings) == 0:
-            raise ValueError("No embeddings available for building index")
+            raise ValueError("No embeddings available for building index.")
 
         self.index = faiss.IndexFlatIP(self.embedding_dim)
         self.index.add(self.embeddings.astype('float32'))
 
-        print(f"✓ FAISS index built with {self.index.ntotal} vectors")
+        print(f"[INFO] FAISS index built with {self.index.ntotal} vectors.")
 
     def search(self, query_embedding: np.ndarray, k: int = 5) -> Tuple[np.ndarray, List[int]]:
-        """搜索最相似的k个向量"""
+        """Search for the top-k most similar vectors given a query embedding."""
         if self.index is None:
             raise ValueError("Index not built. Call add_questions() first.")
 
@@ -285,15 +284,15 @@ class VectorDatabase:
 
 
 # ============================================================
-# 多样性过滤
+# Diversity filtering
 # ============================================================
 
 class DiversityFilter:
-    """确保检索结果的多样性"""
+    """Ensure diversity among retrieved questions."""
 
     @staticmethod
     def extract_base_key(key: str) -> str:
-        """提取基础问题ID"""
+        """Extract the base question ID, stripping suffixes like _rephrase_ / _backward_."""
         for suffix in ['_rephrase_', '_backward_']:
             if suffix in key:
                 return key.split(suffix)[0]
@@ -305,7 +304,7 @@ class DiversityFilter:
         questions: List[ExamQuestion],
         k: int = 3
     ) -> List[int]:
-        """过滤结果以确保多样性"""
+        """Filter retrieval results to keep diverse base questions."""
         selected_indices: List[int] = []
         seen_base_keys = set()
 
@@ -327,17 +326,17 @@ class DiversityFilter:
 
 
 # ============================================================
-# 知识点权重
+# Knowledge point weighting
 # ============================================================
 
 class KnowledgePointWeighting:
-    """基于训练准确率的知识点权重系统"""
+    """Knowledge point weighting system based on training accuracy."""
 
     def __init__(self):
         self.weights: Dict[str, float] = {}
 
     def compute_weights(self, accuracy_dict: Dict[str, float], alpha: float = 0.7):
-        """根据准确率计算知识点权重"""
+        """Compute knowledge point weights from accuracy values."""
         for kp, accuracy in accuracy_dict.items():
             if accuracy > 1:
                 accuracy = accuracy / 100.0
@@ -345,14 +344,14 @@ class KnowledgePointWeighting:
             accuracy = max(0.0, min(1.0, accuracy))
             self.weights[kp] = 1.0 + alpha * (1 - accuracy)
 
-        print(f"✓ Computed weights for {len(self.weights)} knowledge points")
+        print(f"[INFO] Computed weights for {len(self.weights)} knowledge points.")
 
         if self.weights:
             sorted_kps = sorted(self.weights.items(), key=lambda x: x[1], reverse=True)
             print("\nTop-5 hardest knowledge points:")
             for kp, weight in sorted_kps[:5]:
                 acc = accuracy_dict[kp]
-                print(f"  • {kp}: weight={weight:.3f} (accuracy={acc:.1%})")
+                print(f"  - {kp}: weight={weight:.3f} (accuracy={acc:.1%})")
 
     def apply_weights(
         self,
@@ -360,7 +359,7 @@ class KnowledgePointWeighting:
         questions: List[ExamQuestion],
         indices: List[int]
     ) -> List[Tuple[float, int]]:
-        """应用知识点权重到搜索结果"""
+        """Apply knowledge point weights to similarity scores."""
         weighted_results: List[Tuple[float, int]] = []
 
         for sim, idx in zip(similarities, indices):
@@ -379,7 +378,7 @@ class KnowledgePointWeighting:
         return weighted_results
 
     def load_from_csv(self, csv_path: str, alpha: float = 0.7):
-        """从CSV文件加载知识点准确率"""
+        """Load knowledge point accuracies from a CSV file and compute weights."""
         try:
             df = pd.read_csv(csv_path)
 
@@ -404,85 +403,76 @@ class KnowledgePointWeighting:
 
 
 # ============================================================
-# 提示构建器 - 包含Pitfalls
+# Prompt builder (optional, commented)
 # ============================================================
 
 # class PromptBuilder:
-#     """构建增强的提示信息"""
-
+#     """Build RAG-augmented prompts that include retrieved reference problems."""
+#
 #     def build_prompt(
 #         self,
 #         test_question: Dict[str, Any],
 #         retrieved_questions: List[ExamQuestion]
 #     ) -> str:
-#         """构建包含检索到的相关问题的提示"""
-
+#         """Construct a prompt that includes retrieved related questions."""
+#
 #         prompt_parts: List[str] = [
 #             "You are an expert in probability and statistics. ",
 #             "Use the following similar problems as reference to solve the given problem.\n\n"
 #         ]
-
+#
 #         if retrieved_questions:
 #             prompt_parts.append("=== REFERENCE PROBLEMS ===\n\n")
-
+#
 #             for i, q in enumerate(retrieved_questions, 1):
 #                 prompt_parts.append(f"Reference {i}:\n")
-
-#                 # Context
+#
 #                 if q.context:
 #                     prompt_parts.append(f"Context: {q.context}\n")
-
-#                 # Question
+#
 #                 prompt_parts.append(f"Question: {q.question}\n")
-
-#                 # Answer
 #                 prompt_parts.append(f"Answer: Option {q.answer_index}\n")
-
-#                 # Key steps
+#
 #                 if q.explanation_key_steps:
 #                     prompt_parts.append("\nKey steps:\n")
 #                     for step in q.explanation_key_steps:
 #                         prompt_parts.append(f"  - {step}\n")
-
-#                 # Formulae
+#
 #                 if q.explanation_formulae:
 #                     prompt_parts.append("\nKey formulae:\n")
 #                     for formula in q.explanation_formulae:
 #                         prompt_parts.append(f"  - {formula}\n")
-
-#                 # Pitfalls
+#
 #                 if q.explanation_pitfalls:
 #                     prompt_parts.append("\nCommon pitfalls to avoid:\n")
 #                     for pitfall in q.explanation_pitfalls:
-#                         prompt_parts.append(f" {pitfall}\n")
-
+#                         prompt_parts.append(f"  - {pitfall}\n")
+#
 #                 prompt_parts.append("\n")
-
+#
 #         prompt_parts.append("=== PROBLEM TO SOLVE ===\n\n")
-
-#         # Test question context
+#
 #         if test_question.get('context'):
 #             prompt_parts.append(f"Context: {test_question['context']}\n")
-
-#         # Test question
+#
 #         prompt_parts.append(f"Question: {test_question['question']}\n\n")
-
-#         # Options
+#
 #         if 'options' in test_question:
 #             prompt_parts.append("Options:\n")
 #             for i, opt in enumerate(test_question['options'], 1):
 #                 prompt_parts.append(f"{i}. {opt}\n")
-
+#
 #         prompt_parts.append("\nProvide your answer and explanation.")
-
+#
 #         return ''.join(prompt_parts)
 
+
 # ============================================================
-# 主RAG系统
+# Main RAG system
 # ============================================================
 
 class ProbabilityRAG:
-    """完整的概率统计RAG系统 - 多语言版"""
+    """Multilingual probability/statistics RAG system."""
 
     def __init__(
         self,
@@ -491,22 +481,18 @@ class ProbabilityRAG:
         embedding_model: Optional[str] = None
     ):
         """
-        初始化RAG系统
+        Initialize the RAG system.
 
         Args:
-            knowledge_base_path: 知识库文件路径
-            language: 语言选择 ('english' 或 'danish')
-            embedding_model: embedding模型名称（如果为None则自动选择）
-                推荐：
-                - 'Alibaba-NLP/gte-multilingual-base' (8192 tokens, 多语言)
-                - 'nomic-ai/nomic-embed-text-v1.5' (8192 tokens, 英文)
+            knowledge_base_path: Path to knowledge base JSONL file.
+            language: 'english' or 'danish'.
+            embedding_model: Name of the embedding model. If None, a default is used.
         """
         print("=" * 60)
         print("Initializing Probability RAG System (Multilingual Edition)")
         print("=" * 60)
 
-        # 自动选择模型
-    
+        # Always use this embedding model here
         embedding_model = 'Alibaba-NLP/gte-multilingual-base'
 
         print(f"Language: {language}")
@@ -529,7 +515,7 @@ class ProbabilityRAG:
         self.vector_db.add_questions(self.questions, self.embedder)
 
         print("=" * 60)
-        print("✓ RAG System Initialized Successfully")
+        print("[INFO] RAG System Initialized Successfully")
         print("=" * 60)
 
     def set_knowledge_weights(
@@ -538,13 +524,13 @@ class ProbabilityRAG:
         csv_path: Optional[str] = None,
         alpha: float = 0.7
     ):
-        """设置知识点权重"""
+        """Configure knowledge point weights from a dict or CSV."""
         if csv_path:
             self.kp_weighter.load_from_csv(csv_path, alpha)
         elif accuracy_dict:
             self.kp_weighter.compute_weights(accuracy_dict, alpha)
         else:
-            print("Warning: No accuracy data provided")
+            print("Warning: No accuracy data provided; weights not updated.")
 
     def retrieve_relevant(
         self,
@@ -553,27 +539,26 @@ class ProbabilityRAG:
         use_diversity: bool = True,
         use_weights: bool = True,
         verbose: bool = False,
-        exclude_base_key: Optional[str] = None,  # 🆕 新增参数
+        exclude_base_key: Optional[str] = None,
     ) -> Tuple[List[ExamQuestion], np.ndarray, List[int]]:
         """
-        检索相关问题
+        Retrieve relevant questions from the knowledge base.
 
         Returns:
-            retrieved_questions: 检索到的问题列表
-            similarities: 相似度分数
-            indices: 问题索引
+            retrieved_questions: list of ExamQuestion
+            similarities: similarity scores
+            indices: indices into self.questions
         """
-
-        # 查询使用 query 前缀 (is_query=True)
+        # Query uses query embeddings (is_query=True)
         query_embedding = self.embedder.embed_single(query, is_query=True)
         initial_k = min(k * 5, len(self.questions)) if use_diversity else k
         similarities, indices = self.vector_db.search(query_embedding, k=initial_k)
 
-        # 保存原始相似度以便回退
+        # Save original results in case we need to fall back
         original_similarities = similarities.copy()
         original_indices = indices.copy()
 
-        # 应用知识点权重
+        # Apply knowledge point weights
         if use_weights and self.kp_weighter.weights:
             weighted_results = self.kp_weighter.apply_weights(
                 similarities, self.questions, indices
@@ -582,9 +567,7 @@ class ProbabilityRAG:
             indices = [idx for _, idx in weighted_results]
             similarities = np.array(weighted_scores)
 
-        # ============================
-        # 🆕 排除与测试题 base_key 相同的题
-        # ============================
+        # Exclude items with the same base_key as the current test question
         if exclude_base_key:
             excluded_base = DiversityFilter.extract_base_key(exclude_base_key)
             filtered_indices: List[int] = []
@@ -600,12 +583,12 @@ class ProbabilityRAG:
                 if q_base == excluded_base:
                     if verbose:
                         print(f"  Skipping {q.base_key} (same base_key as test question)")
-                    continue  # 跳过同 base_key 的题
+                    continue
 
                 filtered_indices.append(idx)
                 filtered_similarities.append(float(sim))
 
-            # 如果过滤后还有结果，就用过滤后的；否则回退到原始结果
+            # Fall back to the original list if everything got filtered
             if filtered_indices:
                 indices = filtered_indices
                 similarities = np.array(filtered_similarities, dtype=np.float32)
@@ -615,7 +598,7 @@ class ProbabilityRAG:
                 indices = original_indices
                 similarities = original_similarities
 
-        # 多样性过滤
+        # Diversity filtering
         if use_diversity:
             selected_indices = self.diversity_filter.filter_diverse_results(
                 indices, self.questions, k
@@ -623,10 +606,9 @@ class ProbabilityRAG:
         else:
             selected_indices = indices[:k]
 
-        # 获取对应的相似度分数
+        # Extract similarity scores for the selected indices
         final_similarities: List[float] = []
         for idx in selected_indices:
-            # 找到这个idx在当前 indices 中的位置
             try:
                 pos = list(indices).index(idx)
                 final_similarities.append(float(similarities[pos]))
@@ -635,9 +617,9 @@ class ProbabilityRAG:
 
         final_similarities_arr = np.array(final_similarities, dtype=np.float32)
 
-        # 打印检索详情
+        # Optional verbose logging
         if verbose:
-            print("\n🔍 Retrieval Details:")
+            print("\n[INFO] Retrieval details:")
             for rank, (idx, sim) in enumerate(zip(selected_indices, final_similarities_arr), 1):
                 q = self.questions[idx]
                 print(f"  Rank {rank}: {q.base_key} (similarity: {sim:.4f})")
@@ -650,8 +632,7 @@ class ProbabilityRAG:
         k: int = 3,
         verbose: bool = True
     ) -> Dict[str, Any]:
-        """使用RAG解决测试问题"""
-
+        """Use RAG to retrieve related questions and build an augmented prompt for a test question."""
         if verbose:
             print("\n" + "=" * 60)
             print(f"Solving: {test_question.get('question', '')[:60]}...")
@@ -661,16 +642,16 @@ class ProbabilityRAG:
         query = f"{context} {question}".strip()
         test_base_key = test_question.get('base_key', '')
 
-        # 获取检索结果、相似度和索引（排除与当前题同 base_key 的样本）
+        # Retrieve related questions, similarities, and indices (excluding same base_key)
         retrieved, similarities, indices = self.retrieve_relevant(
             query,
             k=k,
             verbose=verbose,
-            exclude_base_key=test_base_key,  # 🆕 传入当前题的 base_key
+            exclude_base_key=test_base_key,
         )
 
         if verbose:
-            print(f"\n✓ Retrieved {len(retrieved)} relevant questions:\n")
+            print(f"\n[INFO] Retrieved {len(retrieved)} relevant questions:\n")
             for i, (q, sim) in enumerate(zip(retrieved, similarities), 1):
                 print(f"  {i}. [{q.base_key}] (similarity: {sim:.4f})")
                 print(f"     Question: {q.question[:70]}...")
@@ -679,6 +660,7 @@ class ProbabilityRAG:
                     print(f"                {', '.join(q.knowledge_points[3:6])}")
                 print()
 
+        # NOTE: prompt_builder is commented out above; this call will fail unless you enable it.
         enhanced_prompt = self.prompt_builder.build_prompt(
             test_question, retrieved
         )
@@ -695,26 +677,22 @@ class ProbabilityRAG:
         }
 
         if verbose:
-            print(f"✓ Generated prompt: {len(enhanced_prompt)} characters")
-            print(f"\n📋 Retrieved question IDs: {', '.join(result['retrieved_base_keys'])}")
-            print(f"📊 Similarity scores: {', '.join([f'{s:.4f}' for s in similarities])}")
+            print(f"[INFO] Generated prompt length: {len(enhanced_prompt)} characters")
+            print(f"\nRetrieved question IDs: {', '.join(result['retrieved_base_keys'])}")
+            print("Similarity scores: " + ", ".join([f"{s:.4f}" for s in similarities]))
 
         return result
 
 
 # ============================================================
-# 测试代码
+# Test / demo
 # ============================================================
 
 def main():
-    """主测试函数"""
+    """Main test function for the multilingual RAG system."""
+    print("\n[INFO] Testing Multilingual RAG System\n")
 
-    print("\n🚀 Testing Multilingual RAG System\n")
-
-    # 示例: 英文RAG
-    print("\n" + "🇬🇧 " * 30)
-    print("Testing English RAG")
-    print("🇬🇧 " * 30)
+    print("\n" + "=" * 30 + " ENGLISH RAG " + "=" * 30)
 
     try:
         rag_en = ProbabilityRAG(
@@ -723,10 +701,13 @@ def main():
             embedding_model='Alibaba-NLP/gte-multilingual-base'
         )
 
-        # 设置知识点权重
-        rag_en.set_knowledge_weights(csv_path="Qwen3-14B_trainset_kp_accuracy.csv", alpha=0.7)
+        # Set knowledge point weights
+        rag_en.set_knowledge_weights(
+            csv_path="Qwen3-14B_trainset_kp_accuracy.csv",
+            alpha=0.7
+        )
 
-        # 测试问题
+        # Example test question
         test_question = {
             'base_key': 'exam_2014_05_28-11',
             'context': 'A lotto player buys a row every week. The probability of getting a pay-out on the row in a given week is 1/5.',
@@ -745,19 +726,19 @@ def main():
 
         result_en = rag_en.solve_question(test_question, k=3, verbose=True)
 
-        # 保存结果
+        # Save prompt and retrieval info to a text file
         output_file = 'rag_output_english.txt'
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write("=" * 60 + "\n")
             f.write("RAG Output (English)\n")
             f.write("=" * 60 + "\n\n")
             f.write(f"Retrieved Questions: {', '.join(result_en['retrieved_base_keys'])}\n")
-            f.write(f"Similarities: {', '.join([f'{s:.4f}' for s in result_en['similarities']])}\n\n")
+            f.write("Similarities: " + ", ".join([f"{s:.4f}" for s in result_en['similarities']]) + "\n\n")
             f.write("=" * 60 + "\n\n")
             f.write(result_en['enhanced_prompt'])
-        print(f"\n✓ English results saved to {output_file}")
+        print(f"\n[INFO] English results saved to {output_file}")
 
-        # 统计信息
+        # Summary
         print("\n" + "=" * 60)
         print("RAG System Summary:")
         print("=" * 60)
@@ -770,7 +751,7 @@ def main():
         print("=" * 60)
 
     except Exception as e:
-        print(f"Error with English RAG: {e}")
+        print(f"[ERROR] English RAG error: {e}")
         import traceback
         traceback.print_exc()
 

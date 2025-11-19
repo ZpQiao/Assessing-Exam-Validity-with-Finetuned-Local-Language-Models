@@ -1,0 +1,70 @@
+﻿knowledge_point,total_count,valid_count,correct_count,accuracy,accuracy_pct
+Conditional probability (multiplication rule),102,102,88.0,0.8627,86.27
+Standardization to standard normal (Z-score),102,102,64.0,0.6275,62.75
+Exponential distribution,100,100,89.0,0.89,89.0
+Binomial distribution,98,98,80.0,0.8163,81.63
+Normal distribution,98,98,65.0,0.6633,66.33
+Poisson distribution,86,86,76.0,0.8837,88.37
+Law of total probability,68,68,58.0,0.8529,85.29
+Marginal density from joint (integration),60,60,46.0,0.7667,76.67
+Variance of sum using covariance,56,56,35.0,0.625,62.5
+Change of variables (univariate),50,50,44.0,0.88,88.0
+Linearity of expectation,42,42,31.0,0.7381,73.81
+Hypergeometric distribution,40,40,33.0,0.825,82.5
+Gamma distribution,40,40,32.0,0.8,80.0
+Central Limit Theorem (sum of i.i.d.),40,40,27.0,0.675,67.5
+Order statistics (kth order statistic),38,38,34.0,0.8947,89.47
+"Uniform(0,1) distribution",38,38,34.0,0.8947,89.47
+Geometric probability (area ratio),36,36,21.0,0.5833,58.33
+Geometric distribution,34,34,31.0,0.9118,91.18
+Beta distribution,34,34,25.0,0.7353,73.53
+Law of total expectation,32,32,32.0,1.0,100.0
+Covariance from correlation (Cov=ρσXσY),32,32,22.0,0.6875,68.75
+Inclusion–exclusion principle,28,28,23.0,0.8214,82.14
+Hazard rate (f/S),28,28,22.0,0.7857,78.57
+Complement rule (at least one),28,28,20.0,0.7143,71.43
+Probability from PMF (sum),26,26,22.0,0.8462,84.62
+Bivariate normal quadrant probability,26,26,13.0,0.5,50.0
+Order statistics (maximum),24,24,21.0,0.875,87.5
+Bivariate normal conditional expectation,24,24,20.0,0.8333,83.33
+Probability from joint density (double integral),24,24,16.0,0.6667,66.67
+Correlation vs independence,24,24,14.0,0.5833,58.33
+Expectation from PDF (integration),20,20,20.0,1.0,100.0
+Rayleigh distribution,20,20,18.0,0.9,90.0
+Variance of Binomial (np(1-p)),20,20,12.0,0.6,60.0
+Small-interval probability via PDF,18,18,10.0,0.5556,55.56
+Uniform distribution on a triangular region,16,16,14.0,0.875,87.5
+Chi-square distribution,14,14,12.0,0.8571,85.71
+Chebyshev inequality,14,14,9.0,0.6429,64.29
+Discrete uniform distribution,12,12,12.0,1.0,100.0
+Convolution (sum of independent RVs),12,12,11.0,0.9167,91.67
+Probability from PDF (integration),12,12,11.0,0.9167,91.67
+Weibull distribution,10,10,10.0,1.0,100.0
+Expectation from joint density,10,10,8.0,0.8,80.0
+Geometric probability (uniform disk),10,10,7.0,0.7,70.0
+Expectation from PMF (discrete),8,8,8.0,1.0,100.0
+Memoryless property (exponential),8,8,7.0,0.875,87.5
+PDF validity (nonnegativity/normalization),8,8,6.0,0.75,75.0
+Cantelli inequality (one-sided),8,8,5.0,0.625,62.5
+Covariance from definition,6,6,6.0,1.0,100.0
+Indicator variables (I_A I_B = I_{A∩B}),6,6,5.0,0.8333,83.33
+Negative binomial distribution,6,6,5.0,0.8333,83.33
+Survival function properties,6,6,4.0,0.6667,66.67
+Sum of independent Normals,6,6,2.0,0.3333,33.33
+Continuous uniform on a general interval,4,4,4.0,1.0,100.0
+System reliability (parallel),4,4,4.0,1.0,100.0
+Lognormal distribution,4,4,2.0,0.5,50.0
+Product expectation (independent),4,4,2.0,0.5,50.0
+Expectation is a constant,2,2,2.0,1.0,100.0
+Expected absolute value of standard normal,2,2,2.0,1.0,100.0
+Half-normal distribution (|Z|),2,2,2.0,1.0,100.0
+Joint PDF of independent RVs (product of marginals),2,2,2.0,1.0,100.0
+Multinomial distribution,2,2,2.0,1.0,100.0
+Probability from joint CDF,2,2,2.0,1.0,100.0
+Quantile from survival function,2,2,2.0,1.0,100.0
+Size-biased sampling,2,2,2.0,1.0,100.0
+Standard error of the mean (i.i.d.),2,2,2.0,1.0,100.0
+Variance from PMF,2,2,2.0,1.0,100.0
+Variance of Poisson (Var=λ),2,2,1.0,0.5,50.0
+Markov inequality,2,2,0.0,0.0,0.0
+Variance of product (independent),2,2,0.0,0.0,0.0

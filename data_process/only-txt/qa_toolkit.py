@@ -2,20 +2,22 @@
 # -*- coding: utf-8 -*-
 """
 QA Toolkit (single-file)
-功能：
-  - parse: 解析目录中的 .txt 为同名 .json（每题 fields: language, number, context, question, options）
-  - merge: 将 answers 目录中同名 .json 的 answer 合并回已生成的 .json（按题号匹配）
-  - stats-blanks: 统计空白选项（导出 blank_options_report.csv）
-  - stats-over6: 统计“选项数 > 6”（导出 over_six_options.csv）
+Features:
+  - parse: convert all .txt files in a directory to .json with the same name
+           (per-question fields: language, number, context, question, options)
+  - merge: merge answers from an answers directory back into the generated .json
+           (matched by question id/number)
+  - stats-blanks: count blank options (exports blank_options_report.csv)
+  - stats-over6: count questions with more than 6 options (exports over_six_options.csv)
 
-用法示例：
-  解析：
+Usage examples:
+  Parse:
     python qa_toolkit.py parse --src "path/to/txt_dir" [--confusables-policy preserve|ascii_approx|visual_approx]
-  合并答案：
+  Merge answers:
     python qa_toolkit.py merge --gen "path/to/generated_jsons" --ans "path/to/answers_jsons" [--out same|merged]
-  统计空白选项：
+  Stats for blank options:
     python qa_toolkit.py stats-blanks --dir "path/to/jsons"
-  统计选项超 6：
+  Stats for questions with > 6 options:
     python qa_toolkit.py stats-over6 --dir "path/to/jsons"
 """
 
@@ -28,13 +30,13 @@ from pathlib import Path
 from typing import Any, Dict, List, Tuple, Optional, Union
 
 # =========================
-# Unicode 清洗与规范化
+# Unicode cleaning & normalization
 # =========================
 
-# 把各种奇怪空格 → 普通空格；移除零宽字符；把各种 dash/minus → ASCII '-'
+# Map various weird spaces → normal space; remove zero-width chars; map various dash/minus → ASCII '-'
 _UNICODE_SPACE_TO_SPACE = {
     0x00A0: ' ', 0x1680: ' ',
-    **{cp: ' ' for cp in range(0x2000, 0x200B)},  # U+2000–U+200A（包含 U+2004）
+    **{cp: ' ' for cp in range(0x2000, 0x200B)},  # U+2000–U+200A (including U+2004)
     0x202F: ' ', 0x205F: ' ', 0x3000: ' ',
 }
 _ZERO_WIDTH_REMOVE = {
@@ -45,7 +47,7 @@ _DASHES_TO_MINUS = {
     0x2212: '-', 0x2010: '-', 0x2011: '-', 0x2012: '-', 0x2013: '-', 0x2014: '-', 0x2015: '-',
 }
 
-# σ 的可配置策略：'preserve'（默认，保留 σ）、'ascii_approx'（σ→"sigma"）、'visual_approx'（σ→'o'）
+# Configurable strategy for sigma: 'preserve' (default, keep σ), 'ascii_approx' (σ→"sigma"), 'visual_approx' (σ→'o')
 def build_translate_table(confusables_policy: str) -> Dict[int, Union[int, str]]:
     table: Dict[int, Union[int, str]] = {
         **{k: ord(v) for k, v in _UNICODE_SPACE_TO_SPACE.items()},
@@ -64,18 +66,18 @@ def build_translate_table(confusables_policy: str) -> Dict[int, Union[int, str]]
             0x03C2: "o",
             0x03A3: "O",
         })
-    # preserve: 不做额外替换
+    # preserve: no extra replacement
     return table
 
 def sanitize_text(text: str, translate_table: Dict[int, Union[int, str]]) -> str:
-    """统一换行并应用 translate 表；不改变 '\n' 本身"""
+    """Normalize line breaks and apply the translate table; do not change '\n' itself."""
     if text is None:
         return ""
     text = text.replace("\r\n", "\n").replace("\r", "\n")
     return text.translate(translate_table)
 
 # =========================
-# 解析 .txt → 同名 .json
+# Parse .txt → .json with the same name
 # =========================
 
 OPTION_RE = re.compile(r'^\s*([1-6])\s*(?:[.)])?\s*(.*)$')
@@ -93,10 +95,10 @@ def detect_lang_by_content(text: str) -> str:
         return "danish"
     if re.search(r'^\s*Exercise\s+\d+\s*$', text, re.M) or re.search(r'^\s*Question\s+\d+\s*$', text, re.M):
         return "english"
-    return "danish"  # 兜底
+    return "danish"  # fallback
 
 def normalize_para_breaks(s: str) -> str:
-    """仅用于 context/question：把连续两个及以上换行折叠为一个空格；单换行保留。"""
+    """Used only for context/question: collapse 2+ consecutive newlines into a single space; keep single newlines."""
     if not s:
         return s
     s = re.sub(r'\n{2,}', ' ', s)
@@ -115,7 +117,7 @@ def parse_file_to_items(text: str, language: str) -> List[Dict[str, Any]]:
     cur: Optional[Dict[str, Any]] = None
     buffer: List[str] = []
     state = "idle"  # idle/after_ex/reading_context/after_q/reading_question/reading_options/reading_notes
-    seq = 0         # 顺序号兜底
+    seq = 0         # fallback sequential number
 
     def flush_to(field: str):
         nonlocal buffer, cur
@@ -131,14 +133,14 @@ def parse_file_to_items(text: str, language: str) -> List[Dict[str, Any]]:
         elif state == "reading_question":
             flush_to("question")
 
-        # 题号：优先 Question > Exercise > 顺序
+        # number: prefer Question > Exercise > sequential index
         number = cur.get("q_no") or cur.get("ex_no") or (seq + 1)
         if cur.get("q_no") or cur.get("ex_no"):
             seq = int(number)
         else:
             seq += 1
 
-        # options：保留换行，仅 strip 两端空白
+        # options: keep internal newlines, only strip surrounding whitespace
         option_texts = [opt["text"].strip() for opt in sorted(cur["options"], key=lambda x: x["label"])]
         items.append({
             "language": language,
@@ -150,7 +152,7 @@ def parse_file_to_items(text: str, language: str) -> List[Dict[str, Any]]:
         cur, state = None, "idle"
 
     for line in lines:
-        # 题头
+        # Exercise header
         m_ex = ex_re.match(line)
         if m_ex:
             finalize()
@@ -160,7 +162,7 @@ def parse_file_to_items(text: str, language: str) -> List[Dict[str, Any]]:
         if not cur:
             continue
 
-        # 小题头
+        # Question header
         m_q = q_re.match(line)
         if m_q:
             if buffer and state in ("reading_context", "after_ex"):
@@ -169,7 +171,8 @@ def parse_file_to_items(text: str, language: str) -> List[Dict[str, Any]]:
             buffer, state = [], "after_q"
             continue
 
-        # 仅在看到 question 之后才识别选项（避免把表格/编号当成选项）
+        # Only recognize options after we have seen the question header
+        # (to avoid treating tables/numbering as options)
         m_opt = OPTION_RE.match(line) if state in ("reading_options", "reading_question", "after_q") else None
         if m_opt:
             label = int(m_opt.group(1))
@@ -180,14 +183,15 @@ def parse_file_to_items(text: str, language: str) -> List[Dict[str, Any]]:
             cur["options"].append({"label": label, "text": text_after})
             continue
 
-        # 空行
+        # Blank line
         if line.strip() == "":
             if state == "after_ex":
                 state = "reading_context"; continue
             if state == "after_q":
                 state = "reading_question"; continue
             if state == "reading_options":
-                # 选项阶段：空行不结束，除非已收满 6 个；否则作为上一选项的续行换行
+                # While reading options: blank line does not end options unless we already have 6;
+                # otherwise treat it as a newline continuation for the previous option
                 if len(cur["options"]) >= 6:
                     state = "reading_notes"; buffer = []
                 else:
@@ -198,13 +202,13 @@ def parse_file_to_items(text: str, language: str) -> List[Dict[str, Any]]:
                 buffer.append("")
             continue
 
-        # 非空文本分派
+        # Non-blank text route
         if state in ("reading_context", "after_ex"):
             buffer.append(line); state = "reading_context"
         elif state in ("reading_question", "after_q"):
             buffer.append(line); state = "reading_question"
         elif state == "reading_options":
-            # 非编号行，一律并入最近一个选项文本（保持换行）
+            # Non-numbered line while in options: append to the latest option text (preserving newlines)
             if cur["options"]:
                 prev = cur["options"][-1]["text"]
                 cur["options"][-1]["text"] = (prev + ("\n" if prev else "") + line)
@@ -221,18 +225,18 @@ def parse_file_to_items(text: str, language: str) -> List[Dict[str, Any]]:
 def cmd_parse(args: argparse.Namespace) -> None:
     src = Path(args.src)
     if not src.exists():
-        raise SystemExit(f"[ERROR] 源目录不存在：{src}")
+        raise SystemExit(f"[ERROR] Source directory does not exist: {src}")
 
     table = build_translate_table(args.confusables_policy)
 
     txt_paths = sorted(src.glob("*.txt"))
     if not txt_paths:
-        print("[INFO] 未找到任何 .txt 文件。")
+        print("[INFO] No .txt files found.")
         return
 
     total_q = 0
     for path in txt_paths:
-        # 读取并清洗 Unicode
+        # Read and clean Unicode
         try:
             raw = path.read_text(encoding="utf-8")
         except UnicodeDecodeError:
@@ -250,7 +254,7 @@ def cmd_parse(args: argparse.Namespace) -> None:
     print(f"\n[SUMMARY] Files: {len(txt_paths)} | Total questions: {total_q}")
 
 # =========================
-# 合并答案
+# Merge answers
 # =========================
 
 def _to_int_or_str(x: Any) -> Optional[Union[int, str]]:
@@ -274,12 +278,12 @@ def _get_qid_from_item(item: Dict[str, Any], default_seq: int) -> Union[int, str
 
 def _build_answer_map(ans_data: Any, our_items: List[Dict[str, Any]]) -> Dict[Union[int, str], Any]:
     """
-    支持结构：
+    Supported structures:
       - dict: {question_id: answer}
-      - list[dict]: 每个含 question_id/number/id 和 answer
-      - list[value]: 与 our_items 等长，按顺序对齐
+      - list[dict]: each item has question_id/number/id and answer
+      - list[value]: same length as our_items, aligned by order
     """
-    # dict 直接用
+    # dict: straight mapping
     if isinstance(ans_data, dict):
         amap: Dict[Union[int, str], Any] = {}
         for k, v in ans_data.items():
@@ -306,7 +310,7 @@ def _build_answer_map(ans_data: Any, our_items: List[Dict[str, Any]]) -> Dict[Un
                     amap[qid] = obj["answer"]
             return amap
 
-        # 纯数组且长度对齐：按顺序对齐
+        # plain list and length matches: align by index
         if len(ans_data) == len(our_items):
             amap = {}
             for idx, item in enumerate(our_items):
@@ -319,17 +323,17 @@ def _build_answer_map(ans_data: Any, our_items: List[Dict[str, Any]]) -> Dict[Un
 def merge_one_file(gen_path: Path, ans_path: Path, out_path: Path) -> Tuple[int, int]:
     items = json.loads(gen_path.read_text(encoding="utf-8"))
     if not isinstance(items, list):
-        print(f"[WARN] {gen_path.name}: 我们的 JSON 不是数组，跳过。")
+        print(f"[WARN] {gen_path.name}: Our JSON is not an array, skipping.")
         return 0, 0
 
     if not ans_path.exists():
-        # 没有答案文件也要写出原始 items（覆盖/输出）
+        # Even without an answer file we still write out the original items (overwrite/output)
         out_path.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
         return len(items), 0
 
     ans_raw = json.loads(ans_path.read_text(encoding="utf-8"))
     if not isinstance(ans_raw, (dict, list)):
-        print(f"[WARN] {ans_path.name}: 答案文件结构非常规（{type(ans_raw).__name__}），跳过合并。")
+        print(f"[WARN] {ans_path.name}: Answer file has an unusual structure ({type(ans_raw).__name__}), skipping merge.")
         out_path.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
         return len(items), 0
 
@@ -348,9 +352,9 @@ def cmd_merge(args: argparse.Namespace) -> None:
     gen_dir = Path(args.gen)
     ans_dir = Path(args.ans)
     if not gen_dir.exists():
-        raise SystemExit(f"[ERROR] 生成目录不存在：{gen_dir}")
+        raise SystemExit(f"[ERROR] Generated JSON directory does not exist: {gen_dir}")
     if not ans_dir.exists():
-        raise SystemExit(f"[ERROR] 答案目录不存在：{ans_dir}")
+        raise SystemExit(f"[ERROR] Answer JSON directory does not exist: {ans_dir}")
 
     out_dir = gen_dir if args.out == "same" else (gen_dir / "merged")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -361,18 +365,18 @@ def cmd_merge(args: argparse.Namespace) -> None:
         a_path = ans_dir / g_path.name
         out_path = out_dir / g_path.name
         q, a = merge_one_file(g_path, a_path, out_path)
-        print(f"[OK] {g_path.name}: 题目 {q}，合并 answer {a}")
+        print(f"[OK] {g_path.name}: {q} questions, merged {a} answers")
         total_q += q; total_added += a
 
-    print(f"\n[SUMMARY] 总题目数：{total_q} | 成功加上 answer：{total_added}")
+    print(f"\n[SUMMARY] Total questions: {total_q} | Answers merged: {total_added}")
     if out_dir != gen_dir:
-        print(f"[INFO] 输出目录：{out_dir}")
+        print(f"[INFO] Output directory: {out_dir}")
 
 # =========================
-# 统计脚本
+# Stats helpers & commands
 # =========================
 
-# 清理不可见空白用于“空白选项”判断
+# Clean invisible whitespace for "blank option" detection
 _WS_TRANSLATE_TABLE = {
     **{k: ord(v) for k, v in _UNICODE_SPACE_TO_SPACE.items()},
     **_ZERO_WIDTH_REMOVE,
@@ -389,23 +393,23 @@ def cmd_stats_blanks(args: argparse.Namespace) -> None:
     folder = Path(args.dir)
     files = sorted(folder.glob("*.json"))
     if not files:
-        print("[INFO] 未找到任何 .json 文件。")
+        print("[INFO] No .json files found.")
         return
 
     rows: List[List[Union[str, int]]] = []
     total_q = 0
     total_blank = 0
 
-    print("=== 空白选项统计 ===")
+    print("=== Blank options statistics ===")
     for p in files:
         try:
             data = json.loads(p.read_text(encoding="utf-8"))
         except Exception as e:
-            print(f"[WARN] 读取失败 {p.name}: {e}")
+            print(f"[WARN] Failed to read {p.name}: {e}")
             continue
 
         if not isinstance(data, list):
-            print(f"[WARN] {p.name}: 根对象不是数组，跳过。")
+            print(f"[WARN] {p.name}: Root object is not an array, skipping.")
             continue
 
         blanks: List[Tuple[int, int]] = []
@@ -421,9 +425,9 @@ def cmd_stats_blanks(args: argparse.Namespace) -> None:
                     blanks.append((qnum, i))
                     rows.append([p.name, qnum, i])
 
-        print(f"{p.name}: 题目 {len(data)}，空白选项 {len(blanks)}")
+        print(f"{p.name}: {len(data)} questions, {len(blanks)} blank options")
         if blanks:
-            print("  明细: " + ", ".join([f"Q{q}-opt{i}" for q, i in blanks]))
+            print("  Details: " + ", ".join([f"Q{q}-opt{i}" for q, i in blanks]))
         total_q += len(data)
         total_blank += len(blanks)
 
@@ -433,32 +437,32 @@ def cmd_stats_blanks(args: argparse.Namespace) -> None:
         w.writerow(["file", "question_number", "option_index"])
         w.writerows(rows)
 
-    print("\n=== 总计 ===")
-    print(f"总题目数: {total_q}")
-    print(f"空白选项总数: {total_blank}")
-    print(f"已导出: {csv_path}")
+    print("\n=== Summary ===")
+    print(f"Total questions: {total_q}")
+    print(f"Total blank options: {total_blank}")
+    print(f"Exported to: {csv_path}")
 
 def cmd_stats_over6(args: argparse.Namespace) -> None:
     folder = Path(args.dir)
     files = sorted(folder.glob("*.json"))
     if not files:
-        print("[INFO] 未找到任何 .json 文件。")
+        print("[INFO] No .json files found.")
         return
 
     rows: List[List[Union[str, int]]] = []
     total_q = 0
     total_over6 = 0
 
-    print("=== 选项数 > 6 统计 ===")
+    print("=== Options count > 6 statistics ===")
     for p in files:
         try:
             data = json.loads(p.read_text(encoding="utf-8"))
         except Exception as e:
-            print(f"[WARN] 读取失败 {p.name}: {e}")
+            print(f"[WARN] Failed to read {p.name}: {e}")
             continue
 
         if not isinstance(data, list):
-            print(f"[WARN] {p.name}: 根对象不是数组，跳过。")
+            print(f"[WARN] {p.name}: Root object is not an array, skipping.")
             continue
 
         overs: List[Tuple[int, int]] = []
@@ -474,9 +478,9 @@ def cmd_stats_over6(args: argparse.Namespace) -> None:
                 overs.append((qnum, n))
                 rows.append([p.name, qnum, n])
 
-        print(f"{p.name}: 题目 {len(data)}，>6 共有 {len(overs)}")
+        print(f"{p.name}: {len(data)} questions, {len(overs)} with > 6 options")
         if overs:
-            print("  明细: " + ", ".join([f"Q{q}({n})" for q, n in overs]))
+            print("  Details: " + ", ".join([f"Q{q}({n})" for q, n in overs]))
         total_q += len(data)
         total_over6 += len(overs)
 
@@ -486,31 +490,32 @@ def cmd_stats_over6(args: argparse.Namespace) -> None:
         w.writerow(["file", "question_number", "option_count"])
         w.writerows(rows)
 
-    print("\n=== 总计 ===")
-    print(f"总题目数: {total_q}")
-    print(f">6 选项题目总数: {total_over6}")
-    print(f"已导出: {csv_path}")
+    print("\n=== Summary ===")
+    print(f"Total questions: {total_q}")
+    print(f"Total questions with > 6 options: {total_over6}")
+    print(f"Exported to: {csv_path}")
+
 def cmd_stats_under6(args: argparse.Namespace) -> None:
     folder = Path(args.dir)
     files = sorted(folder.glob("*.json"))
     if not files:
-        print("[INFO] 未找到任何 .json 文件。")
+        print("[INFO] No .json files found.")
         return
 
     rows: List[List[Union[str, int]]] = []
     total_q = 0
     total_under6 = 0
 
-    print("=== 选项数 < 6 统计 ===")
+    print("=== Options count < 6 statistics ===")
     for p in files:
         try:
             data = json.loads(p.read_text(encoding="utf-8"))
         except Exception as e:
-            print(f"[WARN] 读取失败 {p.name}: {e}")
+            print(f"[WARN] Failed to read {p.name}: {e}")
             continue
 
         if not isinstance(data, list):
-            print(f"[WARN] {p.name}: 根对象不是数组，跳过。")
+            print(f"[WARN] {p.name}: Root object is not an array, skipping.")
             continue
 
         unders: List[Tuple[int, int]] = []
@@ -518,10 +523,10 @@ def cmd_stats_under6(args: argparse.Namespace) -> None:
             opts = item.get("options", [])
             if isinstance(opts, list):
                 if getattr(args, "effective", False):
-                    # 按“有效选项”计数：忽略空白选项
+                    # Count "effective options": ignore blank options
                     n = sum(1 for o in opts if not _is_blank_option(o))
                 else:
-                    # 直接用数组长度
+                    # Use raw length of options array
                     n = len(opts)
             else:
                 n = 0
@@ -535,9 +540,9 @@ def cmd_stats_under6(args: argparse.Namespace) -> None:
                 unders.append((qnum, n))
                 rows.append([p.name, qnum, n])
 
-        print(f"{p.name}: 题目 {len(data)}，<6 共有 {len(unders)}")
+        print(f"{p.name}: {len(data)} questions, {len(unders)} with < 6 options")
         if unders:
-            print("  明细: " + ", ".join([f"Q{q}({n})" for q, n in unders]))
+            print("  Details: " + ", ".join([f"Q{q}({n})" for q, n in unders]))
         total_q += len(data)
         total_under6 += len(unders)
 
@@ -547,33 +552,34 @@ def cmd_stats_under6(args: argparse.Namespace) -> None:
         w.writerow(["file", "question_number", "option_count"])
         w.writerows(rows)
 
-    print("\n=== 总计 ===")
-    print(f"总题目数: {total_q}")
-    print(f"<6 选项题目总数: {total_under6}")
-    print(f"已导出: {csv_path}")
+    print("\n=== Summary ===")
+    print(f"Total questions: {total_q}")
+    print(f"Total questions with < 6 options: {total_under6}")
+    print(f"Exported to: {csv_path}")
 
 def cmd_concat(args: argparse.Namespace) -> None:
     folder = Path(args.dir)
     files = sorted(folder.glob("*.json"))
     if not files:
-        print("[INFO] 未找到任何 .json 文件。"); return
+        print("[INFO] No .json files found.")
+        return
 
     combined = []
     for p in files:
         try:
             data = json.loads(p.read_text(encoding="utf-8"))
         except Exception as e:
-            print(f"[WARN] 读取失败 {p.name}: {e}")
+            print(f"[WARN] Failed to read {p.name}: {e}")
             continue
         if not isinstance(data, list):
-            print(f"[WARN] {p.name}: 根对象不是数组，跳过。")
+            print(f"[WARN] {p.name}: Root object is not an array, skipping.")
             continue
 
-        base = p.stem  # 源文件名（不含扩展名）
+        base = p.stem  # source file name (without extension)
         for item in data:
-            # 原题号（可能是 int 或 str）
+            # original question number (may be int or str)
             raw_no = item.get("number") or item.get("question_id") or item.get("id")
-            # 统一成标签：文件名-题号
+            # normalize to label: <filename>-<number>
             item["number"] = f"{base}-{raw_no}"
             if args.keep_source and isinstance(item, dict):
                 item["source_file"] = p.name
@@ -581,49 +587,65 @@ def cmd_concat(args: argparse.Namespace) -> None:
 
     out_path = Path(args.out) if args.out else (folder / "all_questions.json")
     out_path.write_text(json.dumps(combined, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"[OK] 合并 {len(files)} 个文件，共 {len(combined)} 题 → {out_path}")
+    print(f"[OK] Concatenated {len(files)} files, {len(combined)} questions → {out_path}")
 
 # =========================
 # CLI
 # =========================
 
 def build_cli() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser(prog="qa_toolkit.py", description="Parse TXT -> JSON, merge answers, and run stats.")
+    p = argparse.ArgumentParser(
+        prog="qa_toolkit.py",
+        description="Parse TXT -> JSON, merge answers, and run stats."
+    )
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    sp = sub.add_parser("parse", help="解析目录中的 .txt 为同名 .json")
-    sp.add_argument("--src", required=True, help="包含 .txt 的目录")
-    sp.add_argument("--confusables-policy", choices=["preserve", "ascii_approx", "visual_approx"],
-                    default="preserve", help="σ 的替换策略（默认 preserve）")
+    sp = sub.add_parser("parse", help="Parse all .txt files in a directory to .json with the same name.")
+    sp.add_argument("--src", required=True, help="Directory containing .txt files.")
+    sp.add_argument(
+        "--confusables-policy",
+        choices=["preserve", "ascii_approx", "visual_approx"],
+        default="preserve",
+        help="Replacement policy for Greek sigma characters (default: preserve)."
+    )
     sp.set_defaults(func=cmd_parse)
 
-    sm = sub.add_parser("merge", help="把 answers 目录里同名 .json 的 answer 合并回生成的 .json")
-    sm.add_argument("--gen", required=True, help="已生成题目 JSON 的目录")
-    sm.add_argument("--ans", required=True, help="答案 JSON 的目录（同名文件）")
-    sm.add_argument("--out", choices=["same", "merged"], default="same",
-                    help="输出位置：same=覆盖原目录；merged=写到 gen/merged")
+    sm = sub.add_parser("merge", help="Merge answers from an answers directory back into generated JSON files.")
+    sm.add_argument("--gen", required=True, help="Directory with generated question JSON files.")
+    sm.add_argument("--ans", required=True, help="Directory with answer JSON files (same filenames).")
+    sm.add_argument(
+        "--out",
+        choices=["same", "merged"],
+        default="same",
+        help="Where to write output: same = overwrite in gen dir; merged = write to gen/merged."
+    )
     sm.set_defaults(func=cmd_merge)
 
-    sb = sub.add_parser("stats-blanks", help="统计空白选项并导出 CSV")
-    sb.add_argument("--dir", required=True, help="题目 JSON 目录")
+    sb = sub.add_parser("stats-blanks", help="Count blank options and export CSV.")
+    sb.add_argument("--dir", required=True, help="Directory containing question JSON files.")
     sb.set_defaults(func=cmd_stats_blanks)
 
-    so = sub.add_parser("stats-over6", help="统计选项数 > 6 并导出 CSV")
-    so.add_argument("--dir", required=True, help="题目 JSON 目录")
+    so = sub.add_parser("stats-over6", help="Count questions with > 6 options and export CSV.")
+    so.add_argument("--dir", required=True, help="Directory containing question JSON files.")
     so.set_defaults(func=cmd_stats_over6)
 
-    su2 = sub.add_parser("stats-under6", help="统计选项数 < 6 并导出 CSV")
-    su2.add_argument("--dir", required=True, help="题目 JSON 目录")
-    su2.add_argument("--effective", action="store_true",
-                    help="按有效选项计数（忽略空白项）；否则按原始 options 长度统计")
+    su2 = sub.add_parser("stats-under6", help="Count questions with < 6 options and export CSV.")
+    su2.add_argument("--dir", required=True, help="Directory containing question JSON files.")
+    su2.add_argument(
+        "--effective",
+        action="store_true",
+        help="Count effective options only (ignore blank options); otherwise use raw options length."
+    )
     su2.set_defaults(func=cmd_stats_under6)
 
-    sc = sub.add_parser("concat", help="合并目录中所有 .json 为一个数组文件，并把 number 改为 文件名-题号")
-    sc.add_argument("--dir", required=True, help="题目 JSON 目录")
-    sc.add_argument("--out", help="输出文件路径（默认 <dir>/all_questions.json）")
-    sc.add_argument("--keep-source", action="store_true", help="为每题添加 source_file 字段")
+    sc = sub.add_parser(
+        "concat",
+        help="Concatenate all .json files in a directory into one array file and rewrite number as <filename>-<question_no>."
+    )
+    sc.add_argument("--dir", required=True, help="Directory containing question JSON files.")
+    sc.add_argument("--out", help="Output file path (default: <dir>/all_questions.json).")
+    sc.add_argument("--keep-source", action="store_true", help="Add a source_file field to each question.")
     sc.set_defaults(func=cmd_concat)
-
 
     return p
 
