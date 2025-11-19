@@ -100,12 +100,15 @@ Follow the links below for details and concrete usage.
 - [`evaluation/results`](./evaluation/results/README.md) — Final result CSVs used in the thesis
 
 ## Experimental results (summary)
-The table below reports overall MCQ accuracy on the bilingual probability exam test set:
-| Model / setup              | Type          | Overall accuracy (test set) |
-|---------------------------|---------------|-----------------------------|
-| GPT-5                     | API, zero-shot        |  96.08%                      |
-| Qwen3-14B (baseline)      | Local, 4-bit, no RAG  |  76.96%                      |
-| Qwen3-14B + pitfall RAG   | Local, 4-bit, with RAG|  82.84%                      |
+
+| Model / setup              | Type                       | Overall accuracy (test set) |
+|---------------------------|----------------------------|-----------------------------|
+| GPT-5                     | API, zero-shot             | 96.08%                      |
+| Qwen3-14B (baseline)      | Local, 4-bit, no RAG       | 76.96%                      |
+| Qwen3-14B + QLoRA FT      | Local, 4-bit, fine-tuned   | 68.14%                      |
+| Qwen3-14B + pitfall RAG   | Local, 4-bit, with RAG     | 82.84%                      |
+
+From these numbers, the pitfall-aware RAG setup clearly outperforms QLoRA fine-tuning on the same local model.
 
 Details, per-knowledge-point results, and significance tests are reported in the thesis and in `evaluation/results`.
 
